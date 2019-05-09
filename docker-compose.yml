@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  server:
+    image: vast-challenge-gc19_server:latest
+    build:
+      dockerfile: ./Dockerfile
+      context: ./server-code
+    ports:
+      - '3000:3000'
+    volumes:
+      - './server-code/:/app'
+    environment:
+      - DB_HOST=rethinkdb
+      - DB_NAME=test
+
+  client:
+    image: vast-challenge-gc19_client:latest
+    build:
+      dockerfile: ./Dockerfile
+      context: ./client-code
+    ports:
+      - '4200:4200'
+    volumes:
+      - './client-code/:/app'
+
+  rethinkdb:
+    image: rethinkdb:2.3
+    ports:
+      - '8080:8080' #admin interface
