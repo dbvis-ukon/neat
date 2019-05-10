@@ -1,0 +1,25 @@
+stages:
+  - "build"
+  # - "ship"
+
+build:client:
+  image: node:12
+  stage: build
+  before_script:
+    - npm install -g @angular/cli
+  script:
+    - cd ./client-code
+    - npm ci
+    - ng build --prod
+  tags:
+    - docker
+
+build:server:
+  image: node:12
+  stage: build
+  script:
+    - cd ./server-code
+    - npm ci
+    - npm build
+  tags:
+    - docker
