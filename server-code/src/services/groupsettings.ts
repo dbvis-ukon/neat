@@ -5,18 +5,16 @@ export class GroupSettingsService {
 
     public static listenForChangesAndBroadcast() {
         RethinkDbService.connect2().then(conn => {
-            RethinkDbService.db().tableList().run(conn, (err, tables) => {
-                if(tables.indexOf('groupsettings') === -1) {
-                    RethinkDbService.db().tableCreate('groupsettings', {primary_key: 'groupId'}).run(conn)
-                }
-            })
-            
-            
-            RethinkDbService.db().table('groupsettings')
+            RethinkDbService.createTableIfItDoesNotExist('groupsettings', conn, {primary_key: 'groupId'}).then(() => {
+                RethinkDbService.db().table('groupsettings')
                 .changes()
                 .run(conn, (err, cursor) => {
-                    cursor.each(console.log)
-                })    
+                    if(cursor) {
+                        console.log('attached listener to table groupsettings')
+                        cursor.each(console.log)
+                    }
+                }) 
+            })
         })
     }
 }

@@ -11,7 +11,7 @@ services:
     volumes:
       - './server-code/:/app'
     environment:
-      - DB_HOST=rethinkdb
+      - DB_HOST=rethinkdb #this must be the same name as the service name (line 27 of this file)
       - DB_NAME=test
 
   client:

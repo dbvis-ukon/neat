@@ -32,4 +32,22 @@ export class RethinkDbService {
     public static db(): r.Db {
         return r.db(DB_NAME);
     }
+
+    public static createTableIfItDoesNotExist(table: string, connection?: r.Connection, options?: r.TableOptions): Promise<r.CreateResult | null> {
+        if(!connection) {
+            RethinkDbService.connect2().then(conn => {
+                return this.createTableIfItDoesNotExist(table, conn, options)
+            })
+        } else {
+            RethinkDbService.db().tableList().run(connection, (err, tables) => {
+                if(tables.indexOf(table) === -1) {
+                    console.log('create table ' + table)
+                    return RethinkDbService.db().tableCreate(table, options).run(connection)
+                }
+            })
+        }
+        return new Promise((resolve) => {
+            resolve()
+        });
+    }
 }
