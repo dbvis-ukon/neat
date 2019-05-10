@@ -11,6 +11,9 @@ build:client:
     - cd ./client-code
     - npm ci
     - ng build --prod
+  artifacts:
+    paths:
+      - ./client-code/dist
   tags:
     - docker
 
@@ -20,6 +23,10 @@ build:server:
   script:
     - cd ./server-code
     - npm ci
-    - npm build
+    - npm run-script build
+  artifacts:
+    paths:
+      - ./server-code/dist
+    expire_in: 1 week
   tags:
     - docker
