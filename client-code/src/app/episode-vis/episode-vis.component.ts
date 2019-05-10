@@ -13,6 +13,8 @@ export class EpisodeVisComponent implements OnInit {
 
   @ViewChild('svg') svgRef: ElementRef;
 
+  private _data: Episode;
+
   /**
    * the svg element
    */
@@ -27,15 +29,20 @@ export class EpisodeVisComponent implements OnInit {
 
   @Input()
   set data(data: Episode) {
+    this._data = data;
     if (!isNullOrUndefined(data)) {
       this.draw();
     }
   }
 
+  get data(): Episode {
+    return this._data;
+  }
+
 
   private draw(): void {
     d3.select(this.svg)
-    .data(this.data);
+    .data(this._data);
   }
 
 }
