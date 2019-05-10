@@ -41,8 +41,14 @@ export class EpisodeVisComponent implements OnInit {
 
 
   private draw(): void {
-    d3.select(this.svg)
-    .data(this._data);
+    // explanation why this fails:
+
+    // Episodes must be either an array: Episodes[]
+
+    // Or the Episodes object must contain an array that can be put into the .data function (e.g., this._data.dataArray)
+
+    // d3.select(this.svg)
+    //   .data(this._data);
   }
 
 }
