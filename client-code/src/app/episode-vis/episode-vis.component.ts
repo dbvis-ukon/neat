@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Input, ViewEncapsulation } from '@angular/core';
 import { isNullOrUndefined } from 'util';
 import { Episode } from './episode';
+import * as d3 from 'd3';
 
 @Component({
   selector: 'dbvis-episode-vis',

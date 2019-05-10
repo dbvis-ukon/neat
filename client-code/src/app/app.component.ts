@@ -10,10 +10,7 @@ export class AppComponent implements OnInit {
 
   title = 'vast-challenge-gc19';
 
-  episodeData: Episode = {
-    episode: 'test',
-    bla: 'test'
-  } as Episode;
+  episodeData: Episode;
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
