@@ -34,8 +34,8 @@ export class EpisodeVisComponent implements OnInit {
 
 
   private draw(): void {
-    d3.select(this.svg)
-    .data(this.data);
+    // d3.select(this.svg)
+    // .data(this.data);
   }
 
 }
