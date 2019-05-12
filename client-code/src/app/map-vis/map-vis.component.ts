@@ -13,7 +13,7 @@ import * as d3 from 'd3';
 })
 export class MapVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
 
   private svg: SVGElement;
 

@@ -11,7 +11,7 @@ import * as d3 from 'd3';
 })
 export class EpisodeVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
 
   private _data: Episode;
 

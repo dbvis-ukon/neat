@@ -12,7 +12,7 @@ import { ScaleTime } from 'd3';
 })
 export class TimelineVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
 
   private svg: SVGElement;
 
