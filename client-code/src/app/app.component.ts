@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Episode } from './episode-vis/episode';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'dbvis-root',
@@ -12,7 +13,12 @@ export class AppComponent implements OnInit {
 
   episodeData: Episode;
 
+  constructor(private http: HttpClient) {}
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.http.get<Episode>('/assets/episodes.json').subscribe(episodeData => {
+      console.log('episode data', episodeData);
+      this.episodeData = episodeData;
+    });
   }
 }

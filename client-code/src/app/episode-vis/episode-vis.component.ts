@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, Input, ViewEncapsulation } fr
 import { isNullOrUndefined } from 'util';
 import { Episode } from './episode';
 import * as d3 from 'd3';
+import { EpisodeCalculatorService } from '../episode-calculator.service';
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -18,7 +19,7 @@ export class EpisodeVisComponent implements OnInit {
    */
   private svg: SVGElement;
 
-  constructor() { }
+  constructor(private episodeCalculator: EpisodeCalculatorService) { }
 
   ngOnInit() {
     this.svg = this.svgRef.nativeElement;
@@ -29,6 +30,7 @@ export class EpisodeVisComponent implements OnInit {
   set data(data: Episode) {
     if (!isNullOrUndefined(data)) {
       this.draw();
+      this.episodeCalculator.calculate(data);
     }
   }
 
