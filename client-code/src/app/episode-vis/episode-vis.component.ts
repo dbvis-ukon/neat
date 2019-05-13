@@ -12,7 +12,9 @@ import { EpisodeCalculatorService } from '../episode-calculator.service';
 })
 export class EpisodeVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+
+  private _data: Episode;
 
   /**
    * the svg element
@@ -28,16 +30,27 @@ export class EpisodeVisComponent implements OnInit {
 
   @Input()
   set data(data: Episode) {
+    this._data = data;
     if (!isNullOrUndefined(data)) {
       this.draw();
       this.episodeCalculator.calculate(data);
     }
   }
 
+  get data(): Episode {
+    return this._data;
+  }
+
 
   private draw(): void {
-    d3.select(this.svg)
-    .data(this.data);
+    // explanation why this fails:
+
+    // Episodes must be either an array: Episodes[]
+
+    // Or the Episodes object must contain an array that can be put into the .data function (e.g., this._data.dataArray)
+
+    // d3.select(this.svg)
+    //   .data(this._data);
   }
 
 }
