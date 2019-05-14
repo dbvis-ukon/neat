@@ -10,14 +10,14 @@ My recommended IDE is [VSCode](https://code.visualstudio.com/).
 ### Server
 
 The server is written in typescript and runs on node.
-Execute `npm install` to install all dependencies in the ./server-code directory.
+Execute `docker-compose exec server npm install` to install all dependencies for the server. You need to do this everytime the package.json is updated.
 It is accessible on port `3000`. Check http://localhost:3000/health ; it should return `OK`.
 When changing a file in the server code the server will restart automatically.
 
 ### Client
 
 The client is written in typescript using the Angular 7 framework.
-Execute `npm install` to install all dependencies in the ./client-code directory.
+Execute `docker-compose exec client npm install` to install all dependencies for the server. You need to do this everytime the package.json is updated.
 The dev-server for the client is accessible via http://localhost:4200
 When changing a file in the client code the dev-server will restart automatically.
 
