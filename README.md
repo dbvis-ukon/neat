@@ -19,14 +19,14 @@ docker-compose run client npm install
 ### Server
 
 The server is written in typescript and runs on node.
-Execute `docker-compose exec server npm install` to install all dependencies for the server. You need to do this everytime the package.json is updated.
+Execute `docker-compose run server npm install` to install all dependencies for the server. You need to do this everytime the package.json is updated.
 It is accessible on port `3000`. Check http://localhost:3000/health ; it should return `OK`.
 When changing a file in the server code the server will restart automatically.
 
 ### Client
 
 The client is written in typescript using the Angular 7 framework.
-Execute `docker-compose exec client npm install` to install all dependencies for the server. You need to do this everytime the package.json is updated.
+Execute `docker-compose run client npm install` to install all dependencies for the server. You need to do this everytime the package.json is updated.
 The dev-server for the client is accessible via http://localhost:4200
 When changing a file in the client code the dev-server will restart automatically.
 
