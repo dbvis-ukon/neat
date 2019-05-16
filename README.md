@@ -6,6 +6,15 @@ For development you need to have docker installed.
 Afterward, simply execute `docker-compose up` in the root of this folder.
 This will spin up two development environments and a database.
 My recommended IDE is [VSCode](https://code.visualstudio.com/).
+  
+Before the first run you have to do an `npm install` for server and client
+to create the `node_modules`-folder in the mounted volumes:
+
+```
+docker-compose run server npm install
+docker-compose run client npm install
+```
+
 
 ### Server
 
