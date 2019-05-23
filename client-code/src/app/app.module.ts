@@ -9,13 +9,15 @@ import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { MapVisComponent } from './map-vis/map-vis.component';
+import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '@stomp/ng2-stompjs';
+import { myRxStompConfig } from './stomp.config';
 
 @NgModule({
   declarations: [
     AppComponent,
     EpisodeVisComponent,
     TimelineVisComponent,
-    MapVisComponent
+    MapVisComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,17 @@ import { MapVisComponent } from './map-vis/map-vis.component';
     MatSliderModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: InjectableRxStompConfig,
+      useValue: myRxStompConfig
+    },
+    {
+      provide: RxStompService,
+      useFactory: rxStompServiceFactory,
+      deps: [InjectableRxStompConfig]
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
