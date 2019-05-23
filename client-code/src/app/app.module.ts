@@ -11,6 +11,7 @@ import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { MapVisComponent } from './map-vis/map-vis.component';
 import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '@stomp/ng2-stompjs';
 import { myRxStompConfig } from './stomp.config';
+import { EchoTestComponent } from './echo-test/echo-test.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { myRxStompConfig } from './stomp.config';
     EpisodeVisComponent,
     TimelineVisComponent,
     MapVisComponent,
+    EchoTestComponent,
   ],
   imports: [
     BrowserModule,
