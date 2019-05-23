@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RxStompService } from '@stomp/ng2-stompjs';
+import { Message } from '@stomp/stompjs';
 
 @Component({
   selector: 'dbvis-echo-test',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EchoTestComponent implements OnInit {
 
-  constructor() { }
+  receivedMessages: string[] = [];
+
+  constructor(private rxStompService: RxStompService) { }
 
   ngOnInit() {
+    this.rxStompService.watch('/topic/echo').subscribe((message: Message) => {
+      this.receivedMessages.push(message.body);
+    });
+  }
+
+  sendMessage() {
+    const message = `${new Date()}: test`;
+
+    this.rxStompService.publish({destination: '/topic/echo', body: message});
   }
 
 }
