@@ -14,7 +14,7 @@ export class EchoTestComponent implements OnInit {
   constructor(private rxStompService: RxStompService) { }
 
   ngOnInit() {
-    this.rxStompService.watch('/topic/echo').subscribe((message: Message) => {
+    this.rxStompService.watch('/echo').subscribe((message: Message) => {
       this.receivedMessages.push(message.body);
     });
   }
@@ -22,7 +22,7 @@ export class EchoTestComponent implements OnInit {
   sendMessage() {
     const message = `${new Date()}: test`;
 
-    this.rxStompService.publish({destination: '/topic/echo', body: message});
+    this.rxStompService.publish({destination: '/echo', body: message});
   }
 
 }
