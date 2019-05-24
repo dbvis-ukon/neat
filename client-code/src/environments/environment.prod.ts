@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+
+  stompWs: 'ws://localhost:3000/ws'
 };
