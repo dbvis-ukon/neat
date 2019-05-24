@@ -1,37 +1,19 @@
 import * as express from "express";
-import * as expressWs from 'express-ws'
 import * as logger from "morgan";
 import * as cookieParser from "cookie-parser";
 import * as path from "path";
 import * as dbMiddleware from './middleware/rethink-db';
+import * as StompServer from 'stomp-broker-js';
+import * as http from 'http';
 
 import indexRouter from './routes/index';
 import { ApiError } from "./utils/error";
 import { verifyGroupId } from "./middleware/verify-group-id";
 import groupRouter from "./routes/group";
-import timeWsRouter from "./routes/groupsettings";
+// import timeWsRouter from "./routes/groupsettings";
 import { GroupSettingsService } from "./services/groupsettings";
 
-const expWs = expressWs(express());
-const app: expressWs.Application = expWs.app
-
-const testRouter: expressWs.Router = express.Router();
-
-testRouter.ws('/', (ws: any, req) => {
-     ws.testParam = 'this is a test ' + Math.random()
-
-     console.log('connection attempt')
-     ws.on('message', (d) => {
-          ws.send(d)
-     })
-
-     expWs.getWss().clients.forEach((c: any) => {
-          console.log('client', c.testParam)
-     })
-})
-
-app.use('/test', testRouter)
-
+const app: express.Application = express();
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -55,7 +37,7 @@ app.use('/group', groupRouter)
 
 
 // from here we add the verification
-app.use('/groupsettings', verifyGroupId, timeWsRouter)
+// app.use('/groupsettings', verifyGroupId, timeWsRouter)
 
 
 app.use(dbMiddleware.close)
@@ -76,7 +58,31 @@ app.use( ( error, request, response, next ) => {
 
 GroupSettingsService.listenForChangesAndBroadcast()
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+const PORT = parseInt(process.env.PORT) || 3000;
+
+const server = http.createServer(app);
+
+
+// const httpServer = app.listen(PORT, () => {
+//      console.log(`Server is running in http://localhost:${PORT}`)
+// })
+
+const stompServer = new StompServer({
+     server: server,
+     debug: console.log,
+     path: '/ws',
+     // protocol: 'sockjs',
+     heartbeat: [2000,2000]
+ });
+
+ stompServer.subscribe('/echo', (msg, headers) => {
+     var topic = headers.destination;
+     console.log(headers);
+     console.log(`topic:${topic} messageType: ${typeof msg}`, msg, headers);
+     stompServer.send('/echo', headers, `Hello from server! ${msg}`);
+ });
+
+
+ server.listen(PORT, '0.0.0.0', () => {
      console.log(`Server is running in http://localhost:${PORT}`)
-})
+ });
