@@ -4,12 +4,13 @@ services:
   server:
     image: vast-challenge-gc19_server:latest
     build:
-      dockerfile: ./Dockerfile
-      context: ./server-code
+      dockerfile: ./server-code/Dockerfile
+      context: .
     ports:
       - 3000:3000
     volumes:
-      - ./server-code/:/app
+      - ./shared:/app/shared
+      - ./server-code/:/app/server-code
     environment:
       - DB_HOST=rethinkdb #this must be the same name as the service name (line 27 of this file)
       - DB_NAME=test
@@ -17,12 +18,13 @@ services:
   client:
     image: vast-challenge-gc19_client:latest
     build:
-      dockerfile: ./Dockerfile
-      context: ./client-code
+      dockerfile: ./client-code/Dockerfile
+      context: .
     ports:
       - 4200:4200
     volumes:
-      - ./client-code/:/app
+      - ./shared:/app/shared
+      - ./client-code/:/app/client-code
 
   rethinkdb:
     image: rethinkdb:2.3

@@ -1,12 +1,14 @@
 FROM node:12-alpine
 
-VOLUME /app
+VOLUME /app/shared
 
-WORKDIR /app
+VOLUME /app/server-code
 
-COPY ./ /app
+COPY ./shared /app/shared
 
-RUN npm install
+COPY ./server-code /app/server-code
+
+WORKDIR /app/server-code
 
 EXPOSE 3000
 

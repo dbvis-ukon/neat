@@ -4,16 +4,18 @@
         "target": "es5",
         "module": "commonjs",
         "outDir": "dist",
-        "sourceMap": true
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "rootDir": ".",
+        "composite": true
     },
+    "references": [],
     "include": [
-        "src/**/*.ts"
+        "*.ts",
     ],
     "exclude": [
         "node_modules",
         ".vscode"
-    ],
-    "references": [{
-        "path": "../shared"
-    }]
+    ]
 }
