@@ -1,0 +1,19 @@
+<form class="form" #userOptionsForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <mat-form-field>
+    <input matInput placeholder="Your name" [(ngModel)]="userOptions.name" name="name" required>
+  </mat-form-field>
+
+  <div>
+  <h5>Your favorite color:</h5>
+  <span [style.background]="userOptions.color"
+      [cpToggle]="true"
+      [cpDialogDisplay]="'inline'"
+      [cpCancelButton]="true"
+      [(colorPicker)]="userOptions.color"></span>
+  </div>
+
+  <div>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!userOptionsForm.form.valid">Submit</button>
+  </div>
+</form>

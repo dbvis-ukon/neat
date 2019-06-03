@@ -1,4 +1,6 @@
-<mat-toolbar color="primary">Hello&nbsp;<span *ngIf="userOptions"> {{userOptions.name}} </span>&nbsp;welcome to&nbsp;<span *ngIf="currentGroup"> {{currentGroup.name}} </span></mat-toolbar>
+<dbvis-header [group]="currentGroup"></dbvis-header>
+
+
 <div class="root">
   <div class="panel left">
     <div class="map">
