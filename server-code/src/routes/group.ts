@@ -2,29 +2,54 @@ import * as express from "express";
 import * as uuid from 'uuid/v4';
 import * as r from 'rethinkdb';
 import { DB_NAME } from "../config/database";
+import { RethinkDbService } from "../services/rethink-db-service";
+import { Group } from '../../../shared/group';
+import { ApiError } from "../utils/error";
 
 const groupRouter: express.Router = express.Router();
 
+/* list all routes */
+groupRouter.get('/', (req: any, res) => {
+    RethinkDbService.createTableIfItDoesNotExist('groups', req._rdb, {primary_key: 'groupId'}).then(() => {    
+        r.db(DB_NAME).table('groups').run(req._rdb, (err, cursor) => {
+            if(err) throw err
 
-/* get a new group id. */
+            cursor.toArray((err, dbResult) => {
+                res.send(dbResult);
+            })
+        });
+    })
+});
+
+groupRouter.get('/:groupId', (req: any, res) => {
+    console.log('get group', req.params.groupId);
+    r.db(DB_NAME).table('groups').get(req.params.groupId).run(req._rdb, (err, group) => {
+        if(err) throw err;
+
+        if(group === null) {
+            throw new ApiError('Group ' + req.params.groupId + ' could not be found', 404);
+        }
+
+        res.send(group);
+    });
+});
+
+
+/* create a new group */
 groupRouter.post('/', (req: any, res, next) => {
-    const sessionObj = {
+    const group: Group = {
         groupId: uuid(),
+        name: req.body.name,
         created: new Date()
     }
 
-    r.db(DB_NAME).tableCreate('groups', {primary_key: 'groupId'}).run(req._rdb)
-
-    r.db(DB_NAME).table('groups').insert(sessionObj).run(req._rdb, (err, res2) => {
-        if(err) throw err
-
-        console.log(res2)
-
-
-        res.send(sessionObj)
-    })
-
+    RethinkDbService.createTableIfItDoesNotExist('groups', req._rdb, {primary_key: 'groupId'}).then(() => {
+        r.db(DB_NAME).table('groups').insert(group).run(req._rdb, (err, res2) => {
+            if(err) throw err
     
+            res.send(group)
+        });
+    });
 });
 
 export default groupRouter;
