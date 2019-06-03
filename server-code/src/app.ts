@@ -5,6 +5,7 @@ import * as path from "path";
 import * as dbMiddleware from './middleware/rethink-db';
 import * as StompServer from 'stomp-broker-js';
 import * as http from 'http';
+import * as cors from 'cors';
 
 import indexRouter from './routes/index';
 import { ApiError } from "./utils/error";
@@ -19,6 +20,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(cors());
+
 app.use(express.static(path.join(__dirname, '../public')));
 
 // app.get("/", (req, res) => {
@@ -42,16 +46,16 @@ app.use('/group', groupRouter)
 
 app.use(dbMiddleware.close)
 
-app.use( ( error, request, response, next ) => {
-     response.status( error.status || 500 );
-     response.json( {
-         error: error.message
-     } );
- } );
- 
+/* custom error handler */
+app.use( ( error: ApiError, request, response, next ) => {
+    response.status( error.status || 500 );
+    response.json( {
+        error: error.message
+    });
+});
+
  app.use( ( request, response, next ) => {
-     let error = new ApiError('Not found');
-     error.status = 404;
+     let error = new ApiError('Not found', 404);
      response.json( error );
  } );
 
