@@ -1,0 +1,11 @@
+
+<h1>Available groups</h1>
+
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let group of groups">Name: {{ group.name }} Created: {{ group.created }} <button mat-raised-button [routerLink]="['/dashboard', group.groupId]">Join Group</button></mat-list-item>
+</mat-list>
+
+<mat-form-field>
+  <input matInput placeholder="Group name" [(ngModel)]="groupName">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="createGroup()">Create new group</button>

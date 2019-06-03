@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularResizedEventModule } from 'angular-resize-event';
-import { MatSliderModule, MatButtonModule } from '@angular/material';
+import { MatSliderModule, MatButtonModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,9 @@ import { MapVisComponent } from './map-vis/map-vis.component';
 import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '@stomp/ng2-stompjs';
 import { myRxStompConfig } from './stomp.config';
 import { EchoTestComponent } from './echo-test/echo-test.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,14 +24,21 @@ import { EchoTestComponent } from './echo-test/echo-test.component';
     TimelineVisComponent,
     MapVisComponent,
     EchoTestComponent,
+    DashboardComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
     AngularResizedEventModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatListModule,
+    MatToolbarModule
   ],
   providers: [
     {
