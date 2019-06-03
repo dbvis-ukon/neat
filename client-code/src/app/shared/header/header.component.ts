@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UserOptionsRepositoryService } from '../user-options-repository.service';
-import { UserOptions } from '../../../../shared/dist/user-options';
-import { Group } from '../../../../shared/dist/group';
+import { UserOptionsRepositoryService } from '../../core/services/user-options-repository.service';
+import { UserOptions } from '@shared/user-options';
+import { Group } from '@shared/group';
 import { MatDialog } from '@angular/material';
-import { UserOptionsDialogComponent } from '../user-options-dialog/user-options-dialog.component';
+import { UserOptionsDialogComponent } from '../../shared/user-options-dialog/user-options-dialog.component';
 
 @Component({
   selector: 'dbvis-header',

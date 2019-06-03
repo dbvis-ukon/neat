@@ -9,11 +9,14 @@ services:
     ports:
       - 3000:3000
     volumes:
+      - ./tsconfig.json:/app/tsconfig.json
       - ./shared:/app/shared
       - ./server-code/:/app/server-code
     environment:
       - DB_HOST=rethinkdb #this must be the same name as the service name (line 27 of this file)
       - DB_NAME=test
+    depends_on: 
+      - rethinkdb
 
   client:
     image: vast-challenge-gc19_client:latest

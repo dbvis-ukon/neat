@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularResizedEventModule } from 'angular-resize-event';
 import {
   MatSliderModule,
   MatButtonModule,
@@ -17,37 +16,25 @@ import { AngularWebStorageModule } from 'angular-web-storage';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
-import { MapVisComponent } from './map-vis/map-vis.component';
 import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '@stomp/ng2-stompjs';
 import { myRxStompConfig } from './stomp.config';
 import { EchoTestComponent } from './echo-test/echo-test.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UserOptionsComponent } from './user-options/user-options.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { HeaderComponent } from './header/header.component';
-import { UserOptionsDialogComponent } from './user-options-dialog/user-options-dialog.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   entryComponents: [
-    UserOptionsDialogComponent
   ],
   declarations: [
     AppComponent,
-    EpisodeVisComponent,
-    TimelineVisComponent,
-    MapVisComponent,
     EchoTestComponent,
-    DashboardComponent,
     HomeComponent,
-    UserOptionsComponent,
     WelcomeComponent,
-    HeaderComponent,
-    UserOptionsDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -56,17 +43,13 @@ import { UserOptionsDialogComponent } from './user-options-dialog/user-options-d
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularResizedEventModule,
-    MatSliderModule,
+    CoreModule,
+    SharedModule.forRoot(),
     MatButtonModule,
     MatInputModule,
     MatListModule,
-    MatToolbarModule,
     MatCardModule,
-    MatIconModule,
-    MatDialogModule,
-    ColorPickerModule,
-    AngularWebStorageModule
+    DashboardModule,
   ],
   providers: [
     {

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { EchoTestComponent } from './echo-test/echo-test.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AuthGuard } from './auth/auth.guard';
+import { AuthGuard } from '@app/core';
 
 const routes: Routes = [
   {

@@ -3,7 +3,7 @@ import * as uuid from 'uuid/v4';
 import * as r from 'rethinkdb';
 import { DB_NAME } from "../config/database";
 import { RethinkDbService } from "../services/rethink-db-service";
-import { Group } from '../../../shared/group';
+import { Group } from '@shared';
 import { ApiError } from "../utils/error";
 
 const groupRouter: express.Router = express.Router();

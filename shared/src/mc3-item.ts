@@ -1,4 +1,4 @@
-import { GeoSlice } from "./geo-slice";
+import { GeoSlice } from './geo-slice';
 
 export interface Mc3Item {
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { UserOptions } from '../../../../shared/dist/user-options';
-import { UserOptionsRepositoryService } from '../user-options-repository.service';
+import { UserOptions } from '@shared';
+import { UserOptionsRepositoryService } from '@app/core';
 
 @Component({
   selector: 'dbvis-user-options',

@@ -14,7 +14,6 @@ export class WelcomeComponent implements OnInit {
   }
 
   onSubmitted() {
-    console.log('navigate');
     this.router.navigate(['/groups']);
   }
 

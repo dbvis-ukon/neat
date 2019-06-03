@@ -1,8 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Episode } from './episode-vis/episode';
-import { TimelineOptions } from './timeline-vis/timeline-options';
-import { MapData } from './map-vis/map-data';
-import { MatSliderChange } from '@angular/material';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'dbvis-root',

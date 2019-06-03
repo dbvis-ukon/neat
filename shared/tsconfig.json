@@ -1,5 +1,7 @@
 {
+    "extends": "../tsconfig.json",
     "compilerOptions": {
+        "baseUrl": "./src",
         "experimentalDecorators": true,
         "target": "es5",
         "module": "commonjs",
@@ -8,7 +10,7 @@
         "declaration": true,
         "declarationMap": true,
         "rootDir": ".",
-        "composite": true
+        "composite": true,
     },
     "references": [],
     "include": [

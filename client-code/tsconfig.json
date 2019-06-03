@@ -1,4 +1,5 @@
 {
+  "extends": "../tsconfig.json",
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -17,7 +18,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      // this way we can import from '@app/core', '@app/shared' and so on:
+      "@app/*": ["src/app/*"],
+      // or, if your IDE is messing up with the imports,
+      // point to the single directories:
+      "@app/core/*": ["src/app/core/*"],
+      "@app/shared/*": ["src/app/shared/*"],
+      // we also want to use our environment variables in our components
+      // so we provide a shortcut for this folder, too:
+      "@env/*": ["environments/*"],
+      // also the shared:
+      "@shared/*": ["../shared/src/*"],
+      "@shared": ["../shared/src"]
+    }
   },
   "references": [{
     "path": "../shared"

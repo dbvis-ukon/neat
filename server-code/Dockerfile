@@ -1,15 +1,13 @@
 FROM node:12-alpine
 
-VOLUME /app/shared
+RUN mkdir /app
 
-VOLUME /app/server-code
+COPY ./tsconfig.json /app
 
 COPY ./shared /app/shared
 
 COPY ./server-code /app/server-code
 
 WORKDIR /app/server-code
-
-EXPOSE 3000
 
 CMD [ "npm", "run-script", "start:watch" ]

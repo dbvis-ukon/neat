@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { UserOptions } from '../../../shared/user-options';
+import { UserOptions } from '@shared';
 import { isNullOrUndefined } from 'util';
 import * as uuid from 'uuid/v4';
 import { SessionStorageService } from 'angular-web-storage';

@@ -4,12 +4,11 @@ import { TimelineOptions } from '../timeline-vis/timeline-options';
 import { MapData } from '../map-vis/map-data';
 import { MatSliderChange } from '@angular/material';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
-import { GroupRepositoryService } from '../group-repository.service';
+import { GroupRepositoryService } from '../../core/services/group-repository.service';
 import { switchMap } from 'rxjs/operators';
-import { Group } from '../../../../shared/group';
+import { Group, UserOptions } from '@shared';
 import { Observable } from 'rxjs';
-import { UserOptions } from '../../../../shared/user-options';
-import { UserOptionsRepositoryService } from '../user-options-repository.service';
+import { UserOptionsRepositoryService } from '@app/core';
 
 @Component({
   selector: 'dbvis-dashboard',

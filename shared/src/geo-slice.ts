@@ -1,4 +1,4 @@
-import { GeoPos } from "./geo-pos";
+import { GeoPos } from './geo-pos';
 
 export interface GeoSlice {
 

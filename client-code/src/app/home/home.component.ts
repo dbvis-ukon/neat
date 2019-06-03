@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Group } from '../../../../shared/group';
-import { GroupRepositoryService } from '../group-repository.service';
+import { Group } from '@shared';
+import { GroupRepositoryService } from '@app/core';
 
 @Component({
   selector: 'dbvis-home',
