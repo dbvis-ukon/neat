@@ -7,6 +7,7 @@ import { AppRoutingModule } from '@app/app-routing.module';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatInputModule, MatDialogModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { ResizedDirective } from './resized.directive';
 
 @NgModule({
   entryComponents: [
@@ -15,7 +16,8 @@ import { ColorPickerModule } from 'ngx-color-picker';
   declarations: [
     UserOptionsDialogComponent,
     UserOptionsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ResizedDirective
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { ColorPickerModule } from 'ngx-color-picker';
   exports: [
     UserOptionsDialogComponent,
     UserOptionsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ResizedDirective
   ]
 })
 export class SharedModule {

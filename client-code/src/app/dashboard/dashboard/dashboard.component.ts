@@ -21,7 +21,8 @@ export class DashboardComponent implements OnInit {
 
   timelineOptions: TimelineOptions = {
     begin: new Date('2020-01-01 00:00:00'),
-    end: new Date('2020-03-31 23:59:59')
+    end: new Date('2020-03-31 23:59:59'),
+    userColor: 'black'
   };
 
   mapData: MapData[];
@@ -56,6 +57,10 @@ export class DashboardComponent implements OnInit {
 
     this.userOptionsRepository.userOptions$.subscribe(opts => {
       this.userOptions = opts;
+
+      this.timelineOptions.userColor = this.userOptions.color;
+
+      this.timelineOptions = {...this.timelineOptions};
     });
     // throw new Error('Method not implemented.');
   }
@@ -80,6 +85,10 @@ export class DashboardComponent implements OnInit {
     }
 
     return arr;
+  }
+
+  timelineBrushed(brush: [Date, Date]) {
+    console.log('new brush received', brush);
   }
 
 }

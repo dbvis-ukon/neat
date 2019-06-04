@@ -1,8 +1,10 @@
-import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 import { ResizedEvent } from 'angular-resize-event';
 import { TimelineOptions } from './timeline-options';
 import * as d3 from 'd3';
 import { ScaleTime } from 'd3';
+import { Subject } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -11,6 +13,9 @@ import { ScaleTime } from 'd3';
   encapsulation: ViewEncapsulation.None
 })
 export class TimelineVisComponent implements OnInit {
+
+  @Output()
+  public brushed: EventEmitter<[Date, Date]> = new EventEmitter();
 
   @ViewChild('svg') svgRef: ElementRef;
 
@@ -21,50 +26,130 @@ export class TimelineVisComponent implements OnInit {
 
   private _options: TimelineOptions;
 
+  private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
+
+  private timeScale: ScaleTime<number, number> = d3.scaleTime();
+
+  private axisBottom: d3.Axis<Date> = d3.axisBottom<Date>(this.timeScale);
+
+  private axisSelection: d3.Selection<SVGGElement, null, undefined, null>;
+
+  private brush: d3.BrushBehavior<{}> = d3.brushX()
+  .extent([[0, 0], [10, 10]])
+  .on('brush end', () => this._brushed());
+
+  private brushSelection: d3.Selection<SVGGElement, null, undefined, null>;
+
+
+  private lastBrush: [Date, Date];
+
+  private brushDebouncer: Subject<[Date, Date]> = new Subject();
+
   constructor() { }
-
-  ngOnInit() {
-    this.svg = this.svgRef.nativeElement;
-  }
-
-  onResized(event: ResizedEvent) {
-    this.width = event.newWidth - 30;
-    this.height = 40; // constant height
-    console.log('width', event.newWidth, 'height', event.newHeight);
-    this.draw();
-  }
 
   @Input()
   set options(options: TimelineOptions) {
     this._options = options;
-    this.draw();
+
+    this.timeScale.domain([this._options.begin, this._options.end]);
+
+    this.updateRender();
   }
 
   get options(): TimelineOptions {
     return this._options;
   }
 
+  ngOnInit() {
+    this.svg = this.svgRef.nativeElement;
 
-  private draw(): void {
-    if (!this.options) {
+    this.brushDebouncer
+      .pipe(
+        debounceTime(100)
+      )
+      .subscribe(brush => {
+        this.brushed.emit(brush);
+      });
+
+    this.initVis();
+
+    this.updateRanges();
+
+    this.updateRender();
+  }
+
+  onResized(event: ResizedEvent) {
+    this.width = event.newWidth - 30;
+    this.height = 40; // constant height
+
+    this.updateRanges();
+
+    this.updateRender();
+  }
+
+  private initVis(): void {
+    this.svgSelection = d3.select(this.svg);
+
+    // add bottom axis
+    this.axisSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'axis')
+      .attr('transform', `translate(0,0)`)
+      .call(this.axisBottom);
+
+    // add brush
+    this.brushSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'brush');
+  }
+
+  private updateRanges(): void {
+    if (!this.width || !this.height) {
       return;
     }
 
-    console.log('draw with options', this.options);
+    this.timeScale.range([0, this.width]);
 
-    const timeScale: ScaleTime<number, number> = d3.scaleTime()
-      .domain([this.options.begin, this.options.end])
-      .range([0, this.width]);
 
-    d3.select(this.svg).selectAll('*').remove();
+    this.brush.extent([[0, 0], [this.width, this.height]]);
+  }
 
-    d3.select(this.svg)
+
+  private updateRender(): void {
+    if (!this.options || !this.width || !this.height) {
+      return;
+    }
+
+    // update svg width / height
+    this.svgSelection
       .attr('width', this.width)
-      .attr('height', this.height)
-      .append('g')
-      .attr('class', 'axis')
-      .attr('transform', `translate(0, ${this.height - 20})`)
-      .call(d3.axisBottom(timeScale));
+      .attr('height', this.height);
+
+    this.axisSelection
+      .attr('transform', `translate(0,  ${this.height - 20})`)
+      .call(this.axisBottom);
+
+    // either use the brush from the last brush selection or brush the whole time series.
+    const brushRange = this.lastBrush ? [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])] : this.timeScale.range();
+
+    this.brushSelection
+      .call(this.brush)
+      .call(this.brush.move, brushRange);
+
+    // update the color of the brush
+    this.brushSelection.select('rect.selection')
+      .attr('fill', this._options.userColor);
+  }
+
+  /**
+   * called when the user performs a brush
+   */
+  private _brushed(): void {
+    if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'zoom') { return; } // ignore brush-by-zoom
+    const s = d3.event.selection;
+    this.lastBrush = s.map(this.timeScale.invert, this.timeScale);
+
+    this.brushDebouncer.next(this.lastBrush);
   }
 
 }
