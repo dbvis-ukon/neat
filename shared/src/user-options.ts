@@ -7,4 +7,6 @@ export interface UserOptions {
     name: string;
 
     color: string;
+
+    timelineBrush?: [Date, Date];
 }

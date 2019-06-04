@@ -89,6 +89,8 @@ export class DashboardComponent implements OnInit {
 
   timelineBrushed(brush: [Date, Date]) {
     console.log('new brush received', brush);
+    this.userOptions.timelineBrush = brush;
+    this.userOptionsRepository.setOptions(this.userOptions);
   }
 
 }

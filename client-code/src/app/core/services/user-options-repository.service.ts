@@ -21,6 +21,8 @@ export class UserOptionsRepositoryService {
   });
   public userOptions$: Observable<UserOptions> = this.userOptionsSubject.asObservable();
 
+  private oldStr: string;
+
   constructor(private sessionStorage: SessionStorageService) {
     if (this.sessionStorage.get(UserOptionsRepositoryService.SESSION_STORAGE_KEY)) {
       this.setOptions(JSON.parse(this.sessionStorage.get(UserOptionsRepositoryService.SESSION_STORAGE_KEY)));
@@ -35,10 +37,14 @@ export class UserOptionsRepositoryService {
     if (isNullOrUndefined(options.id)) {
       options.id = uuid();
     }
-    console.log('new user', options);
+    const newStr = JSON.stringify(options);
 
-    this.sessionStorage.set(UserOptionsRepositoryService.SESSION_STORAGE_KEY, JSON.stringify(options));
+    if (this.oldStr !== newStr) {
+      this.sessionStorage.set(UserOptionsRepositoryService.SESSION_STORAGE_KEY, JSON.stringify(options));
 
-    this.userOptionsSubject.next(Object.assign(this.getOptions(), options));
+      this.userOptionsSubject.next(Object.assign(this.getOptions(), options));
+    }
+
+    this.oldStr = newStr;
   }
 }

@@ -36,7 +36,7 @@ export class TimelineVisComponent implements OnInit {
 
   private brush: d3.BrushBehavior<{}> = d3.brushX()
   .extent([[0, 0], [10, 10]])
-  .on('brush end', () => this._brushed());
+  .on('end', () => this._brushed());
 
   private brushSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
