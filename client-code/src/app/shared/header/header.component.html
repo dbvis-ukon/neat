@@ -4,16 +4,16 @@
   </button>
   
 
-  Hello&nbsp;<span *ngIf="userOptions"> {{userOptions.name}}, </span>
-  &nbsp;<span *ngIf="group">welcome to&nbsp;{{group.name}} </span>
+  Hello&nbsp;<span *ngIf="userOptions"> {{userOptions.name}}</span>
+  <span *ngIf="group">, welcome to&nbsp;{{group.name}} </span>
 
   <span class="example-spacer"></span>
 
   <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="openDialog()">
-    <mat-icon>settings</mat-icon>
+    <mat-icon>person</mat-icon>
   </button> 
 
   <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="sidenav.toggle()">
-    <mat-icon>list</mat-icon>
+    <mat-icon>group</mat-icon>
   </button> 
 </mat-toolbar>
