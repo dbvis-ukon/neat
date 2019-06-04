@@ -44,13 +44,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    console.log('init', this.route.params);
-    // this.route.paramMap.subscribe(params => {
-    //   console.log('param changed', params);
-    // });
     this.currentGroup$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) => {
-        console.log('params', params);
         return this.groupRepository.get(params.get('id'));
       })
     );
@@ -81,8 +76,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log('commence to delete the user');
     this.userOptionsRepository.deleteUser(this.userOptions.id);
+    this.groupRepository.stopListenForUpdates();
   }
 
   /**
@@ -108,7 +103,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   timelineBrushed(brush: [Date, Date]) {
-    console.log('new brush received', brush);
     this.userOptions.timelineBrush = brush;
     this.userOptionsRepository.setOptions(this.userOptions);
   }

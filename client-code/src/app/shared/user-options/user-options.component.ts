@@ -27,7 +27,6 @@ export class UserOptionsComponent implements OnInit {
   }
 
   onSubmit() {
-    console.warn(this.userOptions);
     this.userOptionsRepository.setOptions(this.userOptions);
     this.submitted.emit();
   }

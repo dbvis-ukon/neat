@@ -44,9 +44,9 @@ userOptionsRouter.post('/', verifyGroupId, (req: any, res, next) => {
         r.db(DB_NAME).table('user_options').get(userOptions.id).replace(userOptions).run(req._rdb, (err, res2) => {
             if(err) throw err;
 
-            console.log('successfully updated the user');
-
             broadcastToUsers(req._rdb, userOptions.groupId);
+
+            res.send();
         });
     });
 });
@@ -55,9 +55,10 @@ userOptionsRouter.delete('/:userId', (req: any, res) => {
     r.db(DB_NAME).table('user_options').get(req.params.userId).delete({returnChanges: true}).run(req._rdb, (err, result: any) => {
         if(err) throw err;
         const groupId = result.changes[0].old_val.groupId;
-        console.log('groupid', groupId);
 
         broadcastToUsers(req._rdb, groupId);
+
+        res.send();
     });
 });
 

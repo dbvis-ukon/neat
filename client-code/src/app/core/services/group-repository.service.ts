@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Group, GroupSettings } from '@shared';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { RxStompService } from '@stomp/ng2-stompjs';
 import { map } from 'rxjs/operators';
@@ -11,6 +11,8 @@ import { Message } from '@stomp/stompjs';
   providedIn: 'root'
 })
 export class GroupRepositoryService {
+
+  private subscription: Subscription;
 
   constructor(private http: HttpClient, private rxStompService: RxStompService) { }
 
@@ -31,9 +33,19 @@ export class GroupRepositoryService {
   }
 
   public listenForUpdates(groupId: string): Observable<GroupSettings> {
-    return this.rxStompService.watch('/group/' + groupId)
+    const d = this.rxStompService.watch('/group/' + groupId)
       .pipe(
         map((message: Message) => JSON.parse(message.body) as GroupSettings)
       );
+
+    this.subscription = d.subscribe();
+
+    return d;
+  }
+
+  public stopListenForUpdates(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 }
