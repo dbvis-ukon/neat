@@ -53,6 +53,16 @@ export class DashboardComponent implements OnInit {
 
     this.currentGroup$.subscribe(group => {
       this.currentGroup = group;
+
+      const opts = this.userOptionsRepository.getOptions();
+      if (opts.groupId !== group.groupId) {
+        opts.groupId = group.groupId;
+        this.userOptionsRepository.setOptions(opts);
+      }
+
+      this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
+        console.warn('group settings', groupSettings);
+      });
     });
 
     this.userOptionsRepository.userOptions$.subscribe(opts => {

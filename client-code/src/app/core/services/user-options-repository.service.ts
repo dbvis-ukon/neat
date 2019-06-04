@@ -4,6 +4,8 @@ import { UserOptions } from '@shared';
 import { isNullOrUndefined } from 'util';
 import * as uuid from 'uuid/v4';
 import { SessionStorageService } from 'angular-web-storage';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +25,7 @@ export class UserOptionsRepositoryService {
 
   private oldStr: string;
 
-  constructor(private sessionStorage: SessionStorageService) {
+  constructor(private sessionStorage: SessionStorageService, private http: HttpClient) {
     if (this.sessionStorage.get(UserOptionsRepositoryService.SESSION_STORAGE_KEY)) {
       this.setOptions(JSON.parse(this.sessionStorage.get(UserOptionsRepositoryService.SESSION_STORAGE_KEY)));
     }
@@ -41,6 +43,12 @@ export class UserOptionsRepositoryService {
 
     if (this.oldStr !== newStr) {
       this.sessionStorage.set(UserOptionsRepositoryService.SESSION_STORAGE_KEY, JSON.stringify(options));
+
+      console.log('send post');
+      this.http.post<void>(environment.apiUrl + '/user', options, {headers: new HttpHeaders({
+        'group-id':  options.groupId,
+        'user-id': options.id
+      })}).subscribe();
 
       this.userOptionsSubject.next(Object.assign(this.getOptions(), options));
     }

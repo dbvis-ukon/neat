@@ -3,7 +3,6 @@ import { ApiError } from '../utils/error';
 import { DB_NAME } from '../config/database';
 
 export function verifyGroupId( req, res, next ) {
-    console.log(req)
     const groupId = req.headers['group-id'];
 
     if(!groupId) {

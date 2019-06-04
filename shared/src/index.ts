@@ -8,3 +8,4 @@ export * from "./mc3-item";
 export * from "./query";
 export * from "./time-slice";
 export * from "./user-options";
+export * from "./group-settings";

@@ -4,5 +4,5 @@ export interface GroupSettings {
 
     groupId: string;
 
-    user: UserOptions[];
+    users: UserOptions[];
 }

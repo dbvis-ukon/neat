@@ -13,6 +13,8 @@ import { verifyGroupId } from "./middleware/verify-group-id";
 import groupRouter from "./routes/group";
 // import timeWsRouter from "./routes/groupsettings";
 import { GroupSettingsService } from "./services/groupsettings";
+import userOptionsRouter from "./routes/user-options";
+import { MyStompServer } from "./utils/stomp-server";
 
 const app: express.Application = express();
 
@@ -38,6 +40,8 @@ app.use('/health', (req, res) => {
 })
 
 app.use('/group', groupRouter)
+
+app.use('/user', userOptionsRouter);
 
 
 // from here we add the verification
@@ -66,25 +70,14 @@ const PORT = parseInt(process.env.PORT) || 3000;
 
 const server = http.createServer(app);
 
+const stompServer = MyStompServer.init(server);
 
-// const httpServer = app.listen(PORT, () => {
-//      console.log(`Server is running in http://localhost:${PORT}`)
-// })
-
-const stompServer = new StompServer({
-     server: server,
-     debug: console.log,
-     path: '/ws',
-     // protocol: 'sockjs',
-     heartbeat: [2000,2000]
- });
-
- stompServer.subscribe('/echo', (msg, headers) => {
-     var topic = headers.destination;
-     console.log(headers);
-     console.log(`topic:${topic} messageType: ${typeof msg}`, msg, headers);
-     stompServer.send('/echo', headers, `Hello from server! ${msg}`);
- });
+stompServer.subscribe('/echo', (msg, headers) => {
+    var topic = headers.destination;
+    console.log(headers);
+    console.log(`topic:${topic} messageType: ${typeof msg}`, msg, headers);
+    stompServer.send('/echo', headers, `Hello from server! ${msg}`);
+});
 
 
  server.listen(PORT, '0.0.0.0', () => {
