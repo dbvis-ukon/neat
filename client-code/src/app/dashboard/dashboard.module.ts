@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatSliderModule } from '@angular/material';
+import { MatSliderModule, MatSidenavModule, MatToolbarModule, MatListModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { AngularResizedEventModule } from 'angular-resize-event';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -21,7 +21,12 @@ import { SharedModule } from '@app/shared/shared.module';
     CommonModule,
     AngularResizedEventModule,
     SharedModule.forRoot(),
-    MatSliderModule
+    MatSliderModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule
   ],
   exports: [
     DashboardComponent

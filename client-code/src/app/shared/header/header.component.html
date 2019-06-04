@@ -12,4 +12,8 @@
   <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="openDialog()">
     <mat-icon>settings</mat-icon>
   </button> 
+
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="sidenav.toggle()">
+    <mat-icon>list</mat-icon>
+  </button> 
 </mat-toolbar>

@@ -6,7 +6,7 @@ import { MatSliderChange } from '@angular/material';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { GroupRepositoryService } from '../../core/services/group-repository.service';
 import { switchMap } from 'rxjs/operators';
-import { Group, UserOptions } from '@shared';
+import { Group, UserOptions, GroupSettings } from '@shared';
 import { Observable } from 'rxjs';
 import { UserOptionsRepositoryService } from '@app/core';
 import { TimelineOtherBrushes } from '../timeline-vis/timeline-other-brushes';
@@ -28,6 +28,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
 
   mapData: MapData[];
+
+  groupSettings: GroupSettings;
 
   currentGroup$: Observable<Group>;
   currentGroup: Group;
@@ -56,15 +58,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.currentGroup$.subscribe(group => {
       this.currentGroup = group;
 
+      this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
+        this.groupSettings = groupSettings;
+        this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
+      });
+
       const opts = this.userOptionsRepository.getOptions();
       if (opts.groupId !== group.groupId) {
         opts.groupId = group.groupId;
         this.userOptionsRepository.setOptions(opts);
       }
-
-      this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
-        this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
-      });
     });
 
     this.userOptionsRepository.userOptions$.subscribe(opts => {
@@ -120,6 +123,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
       } as TimelineOtherBrushes;
     });
     this.timelineOtherBrushes = newBrushes;
+  }
+
+  removeUserFromGroup(user: UserOptions) {
+    this.userOptionsRepository.deleteUser(user.id);
   }
 
 }
