@@ -44,7 +44,6 @@ export class UserOptionsRepositoryService {
     if (this.oldStr !== newStr) {
       this.sessionStorage.set(UserOptionsRepositoryService.SESSION_STORAGE_KEY, JSON.stringify(options));
 
-      console.log('send post');
       this.http.post<void>(environment.apiUrl + '/user', options, {headers: new HttpHeaders({
         'group-id':  options.groupId,
         'user-id': options.id
@@ -54,5 +53,9 @@ export class UserOptionsRepositoryService {
     }
 
     this.oldStr = newStr;
+  }
+
+  public deleteUser(userId: string) {
+    return this.http.delete<void>(environment.apiUrl + '/user/' + userId).subscribe();
   }
 }

@@ -5,6 +5,7 @@ import * as d3 from 'd3';
 import { ScaleTime } from 'd3';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+import { TimelineOtherBrushes } from './timeline-other-brushes';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -26,7 +27,11 @@ export class TimelineVisComponent implements OnInit {
 
   private _options: TimelineOptions;
 
+  private _otherBrushes: TimelineOtherBrushes[];
+
   private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
+
+  private otherBrushesSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
   private timeScale: ScaleTime<number, number> = d3.scaleTime();
 
@@ -58,6 +63,17 @@ export class TimelineVisComponent implements OnInit {
 
   get options(): TimelineOptions {
     return this._options;
+  }
+
+  @Input()
+  set otherBrushes(otherBrushes: TimelineOtherBrushes[]) {
+    this._otherBrushes = otherBrushes;
+
+    this.drawOtherBrushes();
+  }
+
+  get otherBrushes(): TimelineOtherBrushes[] {
+    return this._otherBrushes;
   }
 
   ngOnInit() {
@@ -96,6 +112,9 @@ export class TimelineVisComponent implements OnInit {
       .attr('class', 'axis')
       .attr('transform', `translate(0,0)`)
       .call(this.axisBottom);
+
+    this.otherBrushesSelection = this.svgSelection
+      .append('g');
 
     // add brush
     this.brushSelection = this.svgSelection
@@ -152,4 +171,29 @@ export class TimelineVisComponent implements OnInit {
     this.brushDebouncer.next(this.lastBrush);
   }
 
+  private drawOtherBrushes() {
+    if (!this.otherBrushesSelection || !this._otherBrushes || !this.timeScale) {
+      return;
+    }
+
+    console.log('draw other brushes', this._otherBrushes);
+
+    const rects = this.otherBrushesSelection
+      .selectAll<SVGRectElement, TimelineOtherBrushes>('rect')
+      .data(this._otherBrushes, d => d.name);
+
+    rects
+      .enter()
+      .append('rect')
+      .merge(rects)
+      .attr('x', d => this.timeScale(new Date(d.brush[0])))
+      .attr('y', 0)
+      .attr('width', d => this.timeScale(new Date(d.brush[1])) - this.timeScale(new Date(d.brush[0])))
+      .attr('height', this.height)
+      .attr('stroke', d => d.color)
+      .attr('fill', 'none')
+      .attr('stroke-width', 2);
+
+    rects.exit().remove();
+  }
 }

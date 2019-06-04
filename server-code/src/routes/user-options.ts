@@ -9,11 +9,28 @@ import { MyStompServer } from "../utils/stomp-server";
 
 const userOptionsRouter: express.Router = express.Router();
 
+function broadcastToUsers(conn, groupId) {
+    const stompServer = MyStompServer.get();
+    r.db(DB_NAME).table('user_options').filter({groupId: groupId}).run(conn, (err, cursor) => {
+
+        const groupSettings: GroupSettings = {
+            groupId: groupId,
+            users: []
+        };
+
+        cursor.toArray((err, dbResult) => {
+            dbResult.forEach(user => {
+                groupSettings.users.push(user);
+            })
+            // 
+            stompServer.send('/group/' + groupId, {}, JSON.stringify(groupSettings));
+        })
+    })
+}
+
 
 /* create a new group */
 userOptionsRouter.post('/', verifyGroupId, (req: any, res, next) => {
-    const stompServer = MyStompServer.get();
-
     // expects a user options body:
     const userOptions: UserOptions = req.body as UserOptions;
 
@@ -29,23 +46,18 @@ userOptionsRouter.post('/', verifyGroupId, (req: any, res, next) => {
 
             console.log('successfully updated the user');
 
-            r.db(DB_NAME).table('user_options').filter({groupId: userOptions.groupId}).run(req._rdb, (err, cursor) => {
-
-                const groupSettings: GroupSettings = {
-                    groupId: userOptions.groupId,
-                    users: []
-                };
-
-                cursor.toArray((err, dbResult) => {
-                    dbResult.forEach(user => {
-                        groupSettings.users.push(user);
-                    })
-                    // 
-                    console.log(groupSettings);
-                    stompServer.send('/group/' + userOptions.groupId, {}, JSON.stringify(groupSettings));
-                })
-            })
+            broadcastToUsers(req._rdb, userOptions.groupId);
         });
+    });
+});
+
+userOptionsRouter.delete('/:userId', (req: any, res) => {
+    r.db(DB_NAME).table('user_options').get(req.params.userId).delete({returnChanges: true}).run(req._rdb, (err, result: any) => {
+        if(err) throw err;
+        const groupId = result.changes[0].old_val.groupId;
+        console.log('groupid', groupId);
+
+        broadcastToUsers(req._rdb, groupId);
     });
 });
 

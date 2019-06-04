@@ -30,8 +30,8 @@ export class GroupRepositoryService {
     return this.http.post<Group>(environment.apiUrl + '/group', {name});
   }
 
-  public listenForUpdates(id: string): Observable<GroupSettings> {
-    return this.rxStompService.watch('/group/' + id)
+  public listenForUpdates(groupId: string): Observable<GroupSettings> {
+    return this.rxStompService.watch('/group/' + groupId)
       .pipe(
         map((message: Message) => JSON.parse(message.body) as GroupSettings)
       );

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Episode } from '../episode-vis/episode';
 import { TimelineOptions } from '../timeline-vis/timeline-options';
 import { MapData } from '../map-vis/map-data';
@@ -9,14 +9,14 @@ import { switchMap } from 'rxjs/operators';
 import { Group, UserOptions } from '@shared';
 import { Observable } from 'rxjs';
 import { UserOptionsRepositoryService } from '@app/core';
+import { TimelineOtherBrushes } from '../timeline-vis/timeline-other-brushes';
 
 @Component({
   selector: 'dbvis-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.less']
 })
-export class DashboardComponent implements OnInit {
-
+export class DashboardComponent implements OnInit, OnDestroy {
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
@@ -24,6 +24,8 @@ export class DashboardComponent implements OnInit {
     end: new Date('2020-03-31 23:59:59'),
     userColor: 'black'
   };
+
+  timelineOtherBrushes: TimelineOtherBrushes[] = [];
 
   mapData: MapData[];
 
@@ -61,7 +63,7 @@ export class DashboardComponent implements OnInit {
       }
 
       this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
-        console.warn('group settings', groupSettings);
+        this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
       });
     });
 
@@ -73,6 +75,11 @@ export class DashboardComponent implements OnInit {
       this.timelineOptions = {...this.timelineOptions};
     });
     // throw new Error('Method not implemented.');
+  }
+
+  ngOnDestroy(): void {
+    console.log('commence to delete the user');
+    this.userOptionsRepository.deleteUser(this.userOptions.id);
   }
 
   /**
@@ -101,6 +108,18 @@ export class DashboardComponent implements OnInit {
     console.log('new brush received', brush);
     this.userOptions.timelineBrush = brush;
     this.userOptionsRepository.setOptions(this.userOptions);
+  }
+
+
+  private otherUserOptionsUpdated(userOptions: UserOptions[]) {
+    const newBrushes: TimelineOtherBrushes[] = userOptions.map(d => {
+      return {
+        name: d.name,
+        color: d.color,
+        brush: d.timelineBrush
+      } as TimelineOtherBrushes;
+    });
+    this.timelineOtherBrushes = newBrushes;
   }
 
 }

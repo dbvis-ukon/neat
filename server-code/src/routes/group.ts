@@ -34,6 +34,15 @@ groupRouter.get('/:groupId', (req: any, res) => {
     });
 });
 
+groupRouter.get('/:groupId/users', (req: any, res) => {
+    console.log('show users of ', req.params.groupId)
+    r.db(DB_NAME).table('user_options').filter({groupId: req.params.groupId}).run(req._rdb, (err, cursor) => {
+        if(err) throw err;
+
+        cursor.toArray().then(result => res.send(result));
+    });
+});
+
 
 /* create a new group */
 groupRouter.post('/', (req: any, res, next) => {

@@ -18,7 +18,7 @@
   <div class="panel right">
     <div class="timeline">
       <!-- <h1>TIMELINE</h1> -->
-      <dbvis-timeline-vis [options]="timelineOptions" (brushed)="timelineBrushed($event)"></dbvis-timeline-vis>
+      <dbvis-timeline-vis [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes" (brushed)="timelineBrushed($event)"></dbvis-timeline-vis>
     </div>
 
     <div class="story">
