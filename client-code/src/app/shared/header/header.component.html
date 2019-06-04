@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <button *ngIf="group" mat-icon-button aria-label="back to groups" class="exit-icon" [routerLink]="['/groups']">
+      <mat-icon>arrow_back</mat-icon>
+  </button>
+  
+
+  Hello&nbsp;<span *ngIf="userOptions"> {{userOptions.name}}</span>
+  <span *ngIf="group">, welcome to&nbsp;{{group.name}} </span>
+
+  <span class="example-spacer"></span>
+
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="openDialog()">
+    <mat-icon>person</mat-icon>
+  </button> 
+
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="sidenav.toggle()">
+    <mat-icon>group</mat-icon>
+  </button> 
+</mat-toolbar>

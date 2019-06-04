@@ -1,9 +1,16 @@
 {
+    "extends": "../tsconfig.json",
     "compilerOptions": {
+        "baseUrl": ".",
+        "experimentalDecorators": true,
         "target": "es5",
         "module": "commonjs",
         "outDir": "dist",
-        "sourceMap": true
+        "sourceMap": true,
+        "paths": {
+            "@shared/*": ["../shared/src/*"],
+            "@shared": ["../shared/src"]
+        }
     },
     "include": [
         "src/**/*.ts"
@@ -11,5 +18,8 @@
     "exclude": [
         "node_modules",
         ".vscode"
-    ]
+    ],
+    "references": [{
+        "path": "../shared/tsconfig.json"
+    }]
 }

@@ -1,13 +1,13 @@
 FROM node:12-alpine
 
-VOLUME /app
+RUN mkdir /app
 
-WORKDIR /app
+COPY ./tsconfig.json /app
 
-COPY ./ /app
+COPY ./shared /app/shared
 
-RUN npm install
+COPY ./server-code /app/server-code
 
-EXPOSE 3000
+WORKDIR /app/server-code
 
 CMD [ "npm", "run-script", "start:watch" ]

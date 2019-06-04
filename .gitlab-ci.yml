@@ -1,6 +1,21 @@
 stages:
+  - "build:shared"
   - "build"
   # - "ship"
+
+build:shared:
+  image: node:12
+  stage: build:shared
+  before_script:
+    - npm i -g typescript
+  script:
+    - cd shared
+    - tsc -b
+  artifacts:
+    paths:
+      - ./shared/dist
+  tags:
+    - docker
 
 build:client:
   image: node:12
@@ -11,6 +26,8 @@ build:client:
     - cd ./client-code
     - npm ci
     - ng build --prod
+  dependencies:
+    - build:shared
   artifacts:
     paths:
       - ./client-code/dist
@@ -24,6 +41,8 @@ build:server:
     - cd ./server-code
     - npm ci
     - npm run-script build
+  dependencies:
+    - build:shared
   artifacts:
     paths:
       - ./server-code/dist
