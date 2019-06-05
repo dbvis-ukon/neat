@@ -1,3 +1,4 @@
 *.entry_point.lock
 .idea/
 shared/dist
+server-code/public
