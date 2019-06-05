@@ -10,7 +10,7 @@ build:shared:
     - npm i -g typescript
   script:
     - cd shared
-    - tsc -b
+    - tsc -b -v
   artifacts:
     paths:
       - ./shared/dist
@@ -30,7 +30,7 @@ build:client:
     - build:shared
   artifacts:
     paths:
-      - ./client-code/dist
+      - ./server-code/public
   tags:
     - docker
 
