@@ -6,6 +6,8 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -28,7 +30,8 @@
       "@app/shared/*": ["src/app/shared/*"],
       // we also want to use our environment variables in our components
       // so we provide a shortcut for this folder, too:
-      "@env/*": ["environments/*"],
+      "@env/*": ["src/environments/*"],
+      "@assets/*": ["src/assets/*"],
       // also the shared:
       "@shared/*": ["../shared/src/*"],
       "@shared": ["../shared/src"]
