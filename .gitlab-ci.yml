@@ -74,7 +74,7 @@ deploy:swarm:
     - build:shared
     - build:client
     - build:server
-  only:
-    - master
+  # only:
+  #   - master
   tags:
     - jentner-swarm
