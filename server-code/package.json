@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node --inspect=5858 -r ts-node/register ./src/app.ts",
     "start:watch": "nodemon --legacy-watch",
-    "build": "tsc"
+    "build": "tsc -b -v"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
