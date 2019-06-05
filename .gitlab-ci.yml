@@ -49,3 +49,18 @@ build:server:
     expire_in: 1 week
   tags:
     - docker
+
+deploy:swarm:
+  stage: deploy
+  script:
+    - docker-compose -f deploy.yml build
+    - docker-compose -f deploy.yml push
+    - docker stack deploy --compose-file deploy.yml vcgc19
+  dependencies:
+    - build:shared
+    - build:client
+    - build:server
+  # only:
+  #   - master
+  tags:
+    - jentner-swarm
