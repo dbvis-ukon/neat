@@ -3,16 +3,12 @@ import * as logger from "morgan";
 import * as cookieParser from "cookie-parser";
 import * as path from "path";
 import * as dbMiddleware from './middleware/rethink-db';
-import * as StompServer from 'stomp-broker-js';
 import * as http from 'http';
 import * as cors from 'cors';
 
-import indexRouter from './routes/index';
 import { ApiError } from "./utils/error";
-import { verifyGroupId } from "./middleware/verify-group-id";
 import groupRouter from "./routes/group";
 // import timeWsRouter from "./routes/groupsettings";
-import { GroupSettingsService } from "./services/groupsettings";
 import userOptionsRouter from "./routes/user-options";
 import { MyStompServer } from "./utils/stomp-server";
 
@@ -25,30 +21,30 @@ app.use(cookieParser());
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, '../public')));
-
-// app.get("/", (req, res) => {
-//     res.send("Hello World")
-// })
-
 app.use(dbMiddleware.connect)
 
-app.use('/', indexRouter);
 
-app.use('/health', (req, res) => {
+app.use('/api/health', (req, res) => {
      res.send('OK')
 })
 
-app.use('/group', groupRouter)
+app.use('/api/group', groupRouter)
 
-app.use('/user', userOptionsRouter);
-
-
-// from here we add the verification
-// app.use('/groupsettings', verifyGroupId, timeWsRouter)
+app.use('/api/user', userOptionsRouter);
 
 
 app.use(dbMiddleware.close)
+
+console.log('dirname', __dirname);//
+
+// index
+app.use('/', express.static(path.join(__dirname, '../public')));
+
+// to make the angular routing possible
+app.use('*', (req, res) => {
+    console.log('send file', __dirname);
+     res.sendFile(path.join(__dirname, '../public/index.html'));
+});
 
 /* custom error handler */
 app.use( ( error: ApiError, request, response, next ) => {
@@ -63,10 +59,11 @@ app.use( ( error: ApiError, request, response, next ) => {
      response.json( error );
  } );
 
-
-GroupSettingsService.listenForChangesAndBroadcast()
-
 const PORT = parseInt(process.env.PORT) || 3000;
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running in http://localhost:${PORT}`)
+})
 
 const server = http.createServer(app);
 
@@ -80,6 +77,6 @@ stompServer.subscribe('/echo', (msg, headers) => {
 });
 
 
- server.listen(PORT, '0.0.0.0', () => {
-     console.log(`Server is running in http://localhost:${PORT}`)
- });
+//  server.listen(PORT, '0.0.0.0', () => {
+//      console.log(`Server is running in http://localhost:${PORT}`)
+//  });
