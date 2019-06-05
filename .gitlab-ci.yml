@@ -1,7 +1,7 @@
 stages:
   - "build:shared"
   - "build"
-  # - "ship"
+  - "ship :rocket:"
 
 build:shared:
   image: node:12
@@ -51,7 +51,7 @@ build:server:
     - docker
 
 deploy:swarm:
-  stage: deploy
+  stage: "ship :rocket:"
   script:
     - docker-compose -f deploy.yml build
     - docker-compose -f deploy.yml push
