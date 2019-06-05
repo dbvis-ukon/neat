@@ -52,8 +52,8 @@ build:server:
     - docker
 
 test:build:docker:
-  stage: "test-build-docker"
-    image: docker:latest
+  stage: test-build-docker
+  image: docker:latest
   services:
     - docker:dind
   script:
@@ -65,7 +65,7 @@ test:build:docker:
     - docker-build
 
 deploy:swarm:
-  stage: "ship"
+  stage: ship
   script:
     - docker-compose -f deploy.yml build
     - docker-compose -f deploy.yml push
