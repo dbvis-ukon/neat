@@ -32,10 +32,7 @@ app.use('/api/group', groupRouter)
 
 app.use('/api/user', userOptionsRouter);
 
-
 app.use(dbMiddleware.close)
-
-console.log('dirname', __dirname);//
 
 // index
 app.use('/', express.static(path.join(__dirname, '../public')));
@@ -61,10 +58,6 @@ app.use( ( error: ApiError, request, response, next ) => {
 
 const PORT = parseInt(process.env.PORT) || 3000;
 
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server is running in http://localhost:${PORT}`)
-})
-
 const server = http.createServer(app);
 
 const stompServer = MyStompServer.init(server);
@@ -77,6 +70,6 @@ stompServer.subscribe('/echo', (msg, headers) => {
 });
 
 
-//  server.listen(PORT, '0.0.0.0', () => {
-//      console.log(`Server is running in http://localhost:${PORT}`)
-//  });
+ server.listen(PORT, '0.0.0.0', () => {
+     console.log(`Server is running in http://localhost:${PORT}`)
+ });
