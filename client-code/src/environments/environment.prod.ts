@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
 
-  apiUrl: 'http://localhost:3000',
+  apiUrl: 'https://vcgc19.dbvis.de/api',
 
-  stompWs: 'ws://localhost:3000/ws'
+  stompWs: 'wss://vcgc19.dbvis.de/ws'
 };
