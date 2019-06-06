@@ -2,7 +2,7 @@
 
 <h1>Available groups</h1>
 
-<mat-list role="list">
+<mat-list role="list" *ngIf="groups">
   <mat-list-item role="listitem" *ngFor="let group of groups">Name: {{ group.name }} Created: {{ group.created }} <button mat-raised-button [routerLink]="['/dashboard', group.groupId]">Join Group</button></mat-list-item>
 </mat-list>
 

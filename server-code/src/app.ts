@@ -2,15 +2,16 @@ import * as express from "express";
 import * as logger from "morgan";
 import * as cookieParser from "cookie-parser";
 import * as path from "path";
-import * as dbMiddleware from './middleware/rethink-db';
+import * as dbMiddleware from './middleware/rethink-db.middleware';
 import * as http from 'http';
 import * as cors from 'cors';
 
 import { ApiError } from "./utils/error";
-import groupRouter from "./routes/group";
+import groupRouter from "./routes/group.route";
 // import timeWsRouter from "./routes/groupsettings";
-import userOptionsRouter from "./routes/user-options";
+import userOptionsRouter from "./routes/user-options.route";
 import { MyStompServer } from "./utils/stomp-server";
+import { RethinkDbService } from "./services/rethink-db.service";
 
 const app: express.Application = express();
 
@@ -22,6 +23,12 @@ app.use(cookieParser());
 app.use(cors());
 
 app.use(dbMiddleware.connect)
+
+// create all required tables:
+RethinkDbService.connect().then(async conn => {
+    await RethinkDbService.createTableIfItDoesNotExist('groups', conn, {primary_key: 'groupId'});
+    await RethinkDbService.createTableIfItDoesNotExist('user_options', conn, {primary_key: 'id'})
+})
 
 
 app.use('/api/health', (req, res) => {
@@ -44,7 +51,8 @@ app.use('*', (req, res) => {
 });
 
 /* custom error handler */
-app.use( ( error: ApiError, request, response, next ) => {
+app.use( ( error, request, response, next ) => {
+    console.log('caught error', error);
     response.status( error.status || 500 );
     response.json( {
         error: error.message

@@ -44,10 +44,12 @@ export class UserOptionsRepositoryService {
     if (this.oldStr !== newStr) {
       this.sessionStorage.set(UserOptionsRepositoryService.SESSION_STORAGE_KEY, JSON.stringify(options));
 
-      this.http.post<void>(environment.apiUrl + '/user', options, {headers: new HttpHeaders({
-        'group-id':  options.groupId,
-        'user-id': options.id
-      })}).subscribe();
+      if (options.groupId) {
+        this.http.post<void>(environment.apiUrl + '/user', options, {headers: new HttpHeaders({
+          'group-id':  options.groupId,
+          'user-id': options.id
+        })}).subscribe();
+      }
 
       this.userOptionsSubject.next(Object.assign(this.getOptions(), options));
     }
