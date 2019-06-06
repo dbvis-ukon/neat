@@ -1,6 +1,6 @@
 import * as r from 'rethinkdb';
 import { ApiError } from '../utils/error';
-import { DB_NAME } from '../config/database';
+import { DB_NAME } from '../config/database.config';
 
 export function verifyGroupId( req, res, next ) {
     const groupId = req.headers['group-id'];

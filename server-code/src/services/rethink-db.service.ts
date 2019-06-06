@@ -1,5 +1,5 @@
 import * as r from 'rethinkdb'
-import { DB_HOST, DB_PORT, DB_NAME } from '../config/database';
+import { DB_HOST, DB_PORT, DB_NAME } from '../config/database.config';
 
 export class RethinkDbService {
 
