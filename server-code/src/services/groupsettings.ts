@@ -4,7 +4,7 @@ export class GroupSettingsService {
 
 
     public static listenForChangesAndBroadcast() {
-        RethinkDbService.connect2().then(conn => {
+        RethinkDbService.connect().then(conn => {
             RethinkDbService.createTableIfItDoesNotExist('groupsettings', conn, {primary_key: 'groupId'}).then(() => {
                 RethinkDbService.db().table('groupsettings')
                 .changes()
