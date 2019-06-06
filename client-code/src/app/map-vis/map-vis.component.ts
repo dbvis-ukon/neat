@@ -26,6 +26,7 @@ export class MapVisComponent implements OnInit {
 
   ngOnInit() {
     this.svg = this.svgRef.nativeElement;
+    console.log('initial')
   }
 
   onResized(event: ResizedEvent) {

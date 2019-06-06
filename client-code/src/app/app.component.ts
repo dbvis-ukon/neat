@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Episode } from './episode-vis/episode';
+import { Episode } from './episodes/episode-vis/episode';
 import { HttpClient } from '@angular/common/http';
 import { TimelineOptions } from './timeline-vis/timeline-options';
 import { MapData } from './map-vis/map-data';
@@ -26,10 +26,10 @@ export class AppComponent implements OnInit {
   mapData: MapData[];
 
   ngOnInit(): void {
-    this.http.get<Episode>('/assets/episodes.json').subscribe(episodeData => {
-      console.log('episode data', episodeData);
-      this.episodeData = episodeData;
-    });
+    // this.http.get<Episode>('/assets/episodes.json').subscribe(episodeData => {
+    //   console.log('episode data', episodeData);
+    //   this.episodeData = episodeData;
+    // });
   }
 
   /**

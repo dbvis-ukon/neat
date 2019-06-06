@@ -6,15 +6,14 @@ import { MatSliderModule, MatButtonModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { MapVisComponent } from './map-vis/map-vis.component';
+import { EpisodesModule } from './episodes/episodes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EpisodeVisComponent,
     TimelineVisComponent,
     MapVisComponent
   ],
@@ -25,7 +24,8 @@ import { MapVisComponent } from './map-vis/map-vis.component';
     BrowserAnimationsModule,
     AngularResizedEventModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    EpisodesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
