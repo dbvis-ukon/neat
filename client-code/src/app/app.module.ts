@@ -1,33 +1,62 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {
+  MatButtonModule,
+  MatInputModule,
+  MatListModule,
+  MatCardModule,
+} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
-import { AngularResizedEventModule } from 'angular-resize-event';
-import { MatSliderModule, MatButtonModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
-import { MapVisComponent } from './map-vis/map-vis.component';
-import { EpisodesModule } from './episodes/episodes.module';
+import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '@stomp/ng2-stompjs';
+import { myRxStompConfig } from './stomp.config';
+import { EchoTestComponent } from './echo-test/echo-test.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
+  entryComponents: [
+  ],
   declarations: [
     AppComponent,
-    TimelineVisComponent,
-    MapVisComponent
+    EchoTestComponent,
+    HomeComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AngularResizedEventModule,
-    MatSliderModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CoreModule,
+    SharedModule.forRoot(),
     MatButtonModule,
-    EpisodesModule
+    MatInputModule,
+    MatListModule,
+    MatCardModule,
+    DashboardModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: InjectableRxStompConfig,
+      useValue: myRxStompConfig
+    },
+    {
+      provide: RxStompService,
+      useFactory: rxStompServiceFactory,
+      deps: [InjectableRxStompConfig]
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

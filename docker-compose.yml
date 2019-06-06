@@ -4,27 +4,52 @@ services:
   server:
     image: vast-challenge-gc19_server:latest
     build:
-      dockerfile: ./Dockerfile
-      context: ./server-code
+      dockerfile: ./server-code/Dockerfile
+      context: .
     ports:
-      - '3000:3000'
+      - 3000:3000
     volumes:
-      - './server-code/:/app'
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./shared:/app/shared
+      - ./server-code/:/app/server-code
     environment:
       - DB_HOST=rethinkdb #this must be the same name as the service name (line 27 of this file)
       - DB_NAME=test
+    depends_on: 
+      - rethinkdb
 
   client:
     image: vast-challenge-gc19_client:latest
     build:
-      dockerfile: ./Dockerfile
-      context: ./client-code
+      dockerfile: ./client-code/Dockerfile
+      context: .
     ports:
-      - '4200:4200'
+      - 4200:4200
     volumes:
-      - './client-code/:/app'
+      - ./shared:/app/shared
+      - ./client-code/:/app/client-code
 
   rethinkdb:
     image: rethinkdb:2.3
     ports:
-      - '8080:8080' #admin interface
+      - 8080:8080 #admin interface
+
+  postgresdb:
+    image: kartoza/postgis:latest
+    ports:
+      - 5432:5432
+    volumes:
+      # will put the initscripts into the docker container and execute it automatically
+      - ./postgresdb/initscripts/:/docker-entrypoint-initdb.d/
+      # makes the postgres db persistent
+      - postgres-data:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=vastchallenge
+      - POSTGRES_PASS=vastchallenge
+      - POSTGRES_DBNAME=vastchallenge
+      # - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology # You can pass as many extensions as you need.
+      # - ALLOW_IP_RANGE=all
+      # - IP_LIST=*
+
+volumes:
+  postgres-data:

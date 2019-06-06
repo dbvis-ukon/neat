@@ -1,6 +1,22 @@
 stages:
+  - "build:shared"
   - "build"
-  # - "ship"
+  - "test-build-docker"
+  - "ship"
+
+build:shared:
+  image: node:12
+  stage: build:shared
+  before_script:
+    - npm i -g typescript
+  script:
+    - cd shared
+    - tsc -b -v
+  artifacts:
+    paths:
+      - ./shared/dist
+  tags:
+    - docker
 
 build:client:
   image: node:12
@@ -11,9 +27,11 @@ build:client:
     - cd ./client-code
     - npm ci
     - ng build --prod
+  dependencies:
+    - build:shared
   artifacts:
     paths:
-      - ./client-code/dist
+      - ./server-code/public
   tags:
     - docker
 
@@ -24,9 +42,39 @@ build:server:
     - cd ./server-code
     - npm ci
     - npm run-script build
+  dependencies:
+    - build:shared
   artifacts:
     paths:
       - ./server-code/dist
     expire_in: 1 week
   tags:
     - docker
+
+test:build:docker:
+  stage: test-build-docker
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -f ./deployment/Dockerfile -t 127.0.0.1:5000/vast-challenge-gc19:latest .
+    - docker image ls
+  except:
+    - master
+  tags:
+    - docker-build
+
+deploy:swarm:
+  stage: ship
+  script:
+    - docker-compose -f deploy.yml build
+    - docker-compose -f deploy.yml push
+    - docker stack deploy --compose-file deploy.yml vcgc19
+  dependencies:
+    - build:shared
+    - build:client
+    - build:server
+  only:
+    - master
+  tags:
+    - jentner-swarm

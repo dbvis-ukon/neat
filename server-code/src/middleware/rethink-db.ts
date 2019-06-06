@@ -8,6 +8,7 @@ export function connect( req, res, next ) {
     })
 };
 
-export function close( req) {
+export function close( req, res, next) {
     req._rdb.close();
+    next();
 };

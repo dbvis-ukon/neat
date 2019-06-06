@@ -1,0 +1,52 @@
+<mat-sidenav-container class="example-container">
+  
+
+  <mat-sidenav-content>
+
+    <dbvis-header [group]="currentGroup" [sidenav]="sidenav"></dbvis-header>
+
+
+    <div class="root">
+      <div class="panel left">
+        <div class="map">
+          <h1>MAP COMPONENT</h1>
+          <dbvis-map-vis [data]="mapData"></dbvis-map-vis>
+        </div>
+
+
+        <div class="episodes">
+          <h1>EPISODE COMPONENT</h1>
+          <dbvis-episode-vis [data]="episodeData"></dbvis-episode-vis>
+        </div>
+
+      </div>
+      <div class="panel right">
+        <div class="timeline">
+          <!-- <h1>TIMELINE</h1> -->
+          <dbvis-timeline-vis [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes"
+            (brushed)="timelineBrushed($event)"></dbvis-timeline-vis>
+        </div>
+
+        <div class="story">
+          <h1>STORY / STH ELSE</h1>
+
+          <h5>move the slider to see the map being updated</h5>
+          <!-- on every slider move the sliderChanged function is exectured (see app.component.ts) -->
+          <mat-slider style="width:100%;" min="0" max="20" step="1" (input)="sliderChanged($event)"></mat-slider>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+
+  <mat-sidenav #sidenav mode="over" position="end" style="width:30%;">
+      <mat-toolbar>Users</mat-toolbar>
+      <mat-list *ngIf="groupSettings">
+        <mat-list-item *ngFor="let user of groupSettings.users">
+            <button mat-icon-button aria-label="remove user" [disabled]="user.id === userOptions.id" (click)="removeUserFromGroup(user)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          <h4 mat-line [ngStyle]="{'color': user.color}">{{user.name}}</h4>
+        </mat-list-item>
+      </mat-list>
+  </mat-sidenav>
+</mat-sidenav-container>
