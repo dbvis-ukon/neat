@@ -18,7 +18,6 @@ export class AuthGuard implements CanActivate {
   }
 
   checkLogin(url: string): boolean {
-    console.log('check login');
     if (this.userOptionsRepository.getOptions().id) { return true; }
 
     // Store the attempted URL for redirecting
