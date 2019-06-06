@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Episode } from './episode-vis/episode';
+import { Episode } from './episode';
 
 @Injectable({
   providedIn: 'root'

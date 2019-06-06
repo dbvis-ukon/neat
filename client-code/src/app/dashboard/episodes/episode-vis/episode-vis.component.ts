@@ -11,7 +11,7 @@ import {
 } from 'util';
 import {
   Episode
-} from './episode';
+} from '../episode';
 import * as d3 from 'd3';
 import {
   EpisodeCalculatorService
@@ -21,7 +21,7 @@ import {
 } from 'd3';
 import {
   Utterance
-} from './utterance';
+} from '../utterance';
 import { Observable } from 'rxjs';
 
 @Component({

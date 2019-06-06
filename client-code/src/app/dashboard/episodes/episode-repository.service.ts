@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, from, of } from 'rxjs';
-import { Episode } from './episode-vis/episode';
-import { Utterance } from './episode-vis/utterance';
+import { Episode } from './episode';
+import { Utterance } from './utterance';
 import { delay, filter } from 'rxjs/internal/operators';
 import { concatMap } from 'rxjs/internal/operators';
 import { HttpClient } from '@angular/common/http';

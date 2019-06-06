@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Episode } from '../episode-vis/episode';
+import { Episode } from '../episodes/episode';
 import { TimelineOptions } from '../timeline-vis/timeline-options';
 import { MapData } from '../map-vis/map-data';
 import { MatSliderChange } from '@angular/material';

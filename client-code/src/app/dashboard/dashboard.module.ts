@@ -6,16 +6,15 @@ import { AngularResizedEventModule } from 'angular-resize-event';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MapVisComponent } from './map-vis/map-vis.component';
 import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
-import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 
 import { SharedModule } from '@app/shared/shared.module';
+import { EpisodesModule } from './episodes/episodes.module';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     MapVisComponent,
     TimelineVisComponent,
-    EpisodeVisComponent,
   ],
   imports: [
     CommonModule,
@@ -26,7 +25,8 @@ import { SharedModule } from '@app/shared/shared.module';
     MatToolbarModule,
     MatListModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    EpisodesModule
   ],
   exports: [
     DashboardComponent

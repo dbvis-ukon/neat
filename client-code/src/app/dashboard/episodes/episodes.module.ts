@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EpisodeAppComponent } from '../episode-app/episode-app.component';
+import { EpisodeAppComponent } from './episode-app/episode-app.component';
 import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 
 @NgModule({

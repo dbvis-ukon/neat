@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Episode } from '../episodes/episode-vis/episode';
-import { Utterance } from '../episodes/episode-vis/utterance';
-import { EpisodeRepositoryService } from '../episodes/episode-repository.service';
+import { Episode } from '../episode';
+import { Utterance } from '../utterance';
+import { EpisodeRepositoryService } from '../episode-repository.service';
 import { Observable } from 'rxjs';
 
 @Component({
