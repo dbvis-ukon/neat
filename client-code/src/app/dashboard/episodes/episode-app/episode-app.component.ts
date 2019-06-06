@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Episode } from '../episode';
 import { Utterance } from '../utterance';
 import { EpisodeRepositoryService } from '../episode-repository.service';
@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class EpisodeAppComponent implements OnInit {
 
+  @Input()
   newEpisode: Observable<Episode>;
 
   newUtterance: Utterance;
