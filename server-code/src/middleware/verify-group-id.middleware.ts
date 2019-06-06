@@ -5,15 +5,11 @@ export function verifyGroupId( req, res, next ) {
     const groupId = req.headers['group-id'];
 
     if(!groupId) {
-        const err = new ApiError('No group id found in header', 401);
-        err.status = 401;
-        next(err);
+        throw new ApiError('No group id found in header', 401);
     }
 
     if(!RethinkDbService.db().table('groups').getAll(groupId).count().eq(1)) {
-        const err = new ApiError('Your group id is not valid', 401);
-        err.status = 401;
-        next(err);
+        throw new ApiError('Your group id is not valid', 401);
     }
 
     req._groupId = groupId;
