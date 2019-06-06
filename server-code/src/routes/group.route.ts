@@ -3,56 +3,63 @@ import * as uuid from 'uuid/v4';
 import { RethinkDbService } from "../services/rethink-db.service";
 import { Group } from '@shared';
 import { ApiError } from "../utils/error";
+import { wrapAsync } from "../utils/wrap-async";
 
 const groupRouter: express.Router = express.Router();
 
-/* list all routes */
-groupRouter.get('/', (req: any, res) => {
-    RethinkDbService.db().table('groups').run(req._rdb, (err, cursor) => {
-        if(err) throw err
+/**
+ * List all groups
+ */
+groupRouter.get('/', wrapAsync(async (req: any, res, next) => {
+    const cursor = await RethinkDbService.db().table('groups').run(req._rdb);
 
-        cursor.toArray((err, dbResult) => {
-            res.send(dbResult);
-        })
-    });
-});
+    const dbResult = await cursor.toArray();
 
-groupRouter.get('/:groupId', (req: any, res) => {
+    res.send(dbResult);
+}));
+
+/**
+ * Return a specific group
+ */
+groupRouter.get('/:groupId', wrapAsync(async (req: any, res) => {
     console.log('get group', req.params.groupId);
-    RethinkDbService.db().table('groups').get(req.params.groupId).run(req._rdb, (err, group) => {
-        if(err) throw err;
+    
+    const group = await RethinkDbService.db().table('groups').get(req.params.groupId).run(req._rdb);
 
-        if(group === null) {
-            throw new ApiError('Group ' + req.params.groupId + ' could not be found', 404);
-        }
+    if(group === null) {
+        throw new ApiError('Group ' + req.params.groupId + ' could not be found', 404);
+    }
 
-        res.send(group);
-    });
-});
+    res.send(group);
+}));
 
-groupRouter.get('/:groupId/users', (req: any, res) => {
+/**
+ * Return all users in a group
+ */
+groupRouter.get('/:groupId/users', wrapAsync(async (req: any, res) => {
     console.log('show users of ', req.params.groupId)
-    RethinkDbService.db().table('user_options').filter({groupId: req.params.groupId}).run(req._rdb, (err, cursor) => {
-        if(err) throw err;
+    const cursor = await RethinkDbService.db().table('user_options').filter({groupId: req.params.groupId}).run(req._rdb);
 
-        cursor.toArray().then(result => res.send(result));
-    });
-});
+    const result = await cursor.toArray();
+
+    res.send(result);
+}));
 
 
-/* create a new group */
-groupRouter.post('/', (req: any, res, next) => {
+/**
+ * Create a new group
+ */
+groupRouter.post('/', wrapAsync(async (req: any, res, next) => {
     const group: Group = {
         groupId: uuid(),
         name: req.body.name,
         created: new Date()
     }
 
-    RethinkDbService.db().table('groups').insert(group).run(req._rdb, (err, res2) => {
-        if(err) throw err
+    await RethinkDbService.db().table('groups').insert(group).run(req._rdb);
+        
 
-        res.send(group)
-    });
-});
+    res.send(group);
+}));
 
 export default groupRouter;

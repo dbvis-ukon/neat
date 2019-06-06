@@ -4,31 +4,31 @@ import { UserOptions, GroupSettings } from '@shared';
 import { ApiError } from "../utils/error";
 import { verifyGroupId } from "../middleware/verify-group-id.middleware";
 import { MyStompServer } from "../utils/stomp-server";
+import { wrapAsync } from "../utils/wrap-async";
 
 const userOptionsRouter: express.Router = express.Router();
 
-function broadcastToUsers(conn, groupId) {
+async function broadcastToUsers(conn, groupId) {
     const stompServer = MyStompServer.get();
-    RethinkDbService.db().table('user_options').filter({groupId: groupId}).run(conn, (err, cursor) => {
+    const cursor = await RethinkDbService.db().table('user_options').filter({groupId: groupId}).run(conn);
 
-        const groupSettings: GroupSettings = {
-            groupId: groupId,
-            users: []
-        };
+    const groupSettings: GroupSettings = {
+        groupId: groupId,
+        users: []
+    };
 
-        cursor.toArray((err, dbResult) => {
-            dbResult.forEach(user => {
-                groupSettings.users.push(user);
-            })
-            // 
-            stompServer.send('/group/' + groupId, {}, JSON.stringify(groupSettings));
-        })
+    const dbResult = await cursor.toArray();
+
+    dbResult.forEach(user => {
+        groupSettings.users.push(user);
     })
+            
+    stompServer.send('/group/' + groupId, {}, JSON.stringify(groupSettings));
 }
 
 
 /* create a new group */
-userOptionsRouter.post('/', verifyGroupId, (req: any, res, next) => {
+userOptionsRouter.post('/', verifyGroupId, wrapAsync(async (req: any, res, next) => {
     // expects a user options body:
     const userOptions: UserOptions = req.body as UserOptions;
 
@@ -36,24 +36,20 @@ userOptionsRouter.post('/', verifyGroupId, (req: any, res, next) => {
         throw new ApiError('Group Id must be set', 401);
     }
 
-    RethinkDbService.db().table('user_options').get(userOptions.id).replace(userOptions).run(req._rdb, (err, res2) => {
-        if(err) throw err;
+    await RethinkDbService.db().table('user_options').get(userOptions.id).replace(userOptions).run(req._rdb);
 
-        broadcastToUsers(req._rdb, userOptions.groupId);
+    await broadcastToUsers(req._rdb, userOptions.groupId);
 
-        res.send();
-    });
-});
+    res.send();
+}));
 
-userOptionsRouter.delete('/:userId', (req: any, res) => {
-    RethinkDbService.db().table('user_options').get(req.params.userId).delete({returnChanges: true}).run(req._rdb, (err, result: any) => {
-        if(err) throw err;
-        const groupId = result.changes[0].old_val.groupId;
+userOptionsRouter.delete('/:userId', wrapAsync(async (req: any, res) => {
+    const result: any = await RethinkDbService.db().table('user_options').get(req.params.userId).delete({returnChanges: true}).run(req._rdb);
+    const groupId = result.changes[0].old_val.groupId;
 
-        broadcastToUsers(req._rdb, groupId);
+    await broadcastToUsers(req._rdb, groupId);
 
-        res.send();
-    });
-});
+    res.send();
+}));
 
 export default userOptionsRouter;

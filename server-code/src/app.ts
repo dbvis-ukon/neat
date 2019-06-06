@@ -51,7 +51,8 @@ app.use('*', (req, res) => {
 });
 
 /* custom error handler */
-app.use( ( error: ApiError, request, response, next ) => {
+app.use( ( error, request, response, next ) => {
+    console.log('caught error', error);
     response.status( error.status || 500 );
     response.json( {
         error: error.message
