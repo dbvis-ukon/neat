@@ -24,6 +24,7 @@ services:
         - "traefik.frontend.auth.basic=dbvis:$$apr1$$wGL9l34b$$V2ntdEolk36EnbCVwv0xw0"
         # enable compression: https://docs.traefik.io/v2.0/middlewares/compress/
         - "traefik.http.middlewares.test-compress.compress=true"
+        - "traefik.webservice.frontend.entryPoints=http,https"
 
   rethinkdb:
     image: rethinkdb:2.3
