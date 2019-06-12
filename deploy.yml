@@ -29,7 +29,6 @@ services:
     image: rethinkdb:2.3
     networks:
       - default
-    ports:
 
   # postgresdb:
   #   image: kartoza/postgis:latest
