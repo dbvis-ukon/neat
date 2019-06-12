@@ -49,6 +49,5 @@ volumes:
   postgres-data:
 
 networks:
-  default:
   traefik-net:
     external: true
