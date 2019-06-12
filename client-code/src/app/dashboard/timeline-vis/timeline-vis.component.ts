@@ -6,6 +6,7 @@ import { ScaleTime } from 'd3';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from './timeline-other-brushes';
+import { StreamGraph } from './stream-graph';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -31,6 +32,8 @@ export class TimelineVisComponent implements OnInit {
 
   private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
 
+  private streamGraphSelection: d3.Selection<SVGGElement, null, undefined, null>;
+
   private otherBrushesSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
   private timeScale: ScaleTime<number, number> = d3.scaleTime();
@@ -44,6 +47,8 @@ export class TimelineVisComponent implements OnInit {
   .on('end', () => this._brushed());
 
   private brushSelection: d3.Selection<SVGGElement, null, undefined, null>;
+
+  private streamGraph: StreamGraph;
 
 
   private lastBrush: [Date, Date];
@@ -105,6 +110,7 @@ export class TimelineVisComponent implements OnInit {
 
   private initVis(): void {
     this.svgSelection = d3.select(this.svg);
+    this.svgSelection.attr('class', 'timeline-viz');
 
     // add bottom axis
     this.axisSelection = this.svgSelection
@@ -112,6 +118,12 @@ export class TimelineVisComponent implements OnInit {
       .attr('class', 'axis')
       .attr('transform', `translate(0,0)`)
       .call(this.axisBottom);
+
+    this.streamGraphSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'stream-graph');
+
+    this.streamGraph = new StreamGraph(this.streamGraphSelection);
 
     this.otherBrushesSelection = this.svgSelection
       .append('g');
@@ -158,6 +170,8 @@ export class TimelineVisComponent implements OnInit {
     // update the color of the brush
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
+
+    this.streamGraph.render('hello world', this.width, this.height);
   }
 
   /**
