@@ -2,16 +2,17 @@ version: '3'
 
 services:
   server:
-    image: vast-challenge-gc19_server:latest
-    build:
-      dockerfile: ./server-code/Dockerfile
-      context: .
+    image: node:12-alpine
     ports:
       - 3000:3000
     volumes:
       - ./tsconfig.json:/app/tsconfig.json
       - ./shared:/app/shared
       - ./server-code/:/app/server-code
+    working_dir: /app/server-code
+    command: ["sh", "-c", "npm run-script start:watch"]
+    # comment in this line below if you want to install the dependencies on every start
+    #command: ["sh", "-c", "npm install && npm run-script start:watch"]
     environment:
       - DB_HOST=rethinkdb #this must be the same name as the service name (line 27 of this file)
       - DB_NAME=test
@@ -19,15 +20,17 @@ services:
       - rethinkdb
 
   client:
-    image: vast-challenge-gc19_client:latest
-    build:
-      dockerfile: ./client-code/Dockerfile
-      context: .
+    image: node:12-alpine
     ports:
       - 4200:4200
     volumes:
+      - ./tsconfig.json:/app/tsconfig.json
       - ./shared:/app/shared
       - ./client-code/:/app/client-code
+    working_dir: /app/client-code
+    command: ["sh", "-c", "npm run-script start:docker"]
+    # comment in this line below if you want to install the dependencies on every start
+    #command: ["sh", "-c", "npm install && npm run-script start:docker"]
 
   rethinkdb:
     image: rethinkdb:2.3

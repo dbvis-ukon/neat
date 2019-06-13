@@ -69,6 +69,7 @@ deploy:swarm:
   script:
     - docker-compose -f deploy.yml build
     - docker-compose -f deploy.yml push
+    - docker stack rm vcgc19
     - docker stack deploy --compose-file deploy.yml vcgc19
   dependencies:
     - build:shared

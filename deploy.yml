@@ -27,6 +27,8 @@ services:
 
   rethinkdb:
     image: rethinkdb:2.3
+    networks:
+      - default
 
   # postgresdb:
   #   image: kartoza/postgis:latest
@@ -47,6 +49,5 @@ volumes:
   postgres-data:
 
 networks:
-  default:
   traefik-net:
     external: true
