@@ -7,6 +7,8 @@ import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from './timeline-other-brushes';
 import { StreamGraph } from './stream-graph';
+import { streamgraph_data } from './streamgraph_data';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -55,7 +57,9 @@ export class TimelineVisComponent implements OnInit {
 
   private brushDebouncer: Subject<[Date, Date]> = new Subject();
 
-  constructor() { }
+  private streamGraphData: streamgraph_data[];
+
+  constructor(private http: HttpClient) { }
 
   @Input()
   set options(options: TimelineOptions) {
@@ -97,11 +101,15 @@ export class TimelineVisComponent implements OnInit {
     this.updateRanges();
 
     this.updateRender();
+
+    this.http.get<streamgraph_data[]>('/assets/streamgraphdata.json').subscribe(data => {
+      this.streamGraphData = data;
+    });
   }
 
   onResized(event: ResizedEvent) {
     this.width = event.newWidth - 30;
-    this.height = 40; // constant height
+    this.height = 100; // constant height
 
     this.updateRanges();
 
@@ -171,7 +179,7 @@ export class TimelineVisComponent implements OnInit {
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
 
-    this.streamGraph.render('hello world', this.width, this.height);
+    this.streamGraph.render(this.streamGraphData, this.width, this.height);
   }
 
   /**
