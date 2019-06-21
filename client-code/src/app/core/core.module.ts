@@ -1,10 +1,12 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { UserOptionsRepositoryService, GroupRepositoryService } from '.';
+import { TooltipService } from './services/tooltip.service';
 
 @NgModule({
   providers: [
     UserOptionsRepositoryService,
-    GroupRepositoryService
+    GroupRepositoryService,
+    TooltipService
   ]
 })
 export class CoreModule {
