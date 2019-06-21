@@ -8,16 +8,21 @@ import { MatIconModule, MatToolbarModule, MatButtonModule, MatInputModule, MatDi
 import { FormsModule } from '@angular/forms';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { ResizedDirective } from './resized.directive';
+import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.component';
+import { DemoVisComponent } from './demo-vis/demo-vis.component';
 
 @NgModule({
   entryComponents: [
-    UserOptionsDialogComponent
+    UserOptionsDialogComponent,
+    ExampleTooltipComponent
   ],
   declarations: [
     UserOptionsDialogComponent,
     UserOptionsComponent,
     HeaderComponent,
-    ResizedDirective
+    ResizedDirective,
+    ExampleTooltipComponent,
+    DemoVisComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +39,9 @@ import { ResizedDirective } from './resized.directive';
     UserOptionsDialogComponent,
     UserOptionsComponent,
     HeaderComponent,
-    ResizedDirective
+    ResizedDirective,
+    ExampleTooltipComponent,
+    DemoVisComponent
   ]
 })
 export class SharedModule {

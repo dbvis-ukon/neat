@@ -20,6 +20,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
   entryComponents: [
@@ -32,6 +33,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    OverlayModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
