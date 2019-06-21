@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AuthGuard } from '@app/core';
+import { DemoVisComponent } from './shared/demo-vis/demo-vis.component';
 
 const routes: Routes = [
   {
@@ -22,9 +23,14 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-  path: 'echotest',
-  component: EchoTestComponent
-}];
+    path: 'echotest',
+    component: EchoTestComponent
+  },
+  {
+    path: 'demovis',
+    component: DemoVisComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
