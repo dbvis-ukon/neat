@@ -112,6 +112,66 @@ The HTML part is simple:
 
 Remember that you have a fully-featured angular component here so you can nest any other components and you do all the angular magic (ngFor, ngIf, etc).
 
+Now the tooltip component must be added to the module as an entryComponent.
+```typescript
+import { NgModule, ModuleWithProviders } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { UserOptionsDialogComponent } from './user-options-dialog/user-options-dialog.component';
+import { HeaderComponent } from './header/header.component';
+import { UserOptionsComponent } from './user-options/user-options.component';
+import { AppRoutingModule } from '@app/app-routing.module';
+import { MatIconModule, MatToolbarModule, MatButtonModule, MatInputModule, MatDialogModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { ColorPickerModule } from 'ngx-color-picker';
+import { ResizedDirective } from './resized.directive';
+import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.component';
+import { DemoVisComponent } from './demo-vis/demo-vis.component';
+
+@NgModule({
+  entryComponents: [
+    UserOptionsDialogComponent,
+    ExampleTooltipComponent // add your tooltip component here!
+  ],
+  declarations: [
+    UserOptionsDialogComponent,
+    UserOptionsComponent,
+    HeaderComponent,
+    ResizedDirective,
+    ExampleTooltipComponent, // this should be already here automatically when you execute the ng g component ... command.
+    DemoVisComponent
+  ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    AppRoutingModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatInputModule,
+    ColorPickerModule,
+    MatDialogModule
+  ],
+  exports: [
+    UserOptionsDialogComponent,
+    UserOptionsComponent,
+    HeaderComponent,
+    ResizedDirective,
+    DemoVisComponent
+  ]
+})
+export class SharedModule {
+
+  static forRoot(): ModuleWithProviders<SharedModule> {
+    return {
+      ngModule: SharedModule,
+      providers: []
+    };
+  }
+}
+```
+In this example, this is the shared module, but you can simply add your tooltip component to your module (you may have to add the entryComponents key)
+
+
 The final step is to add the tooltip to our visualization. I've created a small demo visualization:
 
 ```typescript
