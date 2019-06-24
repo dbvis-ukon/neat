@@ -34,3 +34,158 @@ When changing a file in the client code the dev-server will restart automaticall
 
 The database to exchange data between the clients is RethinkDB because it allows observing for changes in a specific table.
 RethinkDB provides an admin interface on http://localhost:8080
+
+### How to: Tooltip (Angular Style)
+
+An angular tooltip is an angular component. This means that you have the full capabilities available with double-databinding and nesting other components (e.g., to add another visualization in your tooltip)..
+Okay so first you'll need your tooltip component so let's create it:
+
+```shell
+ng g component dashboard/episodes/episode-tooltip
+```
+
+This will create a component `episode-tooltip` in the episodes module (which itself is part of the dashboard module).
+Your tooltip should have some input data to be able to show dynamic content.
+
+An example tooltip component I created looks like this:
+
+```typescript
+import { Component, OnInit, Input } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/animations';
+
+@Component({
+  selector: 'dbvis-example-tooltip',
+  templateUrl: './example-tooltip.component.html',
+  styleUrls: ['./example-tooltip.component.less'],
+  animations: [
+    trigger('tooltip', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(300, style({ opacity: 1 })),
+      ]),
+      transition(':leave', [
+        animate(300, style({ opacity: 0 })),
+      ]),
+    ]),
+  ],
+})
+export class ExampleTooltipComponent implements OnInit {
+
+  @Input()
+  text: string;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+```
+
+I've only added a text property of type string and defined it as an Input. Of course you are completely free to use any input data or even multiple attributes.
+The animations section is optional but it will give our tooltip a nice fade-in fade-out animation.
+To make our tooltip look nice I've added the following in the tooltip-component.less:
+
+```css
+:host {
+    display: block;
+    position: fixed;
+    pointer-events: none; // this is used that the tooltip does not block the mouse
+}
+  
+div { // just some generic styling for the tooltip
+    background-color: #292929;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+```
+
+The HTML part is simple:
+```html
+<div>
+  <h3>I'm a tooltip!</h3>
+
+  <p>My text: {{ text }}</p>
+</div>
+```
+
+Remember that you have a fully-featured angular component here so you can nest any other components and you do all the angular magic (ngFor, ngIf, etc).
+
+The final step is to add the tooltip to our visualization. I've created a small demo visualization:
+
+```typescript
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import * as d3 from 'd3';
+import { TooltipService } from '@app/core/services/tooltip.service';
+import { ExampleTooltipComponent } from '../example-tooltip/example-tooltip.component';
+
+@Component({
+  selector: 'dbvis-demo-vis',
+  template: `<svg #svg></svg>`,
+  styleUrls: ['./demo-vis.component.less']
+})
+export class DemoVisComponent implements OnInit {
+
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+
+  constructor(private tooltipService: TooltipService) { }
+
+  ngOnInit() {
+    const svgElement = this.svgRef.nativeElement;
+
+    const svg = d3.select(svgElement)
+      .attr('width', 500)
+      .attr('height', 300)
+      .style('border', '1px solid black');
+
+    svg
+      .append('text')
+      .attr('x', 50)
+      .attr('y', 50)
+      .text('Hello world! Hover me for a tooltip!')
+      .on('mouseenter', () => {
+        const mouseEvent: MouseEvent = d3.event;
+
+        const exampleTooltipComponentInstance = this.tooltipService.openAtMousePosition(ExampleTooltipComponent, mouseEvent);
+
+        const randomNumber = Math.random();
+
+        exampleTooltipComponentInstance.text = 'Hello world in tooltip with random number: ' + randomNumber;
+      })
+      .on('mouseleave', () => {
+        this.tooltipService.close();
+      });
+  }
+
+}
+```
+
+Step 1: Inject the `TooltipService`. You can simply do this by adding it to your constructor:
+
+```typescript
+    constructor(private tooltipService: TooltipService) { }
+```
+
+Step 2: Open the tooltip:
+```typescript
+    d3....
+      .on('mouseenter', () => {
+        const mouseEvent: MouseEvent = d3.event;
+
+        const exampleTooltipComponentInstance = this.tooltipService.openAtMousePosition(ExampleTooltipComponent, mouseEvent);
+
+        const randomNumber = Math.random();
+
+        exampleTooltipComponentInstance.text = 'Hello world in tooltip with random number: ' + randomNumber;
+      })
+      .on('mouseleave', () => {
+        this.tooltipService.close();
+      });
+```
+
+Using the tooltipService we can open a tooltip at the current mouse position, simply tell the service which tooltip-component to loead and provide it with the mouse event.
+The function will return an **instance** of your component. With that instance you are able to set the data properties or you could also call any method of your tooltip component.
+
+
+You can try out this with http://localhost:4200/demovis
