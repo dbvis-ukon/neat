@@ -3,6 +3,8 @@ import { Episode } from '../episode';
 import { Utterance } from '../utterance';
 import { EpisodeRepositoryService } from '../episode-repository.service';
 import { Observable } from 'rxjs';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+
 
 @Component({
   selector: 'dbvis-episode-app',
@@ -11,10 +13,11 @@ import { Observable } from 'rxjs';
 })
 export class EpisodeAppComponent implements OnInit {
 
-  @Input()
+  allEpisodes: Array<Observable<Episode>> = [];
+
   newEpisode: Observable<Episode>;
 
-  newUtterance: Utterance;
+  newUtterance: Observable<Utterance>;
 
   allEpisodeClasses = [{
     class: '1',
@@ -27,9 +30,16 @@ export class EpisodeAppComponent implements OnInit {
   constructor(private episodeRepositoryService: EpisodeRepositoryService) { }
 
   ngOnInit() {
-    this.episodeRepositoryService.subscribeUtterance().subscribe(utterance => this.newUtterance = utterance);
-
+    this.newUtterance = this.episodeRepositoryService.subscribeUtterance();
     this.newEpisode = this.episodeRepositoryService.subscribeEpisode();
+
+    this.allEpisodes = this.episodeRepositoryService.subscribeAllEpisodes();
   }
+
+  drop(event: CdkDragDrop<Episode[]>) {
+    console.log("move");
+    moveItemInArray(this.allEpisodes, event.previousIndex, event.currentIndex);
+}
+
 
 }

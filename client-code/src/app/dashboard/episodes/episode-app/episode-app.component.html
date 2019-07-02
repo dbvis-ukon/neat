@@ -1,5 +1,7 @@
-<!-- <div *ngFor="let classItem of allEpisodeClasses">
-    <dbvis-episode-vis [episode]="classItem.episode" [utterance]="classItem.utterance"></dbvis-episode-vis>
-</div> -->
+<div cdkDropList class="container" (cdkDropListDropped)="drop($event)">
+    <div class="episodeDiv" *ngFor="let episode of allEpisodes" cdkDrag>
+        <h3>CATEGORY</h3>
+        <dbvis-episode-vis [episode]="episode" [utterance]="newUtterance"></dbvis-episode-vis>
+    </div>
+</div>
 
-<dbvis-episode-vis [episode]="newEpisode" [utterance]="newUtterance"></dbvis-episode-vis>

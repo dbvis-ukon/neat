@@ -1,4 +1,6 @@
 export interface Utterance {
-    sentences: {text: string, id: number}[];
-    id: {counter: number};
+    text: string;
+    location: string;
+    timestamp: string;
+    account: string;
 }

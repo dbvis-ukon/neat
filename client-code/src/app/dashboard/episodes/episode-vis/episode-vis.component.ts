@@ -12,6 +12,9 @@ import {
 import {
   Episode
 } from '../episode';
+import {
+  Line
+} from '../line';
 import * as d3 from 'd3';
 import {
   EpisodeCalculatorService
@@ -23,6 +26,8 @@ import {
   Utterance
 } from '../utterance';
 import { Observable } from 'rxjs';
+import { TooltipService } from '@app/core/services/tooltip.service';
+import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -35,6 +40,7 @@ export class EpisodeVisComponent implements OnInit {
   @ViewChild('svg') svgRef: ElementRef < SVGElement > ;
 
   private _episode: Observable<Episode>;
+  private _utterance: Observable<Utterance>;
 
   /**
    * the svg element
@@ -45,23 +51,26 @@ export class EpisodeVisComponent implements OnInit {
 
   private chartSelection: Selection < SVGGElement, undefined, null, undefined > ;
 
-  private _utterance: Utterance;
+  //private _utterance: Utterance;
 
   private numberOfSentences = 0;
-  private svgWidth = 1000; // ToDo take the info about maxColumn
-  private svgHeight = 11000;
+  private svgWidth = 400; // ToDo take the info about maxColumn
+  private svgHeight = 2200;
   private oneTextElementHeight = 3; // ToDo change of the height of one sentence
   private paddingHeight = 50;
-  private paddingForLabels = 4000;
+  private paddingForLabels = 3500;
   private barWidth = 50;
   private fontSize = 100;
   private heightScale = 0;
+  private timestamps: string[] = [];
+  private lastBarY = 0;
 
   private myEpisodes: Episode[] = [];
+  private myUtterances: Utterance[] = [];
 
   private sortedLabels = [];
 
-  constructor(private episodeCalculator: EpisodeCalculatorService) {}
+  constructor(private episodeCalculator: EpisodeCalculatorService, private tooltipService: TooltipService) {}
 
   ngOnInit() {
     console.log('initialize');
@@ -81,15 +90,11 @@ export class EpisodeVisComponent implements OnInit {
     if (isNullOrUndefined(episodeObservable)) {
       return;
     }
-
-    console.log('new episode received');
-
     this._episode = episodeObservable;
 
     this._episode.subscribe(episode => {
+      if (episode.significance >= 40) {
       this.addData(episode);
-      console.log(this.myEpisodes);
-
       /*first sort episodes according to their occurrence in text*/
       this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
       this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
@@ -98,9 +103,9 @@ export class EpisodeVisComponent implements OnInit {
       this.updateLayout(this.numberOfSentences);
 
       /* create small lines on top of the episode bars to show where exactly they occur in text */
-      // var lineData = $scope.getLineData(episodes);
-      // $scope.createEpisodeLines(lineData);
-      // $scope.updateEpisodeLines(lineData);
+      const lineData = this.getLineData(this.myEpisodes);
+      this.createEpisodeLines(lineData);
+      this.updateEpisodeLines(lineData);
 
       /* create labels */
       // this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
@@ -112,6 +117,7 @@ export class EpisodeVisComponent implements OnInit {
       /* create lines to link episode bars to their labels */
       this.createEpisodeToLabelConnectingLine(this.myEpisodes);
       this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
+      }
     });
   }
 
@@ -120,8 +126,8 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   @Input()
-  set utterance(utterance: Utterance) {
-    if (isNullOrUndefined(utterance)) {
+  set utterance(utteranceObservable: Observable<Utterance>) {
+    if (isNullOrUndefined(utteranceObservable)) {
       return;
     }
     // this._utterance = utterance;
@@ -129,25 +135,27 @@ export class EpisodeVisComponent implements OnInit {
     // this.numberOfSentences += utterance.sentences.length;
     // this.updateUtterance(utterance);
     // this.updateLayout(this.numberOfSentences);
+    
+    this._utterance = utteranceObservable;
+
+    this._utterance.subscribe(utterance => {
+    this.myUtterances.push(utterance);
+    //console.log(this.myUtterances);
+    this.addTimestamps(utterance)
+    });
   }
 
-  get utterance(): Utterance {
+  private addTimestamps(utterance: Utterance): void {
+    if(this.timestamps.indexOf(utterance.timestamp)===-1){
+      this.timestamps.push(utterance.timestamp);
+    }
+  }
+
+  get utterance(): Observable<Utterance> {
     return this._utterance;
   }
 
-
-  private draw(): void {
-    // explanation why this fails:
-
-    // Episodes must be either an array: Episodes[]
-
-    // Or the Episodes object must contain an array that can be put into the .data function (e.g., this._data.dataArray)
-
-    // d3.select(this.svg)
-    //   .data(this._data);
-  }
-
-   // *******************************************************************
+  // *******************************************************************
   // helper functions **************************************************
   // *******************************************************************
   // sort episode bars, code taken from Christopher Rohrdantz
@@ -160,9 +168,10 @@ export class EpisodeVisComponent implements OnInit {
     }
 
     episodes.forEach((episode) => {
-      const globalUtteranceIndexesForWords: number[] = []; // episode.rowIndexesForSentences;
-      globalUtteranceIndexesForWords.push(episode.startSentence);
-      globalUtteranceIndexesForWords.push(episode.endSentence);
+      let globalUtteranceIndexesForWords: number[] = []; // episode.rowIndexesForSentences;
+      //globalUtteranceIndexesForWords.push(episode.startSentence);
+      //globalUtteranceIndexesForWords.push(episode.endSentence);
+      globalUtteranceIndexesForWords = episode.rowIds;
       const firstRowPosition = globalUtteranceIndexesForWords[0];
       const lastRowPosition = globalUtteranceIndexesForWords[globalUtteranceIndexesForWords.length - 1];
 
@@ -212,13 +221,13 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection
       .append('g')
       .attr('id', 'gContainerForEpisodeBars')
-      .attr('transform', 'scale(0.1, 0.1)');
+      .attr('transform', 'translate(0, 0)scale(0.1, 0.1)');
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
     // add episodes
     // attributes for episode: id, columnId, rowIds, color
-    d3.select('#gContainerForEpisodeBars')
+    this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('rect')
       .data < Episode > (episodes)
       .enter()
@@ -228,19 +237,16 @@ export class EpisodeVisComponent implements OnInit {
       .style('fill', (d) => 'rgb(' + d.color + ')');
 
     this.update();
+   // console.log(this._utterance);
   }
 
   private updateLayout(numberOfTextElements: number): void {
     // this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
     this.heightScale = window.innerHeight / this.svgHeight;
-
     this.svgSelection
       .attr('height', this.svgHeight);
   }
 
-  private getCurrentNumberOfTextElements(utterances: Utterance[]): number {
-    return utterances[utterances.length - 1].sentences[utterances[utterances.length - 1].sentences.length - 1].id; // ToDo check whether it fits to Fabian's data structure
-  }
 
   private addData(episode: Episode): void {
     if (episode.type === 'ADD') {
@@ -297,77 +303,94 @@ export class EpisodeVisComponent implements OnInit {
   //   this.update();
   // }
 
+
+  
+
   private update(): void {
+
     d3.selectAll < SVGRectElement, Episode > ('.episodeBar')
       .attr('x', (d) => this.paddingForLabels + this.svgWidth / 3 - (this.barWidth * d.columnId))
-      .attr('y', (d) => this.paddingHeight + this.oneTextElementHeight * d.rowIds[0])
+      .attr('y', (d) => {
+        if(this.lastBarY<d.rowIds[d.rowIds.length - 1]*0.1){
+          this.lastBarY = d.rowIds[d.rowIds.length - 1]*0.1;
+        }
+        return this.paddingHeight + this.oneTextElementHeight * d.rowIds[0];
+      })
       .attr('height', (d) => this.oneTextElementHeight * (d.rowIds[d.rowIds.length - 1] - d.rowIds[0]))
       .attr('width', this.barWidth)
-      .style('fill', (d) => d.color);
+      .style('fill', (d) => d.color)
+      .on('mouseenter', (d) => {
+        //const mouseEvent: MouseEvent = d3.event;
+
+        //const episodeTooltipComponentInstance = this.tooltipService.openAtMousePosition(EpisodeTooltipComponent, mouseEvent);
+
+        this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', true);
+
+      })
+      .on('mouseout', (d) => {
+        //this.tooltipService.close();
+        this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', false);
+      });
+;
 
     // bars.exit().remove();
     console.log('updated');
   }
 
-  // private createEpisodeLines(lines): void {
-  //   d3.select('#gContainerForEpisodeBars')
-  //     .selectAll('line')
-  //     .data(lines)
-  //     .enter()
-  //     .append('line')
-  //     .attr('class', 'episodeLine');
-  // };
+  private createEpisodeLines(lines: Line[]): void {
+    this.svgSelection.select('#gContainerForEpisodeBars')
+      .selectAll('.episodeLine').remove();
+    this.svgSelection.select('#gContainerForEpisodeBars')
+      .selectAll('.episodeLine')
+      .data(lines)
+      .enter()
+      .append('line')
+      .attr('class', 'episodeLine');
+  };
 
-  //  private updateEpisodeLines(lines) {
-  //     d3.select('#gContainerForEpisodeBars')
-  //       .selectAll('.episodeLine')
-  //       .data(lines)
-  //       .attr('x1', function (d) {
-  //         return d.x1;
-  //       })
-  //       .attr('y1', function (d) {
-  //         return d.y1;
-  //       })
-  //       .attr('x2', function (d) {
-  //         return d.x2;
-  //       })
-  //       .attr('y2', function (d) {
-  //         return d.y2;
-  //       })
-  //       .style('stroke', 'black')
-  //       .style('stroke-width', 5);
-  //   };
+   private updateEpisodeLines(lines: Line[]): void {
+    this.svgSelection.select('#gContainerForEpisodeBars')
+        .selectAll('.episodeLine')
+        .data(lines)
+        .attr('x1', (d) => d.x1)
+        .attr('y1', (d) => d.y1)
+        .attr('x2', (d) => d.x2)
+        .attr('y2', (d) => d.y2)
+        .style('stroke', 'black')
+        .style('stroke-width', 1);
+    };
 
   private createLabels(episodes: Episode[]): void {
-    d3.selectAll('.episodeLabel').remove();
-    d3.select('#gContainerForEpisodeBars')
+    this.svgSelection.selectAll('.episodeLabel').remove();
+    this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('text')
       .data < Episode > (episodes)
       .enter()
       .append('text')
-      .text((d) => d.lemma)
+      .text((d) => {
+        if(d.lemma.length<50){
+          return d.lemma;
+        } else {
+          return d.lemma.substring(0, 50) + '...';
+        }
+      })
       .attr('class', 'episodeLabel')
+      .attr('id', (d) => 'label' + d.id)
       .style('font-size', this.fontSize);
   }
 
 
   private updateEpisodeLabels(episodes: Episode[]): void {
-    d3.select('#gContainerForEpisodeBars')
+    this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeLabel')
       .data < Episode > (episodes)
-      // .attr('asd', function(d) {
-      //   d3.select(this);
-      // })
-      // .attr('asd', (data, index, nodes) => {
-      //   d3.select(nodes[index]);
-      // })
       .attr('x', () => 0)
       .attr('y', (d, i) => this.paddingHeight + this.sortedLabels[i])
       .style('font-size', this.fontSize);
   }
 
   private createEpisodeToLabelConnectingLine(episodes: Episode[]): void {
-    d3.select('#gContainerForEpisodeBars')
+    this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeToLabelLine')
       .data(episodes)
       .enter()
@@ -376,7 +399,7 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private updateEpisodeToLabelConnectingLine(episodes: Episode[]): void {
-    d3.select('#gContainerForEpisodeBars')
+    this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeToLabelLine')
       .data<Episode>(episodes)
       .attr('x1', this.fontSize * 4)
@@ -457,21 +480,21 @@ export class EpisodeVisComponent implements OnInit {
     return allLabels;
   }
 
-  // private getLineData(episodes) {
-  //   var that = this;
-  //   var linesData = [];
-  //   episodes.forEach(function (episode) {
-  //     episode.rowIndexesForSentences.forEach(function (row) {
-  //       linesData.push({
-  //         'x1': that.paddingForLabels + (that.svgWidth / 3) - (that.barWidth * episode.columnId),
-  //         'x2': that.paddingForLabels + (that.svgWidth / 3) - (that.barWidth * episode.columnId - that.barWidth),
-  //         'y1': that.paddingHeight + row * that.oneTextElementHeight,
-  //         'y2': that.paddingHeight + row * that.oneTextElementHeight
-  //       });
-  //     });
-  //   });
-  //   return linesData;
-  // }
+  private getLineData(episodes: Episode[]): Line[] {
+    const that = this;
+    const linesData = [];
+    episodes.forEach((episode) => {
+      episode.rowIds.forEach((row, i) => {
+        linesData.push({
+          x1: that.paddingForLabels + (that.svgWidth / 3) - (that.barWidth * episode.columnId),
+          x2: that.paddingForLabels + (that.svgWidth / 3) - (that.barWidth * episode.columnId - that.barWidth),
+          y1: that.paddingHeight + row * that.oneTextElementHeight,
+          y2: that.paddingHeight + row * that.oneTextElementHeight
+        });
+      });
+    });
+    return linesData;
+  }
 
   private sortEpisodes(episodes) {
     return episodes.sort(this.compareBasedOnPosition);

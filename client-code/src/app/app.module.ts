@@ -21,6 +21,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { EpisodesModule } from './dashboard/episodes/episodes.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   entryComponents: [
@@ -47,6 +49,8 @@ import { OverlayModule } from '@angular/cdk/overlay';
     MatListModule,
     MatCardModule,
     DashboardModule,
+    EpisodesModule,
+    DragDropModule
   ],
   providers: [
     {
