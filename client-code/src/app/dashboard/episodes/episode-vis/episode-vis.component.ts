@@ -25,9 +25,10 @@ import {
 import {
   Utterance
 } from '../utterance';
-import { Observable } from 'rxjs';
-import { TooltipService } from '@app/core/services/tooltip.service';
-import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
+import {Observable} from 'rxjs';
+import {TooltipService} from '@app/core/services/tooltip.service';
+import {EpisodeTooltipComponent} from '../episode-tooltip/episode-tooltip.component';
+import {UserOptionsRepositoryService} from "@app/core";
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -37,21 +38,16 @@ import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.comp
 })
 export class EpisodeVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef < SVGElement > ;
-
-  private _episode: Observable<Episode>;
-  private _utterance: Observable<Utterance>;
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
 
   /**
    * the svg element
    */
   private svg: SVGElement;
 
-  private svgSelection: Selection < SVGElement, undefined, null, undefined > ;
+  private svgSelection: Selection<SVGElement, undefined, null, undefined>;
 
-  private chartSelection: Selection < SVGGElement, undefined, null, undefined > ;
-
-  //private _utterance: Utterance;
+  private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
 
   private numberOfSentences = 0;
   private svgWidth = 400; // ToDo take the info about maxColumn
@@ -66,11 +62,13 @@ export class EpisodeVisComponent implements OnInit {
   private lastBarY = 0;
 
   private myEpisodes: Episode[] = [];
-  private myUtterances: Utterance[] = [];
 
   private sortedLabels = [];
 
-  constructor(private episodeCalculator: EpisodeCalculatorService, private tooltipService: TooltipService) {}
+  constructor(private episodeCalculator: EpisodeCalculatorService,
+              private tooltipService: TooltipService,
+              private userOptionsService: UserOptionsRepositoryService) {
+  }
 
   ngOnInit() {
     console.log('initialize');
@@ -82,77 +80,50 @@ export class EpisodeVisComponent implements OnInit {
       .append('g');
 
     this.createFirst();
+
+    this.userOptionsService.userOptions$.subscribe(options => {
+      // TODO filter stuff
+      console.log(options);
+      this.createOrUpdateVis();
+    });
   }
 
 
   @Input()
-  set episode(episodeObservable: Observable<Episode>) {
+  set episode(episodeObservable: Observable<Episode[]>) {
     if (isNullOrUndefined(episodeObservable)) {
       return;
     }
-    this._episode = episodeObservable;
 
-    this._episode.subscribe(episode => {
-      if (episode.significance >= 40) {
-      this.addData(episode);
-      /*first sort episodes according to their occurrence in text*/
-      this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
-      this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
-
-      this.createEpisodeBars(this.myEpisodes, this.numberOfSentences);
-      this.updateLayout(this.numberOfSentences);
-
-      /* create small lines on top of the episode bars to show where exactly they occur in text */
-      const lineData = this.getLineData(this.myEpisodes);
-      this.createEpisodeLines(lineData);
-      this.updateEpisodeLines(lineData);
-
-      /* create labels */
-      // this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
-      const labels = this.getLabelData(this.myEpisodes);
-      this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
-      this.createLabels(this.myEpisodes);
-      this.updateEpisodeLabels(this.myEpisodes);
-
-      /* create lines to link episode bars to their labels */
-      this.createEpisodeToLabelConnectingLine(this.myEpisodes);
-      this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
-      }
+    episodeObservable.subscribe(episodes => {
+      this.myEpisodes = episodes.filter(e => e.significance > 40);
+      this.createOrUpdateVis();
     });
   }
 
-  get episode(): Observable<Episode> {
-    return this._episode;
-  }
+  private createOrUpdateVis() {
+    /*first sort episodes according to their occurrence in text*/
+    this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
+    this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
 
-  @Input()
-  set utterance(utteranceObservable: Observable<Utterance>) {
-    if (isNullOrUndefined(utteranceObservable)) {
-      return;
-    }
-    // this._utterance = utterance;
-    // console.log('new utterance received', utterance);
-    // this.numberOfSentences += utterance.sentences.length;
-    // this.updateUtterance(utterance);
-    // this.updateLayout(this.numberOfSentences);
-    
-    this._utterance = utteranceObservable;
+    this.createEpisodeBars(this.myEpisodes, this.numberOfSentences);
+    this.updateLayout(this.numberOfSentences);
 
-    this._utterance.subscribe(utterance => {
-    this.myUtterances.push(utterance);
-    //console.log(this.myUtterances);
-    this.addTimestamps(utterance)
-    });
-  }
+    /* create small lines on top of the episode bars to show where exactly they occur in text */
+    const lineData = this.getLineData(this.myEpisodes);
+    this.createEpisodeLines(lineData);
+    this.updateEpisodeLines(lineData);
 
-  private addTimestamps(utterance: Utterance): void {
-    if(this.timestamps.indexOf(utterance.timestamp)===-1){
-      this.timestamps.push(utterance.timestamp);
-    }
-  }
+    /* create labels */
+    // this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
+    const labels = this.getLabelData(this.myEpisodes);
+    this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
+    this.createLabels(this.myEpisodes);
+    this.updateEpisodeLabels(this.myEpisodes);
 
-  get utterance(): Observable<Utterance> {
-    return this._utterance;
+    /* create lines to link episode bars to their labels */
+    this.createEpisodeToLabelConnectingLine(this.myEpisodes);
+    this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
   }
 
   // *******************************************************************
@@ -229,7 +200,7 @@ export class EpisodeVisComponent implements OnInit {
     // attributes for episode: id, columnId, rowIds, color
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('rect')
-      .data < Episode > (episodes)
+      .data <Episode>(episodes)
       .enter()
       .append('rect')
       .attr('class', 'episodeBar')
@@ -237,7 +208,7 @@ export class EpisodeVisComponent implements OnInit {
       .style('fill', (d) => 'rgb(' + d.color + ')');
 
     this.update();
-   // console.log(this._utterance);
+    // console.log(this._utterance);
   }
 
   private updateLayout(numberOfTextElements: number): void {
@@ -304,15 +275,13 @@ export class EpisodeVisComponent implements OnInit {
   // }
 
 
-  
-
   private update(): void {
 
-    d3.selectAll < SVGRectElement, Episode > ('.episodeBar')
+    d3.selectAll <SVGRectElement, Episode>('.episodeBar')
       .attr('x', (d) => this.paddingForLabels + this.svgWidth / 3 - (this.barWidth * d.columnId))
       .attr('y', (d) => {
-        if(this.lastBarY<d.rowIds[d.rowIds.length - 1]*0.1){
-          this.lastBarY = d.rowIds[d.rowIds.length - 1]*0.1;
+        if (this.lastBarY < d.rowIds[d.rowIds.length - 1] * 0.1) {
+          this.lastBarY = d.rowIds[d.rowIds.length - 1] * 0.1;
         }
         return this.paddingHeight + this.oneTextElementHeight * d.rowIds[0];
       })
@@ -331,7 +300,7 @@ export class EpisodeVisComponent implements OnInit {
         //this.tooltipService.close();
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', false);
       });
-;
+    ;
 
     // bars.exit().remove();
     console.log('updated');
@@ -348,27 +317,27 @@ export class EpisodeVisComponent implements OnInit {
       .attr('class', 'episodeLine');
   };
 
-   private updateEpisodeLines(lines: Line[]): void {
+  private updateEpisodeLines(lines: Line[]): void {
     this.svgSelection.select('#gContainerForEpisodeBars')
-        .selectAll('.episodeLine')
-        .data(lines)
-        .attr('x1', (d) => d.x1)
-        .attr('y1', (d) => d.y1)
-        .attr('x2', (d) => d.x2)
-        .attr('y2', (d) => d.y2)
-        .style('stroke', 'black')
-        .style('stroke-width', 1);
-    };
+      .selectAll('.episodeLine')
+      .data(lines)
+      .attr('x1', (d) => d.x1)
+      .attr('y1', (d) => d.y1)
+      .attr('x2', (d) => d.x2)
+      .attr('y2', (d) => d.y2)
+      .style('stroke', 'black')
+      .style('stroke-width', 1);
+  };
 
   private createLabels(episodes: Episode[]): void {
     this.svgSelection.selectAll('.episodeLabel').remove();
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('text')
-      .data < Episode > (episodes)
+      .data <Episode>(episodes)
       .enter()
       .append('text')
       .text((d) => {
-        if(d.lemma.length<50){
+        if (d.lemma.length < 50) {
           return d.lemma;
         } else {
           return d.lemma.substring(0, 50) + '...';
@@ -383,7 +352,7 @@ export class EpisodeVisComponent implements OnInit {
   private updateEpisodeLabels(episodes: Episode[]): void {
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeLabel')
-      .data < Episode > (episodes)
+      .data <Episode>(episodes)
       .attr('x', () => 0)
       .attr('y', (d, i) => this.paddingHeight + this.sortedLabels[i])
       .style('font-size', this.fontSize);
@@ -411,7 +380,6 @@ export class EpisodeVisComponent implements OnInit {
   }
 
 
-
   private setColumnPartOccupied(episodeLayout, leftmostNotOccupied, firstRowPosition, lastRowPosition): void {
     let tmpRow = [];
 
@@ -432,7 +400,7 @@ export class EpisodeVisComponent implements OnInit {
   private getLabelData(episodes: Episode[]): any[] {
     const that = this;
     const labels = [];
-    episodes.forEach(function(episode) {
+    episodes.forEach(function (episode) {
       labels.push(that.paddingHeight + episode.rowIds[0] * that.oneTextElementHeight);
     });
     return labels;

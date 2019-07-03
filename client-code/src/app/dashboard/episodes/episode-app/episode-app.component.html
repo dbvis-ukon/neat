@@ -1,7 +1,9 @@
 <div cdkDropList class="container" (cdkDropListDropped)="drop($event)">
-    <div class="episodeDiv" *ngFor="let episode of allEpisodes" cdkDrag>
-        <h3>CATEGORY</h3>
-        <dbvis-episode-vis [episode]="episode" [utterance]="newUtterance"></dbvis-episode-vis>
+    <div class="episodeDiv" *ngFor="let episodeCategory of allEpisodes" cdkDrag>
+        <h3>{{episodeCategory.crisislexCategory.name}}</h3>
+        <dbvis-episode-vis [episode]="episodeCategory.episodes">
+        </dbvis-episode-vis>
+        <dbvis-episode-timeline [timelineData]="timelineData"></dbvis-episode-timeline>
     </div>
 </div>
 
