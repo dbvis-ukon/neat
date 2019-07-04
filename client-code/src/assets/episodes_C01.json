@@ -1,391 +1,2065 @@
 [{
-  "significance": 184,
-  "startSentence": 4688,
+  "utterances": [{
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "FleetPeaceIcecream",
+    "timestamp": "2020-04-09 05:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Ninfa_BenjamenMouse1961",
+    "timestamp": "2020-04-09 06:07:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Tereasa2009",
+    "timestamp": "2020-04-09 06:22:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "RacesNorberto_MartinBear",
+    "timestamp": "2020-04-09 06:48:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "RacesJoan_MurphyOctopus",
+    "timestamp": "2020-04-09 06:52:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "FastKBowl",
+    "timestamp": "2020-04-09 06:53:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "FuriousSLight",
+    "timestamp": "2020-04-09 07:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Edward1989",
+    "timestamp": "2020-04-09 07:02:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "LazyGozaCar27",
+    "timestamp": "2020-04-09 07:09:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "DarkStellaCar",
+    "timestamp": "2020-04-09 07:12:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Sharon_BrancoCat13",
+    "timestamp": "2020-04-09 07:13:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "AttentativeKBowl",
+    "timestamp": "2020-04-09 07:14:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "DarkHudspethCar1967",
+    "timestamp": "2020-04-09 07:18:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Doris1976",
+    "timestamp": "2020-04-09 07:19:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "CuriousSchramBowl",
+    "timestamp": "2020-04-09 07:21:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "CandidBlendenPlate",
+    "timestamp": "2020-04-09 07:22:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-09 07:25:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 07:26:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "DarkCCandy10",
+    "timestamp": "2020-04-09 07:29:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "FearsGlazeMouse",
+    "timestamp": "2020-04-09 07:32:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "BusyBBanana81",
+    "timestamp": "2020-04-09 07:34:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "James_Martinez2012",
+    "timestamp": "2020-04-09 07:41:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "CuriousWhitedIcecream1959",
+    "timestamp": "2020-04-09 07:42:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "HoldsBettyWhale",
+    "timestamp": "2020-04-09 07:43:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Kryst1985",
+    "timestamp": "2020-04-09 07:48:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "StewartWhale2003",
+    "timestamp": "2020-04-09 07:49:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "ObnoxiousCouchKlein",
+    "timestamp": "2020-04-09 07:52:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "LazyPCouch1986",
+    "timestamp": "2020-04-09 07:54:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Yvette_LuchtLion95",
+    "timestamp": "2020-04-09 07:57:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "JoseFuriousC",
+    "timestamp": "2020-04-09 08:01:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "CleverNPlate89",
+    "timestamp": "2020-04-09 08:09:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 31,
+    "account": "Heather1964",
+    "timestamp": "2020-04-09 08:25:00.0"
+  }],
   "color": "#451385",
-  "rowIds": [4688, 4703, 4711, 4729, 4733, 4734, 4741, 4743, 4750, 4753, 4754, 4755, 4759, 4760, 4762, 4763, 4766, 4767, 4770, 4773, 4775, 4782, 4783, 4784, 4789, 4790, 4793, 4795, 4798, 4802, 4810, 4826, 4836],
+  "rowIds": [4661, 4688, 4703, 4713, 4729, 4733, 4734, 4741, 4743, 4750, 4753, 4754, 4755, 4759, 4760, 4762, 4763, 4766, 4767, 4770, 4773, 4775, 4782, 4783, 4784, 4789, 4790, 4793, 4795, 4798, 4802, 4810, 4826],
   "columnId": 0,
   "lemma": "my husband hear from their children those the city evacuate",
   "episode": "My husband heard from their children that the city's evacuating",
-  "id": 0,
-  "endSentence": 4836,
   "type": "ADD",
-  "endTimestamp": "2020-04-09 08:35:00.0",
-  "startTimestamp": "2020-04-09 06:07:00.0"
+  "significance": 184,
+  "startSentence": 4661,
+  "id": 0,
+  "endSentence": 4826,
+  "endTimestamp": "2020-04-09 08:25:00.0",
+  "startTimestamp": "2020-04-09 05:40:00.0"
 }, {
-  "significance": 106,
-  "startSentence": 2368,
+  "utterances": [{
+    "location": "Southton",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "P61Howard",
+    "timestamp": "2020-04-07 15:10:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "MartinaGuapoFix",
+    "timestamp": "2020-04-07 15:27:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "Eversole1978",
+    "timestamp": "2020-04-07 15:34:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "Eddie91Phillips",
+    "timestamp": "2020-04-07 15:37:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "RacesBowlandOctopus",
+    "timestamp": "2020-04-07 15:41:00.0"
+  }, {
+    "location": "Weston",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "LepardMouse28",
+    "timestamp": "2020-04-07 15:50:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "GuapoBussmannBanana75",
+    "timestamp": "2020-04-07 15:52:00.0"
+  }, {
+    "location": "Weston",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "Jeri1974",
+    "timestamp": "2020-04-07 15:54:00.0"
+  }, {
+    "location": "Weston",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "DarkCarDarrell",
+    "timestamp": "2020-04-07 15:56:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "CleverBreadGary_Beckham",
+    "timestamp": "2020-04-07 16:01:00.0"
+  }, {
+    "location": "Southton",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "FuriousGordonBanana",
+    "timestamp": "2020-04-07 16:06:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "C2014Rakes",
+    "timestamp": "2020-04-07 16:08:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "LovesNancy_KidderOctopus",
+    "timestamp": "2020-04-07 16:12:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "CandidYoungBowl55",
+    "timestamp": "2020-04-07 16:15:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "ErinDog25",
+    "timestamp": "2020-04-07 16:16:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "yeah I got lucky on a freindriend staying in a he it to good use",
+    "retweets": 15,
+    "account": "LovesLeonard_PetersonHorse",
+    "timestamp": "2020-04-07 16:23:00.0"
+  }],
   "color": "#576608",
-  "rowIds": [2368, 2375, 2378, 2382, 2386, 2391, 2393, 2395, 2397, 2402, 2407, 2409, 2413, 2414, 2416, 2417, 2424, 2432],
+  "rowIds": [2351, 2368, 2375, 2378, 2382, 2388, 2391, 2393, 2395, 2397, 2402, 2407, 2409, 2413, 2415, 2416, 2417, 2424],
   "columnId": 0,
   "lemma": "yeah i get lucky on a freindriend stay in a he it to good use",
   "episode": "yeah I got lucky on a freindriend staying in a he it to good use",
-  "id": 1,
-  "endSentence": 2432,
   "type": "ADD",
-  "endTimestamp": "2020-04-07 16:31:00.0",
-  "startTimestamp": "2020-04-07 15:27:00.0"
+  "significance": 106,
+  "startSentence": 2351,
+  "id": 1,
+  "endSentence": 2424,
+  "endTimestamp": "2020-04-07 16:23:00.0",
+  "startTimestamp": "2020-04-07 15:10:00.0"
 }, {
-  "significance": 88,
-  "startSentence": 3450,
+  "utterances": [],
   "color": "#0e156c",
-  "rowIds": [3450, 3453, 3455, 3457, 3459, 3460, 3467, 3469, 3470, 3479],
+  "rowIds": [3441, 3452, 3453, 3455, 3457, 3459, 3460, 3467, 3469, 3470],
   "columnId": 0,
   "lemma": "krak tv : meet baby jereme",
   "episode": "KRAK TV : Meet baby Jereme",
-  "id": 2,
-  "endSentence": 3479,
   "type": "ADD",
-  "endTimestamp": "2020-04-08 09:58:00.0",
-  "startTimestamp": "2020-04-08 09:29:00.0"
+  "significance": 88,
+  "startSentence": 3441,
+  "id": 2,
+  "endSentence": 3470,
+  "endTimestamp": "2020-04-08 09:49:00.0",
+  "startTimestamp": "2020-04-08 09:20:00.0"
 }, {
-  "significance": 86,
-  "startSentence": 4884,
+  "utterances": [{
+    "location": "Downtown",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "W25Coates",
+    "timestamp": "2020-04-09 09:23:00.0"
+  }, {
+    "location": "Easton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "WileyRitaCouch",
+    "timestamp": "2020-04-09 09:26:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "SObnoxiousWhite",
+    "timestamp": "2020-04-09 09:27:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "BusyLightWilma",
+    "timestamp": "2020-04-09 09:28:00.0"
+  }, {
+    "location": "Southton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "WatchesAlbeeHorse",
+    "timestamp": "2020-04-09 09:32:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "WileyCarAndrea_Cruz",
+    "timestamp": "2020-04-09 09:33:00.0"
+  }, {
+    "location": "Southton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "WilliamsWhale27",
+    "timestamp": "2020-04-09 09:36:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "S60Estep",
+    "timestamp": "2020-04-09 09:37:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "Cleo_RolfHorse22",
+    "timestamp": "2020-04-09 09:38:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "TallPlatePaige",
+    "timestamp": "2020-04-09 09:39:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "CuriousIcecreamFrank",
+    "timestamp": "2020-04-09 09:40:00.0"
+  }, {
+    "location": "Easton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "FastAndrewBread",
+    "timestamp": "2020-04-09 09:41:00.0"
+  }, {
+    "location": "Southton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "Shawn63Modlin",
+    "timestamp": "2020-04-09 09:44:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "ObnoxiousCandyTrevor",
+    "timestamp": "2020-04-09 09:46:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "CleverLuellaCandy",
+    "timestamp": "2020-04-09 09:47:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "DavidBird2004",
+    "timestamp": "2020-04-09 09:48:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "AldanaLion62",
+    "timestamp": "2020-04-09 09:49:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "Walker86",
+    "timestamp": "2020-04-09 09:55:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "CuriousHouseAnne",
+    "timestamp": "2020-04-09 09:58:00.0"
+  }, {
+    "location": "Weston",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "WileyBLight",
+    "timestamp": "2020-04-09 10:01:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "K64Fieldson",
+    "timestamp": "2020-04-09 10:02:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "JamesOctopus74",
+    "timestamp": "2020-04-09 10:20:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "LazyGBowl",
+    "timestamp": "2020-04-09 10:21:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "TallEvelynCandy",
+    "timestamp": "2020-04-09 10:22:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes...",
+    "retweets": 24,
+    "account": "TallThompsonCouch",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }],
   "color": "#102f0b",
-  "rowIds": [4884, 4887, 4888, 4889, 4893, 4894, 4897, 4898, 4899, 4900, 4901, 4902, 4905, 4907, 4908, 4909, 4910, 4915, 4916, 4919, 4922, 4923, 4926, 4941, 4942, 4943, 4948, 4956, 4958, 4971, 4988, 5011],
+  "rowIds": [4879, 4884, 4887, 4888, 4889, 4893, 4894, 4897, 4898, 4899, 4900, 4901, 4902, 4905, 4907, 4908, 4909, 4910, 4916, 4918, 4919, 4922, 4923, 4936, 4941, 4942, 4943, 4951, 4957, 4971, 4986, 5009],
   "columnId": 0,
   "lemma": "insight how to work for the peopeleopeopelle those know you be on my way to they those it long the wisdom wear off and now my baby so won't be for joke",
   "episode": "insights how to work for the peopeleopeopelle that know you were on my way to they that it's long the wisdom wore off and now my baby so won't be for jokes",
-  "id": 3,
-  "endSentence": 5011,
   "type": "ADD",
-  "endTimestamp": "2020-04-09 11:30:00.0",
-  "startTimestamp": "2020-04-09 09:23:00.0"
+  "significance": 86,
+  "startSentence": 4879,
+  "id": 3,
+  "endSentence": 5009,
+  "endTimestamp": "2020-04-09 11:28:00.0",
+  "startTimestamp": "2020-04-09 09:18:00.0"
 }, {
-  "significance": 80,
-  "startSentence": 4501,
+  "utterances": [{
+    "location": "Location with-held due to contract",
+    "text": "City EOC: Generanddtors anddnd portanddble lights anddre needed anddt rescue scenes. Tanddke donanddtions to temporanddry logisticanddl banddses estanddblished anddt two community colleges. Thanddnk you",
+    "retweets": 10,
+    "account": "Cynthia15H",
+    "timestamp": "2020-04-09 03:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "City EOC: Generanddtors anddnd portanddble lights anddre needed anddt rescue scenes. Tanddke donanddtions to temporanddry logisticanddl banddses estanddblished anddt two community colleges. Thanddnk you",
+    "retweets": 10,
+    "account": "Fernando42",
+    "timestamp": "2020-04-09 03:10:00.0"
+  }, {
+    "location": "Weston",
+    "text": "City EOC: Generanddtors anddnd portanddble lights anddre needed anddt rescue scenes. Tanddke donanddtions to temporanddry logisticanddl banddses estanddblished anddt two community colleges. Thanddnk you",
+    "retweets": 10,
+    "account": "RacesJoan_MurphyOctopus",
+    "timestamp": "2020-04-09 03:12:00.0"
+  }, {
+    "location": "Southton",
+    "text": "City EOC: Generanddtors anddnd portanddble lights anddre needed anddt rescue scenes. Tanddke donanddtions to temporanddry logisticanddl banddses estanddblished anddt two community colleges. Thanddnk you",
+    "retweets": 10,
+    "account": "A1957Holland",
+    "timestamp": "2020-04-09 03:16:00.0"
+  }, {
+    "location": "Southton",
+    "text": "City EOC: Generanddtors anddnd portanddble lights anddre needed anddt rescue scenes. Tanddke donanddtions to temporanddry logisticanddl banddses estanddblished anddt two community colleges. Thanddnk you",
+    "retweets": 10,
+    "account": "FamousBananaJose",
+    "timestamp": "2020-04-09 03:19:00.0"
+  }, {
+    "location": "Weston",
+    "text": "City EOC: Generanddtors anddnd portanddble lights anddre needed anddt rescue scenes. Tanddke donanddtions to temporanddry logisticanddl banddses estanddblished anddt two community colleges. Thanddnk you",
+    "retweets": 10,
+    "account": "JObnoxiousMarkert",
+    "timestamp": "2020-04-09 03:45:00.0"
+  }],
   "color": "#8a6ca7",
   "rowIds": [4501, 4511, 4511, 4513, 4513, 4517, 4517, 4520, 4520, 4546, 4546],
   "columnId": 0,
   "lemma": "anddt",
   "episode": "anddt",
+  "type": "ADD",
+  "significance": 80,
+  "startSentence": 4501,
   "id": 4,
   "endSentence": 4546,
-  "type": "ADD",
   "endTimestamp": "2020-04-09 03:45:00.0",
   "startTimestamp": "2020-04-09 03:00:00.0"
 }, {
-  "significance": 75,
-  "startSentence": 3315,
+  "utterances": [{
+    "location": "Chapparal",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "ChemistryTeacherRichardNelson",
+    "timestamp": "2020-04-08 07:05:00.0"
+  }, {
+    "location": "Southton",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "LovesScottWhale",
+    "timestamp": "2020-04-08 07:14:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "SFleetKelly",
+    "timestamp": "2020-04-08 07:17:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "LazyCandyLubinski",
+    "timestamp": "2020-04-08 07:18:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "FuriousBHouse",
+    "timestamp": "2020-04-08 07:19:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "FamousBreadCallis",
+    "timestamp": "2020-04-08 07:26:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "@CarseieStones Can I bring my kids",
+    "retweets": 7,
+    "account": "GuapoTPlate",
+    "timestamp": "2020-04-08 07:27:00.0"
+  }],
   "color": "#6a5681",
-  "rowIds": [3315, 3317, 3318, 3319, 3320, 3327, 3328, 3331, 3337],
+  "rowIds": [3306, 3315, 3318, 3318, 3319, 3320, 3327, 3328, 3336],
   "columnId": 0,
   "lemma": "@carseiestone can i bre my kid",
   "episode": "@CarseieStones Can I bring my kids",
-  "id": 5,
-  "endSentence": 3337,
   "type": "ADD",
-  "endTimestamp": "2020-04-08 07:36:00.0",
-  "startTimestamp": "2020-04-08 07:14:00.0"
-}, {
   "significance": 75,
-  "startSentence": 6175,
+  "startSentence": 3306,
+  "id": 5,
+  "endSentence": 3336,
+  "endTimestamp": "2020-04-08 07:35:00.0",
+  "startTimestamp": "2020-04-08 07:05:00.0"
+}, {
+  "utterances": [{
+    "location": "Cheddarford",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "TallBowlHenry",
+    "timestamp": "2020-04-10 06:54:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "DarkLightCharles_Fornili",
+    "timestamp": "2020-04-10 07:01:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "VCandidBeaulieu",
+    "timestamp": "2020-04-10 07:04:00.0"
+  }, {
+    "location": "Southton",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "AttentativeCCandy",
+    "timestamp": "2020-04-10 07:05:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "G1954Middleton",
+    "timestamp": "2020-04-10 07:06:00.0"
+  }, {
+    "location": "Weston",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "GuapoCBread",
+    "timestamp": "2020-04-10 07:08:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "LazyBergBread59",
+    "timestamp": "2020-04-10 07:14:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "LovesMurrayDog",
+    "timestamp": "2020-04-10 07:16:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "FleetFrankLight",
+    "timestamp": "2020-04-10 07:17:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "FastCandyJerry",
+    "timestamp": "2020-04-10 07:26:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "CandidFredLight",
+    "timestamp": "2020-04-10 07:30:00.0"
+  }, {
+    "location": "Easton",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "FamousMildredCar",
+    "timestamp": "2020-04-10 07:37:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 12,
+    "account": "WatchesHatfieldLion",
+    "timestamp": "2020-04-10 07:45:00.0"
+  }],
   "color": "#2390ba",
   "rowIds": [6175, 6182, 6185, 6186, 6187, 6189, 6195, 6197, 6198, 6207, 6211, 6218, 6226],
   "columnId": 0,
   "lemma": "i cant repair my house",
   "episode": "I cant repair my house",
+  "type": "ADD",
+  "significance": 75,
+  "startSentence": 6175,
   "id": 6,
   "endSentence": 6226,
-  "type": "ADD",
   "endTimestamp": "2020-04-10 07:45:00.0",
   "startTimestamp": "2020-04-10 06:54:00.0"
 }, {
-  "significance": 75,
-  "startSentence": 6175,
+  "utterances": [{
+    "location": "Cheddarford",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "RunsFrancis_HowardOctopus",
+    "timestamp": "2020-04-10 06:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "TallBowlHenry",
+    "timestamp": "2020-04-10 06:54:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "DarkLightCharles_Fornili",
+    "timestamp": "2020-04-10 07:01:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "VCandidBeaulieu",
+    "timestamp": "2020-04-10 07:04:00.0"
+  }, {
+    "location": "Southton",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "AttentativeCCandy",
+    "timestamp": "2020-04-10 07:05:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "G1954Middleton",
+    "timestamp": "2020-04-10 07:06:00.0"
+  }, {
+    "location": "Weston",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "GuapoCBread",
+    "timestamp": "2020-04-10 07:08:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "LovesMurrayDog",
+    "timestamp": "2020-04-10 07:16:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "CandidFredLight",
+    "timestamp": "2020-04-10 07:30:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "When are schools going to open again? I cant repair my house",
+    "retweets": 10,
+    "account": "WatchesHatfieldLion",
+    "timestamp": "2020-04-10 07:45:00.0"
+  }],
   "color": "#731a8c",
-  "rowIds": [6175, 6182, 6185, 6186, 6187, 6189, 6195, 6197, 6198, 6207, 6211, 6218, 6226],
+  "rowIds": [6151, 6175, 6182, 6185, 6186, 6187, 6189, 6196, 6197, 6203, 6211, 6211, 6226],
   "columnId": 1,
   "lemma": "when be school go to open again",
   "episode": "When are schools going to open again",
+  "type": "ADD",
+  "significance": 75,
+  "startSentence": 6151,
   "id": 7,
   "endSentence": 6226,
-  "type": "ADD",
   "endTimestamp": "2020-04-10 07:45:00.0",
-  "startTimestamp": "2020-04-10 06:54:00.0"
+  "startTimestamp": "2020-04-10 06:30:00.0"
 }, {
-  "significance": 66,
-  "startSentence": 4951,
+  "utterances": [{
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "RunsKerry_HernandezCat",
+    "timestamp": "2020-04-09 10:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "Jeffry64",
+    "timestamp": "2020-04-09 10:36:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "LovesJanet_DubeWhale",
+    "timestamp": "2020-04-09 10:38:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 10:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-09 10:44:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRBowl",
+    "timestamp": "2020-04-09 10:46:00.0"
+  }, {
+    "location": "Weston",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartFCar",
+    "timestamp": "2020-04-09 10:48:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "AttentativeBananaTiburcio",
+    "timestamp": "2020-04-09 10:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoCandyCharles",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoMCar",
+    "timestamp": "2020-04-09 10:51:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "DarkLBanana",
+    "timestamp": "2020-04-09 10:54:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRedmanHouse",
+    "timestamp": "2020-04-09 11:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GilbertCat1955",
+    "timestamp": "2020-04-09 11:05:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "CandidDBanana",
+    "timestamp": "2020-04-09 11:09:00.0"
+  }],
   "color": "#41c530",
   "rowIds": [4951, 4957, 4959, 4961, 4965, 4967, 4969, 4970, 4971, 4972, 4975, 4981, 4986, 4990],
   "columnId": 1,
   "lemma": "now i can't stop cry",
   "episode": "Now i can't stop crying",
+  "type": "ADD",
+  "significance": 66,
+  "startSentence": 4951,
   "id": 8,
   "endSentence": 4990,
-  "type": "ADD",
   "endTimestamp": "2020-04-09 11:09:00.0",
   "startTimestamp": "2020-04-09 10:30:00.0"
 }, {
-  "significance": 66,
-  "startSentence": 4951,
-  "color": "#5d2257",
+  "utterances": [{
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "RunsKerry_HernandezCat",
+    "timestamp": "2020-04-09 10:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "Jeffry64",
+    "timestamp": "2020-04-09 10:36:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "LovesJanet_DubeWhale",
+    "timestamp": "2020-04-09 10:38:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 10:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-09 10:44:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRBowl",
+    "timestamp": "2020-04-09 10:46:00.0"
+  }, {
+    "location": "Weston",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartFCar",
+    "timestamp": "2020-04-09 10:48:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "AttentativeBananaTiburcio",
+    "timestamp": "2020-04-09 10:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoCandyCharles",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoMCar",
+    "timestamp": "2020-04-09 10:51:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "DarkLBanana",
+    "timestamp": "2020-04-09 10:54:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRedmanHouse",
+    "timestamp": "2020-04-09 11:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GilbertCat1955",
+    "timestamp": "2020-04-09 11:05:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "CandidDBanana",
+    "timestamp": "2020-04-09 11:09:00.0"
+  }],
+  "color": "#dcb735",
   "rowIds": [4951, 4957, 4959, 4961, 4965, 4967, 4969, 4970, 4971, 4972, 4975, 4981, 4986, 4990],
   "columnId": 2,
-  "lemma": "all of those poor baby",
-  "episode": "All of those poor babies",
+  "lemma": "@ugpkdshnd all of those poor baby",
+  "episode": "@UGPKDSHND All of those poor babies",
+  "type": "ADD",
+  "significance": 66,
+  "startSentence": 4951,
   "id": 9,
   "endSentence": 4990,
-  "type": "ADD",
   "endTimestamp": "2020-04-09 11:09:00.0",
   "startTimestamp": "2020-04-09 10:30:00.0"
 }, {
-  "significance": 66,
-  "startSentence": 4951,
+  "utterances": [{
+    "location": "Chapparal",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "LovesJanet_DubeWhale",
+    "timestamp": "2020-04-09 10:38:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-09 10:44:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "SmartRBowl",
+    "timestamp": "2020-04-09 10:46:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "AttentativeBananaTiburcio",
+    "timestamp": "2020-04-09 10:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "GuapoCandyCharles",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "GuapoMCar",
+    "timestamp": "2020-04-09 10:51:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "i was ok until i saw that the shelter is suffering.@UGPKDSHND All of those poor babies. Now i can't stop crying",
+    "retweets": 7,
+    "account": "SmartRedmanHouse",
+    "timestamp": "2020-04-09 11:00:00.0"
+  }],
   "color": "#1d1e0b",
-  "rowIds": [4951, 4957, 4959, 4961, 4965, 4967, 4969, 4970, 4971, 4972, 4975, 4981, 4986, 4990],
+  "rowIds": [4950, 4956, 4958, 4959, 4963, 4965, 4967, 4970, 4970, 4971, 4972, 4977, 4981, 4988],
   "columnId": 3,
   "lemma": "i be ok until i see those the shelter be suffer",
   "episode": "i was ok until i saw that the shelter is suffering",
+  "type": "ADD",
+  "significance": 66,
+  "startSentence": 4950,
   "id": 10,
-  "endSentence": 4990,
-  "type": "ADD",
-  "endTimestamp": "2020-04-09 11:09:00.0",
-  "startTimestamp": "2020-04-09 10:30:00.0"
+  "endSentence": 4988,
+  "endTimestamp": "2020-04-09 11:07:00.0",
+  "startTimestamp": "2020-04-09 10:29:00.0"
 }, {
-  "significance": 63,
-  "startSentence": 3716,
-  "color": "#30f4df",
-  "rowIds": [3716, 3720, 3724, 3729, 3731, 3851, 3867, 3878, 3880, 3882, 3891, 3892, 3893],
-  "columnId": 0,
-  "lemma": "home",
-  "episode": "home",
-  "id": 11,
-  "endSentence": 3893,
-  "type": "ADD",
-  "endTimestamp": "2020-04-08 16:52:00.0",
-  "startTimestamp": "2020-04-08 13:55:00.0"
-}, {
-  "significance": 63,
-  "startSentence": 5473,
+  "utterances": [{
+    "location": "Weston",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "GuapoRobertoCouch",
+    "timestamp": "2020-04-09 19:12:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "CandidBreadKelly",
+    "timestamp": "2020-04-09 19:19:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "Paul_Atkinson29",
+    "timestamp": "2020-04-09 19:20:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "FleetBBowl",
+    "timestamp": "2020-04-09 19:21:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "RacesThomas_MooreLion",
+    "timestamp": "2020-04-09 19:30:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "FearsBenjaminMouse",
+    "timestamp": "2020-04-09 19:31:00.0"
+  }, {
+    "location": "Weston",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "FamousRCandy",
+    "timestamp": "2020-04-09 19:35:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "WileyCarJaimes",
+    "timestamp": "2020-04-09 19:46:00.0"
+  }, {
+    "location": "Southton",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "ReubenSmartJ",
+    "timestamp": "2020-04-09 19:50:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "StaceyBird1980",
+    "timestamp": "2020-04-09 19:55:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "KRAK TV: Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations. 'The community really stepped up and gave",
+    "retweets": 10,
+    "account": "Theresa_Pugh35",
+    "timestamp": "2020-04-09 20:06:00.0"
+  }],
   "color": "#583596",
   "rowIds": [5473, 5480, 5481, 5482, 5491, 5492, 5496, 5507, 5511, 5516, 5527],
   "columnId": 0,
   "lemma": "community real step up and give",
   "episode": "community really stepped up and gave",
-  "id": 12,
-  "endSentence": 5527,
   "type": "ADD",
+  "significance": 63,
+  "startSentence": 5473,
+  "id": 11,
+  "endSentence": 5527,
   "endTimestamp": "2020-04-09 20:06:00.0",
   "startTimestamp": "2020-04-09 19:12:00.0"
 }, {
-  "significance": 63,
-  "startSentence": 5473,
+  "utterances": [],
   "color": "#0b31e7",
-  "rowIds": [5473, 5480, 5481, 5482, 5491, 5492, 5496, 5507, 5511, 5516, 5527],
+  "rowIds": [5461, 5473, 5480, 5481, 5482, 5491, 5492, 5496, 5507, 5511, 5516],
   "columnId": 1,
   "lemma": "krak tv : wilderness scout leader admit they might have make a mistake in put out a call for donation",
   "episode": "KRAK TV : Wilderness Scout leaders admitted they might have made a mistake in putting out a call for donations",
-  "id": 13,
-  "endSentence": 5527,
   "type": "ADD",
-  "endTimestamp": "2020-04-09 20:06:00.0",
-  "startTimestamp": "2020-04-09 19:12:00.0"
+  "significance": 63,
+  "startSentence": 5461,
+  "id": 12,
+  "endSentence": 5516,
+  "endTimestamp": "2020-04-09 19:55:00.0",
+  "startTimestamp": "2020-04-09 19:00:00.0"
 }, {
-  "significance": 58,
-  "startSentence": 1157,
+  "utterances": [{
+    "location": "Downtown",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "CuriousLightJanice_Walling",
+    "timestamp": "2020-04-08 13:55:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "FamousRhodesHouse2010",
+    "timestamp": "2020-04-08 13:59:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "GrahamWhale45",
+    "timestamp": "2020-04-08 14:03:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "JonesWhale21",
+    "timestamp": "2020-04-08 14:08:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "GregoryFleetPerry",
+    "timestamp": "2020-04-08 14:10:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "You open the schools first. That way families can focus on repair and clean up without children underfoot. Thats how we did it back home after tornados.",
+    "retweets": 0,
+    "account": "RichardMouse23",
+    "timestamp": "2020-04-08 16:10:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "AdministratorSophie",
+    "timestamp": "2020-04-08 16:26:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "FuriousALight",
+    "timestamp": "2020-04-08 16:37:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "Ernest_Nordenstrom29",
+    "timestamp": "2020-04-08 16:39:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "Santos93",
+    "timestamp": "2020-04-08 16:41:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "Travis58",
+    "timestamp": "2020-04-08 16:50:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "DavidFastM",
+    "timestamp": "2020-04-08 16:51:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i leftjhe tjhehe kids satjhe home we can die tjheogetjheher justjhe like you wantjheed",
+    "retweets": 6,
+    "account": "LovesAnthonyHorse",
+    "timestamp": "2020-04-08 16:52:00.0"
+  }],
+  "color": "#30f4df",
+  "rowIds": [3716, 3720, 3724, 3729, 3731, 3851, 3867, 3878, 3880, 3882, 3891, 3892, 3893],
+  "columnId": 0,
+  "lemma": "home",
+  "episode": "home",
+  "type": "ADD",
+  "significance": 63,
+  "startSentence": 3716,
+  "id": 13,
+  "endSentence": 3893,
+  "endTimestamp": "2020-04-08 16:52:00.0",
+  "startTimestamp": "2020-04-08 13:55:00.0"
+}, {
+  "utterances": [{
+    "location": "Northwest",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "RFamousH",
+    "timestamp": "2020-04-06 19:16:00.0"
+  }, {
+    "location": "Weston",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "LovesBrownHorse",
+    "timestamp": "2020-04-06 19:17:00.0"
+  }, {
+    "location": "Southton",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "FleetMeekerBanana2009",
+    "timestamp": "2020-04-06 19:19:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "FastKIcecream",
+    "timestamp": "2020-04-06 19:20:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "CleverFLight",
+    "timestamp": "2020-04-06 19:25:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "RFuriousBoyd",
+    "timestamp": "2020-04-06 19:26:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "AttentativeDBread35",
+    "timestamp": "2020-04-06 19:27:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "FamousCandyPatricia_Gebhardt",
+    "timestamp": "2020-04-06 19:41:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "Karen_LurryBear1987",
+    "timestamp": "2020-04-06 19:45:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "LakeishaFuriousW",
+    "timestamp": "2020-04-06 19:53:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 10,
+    "account": "CuriousTBread",
+    "timestamp": "2020-04-06 20:17:00.0"
+  }],
   "color": "#0db3a2",
   "rowIds": [1157, 1158, 1160, 1161, 1166, 1167, 1168, 1182, 1186, 1194, 1218],
   "columnId": 0,
   "lemma": "i tell the town council they should consider have more architecture school",
   "episode": "I told the town council they should consider having more architecture schools",
+  "type": "ADD",
+  "significance": 58,
+  "startSentence": 1157,
   "id": 14,
   "endSentence": 1218,
-  "type": "ADD",
   "endTimestamp": "2020-04-06 20:17:00.0",
   "startTimestamp": "2020-04-06 19:16:00.0"
 }, {
-  "significance": 58,
-  "startSentence": 1157,
+  "utterances": [{
+    "location": "Northwest",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "RFamousH",
+    "timestamp": "2020-04-06 19:16:00.0"
+  }, {
+    "location": "Weston",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "LovesBrownHorse",
+    "timestamp": "2020-04-06 19:17:00.0"
+  }, {
+    "location": "Southton",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "FleetMeekerBanana2009",
+    "timestamp": "2020-04-06 19:19:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "CleverFLight",
+    "timestamp": "2020-04-06 19:25:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "RFuriousBoyd",
+    "timestamp": "2020-04-06 19:26:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "FamousCandyPatricia_Gebhardt",
+    "timestamp": "2020-04-06 19:41:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "Karen_LurryBear1987",
+    "timestamp": "2020-04-06 19:45:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We donít even have qualified people in this city to study the brick buildings! I told the town council they should consider having more architecture schools!!",
+    "retweets": 7,
+    "account": "LakeishaFuriousW",
+    "timestamp": "2020-04-06 19:53:00.0"
+  }],
   "color": "#adae05",
-  "rowIds": [1157, 1158, 1160, 1161, 1166, 1167, 1168, 1182, 1186, 1194, 1218],
+  "rowIds": [1153, 1157, 1158, 1160, 1164, 1166, 1167, 1174, 1182, 1186, 1194],
   "columnId": 1,
   "lemma": "we donít even have qualify people in these city to study the brick build",
   "episode": "We donít even have qualified people in this city to study the brick buildings",
-  "id": 15,
-  "endSentence": 1218,
   "type": "ADD",
-  "endTimestamp": "2020-04-06 20:17:00.0",
-  "startTimestamp": "2020-04-06 19:16:00.0"
+  "significance": 58,
+  "startSentence": 1153,
+  "id": 15,
+  "endSentence": 1194,
+  "endTimestamp": "2020-04-06 19:53:00.0",
+  "startTimestamp": "2020-04-06 19:12:00.0"
 }, {
-  "significance": 53,
-  "startSentence": 3687,
+  "utterances": [{
+    "location": "Weston",
+    "text": "This just in - we will also feature mutton busting with our grade Palace Hills students",
+    "retweets": 5,
+    "account": "TallMarkLight",
+    "timestamp": "2020-04-08 13:26:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "This just in - we will also feature mutton busting with our grade Palace Hills students",
+    "retweets": 5,
+    "account": "LazyPooleLight",
+    "timestamp": "2020-04-08 13:33:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "This just in - we will also feature mutton busting with our grade Palace Hills students",
+    "retweets": 5,
+    "account": "RacesVictoriaCat",
+    "timestamp": "2020-04-08 13:37:00.0"
+  }, {
+    "location": "Southton",
+    "text": "This just in - we will also feature mutton busting with our grade Palace Hills students",
+    "retweets": 5,
+    "account": "SBusyJames",
+    "timestamp": "2020-04-08 13:39:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "This just in - we will also feature mutton busting with our grade Palace Hills students",
+    "retweets": 5,
+    "account": "BusyCouchKenneth",
+    "timestamp": "2020-04-08 13:41:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "This just in - we will also feature mutton busting with our grade Palace Hills students",
+    "retweets": 5,
+    "account": "Helen_Mengel31",
+    "timestamp": "2020-04-08 13:43:00.0"
+  }],
   "color": "#1fb3bb",
-  "rowIds": [3687, 3694, 3698, 3700, 3702, 3704, 3707],
+  "rowIds": [3680, 3687, 3694, 3698, 3700, 3702, 3704],
   "columnId": 0,
   "lemma": "this just in - we will also feature mutton bust with our grade palace hill student",
   "episode": "This just in - we will also feature mutton busting with our grade Palace Hills students",
-  "id": 16,
-  "endSentence": 3707,
   "type": "ADD",
-  "endTimestamp": "2020-04-08 13:46:00.0",
-  "startTimestamp": "2020-04-08 13:26:00.0"
+  "significance": 53,
+  "startSentence": 3680,
+  "id": 16,
+  "endSentence": 3704,
+  "endTimestamp": "2020-04-08 13:43:00.0",
+  "startTimestamp": "2020-04-08 13:19:00.0"
 }, {
-  "significance": 51,
-  "startSentence": 6051,
+  "utterances": [{
+    "location": "Weston",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "HoldsKarrieCat",
+    "timestamp": "2020-04-10 04:50:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "Taisha_Reed89",
+    "timestamp": "2020-04-10 04:54:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "LazyBCouch33",
+    "timestamp": "2020-04-10 04:58:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "FuriousBeamonCandy1987",
+    "timestamp": "2020-04-10 05:01:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "FastMichaelCar",
+    "timestamp": "2020-04-10 05:02:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "CleverDonaldsonLight",
+    "timestamp": "2020-04-10 05:06:00.0"
+  }, {
+    "location": "Weston",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 6,
+    "account": "WatchesDelgadoWhale",
+    "timestamp": "2020-04-10 05:11:00.0"
+  }],
   "color": "#87adfb",
   "rowIds": [6051, 6055, 6059, 6062, 6063, 6067, 6072],
   "columnId": 0,
   "lemma": "paulís daycare",
   "episode": "Paulís daycare",
+  "type": "ADD",
+  "significance": 51,
+  "startSentence": 6051,
   "id": 17,
   "endSentence": 6072,
-  "type": "ADD",
   "endTimestamp": "2020-04-10 05:11:00.0",
   "startTimestamp": "2020-04-10 04:50:00.0"
 }, {
-  "significance": 51,
-  "startSentence": 6051,
+  "utterances": [{
+    "location": "Weston",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 3,
+    "account": "HoldsKarrieCat",
+    "timestamp": "2020-04-10 04:50:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 3,
+    "account": "Taisha_Reed89",
+    "timestamp": "2020-04-10 04:54:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 3,
+    "account": "FuriousBeamonCandy1987",
+    "timestamp": "2020-04-10 05:01:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "#ffunion23 has rescued two kids from the St. Paulís daycare",
+    "retweets": 3,
+    "account": "FastMichaelCar",
+    "timestamp": "2020-04-10 05:02:00.0"
+  }],
   "color": "#eb98d0",
-  "rowIds": [6051, 6055, 6059, 6062, 6063, 6067, 6072],
+  "rowIds": [6051, 6054, 6055, 6061, 6062, 6063, 6069],
   "columnId": 1,
   "lemma": "#ffunion23 have rescue two kid from the st",
   "episode": "#ffunion23 has rescued two kids from the St",
-  "id": 18,
-  "endSentence": 6072,
   "type": "ADD",
-  "endTimestamp": "2020-04-10 05:11:00.0",
+  "significance": 51,
+  "startSentence": 6051,
+  "id": 18,
+  "endSentence": 6069,
+  "endTimestamp": "2020-04-10 05:08:00.0",
   "startTimestamp": "2020-04-10 04:50:00.0"
 }, {
-  "significance": 51,
-  "startSentence": 1148,
+  "utterances": [{
+    "location": "Terrapin Springs",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 8,
+    "account": "Terrapin Springs Schools",
+    "timestamp": "2020-04-06 19:07:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 8,
+    "account": "SherOctopus1968",
+    "timestamp": "2020-04-06 19:19:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 8,
+    "account": "Jolene28",
+    "timestamp": "2020-04-06 19:23:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 8,
+    "account": "Rosa1954Needles",
+    "timestamp": "2020-04-06 19:31:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 8,
+    "account": "CandidKBowl",
+    "timestamp": "2020-04-06 19:33:00.0"
+  }],
   "color": "#f2aa7a",
   "rowIds": [1148, 1160, 1160, 1164, 1164, 1172, 1172, 1174, 1174],
   "columnId": 2,
   "lemma": "junior rodeo",
   "episode": "junior rodeo",
+  "type": "ADD",
+  "significance": 50,
+  "startSentence": 1148,
   "id": 19,
   "endSentence": 1174,
-  "type": "ADD",
   "endTimestamp": "2020-04-06 19:33:00.0",
   "startTimestamp": "2020-04-06 19:07:00.0"
 }, {
-  "significance": 48,
-  "startSentence": 2547,
+  "utterances": [{
+    "location": "Northwest",
+    "text": "@Stancil6 Going to take the kids to the doctor then rush back to work",
+    "retweets": 5,
+    "account": "HoldsBettyWhale",
+    "timestamp": "2020-04-07 18:26:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "@Stancil6 Going to take the kids to the doctor then rush back to work",
+    "retweets": 5,
+    "account": "Wilfred40Davis",
+    "timestamp": "2020-04-07 18:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@Stancil6 Going to take the kids to the doctor then rush back to work",
+    "retweets": 5,
+    "account": "FuriousSteveCar",
+    "timestamp": "2020-04-07 18:38:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "@Stancil6 Going to take the kids to the doctor then rush back to work",
+    "retweets": 5,
+    "account": "TallDwayneBowl",
+    "timestamp": "2020-04-07 18:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "@Stancil6 Going to take the kids to the doctor then rush back to work",
+    "retweets": 5,
+    "account": "DarkRBanana",
+    "timestamp": "2020-04-07 18:41:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@Stancil6 Going to take the kids to the doctor then rush back to work",
+    "retweets": 5,
+    "account": "Jeffrey_Chynoweth2002",
+    "timestamp": "2020-04-07 18:43:00.0"
+  }],
   "color": "#ac5a02",
-  "rowIds": [2547, 2551, 2559, 2561, 2562, 2564, 2569],
+  "rowIds": [2542, 2547, 2551, 2559, 2561, 2562, 2564],
   "columnId": 0,
   "lemma": "@stancil6 go to take the kid to the doctor then rush back to work",
   "episode": "@Stancil6 Going to take the kids to the doctor then rush back to work",
-  "id": 20,
-  "endSentence": 2569,
   "type": "ADD",
-  "endTimestamp": "2020-04-07 18:48:00.0",
-  "startTimestamp": "2020-04-07 18:26:00.0"
+  "significance": 48,
+  "startSentence": 2542,
+  "id": 20,
+  "endSentence": 2564,
+  "endTimestamp": "2020-04-07 18:43:00.0",
+  "startTimestamp": "2020-04-07 18:21:00.0"
 }, {
-  "significance": 47,
-  "startSentence": 3716,
+  "utterances": [{
+    "location": "Downtown",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "AdministratorSophie",
+    "timestamp": "2020-04-08 18:41:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "SmartLightLeven",
+    "timestamp": "2020-04-08 19:15:00.0"
+  }, {
+    "location": "Southton",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "D99Johnson",
+    "timestamp": "2020-04-08 19:16:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-08 19:18:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "FuriousALight",
+    "timestamp": "2020-04-08 19:23:00.0"
+  }, {
+    "location": "Southton",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "AttentativePenaBread50",
+    "timestamp": "2020-04-08 19:29:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "Harry_PriceOctopus1996",
+    "timestamp": "2020-04-08 19:33:00.0"
+  }],
   "color": "#01839c",
   "rowIds": [3716, 3720, 3724, 3729, 3731, 4002, 4036, 4037, 4039, 4044, 4050, 4054],
   "columnId": 1,
   "lemma": "day",
   "episode": "days",
+  "type": "ADD",
+  "significance": 47,
+  "startSentence": 3716,
   "id": 21,
   "endSentence": 4054,
-  "type": "ADD",
   "endTimestamp": "2020-04-08 19:33:00.0",
   "startTimestamp": "2020-04-08 13:55:00.0"
 }, {
-  "significance": 45,
-  "startSentence": 6069,
+  "utterances": [{
+    "location": "Cheddarford",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "DerekNolan",
+    "timestamp": "2020-04-10 05:08:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "AttentativeRobertBanana",
+    "timestamp": "2020-04-10 05:23:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "Mary1952J",
+    "timestamp": "2020-04-10 05:28:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "JAttentativeH",
+    "timestamp": "2020-04-10 05:29:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "IreneLazyW",
+    "timestamp": "2020-04-10 05:32:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "BessOctopus2011",
+    "timestamp": "2020-04-10 05:39:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "@EllaChang maybe yuor the dumb one thinking a taxi can have a baby",
+    "retweets": 6,
+    "account": "FamousThomasIcecream",
+    "timestamp": "2020-04-10 05:47:00.0"
+  }],
   "color": "#7162b8",
   "rowIds": [6069, 6084, 6089, 6090, 6093, 6100, 6108],
   "columnId": 2,
   "lemma": "one think",
   "episode": "one thinking",
+  "type": "ADD",
+  "significance": 45,
+  "startSentence": 6069,
   "id": 22,
   "endSentence": 6108,
-  "type": "ADD",
   "endTimestamp": "2020-04-10 05:47:00.0",
   "startTimestamp": "2020-04-10 05:08:00.0"
 }, {
-  "significance": 44,
-  "startSentence": 6086,
+  "utterances": [{
+    "location": "Terrapin Springs",
+    "text": "@VanessaCorwin Save Derek and his taxi's baby!",
+    "retweets": 2,
+    "account": "FleetGibsonCar1970",
+    "timestamp": "2020-04-10 05:39:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "@VanessaCorwin Save Derek and his taxi's baby!",
+    "retweets": 2,
+    "account": "TallHCar29",
+    "timestamp": "2020-04-10 05:50:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@VanessaCorwin Save Derek and his taxi's baby!",
+    "retweets": 2,
+    "account": "LovesDavidDog",
+    "timestamp": "2020-04-10 05:57:00.0"
+  }],
   "color": "#95f900",
-  "rowIds": [6086, 6100, 6106, 6111, 6118, 6129, 6134],
+  "rowIds": [6084, 6100, 6105, 6108, 6111, 6118, 6133],
   "columnId": 0,
   "lemma": "@vanessacorwin save derek and his taxi baby",
   "episode": "@VanessaCorwin Save Derek and his taxi's baby",
-  "id": 23,
-  "endSentence": 6134,
   "type": "ADD",
-  "endTimestamp": "2020-04-10 06:13:00.0",
-  "startTimestamp": "2020-04-10 05:25:00.0"
+  "significance": 44,
+  "startSentence": 6084,
+  "id": 23,
+  "endSentence": 6133,
+  "endTimestamp": "2020-04-10 06:12:00.0",
+  "startTimestamp": "2020-04-10 05:23:00.0"
 }, {
-  "significance": 42,
-  "startSentence": 4002,
+  "utterances": [{
+    "location": "Downtown",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "AdministratorSophie",
+    "timestamp": "2020-04-08 18:41:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "SmartLightLeven",
+    "timestamp": "2020-04-08 19:15:00.0"
+  }, {
+    "location": "Southton",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "D99Johnson",
+    "timestamp": "2020-04-08 19:16:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-08 19:18:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "FuriousALight",
+    "timestamp": "2020-04-08 19:23:00.0"
+  }, {
+    "location": "Southton",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "AttentativePenaBread50",
+    "timestamp": "2020-04-08 19:29:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 6,
+    "account": "Harry_PriceOctopus1996",
+    "timestamp": "2020-04-08 19:33:00.0"
+  }],
   "color": "#94e876",
   "rowIds": [4002, 4036, 4037, 4039, 4044, 4050, 4054],
   "columnId": 0,
   "lemma": "pretty",
   "episode": "pretty",
+  "type": "ADD",
+  "significance": 42,
+  "startSentence": 4002,
   "id": 24,
   "endSentence": 4054,
-  "type": "ADD",
   "endTimestamp": "2020-04-08 19:33:00.0",
   "startTimestamp": "2020-04-08 18:41:00.0"
 }, {
-  "significance": 34,
-  "startSentence": 878,
+  "utterances": [{
+    "location": "Downtown",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "AdministratorSophie",
+    "timestamp": "2020-04-06 14:37:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "Wildes78",
+    "timestamp": "2020-04-06 14:47:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "CleverWeinerIcecream",
+    "timestamp": "2020-04-06 15:01:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "CleverPlateSteinke",
+    "timestamp": "2020-04-06 15:02:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "RunsFisherCat",
+    "timestamp": "2020-04-06 15:05:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "CleverShannonCouch",
+    "timestamp": "2020-04-06 15:11:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "Adell2011Davis",
+    "timestamp": "2020-04-06 15:15:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "FastIcecreamDupre",
+    "timestamp": "2020-04-06 15:17:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "BLazyJuarez",
+    "timestamp": "2020-04-06 15:18:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "I have to get the kids",
+    "retweets": 9,
+    "account": "DWileyPhinney",
+    "timestamp": "2020-04-06 15:27:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anyone show you some vegan awesomeness left when we were kids. someone like we are just jackholes sometimes. They can't help but love em.",
+    "retweets": 0,
+    "account": "GCandidTerry",
+    "timestamp": "2020-04-06 15:43:00.0"
+  }],
   "color": "#019ec6",
   "rowIds": [878, 888, 902, 903, 906, 912, 916, 918, 919, 928, 944],
   "columnId": 0,
   "lemma": "kid",
   "episode": "kids",
+  "type": "ADD",
+  "significance": 34,
+  "startSentence": 878,
   "id": 25,
   "endSentence": 944,
-  "type": "ADD",
   "endTimestamp": "2020-04-06 15:43:00.0",
   "startTimestamp": "2020-04-06 14:37:00.0"
 }, {
-  "significance": 27,
-  "startSentence": 4036,
+  "utterances": [{
+    "location": "Scenic Vista",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 5,
+    "account": "SmartLightLeven",
+    "timestamp": "2020-04-08 19:15:00.0"
+  }, {
+    "location": "Southton",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 5,
+    "account": "D99Johnson",
+    "timestamp": "2020-04-08 19:16:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 5,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-08 19:18:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 5,
+    "account": "FuriousALight",
+    "timestamp": "2020-04-08 19:23:00.0"
+  }, {
+    "location": "Southton",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 5,
+    "account": "AttentativePenaBread50",
+    "timestamp": "2020-04-08 19:29:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "I want to spend my last few days with my kids. I'm pretty sure this has something to do with climate change tho",
+    "retweets": 5,
+    "account": "Harry_PriceOctopus1996",
+    "timestamp": "2020-04-08 19:33:00.0"
+  }],
   "color": "#8c9668",
   "rowIds": [4036, 4037, 4039, 4044, 4050, 4054],
   "columnId": 2,
   "lemma": "someth",
   "episode": "something",
+  "type": "ADD",
+  "significance": 27,
+  "startSentence": 4036,
   "id": 26,
   "endSentence": 4054,
-  "type": "ADD",
   "endTimestamp": "2020-04-08 19:33:00.0",
   "startTimestamp": "2020-04-08 19:15:00.0"
 }, {
-  "significance": 19,
-  "startSentence": 3780,
+  "utterances": [{
+    "location": "Southwest",
+    "text": "Trying to get stocked up on baby formula",
+    "retweets": 1,
+    "account": "Michelle5Boger",
+    "timestamp": "2020-04-08 14:59:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Trying to get stocked up on power",
+    "retweets": 0,
+    "account": "Lopez1953",
+    "timestamp": "2020-04-08 15:41:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Trying to get stocked up on cash",
+    "retweets": 1,
+    "account": "Karen2005D",
+    "timestamp": "2020-04-08 15:52:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Trying to get stocked up on baby formula",
+    "retweets": 1,
+    "account": "Dianne29Dalbec",
+    "timestamp": "2020-04-08 17:40:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@FleetCarMichecke Trying to get stocked up on baby formula",
+    "retweets": 0,
+    "account": "M34Gatewood",
+    "timestamp": "2020-04-08 18:55:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Trying to get stocked up on cash",
+    "retweets": 1,
+    "account": "LovesRoyCat",
+    "timestamp": "2020-04-08 20:09:00.0"
+  }],
   "color": "#8af716",
   "rowIds": [3780, 3822, 3833, 3941, 4016, 4090],
   "columnId": 3,
   "lemma": "stock",
   "episode": "stocked",
+  "type": "ADD",
+  "significance": 19,
+  "startSentence": 3780,
   "id": 27,
   "endSentence": 4090,
-  "type": "ADD",
   "endTimestamp": "2020-04-08 20:09:00.0",
   "startTimestamp": "2020-04-08 14:59:00.0"
 }, {
-  "significance": 16,
-  "startSentence": 3716,
+  "utterances": [{
+    "location": "Downtown",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "CuriousLightJanice_Walling",
+    "timestamp": "2020-04-08 13:55:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "FamousRhodesHouse2010",
+    "timestamp": "2020-04-08 13:59:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "GrahamWhale45",
+    "timestamp": "2020-04-08 14:03:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "JonesWhale21",
+    "timestamp": "2020-04-08 14:08:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@UGPKDSHND Scary day. Are the schools damaged? I want my kids home with me",
+    "retweets": 4,
+    "account": "GregoryFleetPerry",
+    "timestamp": "2020-04-08 14:10:00.0"
+  }],
   "color": "#e15b74",
   "rowIds": [3716, 3720, 3724, 3729, 3731],
   "columnId": 2,
   "lemma": "school",
   "episode": "schools",
+  "type": "ADD",
+  "significance": 15,
+  "startSentence": 3716,
   "id": 28,
   "endSentence": 3731,
-  "type": "ADD",
   "endTimestamp": "2020-04-08 14:10:00.0",
   "startTimestamp": "2020-04-08 13:55:00.0"
 }, {
-  "significance": 13,
-  "startSentence": 1072,
+  "utterances": [{
+    "location": "Terrapin Springs",
+    "text": "1 hour of extra students are interested aboutWhen I think we have a better value if you can't really compare 2017 anyone = runner up right?",
+    "retweets": 1,
+    "account": "Maria1966Lincourt",
+    "timestamp": "2020-04-06 17:51:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 4,
+    "account": "Terrapin Springs Schools",
+    "timestamp": "2020-04-06 19:07:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 4,
+    "account": "SherOctopus1968",
+    "timestamp": "2020-04-06 19:19:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 4,
+    "account": "Jolene28",
+    "timestamp": "2020-04-06 19:23:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 4,
+    "account": "Rosa1954Needles",
+    "timestamp": "2020-04-06 19:31:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "So proud of our outstanding junior rodeo students!@UGPKDSHND And our junior rodeo clowns too! #our",
+    "retweets": 4,
+    "account": "CandidKBowl",
+    "timestamp": "2020-04-06 19:33:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "1 hour of extra students are interested aboutWhen I think we have a better value if you can't really compare 2017 anyone = runner up right?",
+    "retweets": 1,
+    "account": "Robert_Rollo68",
+    "timestamp": "2020-04-07 07:49:00.0"
+  }],
   "color": "#fe823b",
   "rowIds": [1072, 1148, 1160, 1164, 1172, 1174, 1910],
   "columnId": 3,
   "lemma": "student",
   "episode": "students",
+  "type": "ADD",
+  "significance": 13,
+  "startSentence": 1072,
   "id": 29,
   "endSentence": 1910,
-  "type": "ADD",
   "endTimestamp": "2020-04-07 07:49:00.0",
   "startTimestamp": "2020-04-06 17:51:00.0"
 }]

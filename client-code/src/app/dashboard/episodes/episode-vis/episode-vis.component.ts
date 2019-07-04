@@ -93,7 +93,7 @@ export class EpisodeVisComponent implements OnInit {
     this._episode = episodeObservable;
 
     this._episode.subscribe(episode => {
-      if (episode.significance >= 40) {
+      if (episode.significance >= 50) {
       this.addData(episode);
       /*first sort episodes according to their occurrence in text*/
       this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
@@ -311,8 +311,8 @@ export class EpisodeVisComponent implements OnInit {
     d3.selectAll < SVGRectElement, Episode > ('.episodeBar')
       .attr('x', (d) => this.paddingForLabels + this.svgWidth / 3 - (this.barWidth * d.columnId))
       .attr('y', (d) => {
-        if(this.lastBarY<d.rowIds[d.rowIds.length - 1]*0.1){
-          this.lastBarY = d.rowIds[d.rowIds.length - 1]*0.1;
+        if (this.lastBarY < d.rowIds[d.rowIds.length - 1] * 0.1) {
+          this.lastBarY = d.rowIds[d.rowIds.length - 1] * 0.1;
         }
         return this.paddingHeight + this.oneTextElementHeight * d.rowIds[0];
       })
@@ -409,8 +409,6 @@ export class EpisodeVisComponent implements OnInit {
       .style('stroke', 'black')
       .style('stroke-width', 2);
   }
-
-
 
   private setColumnPartOccupied(episodeLayout, leftmostNotOccupied, firstRowPosition, lastRowPosition): void {
     let tmpRow = [];

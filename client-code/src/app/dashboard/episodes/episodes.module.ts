@@ -3,6 +3,12 @@ import { CommonModule } from '@angular/common';
 import { EpisodeAppComponent } from './episode-app/episode-app.component';
 import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 import { EpisodeTooltipComponent } from './episode-tooltip/episode-tooltip.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import {
+  MatButtonModule,
+  MatIconModule
+} from '@angular/material';
+
 
 @NgModule({
   entryComponents: [
@@ -10,7 +16,10 @@ import { EpisodeTooltipComponent } from './episode-tooltip/episode-tooltip.compo
   ],
   declarations: [EpisodeVisComponent, EpisodeAppComponent, EpisodeTooltipComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    DragDropModule,
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [
     EpisodeAppComponent
