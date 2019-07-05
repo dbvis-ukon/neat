@@ -4,7 +4,13 @@ import { UserOptionsDialogComponent } from './user-options-dialog/user-options-d
 import { HeaderComponent } from './header/header.component';
 import { UserOptionsComponent } from './user-options/user-options.component';
 import { AppRoutingModule } from '@app/app-routing.module';
-import { MatIconModule, MatToolbarModule, MatButtonModule, MatInputModule, MatDialogModule } from '@angular/material';
+import {
+  MatIconModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatInputModule,
+  MatDialogModule
+} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { ResizedDirective } from './resized.directive';
@@ -12,10 +18,7 @@ import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.compo
 import { DemoVisComponent } from './demo-vis/demo-vis.component';
 
 @NgModule({
-  entryComponents: [
-    UserOptionsDialogComponent,
-    ExampleTooltipComponent
-  ],
+  entryComponents: [UserOptionsDialogComponent, ExampleTooltipComponent],
   declarations: [
     UserOptionsDialogComponent,
     UserOptionsComponent,
@@ -45,7 +48,6 @@ import { DemoVisComponent } from './demo-vis/demo-vis.component';
   ]
 })
 export class SharedModule {
-
   static forRoot(): ModuleWithProviders<SharedModule> {
     return {
       ngModule: SharedModule,
