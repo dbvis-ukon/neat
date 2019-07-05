@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import {Timelinedata} from '@app/dashboard/episodes/timelinedata';
 import {TimelineDataService} from '@app/dashboard/episodes/timeline-data.service';
-import {EpisodeCategory} from "@app/dashboard/episodes/EpisodeCategory";
+import {EpisodeCategory} from '@app/dashboard/episodes/EpisodeCategory';
 
 
 @Component({
@@ -17,6 +17,7 @@ import {EpisodeCategory} from "@app/dashboard/episodes/EpisodeCategory";
 export class EpisodeAppComponent implements OnInit {
 
   allEpisodes: EpisodeCategory[];
+  expandedCategories: EpisodeCategory[] = [];
 
   timelineData: Observable<Timelinedata[]>;
 
@@ -34,9 +35,18 @@ export class EpisodeAppComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<Episode[]>) {
-    console.log('move');
-    // moveItemInArray(this.allEpisodes, event.previousIndex, event.currentIndex);
-}
+    if (event.previousContainer === event.container) { moveItemInArray(this.allEpisodes, event.previousIndex, event.currentIndex); } 
+  }
 
-
+  show(event: any, index: number) {
+    const pEle = event.currentTarget.parentElement;
+    // tslint:disable-next-line: radix
+    // if (!isNaN(pEle.style.width) || parseInt(pEle.style.width) === 450) {
+    //   pEle.style.width = '100px';
+    //   // pEle.style.height = '90px';
+    // } else {
+    //   pEle.style.width = '450px';
+    //   // pEle.style.height = 'auto';
+    // }
+  }
 }

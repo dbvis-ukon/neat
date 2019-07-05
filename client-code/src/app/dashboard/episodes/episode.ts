@@ -1,3 +1,5 @@
+import { Utterance } from './utterance';
+
 export interface Episode {
     type: 'ADD' | 'REMOVE';
     episode: string;
@@ -9,4 +11,5 @@ export interface Episode {
     color: string;
     lemma: string;
     significance: number;
+    utterances: Utterance[];
 }
