@@ -1,4 +1,11 @@
-import { Component, OnInit, ViewChild, ElementRef, Input, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  ElementRef,
+  Input,
+  ViewEncapsulation
+} from '@angular/core';
 import { isNullOrUndefined } from 'util';
 import { Episode } from './episode';
 import * as d3 from 'd3';
@@ -10,7 +17,6 @@ import * as d3 from 'd3';
   encapsulation: ViewEncapsulation.None
 })
 export class EpisodeVisComponent implements OnInit {
-
   @ViewChild('svg') svgRef: ElementRef;
 
   /**
@@ -18,12 +24,11 @@ export class EpisodeVisComponent implements OnInit {
    */
   private svg: SVGElement;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.svg = this.svgRef.nativeElement;
   }
-
 
   @Input()
   set data(data: Episode) {
@@ -32,10 +37,8 @@ export class EpisodeVisComponent implements OnInit {
     }
   }
 
-
   private draw(): void {
     // d3.select(this.svg)
     // .data(this.data);
   }
-
 }

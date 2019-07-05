@@ -1,15 +1,18 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Episode } from '../episode-vis/episode';
-import { TimelineOptions } from '../timeline-vis/timeline-options';
-import { MapData } from '../map-vis/map-data';
-import { MatSliderChange } from '@angular/material';
-import { ActivatedRoute, Router, ParamMap } from '@angular/router';
-import { GroupRepositoryService } from '../../core/services/group-repository.service';
-import { switchMap } from 'rxjs/operators';
-import { Group, UserOptions, GroupSettings } from '@shared';
-import { Observable } from 'rxjs';
-import { UserOptionsRepositoryService } from '@app/core';
-import { TimelineOtherBrushes } from '../timeline-vis/timeline-other-brushes';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Episode} from '../episode-vis/episode';
+import {TimelineOptions} from '../timeline-vis/timeline-options';
+import {MapData} from '../map/map-data';
+import {MatSliderChange} from '@angular/material';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {GroupRepositoryService} from '@app/core';
+import {switchMap} from 'rxjs/operators';
+import {Group, GroupSettings, UserOptions, Mc1Item} from '@shared';
+import {Observable} from 'rxjs';
+import {UserOptionsRepositoryService} from '@app/core';
+import {TimelineOtherBrushes} from '../timeline-vis/timeline-other-brushes';
+import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository.service';
+import { MapOptions } from '../map/map-options';
+import {NeighborhoodSelection} from '@shared/neighborhood-selection';
 
 interface TimelineItem {
   title: string;
@@ -39,8 +42,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
-    begin: new Date('2020-01-01 00:00:00'),
-    end: new Date('2020-03-31 23:59:59'),
+    begin: new Date('2020-04-08 17:50:00'),
+    end: new Date('2020-04-10 02:30:00'),
     userColor: 'black'
   };
 
@@ -49,6 +52,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
   brushExternal: [Date, Date];
 
   mapData: MapData[];
+  mapOptions: MapOptions = {
+    visibleLayers: [1]
+  };
 
   groupSettings: GroupSettings;
 
@@ -57,11 +63,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   userOptions: UserOptions;
 
+  /**
+   * This variable contains the brushed mc1 data.
+   */
+  brushedMc1Data: Mc1Item[];
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private groupRepository: GroupRepositoryService,
-    private userOptionsRepository: UserOptionsRepositoryService
+    private userOptionsRepository: UserOptionsRepositoryService,
+    private mc1DataRepository: Mc1DataRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -74,12 +86,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.currentGroup$.subscribe(group => {
       this.currentGroup = group;
 
+      const opts = this.userOptionsRepository.getOptions();
+
       this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
         this.groupSettings = groupSettings;
         this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
       });
 
-      const opts = this.userOptionsRepository.getOptions();
       if (opts.groupId !== group.groupId) {
         opts.groupId = group.groupId;
         this.userOptionsRepository.setOptions(opts);
@@ -127,6 +140,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.brushExternal = [brush[0], brush[1]];
     this.userOptions.timelineBrush = brush;
     this.userOptionsRepository.setOptions(this.userOptions);
+
+    // update mc1 data
+    this.mc1DataRepository.getBrushFilteredMc1Data(brush)
+      .subscribe(data => this.brushedMc1Data = data);
+
+    this.mapOptions.timelineBrush = brush;
   }
 
 
@@ -143,6 +162,11 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   removeUserFromGroup(user: UserOptions) {
     this.userOptionsRepository.deleteUser(user.id);
+  }
+
+  mapNeighborhoodChanged(data: NeighborhoodSelection) {
+    this.userOptions.neighborhoodSelection = data;
+    this.userOptionsRepository.setOptions(this.userOptions);
   }
 
 }
