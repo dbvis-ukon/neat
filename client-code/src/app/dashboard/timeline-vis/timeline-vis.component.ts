@@ -29,6 +29,8 @@ export class TimelineVisComponent implements OnInit {
 
   private _otherBrushes: TimelineOtherBrushes[];
 
+  private _brushExternal: [Date, Date];
+
   private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
 
   private otherBrushesSelection: d3.Selection<SVGGElement, null, undefined, null>;
@@ -74,6 +76,20 @@ export class TimelineVisComponent implements OnInit {
 
   get otherBrushes(): TimelineOtherBrushes[] {
     return this._otherBrushes;
+  }
+
+  @Input()
+  set brushExternal(brushExternal: [Date, Date]) {
+    console.log('brush external', brushExternal);
+    this._brushExternal = brushExternal;
+
+    if (brushExternal) {
+      this.updateOwnBrush(brushExternal);
+    }
+  }
+
+  get brushExternal(): [Date, Date] {
+    return this._brushExternal;
   }
 
   ngOnInit() {
@@ -148,8 +164,18 @@ export class TimelineVisComponent implements OnInit {
       .attr('transform', `translate(0,  ${this.height - 20})`)
       .call(this.axisBottom);
 
-    // either use the brush from the last brush selection or brush the whole time series.
-    const brushRange = this.lastBrush ? [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])] : this.timeScale.range();
+    this.updateOwnBrush();
+  }
+
+  private updateOwnBrush(externalBrush?: [Date, Date]) {
+    let brushRange = null;
+    if (externalBrush) {
+      brushRange = externalBrush;
+    } else if (this.lastBrush) {
+      brushRange = [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])];
+    } else {
+      brushRange = this.timeScale.range();
+    }
 
     this.brushSelection
       .call(this.brush)
@@ -164,7 +190,12 @@ export class TimelineVisComponent implements OnInit {
    * called when the user performs a brush
    */
   private _brushed(): void {
-    if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'zoom') { return; } // ignore brush-by-zoom
+    if (d3.event.sourceEvent === null) {
+      return;
+    }
+    if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'zoom') {
+      return;
+    } // ignore brush-by-zoom
     const s = d3.event.selection;
     this.lastBrush = s.map(this.timeScale.invert, this.timeScale);
 
@@ -176,7 +207,7 @@ export class TimelineVisComponent implements OnInit {
       return;
     }
 
-    console.log('draw other brushes', this._otherBrushes);
+    // console.log('draw other brushes', this._otherBrushes);
 
     const rects = this.otherBrushesSelection
       .selectAll<SVGRectElement, TimelineOtherBrushes>('rect')

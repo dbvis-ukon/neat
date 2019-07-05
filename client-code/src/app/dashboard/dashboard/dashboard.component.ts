@@ -11,12 +11,31 @@ import { Observable } from 'rxjs';
 import { UserOptionsRepositoryService } from '@app/core';
 import { TimelineOtherBrushes } from '../timeline-vis/timeline-other-brushes';
 
+interface TimelineItem {
+  title: string;
+  data: any; // FIXME
+}
+
 @Component({
   selector: 'dbvis-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.less']
 })
 export class DashboardComponent implements OnInit, OnDestroy {
+
+  dashboardLayout: 'default' | 'timelines' = 'timelines';
+
+  timelineData: TimelineItem[] = [
+    {
+      title: 'Uncertainties',
+      data: null
+    },
+    {
+      title: 'Tweets',
+      data: null
+    }
+  ];
+
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
@@ -26,6 +45,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   };
 
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
+
+  brushExternal: [Date, Date];
 
   mapData: MapData[];
 
@@ -103,6 +124,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   timelineBrushed(brush: [Date, Date]) {
+    this.brushExternal = [brush[0], brush[1]];
     this.userOptions.timelineBrush = brush;
     this.userOptionsRepository.setOptions(this.userOptions);
   }
