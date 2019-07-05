@@ -14,11 +14,7 @@ export class StreamGraph {
         this.chart = chartRoot;
     }
 
-<<<<<<< HEAD
-    public render(mydata: StreamlineGraphItem[], colors: string[], chartWidth: number, chartHeight: number): void {
-=======
-    public render(mydata: StreamGraphItem[], chartWidth: number, chartHeight: number): void {
->>>>>>> f990b4bfc8bcaa42068d25f1dc261a501b9539d1
+    public render(mydata: StreamGraphItem[], colors: string[], chartWidth: number, chartHeight: number): void {
         this.chartWidth = chartWidth;
         this.chartHeight = chartHeight;
         const colorrange = ['#045A8D', '#2B8CBE', '#74A9CF', '#A6BDDB', '#D0D1E6', '#F1EEF6'];
