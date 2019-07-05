@@ -1,8 +1,9 @@
 <div class="container" cdkDropList [cdkDropListData]="myEpisodes" (cdkDropListDropped)="drop($event)">
-    <div class="episodeDiv" *ngFor="let episode of allEpisodes" cdkDrag>
-        <button (click)="hide($event)" mat-button color="primary"><mat-icon>star_half</mat-icon></button>
-        <h3>CATEGORY</h3>
-        <dbvis-episode-vis [episode]="episode" [utterance]="newUtterance"></dbvis-episode-vis>
+    <div class="episodeDiv" *ngFor="let episodeCategory of allEpisodes" cdkDrag>
+        <button (click)="hide($event)" mat-button color="primary">x</button>
+        <h3>{{episodeCategory.crisislexCategory.name}}</h3>
+        <dbvis-episode-vis [episode]="episodeCategory.episodes">
+        </dbvis-episode-vis>
+        <dbvis-episode-timeline [timelineData]="timelineData"></dbvis-episode-timeline>
     </div>
 </div>
-

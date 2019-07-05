@@ -3,7 +3,10 @@ import { Episode } from '../episode';
 import { Utterance } from '../utterance';
 import { EpisodeRepositoryService } from '../episode-repository.service';
 import { Observable } from 'rxjs';
-import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+import {Timelinedata} from '@app/dashboard/episodes/timelinedata';
+import {TimelineDataService} from '@app/dashboard/episodes/timeline-data.service';
+import {EpisodeCategory} from '@app/dashboard/episodes/EpisodeCategory';
 
 
 @Component({
@@ -13,27 +16,21 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 })
 export class EpisodeAppComponent implements OnInit {
 
-  allEpisodes: Array<Observable<Episode>> = [];
+  allEpisodes: EpisodeCategory[];
 
-  newEpisode: Observable<Episode>;
+  timelineData: Observable<Timelinedata[]>;
 
-  newUtterance: Observable<Utterance>;
-
-  allEpisodeClasses = [{
-    class: '1',
-    utterances: [],
-    episodes: []
-  },
-  // ...
-  ];
-
-  constructor(private episodeRepositoryService: EpisodeRepositoryService) { }
+  constructor(private episodeRepositoryService: EpisodeRepositoryService,
+              private timelineDataService: TimelineDataService) { }
 
   ngOnInit() {
-    this.newUtterance = this.episodeRepositoryService.subscribeUtterance();
-    this.newEpisode = this.episodeRepositoryService.subscribeEpisode();
+    this.episodeRepositoryService.subscribeAllEpisodes()
+      .subscribe(all => {
+        this.allEpisodes = all;
+        console.log(this.allEpisodes);
+      });
 
-    this.allEpisodes = this.episodeRepositoryService.subscribeAllEpisodes();
+    this.timelineData = this.timelineDataService.subscribeOverallTimelineData();
   }
 
   drop(event: CdkDragDrop<Episode[]>) {

@@ -8,13 +8,16 @@ import {
   MatButtonModule,
   MatIconModule
 } from '@angular/material';
-
+import {EpisodeTimelineComponent} from './episode-timeline/episode-timeline.component';
+import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-timeline-tooltip/episode-timeline-tooltip.component';
 
 @NgModule({
   entryComponents: [
-    EpisodeTooltipComponent
+    EpisodeTooltipComponent,
+    EpisodeTimelineTooltipComponent
   ],
-  declarations: [EpisodeVisComponent, EpisodeAppComponent, EpisodeTooltipComponent],
+  declarations: [EpisodeVisComponent, EpisodeAppComponent, EpisodeTooltipComponent,
+    EpisodeTimelineComponent, EpisodeTimelineTooltipComponent],
   imports: [
     CommonModule,
     DragDropModule,

@@ -29,7 +29,8 @@ import { EpisodesModule } from './episodes/episodes.module';
     EpisodesModule
   ],
   exports: [
-    DashboardComponent
+    DashboardComponent,
+    TimelineVisComponent
   ]
 })
 export class DashboardModule { }
