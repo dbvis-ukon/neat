@@ -15,7 +15,7 @@ export class StreamGraph {
         this.chart = chartRoot;
     }
 
-    public render(mydata: StreamlineGraphItem[], chartWidth: number, chartHeight: number): void {
+    public render(mydata: StreamlineGraphItem[], colors: string[], chartWidth: number, chartHeight: number): void {
         this.chartWidth = chartWidth;
         this.chartHeight = chartHeight;
         let colorrange = ['#045A8D', '#2B8CBE', '#74A9CF', '#A6BDDB', '#D0D1E6', '#F1EEF6'];
