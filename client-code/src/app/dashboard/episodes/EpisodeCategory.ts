@@ -5,6 +5,7 @@ import {Observable} from "rxjs";
 export class EpisodeCategory {
   private _episodes: Observable<Episode[]>;
   private _crisislexCategory: CrisisLexCategory;
+  public visible = false;
 
   constructor(episodes: Observable<Episode[]>, crisislexCategory: CrisisLexCategory) {
     this._episodes = episodes;

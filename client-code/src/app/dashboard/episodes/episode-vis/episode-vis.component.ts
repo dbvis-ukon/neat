@@ -4,7 +4,8 @@ import {
   ViewChild,
   ElementRef,
   Input,
-  ViewEncapsulation
+  ViewEncapsulation,
+  SimpleChanges
 } from '@angular/core';
 import {
   isNullOrUndefined
@@ -50,11 +51,11 @@ export class EpisodeVisComponent implements OnInit {
   private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
 
   private numberOfSentences = 0;
-  private svgWidth = 400; // ToDo take the info about maxColumn
-  private svgHeight = 2200;
+  private svgWidth = 100;//400; // ToDo take the info about maxColumn
+  private svgHeight = 2000;
   private oneTextElementHeight = 3; // ToDo change of the height of one sentence
   private paddingHeight = 50;
-  private paddingForLabels = 3500;
+  private paddingForLabels = 0; // 3500;
   private barWidth = 50;
   private fontSize = 100;
   private heightScale = 0;
@@ -101,6 +102,19 @@ export class EpisodeVisComponent implements OnInit {
     });
   }
 
+  private _showText: boolean;
+
+  @Input()
+  set showText(showText: boolean) {
+    this._showText = showText;
+
+
+  }
+
+  get showText(): boolean {
+    return this._showText;
+  }
+
   private createOrUpdateVis() {
     /*first sort episodes according to their occurrence in text*/
     this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
@@ -116,6 +130,31 @@ export class EpisodeVisComponent implements OnInit {
 
     /* create labels */
     // this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
+    // const labels = this.getLabelData(this.myEpisodes);
+    // this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
+    // this.createLabels(this.myEpisodes);
+    // this.updateEpisodeLabels(this.myEpisodes);
+
+    // /* create lines to link episode bars to their labels */
+    // this.createEpisodeToLabelConnectingLine(this.myEpisodes);
+    // this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
+  }
+
+  private expandVis() {
+    // /*first sort episodes according to their occurrence in text*/
+    // this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
+    // this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
+
+    // this.createEpisodeBars(this.myEpisodes, this.numberOfSentences);
+    // this.updateLayout(this.numberOfSentences);
+
+    // /* create small lines on top of the episode bars to show where exactly they occur in text */
+    // const lineData = this.getLineData(this.myEpisodes);
+    // this.createEpisodeLines(lineData);
+    // this.updateEpisodeLines(lineData);
+
+    /* create labels */
+    this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
     const labels = this.getLabelData(this.myEpisodes);
     this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
     this.createLabels(this.myEpisodes);
@@ -192,7 +231,7 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection
       .append('g')
       .attr('id', 'gContainerForEpisodeBars')
-      .attr('transform', 'translate(0, 0)scale(0.1, 0.1)');
+      .attr('transform', 'translate(80, 0)scale(0.1, 0.1)');
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
@@ -227,19 +266,10 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private updateLayout(numberOfTextElements: number): void {
-    // this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
+   //this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
     this.heightScale = window.innerHeight / this.svgHeight;
     this.svgSelection
       .attr('height', this.svgHeight);
-  }
-
-
-  private addData(episode: Episode): void {
-    if (episode.type === 'ADD') {
-      this.myEpisodes.push(episode);
-    } else if (episode.type === 'REMOVE') {
-      this.myEpisodes.splice(this.myEpisodes.indexOf(episode));
-    }
   }
 
   private createFirst(): void {

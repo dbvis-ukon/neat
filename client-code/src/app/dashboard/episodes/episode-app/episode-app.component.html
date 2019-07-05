@@ -1,9 +1,14 @@
+<button mat-button color="primary" (click)="showAll()">expand all</button>
 <div class="container" cdkDropList [cdkDropListData]="myEpisodes" (cdkDropListDropped)="drop($event)">
-    <div class="episodeDiv" *ngFor="let episodeCategory of allEpisodes" cdkDrag>
-        <button (click)="hide($event)" mat-button color="primary">x</button>
-        <h3>{{episodeCategory.crisislexCategory.name}}</h3>
-        <dbvis-episode-vis [episode]="episodeCategory.episodes">
-        </dbvis-episode-vis>
-        <dbvis-episode-timeline [timelineData]="timelineData"></dbvis-episode-timeline>
+  <div style="border: gray" class="episodeDiv" *ngFor="let episodeCategory of allEpisodes; let i = index" cdkDrag>
+    <div style="height: 120px">
+      <button (click)="episodeCategory.visible = !episodeCategory.visible;" mat-button color="primary">expand</button>
+      <h5>{{episodeCategory.crisislexCategory.name}}</h5>
     </div>
+    <div style="border: 1px dashed gray">
+      <dbvis-episode-vis [episode]="episodeCategory.episodes" [showText]="episodeCategory.visible">
+      </dbvis-episode-vis>
+    </div>
+    <!-- <dbvis-episode-timeline [timelineData]="timelineData"></dbvis-episode-timeline> -->
+  </div>
 </div>
