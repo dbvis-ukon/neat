@@ -39,6 +39,7 @@ export class EpisodeTimelineComponent implements OnInit {
   private svgHeight = 2200;
   private paddingHeight = 50;
   private timelinePadding = 50;
+  private lineHeight = 0.3;
 
   private that = this;
 
@@ -90,9 +91,12 @@ export class EpisodeTimelineComponent implements OnInit {
   }
 
   private update(that) {
+    const [min, max] = d3.extent(this.data, this.yAccessor);
+    const timeDiff = (max.valueOf() - min.valueOf()) / 1000 / 60;
+
     const yScale = d3.scaleTime()
-      .domain(d3.extent(this.data, this.yAccessor))
-      .range([this.paddingHeight, this.svgHeight]);
+      .domain([min, max])
+      .range([this.paddingHeight, this.lineHeight * timeDiff]);
 
     const xScale = d3.scaleLinear()
       .domain(d3.extent(this.data, this.xAccessor))
@@ -133,7 +137,7 @@ export class EpisodeTimelineComponent implements OnInit {
 
     this.chartSelection.append('g')
       .attr('class', 'y axis')
-      .attr('transform', `translate(${this.svgWidth - this.timelinePadding}, ${this.paddingHeight})`)
+      .attr('transform', `translate(${this.svgWidth - this.timelinePadding}, 0)`)
       .call(d3.axisRight(yScale)); // Create an axis component with d3.axisLeft
   }
 
