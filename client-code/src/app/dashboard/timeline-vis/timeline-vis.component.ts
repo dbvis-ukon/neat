@@ -7,8 +7,8 @@ import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from './timeline-other-brushes';
 import { StreamGraph } from './stream-graph';
-import { streamgraph_data } from './streamgraph_data';
 import { HttpClient } from '@angular/common/http';
+import { StreamGraphItem } from './stream-graph-item';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -57,7 +57,7 @@ export class TimelineVisComponent implements OnInit {
 
   private brushDebouncer: Subject<[Date, Date]> = new Subject();
 
-  private streamGraphData: streamgraph_data[];
+  private streamGraphData: StreamGraphItem[];
 
   constructor(private http: HttpClient) { }
 
@@ -102,7 +102,7 @@ export class TimelineVisComponent implements OnInit {
 
     this.updateRender();
 
-    this.http.get<streamgraph_data[]>('/assets/streamgraphdata.json').subscribe(data => {
+    this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
       this.streamGraphData = data;
     });
   }
