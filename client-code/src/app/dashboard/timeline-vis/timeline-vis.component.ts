@@ -80,10 +80,9 @@ export class TimelineVisComponent implements OnInit {
 
   @Input()
   set brushExternal(brushExternal: [Date, Date]) {
-    console.log('brush external', brushExternal);
     this._brushExternal = brushExternal;
 
-    if (brushExternal) {
+    if (brushExternal && brushExternal[0] && brushExternal[1]) {
       this.updateOwnBrush(brushExternal);
     }
   }
@@ -170,7 +169,7 @@ export class TimelineVisComponent implements OnInit {
   private updateOwnBrush(externalBrush?: [Date, Date]) {
     let brushRange = null;
     if (externalBrush) {
-      brushRange = externalBrush;
+      brushRange = [this.timeScale(externalBrush[0]), this.timeScale(externalBrush[1])];
     } else if (this.lastBrush) {
       brushRange = [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])];
     } else {
