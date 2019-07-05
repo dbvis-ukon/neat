@@ -21,7 +21,7 @@ import { Utterance } from '../utterance';
 export class EpisodeTooltipComponent implements OnInit {
 
   @Input()
-  utterance: Utterance[];
+  utterances: Utterance[];
 
   constructor() { }
 

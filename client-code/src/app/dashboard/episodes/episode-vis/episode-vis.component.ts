@@ -51,11 +51,11 @@ export class EpisodeVisComponent implements OnInit {
   private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
 
   private numberOfSentences = 0;
-  private svgWidth = 100;//400; // ToDo take the info about maxColumn
+  private svgWidth = 400; //TODO 100;//// ToDo take the info about maxColumn
   private svgHeight = 2000;
   private oneTextElementHeight = 3; // ToDo change of the height of one sentence
   private paddingHeight = 50;
-  private paddingForLabels = 0; // 3500;
+  private paddingForLabels =  3500;//TODO 0;
   private barWidth = 50;
   private fontSize = 100;
   private heightScale = 0;
@@ -130,14 +130,14 @@ export class EpisodeVisComponent implements OnInit {
 
     /* create labels */
     // this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
-    // const labels = this.getLabelData(this.myEpisodes);
-    // this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
-    // this.createLabels(this.myEpisodes);
-    // this.updateEpisodeLabels(this.myEpisodes);
+    const labels = this.getLabelData(this.myEpisodes);
+    this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
+    this.createLabels(this.myEpisodes);
+    this.updateEpisodeLabels(this.myEpisodes);
 
-    // /* create lines to link episode bars to their labels */
-    // this.createEpisodeToLabelConnectingLine(this.myEpisodes);
-    // this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
+    /* create lines to link episode bars to their labels */
+    this.createEpisodeToLabelConnectingLine(this.myEpisodes);
+    this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
   }
 
   private expandVis() {
@@ -231,7 +231,7 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection
       .append('g')
       .attr('id', 'gContainerForEpisodeBars')
-      .attr('transform', 'translate(80, 0)scale(0.1, 0.1)');
+      .attr('transform', 'translate(0, 0)scale(0.1, 0.1)');//80 TODO
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
@@ -251,7 +251,6 @@ export class EpisodeVisComponent implements OnInit {
         const episodeTooltipComponentInstance = this.tooltipService.openAtMousePosition(EpisodeTooltipComponent, mouseEvent);
 
         episodeTooltipComponentInstance.utterances = d.utterances;
-        console.log(d.utterances);
 
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', true);
 
