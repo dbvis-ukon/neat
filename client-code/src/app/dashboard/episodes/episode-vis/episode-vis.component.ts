@@ -26,10 +26,10 @@ import {
 import {
   Utterance
 } from '../utterance';
-import {Observable} from 'rxjs';
-import {TooltipService} from '@app/core/services/tooltip.service';
-import {EpisodeTooltipComponent} from '../episode-tooltip/episode-tooltip.component';
-import {UserOptionsRepositoryService} from '@app/core';
+import { Observable } from 'rxjs';
+import { TooltipService } from '@app/core/services/tooltip.service';
+import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
+import { UserOptionsRepositoryService } from '@app/core';
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -51,11 +51,11 @@ export class EpisodeVisComponent implements OnInit {
   private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
 
   private numberOfSentences = 0;
-  private svgWidth = 400; //TODO 100;//// ToDo take the info about maxColumn
+  private svgWidth = 100;//// ToDo take the info about maxColumn
   private svgHeight = 2000;
   private oneTextElementHeight = 3; // ToDo change of the height of one sentence
   private paddingHeight = 50;
-  private paddingForLabels =  3500;//TODO 0;
+  private paddingForLabels = 0;
   private barWidth = 50;
   private fontSize = 100;
   private heightScale = 0;
@@ -67,8 +67,8 @@ export class EpisodeVisComponent implements OnInit {
   private sortedLabels = [];
 
   constructor(private episodeCalculator: EpisodeCalculatorService,
-              private tooltipService: TooltipService,
-              private userOptionsService: UserOptionsRepositoryService) {
+    private tooltipService: TooltipService,
+    private userOptionsService: UserOptionsRepositoryService) {
   }
 
   ngOnInit() {
@@ -108,7 +108,21 @@ export class EpisodeVisComponent implements OnInit {
   set showText(showText: boolean) {
     this._showText = showText;
 
-
+    if (showText) {
+      this.svgWidth = 400;
+      this.paddingForLabels = 3500;
+      this.translateG(0);
+      this.expandVis();
+    } else {
+      if (this.svg !== undefined) {
+        this.svgWidth = 100;
+        this.paddingForLabels = 0;
+        this.translateG(80);
+        this.compactVis();
+        this.svgSelection.selectAll('.episodeToLabelLine').remove();
+        this.svgSelection.selectAll('.episodeLabel').remove();
+      }
+    }
   }
 
   get showText(): boolean {
@@ -127,9 +141,16 @@ export class EpisodeVisComponent implements OnInit {
     const lineData = this.getLineData(this.myEpisodes);
     this.createEpisodeLines(lineData);
     this.updateEpisodeLines(lineData);
+  }
+
+  private expandVis() {
 
     /* create labels */
-    // this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
+    this.updateLayout(this.numberOfSentences);
+    this.update();
+    const lineData = this.getLineData(this.myEpisodes);
+    this.updateEpisodeLines(lineData);
+   
     const labels = this.getLabelData(this.myEpisodes);
     this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
     this.createLabels(this.myEpisodes);
@@ -140,29 +161,11 @@ export class EpisodeVisComponent implements OnInit {
     this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
   }
 
-  private expandVis() {
-    // /*first sort episodes according to their occurrence in text*/
-    // this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
-    // this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
-
-    // this.createEpisodeBars(this.myEpisodes, this.numberOfSentences);
-    // this.updateLayout(this.numberOfSentences);
-
-    // /* create small lines on top of the episode bars to show where exactly they occur in text */
-    // const lineData = this.getLineData(this.myEpisodes);
-    // this.createEpisodeLines(lineData);
-    // this.updateEpisodeLines(lineData);
+  private compactVis() {
 
     /* create labels */
-    this.fontSize = this.numberOfSentences * this.oneTextElementHeight / this.myEpisodes.length;
-    const labels = this.getLabelData(this.myEpisodes);
-    this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
-    this.createLabels(this.myEpisodes);
-    this.updateEpisodeLabels(this.myEpisodes);
-
-    /* create lines to link episode bars to their labels */
-    this.createEpisodeToLabelConnectingLine(this.myEpisodes);
-    this.updateEpisodeToLabelConnectingLine(this.myEpisodes);
+    this.updateLayout(this.numberOfSentences);
+    this.update();
   }
 
   // *******************************************************************
@@ -231,7 +234,13 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection
       .append('g')
       .attr('id', 'gContainerForEpisodeBars')
-      .attr('transform', 'translate(0, 0)scale(0.1, 0.1)');//80 TODO
+      .attr('transform', 'translate(80, 0)scale(0.1, 0.1)');
+  }
+
+  private translateG(x: number) {
+    this.svgSelection
+      .select('#gContainerForEpisodeBars')
+      .attr('transform', 'translate(' + x + ', 0)scale(0.1, 0.1)');
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
@@ -239,7 +248,7 @@ export class EpisodeVisComponent implements OnInit {
     // attributes for episode: id, columnId, rowIds, color
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('rect')
-      .data <Episode>(episodes)
+      .data<Episode>(episodes)
       .enter()
       .append('rect')
       .attr('class', 'episodeBar')
@@ -265,10 +274,11 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private updateLayout(numberOfTextElements: number): void {
-   //this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
+    //this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
     this.heightScale = window.innerHeight / this.svgHeight;
     this.svgSelection
-      .attr('height', this.svgHeight);
+      .attr('height', this.svgHeight)
+      .attr('width', this.svgWidth);
   }
 
   private createFirst(): void {
@@ -321,7 +331,7 @@ export class EpisodeVisComponent implements OnInit {
 
   private update(): void {
 
-    d3.selectAll <SVGRectElement, Episode>('.episodeBar')
+    this.svgSelection.selectAll<SVGRectElement, Episode>('.episodeBar')
       .attr('x', (d) => this.paddingForLabels + this.svgWidth / 3 - (this.barWidth * d.columnId))
       .attr('y', (d) => {
         if (this.lastBarY < d.rowIds[d.rowIds.length - 1] * 0.1) {
@@ -365,7 +375,7 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection.selectAll('.episodeLabel').remove();
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('text')
-      .data <Episode>(episodes)
+      .data<Episode>(episodes)
       .enter()
       .append('text')
       .text((d) => {
@@ -384,7 +394,7 @@ export class EpisodeVisComponent implements OnInit {
   private updateEpisodeLabels(episodes: Episode[]): void {
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeLabel')
-      .data <Episode>(episodes)
+      .data<Episode>(episodes)
       .attr('x', () => 0)
       .attr('y', (d, i) => this.paddingHeight + this.sortedLabels[i])
       .style('font-size', this.fontSize);

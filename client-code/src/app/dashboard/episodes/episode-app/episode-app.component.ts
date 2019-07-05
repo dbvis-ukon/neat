@@ -49,4 +49,10 @@ export class EpisodeAppComponent implements OnInit {
     //   // pEle.style.height = 'auto';
     // }
   }
+
+  showAll(): void {
+    this.allEpisodes.forEach((category) => {
+      category.visible = !category.visible;
+    });
+  }
 }
