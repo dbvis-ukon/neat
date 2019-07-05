@@ -31,6 +31,14 @@ export class StreamGraph {
                     {
                         name: 'test1',
                         value: 2
+                    },
+                    {
+                        name: 'test2',
+                        value: 1
+                    },
+                    {
+                        name: 'test3',
+                        value: 2
                     }
                 ]
             }, {
@@ -38,11 +46,39 @@ export class StreamGraph {
                 data: [
                     {
                         name: 'test0',
-                        value: 3
+                        value: 1
                     },
                     {
                         name: 'test1',
+                        value: 3
+                    },
+                    {
+                        name: 'test2',
                         value: 4
+                    },
+                    {
+                        name: 'test3',
+                        value: 1
+                    }
+                ]
+            }, {
+                timestamp: 2,
+                data: [
+                    {
+                        name: 'test0',
+                        value: 2
+                    },
+                    {
+                        name: 'test1',
+                        value: 1
+                    },
+                    {
+                        name: 'test2',
+                        value: 5
+                    },
+                    {
+                        name: 'test3',
+                        value: 1
                     }
                 ]
             }, {
@@ -50,10 +86,18 @@ export class StreamGraph {
                 data: [
                     {
                         name: 'test0',
-                        value: 1
+                        value: 2
                     },
                     {
                         name: 'test1',
+                        value: 2
+                    },
+                    {
+                        name: 'test2',
+                        value: 2
+                    },
+                    {
+                        name: 'test3',
                         value: 2
                     }
                 ]
@@ -123,7 +167,7 @@ export class StreamGraph {
             .range([chartHeight, 0]);
 
         const color = d3.scaleLinear<string>()
-            .range(['#aad', '#556']);
+            .range(colors);
 
         const area: any = d3.area()
             .x((d: any, i) => x(d.data.timestamp))
@@ -134,6 +178,7 @@ export class StreamGraph {
             .data(layers0)
             .enter().append('path')
             .attr('d', area)
+            .attr('name', d => d.key)
             .style('fill', () =>  color(Math.random()));
 
         // function transition() {

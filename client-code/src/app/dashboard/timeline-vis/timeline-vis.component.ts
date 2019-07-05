@@ -179,7 +179,8 @@ export class TimelineVisComponent implements OnInit {
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
 
-    this.streamGraph.render(this.streamGraphData, this.width, this.height);
+    let streamgraphcolors:string[] = ['#aad', '#556'];
+    this.streamGraph.render(this.streamGraphData, streamgraphcolors, this.width, this.height);
   }
 
   /**
