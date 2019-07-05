@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { Utterance } from '../utterance';
 
 @Component({
   selector: 'dbvis-episode-tooltip',
@@ -20,7 +21,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 export class EpisodeTooltipComponent implements OnInit {
 
   @Input()
-  text: string;
+  utterance: Utterance[];
 
   constructor() { }
 

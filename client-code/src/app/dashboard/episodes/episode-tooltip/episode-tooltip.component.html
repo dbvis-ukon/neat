@@ -1,9 +1,7 @@
-<div>
-  <svg transform="translate (-100, -40)">
-    <g>
-      <text x="0" y="20">{{ text }}</text>
-      <line x1="0" y1="40" x2="200" y2="40" style="stroke:black; stroke-width:1" />
-    </g>
-  </svg>
+<div style="background-color: white">
+    <div style="font-size: 10px" *ngFor="let utterance of utterances">
+        <h5>{{utterance.timestamp}} {{utterance.location}}</h5>
+        <p>{{utterance.account}}: {{utterance.text}}</p>
+    </div>
 </div>
 
