@@ -1,4 +1,12 @@
-import { Directive, Output, EventEmitter, ElementRef, OnInit, Input, HostListener } from '@angular/core';
+import {
+  Directive,
+  Output,
+  EventEmitter,
+  ElementRef,
+  OnInit,
+  Input,
+  HostListener
+} from '@angular/core';
 import { ResizedEvent } from 'angular-resize-event';
 import { ResizeSensor } from 'css-element-queries';
 import { Subject } from 'rxjs';
@@ -8,7 +16,6 @@ import { debounceTime } from 'rxjs/operators';
   selector: '[dbvisResized]'
 })
 export class ResizedDirective implements OnInit {
-
   @Input()
   debounceTime: number;
 
@@ -23,38 +30,35 @@ export class ResizedDirective implements OnInit {
   private oldWidth: number;
   private oldHeight: number;
 
-  constructor(private readonly element: ElementRef) {
-  }
+  constructor(private readonly element: ElementRef) {}
 
   ngOnInit() {
     // tslint:disable-next-line:no-unused-expression
     new ResizeSensor(this.element.nativeElement, _ => this.onResized());
 
-    this.debouncer.pipe(
-      debounceTime(this.debounceTime || 100)
-    ).subscribe(() => {
-      const newWidth = this.element.nativeElement.clientWidth;
-      const newHeight = this.element.nativeElement.clientHeight;
+    this.debouncer
+      .pipe(debounceTime(this.debounceTime || 100))
+      .subscribe(() => {
+        const newWidth = this.element.nativeElement.clientWidth;
+        const newHeight = this.element.nativeElement.clientHeight;
 
-      if (newWidth === this.oldWidth && newHeight === this.oldHeight) {
-        return;
-      }
+        if (newWidth === this.oldWidth && newHeight === this.oldHeight) {
+          return;
+        }
 
-      const event = new ResizedEvent(
-        this.element,
-        newWidth,
-        newHeight,
-        this.oldWidth,
-        this.oldHeight
-      );
+        const event = new ResizedEvent(
+          this.element,
+          newWidth,
+          newHeight,
+          this.oldWidth,
+          this.oldHeight
+        );
 
-      this.oldWidth = this.element.nativeElement.clientWidth;
-      this.oldHeight = this.element.nativeElement.clientHeight;
+        this.oldWidth = this.element.nativeElement.clientWidth;
+        this.oldHeight = this.element.nativeElement.clientHeight;
 
-
-      this.dbvisResized.emit(event);
-    });
-
+        this.dbvisResized.emit(event);
+      });
 
     this.onResized();
     this.onWindowResized();

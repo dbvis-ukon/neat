@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
 
-  apiUrl: 'http://localhost:3000/api',
+  apiUrl: `http://${window.location.hostname}:3000/api`,
 
-  stompWs: 'ws://localhost:3000/ws'
+  stompWs: `ws://${window.location.hostname}:3000/ws`
 };
 
 /*

@@ -10,7 +10,7 @@
       <div class="panel left">
         <div class="map">
           <h1>MAP COMPONENT</h1>
-          <dbvis-map-vis [data]="mapData"></dbvis-map-vis>
+          <dbvis-map-neighborhood-vis [options]="mapOptions" (selected)="mapNeighborhoodChanged($event)"></dbvis-map-neighborhood-vis>
         </div>
 
 
@@ -29,10 +29,7 @@
 
         <div class="story">
           <h1>STORY / STH ELSE</h1>
-
-          <h5>move the slider to see the map being updated</h5>
-          <!-- on every slider move the sliderChanged function is exectured (see app.component.ts) -->
-          <mat-slider style="width:100%;" min="0" max="20" step="1" (input)="sliderChanged($event)"></mat-slider>
+          <dbvis-map-glyph-vis [mc1Data]="brushedMc1Data" [options]="mapOptions"></dbvis-map-glyph-vis>
         </div>
       </div>
     </div>

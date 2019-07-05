@@ -8,12 +8,11 @@ import { GroupRepositoryService } from '@app/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
-
   groupName: string;
 
   groups: Group[];
 
-  constructor(private groupRepository: GroupRepositoryService) { }
+  constructor(private groupRepository: GroupRepositoryService) {}
 
   ngOnInit() {
     this.updateGroups();
@@ -31,5 +30,4 @@ export class HomeComponent implements OnInit {
       this.updateGroups();
     });
   }
-
 }

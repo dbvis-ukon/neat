@@ -8,9 +8,8 @@ describe('EpisodeVisComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EpisodeVisComponent ]
-    })
-    .compileComponents();
+      declarations: [EpisodeVisComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
