@@ -149,7 +149,7 @@ export class TimelineVisComponent implements OnInit {
       .call(this.axisBottom);
 
     // either use the brush from the last brush selection or brush the whole time series.
-    const brushRange = this.lastBrush ? [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])] : this.timeScale.range();
+    const brushRange = this.lastBrush ? [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])] : [0, 50];
 
     this.brushSelection
       .call(this.brush)
