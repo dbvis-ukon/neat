@@ -125,6 +125,7 @@ export class EpisodeVisComponent implements OnInit {
         this.compactVis();
         this.svgSelection.selectAll('.episodeToLabelLine').remove();
         this.svgSelection.selectAll('.episodeLabel').remove();
+        this.svgSelection.selectAll('.episodeLine').remove();
       }
     }
   }
