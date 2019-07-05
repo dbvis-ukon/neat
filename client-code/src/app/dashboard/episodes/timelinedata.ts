@@ -29,6 +29,4 @@ export class Timelinedata {
   set count(value: number) {
     this._count = value;
   }
-
-  static copy
 }

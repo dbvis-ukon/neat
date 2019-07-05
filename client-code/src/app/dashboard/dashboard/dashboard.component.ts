@@ -20,8 +20,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
-    begin: new Date('2020-01-01 00:00:00'),
-    end: new Date('2020-03-31 23:59:59'),
+    begin: new Date('2020-04-06 00:00:00'),
+    end: new Date('2020-04-11 23:59:59'),
     userColor: 'black'
   };
 

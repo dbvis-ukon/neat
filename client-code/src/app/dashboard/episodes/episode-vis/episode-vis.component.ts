@@ -62,6 +62,9 @@ export class EpisodeVisComponent implements OnInit {
   private timestamps: string[] = [];
   private lastBarY = 0;
 
+  // All episodes as originally received
+  private _myEpisodes: Episode[] = [];
+  // all episodes in the current timeline brush
   private myEpisodes: Episode[] = [];
 
   private sortedLabels = [];
@@ -84,11 +87,11 @@ export class EpisodeVisComponent implements OnInit {
 
     this.userOptionsService.userOptions$.subscribe(options => {
       // TODO filter stuff
-      console.log(options);
+      // console.log(options);
+      const [minBrush, maxBrush] = options.timelineBrush;
       this.createOrUpdateVis();
     });
   }
-
 
   @Input()
   set episode(episodeObservable: Observable<Episode[]>) {
@@ -97,7 +100,8 @@ export class EpisodeVisComponent implements OnInit {
     }
 
     episodeObservable.subscribe(episodes => {
-      this.myEpisodes = episodes.filter(e => e.significance > 40);
+      this._myEpisodes = episodes.filter(e => e.significance > 40);
+      this.myEpisodes = this._myEpisodes;
       this.createOrUpdateVis();
     });
   }
@@ -128,6 +132,14 @@ export class EpisodeVisComponent implements OnInit {
   get showText(): boolean {
     return this._showText;
   }
+
+  // private applyTimelineBrush(brush?: [Date, Date]): Episode[] {
+  //   if (!brush) {
+  //     return this._myEpisodes;
+  //   }
+  //   const [minBrush, maxBrush] = brush;
+  //   return this._myEpisodes.filter(episode => episode.)
+  // }
 
   private createOrUpdateVis() {
     /*first sort episodes according to their occurrence in text*/

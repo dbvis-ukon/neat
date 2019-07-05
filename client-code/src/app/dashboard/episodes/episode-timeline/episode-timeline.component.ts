@@ -17,7 +17,7 @@ import {Observable} from 'rxjs';
 import {TooltipService} from '@app/core/services/tooltip.service';
 import {Timelinedata} from '@app/dashboard/episodes/timelinedata';
 import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-timeline-tooltip/episode-timeline-tooltip.component';
-import {buildAnimationTimelines} from "@angular/animations/browser/src/dsl/animation_timeline_builder";
+import {UserOptionsRepositoryService} from "@app/core";
 
 @Component({
   selector: 'dbvis-episode-timeline',
@@ -29,6 +29,7 @@ export class EpisodeTimelineComponent implements OnInit {
 
   @ViewChild('svg') svgRef: ElementRef<SVGElement>;
 
+  private _data: Timelinedata[] = [];
   private data: Timelinedata[] = [];
 
   private svg: SVGElement;
@@ -41,14 +42,11 @@ export class EpisodeTimelineComponent implements OnInit {
   private timelinePadding = 50;
   private lineHeight = 0.3;
 
-  private that = this;
-
-  constructor(private tooltipService: TooltipService) {
+  constructor(private tooltipService: TooltipService,
+              private userOptionsService: UserOptionsRepositoryService) {
   }
 
   ngOnInit() {
-    console.log('initialize');
-
     this.svg = this.svgRef.nativeElement;
     this.svgSelection = d3.select(this.svg);
 
@@ -59,6 +57,13 @@ export class EpisodeTimelineComponent implements OnInit {
 
     this.chartSelection = this.svgSelection
       .append('g');
+
+    this.userOptionsService.userOptions$.subscribe(options => {
+      console.log('updating');
+      this.data = this.applyTimelineBrush(options.timelineBrush);
+      console.log(this.data);
+      this.update();
+    });
   }
 
 
@@ -69,17 +74,44 @@ export class EpisodeTimelineComponent implements OnInit {
     }
 
     timelineDataObservable.subscribe(timelineData => {
-      this.data = timelineData.sort((a, b) => {
+      this._data = timelineData.sort((a, b) => {
         return +a.datetime - +b.datetime;
       });
-      const first = new Timelinedata(null, null, this.data[0]);
+      const first = new Timelinedata(null, null, this._data[0]);
       first.count = 0;
-      const last = new Timelinedata(null, null, this.data[this.data.length - 1]);
+      const last = new Timelinedata(null, null, this._data[this._data.length - 1]);
       last.count = 0;
-      this.data.push(last);
-      this.data.unshift(first);
-      this.update(this);
+      this._data.push(last);
+      this._data.unshift(first);
+
+      this.data = this.applyTimelineBrush();
+
+      this.update();
     });
+  }
+
+  private applyTimelineBrush(brush?: [Date, Date]): Timelinedata[] {
+    if (!brush) {
+      return this._data;
+    }
+
+    const [minBrush, maxBrush] = brush;
+    console.log(minBrush, maxBrush);
+    const filtered = this._data.filter(data => {
+      return data.datetime >= minBrush && data.datetime <= maxBrush;
+    });
+    if (filtered.length > 0) {
+      const first = new Timelinedata(null, null, filtered[0]);
+      first.count = 0;
+      const last = new Timelinedata(null, null, filtered[filtered.length - 1]);
+      last.count = 0;
+      filtered.push(last);
+      filtered.unshift(first);
+    }
+
+    console.log(filtered);
+
+    return filtered;
   }
 
   private yAccessor(d: Timelinedata): Date {
@@ -90,14 +122,21 @@ export class EpisodeTimelineComponent implements OnInit {
     return d.count;
   }
 
-  private update(that) {
+  private update() {
+    console.log(this.data);
+    if (this.data.length === 0) {
+      console.warn('no data in timeline');
+      return;
+    }
     const [min, max] = d3.extent(this.data, this.yAccessor);
+    console.log(min, max);
     const timeDiff = (max.valueOf() - min.valueOf()) / 1000 / 60;
 
     const yScale = d3.scaleTime()
       .domain([min, max])
       .range([this.paddingHeight, this.lineHeight * timeDiff]);
 
+    console.log(d3.extent(this.data, this.xAccessor));
     const xScale = d3.scaleLinear()
       .domain(d3.extent(this.data, this.xAccessor))
       .range([this.svgWidth - this.timelinePadding, this.svgWidth - (200 + this.timelinePadding)]);
@@ -108,6 +147,8 @@ export class EpisodeTimelineComponent implements OnInit {
       .curve(d3.curveBasis);
 
     const bisector = d3.bisector<Timelinedata, Date>(d => d.datetime).left;
+
+    this.chartSelection.selectAll('*').remove();
 
     this.chartSelection.append('path')
       .attr('fill', 'lightblue')
