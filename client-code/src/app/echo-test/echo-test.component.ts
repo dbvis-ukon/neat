@@ -8,10 +8,9 @@ import { Message } from '@stomp/stompjs';
   styleUrls: ['./echo-test.component.less']
 })
 export class EchoTestComponent implements OnInit {
-
   receivedMessages: string[] = [];
 
-  constructor(private rxStompService: RxStompService) { }
+  constructor(private rxStompService: RxStompService) {}
 
   ngOnInit() {
     this.rxStompService.watch('/echo').subscribe((message: Message) => {
@@ -22,7 +21,6 @@ export class EchoTestComponent implements OnInit {
   sendMessage() {
     const message = `${new Date()}: test`;
 
-    this.rxStompService.publish({destination: '/echo', body: message});
+    this.rxStompService.publish({ destination: '/echo', body: message });
   }
-
 }

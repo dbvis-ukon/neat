@@ -1,6 +1,13 @@
-export interface GeoPos {
+export class GeoPos {
+    public longitude: number;
+    public latitude: number;
 
-    latitude: number;
+    constructor(longitude, latitude) {
+        this.longitude = longitude;
+        this.latitude = latitude;
+    }
 
-    longitude: number;
+    public toString = (): string => {
+        return `${this.longitude},${this.latitude}`;
+    }
 }
