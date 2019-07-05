@@ -1,4 +1,4 @@
-export interface StreamlineGraphItem {
+export interface StreamGraphItem {
     timestamp: Date | number;
 
     data: {

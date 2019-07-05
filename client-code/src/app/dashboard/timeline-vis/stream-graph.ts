@@ -1,6 +1,5 @@
-import { streamgraph_data } from './streamgraph_data';
 import * as d3 from 'd3';
-import { StreamlineGraphItem } from './streamline-graph-data';
+import { StreamGraphItem } from './stream-graph-item';
 
 
 export class StreamGraph {
@@ -15,12 +14,12 @@ export class StreamGraph {
         this.chart = chartRoot;
     }
 
-    public render(mydata: StreamlineGraphItem[], chartWidth: number, chartHeight: number): void {
+    public render(mydata: StreamGraphItem[], chartWidth: number, chartHeight: number): void {
         this.chartWidth = chartWidth;
         this.chartHeight = chartHeight;
-        let colorrange = ['#045A8D', '#2B8CBE', '#74A9CF', '#A6BDDB', '#D0D1E6', '#F1EEF6'];
-        //console.log('stream data', someData);
-        
+        const colorrange = ['#045A8D', '#2B8CBE', '#74A9CF', '#A6BDDB', '#D0D1E6', '#F1EEF6'];
+        // console.log('stream data', someData);
+
         mydata = [
             {
                 timestamp: 0,
@@ -34,7 +33,7 @@ export class StreamGraph {
                         value: 2
                     }
                 ]
-            },{
+            }, {
                 timestamp: 1,
                 data: [
                     {
@@ -46,7 +45,7 @@ export class StreamGraph {
                         value: 4
                     }
                 ]
-            },{
+            }, {
                 timestamp: 3,
                 data: [
                     {
@@ -60,7 +59,7 @@ export class StreamGraph {
                 ]
             }
         ];
-        let m = mydata.length; // samples per layer
+        const m = mydata.length; // samples per layer
 
         const uniqEs6 = (arrArg) => {
             return arrArg.filter((elem, pos, arr) => {
@@ -96,43 +95,46 @@ export class StreamGraph {
         // let stack = d3.stack().keys(d3.range(n).map((d) => 'layer' + d)).offset(d3.stackOffsetWiggle);
 
         // Create empty data structures
-        let matrix0 = d3.range(m).map((d) => { return { x: d }; });
-        //let matrix1 = d3.range(m).map((d) => { return { x: d }; });
+        const matrix0 = d3.range(m).map((d) => ({ x: d }));
+        // let matrix1 = d3.range(m).map((d) => { return { x: d }; });
 
 
 
-        
-        //d3.range(n).map((d) => { this.bumpLayer(m, matrix0, d); });
-        //d3.range(n).map((d) => { this.bumpLayer(m, matrix1, d); });
 
-        //console.log(matrix0);
+        // d3.range(n).map((d) => { this.bumpLayer(m, matrix0, d); });
+        // d3.range(n).map((d) => { this.bumpLayer(m, matrix1, d); });
 
-        //let layers0 = stack(matrix0);
-        //let layers1 = stack(matrix1);
+        // console.log(matrix0);
+
+        // let layers0 = stack(matrix0);
+        // let layers1 = stack(matrix1);
 
         console.log('layers0', layers0);
 
-        let x = d3.scaleLinear()
+        const x = d3.scaleLinear()
             .domain([0, m - 1])
             .range([0, chartWidth]);
 
-        let y = d3.scaleLinear()
-            .domain([d3.min(layers0, function (layer) { return d3.min(layer, function (d) { return d[0]; }); }), d3.max(layers0, function (layer) { return d3.max(layer, function (d) { return d[1]; }); })])
+        const y = d3.scaleLinear()
+            .domain([
+                d3.min(layers0, (layer) => d3.min(layer, (d) => d[0])),
+                d3.max(layers0, (layer) => d3.max(layer, (d) => d[1]))
+            ])
             .range([chartHeight, 0]);
 
-        let color = d3.scaleLinear<string>()
+        const color = d3.scaleLinear<string>()
             .range(['#aad', '#556']);
 
-        let area: any = d3.area()
-            .x(function (d: any, i) { return x(d.data.timestamp); })
-            .y0(function (d) { return y(d[0]); })
-            .y1(function (d) { return y(d[1]); });
+        const area: any = d3.area()
+            .x((d: any, i) => x(d.data.timestamp))
+            .y0((d) => y(d[0]))
+            .y1((d) => y(d[1]));
 
-        this.chart.selectAll("path")
+        this.chart.selectAll('path')
             .data(layers0)
-            .enter().append("path")
-            .attr("d", area)
-            .style("fill", () =>  color(Math.random()));
+            .enter().append('path')
+            .attr('d', area)
+            .style('fill', () =>  color(Math.random()));
 
         // function transition() {
         //     d3.selectAll("path")
@@ -151,7 +153,7 @@ export class StreamGraph {
             .append('text')
             .attr('x', 10)
             .attr('y', 10)
-            .text('deimudda')
+            .text('deimudda');
         // .on('click', (d, i, n) => {
         //     d3.select(n[i]).
         // })
