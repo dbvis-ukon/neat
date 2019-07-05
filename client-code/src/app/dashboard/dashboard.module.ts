@@ -9,13 +9,18 @@ import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 
 import { SharedModule } from '@app/shared/shared.module';
+import { StreamgraphTooltipComponent } from './timeline-vis/streamgraph-tooltip/streamgraph-tooltip.component';
 
 @NgModule({
+  entryComponents:[
+    StreamgraphTooltipComponent
+  ],
   declarations: [
     DashboardComponent,
     MapVisComponent,
     TimelineVisComponent,
     EpisodeVisComponent,
+    StreamgraphTooltipComponent,
   ],
   imports: [
     CommonModule,

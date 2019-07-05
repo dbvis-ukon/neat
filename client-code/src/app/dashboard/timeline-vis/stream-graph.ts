@@ -1,5 +1,7 @@
 import * as d3 from 'd3';
 import { StreamGraphItem } from './stream-graph-item';
+import { TooltipService } from '@app/core/services/tooltip.service';
+import { StreamgraphTooltipComponent } from './streamgraph-tooltip/streamgraph-tooltip.component';
 
 
 export class StreamGraph {
@@ -10,7 +12,7 @@ export class StreamGraph {
 
     private chartHeight: number;
 
-    constructor(chartRoot: d3.Selection<SVGGElement, null, undefined, null>) {
+    constructor(chartRoot: d3.Selection<SVGGElement, null, undefined, null>, private tooltipservice: TooltipService) {
         this.chart = chartRoot;
     }
 
@@ -179,7 +181,20 @@ export class StreamGraph {
             .enter().append('path')
             .attr('d', area)
             .attr('name', d => d.key)
-            .style('fill', () =>  color(Math.random()));
+            .style('fill', () =>  color(Math.random()))
+            .on('mouseenter', () => {
+                const mouseEvent: MouseEvent = d3.event;
+        
+                const exampleTooltipComponentInstance = this.tooltipservice.openAtMousePosition(StreamgraphTooltipComponent, mouseEvent);
+        
+                const randomNumber = Math.random();
+        
+                exampleTooltipComponentInstance.text = 'Hello world in tooltip with random number: ' + randomNumber;
+              })
+              .on('mouseleave', () => {
+                this.tooltipservice.close();
+              });
+        
 
         // function transition() {
         //     d3.selectAll("path")

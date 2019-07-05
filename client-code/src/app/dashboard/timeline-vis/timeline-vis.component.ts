@@ -9,6 +9,7 @@ import { TimelineOtherBrushes } from './timeline-other-brushes';
 import { StreamGraph } from './stream-graph';
 import { HttpClient } from '@angular/common/http';
 import { StreamGraphItem } from './stream-graph-item';
+import { TooltipService } from '@app/core/services/tooltip.service';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -59,7 +60,7 @@ export class TimelineVisComponent implements OnInit {
 
   private streamGraphData: StreamGraphItem[];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private tooltipService: TooltipService) { }
 
   @Input()
   set options(options: TimelineOptions) {
@@ -131,7 +132,7 @@ export class TimelineVisComponent implements OnInit {
       .append('g')
       .attr('class', 'stream-graph');
 
-    this.streamGraph = new StreamGraph(this.streamGraphSelection);
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService);
 
     this.otherBrushesSelection = this.svgSelection
       .append('g');
