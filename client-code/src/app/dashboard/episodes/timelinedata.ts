@@ -2,9 +2,16 @@ export class Timelinedata {
   private _datetime: Date;
   private _count: number;
 
-  constructor(datetime: string, count: number) {
-    this._datetime = new Date(datetime);
-    this._count = count;
+  // constructor(datetime: string, count: number);
+  constructor(datetime: string , count: number, timelinedata?: Timelinedata);
+  constructor(datetime: string , count: number, timelinedata: Timelinedata) {
+    if (timelinedata) {
+      this.datetime = timelinedata.datetime;
+      this.count = timelinedata.count;
+    } else {
+      this._datetime = new Date(datetime);
+      this._count = count;
+    }
   }
 
   get datetime(): Date {
@@ -22,4 +29,6 @@ export class Timelinedata {
   set count(value: number) {
     this._count = value;
   }
+
+  static copy
 }

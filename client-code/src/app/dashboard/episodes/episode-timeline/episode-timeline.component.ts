@@ -17,6 +17,7 @@ import {Observable} from 'rxjs';
 import {TooltipService} from '@app/core/services/tooltip.service';
 import {Timelinedata} from '@app/dashboard/episodes/timelinedata';
 import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-timeline-tooltip/episode-timeline-tooltip.component';
+import {buildAnimationTimelines} from "@angular/animations/browser/src/dsl/animation_timeline_builder";
 
 @Component({
   selector: 'dbvis-episode-timeline',
@@ -36,9 +37,8 @@ export class EpisodeTimelineComponent implements OnInit {
 
   private svgWidth = 400; // ToDo take the info about maxColumn
   private svgHeight = 2200;
-  private oneTextElementHeight = 3; // ToDo change of the height of one sentence
   private paddingHeight = 50;
-  private paddingForLabels = 3500;
+  private timelinePadding = 50;
 
   private that = this;
 
@@ -53,7 +53,8 @@ export class EpisodeTimelineComponent implements OnInit {
 
     this.svgSelection
       .style('margin-top', -this.svgHeight)
-      .attr('height', this.svgHeight + 50);
+      .attr('height', this.svgHeight + 50)
+      .attr('width', this.svgWidth);
 
     this.chartSelection = this.svgSelection
       .append('g');
@@ -70,6 +71,12 @@ export class EpisodeTimelineComponent implements OnInit {
       this.data = timelineData.sort((a, b) => {
         return +a.datetime - +b.datetime;
       });
+      const first = new Timelinedata(null, null, this.data[0]);
+      first.count = 0;
+      const last = new Timelinedata(null, null, this.data[this.data.length - 1]);
+      last.count = 0;
+      this.data.push(last);
+      this.data.unshift(first);
       this.update(this);
     });
   }
@@ -83,16 +90,13 @@ export class EpisodeTimelineComponent implements OnInit {
   }
 
   private update(that) {
-    console.log(d3.extent(this.data, this.yAccessor));
-
     const yScale = d3.scaleTime()
       .domain(d3.extent(this.data, this.yAccessor))
       .range([this.paddingHeight, this.svgHeight]);
-    console.log(yScale);
 
     const xScale = d3.scaleLinear()
       .domain(d3.extent(this.data, this.xAccessor))
-      .range([this.svgWidth - 100, this.svgWidth - 300]);
+      .range([this.svgWidth - this.timelinePadding, this.svgWidth - (200 + this.timelinePadding)]);
 
     const line = d3.line<Timelinedata>()
       .x(d => xScale(this.xAccessor(d)))
@@ -121,6 +125,16 @@ export class EpisodeTimelineComponent implements OnInit {
         this.tooltipService.close();
       })
     ;
+
+    this.chartSelection.append('g')
+      .attr('class', 'x axis')
+      .attr('transform', `translate(0, ${this.paddingHeight})`)
+      .call(d3.axisTop(xScale)); // Create an axis component with d3.axisBottom
+
+    this.chartSelection.append('g')
+      .attr('class', 'y axis')
+      .attr('transform', `translate(${this.svgWidth - this.timelinePadding}, ${this.paddingHeight})`)
+      .call(d3.axisRight(yScale)); // Create an axis component with d3.axisLeft
   }
 
 }
