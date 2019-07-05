@@ -8,7 +8,6 @@ import {
   MatSliderModule,
   MatToolbarModule
 } from '@angular/material';
-import { AngularResizedEventModule } from 'angular-resize-event';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
@@ -23,11 +22,18 @@ import { MapModule } from '@app/dashboard/map/map.module';
     StreamgraphTooltipComponent
   ],
   imports: [
+    CommonModule,
+    SharedModule.forRoot(),
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatToolbarModule,
     MapModule
   ],
   declarations: [
     DashboardComponent,
-    AngularResizedEventModule,
     TimelineVisComponent,
     EpisodeVisComponent,
     StreamgraphTooltipComponent,
