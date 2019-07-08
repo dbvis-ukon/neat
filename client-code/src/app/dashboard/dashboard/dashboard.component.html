@@ -24,7 +24,7 @@
         <div class="timeline">
           <!-- <h1>TIMELINE</h1> -->
           <dbvis-timeline-vis [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes"
-            (brushed)="timelineBrushed($event)"></dbvis-timeline-vis>
+            (brushed)="timelineBrushed($event)" [streamGraphData]="streamGraphData" [streamGraphColors]="streamGraphColors"></dbvis-timeline-vis>
         </div>
 
         <div class="story">

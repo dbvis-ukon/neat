@@ -6,6 +6,10 @@ import { ScaleTime } from 'd3';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from './timeline-other-brushes';
+import { StreamGraph } from './stream-graph';
+import { HttpClient } from '@angular/common/http';
+import { StreamGraphItem } from './stream-graph-item';
+import { TooltipService } from '@app/core/services/tooltip.service';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -33,6 +37,8 @@ export class TimelineVisComponent implements OnInit {
 
   private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
 
+  private streamGraphSelection: d3.Selection<SVGGElement, null, undefined, null>;
+
   private otherBrushesSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
   private timeScale: ScaleTime<number, number> = d3.scaleTime();
@@ -47,12 +53,41 @@ export class TimelineVisComponent implements OnInit {
 
   private brushSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
+  private streamGraph: StreamGraph;
+
 
   private lastBrush: [Date, Date];
 
   private brushDebouncer: Subject<[Date, Date]> = new Subject();
 
-  constructor() { }
+  private _streamGraphData: StreamGraphItem[];
+  private _streamGraphColors: string[];
+
+  constructor(private http: HttpClient, private tooltipService: TooltipService) { }
+
+  @Input()
+  set streamGraphData(streamGraphData: StreamGraphItem[]) {
+    this._streamGraphData = streamGraphData;
+
+
+    this.updateStreamGraph();
+  }
+
+  get streamGraphData(): StreamGraphItem[] {
+    return this._streamGraphData;
+  }
+
+  @Input()
+  set streamGraphColors(streamGraphColors: string[]) {
+    this._streamGraphColors = streamGraphColors;
+
+
+    this.updateStreamGraph();
+  }
+
+  get streamGraphColors(): string[] {
+    return this._streamGraphColors;
+  }
 
   @Input()
   set options(options: TimelineOptions) {
@@ -107,11 +142,15 @@ export class TimelineVisComponent implements OnInit {
     this.updateRanges();
 
     this.updateRender();
+
+    // this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
+    //   this.streamGraphData = data;
+    // });
   }
 
   onResized(event: ResizedEvent) {
     this.width = event.newWidth - 30;
-    this.height = 40; // constant height
+    this.height = 300; // constant height
 
     this.updateRanges();
 
@@ -120,6 +159,7 @@ export class TimelineVisComponent implements OnInit {
 
   private initVis(): void {
     this.svgSelection = d3.select(this.svg);
+    this.svgSelection.attr('class', 'timeline-viz');
 
     // add bottom axis
     this.axisSelection = this.svgSelection
@@ -127,6 +167,12 @@ export class TimelineVisComponent implements OnInit {
       .attr('class', 'axis')
       .attr('transform', `translate(0,0)`)
       .call(this.axisBottom);
+
+    this.streamGraphSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'stream-graph');
+
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService);
 
     this.otherBrushesSelection = this.svgSelection
       .append('g');
@@ -183,6 +229,10 @@ export class TimelineVisComponent implements OnInit {
     // update the color of the brush
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
+
+    this.svgSelection.select('g.brush rect.overlay').style('pointer-events', 'none');
+
+    this.updateStreamGraph();
   }
 
   /**
@@ -225,5 +275,11 @@ export class TimelineVisComponent implements OnInit {
       .attr('stroke-width', 2);
 
     rects.exit().remove();
+  }
+
+  private updateStreamGraph() {
+    if (this.streamGraph && this._streamGraphData && this._streamGraphColors) {
+      this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height, this.timeScale);
+    }
   }
 }

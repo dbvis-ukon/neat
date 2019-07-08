@@ -16,22 +16,34 @@ import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 
 import { SharedModule } from '@app/shared/shared.module';
+import { StreamgraphTooltipComponent } from './timeline-vis/streamgraph-tooltip/streamgraph-tooltip.component';
 import { MapModule } from '@app/dashboard/map/map.module';
 
 @NgModule({
-  declarations: [DashboardComponent, TimelineVisComponent, EpisodeVisComponent],
+  entryComponents: [
+    StreamgraphTooltipComponent
+  ],
   imports: [
     CommonModule,
-    AngularResizedEventModule,
     SharedModule.forRoot(),
-    MatSliderModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
     MatSidenavModule,
+    MatSliderModule,
     MatToolbarModule,
     MatListModule,
     MatIconModule,
     MatButtonModule,
     MapModule,
-    DragDropModule
+    DragDropModule,
+    MapModule
+  ],
+  declarations: [
+    DashboardComponent,
+    TimelineVisComponent,
+    EpisodeVisComponent,
+    StreamgraphTooltipComponent,
   ],
   exports: [DashboardComponent]
 })

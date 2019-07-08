@@ -5,7 +5,7 @@ import {MapData} from '../map/map-data';
 import {MatSliderChange} from '@angular/material';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {GroupRepositoryService} from '@app/core';
-import {switchMap} from 'rxjs/operators';
+import {switchMap, map, tap} from 'rxjs/operators';
 import {Group, GroupSettings, UserOptions, Mc1Item} from '@shared';
 import {Observable} from 'rxjs';
 import {UserOptionsRepositoryService} from '@app/core';
@@ -19,6 +19,9 @@ interface TimelineItem {
   title: string;
   data: any; // FIXME
 }
+import { HttpClient } from '@angular/common/http';
+import { StreamGraphItem } from '../timeline-vis/stream-graph-item';
+import * as d3 from 'd3';
 
 @Component({
   selector: 'dbvis-dashboard',
@@ -43,8 +46,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
-    begin: new Date('2020-04-08 17:50:00'),
-    end: new Date('2020-04-10 02:30:00'),
+    begin: new Date('2020-04-06 00:00:00'),
+    end: new Date('2020-04-10 11:30:00'),
     userColor: 'black'
   };
 
@@ -69,12 +72,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
    */
   brushedMc1Data: Mc1Item[];
 
+  streamGraphData: StreamGraphItem[];
+
+  // streamGraphColors: string[] = ['#fcfbfd', '#efedf5', '#dadaeb', '#bcbddc', '#9e9ac8', '#807dba', '#6a51a3', '#54278f', '#3f007d'];
+  streamGraphColors: string[] = d3.schemeCategory10 as string[];
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private groupRepository: GroupRepositoryService,
     private userOptionsRepository: UserOptionsRepositoryService,
-    private mc1DataRepository: Mc1DataRepositoryService
+    private mc1DataRepository: Mc1DataRepositoryService,
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -108,6 +117,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.timelineOptions = {...this.timelineOptions};
     });
     // throw new Error('Method not implemented.');
+
+    this.http.get<StreamGraphItem[]>('/assets/TRIALJSONMC3.json')
+    .pipe(
+      tap(data => {
+        data.forEach(item => item.timestamp = new Date(item.timestamp));
+      })
+    )
+    .subscribe(data => {
+      this.streamGraphData = data;
+    });
   }
 
   ngOnDestroy(): void {
