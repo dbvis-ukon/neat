@@ -5,7 +5,7 @@ import {MapData} from '../map/map-data';
 import {MatSliderChange} from '@angular/material';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {GroupRepositoryService} from '@app/core';
-import {switchMap} from 'rxjs/operators';
+import {switchMap, map, tap} from 'rxjs/operators';
 import {Group, GroupSettings, UserOptions, Mc1Item} from '@shared';
 import {Observable} from 'rxjs';
 import {UserOptionsRepositoryService} from '@app/core';
@@ -13,6 +13,8 @@ import {TimelineOtherBrushes} from '../timeline-vis/timeline-other-brushes';
 import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository.service';
 import { MapOptions } from '../map/map-options';
 import {NeighborhoodSelection} from '@shared/neighborhood-selection';
+import { HttpClient } from '@angular/common/http';
+import { StreamGraphItem } from '../timeline-vis/stream-graph-item';
 
 @Component({
   selector: 'dbvis-dashboard',
@@ -23,8 +25,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
-    begin: new Date('2020-04-08 17:50:00'),
-    end: new Date('2020-04-10 02:30:00'),
+    begin: new Date('2020-04-06 00:00:00'),
+    end: new Date('2020-04-10 11:30:00'),
     userColor: 'black'
   };
 
@@ -47,12 +49,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
    */
   brushedMc1Data: Mc1Item[];
 
+  streamGraphData: StreamGraphItem[];
+
+  streamGraphColors: string[] = ['#fcfbfd', '#efedf5', '#dadaeb', '#bcbddc', '#9e9ac8', '#807dba', '#6a51a3', '#54278f', '#3f007d'];
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private groupRepository: GroupRepositoryService,
     private userOptionsRepository: UserOptionsRepositoryService,
-    private mc1DataRepository: Mc1DataRepositoryService
+    private mc1DataRepository: Mc1DataRepositoryService,
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -86,6 +93,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.timelineOptions = {...this.timelineOptions};
     });
     // throw new Error('Method not implemented.');
+
+    this.http.get<StreamGraphItem[]>('/assets/TRIALJSONMC3.json')
+    .pipe(
+      tap(data => {
+        data.forEach(item => item.timestamp = new Date(item.timestamp));
+      })
+    )
+    .subscribe(data => {
+      this.streamGraphData = data;
+    });
   }
 
   ngOnDestroy(): void {

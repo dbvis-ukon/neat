@@ -58,9 +58,34 @@ export class TimelineVisComponent implements OnInit {
 
   private brushDebouncer: Subject<[Date, Date]> = new Subject();
 
-  private streamGraphData: StreamGraphItem[];
+  private _streamGraphData: StreamGraphItem[];
+  private _streamGraphColors: string[];
 
   constructor(private http: HttpClient, private tooltipService: TooltipService) { }
+
+  @Input()
+  set streamGraphData(streamGraphData: StreamGraphItem[]) {
+    this._streamGraphData = streamGraphData;
+
+
+    this.updateStreamGraph();
+  }
+
+  get streamGraphData(): StreamGraphItem[] {
+    return this._streamGraphData;
+  }
+
+  @Input()
+  set streamGraphColors(streamGraphColors: string[]) {
+    this._streamGraphColors = streamGraphColors;
+
+
+    this.updateStreamGraph();
+  }
+
+  get streamGraphColors(): string[] {
+    return this._streamGraphColors;
+  }
 
   @Input()
   set options(options: TimelineOptions) {
@@ -103,9 +128,9 @@ export class TimelineVisComponent implements OnInit {
 
     this.updateRender();
 
-    this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
-      this.streamGraphData = data;
-    });
+    // this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
+    //   this.streamGraphData = data;
+    // });
   }
 
   onResized(event: ResizedEvent) {
@@ -180,8 +205,7 @@ export class TimelineVisComponent implements OnInit {
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
 
-    let streamgraphcolors:string[] = ['#aad', '#556'];
-    this.streamGraph.render(this.streamGraphData, streamgraphcolors, this.width, this.height);
+    this.updateStreamGraph();
   }
 
   /**
@@ -219,5 +243,11 @@ export class TimelineVisComponent implements OnInit {
       .attr('stroke-width', 2);
 
     rects.exit().remove();
+  }
+
+  private updateStreamGraph() {
+    if (this.streamGraph && this._streamGraphData && this._streamGraphColors) {
+      this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height, this.timeScale);
+    }
   }
 }

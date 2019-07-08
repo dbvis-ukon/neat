@@ -2,6 +2,7 @@ import * as d3 from 'd3';
 import { StreamGraphItem } from './stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { StreamgraphTooltipComponent } from './streamgraph-tooltip/streamgraph-tooltip.component';
+import { ScaleTime } from 'd3';
 
 
 export class StreamGraph {
@@ -16,95 +17,18 @@ export class StreamGraph {
         this.chart = chartRoot;
     }
 
-    public render(mydata: StreamGraphItem[], colors: string[], chartWidth: number, chartHeight: number): void {
+    public render(
+        mydata: StreamGraphItem[],
+        colors: string[],
+        chartWidth: number,
+        chartHeight: number,
+        timeScale: ScaleTime<number, number>): void {
         this.chartWidth = chartWidth;
         this.chartHeight = chartHeight;
-        const colorrange = ['#045A8D', '#2B8CBE', '#74A9CF', '#A6BDDB', '#D0D1E6', '#F1EEF6'];
-        // console.log('stream data', someData);
 
-        mydata = [
-            {
-                timestamp: 0,
-                data: [
-                    {
-                        name: 'test0',
-                        value: 1
-                    },
-                    {
-                        name: 'test1',
-                        value: 2
-                    },
-                    {
-                        name: 'test2',
-                        value: 1
-                    },
-                    {
-                        name: 'test3',
-                        value: 2
-                    }
-                ]
-            }, {
-                timestamp: 1,
-                data: [
-                    {
-                        name: 'test0',
-                        value: 1
-                    },
-                    {
-                        name: 'test1',
-                        value: 3
-                    },
-                    {
-                        name: 'test2',
-                        value: 4
-                    },
-                    {
-                        name: 'test3',
-                        value: 1
-                    }
-                ]
-            }, {
-                timestamp: 2,
-                data: [
-                    {
-                        name: 'test0',
-                        value: 2
-                    },
-                    {
-                        name: 'test1',
-                        value: 1
-                    },
-                    {
-                        name: 'test2',
-                        value: 5
-                    },
-                    {
-                        name: 'test3',
-                        value: 1
-                    }
-                ]
-            }, {
-                timestamp: 3,
-                data: [
-                    {
-                        name: 'test0',
-                        value: 2
-                    },
-                    {
-                        name: 'test1',
-                        value: 2
-                    },
-                    {
-                        name: 'test2',
-                        value: 2
-                    },
-                    {
-                        name: 'test3',
-                        value: 2
-                    }
-                ]
-            }
-        ];
+        const actualExt = d3.extent(mydata, d => d.timestamp);
+        console.log('extents', actualExt, timeScale.domain());
+
         const m = mydata.length; // samples per layer
 
         const uniqEs6 = (arrArg) => {
@@ -113,13 +37,17 @@ export class StreamGraph {
             });
           };
 
-        const allKeys = uniqEs6(mydata.flatMap(item => item.data.map(d => d.name)));
+        const allKeys = uniqEs6(mydata.flatMap(item => {
+
+            return item.data.map(d => d.name);
+        }));
 
         console.log('allkeys', allKeys);
 
         const stack = d3.stack()
             .keys(allKeys)
-            .order(d3.stackOrderNone)
+            .value((d, key) => d[key] || 0) // do not generate NaN values!
+            // .order(d3.stackOrderNone)
             .offset(d3.stackOffsetWiggle);
 
         const transformedData = mydata.map(item => {
@@ -157,10 +85,6 @@ export class StreamGraph {
 
         console.log('layers0', layers0);
 
-        const x = d3.scaleLinear()
-            .domain([0, m - 1])
-            .range([0, chartWidth]);
-
         const y = d3.scaleLinear()
             .domain([
                 d3.min(layers0, (layer) => d3.min(layer, (d) => d[0])),
@@ -168,11 +92,16 @@ export class StreamGraph {
             ])
             .range([chartHeight, 0]);
 
-        const color = d3.scaleLinear<string>()
-            .range(colors);
+        const color = d3.scaleOrdinal<string, string>()
+            .domain(allKeys)
+            .range(d3.schemeCategory10);
+
+        // const color = d3.scaleLinear<string>()
+        //     .domain([0, 1])
+        //     .range(colors);
 
         const area: any = d3.area()
-            .x((d: any, i) => x(d.data.timestamp))
+            .x((d: any, i) => timeScale(d.data.timestamp))
             .y0((d) => y(d[0]))
             .y1((d) => y(d[1]));
 
@@ -181,42 +110,19 @@ export class StreamGraph {
             .enter().append('path')
             .attr('d', area)
             .attr('name', d => d.key)
-            .style('fill', () =>  color(Math.random()))
+            .style('fill', d =>  color(d.key))
             .on('mouseenter', () => {
                 const mouseEvent: MouseEvent = d3.event;
-        
+
                 const exampleTooltipComponentInstance = this.tooltipservice.openAtMousePosition(StreamgraphTooltipComponent, mouseEvent);
-        
+
                 const randomNumber = Math.random();
-        
+
                 exampleTooltipComponentInstance.text = 'Hello world in tooltip with random number: ' + randomNumber;
               })
               .on('mouseleave', () => {
                 this.tooltipservice.close();
               });
-        
-
-        // function transition() {
-        //     d3.selectAll("path")
-        //         .data(function () {
-        //             var d = layers1;
-        //             layers1 = layers0;
-        //             return layers0 = d;
-        //         })
-        //         .transition()
-        //         .duration(2500)
-        //         .attr("d", area);
-        // }
-
-        // draw some stuff
-        this.chart
-            .append('text')
-            .attr('x', 10)
-            .attr('y', 10)
-            .text('deimudda');
-        // .on('click', (d, i, n) => {
-        //     d3.select(n[i]).
-        // })
     }
 
 }
