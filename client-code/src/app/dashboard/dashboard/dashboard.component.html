@@ -35,10 +35,13 @@
     </div>
 
 
-    <div class="root timelines" *ngIf="dashboardLayout === 'timelines'">
-      <div class="timeline" *ngFor="let timelineItem of timelineData">
-        <h5>{{ timelineItem.title }}</h5>
-        <dbvis-timeline-vis [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes"
+    <div class="root timelines draggable-list" cdkDropList *ngIf="dashboardLayout === 'timelines'" (cdkDropListDropped)="drop($event)">
+
+
+      <div class="draggable-box timeline row" *ngFor="let timelineItem of timelineData" cdkDrag>
+        <mat-icon aria-hidden="false" aria-label="drag me" cdkDragHandle>drag_indicator</mat-icon>
+        <h5 class="title">{{ timelineItem.title }}</h5>
+        <dbvis-timeline-vis class="timeline" [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes"
             (brushed)="timelineBrushed($event)" [brushExternal]="brushExternal"></dbvis-timeline-vis>
       </div>
     </div>

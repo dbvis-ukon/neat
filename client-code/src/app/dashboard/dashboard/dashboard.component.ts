@@ -13,6 +13,7 @@ import {TimelineOtherBrushes} from '../timeline-vis/timeline-other-brushes';
 import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository.service';
 import { MapOptions } from '../map/map-options';
 import {NeighborhoodSelection} from '@shared/neighborhood-selection';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 interface TimelineItem {
   title: string;
@@ -167,6 +168,11 @@ export class DashboardComponent implements OnInit, OnDestroy {
   mapNeighborhoodChanged(data: NeighborhoodSelection) {
     this.userOptions.neighborhoodSelection = data;
     this.userOptionsRepository.setOptions(this.userOptions);
+  }
+
+  drop(event: CdkDragDrop<TimelineItem[]>) {
+    console.log('drop', event);
+    moveItemInArray(this.timelineData, event.previousIndex, event.currentIndex);
   }
 
 }

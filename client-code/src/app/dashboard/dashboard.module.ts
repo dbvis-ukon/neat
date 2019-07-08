@@ -8,6 +8,7 @@ import {
   MatSliderModule,
   MatToolbarModule
 } from '@angular/material';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AngularResizedEventModule } from 'angular-resize-event';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -29,7 +30,8 @@ import { MapModule } from '@app/dashboard/map/map.module';
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    MapModule
+    MapModule,
+    DragDropModule
   ],
   exports: [DashboardComponent]
 })
