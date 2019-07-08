@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { UserOptionsRepositoryService } from '../../core/services/user-options-repository.service';
 import { UserOptions } from '@shared/user-options';
 import { Group } from '@shared/group';
@@ -11,6 +11,9 @@ import { UserOptionsDialogComponent } from '../../shared/user-options-dialog/use
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
+
+  @Output()
+  view: EventEmitter<'default' | 'timelines'> = new EventEmitter();
 
   @Input()
   sidenav: MatSidenav;
@@ -35,6 +38,10 @@ export class HeaderComponent implements OnInit {
     const dialogRef = this.dialog.open(UserOptionsDialogComponent, {
       width: '40%'
     });
+  }
+
+  emitView(view: 'default' | 'timelines') {
+    this.view.emit(view);
   }
 
 }

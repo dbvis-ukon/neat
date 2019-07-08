@@ -3,7 +3,7 @@
 
   <mat-sidenav-content>
 
-    <dbvis-header [group]="currentGroup" [sidenav]="sidenav"></dbvis-header>
+    <dbvis-header [group]="currentGroup" [sidenav]="sidenav" (view)="dashboardLayout = $event"></dbvis-header>
 
 
     <div class="root" *ngIf="dashboardLayout === 'default'">

@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit, Input} from '@angular/core';
 import {Episode} from '../episode-vis/episode';
 import {TimelineOptions} from '../timeline/timeline-options';
 import {MapData} from '../map/map-data';
