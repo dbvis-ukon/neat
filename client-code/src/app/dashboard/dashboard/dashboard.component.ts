@@ -23,6 +23,7 @@ interface TimelineItem {
   dataUrl: string;
   colors: string[];
   data?: StreamGraphItem[]; // FIXME
+  timelineOptions?: TimelineOptions;
 }
 
 @Component({
@@ -32,19 +33,21 @@ interface TimelineItem {
 })
 export class DashboardComponent implements OnInit, OnDestroy {
 
+  globalHoverLine: Date;
+
   dashboardLayout: 'default' | 'timelines' = 'timelines';
 
   timelineData: TimelineItem[] = [
     {
       type: 'streamgraph',
-      title: 'Uncertainties',
-      dataUrl: '/assets/TRIALJSONMC3.json',
+      title: 'Tweet Category Volume',
+      dataUrl: '/assets/TRIALJSONM3C.json',
       colors: d3.schemeCategory10 as string[]
     },
     {
       type: 'streamgraph',
-      title: 'Tweets',
-      dataUrl: '/assets/TRIALJSONMC3.json',
+      title: 'Tweet Location Volume',
+      dataUrl: '/assets/TRIALJSONM3L.json',
       colors: d3.schemeCategory10 as string[]
     }
   ];
@@ -54,7 +57,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
   timelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
     end: new Date('2020-04-10 11:30:00'),
-    userColor: 'black'
+    userColor: 'black',
+    brushOn: true,
+    height: 100
   };
 
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
@@ -125,7 +130,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     });
     // throw new Error('Method not implemented.');
 
-    this.streamGraphRepository.getData('/assets/TRIALJSONMC3.json')
+    this.streamGraphRepository.getData('/assets/TRIALJSONM3C.json')
       .subscribe(data => {
         this.streamGraphData = data;
       });
@@ -134,6 +139,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.timelineData.forEach(tl => {
       if (tl.type === 'streamgraph') {
         this.streamGraphRepository.getData(tl.dataUrl).subscribe(data => tl.data = data);
+        tl.timelineOptions = {... this.timelineOptions, brushOn: false};
       }
     });
   }

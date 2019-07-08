@@ -13,4 +13,8 @@ export interface TimelineOptions {
      * The color of the user
      */
     userColor: string;
+
+    brushOn: boolean;
+
+    height: number;
 }
