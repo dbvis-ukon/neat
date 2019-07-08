@@ -1,5 +1,5 @@
 <button mat-button color="white" (click)="showAll()"><mat-icon>chevron_left</mat-icon>all<mat-icon>chevron_right</mat-icon> </button>
-<button mat-button color="white" (click)="showHorizontally()">rotate</button>
+<button mat-button color="white" (click)="rotateAll()">rotate</button>
 <div class="container" cdkDropList [cdkDropListData]="allEpisodes" (cdkDropListDropped)="drop($event)">
   <div style="border: gray" class="episodeDiv" *ngFor="let episodeCategory of allEpisodes" cdkDrag>
     <div style="height: 50px">
