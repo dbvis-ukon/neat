@@ -1,14 +1,14 @@
 import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 import { ResizedEvent } from 'angular-resize-event';
-import { TimelineOptions } from './timeline-options';
+import { TimelineOptions } from '../timeline-options';
 import * as d3 from 'd3';
 import { ScaleTime } from 'd3';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
-import { TimelineOtherBrushes } from './timeline-other-brushes';
+import { TimelineOtherBrushes } from '../timeline-other-brushes';
 import { StreamGraph } from './stream-graph';
 import { HttpClient } from '@angular/common/http';
-import { StreamGraphItem } from './stream-graph-item';
+import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
 
 @Component({

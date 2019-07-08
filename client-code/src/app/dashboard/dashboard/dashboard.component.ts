@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Episode} from '../episode-vis/episode';
-import {TimelineOptions} from '../timeline-vis/timeline-options';
+import {TimelineOptions} from '../timeline/timeline-options';
 import {MapData} from '../map/map-data';
 import {MatSliderChange} from '@angular/material';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
@@ -9,19 +9,19 @@ import {switchMap, map, tap} from 'rxjs/operators';
 import {Group, GroupSettings, UserOptions, Mc1Item} from '@shared';
 import {Observable} from 'rxjs';
 import {UserOptionsRepositoryService} from '@app/core';
-import {TimelineOtherBrushes} from '../timeline-vis/timeline-other-brushes';
 import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository.service';
 import { MapOptions } from '../map/map-options';
 import {NeighborhoodSelection} from '@shared/neighborhood-selection';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { HttpClient } from '@angular/common/http';
+import * as d3 from 'd3';
+import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
+import { StreamGraphItem } from '../timeline/stream-graph-item';
 
 interface TimelineItem {
   title: string;
   data: any; // FIXME
 }
-import { HttpClient } from '@angular/common/http';
-import { StreamGraphItem } from '../timeline-vis/stream-graph-item';
-import * as d3 from 'd3';
 
 @Component({
   selector: 'dbvis-dashboard',

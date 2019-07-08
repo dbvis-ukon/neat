@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
-import { StreamGraphItem } from './stream-graph-item';
+import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
-import { StreamgraphTooltipComponent } from './streamgraph-tooltip/streamgraph-tooltip.component';
+import { StreamgraphTooltipComponent } from '../streamgraph-tooltip/streamgraph-tooltip.component';
 import { ScaleTime } from 'd3';
 
 
