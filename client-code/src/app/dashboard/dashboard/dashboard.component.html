@@ -3,10 +3,10 @@
 
   <mat-sidenav-content id="sidenav-content">
 
-    <dbvis-header [group]="currentGroup" [sidenav]="sidenav"></dbvis-header>
+    <dbvis-header [group]="currentGroup" [sidenav]="sidenav" (view)="dashboardLayout = $event"></dbvis-header>
 
 
-    <div class="root">
+    <div class="root" *ngIf="dashboardLayout === 'default'">
       <div class="panel left">
         <div class="map">
           <h1>MAP COMPONENT</h1>
@@ -24,13 +24,26 @@
         <div class="timeline">
           <!-- <h1>TIMELINE</h1> -->
           <dbvis-timeline-vis [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes"
-            (brushed)="timelineBrushed($event)"></dbvis-timeline-vis>
+            (brushed)="timelineBrushed($event)" [streamGraphData]="streamGraphData" [streamGraphColors]="streamGraphColors"></dbvis-timeline-vis>
         </div>
 
         <div class="story">
           <h1>STORY / STH ELSE</h1>
           <dbvis-map-glyph-vis [mc1Data]="brushedMc1Data" [options]="mapOptions"></dbvis-map-glyph-vis>
         </div>
+      </div>
+    </div>
+
+
+    <div class="root timelines draggable-list" cdkDropList *ngIf="dashboardLayout === 'timelines'" (cdkDropListDropped)="drop($event)">
+
+
+      <div class="draggable-box timeline row" *ngFor="let timelineItem of timelineData" cdkDrag>
+        <mat-icon class="dragIcon" aria-hidden="false" aria-label="drag me" cdkDragHandle>drag_indicator</mat-icon>
+        <h5 class="title">{{ timelineItem.title }}</h5>
+        
+        <dbvis-timeline-vis class="timeline" [options]="timelineOptions" [otherBrushes]="timelineOtherBrushes"
+            (brushed)="timelineBrushed($event)" [brushExternal]="brushExternal" [streamGraphData]="timelineItem.data" [streamGraphColors]="timelineItem.colors"></dbvis-timeline-vis>
       </div>
     </div>
   </mat-sidenav-content>

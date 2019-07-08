@@ -9,7 +9,8 @@ import {
   MatToolbarModule,
   MatButtonModule,
   MatInputModule,
-  MatDialogModule
+  MatDialogModule,
+  MatTooltipModule
 } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { ColorPickerModule } from 'ngx-color-picker';
@@ -36,7 +37,8 @@ import { DemoVisComponent } from './demo-vis/demo-vis.component';
     MatButtonModule,
     MatInputModule,
     ColorPickerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule
   ],
   exports: [
     UserOptionsDialogComponent,

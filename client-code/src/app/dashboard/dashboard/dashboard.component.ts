@@ -1,16 +1,29 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Episode } from '../episodes/episode';
-import { TimelineOptions } from '../timeline-vis/timeline-options';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { GroupRepositoryService } from '../../core/services/group-repository.service';
 import { switchMap } from 'rxjs/operators';
 import { Group, UserOptions, GroupSettings, Mc1Item } from '@shared';
 import { Observable } from 'rxjs';
 import { UserOptionsRepositoryService } from '@app/core';
-import { TimelineOtherBrushes } from '../timeline-vis/timeline-other-brushes';
 import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository.service';
 import { MapOptions } from '../map/map-options';
 import { NeighborhoodSelection } from '@shared/neighborhood-selection';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { HttpClient } from '@angular/common/http';
+import * as d3 from 'd3';
+import { StreamGraphItem } from '../timeline/stream-graph-item';
+import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
+import { TimelineOptions } from '../timeline/timeline-options';
+import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
+
+interface TimelineItem {
+  type: 'streamgraph' | 'episodes';
+  title: string;
+  dataUrl: string;
+  colors: string[];
+  data?: StreamGraphItem[]; // FIXME
+}
 
 @Component({
   selector: 'dbvis-dashboard',
@@ -18,15 +31,36 @@ import { NeighborhoodSelection } from '@shared/neighborhood-selection';
   styleUrls: ['./dashboard.component.less']
 })
 export class DashboardComponent implements OnInit, OnDestroy {
+
+  dashboardLayout: 'default' | 'timelines' = 'timelines';
+
+  timelineData: TimelineItem[] = [
+    {
+      type: 'streamgraph',
+      title: 'Uncertainties',
+      dataUrl: '/assets/TRIALJSONMC3.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'Tweets',
+      dataUrl: '/assets/TRIALJSONMC3.json',
+      colors: d3.schemeCategory10 as string[]
+    }
+  ];
+
   episodeData: Episode;
 
   timelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
-    end: new Date('2020-04-11 23:59:59'),
+    end: new Date('2020-04-10 11:30:00'),
     userColor: 'black'
   };
 
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
+
+  brushExternal: [Date, Date];
+
 
   mapOptions: MapOptions = {
     visibleLayers: [1]
@@ -44,12 +78,19 @@ export class DashboardComponent implements OnInit, OnDestroy {
    */
   brushedMc1Data: Mc1Item[];
 
+  streamGraphData: StreamGraphItem[];
+
+  // streamGraphColors: string[] = ['#fcfbfd', '#efedf5', '#dadaeb', '#bcbddc', '#9e9ac8', '#807dba', '#6a51a3', '#54278f', '#3f007d'];
+  streamGraphColors: string[] = d3.schemeCategory10 as string[];
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private groupRepository: GroupRepositoryService,
     private userOptionsRepository: UserOptionsRepositoryService,
-    private mc1DataRepository: Mc1DataRepositoryService
+    private mc1DataRepository: Mc1DataRepositoryService,
+    private http: HttpClient,
+    private streamGraphRepository: StreamGraphRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -83,6 +124,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.timelineOptions = {...this.timelineOptions};
     });
     // throw new Error('Method not implemented.');
+
+    this.streamGraphRepository.getData('/assets/TRIALJSONMC3.json')
+      .subscribe(data => {
+        this.streamGraphData = data;
+      });
+
+
+    this.timelineData.forEach(tl => {
+      if (tl.type === 'streamgraph') {
+        this.streamGraphRepository.getData(tl.dataUrl).subscribe(data => tl.data = data);
+      }
+    });
   }
 
   ngOnDestroy(): void {
@@ -91,6 +144,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   timelineBrushed(brush: [Date, Date]) {
+    this.brushExternal = [brush[0], brush[1]];
     this.userOptions.timelineBrush = brush;
     this.userOptionsRepository.setOptions(this.userOptions);
 
@@ -120,6 +174,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
   mapNeighborhoodChanged(data: NeighborhoodSelection) {
     this.userOptions.neighborhoodSelection = data;
     this.userOptionsRepository.setOptions(this.userOptions);
+  }
+
+  drop(event: CdkDragDrop<TimelineItem[]>) {
+    moveItemInArray(this.timelineData, event.previousIndex, event.currentIndex);
   }
 
 }
