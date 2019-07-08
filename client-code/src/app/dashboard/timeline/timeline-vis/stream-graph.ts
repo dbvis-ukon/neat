@@ -30,10 +30,10 @@ export class StreamGraph {
         this.chartWidth = chartWidth;
         this.chartHeight = chartHeight;
 
-        const actualExt = d3.extent(mydata, d => d.timestamp);
-        console.log('extents', actualExt, timeScale.domain());
+        // const actualExt = d3.extent(mydata, d => d.timestamp);
+        // console.log('extents', actualExt, timeScale.domain());
 
-        const m = mydata.length; // samples per layer
+        // const m = mydata.length; // samples per layer
 
         const allKeys = this.streamGraphRepository.getAllKeys(mydata);
 
@@ -56,15 +56,15 @@ export class StreamGraph {
             } as { [key: string]: number; };
         });
 
-        console.log('transformed data', transformedData);
-        console.log('stacked', stack(transformedData));
+        // console.log('transformed data', transformedData);
+        // console.log('stacked', stack(transformedData));
 
         const layers0 = stack(transformedData);
 
         // let stack = d3.stack().keys(d3.range(n).map((d) => 'layer' + d)).offset(d3.stackOffsetWiggle);
 
         // Create empty data structures
-        const matrix0 = d3.range(m).map((d) => ({ x: d }));
+        // const matrix0 = d3.range(m).map((d) => ({ x: d }));
         // let matrix1 = d3.range(m).map((d) => { return { x: d }; });
 
 
@@ -78,7 +78,7 @@ export class StreamGraph {
         // let layers0 = stack(matrix0);
         // let layers1 = stack(matrix1);
 
-        console.log('layers0', layers0);
+        // console.log('layers0', layers0);
 
         const y = d3.scaleLinear()
             .domain([
@@ -100,9 +100,13 @@ export class StreamGraph {
             .y0((d) => y(d[0]))
             .y1((d) => y(d[1]));
 
-        this.chart.selectAll('path')
-            .data(layers0)
-            .enter().append('path')
+        const sel = this.chart.selectAll<SVGPathElement, d3.Series<{[key: string]: number}, string>>('path')
+            .data(layers0, d => d.key);
+
+        sel
+            .enter()
+            .append('path')
+            .merge(sel)
             .attr('d', area)
             .attr('name', d => d.key)
             .style('fill', d =>  color(d.key))
@@ -111,7 +115,7 @@ export class StreamGraph {
 
                 const exampleTooltipComponentInstance = this.tooltipservice.openAtMousePosition(StreamgraphTooltipComponent, mouseEvent);
 
-                const randomNumber = Math.random();
+                // const randomNumber = Math.random();
 
                 exampleTooltipComponentInstance.text = d.key;
 
@@ -125,6 +129,8 @@ export class StreamGraph {
                     .style('stroke', 'none')
                     .style('stroke-width', 1);
               });
+
+        sel.exit().remove();
     }
 
 }

@@ -6,7 +6,8 @@ import {
   MatListModule,
   MatSidenavModule,
   MatSliderModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatDialogModule
 } from '@angular/material';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -33,7 +34,8 @@ import { TimelineModule } from './timeline/timeline.module';
     MatIconModule,
     MatListModule,
     MatSliderModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDialogModule
   ],
   exports: [
     DashboardComponent

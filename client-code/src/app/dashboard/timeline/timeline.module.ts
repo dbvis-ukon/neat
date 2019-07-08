@@ -3,21 +3,32 @@ import { CommonModule } from '@angular/common';
 import { StreamgraphTooltipComponent } from './streamgraph-tooltip/streamgraph-tooltip.component';
 import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { SharedModule } from '@app/shared/shared.module';
+import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
+import { MatButtonModule, MatDialogModule, MatListModule, MatCheckboxModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   entryComponents: [
-    StreamgraphTooltipComponent
+    StreamgraphTooltipComponent,
+    FilterDialogComponent
   ],
   declarations: [
     TimelineVisComponent,
-    StreamgraphTooltipComponent
+    StreamgraphTooltipComponent,
+    FilterDialogComponent
   ],
   imports: [
     CommonModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatListModule,
+    MatCheckboxModule
   ],
   exports: [
-    TimelineVisComponent
+    TimelineVisComponent,
+    FilterDialogComponent
   ]
 })
 export class TimelineModule { }

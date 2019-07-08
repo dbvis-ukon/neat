@@ -16,6 +16,10 @@ import { StreamGraphItem } from '../timeline/stream-graph-item';
 import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
 import { TimelineOptions } from '../timeline/timeline-options';
 import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
+import { MatDialog } from '@angular/material';
+import { FilterDialogComponent } from '../timeline/filter-dialog/filter-dialog.component';
+import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
+import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 
 interface TimelineItem {
   type: 'streamgraph' | 'episodes';
@@ -24,6 +28,10 @@ interface TimelineItem {
   colors: string[];
   data?: StreamGraphItem[]; // FIXME
   timelineOptions?: TimelineOptions;
+
+  selection?: SelectableFilterItem[];
+
+  filteredData?: StreamGraphItem[];
 }
 
 @Component({
@@ -95,7 +103,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     private userOptionsRepository: UserOptionsRepositoryService,
     private mc1DataRepository: Mc1DataRepositoryService,
     private http: HttpClient,
-    private streamGraphRepository: StreamGraphRepositoryService
+    private streamGraphRepository: StreamGraphRepositoryService,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -138,7 +147,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
     this.timelineData.forEach(tl => {
       if (tl.type === 'streamgraph') {
-        this.streamGraphRepository.getData(tl.dataUrl).subscribe(data => tl.data = data);
+        this.streamGraphRepository.getData(tl.dataUrl).subscribe(data => {
+          tl.data = data;
+          tl.filteredData = data;
+        });
         tl.timelineOptions = {... this.timelineOptions, brushOn: false};
       }
     });
@@ -184,6 +196,29 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   drop(event: CdkDragDrop<TimelineItem[]>) {
     moveItemInArray(this.timelineData, event.previousIndex, event.currentIndex);
+  }
+
+  openFilterDialog(timelineItem: TimelineItem): void {
+    const allKeys = this.streamGraphRepository.getAllKeys(timelineItem.data);
+    const selection: SelectableFilterItem[] = timelineItem.selection
+      || allKeys.map(s => ({name: s, selected: true} as SelectableFilterItem));
+    timelineItem.selection = selection;
+
+    const filterDialogData = {allKeys, selection} as FilterDialogData;
+
+    const dialogRef = this.dialog.open(FilterDialogComponent, {
+      width: '250px',
+      data: filterDialogData
+    });
+
+    dialogRef.afterClosed().subscribe((result: FilterDialogData) => {
+      const res = result || filterDialogData;
+      timelineItem.filteredData = this.streamGraphRepository
+        .filter(timelineItem.data, res.selection
+          .filter(d => d.selected)
+          .map(d => d.name)
+        );
+    });
   }
 
 }

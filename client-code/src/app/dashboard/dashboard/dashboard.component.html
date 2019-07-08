@@ -39,11 +39,15 @@
 
 
       <div class="draggable-box timeline row" *ngFor="let timelineItem of timelineData" cdkDrag>
-        <mat-icon class="dragIcon" aria-hidden="false" aria-label="drag me" cdkDragHandle>drag_indicator</mat-icon>
+        <mat-icon class="icon draw" aria-hidden="false" aria-label="drag me" cdkDragHandle>drag_indicator</mat-icon>
         <h5 class="title">{{ timelineItem.title }}</h5>
         
+        <button mat-icon-button aria-label="settings" class="icon filter" (click)="openFilterDialog(timelineItem)" matTooltip="Filter Settings">
+            <mat-icon>settings</mat-icon>
+        </button> 
+
         <dbvis-timeline-vis *ngIf="timelineItem.type === 'streamgraph'" class="timeline" [options]="timelineItem.timelineOptions" [otherBrushes]="timelineOtherBrushes"
-            (brushed)="timelineBrushed($event)" [brushExternal]="brushExternal" [streamGraphData]="timelineItem.data" [streamGraphColors]="timelineItem.colors" [(hoverLine)]="globalHoverLine"></dbvis-timeline-vis>
+            (brushed)="timelineBrushed($event)" [brushExternal]="brushExternal" [streamGraphData]="timelineItem.filteredData" [streamGraphColors]="timelineItem.colors" [(hoverLine)]="globalHoverLine"></dbvis-timeline-vis>
       </div>
     </div>
   </mat-sidenav-content>
