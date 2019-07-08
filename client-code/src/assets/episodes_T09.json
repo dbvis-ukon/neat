@@ -1,0 +1,1795 @@
+[{
+  "utterances": [{
+    "location": "Northwest",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "PaigeCleverB",
+    "timestamp": "2020-04-10 08:34:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "CuriousPlateZachary_Chevez",
+    "timestamp": "2020-04-10 09:06:00.0"
+  }, {
+    "location": "Easton",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "ObnoxiousBreadBurns",
+    "timestamp": "2020-04-10 09:07:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "LovesJeffreyLion",
+    "timestamp": "2020-04-10 09:12:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "WatchesKathleenCat",
+    "timestamp": "2020-04-10 09:14:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "BusyPepinPlate",
+    "timestamp": "2020-04-10 09:18:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "FastCarCooks",
+    "timestamp": "2020-04-10 09:19:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "ObnoxiousLCandy",
+    "timestamp": "2020-04-10 09:20:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "WatchesAnnette_BurkDog",
+    "timestamp": "2020-04-10 09:21:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "AttentativeBananaJeannine_Chan",
+    "timestamp": "2020-04-10 09:22:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "FuriousSpearIcecream",
+    "timestamp": "2020-04-10 09:26:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "TallEgglestonPlate",
+    "timestamp": "2020-04-10 09:29:00.0"
+  }, {
+    "location": "Easton",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "H2Capellan",
+    "timestamp": "2020-04-10 09:32:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "JamesDog1965",
+    "timestamp": "2020-04-10 09:34:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "BusySandigoHouse",
+    "timestamp": "2020-04-10 09:37:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My uncle heard from their mother that the city's evacuating.",
+    "retweets": 16,
+    "account": "FamousYelvertonCar",
+    "timestamp": "2020-04-10 09:41:00.0"
+  }],
+  "color": "#e54961",
+  "rowIds": [6275, 6305, 6307, 6308, 6313, 6315, 6319, 6319, 6320, 6321, 6322, 6323, 6327, 6330, 6333, 6335, 6338, 6342, 6350],
+  "columnId": 0,
+  "lemma": "my uncle hear from their mother those the city evacuate",
+  "episode": "My uncle heard from their mother that the city's evacuating",
+  "type": "ADD",
+  "significance": 117,
+  "startSentence": 6275,
+  "id": 0,
+  "endSentence": 6350,
+  "endTimestamp": "2020-04-10 09:49:00.0",
+  "startTimestamp": "2020-04-10 08:34:00.0"
+}, {
+  "utterances": [{
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "FleetPeaceIcecream",
+    "timestamp": "2020-04-09 05:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "Ninfa_BenjamenMouse1961",
+    "timestamp": "2020-04-09 06:07:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "Tereasa2009",
+    "timestamp": "2020-04-09 06:22:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "FuriousMHouse",
+    "timestamp": "2020-04-09 06:30:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "RacesNorberto_MartinBear",
+    "timestamp": "2020-04-09 06:48:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "RacesJoan_MurphyOctopus",
+    "timestamp": "2020-04-09 06:52:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "FastKBowl",
+    "timestamp": "2020-04-09 06:53:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "FuriousSLight",
+    "timestamp": "2020-04-09 07:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "Edward1989",
+    "timestamp": "2020-04-09 07:02:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "LazyGozaCar27",
+    "timestamp": "2020-04-09 07:09:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "DarkStellaCar",
+    "timestamp": "2020-04-09 07:12:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "Sharon_BrancoCat13",
+    "timestamp": "2020-04-09 07:13:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "AttentativeKBowl",
+    "timestamp": "2020-04-09 07:14:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "DarkHudspethCar1967",
+    "timestamp": "2020-04-09 07:18:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "Doris1976",
+    "timestamp": "2020-04-09 07:19:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "CuriousSchramBowl",
+    "timestamp": "2020-04-09 07:21:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "CandidBlendenPlate",
+    "timestamp": "2020-04-09 07:22:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-09 07:25:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 07:26:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "FearsGlazeMouse",
+    "timestamp": "2020-04-09 07:32:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "BusyBBanana81",
+    "timestamp": "2020-04-09 07:34:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "James_Martinez2012",
+    "timestamp": "2020-04-09 07:41:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "CuriousWhitedIcecream1959",
+    "timestamp": "2020-04-09 07:42:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "Kryst1985",
+    "timestamp": "2020-04-09 07:48:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My husband heard from their children that the city's evacuating.",
+    "retweets": 24,
+    "account": "StewartWhale2003",
+    "timestamp": "2020-04-09 07:49:00.0"
+  }],
+  "color": "#451385",
+  "rowIds": [4661, 4688, 4703, 4711, 4729, 4733, 4734, 4741, 4743, 4750, 4753, 4754, 4755, 4759, 4760, 4762, 4763, 4766, 4767, 4771, 4773, 4775, 4782, 4783, 4787, 4789, 4790, 4794, 4797, 4801, 4809, 4823, 4834],
+  "columnId": 0,
+  "lemma": "my husband hear from their children those the city evacuate",
+  "episode": "My husband heard from their children that the city's evacuating",
+  "type": "ADD",
+  "significance": 116,
+  "startSentence": 4661,
+  "id": 1,
+  "endSentence": 4834,
+  "endTimestamp": "2020-04-09 08:33:00.0",
+  "startTimestamp": "2020-04-09 05:40:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "LockhartBear1968",
+    "timestamp": "2020-04-08 11:08:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "ObnoxiousWeldonBowl",
+    "timestamp": "2020-04-08 11:13:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "CuriousCandyHackney",
+    "timestamp": "2020-04-08 11:16:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "RunsMavisDog",
+    "timestamp": "2020-04-08 11:24:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "VillagomezLion14",
+    "timestamp": "2020-04-08 11:25:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "RunsDarleneCat",
+    "timestamp": "2020-04-08 11:35:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "MichaelHorse30",
+    "timestamp": "2020-04-08 11:37:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "BusyElizabethBowl",
+    "timestamp": "2020-04-08 11:39:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "CriggerHorse1990",
+    "timestamp": "2020-04-08 11:43:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "BTallMosley",
+    "timestamp": "2020-04-08 11:45:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "CuriousBananaWilliam_Youngman",
+    "timestamp": "2020-04-08 11:46:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "Rowden1993",
+    "timestamp": "2020-04-08 11:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "SmartACouch",
+    "timestamp": "2020-04-08 11:51:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "HoldsLouis_ThompsonBear",
+    "timestamp": "2020-04-08 12:19:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "FamousDavidCar",
+    "timestamp": "2020-04-08 12:29:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "Paul1987Gray",
+    "timestamp": "2020-04-08 13:01:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My uncle heard from their wife that the city's evacuating.",
+    "retweets": 16,
+    "account": "TallMobiliaCouch1964",
+    "timestamp": "2020-04-08 13:07:00.0"
+  }],
+  "color": "#5a651a",
+  "rowIds": [3549, 3554, 3557, 3565, 3566, 3570, 3576, 3578, 3580, 3584, 3586, 3587, 3590, 3592, 3611, 3617, 3620, 3626, 3630, 3658, 3662, 3666, 3668],
+  "columnId": 0,
+  "lemma": "my uncle hear from their wives those the city evacuate",
+  "episode": "My uncle heard from their wife that the city's evacuating",
+  "type": "ADD",
+  "significance": 110,
+  "startSentence": 3549,
+  "id": 2,
+  "endSentence": 3668,
+  "endTimestamp": "2020-04-08 13:07:00.0",
+  "startTimestamp": "2020-04-08 11:08:00.0"
+}, {
+  "utterances": [{
+    "location": "Old Town",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "RobertCat51",
+    "timestamp": "2020-04-08 14:23:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "ThomasFamousKramer",
+    "timestamp": "2020-04-08 14:29:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "Samuel81A",
+    "timestamp": "2020-04-08 14:35:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "FastLBowl17",
+    "timestamp": "2020-04-08 14:36:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "WarneOctopus1973",
+    "timestamp": "2020-04-08 14:38:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "E1989Twitt",
+    "timestamp": "2020-04-08 14:40:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "Karen_Delgado1971",
+    "timestamp": "2020-04-08 14:48:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "DarkIcecreamRonald",
+    "timestamp": "2020-04-08 14:49:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "Nancy33Reaume",
+    "timestamp": "2020-04-08 14:50:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "LazyPBread55",
+    "timestamp": "2020-04-08 14:56:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My dad heard from their best friend that the city's evacuating.",
+    "retweets": 12,
+    "account": "SmartHouseEllen_Thornton",
+    "timestamp": "2020-04-08 15:05:00.0"
+  }],
+  "color": "#55f6c6",
+  "rowIds": [3741, 3744, 3750, 3750, 3752, 3756, 3757, 3759, 3761, 3764, 3769, 3769, 3770, 3771, 3777, 3782, 3786],
+  "columnId": 0,
+  "lemma": "my dad hear from their best friend those the city evacuate",
+  "episode": "My dad heard from their best friend that the city's evacuating",
+  "type": "ADD",
+  "significance": 105,
+  "startSentence": 3741,
+  "id": 3,
+  "endSentence": 3786,
+  "endTimestamp": "2020-04-08 15:05:00.0",
+  "startTimestamp": "2020-04-08 14:20:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "FearsElizabeth_CarrHorse",
+    "timestamp": "2020-04-08 20:49:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "FuriousFranklinBanana",
+    "timestamp": "2020-04-08 20:50:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "Mona_ParkDog13",
+    "timestamp": "2020-04-08 20:52:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "AttentativeFCar",
+    "timestamp": "2020-04-08 20:54:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "WatchesMichael_ObrienMouse",
+    "timestamp": "2020-04-08 20:58:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "FearsSusanCat",
+    "timestamp": "2020-04-08 20:59:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "GuapoCBanana1966",
+    "timestamp": "2020-04-08 21:22:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "TallToniHouse",
+    "timestamp": "2020-04-08 21:23:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "WileyCarMoises",
+    "timestamp": "2020-04-08 21:27:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My grandpa heard from their wife that the city's evacuating.",
+    "retweets": 10,
+    "account": "Grant1953Rapp",
+    "timestamp": "2020-04-08 21:37:00.0"
+  }],
+  "color": "#4110b4",
+  "rowIds": [4128, 4130, 4131, 4133, 4133, 4135, 4139, 4140, 4154, 4163, 4164, 4168, 4177, 4178],
+  "columnId": 0,
+  "lemma": "my grandpa hear from their wives those the city evacuate",
+  "episode": "My grandpa heard from their wife that the city's evacuating",
+  "type": "ADD",
+  "significance": 90,
+  "startSentence": 4128,
+  "id": 4,
+  "endSentence": 4178,
+  "endTimestamp": "2020-04-08 21:37:00.0",
+  "startTimestamp": "2020-04-08 20:47:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "SmartCarEdward",
+    "timestamp": "2020-04-09 16:06:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "HoldsThomas_MercerMouse",
+    "timestamp": "2020-04-09 16:09:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "FuriousMCouch",
+    "timestamp": "2020-04-09 16:15:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "RunsFrances_MeaderBird",
+    "timestamp": "2020-04-09 16:16:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "FamousLealBowl2007",
+    "timestamp": "2020-04-09 16:17:00.0"
+  }, {
+    "location": "Southton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "Brendon28",
+    "timestamp": "2020-04-09 16:18:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "HenryFish44",
+    "timestamp": "2020-04-09 16:20:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "WatchesCharlesLion",
+    "timestamp": "2020-04-09 16:22:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "LazyCarParrott",
+    "timestamp": "2020-04-09 16:23:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "FFuriousF",
+    "timestamp": "2020-04-09 16:26:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "CandidSchultzCandy89",
+    "timestamp": "2020-04-09 16:35:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 11,
+    "account": "RunsJustinDog",
+    "timestamp": "2020-04-09 16:36:00.0"
+  }],
+  "color": "#8a85f8",
+  "rowIds": [5287, 5290, 5296, 5297, 5298, 5299, 5301, 5303, 5304, 5307, 5315, 5316, 5317, 5323, 5333],
+  "columnId": 0,
+  "lemma": "@lovesadamscat my best friend hear those the city have start evacuate",
+  "episode": "@LovesAdamsCat My best friend heard that the city has started evacuating",
+  "type": "ADD",
+  "significance": 85,
+  "startSentence": 5287,
+  "id": 5,
+  "endSentence": 5333,
+  "endTimestamp": "2020-04-09 16:52:00.0",
+  "startTimestamp": "2020-04-09 16:06:00.0"
+}, {
+  "utterances": [],
+  "color": "#5dd2b8",
+  "rowIds": [4184, 4770, 4784, 4786, 4793, 4793, 4795, 4798, 4799, 4802, 4806, 4808, 4810, 4810, 4812, 4813, 4814, 4816, 4819, 4821, 4822, 4826, 4828, 4829, 4836, 4836, 4837, 4862],
+  "columnId": 1,
+  "lemma": "someone someth someth on someone he structural integrity anyth failure : problem inspection damage defect test repair they it crew have evacuate up to 30 parseenger who be tr",
+  "episode": "someone something something On someone he structural integrity anything failure : problems inspections damages defects testing repair they it crews have evacuated up to 30 parseengers who were tr",
+  "type": "ADD",
+  "significance": 84,
+  "startSentence": 4184,
+  "id": 6,
+  "endSentence": 4862,
+  "endTimestamp": "2020-04-09 09:01:00.0",
+  "startTimestamp": "2020-04-08 21:43:00.0"
+}, {
+  "utterances": [{
+    "location": "Southwest",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "RacesTeresa_SnyderFish",
+    "timestamp": "2020-04-08 20:24:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "AttentativeCouchAmanda",
+    "timestamp": "2020-04-08 20:26:00.0"
+  }, {
+    "location": "Southton",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "TallDBanana",
+    "timestamp": "2020-04-08 20:28:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "WileyABanana43",
+    "timestamp": "2020-04-08 20:35:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "Maria_Hanisch7",
+    "timestamp": "2020-04-08 20:38:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "JanTallShaw",
+    "timestamp": "2020-04-08 20:39:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My mom heard from their sister that the city's evacuating.",
+    "retweets": 8,
+    "account": "SwintonBird35",
+    "timestamp": "2020-04-08 20:41:00.0"
+  }],
+  "color": "#5fa69a",
+  "rowIds": [4105, 4105, 4107, 4109, 4115, 4116, 4119, 4119, 4120, 4122, 4127, 4132],
+  "columnId": 1,
+  "lemma": "my mom hear from their sister those the city evacuate",
+  "episode": "My mom heard from their sister that the city's evacuating",
+  "type": "ADD",
+  "significance": 73,
+  "startSentence": 4105,
+  "id": 7,
+  "endSentence": 4132,
+  "endTimestamp": "2020-04-08 20:51:00.0",
+  "startTimestamp": "2020-04-08 20:24:00.0"
+}, {
+  "utterances": [{
+    "location": "Pepper Mill",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "AttentativeGlesenerHouse",
+    "timestamp": "2020-04-08 12:41:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "ClarenceDog2017",
+    "timestamp": "2020-04-08 12:51:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "BusyHouseDigna_Weaver",
+    "timestamp": "2020-04-08 12:53:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "GuapoCBanana1966",
+    "timestamp": "2020-04-08 13:02:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "ObnoxiousMaryannPlate",
+    "timestamp": "2020-04-08 13:16:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "CleverBakerCandy",
+    "timestamp": "2020-04-08 13:27:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "My mother heard from their dad that the city's evacuating.",
+    "retweets": 7,
+    "account": "WileyFitzgeraldPlate",
+    "timestamp": "2020-04-08 13:44:00.0"
+  }],
+  "color": "#8d5697",
+  "rowIds": [3637, 3642, 3652, 3654, 3663, 3663, 3672, 3677, 3687, 3688, 3698, 3705],
+  "columnId": 1,
+  "lemma": "my mother hear from their dad those the city evacuate",
+  "episode": "My mother heard from their dad that the city's evacuating",
+  "type": "ADD",
+  "significance": 70,
+  "startSentence": 3637,
+  "id": 8,
+  "endSentence": 3705,
+  "endTimestamp": "2020-04-08 13:44:00.0",
+  "startTimestamp": "2020-04-08 12:36:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "HoldsThomas_MercerMouse",
+    "timestamp": "2020-04-09 16:09:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FuriousMCouch",
+    "timestamp": "2020-04-09 16:15:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "RunsFrances_MeaderBird",
+    "timestamp": "2020-04-09 16:16:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FamousLealBowl2007",
+    "timestamp": "2020-04-09 16:17:00.0"
+  }, {
+    "location": "Southton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "Brendon28",
+    "timestamp": "2020-04-09 16:18:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "HenryFish44",
+    "timestamp": "2020-04-09 16:20:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "WatchesCharlesLion",
+    "timestamp": "2020-04-09 16:22:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "LazyCarParrott",
+    "timestamp": "2020-04-09 16:23:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FFuriousF",
+    "timestamp": "2020-04-09 16:26:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "RacesTilleyFish",
+    "timestamp": "2020-04-09 16:31:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "CandidSchultzCandy89",
+    "timestamp": "2020-04-09 16:35:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "RunsJustinDog",
+    "timestamp": "2020-04-09 16:36:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "JosefinaDarkRingo",
+    "timestamp": "2020-04-09 16:38:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "Rosanna62M",
+    "timestamp": "2020-04-09 16:46:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FearsMicheleCat",
+    "timestamp": "2020-04-09 16:58:00.0"
+  }],
+  "color": "#3652cd",
+  "rowIds": [5290, 5296, 5297, 5298, 5299, 5301, 5303, 5304, 5307, 5312, 5316, 5317, 5319, 5327, 5339],
+  "columnId": 1,
+  "lemma": "time",
+  "episode": "Time",
+  "type": "ADD",
+  "significance": 66,
+  "startSentence": 5290,
+  "id": 9,
+  "endSentence": 5339,
+  "endTimestamp": "2020-04-09 16:58:00.0",
+  "startTimestamp": "2020-04-09 16:09:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "HoldsThomas_MercerMouse",
+    "timestamp": "2020-04-09 16:09:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FuriousMCouch",
+    "timestamp": "2020-04-09 16:15:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "RunsFrances_MeaderBird",
+    "timestamp": "2020-04-09 16:16:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FamousLealBowl2007",
+    "timestamp": "2020-04-09 16:17:00.0"
+  }, {
+    "location": "Southton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "Brendon28",
+    "timestamp": "2020-04-09 16:18:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "HenryFish44",
+    "timestamp": "2020-04-09 16:20:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "WatchesCharlesLion",
+    "timestamp": "2020-04-09 16:22:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "LazyCarParrott",
+    "timestamp": "2020-04-09 16:23:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FFuriousF",
+    "timestamp": "2020-04-09 16:26:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "RacesTilleyFish",
+    "timestamp": "2020-04-09 16:31:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "CandidSchultzCandy89",
+    "timestamp": "2020-04-09 16:35:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "RunsJustinDog",
+    "timestamp": "2020-04-09 16:36:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "JosefinaDarkRingo",
+    "timestamp": "2020-04-09 16:38:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "Rosanna62M",
+    "timestamp": "2020-04-09 16:46:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "@LovesAdamsCat My best friend heard that the city has started evacuating. Time to pack up!",
+    "retweets": 14,
+    "account": "FearsMicheleCat",
+    "timestamp": "2020-04-09 16:58:00.0"
+  }],
+  "color": "#346219",
+  "rowIds": [5290, 5296, 5297, 5298, 5299, 5301, 5303, 5304, 5307, 5312, 5316, 5317, 5319, 5327, 5339],
+  "columnId": 2,
+  "lemma": "pack",
+  "episode": "pack",
+  "type": "ADD",
+  "significance": 66,
+  "startSentence": 5290,
+  "id": 10,
+  "endSentence": 5339,
+  "endTimestamp": "2020-04-09 16:58:00.0",
+  "startTimestamp": "2020-04-09 16:09:00.0"
+}, {
+  "utterances": [{
+    "location": "Southwest",
+    "text": "My husband heard from their grandpa that the city's evacuating.",
+    "retweets": 5,
+    "account": "SmartAIcecream44",
+    "timestamp": "2020-04-08 15:55:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "My husband heard from their grandpa that the city's evacuating.",
+    "retweets": 5,
+    "account": "SmartClarkHouse72",
+    "timestamp": "2020-04-08 15:57:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My husband heard from their grandpa that the city's evacuating.",
+    "retweets": 5,
+    "account": "CuriousPlateZachary_Chevez",
+    "timestamp": "2020-04-08 16:11:00.0"
+  }, {
+    "location": "Weston",
+    "text": "My husband heard from their grandpa that the city's evacuating.",
+    "retweets": 5,
+    "account": "TallHCandy11",
+    "timestamp": "2020-04-08 16:12:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "My husband heard from their grandpa that the city's evacuating.",
+    "retweets": 5,
+    "account": "T2013Thomas",
+    "timestamp": "2020-04-08 16:14:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "My husband heard from their grandpa that the city's evacuating.",
+    "retweets": 5,
+    "account": "Christine1963M",
+    "timestamp": "2020-04-08 16:25:00.0"
+  }],
+  "color": "#aac89d",
+  "rowIds": [3819, 3836, 3838, 3851, 3852, 3853, 3855, 3860, 3866, 3881],
+  "columnId": 0,
+  "lemma": "my husband hear from their grandpa those the city evacuate",
+  "episode": "My husband heard from their grandpa that the city's evacuating",
+  "type": "ADD",
+  "significance": 55,
+  "startSentence": 3819,
+  "id": 11,
+  "endSentence": 3881,
+  "endTimestamp": "2020-04-08 16:40:00.0",
+  "startTimestamp": "2020-04-08 15:38:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "FamousThomasIcecream",
+    "timestamp": "2020-04-08 09:20:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "ObnoxiousSIcecream",
+    "timestamp": "2020-04-08 09:49:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "LazyBowlChilds",
+    "timestamp": "2020-04-08 09:52:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "SmartHarrisBread96",
+    "timestamp": "2020-04-08 10:01:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "HoldsMary_HooverBear",
+    "timestamp": "2020-04-08 10:02:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "TallCarLisa",
+    "timestamp": "2020-04-08 10:05:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "Timmons53",
+    "timestamp": "2020-04-08 10:08:00.0"
+  }],
+  "color": "#a13f63",
+  "rowIds": [3441, 3470, 3473, 3482, 3483, 3486, 3489],
+  "columnId": 0,
+  "lemma": "every build have evacuate downtown",
+  "episode": "Every building has evacuated downtown",
+  "type": "ADD",
+  "significance": 53,
+  "startSentence": 3441,
+  "id": 12,
+  "endSentence": 3489,
+  "endTimestamp": "2020-04-08 10:08:00.0",
+  "startTimestamp": "2020-04-08 09:20:00.0"
+}, {
+  "utterances": [{
+    "location": "Northwest",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "ObnoxiousSIcecream",
+    "timestamp": "2020-04-08 09:49:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "LazyBowlChilds",
+    "timestamp": "2020-04-08 09:52:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "SmartHarrisBread96",
+    "timestamp": "2020-04-08 10:01:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "HoldsMary_HooverBear",
+    "timestamp": "2020-04-08 10:02:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "TallCarLisa",
+    "timestamp": "2020-04-08 10:05:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "Timmons53",
+    "timestamp": "2020-04-08 10:08:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Every building has evacuated downtown. Fire alarms going off everywhere. Nobody knows what to do.",
+    "retweets": 6,
+    "account": "TallPCouch1979",
+    "timestamp": "2020-04-08 10:21:00.0"
+  }],
+  "color": "#704c3c",
+  "rowIds": [3470, 3473, 3482, 3483, 3486, 3489, 3502],
+  "columnId": 1,
+  "lemma": "fire alarm go off everywhere",
+  "episode": "Fire alarms going off everywhere",
+  "type": "ADD",
+  "significance": 53,
+  "startSentence": 3470,
+  "id": 13,
+  "endSentence": 3502,
+  "endTimestamp": "2020-04-08 10:21:00.0",
+  "startTimestamp": "2020-04-08 09:49:00.0"
+}, {
+  "utterances": [{
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "WileyABanana43",
+    "timestamp": "2020-04-07 13:48:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "FleetMichelsHouse44",
+    "timestamp": "2020-04-07 14:02:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "WileyWCouch",
+    "timestamp": "2020-04-07 14:03:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LovesIona_OxleyBear",
+    "timestamp": "2020-04-07 14:04:00.0"
+  }, {
+    "location": "Weston",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LyleCleverT",
+    "timestamp": "2020-04-07 14:05:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "ObnoxiousJIcecream",
+    "timestamp": "2020-04-07 14:06:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "CCleverL",
+    "timestamp": "2020-04-07 14:07:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "GuapoGrambleBanana1952",
+    "timestamp": "2020-04-07 14:08:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LazyAPlate",
+    "timestamp": "2020-04-07 14:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "RacesCraigCat",
+    "timestamp": "2020-04-07 14:10:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-07 14:11:00.0"
+  }],
+  "color": "#cbc3e1",
+  "rowIds": [2269, 2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292],
+  "columnId": 0,
+  "lemma": "anyth she she anyone they it someth anyth anyth she to fight anyth she anyone they it someth anyone they someth be good until someth happen",
+  "episode": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens",
+  "type": "ADD",
+  "significance": 51,
+  "startSentence": 2269,
+  "id": 14,
+  "endSentence": 2292,
+  "endTimestamp": "2020-04-07 14:11:00.0",
+  "startTimestamp": "2020-04-07 13:48:00.0"
+}, {
+  "utterances": [{
+    "location": "Old Town",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "FleetMichelsHouse44",
+    "timestamp": "2020-04-07 14:02:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "WileyWCouch",
+    "timestamp": "2020-04-07 14:03:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LovesIona_OxleyBear",
+    "timestamp": "2020-04-07 14:04:00.0"
+  }, {
+    "location": "Weston",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LyleCleverT",
+    "timestamp": "2020-04-07 14:05:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "ObnoxiousJIcecream",
+    "timestamp": "2020-04-07 14:06:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "CCleverL",
+    "timestamp": "2020-04-07 14:07:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "GuapoGrambleBanana1952",
+    "timestamp": "2020-04-07 14:08:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LazyAPlate",
+    "timestamp": "2020-04-07 14:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "RacesCraigCat",
+    "timestamp": "2020-04-07 14:10:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-07 14:11:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "Sylvester_Rauf2015",
+    "timestamp": "2020-04-07 14:12:00.0"
+  }],
+  "color": "#35599e",
+  "rowIds": [2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293],
+  "columnId": 1,
+  "lemma": "real",
+  "episode": "really",
+  "type": "ADD",
+  "significance": 43,
+  "startSentence": 2283,
+  "id": 15,
+  "endSentence": 2293,
+  "endTimestamp": "2020-04-07 14:12:00.0",
+  "startTimestamp": "2020-04-07 14:02:00.0"
+}, {
+  "utterances": [{
+    "location": "Old Town",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "FleetMichelsHouse44",
+    "timestamp": "2020-04-07 14:02:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "WileyWCouch",
+    "timestamp": "2020-04-07 14:03:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LovesIona_OxleyBear",
+    "timestamp": "2020-04-07 14:04:00.0"
+  }, {
+    "location": "Weston",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LyleCleverT",
+    "timestamp": "2020-04-07 14:05:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "ObnoxiousJIcecream",
+    "timestamp": "2020-04-07 14:06:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "CCleverL",
+    "timestamp": "2020-04-07 14:07:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "GuapoGrambleBanana1952",
+    "timestamp": "2020-04-07 14:08:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LazyAPlate",
+    "timestamp": "2020-04-07 14:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "RacesCraigCat",
+    "timestamp": "2020-04-07 14:10:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-07 14:11:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "Sylvester_Rauf2015",
+    "timestamp": "2020-04-07 14:12:00.0"
+  }],
+  "color": "#356acf",
+  "rowIds": [2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293],
+  "columnId": 2,
+  "lemma": "risk",
+  "episode": "Risk",
+  "type": "ADD",
+  "significance": 43,
+  "startSentence": 2283,
+  "id": 16,
+  "endSentence": 2293,
+  "endTimestamp": "2020-04-07 14:12:00.0",
+  "startTimestamp": "2020-04-07 14:02:00.0"
+}, {
+  "utterances": [{
+    "location": "Old Town",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "FleetMichelsHouse44",
+    "timestamp": "2020-04-07 14:02:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "WileyWCouch",
+    "timestamp": "2020-04-07 14:03:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LovesIona_OxleyBear",
+    "timestamp": "2020-04-07 14:04:00.0"
+  }, {
+    "location": "Weston",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LyleCleverT",
+    "timestamp": "2020-04-07 14:05:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "ObnoxiousJIcecream",
+    "timestamp": "2020-04-07 14:06:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "CCleverL",
+    "timestamp": "2020-04-07 14:07:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "GuapoGrambleBanana1952",
+    "timestamp": "2020-04-07 14:08:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "LazyAPlate",
+    "timestamp": "2020-04-07 14:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "RacesCraigCat",
+    "timestamp": "2020-04-07 14:10:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-07 14:11:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 10,
+    "account": "Sylvester_Rauf2015",
+    "timestamp": "2020-04-07 14:12:00.0"
+  }],
+  "color": "#01cc90",
+  "rowIds": [2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293],
+  "columnId": 3,
+  "lemma": "woh",
+  "episode": "woh",
+  "type": "ADD",
+  "significance": 43,
+  "startSentence": 2283,
+  "id": 17,
+  "endSentence": 2293,
+  "endTimestamp": "2020-04-07 14:12:00.0",
+  "startTimestamp": "2020-04-07 14:02:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FamousTanyaBanana",
+    "timestamp": "2020-04-09 11:10:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "BusyCouchGoldstein",
+    "timestamp": "2020-04-09 11:17:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "LovesAmyDog",
+    "timestamp": "2020-04-09 11:28:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FamousParkerLight",
+    "timestamp": "2020-04-09 11:31:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "RunsWitterBear",
+    "timestamp": "2020-04-09 11:37:00.0"
+  }, {
+    "location": "Southton",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FamousBananaJose",
+    "timestamp": "2020-04-09 11:38:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "MitchellBird1986",
+    "timestamp": "2020-04-09 11:40:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "CandidTBowl",
+    "timestamp": "2020-04-09 11:41:00.0"
+  }, {
+    "location": "Easton",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FastRLight",
+    "timestamp": "2020-04-09 11:46:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "WatchesMaryCat",
+    "timestamp": "2020-04-09 11:47:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "GuapoRenovaIcecream",
+    "timestamp": "2020-04-09 11:48:00.0"
+  }, {
+    "location": "Weston",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "CuriousReedBanana",
+    "timestamp": "2020-04-09 11:49:00.0"
+  }, {
+    "location": "Weston",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "ObnoxiousRIcecream",
+    "timestamp": "2020-04-09 11:52:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "WileyJonesCandy1950",
+    "timestamp": "2020-04-09 11:59:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "SmartCandyRoberto_Morelli",
+    "timestamp": "2020-04-09 12:01:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "CandidSamuelIcecream",
+    "timestamp": "2020-04-09 12:02:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "LazyIcecreamHunter",
+    "timestamp": "2020-04-09 12:06:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "HoldsParsonFish",
+    "timestamp": "2020-04-09 12:07:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "WatchesEva_CarringtonBear",
+    "timestamp": "2020-04-09 12:09:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "GuapoIssacsPlate2009",
+    "timestamp": "2020-04-09 12:11:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FearsRichard_BarnesOctopus",
+    "timestamp": "2020-04-09 12:12:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "AbernethyHorse8",
+    "timestamp": "2020-04-09 12:15:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "DarkThomasBowl",
+    "timestamp": "2020-04-09 12:16:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "Justin_Kocon2006",
+    "timestamp": "2020-04-09 12:17:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "CuriousCouchCordero",
+    "timestamp": "2020-04-09 12:20:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "JohnAttentativeB",
+    "timestamp": "2020-04-09 12:23:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "Denoon54",
+    "timestamp": "2020-04-09 12:24:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "GuapoACar",
+    "timestamp": "2020-04-09 12:25:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "Robert1952",
+    "timestamp": "2020-04-09 12:28:00.0"
+  }, {
+    "location": "Easton",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FuriousSizemoreHouse1964",
+    "timestamp": "2020-04-09 12:29:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "Winifred2011",
+    "timestamp": "2020-04-09 12:43:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 34,
+    "account": "FearsMaud_SettersBear",
+    "timestamp": "2020-04-09 12:53:00.0"
+  }],
+  "color": "#22f450",
+  "rowIds": [3613, 4956, 4986, 4991, 4996, 4998, 5007, 5009, 5012, 5018, 5019, 5021, 5022, 5027, 5028, 5029, 5030, 5033, 5038, 5040, 5042, 5043, 5047, 5048, 5050, 5052, 5052, 5053, 5056, 5056, 5057, 5058, 5061, 5064, 5065, 5066, 5069, 5069, 5070, 5073, 5081, 5084, 5094],
+  "columnId": 2,
+  "lemma": "66th someone of someth they she an evacuation route",
+  "episode": "66th someone of something they she an evacuation route",
+  "type": "ADD",
+  "significance": 28,
+  "startSentence": 3613,
+  "id": 18,
+  "endSentence": 5094,
+  "endTimestamp": "2020-04-09 12:53:00.0",
+  "startTimestamp": "2020-04-08 12:12:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "My papa heard from their grandpa that the city's evacuating.",
+    "retweets": 0,
+    "account": "FearsBornOctopus",
+    "timestamp": "2020-04-08 18:25:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "My father heard from their papa that the city's evacuating.",
+    "retweets": 4,
+    "account": "AlanOctopus1999",
+    "timestamp": "2020-04-08 20:06:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My father heard from their papa that the city's evacuating.",
+    "retweets": 4,
+    "account": "ThomasFamousKramer",
+    "timestamp": "2020-04-08 20:09:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "My father heard from their papa that the city's evacuating.",
+    "retweets": 4,
+    "account": "SmartCandyHarris",
+    "timestamp": "2020-04-08 20:21:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "My father heard from their papa that the city's evacuating.",
+    "retweets": 4,
+    "account": "BenjaminWhale23",
+    "timestamp": "2020-04-08 20:24:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "My father heard from their papa that the city's evacuating.",
+    "retweets": 4,
+    "account": "ObnoxiousCarDavid",
+    "timestamp": "2020-04-08 20:38:00.0"
+  }],
+  "color": "#3463a2",
+  "rowIds": [3986, 4087, 4090, 4102, 4105, 4119],
+  "columnId": 0,
+  "lemma": "papa",
+  "episode": "papa",
+  "type": "ADD",
+  "significance": 16,
+  "startSentence": 3986,
+  "id": 19,
+  "endSentence": 4119,
+  "endTimestamp": "2020-04-08 20:38:00.0",
+  "startTimestamp": "2020-04-08 18:25:00.0"
+}, {
+  "utterances": [{
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "WileyABanana43",
+    "timestamp": "2020-04-07 13:48:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "FleetMichelsHouse44",
+    "timestamp": "2020-04-07 14:02:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "WileyWCouch",
+    "timestamp": "2020-04-07 14:03:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "LovesIona_OxleyBear",
+    "timestamp": "2020-04-07 14:04:00.0"
+  }, {
+    "location": "Weston",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "LyleCleverT",
+    "timestamp": "2020-04-07 14:05:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "ObnoxiousJIcecream",
+    "timestamp": "2020-04-07 14:06:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "CCleverL",
+    "timestamp": "2020-04-07 14:07:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "GuapoGrambleBanana1952",
+    "timestamp": "2020-04-07 14:08:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "LazyAPlate",
+    "timestamp": "2020-04-07 14:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "RacesCraigCat",
+    "timestamp": "2020-04-07 14:10:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "KimberlyFleetWillis",
+    "timestamp": "2020-04-07 14:11:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "anything she she anyone they it something anything anything she to Fighting anything she anyone they it something anyone they something is good until something happens. Is it really woh the Risk of something they she an evacuation route",
+    "retweets": 11,
+    "account": "Sylvester_Rauf2015",
+    "timestamp": "2020-04-07 14:12:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "66th someone of something they she an evacuation route",
+    "retweets": 0,
+    "account": "BusyGBowl59",
+    "timestamp": "2020-04-07 21:27:00.0"
+  }],
+  "color": "#7ab249",
+  "rowIds": [2269, 2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293, 2728],
+  "columnId": 4,
+  "lemma": "route",
+  "episode": "route",
+  "type": "ADD",
+  "significance": 12,
+  "startSentence": 2269,
+  "id": 20,
+  "endSentence": 2728,
+  "endTimestamp": "2020-04-07 21:27:00.0",
+  "startTimestamp": "2020-04-07 13:48:00.0"
+}]

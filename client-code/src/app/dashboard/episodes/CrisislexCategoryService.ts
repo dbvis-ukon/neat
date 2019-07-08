@@ -34,6 +34,6 @@ export class CrisislexCategoriesService {
 
 
   get categories(): Observable<CrisisLexCategory> {
-    return from(this._crisisLexCategories.filter(c => c.code.startsWith('C0')));
+    return from(this._crisisLexCategories.filter(c => c.code.startsWith('C0') || c.code.startsWith('T0')));
   }
 }

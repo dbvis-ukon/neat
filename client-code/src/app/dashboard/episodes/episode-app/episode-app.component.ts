@@ -55,4 +55,10 @@ export class EpisodeAppComponent implements OnInit {
       category.visible = !category.visible;
     });
   }
+
+  rotateAll(): void {
+    this.allEpisodes.forEach((category) => {
+      category.horizontal = !category.horizontal;
+    });
+  }
 }

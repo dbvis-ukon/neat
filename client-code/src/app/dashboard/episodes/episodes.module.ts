@@ -25,7 +25,8 @@ import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-t
     MatIconModule
   ],
   exports: [
-    EpisodeAppComponent
+    EpisodeAppComponent,
+    EpisodeVisComponent
   ]
 })
 export class EpisodesModule { }

@@ -61,6 +61,8 @@ export class EpisodeVisComponent implements OnInit {
   private heightScale = 0;
   private timestamps: string[] = [];
   private lastBarY = 0;
+  private maxColumns = 0;
+
 
   // All episodes as originally received
   private _myEpisodes: Episode[] = [];
@@ -101,7 +103,11 @@ export class EpisodeVisComponent implements OnInit {
 
     episodeObservable.subscribe(episodes => {
       this._myEpisodes = episodes.filter(e => e.significance > 40);
+      this._myEpisodes.forEach((episode) => {
+      this.maxColumns = Math.max(episode.columnId, this.maxColumns);
+    });
       this.myEpisodes = this._myEpisodes;
+      this.svgWidth = this.maxColumns * this.barWidth * 0.1 + 100;
       this.createOrUpdateVis();
     });
   }
@@ -113,13 +119,13 @@ export class EpisodeVisComponent implements OnInit {
     this._showText = showText;
 
     if (showText) {
-      this.svgWidth = 400;
+      this.svgWidth = this.maxColumns * this.barWidth * 0.1 + 300;
       this.paddingForLabels = 3500;
       this.translateG(0);
       this.expandVis();
     } else {
       if (this.svg !== undefined) {
-        this.svgWidth = 100;
+        this.svgWidth = this.maxColumns * this.barWidth * 0.1 + 0;
         this.paddingForLabels = 0;
         this.translateG(80);
         this.compactVis();
@@ -132,6 +138,29 @@ export class EpisodeVisComponent implements OnInit {
 
   get showText(): boolean {
     return this._showText;
+  }
+
+  private _showHorizontally: boolean;
+
+  @Input()
+  set showHorizontally(showHorizontally: boolean) {
+    this._showHorizontally = showHorizontally;
+
+    if (showHorizontally) {
+      this.svgSelection
+      .attr('transform', 'rotate(90)');
+      let temporalHeight = this.svgWidth;
+      this.svgWidth = this.svgHeight;
+      this.svgHeight = temporalHeight;
+      this.paddingForLabels = 3500;
+      this.translateG(0);
+    } else {
+     
+    }
+  }
+
+  get showHorizontally(): boolean {
+    return this._showHorizontally;
   }
 
   // private applyTimelineBrush(brush?: [Date, Date]): Episode[] {
@@ -267,7 +296,7 @@ export class EpisodeVisComponent implements OnInit {
       .attr('class', 'episodeBar')
       .attr('id', (d) => d.id)
       .style('fill', (d) => 'rgb(' + d.color + ')')
-      .on('mouseover', (d) => {
+      .on('mouseenter', (d) => {
         const mouseEvent: MouseEvent = d3.event;
 
         const episodeTooltipComponentInstance = this.tooltipService.openAtMousePosition(EpisodeTooltipComponent, mouseEvent);
@@ -277,7 +306,7 @@ export class EpisodeVisComponent implements OnInit {
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', true);
 
       })
-      .on('mouseout', (d) => {
+      .on('mouseleave', (d) => {
         this.tooltipService.close();
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', false);
       });
