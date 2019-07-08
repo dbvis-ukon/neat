@@ -205,6 +205,8 @@ export class TimelineVisComponent implements OnInit {
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
 
+    this.svgSelection.select('g.brush rect.overlay').style('pointer-events', 'none');
+
     this.updateStreamGraph();
   }
 

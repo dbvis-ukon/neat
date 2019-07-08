@@ -111,17 +111,24 @@ export class StreamGraph {
             .attr('d', area)
             .attr('name', d => d.key)
             .style('fill', d =>  color(d.key))
-            .on('mouseenter', () => {
+            .on('mouseenter', (d, i, n) => {
                 const mouseEvent: MouseEvent = d3.event;
 
                 const exampleTooltipComponentInstance = this.tooltipservice.openAtMousePosition(StreamgraphTooltipComponent, mouseEvent);
 
                 const randomNumber = Math.random();
 
-                exampleTooltipComponentInstance.text = 'Hello world in tooltip with random number: ' + randomNumber;
+                exampleTooltipComponentInstance.text = d.key;
+
+                d3.select(n[i])
+                    .style('stroke', 'black')
+                    .style('stroke-width', 1);
               })
-              .on('mouseleave', () => {
+              .on('mouseleave', (d, i, n) => {
                 this.tooltipservice.close();
+                d3.select(n[i])
+                    .style('stroke', 'none')
+                    .style('stroke-width', 1);
               });
     }
 
