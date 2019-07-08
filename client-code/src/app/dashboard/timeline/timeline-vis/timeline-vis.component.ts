@@ -1,11 +1,15 @@
 import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 import { ResizedEvent } from 'angular-resize-event';
-import { TimelineOptions } from './timeline-options';
+import { TimelineOptions } from '../timeline-options';
 import * as d3 from 'd3';
 import { ScaleTime } from 'd3';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
-import { TimelineOtherBrushes } from './timeline-other-brushes';
+import { TimelineOtherBrushes } from '../timeline-other-brushes';
+import { StreamGraph } from './stream-graph';
+import { StreamGraphItem } from '../stream-graph-item';
+import { TooltipService } from '@app/core/services/tooltip.service';
+import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -29,7 +33,11 @@ export class TimelineVisComponent implements OnInit {
 
   private _otherBrushes: TimelineOtherBrushes[];
 
+  private _brushExternal: [Date, Date];
+
   private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
+
+  private streamGraphSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
   private otherBrushesSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
@@ -45,12 +53,43 @@ export class TimelineVisComponent implements OnInit {
 
   private brushSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
+  private streamGraph: StreamGraph;
+
 
   private lastBrush: [Date, Date];
 
   private brushDebouncer: Subject<[Date, Date]> = new Subject();
 
-  constructor() { }
+  private _streamGraphData: StreamGraphItem[];
+  private _streamGraphColors: string[];
+
+  constructor(
+    private tooltipService: TooltipService,
+    private streamGraphRepository: StreamGraphRepositoryService) { }
+
+  @Input()
+  set streamGraphData(streamGraphData: StreamGraphItem[]) {
+    this._streamGraphData = streamGraphData;
+
+
+    this.updateStreamGraph();
+  }
+
+  get streamGraphData(): StreamGraphItem[] {
+    return this._streamGraphData;
+  }
+
+  @Input()
+  set streamGraphColors(streamGraphColors: string[]) {
+    this._streamGraphColors = streamGraphColors;
+
+
+    this.updateStreamGraph();
+  }
+
+  get streamGraphColors(): string[] {
+    return this._streamGraphColors;
+  }
 
   @Input()
   set options(options: TimelineOptions) {
@@ -76,6 +115,19 @@ export class TimelineVisComponent implements OnInit {
     return this._otherBrushes;
   }
 
+  @Input()
+  set brushExternal(brushExternal: [Date, Date]) {
+    this._brushExternal = brushExternal;
+
+    if (brushExternal && brushExternal[0] && brushExternal[1]) {
+      this.updateOwnBrush(brushExternal);
+    }
+  }
+
+  get brushExternal(): [Date, Date] {
+    return this._brushExternal;
+  }
+
   ngOnInit() {
     this.svg = this.svgRef.nativeElement;
 
@@ -92,11 +144,15 @@ export class TimelineVisComponent implements OnInit {
     this.updateRanges();
 
     this.updateRender();
+
+    // this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
+    //   this.streamGraphData = data;
+    // });
   }
 
   onResized(event: ResizedEvent) {
     this.width = event.newWidth - 30;
-    this.height = 40; // constant height
+    this.height = 300; // constant height
 
     this.updateRanges();
 
@@ -105,6 +161,7 @@ export class TimelineVisComponent implements OnInit {
 
   private initVis(): void {
     this.svgSelection = d3.select(this.svg);
+    this.svgSelection.attr('class', 'timeline-viz');
 
     // add bottom axis
     this.axisSelection = this.svgSelection
@@ -112,6 +169,12 @@ export class TimelineVisComponent implements OnInit {
       .attr('class', 'axis')
       .attr('transform', `translate(0,0)`)
       .call(this.axisBottom);
+
+    this.streamGraphSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'stream-graph');
+
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository);
 
     this.otherBrushesSelection = this.svgSelection
       .append('g');
@@ -148,8 +211,21 @@ export class TimelineVisComponent implements OnInit {
       .attr('transform', `translate(0,  ${this.height - 20})`)
       .call(this.axisBottom);
 
-    // either use the brush from the last brush selection or brush the whole time series.
-    const brushRange = this.lastBrush ? [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])] : [0, 50];
+    this.updateOwnBrush();
+  }
+
+  private updateOwnBrush(externalBrush?: [Date, Date]) {
+    if (!this.brush || !this.brushSelection) {
+      return;
+    }
+    let brushRange = null;
+    if (externalBrush) {
+      brushRange = [this.timeScale(externalBrush[0]), this.timeScale(externalBrush[1])];
+    } else if (this.lastBrush) {
+      brushRange = [this.timeScale(this.lastBrush[0]), this.timeScale(this.lastBrush[1])];
+    } else {
+      brushRange = this.timeScale.range();
+    }
 
     this.brushSelection
       .call(this.brush)
@@ -158,13 +234,22 @@ export class TimelineVisComponent implements OnInit {
     // update the color of the brush
     this.brushSelection.select('rect.selection')
       .attr('fill', this._options.userColor);
+
+    this.svgSelection.select('g.brush rect.overlay').style('pointer-events', 'none');
+
+    this.updateStreamGraph();
   }
 
   /**
    * called when the user performs a brush
    */
   private _brushed(): void {
-    if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'zoom') { return; } // ignore brush-by-zoom
+    if (d3.event.sourceEvent === null) {
+      return;
+    }
+    if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'zoom') {
+      return;
+    } // ignore brush-by-zoom
     const s = d3.event.selection;
     this.lastBrush = s.map(this.timeScale.invert, this.timeScale);
 
@@ -176,7 +261,7 @@ export class TimelineVisComponent implements OnInit {
       return;
     }
 
-    console.log('draw other brushes', this._otherBrushes);
+    // console.log('draw other brushes', this._otherBrushes);
 
     const rects = this.otherBrushesSelection
       .selectAll<SVGRectElement, TimelineOtherBrushes>('rect')
@@ -195,5 +280,11 @@ export class TimelineVisComponent implements OnInit {
       .attr('stroke-width', 2);
 
     rects.exit().remove();
+  }
+
+  private updateStreamGraph() {
+    if (this.streamGraph && this._streamGraphData && this._streamGraphColors) {
+      this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height, this.timeScale);
+    }
   }
 }

@@ -8,28 +8,35 @@ import {
   MatSliderModule,
   MatToolbarModule
 } from '@angular/material';
-import { AngularResizedEventModule } from 'angular-resize-event';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 
 import { SharedModule } from '@app/shared/shared.module';
 import { MapModule } from '@app/dashboard/map/map.module';
+import { TimelineModule } from './timeline/timeline.module';
 
 @NgModule({
-  declarations: [DashboardComponent, TimelineVisComponent, EpisodeVisComponent],
   imports: [
     CommonModule,
-    AngularResizedEventModule,
     SharedModule.forRoot(),
-    MatSliderModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
     MatSidenavModule,
+    MatSliderModule,
     MatToolbarModule,
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    MapModule
+    MapModule,
+    DragDropModule,
+    TimelineModule
+  ],
+  declarations: [
+    DashboardComponent,
+    EpisodeVisComponent,
   ],
   exports: [DashboardComponent]
 })

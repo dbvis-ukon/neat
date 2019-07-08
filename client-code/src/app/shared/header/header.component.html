@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <button *ngIf="group" mat-icon-button aria-label="back to groups" class="exit-icon" [routerLink]="['/groups']">
+  <button *ngIf="group" mat-icon-button aria-label="back to groups" class="exit-icon" [routerLink]="['/groups']" matTooltip="Leave Group">
       <mat-icon>arrow_back</mat-icon>
   </button>
   
@@ -9,11 +9,21 @@
 
   <span class="example-spacer"></span>
 
-  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="openDialog()">
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="emitView('default')" matTooltip="Dashboard Layout">
+    <mat-icon>dashboard</mat-icon>
+  </button> 
+
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="emitView('timelines')" matTooltip="Master Timeline Layout">
+    <mat-icon>timeline</mat-icon>
+  </button> 
+
+  <span class="example-spacer"></span>
+
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="openDialog()" matTooltip="Change User Settings">
     <mat-icon>person</mat-icon>
   </button> 
 
-  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="sidenav.toggle()">
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="sidenav.toggle()" matTooltip="Show Group Participants">
     <mat-icon>group</mat-icon>
   </button> 
 </mat-toolbar>
