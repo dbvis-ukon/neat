@@ -135,7 +135,7 @@ export class TimelineVisComponent implements OnInit {
 
   onResized(event: ResizedEvent) {
     this.width = event.newWidth - 30;
-    this.height = 100; // constant height
+    this.height = 300; // constant height
 
     this.updateRanges();
 
