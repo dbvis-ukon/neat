@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Filter Settings</h1>
+<div mat-dialog-content>
+
+  <mat-list>
+    <mat-list-item *ngFor="let sel of data.selection">
+      <mat-checkbox [(ngModel)]="sel.selected">{{sel.name}}</mat-checkbox>
+    </mat-list-item>
+  </mat-list>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onOkClick()" cdkFocusInitial>Ok</button>
+</div>

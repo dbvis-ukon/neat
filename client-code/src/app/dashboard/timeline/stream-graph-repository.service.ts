@@ -25,12 +25,23 @@ export class StreamGraphRepositoryService {
    * Returns all keys that are available in the data.
    */
   getAllKeys(data: StreamGraphItem[]): string[] {
-    const uniqEs6 = (arrArg) => {
-      return arrArg.filter((elem, pos, arr) => {
-        return arr.indexOf(elem) === pos;
-      });
-    };
+    return this.uniqEs6(data.flatMap(item => item.data.map(d => d.name)));
+  }
 
-    return uniqEs6(data.flatMap(item => item.data.map(d => d.name)));
+  filter(data: StreamGraphItem[], filterNames: string[]) {
+    // const dataCopy: StreamGraphItem[] = JSON.parse(JSON.stringify(data));
+    return data
+    .map(d => {
+      const newData = d.data.filter(d1 => filterNames.includes(d1.name));
+      return {
+        timestamp: d.timestamp,
+        data: newData
+      } as StreamGraphItem;
+    })
+    .filter(d => d.data.length > 0);
+  }
+
+  private uniqEs6<T>(arrArg: Array<T>): Array<T> {
+    return arrArg.filter((elem, pos, arr) => arr.indexOf(elem) === pos);
   }
 }
