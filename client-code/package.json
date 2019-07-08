@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "prettier": "prettier --write src/app/**/*.{ts,less}",
+    "prettier:check": "prettier --check src/app/**/*.{ts,less}",
+    "tslint:fix": "prettier --check src/app/**/*.{ts,less}",
     "start": "ng serve",
     "start:docker": "ng serve --host=0.0.0.0 --poll=2000",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -50,9 +54,10 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "prettier": "^1.17.1",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
+    "tslint": "^5.11.0",
     "typescript": "~3.2.2"
   }
 }

@@ -1,0 +1,154 @@
+{
+  "1": {
+    "name": "Palace Hills",
+    "color": {
+      "red": 99,
+      "green": 160,
+      "blue": 234
+    }
+  },
+  "2": {
+    "name": "Northwest",
+    "color": {
+      "red": 116,
+      "green": 175,
+      "blue": 241
+    }
+  },
+  "3": {
+    "name": "Old Town",
+    "color": {
+      "red": 105,
+      "green": 165,
+      "blue": 236
+    }
+  },
+  "4": {
+    "name": "Safe Town",
+    "color": {
+      "red": 88,
+      "green": 151,
+      "blue": 229
+    }
+  },
+  "5": {
+    "name": "Southwest",
+    "color": {
+      "red": 70,
+      "green": 136,
+      "blue": 222
+    }
+  },
+  "6": {
+    "name": "Downtown",
+    "color": {
+      "red": 134,
+      "green": 190,
+      "blue": 248
+    }
+  },
+  "7": {
+    "name": "Wilson Forest",
+    "color": {
+      "red": 47,
+      "green": 116,
+      "blue": 212
+    }
+  },
+  "8": {
+    "name": "Scenic Vista",
+    "color": {
+      "red": 82,
+      "green": 146,
+      "blue": 227
+    }
+  },
+  "9": {
+    "name": "Broadview",
+    "color": {
+      "red": 151,
+      "green": 205,
+      "blue": 255
+    }
+  },
+  "10": {
+    "name": "Chapparal",
+    "color": {
+      "red": 145,
+      "green": 200,
+      "blue": 253
+    }
+  },
+  "11": {
+    "name": "Terrapin Springs",
+    "color": {
+      "red": 64,
+      "green": 131,
+      "blue": 220
+    }
+  },
+  "12": {
+    "name": "Pepper Mill",
+    "color": {
+      "red": 93,
+      "green": 156,
+      "blue": 232
+    }
+  },
+  "13": {
+    "name": "Cheddarford",
+    "color": {
+      "red": 140,
+      "green": 195,
+      "blue": 251
+    }
+  },
+  "14": {
+    "name": "Easton",
+    "color": {
+      "red": 122,
+      "green": 180,
+      "blue": 244
+    }
+  },
+  "15": {
+    "name": "Weston",
+    "color": {
+      "red": 53,
+      "green": 121,
+      "blue": 215
+    }
+  },
+  "16": {
+    "name": "Southton",
+    "color": {
+      "red": 76,
+      "green": 141,
+      "blue": 224
+    }
+  },
+  "17": {
+    "name": "Oak Willow",
+    "color": {
+      "red": 111,
+      "green": 170,
+      "blue": 239
+    }
+  },
+  "18": {
+    "name": "East Parton",
+    "color": {
+      "red": 128,
+      "green": 185,
+      "blue": 246
+    }
+  },
+  "19": {
+    "name": "West Parton",
+    "color": {
+      "red": 59,
+      "green": 126,
+      "blue": 217
+    }
+  }
+}

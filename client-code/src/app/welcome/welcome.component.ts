@@ -7,14 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./welcome.component.less']
 })
 export class WelcomeComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onSubmitted() {
     this.router.navigate(['/groups']);
   }
-
 }

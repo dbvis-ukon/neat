@@ -1,0 +1,62 @@
+svg.map {
+  border: 1px solid red;
+}
+
+.glyph .frame {
+  fill: white;
+  stroke: lightgray;
+}
+
+.glyph .axis {
+  display: none;
+}
+.glyph:hover .axis {
+  display: initial;
+}
+
+.multi .median-bar {
+  stroke: black;
+  stroke-width: 1px;
+}
+.multi .median-bar.no-reports {
+  stroke: gray;
+}
+
+.multi .median-tail {
+  stroke: darkgray;
+  stroke-width: 1px;
+}
+.multi .median-tail.rising {
+  stroke: black;
+}
+
+.multi .missing-head,
+.multi .missing-head.dropping.no-reports {
+  fill: gray;
+}
+.multi .missing-head.dropping {
+  fill: black;
+}
+.multi .missing-tail {
+  stroke: gray;
+}
+.multi .missing-tail.dropping {
+  stroke: black;
+}
+
+.multi .axis.top text {
+  transform: rotate(-45deg);
+  text-anchor: start;
+}
+.multi .axis .domain {
+  stroke: transparent;
+}
+
+.timeline .divider {
+  stroke: black;
+  stroke-dasharray: 1 4;
+}
+
+.timeline .background {
+  fill: url(#timeline-backgroud);
+}
