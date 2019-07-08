@@ -190,7 +190,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   drop(event: CdkDragDrop<TimelineItem[]>) {
-    console.log('drop', event);
     moveItemInArray(this.timelineData, event.previousIndex, event.currentIndex);
   }
 
