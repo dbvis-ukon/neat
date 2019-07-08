@@ -63,9 +63,28 @@ export class TimelineVisComponent implements OnInit {
   private _streamGraphData: StreamGraphItem[];
   private _streamGraphColors: string[];
 
+  private _hoverLine: Date;
+
+  @Output()
+  hoverLineChange: EventEmitter<Date> = new EventEmitter();
+
   constructor(
     private tooltipService: TooltipService,
     private streamGraphRepository: StreamGraphRepositoryService) { }
+
+  @Input()
+  set hoverLine(cur: Date) {
+    this._hoverLine = cur;
+
+    // TODO: @FABIAN draw line / update line
+
+    // TODO: @FABIAN capture mouse shizzle and:
+    // this.hoverLineChange.emit(date);
+  }
+
+  get hoverLine(): Date {
+    return this._hoverLine;
+  }
 
   @Input()
   set streamGraphData(streamGraphData: StreamGraphItem[]) {
@@ -152,7 +171,7 @@ export class TimelineVisComponent implements OnInit {
 
   onResized(event: ResizedEvent) {
     this.width = event.newWidth - 30;
-    this.height = 300; // constant height
+    this.height = this._options.height; // constant height
 
     this.updateRanges();
 
@@ -176,13 +195,15 @@ export class TimelineVisComponent implements OnInit {
 
     this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository);
 
-    this.otherBrushesSelection = this.svgSelection
-      .append('g');
+    if (this._options.brushOn) {
+      this.otherBrushesSelection = this.svgSelection
+        .append('g');
 
     // add brush
-    this.brushSelection = this.svgSelection
-      .append('g')
-      .attr('class', 'brush');
+      this.brushSelection = this.svgSelection
+        .append('g')
+        .attr('class', 'brush');
+    }
   }
 
   private updateRanges(): void {
