@@ -215,6 +215,9 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
+    if (!this.brush || !this.brushSelection) {
+      return;
+    }
     let brushRange = null;
     if (externalBrush) {
       brushRange = [this.timeScale(externalBrush[0]), this.timeScale(externalBrush[1])];
