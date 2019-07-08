@@ -1,0 +1,2939 @@
+[{
+  "utterances": [{
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "WatchesCarlisleOctopus",
+    "timestamp": "2020-04-09 05:40:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "ObnoxiousDCandy51",
+    "timestamp": "2020-04-09 05:57:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "RunsSharon_CrossOctopus",
+    "timestamp": "2020-04-09 06:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "CandidPlateDakins",
+    "timestamp": "2020-04-09 06:15:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "Betty41Perez",
+    "timestamp": "2020-04-09 06:16:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "WatchesNorvellDog",
+    "timestamp": "2020-04-09 06:19:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "FleetSBread",
+    "timestamp": "2020-04-09 06:21:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "FamousBroadwayLight",
+    "timestamp": "2020-04-09 06:22:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "Dylan_JoyWhale6",
+    "timestamp": "2020-04-09 06:24:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "FleetHenryLight",
+    "timestamp": "2020-04-09 06:30:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "CeravoloWhale1992",
+    "timestamp": "2020-04-09 06:35:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "Joseph2005Tant",
+    "timestamp": "2020-04-09 06:42:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "FuriousLCouch",
+    "timestamp": "2020-04-09 06:48:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "FamousBananaLeo",
+    "timestamp": "2020-04-09 06:51:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 14,
+    "account": "Sarah_BradleyWhale89",
+    "timestamp": "2020-04-09 06:56:00.0"
+  }],
+  "color": "#e6745e",
+  "rowIds": [4632, 4661, 4678, 4690, 4696, 4697, 4700, 4702, 4703, 4705, 4711, 4716, 4723, 4729, 4732, 4737],
+  "columnId": 0,
+  "lemma": "can't treat a break feet if there stuff everywhere everywhere",
+  "episode": "Can't treat a broken foot if there's stuff everywhere everywhere",
+  "type": "ADD",
+  "significance": 98,
+  "startSentence": 4632,
+  "id": 0,
+  "endSentence": 4737,
+  "endTimestamp": "2020-04-09 06:56:00.0",
+  "startTimestamp": "2020-04-09 05:11:00.0"
+}, {
+  "utterances": [{
+    "location": "Palace Hills",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "JosephBusyQ",
+    "timestamp": "2020-04-08 21:56:00.0"
+  }, {
+    "location": "Southton",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "LazyBCouch",
+    "timestamp": "2020-04-08 22:00:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "James2001",
+    "timestamp": "2020-04-08 22:01:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "ClarenceDog2017",
+    "timestamp": "2020-04-08 22:03:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "ObnoxiousGCouch",
+    "timestamp": "2020-04-08 22:04:00.0"
+  }, {
+    "location": "Southton",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "WileyGaitherBanana",
+    "timestamp": "2020-04-08 22:06:00.0"
+  }, {
+    "location": "Southton",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "AttentativeFCar",
+    "timestamp": "2020-04-08 22:10:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "LazyMLight",
+    "timestamp": "2020-04-08 22:11:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "BusyCBread32",
+    "timestamp": "2020-04-08 22:14:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We are running out of critical medical supplies",
+    "retweets": 9,
+    "account": "KnightLion1957",
+    "timestamp": "2020-04-08 22:17:00.0"
+  }],
+  "color": "#1fbe28",
+  "rowIds": [4190, 4196, 4197, 4201, 4202, 4204, 4205, 4207, 4210, 4211, 4212, 4215, 4218],
+  "columnId": 0,
+  "lemma": "we be run out of critical medical supply",
+  "episode": "We are running out of critical medical supplies",
+  "type": "ADD",
+  "significance": 97,
+  "startSentence": 4190,
+  "id": 1,
+  "endSentence": 4218,
+  "endTimestamp": "2020-04-08 22:17:00.0",
+  "startTimestamp": "2020-04-08 21:49:00.0"
+}, {
+  "utterances": [],
+  "color": "#0e156c",
+  "rowIds": [3441, 3450, 3453, 3455, 3457, 3459, 3460, 3467, 3469, 3470],
+  "columnId": 0,
+  "lemma": "krak tv : meet baby jereme",
+  "episode": "KRAK TV : Meet baby Jereme",
+  "type": "ADD",
+  "significance": 94,
+  "startSentence": 3441,
+  "id": 2,
+  "endSentence": 3470,
+  "endTimestamp": "2020-04-08 09:49:00.0",
+  "startTimestamp": "2020-04-08 09:20:00.0"
+}, {
+  "utterances": [{
+    "location": "Palace Hills",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CuriousSBread64",
+    "timestamp": "2020-04-08 22:44:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FamousCCouch72",
+    "timestamp": "2020-04-08 22:56:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "LovesDeborah_FoxLion",
+    "timestamp": "2020-04-08 22:58:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "Robert_HolmanDog37",
+    "timestamp": "2020-04-08 22:59:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "Webster85",
+    "timestamp": "2020-04-08 23:03:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FastReaidPlate",
+    "timestamp": "2020-04-08 23:04:00.0"
+  }, {
+    "location": "Southton",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FuriousHBowl",
+    "timestamp": "2020-04-08 23:14:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "Sandoval1980",
+    "timestamp": "2020-04-08 23:15:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FleetHCouch1961",
+    "timestamp": "2020-04-08 23:21:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "MSmartSeto",
+    "timestamp": "2020-04-08 23:29:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FleetGladwinPlate",
+    "timestamp": "2020-04-08 23:30:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "HoldsRunyonLion",
+    "timestamp": "2020-04-08 23:42:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CuriousDIcecream",
+    "timestamp": "2020-04-08 23:43:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "Stephen_JohnsonBear2002",
+    "timestamp": "2020-04-09 13:57:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FamousFarquharBowl20",
+    "timestamp": "2020-04-09 14:18:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "SBusyJensen",
+    "timestamp": "2020-04-09 14:29:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "WileyCousinsCar1987",
+    "timestamp": "2020-04-09 14:34:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CleverPlateHeather",
+    "timestamp": "2020-04-09 14:38:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CuriousThomasLight",
+    "timestamp": "2020-04-09 14:40:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FuriousHouseAvery",
+    "timestamp": "2020-04-09 14:43:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "AttentativeIcecreamMartinez",
+    "timestamp": "2020-04-09 14:47:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FastMaberyIcecream",
+    "timestamp": "2020-04-09 14:49:00.0"
+  }, {
+    "location": "Weston",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "FastCouchAmy_Romanowski",
+    "timestamp": "2020-04-09 14:50:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "RunsWarkentinCat",
+    "timestamp": "2020-04-09 14:51:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CaraCuriousR",
+    "timestamp": "2020-04-09 14:56:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "LazyCandyMccormick",
+    "timestamp": "2020-04-09 14:57:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "K64Fieldson",
+    "timestamp": "2020-04-09 15:01:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "Cleo_RolfHorse22",
+    "timestamp": "2020-04-09 15:02:00.0"
+  }, {
+    "location": "Weston",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "BerrierHorse80",
+    "timestamp": "2020-04-09 15:07:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "LovesMarcusCat",
+    "timestamp": "2020-04-09 15:08:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CuriousCarCarrie_Sanders",
+    "timestamp": "2020-04-09 15:13:00.0"
+  }, {
+    "location": "Easton",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CuriousDonaldsonBanana1954",
+    "timestamp": "2020-04-09 15:24:00.0"
+  }, {
+    "location": "Easton",
+    "text": "The hospital by the library has power.",
+    "retweets": 32,
+    "account": "CuriousBananaBrent",
+    "timestamp": "2020-04-09 15:27:00.0"
+  }],
+  "color": "#ee2064",
+  "rowIds": [4245, 4257, 4259, 4260, 4264, 4265, 4275, 4276, 4282, 4290, 4291, 4303, 4304, 5158, 5179, 5190, 5195, 5199, 5201, 5204, 5208, 5210, 5211, 5212, 5217, 5218, 5222, 5223, 5228, 5229, 5234, 5245, 5248],
+  "columnId": 1,
+  "lemma": "hospital by the library have power",
+  "episode": "hospital by the library has power",
+  "type": "ADD",
+  "significance": 91,
+  "startSentence": 4245,
+  "id": 3,
+  "endSentence": 5248,
+  "endTimestamp": "2020-04-09 15:27:00.0",
+  "startTimestamp": "2020-04-08 22:44:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 5,
+    "account": "RacesLowell_KallasLion",
+    "timestamp": "2020-04-10 07:21:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 5,
+    "account": "Brett77Duggan",
+    "timestamp": "2020-04-10 07:22:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 5,
+    "account": "CarolynCuriousBarker",
+    "timestamp": "2020-04-10 07:23:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 5,
+    "account": "GuapoRenovaIcecream",
+    "timestamp": "2020-04-10 07:35:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 5,
+    "account": "AttentativeIcecreamMcdonald",
+    "timestamp": "2020-04-10 07:50:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 5,
+    "account": "SmartRHouse",
+    "timestamp": "2020-04-10 07:54:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 3,
+    "account": "VanessaCorwin",
+    "timestamp": "2020-04-10 11:05:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "FrancineHiggins",
+    "timestamp": "2020-04-10 11:09:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "LovesBabbHorse",
+    "timestamp": "2020-04-10 11:18:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 3,
+    "account": "BusyCHouse45",
+    "timestamp": "2020-04-10 11:28:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 3,
+    "account": "FearsNessWhale",
+    "timestamp": "2020-04-10 11:32:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-10 11:34:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 3,
+    "account": "Erica_Wesner44",
+    "timestamp": "2020-04-10 11:35:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "James_Martinez2012",
+    "timestamp": "2020-04-10 11:40:00.0"
+  }, {
+    "location": "Weston",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "SutherlandDog42",
+    "timestamp": "2020-04-10 11:45:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "Wayne98P",
+    "timestamp": "2020-04-10 11:47:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "RaisaCleverFalls",
+    "timestamp": "2020-04-10 11:49:00.0"
+  }],
+  "color": "#306b11",
+  "rowIds": [6202, 6203, 6204, 6216, 6231, 6235, 6426, 6430, 6439, 6449, 6453, 6455, 6456, 6461, 6466, 6468, 6470],
+  "columnId": 0,
+  "lemma": "give",
+  "episode": "give",
+  "type": "ADD",
+  "significance": 91,
+  "startSentence": 6202,
+  "id": 4,
+  "endSentence": 6470,
+  "endTimestamp": "2020-04-10 11:49:00.0",
+  "startTimestamp": "2020-04-10 07:21:00.0"
+}, {
+  "utterances": [{
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "RunsKerry_HernandezCat",
+    "timestamp": "2020-04-09 10:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "Jeffry64",
+    "timestamp": "2020-04-09 10:36:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "LovesJanet_DubeWhale",
+    "timestamp": "2020-04-09 10:38:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 10:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-09 10:44:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRBowl",
+    "timestamp": "2020-04-09 10:46:00.0"
+  }, {
+    "location": "Weston",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartFCar",
+    "timestamp": "2020-04-09 10:48:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "AttentativeBananaTiburcio",
+    "timestamp": "2020-04-09 10:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoCandyCharles",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoMCar",
+    "timestamp": "2020-04-09 10:51:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "DarkLBanana",
+    "timestamp": "2020-04-09 10:54:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRedmanHouse",
+    "timestamp": "2020-04-09 11:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GilbertCat1955",
+    "timestamp": "2020-04-09 11:05:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "CandidDBanana",
+    "timestamp": "2020-04-09 11:09:00.0"
+  }],
+  "color": "#41c530",
+  "rowIds": [4951, 4957, 4959, 4961, 4965, 4967, 4969, 4970, 4971, 4972, 4975, 4981, 4986, 4990],
+  "columnId": 0,
+  "lemma": "now i can't stop cry",
+  "episode": "Now i can't stop crying",
+  "type": "ADD",
+  "significance": 77,
+  "startSentence": 4951,
+  "id": 5,
+  "endSentence": 4990,
+  "endTimestamp": "2020-04-09 11:09:00.0",
+  "startTimestamp": "2020-04-09 10:30:00.0"
+}, {
+  "utterances": [{
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "RunsKerry_HernandezCat",
+    "timestamp": "2020-04-09 10:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "Jeffry64",
+    "timestamp": "2020-04-09 10:36:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "LovesJanet_DubeWhale",
+    "timestamp": "2020-04-09 10:38:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 10:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-09 10:44:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRBowl",
+    "timestamp": "2020-04-09 10:46:00.0"
+  }, {
+    "location": "Weston",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartFCar",
+    "timestamp": "2020-04-09 10:48:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "AttentativeBananaTiburcio",
+    "timestamp": "2020-04-09 10:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoCandyCharles",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoMCar",
+    "timestamp": "2020-04-09 10:51:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "DarkLBanana",
+    "timestamp": "2020-04-09 10:54:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRedmanHouse",
+    "timestamp": "2020-04-09 11:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GilbertCat1955",
+    "timestamp": "2020-04-09 11:05:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "CandidDBanana",
+    "timestamp": "2020-04-09 11:09:00.0"
+  }],
+  "color": "#5d2257",
+  "rowIds": [4951, 4957, 4959, 4961, 4965, 4967, 4969, 4970, 4971, 4972, 4975, 4981, 4986, 4990],
+  "columnId": 2,
+  "lemma": "all of those poor baby",
+  "episode": "All of those poor babies",
+  "type": "ADD",
+  "significance": 77,
+  "startSentence": 4951,
+  "id": 6,
+  "endSentence": 4990,
+  "endTimestamp": "2020-04-09 11:09:00.0",
+  "startTimestamp": "2020-04-09 10:30:00.0"
+}, {
+  "utterances": [{
+    "location": "Cheddarford",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "PeppyPepper",
+    "timestamp": "2020-04-09 10:15:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "RunsKerry_HernandezCat",
+    "timestamp": "2020-04-09 10:30:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "Jeffry64",
+    "timestamp": "2020-04-09 10:36:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "TallDekanyCandy",
+    "timestamp": "2020-04-09 10:40:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-09 10:44:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRBowl",
+    "timestamp": "2020-04-09 10:46:00.0"
+  }, {
+    "location": "Weston",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartFCar",
+    "timestamp": "2020-04-09 10:48:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "AttentativeBananaTiburcio",
+    "timestamp": "2020-04-09 10:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoCandyCharles",
+    "timestamp": "2020-04-09 10:50:00.0"
+  }, {
+    "location": "Easton",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GuapoMCar",
+    "timestamp": "2020-04-09 10:51:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "DarkLBanana",
+    "timestamp": "2020-04-09 10:54:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "SmartRedmanHouse",
+    "timestamp": "2020-04-09 11:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "i was ok until i saw that the shelter is suffering.  All of those poor babies. Now i can't stop crying",
+    "retweets": 13,
+    "account": "GilbertCat1955",
+    "timestamp": "2020-04-09 11:05:00.0"
+  }],
+  "color": "#1d1e0b",
+  "rowIds": [4936, 4951, 4957, 4961, 4965, 4965, 4967, 4969, 4970, 4971, 4972, 4975, 4981, 4986],
+  "columnId": 3,
+  "lemma": "i be ok until i see those the shelter be suffer",
+  "episode": "i was ok until i saw that the shelter is suffering",
+  "type": "ADD",
+  "significance": 77,
+  "startSentence": 4936,
+  "id": 7,
+  "endSentence": 4986,
+  "endTimestamp": "2020-04-09 11:05:00.0",
+  "startTimestamp": "2020-04-09 10:15:00.0"
+}, {
+  "utterances": [{
+    "location": "Pepper Mill",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "FrancineHiggins",
+    "timestamp": "2020-04-10 11:09:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "LovesBabbHorse",
+    "timestamp": "2020-04-10 11:18:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 2,
+    "account": "BusyCHouse45",
+    "timestamp": "2020-04-10 11:28:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 2,
+    "account": "FearsNessWhale",
+    "timestamp": "2020-04-10 11:32:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-10 11:34:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Okay this hospital sucks! They wonít give me mojitos",
+    "retweets": 2,
+    "account": "Erica_Wesner44",
+    "timestamp": "2020-04-10 11:35:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "James_Martinez2012",
+    "timestamp": "2020-04-10 11:40:00.0"
+  }, {
+    "location": "Weston",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "SutherlandDog42",
+    "timestamp": "2020-04-10 11:45:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "Wayne98P",
+    "timestamp": "2020-04-10 11:47:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "why does this hospital refuse to give me a pudding cup? im hungry! #MakesItwhy",
+    "retweets": 6,
+    "account": "RaisaCleverFalls",
+    "timestamp": "2020-04-10 11:49:00.0"
+  }],
+  "color": "#fb0b37",
+  "rowIds": [6430, 6439, 6449, 6453, 6455, 6456, 6461, 6466, 6468, 6470],
+  "columnId": 1,
+  "lemma": "these hospital",
+  "episode": "this hospital",
+  "type": "ADD",
+  "significance": 69,
+  "startSentence": 6430,
+  "id": 8,
+  "endSentence": 6470,
+  "endTimestamp": "2020-04-10 11:49:00.0",
+  "startTimestamp": "2020-04-10 11:09:00.0"
+}, {
+  "utterances": [{
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "Sarah51Chan",
+    "timestamp": "2020-04-08 15:59:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "SherryGuapoO",
+    "timestamp": "2020-04-08 16:00:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "PaulWhale45",
+    "timestamp": "2020-04-08 16:04:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "MazieLion85",
+    "timestamp": "2020-04-08 16:06:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "BusyMHouse",
+    "timestamp": "2020-04-08 16:10:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "Stephen1B",
+    "timestamp": "2020-04-08 16:11:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "FamousMerrittCar28",
+    "timestamp": "2020-04-08 16:15:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "HoldsShinLion",
+    "timestamp": "2020-04-08 16:19:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "GuapoHamBanana1967",
+    "timestamp": "2020-04-08 16:20:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 10,
+    "account": "Amanda_HallDog38",
+    "timestamp": "2020-04-08 16:21:00.0"
+  }],
+  "color": "#0bd4f5",
+  "rowIds": [3792, 3807, 3813, 3831, 3840, 3841, 3845, 3847, 3851, 3852, 3856, 3856, 3860, 3861, 3862],
+  "columnId": 0,
+  "lemma": "can't treat a contusion if there pile of brick everywhere",
+  "episode": "Can't treat a contusions if there's piles of brick everywhere",
+  "type": "ADD",
+  "significance": 65,
+  "startSentence": 3792,
+  "id": 9,
+  "endSentence": 3862,
+  "endTimestamp": "2020-04-08 16:21:00.0",
+  "startTimestamp": "2020-04-08 15:11:00.0"
+}, {
+  "utterances": [{
+    "location": "Scenic Vista",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "ChloeJohnson",
+    "timestamp": "2020-04-09 12:43:00.0"
+  }, {
+    "location": "Safe Town",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "CleverEllisBread67",
+    "timestamp": "2020-04-09 12:50:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "PaulObnoxiousCowan",
+    "timestamp": "2020-04-09 12:52:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "LazyMassenburgBanana55",
+    "timestamp": "2020-04-09 12:57:00.0"
+  }, {
+    "location": "Southton",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "CandidVillarrealIcecream",
+    "timestamp": "2020-04-09 12:58:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "June_Forsythe53",
+    "timestamp": "2020-04-09 13:01:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering?!",
+    "retweets": 7,
+    "account": "CleverMillerBowl29",
+    "timestamp": "2020-04-09 13:04:00.0"
+  }],
+  "color": "#96e5dd",
+  "rowIds": [5084, 5091, 5093, 5098, 5099, 5102, 5102, 5105, 5110, 5117],
+  "columnId": 0,
+  "lemma": "@opalescent how can you stomach shop for new clothe when there be so many people and animal suffer",
+  "episode": "@Opalescent how can you stomach shopping for new clothes when there are so many people and animals suffering",
+  "type": "ADD",
+  "significance": 60,
+  "startSentence": 5084,
+  "id": 10,
+  "endSentence": 5117,
+  "endTimestamp": "2020-04-09 13:16:00.0",
+  "startTimestamp": "2020-04-09 12:43:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 5,
+    "account": "LovesMary_BrentHorse",
+    "timestamp": "2020-04-10 00:29:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 5,
+    "account": "DouglasCleverWarthen",
+    "timestamp": "2020-04-10 00:31:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 5,
+    "account": "LazyGracieCar",
+    "timestamp": "2020-04-10 00:33:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 5,
+    "account": "MelissaFleetL",
+    "timestamp": "2020-04-10 00:43:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 5,
+    "account": "Mark_WardDog3",
+    "timestamp": "2020-04-10 00:46:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 5,
+    "account": "RenaFuriousY",
+    "timestamp": "2020-04-10 00:47:00.0"
+  }],
+  "color": "#ee5084",
+  "rowIds": [5767, 5790, 5792, 5794, 5801, 5804, 5807, 5808],
+  "columnId": 0,
+  "lemma": "woow i wake up in the hospital",
+  "episode": "Woow I woke up in the hospital",
+  "type": "ADD",
+  "significance": 55,
+  "startSentence": 5767,
+  "id": 11,
+  "endSentence": 5808,
+  "endTimestamp": "2020-04-10 00:47:00.0",
+  "startTimestamp": "2020-04-10 00:06:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "LovesMary_BrentHorse",
+    "timestamp": "2020-04-10 00:29:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "DouglasCleverWarthen",
+    "timestamp": "2020-04-10 00:31:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "LazyGracieCar",
+    "timestamp": "2020-04-10 00:33:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "TracyCleverJ",
+    "timestamp": "2020-04-10 00:34:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "MelissaFleetL",
+    "timestamp": "2020-04-10 00:43:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "Mark_WardDog3",
+    "timestamp": "2020-04-10 00:46:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "RenaFuriousY",
+    "timestamp": "2020-04-10 00:47:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Woow I woke up in the hospital. Thatís what I get for throwing an apocalypse party",
+    "retweets": 7,
+    "account": "CandidALight",
+    "timestamp": "2020-04-10 01:04:00.0"
+  }],
+  "color": "#f54bb5",
+  "rowIds": [5790, 5792, 5794, 5795, 5804, 5807, 5808, 5825],
+  "columnId": 1,
+  "lemma": "thatís what i get for throw an apocalypse party",
+  "episode": "Thatís what I get for throwing an apocalypse party",
+  "type": "ADD",
+  "significance": 55,
+  "startSentence": 5790,
+  "id": 12,
+  "endSentence": 5825,
+  "endTimestamp": "2020-04-10 01:04:00.0",
+  "startTimestamp": "2020-04-10 00:29:00.0"
+}, {
+  "utterances": [{
+    "location": "Location with-held due to contract",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 10,
+    "account": "CuriousPlateJohn_Paine",
+    "timestamp": "2020-04-08 18:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 10,
+    "account": "CandidEwingPlate2011",
+    "timestamp": "2020-04-08 18:17:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 10,
+    "account": "DarkCPlate1980",
+    "timestamp": "2020-04-08 18:25:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 10,
+    "account": "Darcy_RenfrewOctopus73",
+    "timestamp": "2020-04-08 18:29:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 10,
+    "account": "Jerry_Lazo1968",
+    "timestamp": "2020-04-08 18:31:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 10,
+    "account": "EricFastH",
+    "timestamp": "2020-04-08 18:35:00.0"
+  }],
+  "color": "#149134",
+  "rowIds": [3961, 3978, 3978, 3986, 3986, 3990, 3990, 3992, 3992, 3996, 3996],
+  "columnId": 0,
+  "lemma": "dialysis",
+  "episode": "dialysis",
+  "type": "ADD",
+  "significance": 49,
+  "startSentence": 3961,
+  "id": 13,
+  "endSentence": 3996,
+  "endTimestamp": "2020-04-08 18:35:00.0",
+  "startTimestamp": "2020-04-08 18:00:00.0"
+}, {
+  "utterances": [{
+    "location": "Terrapin Springs",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "GreenJean",
+    "timestamp": "2020-04-06 14:40:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "CandidDBanana",
+    "timestamp": "2020-04-06 15:11:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "Jason1992",
+    "timestamp": "2020-04-06 15:16:00.0"
+  }, {
+    "location": "Southton",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "Ronald15Wooten",
+    "timestamp": "2020-04-06 15:17:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "CleverBreadWallace_Castro",
+    "timestamp": "2020-04-06 15:19:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "Mabel_MixBird40",
+    "timestamp": "2020-04-06 15:24:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "AttentativeCouchAmanda",
+    "timestamp": "2020-04-06 15:25:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "BusyPepinPlate",
+    "timestamp": "2020-04-06 15:27:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "It's a beautiful day in the neighborhood.  But the allergies!",
+    "retweets": 8,
+    "account": "Billie1953Compton",
+    "timestamp": "2020-04-06 15:31:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "The hospital by the neighborhood's power is out!",
+    "retweets": 0,
+    "account": "AttentativeHBowl",
+    "timestamp": "2020-04-08 11:39:00.0"
+  }],
+  "color": "#b5e70e",
+  "rowIds": [881, 912, 917, 918, 920, 925, 926, 928, 932, 3580],
+  "columnId": 1,
+  "lemma": "neighborhood",
+  "episode": "neighborhood",
+  "type": "ADD",
+  "significance": 48,
+  "startSentence": 881,
+  "id": 14,
+  "endSentence": 3580,
+  "endTimestamp": "2020-04-08 11:39:00.0",
+  "startTimestamp": "2020-04-06 14:40:00.0"
+}, {
+  "utterances": [{
+    "location": "Chapparal",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "FireCpn",
+    "timestamp": "2020-04-10 07:12:00.0"
+  }, {
+    "location": "Southton",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "RacesLowell_KallasLion",
+    "timestamp": "2020-04-10 07:21:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "Brett77Duggan",
+    "timestamp": "2020-04-10 07:22:00.0"
+  }, {
+    "location": "Oak Willow",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "CarolynCuriousBarker",
+    "timestamp": "2020-04-10 07:23:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "GuapoRenovaIcecream",
+    "timestamp": "2020-04-10 07:35:00.0"
+  }, {
+    "location": "Weston",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "AttentativeIcecreamMcdonald",
+    "timestamp": "2020-04-10 07:50:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "@firefighter87 Iíll get on the horn with dispatch  theyíll give the hospital a heads up and social services will meet you there",
+    "retweets": 6,
+    "account": "SmartRHouse",
+    "timestamp": "2020-04-10 07:54:00.0"
+  }],
+  "color": "#30cde0",
+  "rowIds": [6193, 6202, 6203, 6204, 6216, 6231, 6235],
+  "columnId": 1,
+  "lemma": "head",
+  "episode": "heads",
+  "type": "ADD",
+  "significance": 48,
+  "startSentence": 6193,
+  "id": 15,
+  "endSentence": 6235,
+  "endTimestamp": "2020-04-10 07:54:00.0",
+  "startTimestamp": "2020-04-10 07:12:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "Can't treat a busted leg if there's stuff everywhere everywhere.  We need a new hospital.",
+    "retweets": 4,
+    "account": "ScottSmartToupin",
+    "timestamp": "2020-04-08 18:01:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a busted leg if there's stuff everywhere everywhere.  We need a new hospital.",
+    "retweets": 4,
+    "account": "LazyHCar",
+    "timestamp": "2020-04-08 18:07:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a busted leg if there's stuff everywhere everywhere.  We need a new hospital.",
+    "retweets": 4,
+    "account": "Bernard32Gonzalez",
+    "timestamp": "2020-04-08 18:08:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a busted leg if there's stuff everywhere everywhere.  We need a new hospital.",
+    "retweets": 4,
+    "account": "Curtis_BuchananHorse65",
+    "timestamp": "2020-04-08 18:18:00.0"
+  }],
+  "color": "#f0fc8b",
+  "rowIds": [3937, 3961, 3962, 3968, 3968, 3969, 3978, 3979, 3986, 3991],
+  "columnId": 1,
+  "lemma": "can't treat a bust leg if there stuff everywhere everywhere",
+  "episode": "Can't treat a busted leg if there's stuff everywhere everywhere",
+  "type": "ADD",
+  "significance": 46,
+  "startSentence": 3937,
+  "id": 16,
+  "endSentence": 3991,
+  "endTimestamp": "2020-04-08 18:30:00.0",
+  "startTimestamp": "2020-04-08 17:36:00.0"
+}, {
+  "utterances": [{
+    "location": "Location with-held due to contract",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 11,
+    "account": "CuriousPlateJohn_Paine",
+    "timestamp": "2020-04-08 18:00:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 11,
+    "account": "CandidEwingPlate2011",
+    "timestamp": "2020-04-08 18:17:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 11,
+    "account": "DarkCPlate1980",
+    "timestamp": "2020-04-08 18:25:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 11,
+    "account": "Darcy_RenfrewOctopus73",
+    "timestamp": "2020-04-08 18:29:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "SmartMacleodCandy19",
+    "timestamp": "2020-04-08 18:30:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 11,
+    "account": "Jerry_Lazo1968",
+    "timestamp": "2020-04-08 18:31:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "St. Himark Kidney Center needs your help. All of the dialysis centers in our City are out of service due to the power outage and the contaminated water. A dialyis procedure requires several gallons of potable water. Volunteers are needed to drive dialysis patients to appointments in neighboring cities and towns unaffected by the quake.",
+    "retweets": 11,
+    "account": "EricFastH",
+    "timestamp": "2020-04-08 18:35:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "FuriousCBread",
+    "timestamp": "2020-04-08 18:43:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "LovesJulieWhale",
+    "timestamp": "2020-04-08 18:47:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "RacesMichael_ReesBear",
+    "timestamp": "2020-04-08 18:51:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "RunsJorge_HathawayLion",
+    "timestamp": "2020-04-08 18:56:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "TallCampbellCouch1978",
+    "timestamp": "2020-04-08 18:59:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "DarkWilliamsCouch",
+    "timestamp": "2020-04-08 19:19:00.0"
+  }],
+  "color": "#b2cc55",
+  "rowIds": [3771, 3775, 3786, 3792, 3961, 3961, 3978, 3978, 3986, 3986, 3990, 3990, 3991, 3992, 3992, 3996, 3996, 4004, 4008, 4012, 4017, 4020, 4040],
+  "columnId": 2,
+  "lemma": "center",
+  "episode": "Center",
+  "type": "ADD",
+  "significance": 44,
+  "startSentence": 3771,
+  "id": 17,
+  "endSentence": 4040,
+  "endTimestamp": "2020-04-08 19:19:00.0",
+  "startTimestamp": "2020-04-08 14:50:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 4,
+    "account": "RunsThomasDog",
+    "timestamp": "2020-04-08 13:42:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 4,
+    "account": "WatchesJessicaBird",
+    "timestamp": "2020-04-08 13:45:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 4,
+    "account": "AttentativeTristanHouse",
+    "timestamp": "2020-04-08 13:47:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 4,
+    "account": "N69Newman",
+    "timestamp": "2020-04-08 13:49:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 4,
+    "account": "Perna2004",
+    "timestamp": "2020-04-08 13:59:00.0"
+  }],
+  "color": "#55dd2c",
+  "rowIds": [3697, 3703, 3706, 3707, 3708, 3710, 3720, 3724],
+  "columnId": 0,
+  "lemma": "moderate damage",
+  "episode": "Moderate damage",
+  "type": "ADD",
+  "significance": 42,
+  "startSentence": 3697,
+  "id": 18,
+  "endSentence": 3724,
+  "endTimestamp": "2020-04-08 14:03:00.0",
+  "startTimestamp": "2020-04-08 13:36:00.0"
+}, {
+  "utterances": [{
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "CollierHorse82",
+    "timestamp": "2020-04-08 13:37:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "RunsThomasDog",
+    "timestamp": "2020-04-08 13:42:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "WatchesJessicaBird",
+    "timestamp": "2020-04-08 13:45:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "AttentativeTristanHouse",
+    "timestamp": "2020-04-08 13:47:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "N69Newman",
+    "timestamp": "2020-04-08 13:49:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "HCandidField",
+    "timestamp": "2020-04-08 13:50:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "Perna2004",
+    "timestamp": "2020-04-08 13:59:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Moderate damage. Due to concerns over contaminated water",
+    "retweets": 7,
+    "account": "CuriousLightDiana",
+    "timestamp": "2020-04-08 14:04:00.0"
+  }],
+  "color": "#592133",
+  "rowIds": [3698, 3703, 3706, 3708, 3710, 3711, 3720, 3725],
+  "columnId": 1,
+  "lemma": "due to concern over contaminate water",
+  "episode": "Due to concerns over contaminated water",
+  "type": "ADD",
+  "significance": 42,
+  "startSentence": 3698,
+  "id": 19,
+  "endSentence": 3725,
+  "endTimestamp": "2020-04-08 14:04:00.0",
+  "startTimestamp": "2020-04-08 13:37:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 0,
+    "account": "AttentativeFCar",
+    "timestamp": "2020-04-08 13:55:00.0"
+  }],
+  "color": "#ddb2c3",
+  "rowIds": [3698, 3703, 3706, 3711, 3713, 3716, 3718],
+  "columnId": 2,
+  "lemma": "caened't treat a brokeen feet if there brokeen tile everywhere",
+  "episode": "Caened't treat a brokeened foot if there's brokeened tiles everywhere",
+  "type": "ADD",
+  "significance": 42,
+  "startSentence": 3698,
+  "id": 20,
+  "endSentence": 3718,
+  "endTimestamp": "2020-04-08 13:57:00.0",
+  "startTimestamp": "2020-04-08 13:37:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "FamousBreadLeabow",
+    "timestamp": "2020-04-08 13:57:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "Casillas1974",
+    "timestamp": "2020-04-08 14:03:00.0"
+  }, {
+    "location": "Chapparal",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "CuriousEllenCar",
+    "timestamp": "2020-04-08 14:08:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "TallSwaffordCandy21",
+    "timestamp": "2020-04-08 14:09:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "John_Cooper3",
+    "timestamp": "2020-04-08 14:10:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "BusyDealBread97",
+    "timestamp": "2020-04-08 14:11:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "FastFigueroaBanana86",
+    "timestamp": "2020-04-08 14:15:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "Andrea_RaglandBear1960",
+    "timestamp": "2020-04-08 14:16:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "Elaine81",
+    "timestamp": "2020-04-08 14:25:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 9,
+    "account": "LovesGabeOctopus",
+    "timestamp": "2020-04-08 14:27:00.0"
+  }],
+  "color": "#770c76",
+  "rowIds": [3718, 3724, 3729, 3730, 3731, 3732, 3736, 3737, 3746, 3748],
+  "columnId": 3,
+  "lemma": "door be lock",
+  "episode": "doors are locked",
+  "type": "ADD",
+  "significance": 41,
+  "startSentence": 3718,
+  "id": 21,
+  "endSentence": 3748,
+  "endTimestamp": "2020-04-08 14:27:00.0",
+  "startTimestamp": "2020-04-08 13:57:00.0"
+}, {
+  "utterances": [{
+    "location": "Southwest",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 5,
+    "account": "TallSwaffordCandy21",
+    "timestamp": "2020-04-08 14:09:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 5,
+    "account": "BusyDealBread97",
+    "timestamp": "2020-04-08 14:11:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 5,
+    "account": "FastFigueroaBanana86",
+    "timestamp": "2020-04-08 14:15:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Just parseed the hospital.  The doors are locked????",
+    "retweets": 5,
+    "account": "Elaine81",
+    "timestamp": "2020-04-08 14:25:00.0"
+  }],
+  "color": "#4e9a8b",
+  "rowIds": [3717, 3720, 3728, 3730, 3730, 3732, 3736, 3736, 3746, 3747],
+  "columnId": 4,
+  "lemma": "just parseed the hospital",
+  "episode": "Just parseed the hospital",
+  "type": "ADD",
+  "significance": 41,
+  "startSentence": 3717,
+  "id": 22,
+  "endSentence": 3747,
+  "endTimestamp": "2020-04-08 14:26:00.0",
+  "startTimestamp": "2020-04-08 13:56:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "Wildes78",
+    "timestamp": "2020-04-08 14:48:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "CarlFastY",
+    "timestamp": "2020-04-08 14:58:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "FastABanana",
+    "timestamp": "2020-04-08 14:59:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "FastCandyPatricia_Schilling",
+    "timestamp": "2020-04-08 15:01:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "SmartLightLeven",
+    "timestamp": "2020-04-08 15:03:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "Jeanie14Adams",
+    "timestamp": "2020-04-08 15:04:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "CandidFBowl1992",
+    "timestamp": "2020-04-08 15:06:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "FamousPlateRobert",
+    "timestamp": "2020-04-08 15:09:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "JosephMouse2008",
+    "timestamp": "2020-04-08 15:10:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "CuriousThomasBowl",
+    "timestamp": "2020-04-08 15:11:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "WoodCat1968",
+    "timestamp": "2020-04-08 15:15:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 11,
+    "account": "Kathryn_HempsteadOctopus85",
+    "timestamp": "2020-04-08 15:19:00.0"
+  }],
+  "color": "#fc9a06",
+  "rowIds": [3769, 3779, 3780, 3782, 3784, 3785, 3787, 3790, 3791, 3792, 3796, 3800],
+  "columnId": 1,
+  "lemma": "if you need medical care",
+  "episode": "If you need medical care",
+  "type": "ADD",
+  "significance": 41,
+  "startSentence": 3769,
+  "id": 23,
+  "endSentence": 3800,
+  "endTimestamp": "2020-04-08 15:19:00.0",
+  "startTimestamp": "2020-04-08 14:48:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "Wildes78",
+    "timestamp": "2020-04-08 14:48:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "CarlFastY",
+    "timestamp": "2020-04-08 14:58:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "FastCandyPatricia_Schilling",
+    "timestamp": "2020-04-08 15:01:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "SmartLightLeven",
+    "timestamp": "2020-04-08 15:03:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "CandidFBowl1992",
+    "timestamp": "2020-04-08 15:06:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "JosephMouse2008",
+    "timestamp": "2020-04-08 15:10:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Community is on reroute - EMS will not take patients to this facility for the time being. If you need medical care",
+    "retweets": 7,
+    "account": "CuriousThomasBowl",
+    "timestamp": "2020-04-08 15:11:00.0"
+  }],
+  "color": "#a2a39c",
+  "rowIds": [3769, 3777, 3779, 3782, 3784, 3784, 3787, 3789, 3791, 3792, 3795, 3797],
+  "columnId": 3,
+  "lemma": "community be on reroute - em will not take patient to these facility for the time be",
+  "episode": "Community is on reroute - EMS will not take patients to this facility for the time being",
+  "type": "ADD",
+  "significance": 41,
+  "startSentence": 3769,
+  "id": 24,
+  "endSentence": 3797,
+  "endTimestamp": "2020-04-08 15:16:00.0",
+  "startTimestamp": "2020-04-08 14:48:00.0"
+}, {
+  "utterances": [{
+    "location": "Broadview",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "WileyCBanana",
+    "timestamp": "2020-04-08 13:40:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "KramerLion81",
+    "timestamp": "2020-04-08 13:43:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "AttentativeIcecreamDaniel_Looney",
+    "timestamp": "2020-04-08 13:46:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "ObnoxiousLightBunker",
+    "timestamp": "2020-04-08 13:51:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "AttentativeFCar",
+    "timestamp": "2020-04-08 13:55:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "CandidHCar2010",
+    "timestamp": "2020-04-08 13:56:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Caened't treat a brokeened foot if there's brokeened tiles everywhere.  We enedeed a enedew hospital.",
+    "retweets": 6,
+    "account": "FearsHerbDog",
+    "timestamp": "2020-04-08 13:59:00.0"
+  }],
+  "color": "#34fdeb",
+  "rowIds": [3701, 3704, 3707, 3712, 3716, 3717, 3720],
+  "columnId": 5,
+  "lemma": "we enedeed a enedew hospital",
+  "episode": "We enedeed a enedew hospital",
+  "type": "ADD",
+  "significance": 38,
+  "startSentence": 3701,
+  "id": 25,
+  "endSentence": 3720,
+  "endTimestamp": "2020-04-08 13:59:00.0",
+  "startTimestamp": "2020-04-08 13:40:00.0"
+}, {
+  "utterances": [],
+  "color": "#82e387",
+  "rowIds": [3726, 3730, 3734, 3743, 3744, 3747, 3748, 3755],
+  "columnId": 0,
+  "lemma": "attention : the owner of these account have be transport to city trauma",
+  "episode": "Attention : the owner of this account has been transported to City Trauma",
+  "type": "ADD",
+  "significance": 35,
+  "startSentence": 3726,
+  "id": 26,
+  "endSentence": 3755,
+  "endTimestamp": "2020-04-08 14:34:00.0",
+  "startTimestamp": "2020-04-08 14:05:00.0"
+}, {
+  "utterances": [{
+    "location": "Weston",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 5,
+    "account": "FuriousSchillaciPlate",
+    "timestamp": "2020-04-08 14:36:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 5,
+    "account": "RacesMonteHorse",
+    "timestamp": "2020-04-08 14:40:00.0"
+  }, {
+    "location": "Weston",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 5,
+    "account": "CleverCandyBarbara_Nye",
+    "timestamp": "2020-04-08 14:43:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 5,
+    "account": "GuapoCatrinaLight",
+    "timestamp": "2020-04-08 14:55:00.0"
+  }, {
+    "location": "Southton",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 5,
+    "account": "AFuriousP",
+    "timestamp": "2020-04-08 15:01:00.0"
+  }],
+  "color": "#93b459",
+  "rowIds": [3754, 3756, 3757, 3761, 3761, 3764, 3776, 3782],
+  "columnId": 4,
+  "lemma": "in good shape",
+  "episode": "In good shape",
+  "type": "ADD",
+  "significance": 31,
+  "startSentence": 3754,
+  "id": 27,
+  "endSentence": 3782,
+  "endTimestamp": "2020-04-08 15:01:00.0",
+  "startTimestamp": "2020-04-08 14:33:00.0"
+}, {
+  "utterances": [{
+    "location": "Cheddarford",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "CleverSPlate",
+    "timestamp": "2020-04-08 14:34:00.0"
+  }, {
+    "location": "Weston",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "FuriousSchillaciPlate",
+    "timestamp": "2020-04-08 14:36:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "WileyFisherPlate12",
+    "timestamp": "2020-04-08 14:37:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "RacesMonteHorse",
+    "timestamp": "2020-04-08 14:40:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "WileyMPlate39",
+    "timestamp": "2020-04-08 14:41:00.0"
+  }, {
+    "location": "Weston",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "CleverCandyBarbara_Nye",
+    "timestamp": "2020-04-08 14:43:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "GuapoCatrinaLight",
+    "timestamp": "2020-04-08 14:55:00.0"
+  }, {
+    "location": "Southton",
+    "text": "In good shape. EMS is transporting most non-critical patients to Good Health.",
+    "retweets": 7,
+    "account": "AFuriousP",
+    "timestamp": "2020-04-08 15:01:00.0"
+  }],
+  "color": "#f86895",
+  "rowIds": [3755, 3757, 3758, 3761, 3762, 3764, 3776, 3782],
+  "columnId": 5,
+  "lemma": "em be transport most non-critical patient to good health",
+  "episode": "EMS is transporting most non-critical patients to Good Health",
+  "type": "ADD",
+  "significance": 31,
+  "startSentence": 3755,
+  "id": 28,
+  "endSentence": 3782,
+  "endTimestamp": "2020-04-08 15:01:00.0",
+  "startTimestamp": "2020-04-08 14:34:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Critical patients are being transported to our facility. Once they are stabilized they will be transfered to other hospitals or airlifted to others in the region",
+    "retweets": 3,
+    "account": "CityTrauma",
+    "timestamp": "2020-04-08 14:50:00.0"
+  }, {
+    "location": "Location with-held due to contract",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "SmartFBowl12",
+    "timestamp": "2020-04-08 14:50:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are being transported to our facility. Once they are stabilized they will be transfered to other hospitals or airlifted to others in the region",
+    "retweets": 3,
+    "account": "BusyCBread32",
+    "timestamp": "2020-04-08 15:04:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "SmartCandyJames_Thomas",
+    "timestamp": "2020-04-08 15:06:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Critical patients are being transported to our facility. Once they are stabilized they will be transfered to other hospitals or airlifted to others in the region",
+    "retweets": 3,
+    "account": "ChristianCleverL",
+    "timestamp": "2020-04-08 15:06:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "Peyser99",
+    "timestamp": "2020-04-08 15:10:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "GuapoUhligIcecream1981",
+    "timestamp": "2020-04-08 15:14:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FuriousJBowl59",
+    "timestamp": "2020-04-08 15:16:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FastFigueroaBanana86",
+    "timestamp": "2020-04-08 15:23:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FamousWCar",
+    "timestamp": "2020-04-08 15:24:00.0"
+  }],
+  "color": "#e8f596",
+  "rowIds": [3771, 3785, 3787, 3787, 3791, 3795, 3797, 3804, 3805],
+  "columnId": 4,
+  "lemma": "airlift to other",
+  "episode": "airlifted to other",
+  "type": "ADD",
+  "significance": 29,
+  "startSentence": 3771,
+  "id": 29,
+  "endSentence": 3805,
+  "endTimestamp": "2020-04-08 15:24:00.0",
+  "startTimestamp": "2020-04-08 14:50:00.0"
+}, {
+  "utterances": [{
+    "location": "Location with-held due to contract",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "SmartFBowl12",
+    "timestamp": "2020-04-08 14:50:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "SmartCandyJames_Thomas",
+    "timestamp": "2020-04-08 15:06:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "Peyser99",
+    "timestamp": "2020-04-08 15:10:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "GuapoUhligIcecream1981",
+    "timestamp": "2020-04-08 15:14:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FuriousJBowl59",
+    "timestamp": "2020-04-08 15:16:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FastFigueroaBanana86",
+    "timestamp": "2020-04-08 15:23:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FamousWCar",
+    "timestamp": "2020-04-08 15:24:00.0"
+  }],
+  "color": "#c9d697",
+  "rowIds": [3771, 3785, 3787, 3787, 3791, 3795, 3797, 3804, 3805],
+  "columnId": 5,
+  "lemma": "be transfer to other hospital",
+  "episode": "are transfered to other hospitals",
+  "type": "ADD",
+  "significance": 29,
+  "startSentence": 3771,
+  "id": 30,
+  "endSentence": 3805,
+  "endTimestamp": "2020-04-08 15:24:00.0",
+  "startTimestamp": "2020-04-08 14:50:00.0"
+}, {
+  "utterances": [{
+    "location": "Location with-held due to contract",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "SmartFBowl12",
+    "timestamp": "2020-04-08 14:50:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "SmartCandyJames_Thomas",
+    "timestamp": "2020-04-08 15:06:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "Peyser99",
+    "timestamp": "2020-04-08 15:10:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "GuapoUhligIcecream1981",
+    "timestamp": "2020-04-08 15:14:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FuriousJBowl59",
+    "timestamp": "2020-04-08 15:16:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FastFigueroaBanana86",
+    "timestamp": "2020-04-08 15:23:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Critical patients are transported to the Trauma hospital. Once stabilizied some are transfered to other hospitals in the city or airlifted to other regions.",
+    "retweets": 7,
+    "account": "FamousWCar",
+    "timestamp": "2020-04-08 15:24:00.0"
+  }],
+  "color": "#4826f4",
+  "rowIds": [3771, 3785, 3787, 3787, 3791, 3795, 3797, 3804, 3805],
+  "columnId": 6,
+  "lemma": "region",
+  "episode": "regions",
+  "type": "ADD",
+  "significance": 29,
+  "startSentence": 3771,
+  "id": 31,
+  "endSentence": 3805,
+  "endTimestamp": "2020-04-08 15:24:00.0",
+  "startTimestamp": "2020-04-08 14:50:00.0"
+}, {
+  "utterances": [{
+    "location": "Palace Hills",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "TallWCandy",
+    "timestamp": "2020-04-08 14:11:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "LazyPCouch1986",
+    "timestamp": "2020-04-08 14:12:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "BusySimonBowl2004",
+    "timestamp": "2020-04-08 14:25:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "Antonio66F",
+    "timestamp": "2020-04-08 14:28:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "Barbra94Creech",
+    "timestamp": "2020-04-08 14:30:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "DarkCPlate1980",
+    "timestamp": "2020-04-08 14:31:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Man! our hospital too?",
+    "retweets": 6,
+    "account": "LovesJulieWhale",
+    "timestamp": "2020-04-08 14:39:00.0"
+  }],
+  "color": "#24fac2",
+  "rowIds": [3732, 3733, 3746, 3749, 3751, 3752, 3760],
+  "columnId": 1,
+  "lemma": "our hospital too",
+  "episode": "our hospital too",
+  "type": "ADD",
+  "significance": 29,
+  "startSentence": 3732,
+  "id": 32,
+  "endSentence": 3760,
+  "endTimestamp": "2020-04-08 14:39:00.0",
+  "startTimestamp": "2020-04-08 14:11:00.0"
+}, {
+  "utterances": [{
+    "location": "Cheddarford",
+    "text": "Man! our hospital too?",
+    "retweets": 2,
+    "account": "LazyPCouch1986",
+    "timestamp": "2020-04-08 14:12:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Man! our hospital too?",
+    "retweets": 2,
+    "account": "Antonio66F",
+    "timestamp": "2020-04-08 14:28:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Man! our hospital too?",
+    "retweets": 2,
+    "account": "DarkCPlate1980",
+    "timestamp": "2020-04-08 14:31:00.0"
+  }],
+  "color": "#01a55a",
+  "rowIds": [3731, 3733, 3745, 3748, 3749, 3752, 3759],
+  "columnId": 2,
+  "lemma": "man",
+  "episode": "Man",
+  "type": "ADD",
+  "significance": 29,
+  "startSentence": 3731,
+  "id": 33,
+  "endSentence": 3759,
+  "endTimestamp": "2020-04-08 14:38:00.0",
+  "startTimestamp": "2020-04-08 14:10:00.0"
+}, {
+  "utterances": [{
+    "location": "East Parton",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "SmartMacleodCandy19",
+    "timestamp": "2020-04-08 18:30:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "FuriousCBread",
+    "timestamp": "2020-04-08 18:43:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "LovesJulieWhale",
+    "timestamp": "2020-04-08 18:47:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "RacesMichael_ReesBear",
+    "timestamp": "2020-04-08 18:51:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "RunsJorge_HathawayLion",
+    "timestamp": "2020-04-08 18:56:00.0"
+  }, {
+    "location": "Northwest",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "TallCampbellCouch1978",
+    "timestamp": "2020-04-08 18:59:00.0"
+  }, {
+    "location": "East Parton",
+    "text": "Excaliber Treatment Center - have 4 adults that need transport to the hospital tomorrow for critical chemotherapy. Our bus was damaged and none of the other agencies are available.",
+    "retweets": 6,
+    "account": "DarkWilliamsCouch",
+    "timestamp": "2020-04-08 19:19:00.0"
+  }],
+  "color": "#32af97",
+  "rowIds": [3791, 3794, 3800, 3801, 3807, 3991, 4004, 4008, 4012, 4017, 4020, 4040],
+  "columnId": 7,
+  "lemma": "transport to the hospital",
+  "episode": "transport to the hospital",
+  "type": "ADD",
+  "significance": 28,
+  "startSentence": 3791,
+  "id": 34,
+  "endSentence": 4040,
+  "endTimestamp": "2020-04-08 19:19:00.0",
+  "startTimestamp": "2020-04-08 15:10:00.0"
+}, {
+  "utterances": [{
+    "location": "Terrapin Springs",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "RacesPaul_HallBird",
+    "timestamp": "2020-04-08 15:12:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "DarkIcecreamEssie_Clyatt",
+    "timestamp": "2020-04-08 15:30:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "ObnoxiousCandySteward",
+    "timestamp": "2020-04-08 15:35:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "Sarah51Chan",
+    "timestamp": "2020-04-08 15:59:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "SherryGuapoO",
+    "timestamp": "2020-04-08 16:00:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "PaulWhale45",
+    "timestamp": "2020-04-08 16:04:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "MazieLion85",
+    "timestamp": "2020-04-08 16:06:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "BusyMHouse",
+    "timestamp": "2020-04-08 16:10:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "Stephen1B",
+    "timestamp": "2020-04-08 16:11:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "GFuriousN",
+    "timestamp": "2020-04-08 16:12:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "FamousMerrittCar28",
+    "timestamp": "2020-04-08 16:15:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "HoldsShinLion",
+    "timestamp": "2020-04-08 16:19:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "GuapoHamBanana1967",
+    "timestamp": "2020-04-08 16:20:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "Amanda_HallDog38",
+    "timestamp": "2020-04-08 16:21:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's piles of brick everywhere.  We need some help at the hospital.",
+    "retweets": 14,
+    "account": "Denoon54",
+    "timestamp": "2020-04-08 16:29:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a busted arm if there's broken tiles everywhere.  We need some help at the hospital.",
+    "retweets": 0,
+    "account": "FastVBread82",
+    "timestamp": "2020-04-09 04:45:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a cracked rib if there's stretchers in the parkign lot everywhere.  We need some help at the hospital.",
+    "retweets": 0,
+    "account": "EricFastH",
+    "timestamp": "2020-04-09 04:53:00.0"
+  }],
+  "color": "#b6dd2b",
+  "rowIds": [3793, 3811, 3816, 3840, 3841, 3845, 3847, 3851, 3852, 3853, 3856, 3860, 3861, 3862, 3870, 4606, 4614],
+  "columnId": 8,
+  "lemma": "we need some help at the hospital",
+  "episode": "We need some help at the hospital",
+  "type": "ADD",
+  "significance": 26,
+  "startSentence": 3793,
+  "id": 35,
+  "endSentence": 4614,
+  "endTimestamp": "2020-04-09 04:53:00.0",
+  "startTimestamp": "2020-04-08 15:12:00.0"
+}, {
+  "utterances": [{
+    "location": "Broadview",
+    "text": "How bad should it be before I go to the hospital?",
+    "retweets": 3,
+    "account": "RunsPatriciaOctopus",
+    "timestamp": "2020-04-08 14:37:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "How bad should it be before I go to the hospital?",
+    "retweets": 3,
+    "account": "HoltWhale1970",
+    "timestamp": "2020-04-08 14:45:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "How bad should it be before I go to the hospital?",
+    "retweets": 3,
+    "account": "BusyHCouch2001",
+    "timestamp": "2020-04-08 14:59:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "How bad should it be before I go to the hospital?",
+    "retweets": 3,
+    "account": "David68F",
+    "timestamp": "2020-04-08 15:04:00.0"
+  }],
+  "color": "#642604",
+  "rowIds": [3752, 3755, 3758, 3764, 3766, 3780, 3783, 3785, 3793],
+  "columnId": 9,
+  "lemma": "how bad should it be before i go to the hospital",
+  "episode": "How bad should it be before I go to the hospital",
+  "type": "ADD",
+  "significance": 26,
+  "startSentence": 3752,
+  "id": 36,
+  "endSentence": 3793,
+  "endTimestamp": "2020-04-08 15:12:00.0",
+  "startTimestamp": "2020-04-08 14:31:00.0"
+}, {
+  "utterances": [{
+    "location": "Downtown",
+    "text": "Patients are being transported to the hospital near me. I can see the hospital from my window. Patients can be numbered in hundreds.",
+    "retweets": 5,
+    "account": "TVHostBrad",
+    "timestamp": "2020-04-08 15:01:00.0"
+  }, {
+    "location": "West Parton",
+    "text": "Patients are being transported to the hospital near me. I can see the hospital from my window. Patients can be numbered in hundreds.",
+    "retweets": 5,
+    "account": "SFleetKelly",
+    "timestamp": "2020-04-08 15:10:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "Patients are being transported to the hospital near me. I can see the hospital from my window. Patients can be numbered in hundreds.",
+    "retweets": 5,
+    "account": "GuapoIcecreamHarry",
+    "timestamp": "2020-04-08 15:13:00.0"
+  }, {
+    "location": "Pepper Mill",
+    "text": "Patients are being transported to the hospital near me. I can see the hospital from my window. Patients can be numbered in hundreds.",
+    "retweets": 5,
+    "account": "FuriousLissCouch",
+    "timestamp": "2020-04-08 15:19:00.0"
+  }, {
+    "location": "Weston",
+    "text": "Patients are being transported to the hospital near me. I can see the hospital from my window. Patients can be numbered in hundreds.",
+    "retweets": 5,
+    "account": "Lloyd_Warnke94",
+    "timestamp": "2020-04-08 15:20:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Patients are being transported to the hospital near me. I can see the hospital from my window. Patients can be numbered in hundreds.",
+    "retweets": 5,
+    "account": "FamousBreadEpps",
+    "timestamp": "2020-04-08 15:26:00.0"
+  }],
+  "color": "#ceffb6",
+  "rowIds": [3757, 3764, 3774, 3782, 3791, 3794, 3800, 3801, 3807],
+  "columnId": 10,
+  "lemma": "see the hospital",
+  "episode": "see the hospital",
+  "type": "ADD",
+  "significance": 23,
+  "startSentence": 3757,
+  "id": 37,
+  "endSentence": 3807,
+  "endTimestamp": "2020-04-08 15:26:00.0",
+  "startTimestamp": "2020-04-08 14:36:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "HoldsCarolynFish",
+    "timestamp": "2020-04-08 14:55:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "Rebecca2008",
+    "timestamp": "2020-04-08 15:04:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "GuapoLHouse2010",
+    "timestamp": "2020-04-08 15:08:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "Sean_Dunaway1990",
+    "timestamp": "2020-04-08 15:13:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "LazyLightRobert_Conover",
+    "timestamp": "2020-04-08 15:16:00.0"
+  }, {
+    "location": "Scenic Vista",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "FleetABanana",
+    "timestamp": "2020-04-08 15:26:00.0"
+  }, {
+    "location": "Southwest",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 6,
+    "account": "WileySharleneLight",
+    "timestamp": "2020-04-08 15:32:00.0"
+  }],
+  "color": "#6660ec",
+  "rowIds": [3776, 3785, 3789, 3794, 3797, 3807, 3813],
+  "columnId": 11,
+  "lemma": "road be damage",
+  "episode": "Roads are damage",
+  "type": "ADD",
+  "significance": 22,
+  "startSentence": 3776,
+  "id": 38,
+  "endSentence": 3813,
+  "endTimestamp": "2020-04-08 15:32:00.0",
+  "startTimestamp": "2020-04-08 14:55:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 3,
+    "account": "HoldsCarolynFish",
+    "timestamp": "2020-04-08 14:55:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 3,
+    "account": "Rebecca2008",
+    "timestamp": "2020-04-08 15:04:00.0"
+  }, {
+    "location": "Cheddarford",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 3,
+    "account": "Sean_Dunaway1990",
+    "timestamp": "2020-04-08 15:13:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "We have one hospital that is functional right now. Roads are damage",
+    "retweets": 3,
+    "account": "LazyLightRobert_Conover",
+    "timestamp": "2020-04-08 15:16:00.0"
+  }],
+  "color": "#a6cd99",
+  "rowIds": [3776, 3785, 3788, 3794, 3797, 3805, 3811],
+  "columnId": 12,
+  "lemma": "we have one hospital those be functional right now",
+  "episode": "We have one hospital that is functional right now",
+  "type": "ADD",
+  "significance": 22,
+  "startSentence": 3776,
+  "id": 39,
+  "endSentence": 3811,
+  "endTimestamp": "2020-04-08 15:30:00.0",
+  "startTimestamp": "2020-04-08 14:55:00.0"
+}, {
+  "utterances": [{
+    "location": "Broadview",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "FleetVBowl",
+    "timestamp": "2020-04-08 17:57:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "CuriousDavidHouse",
+    "timestamp": "2020-04-08 18:07:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "SmithBear68",
+    "timestamp": "2020-04-08 18:12:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "FleetVBowl",
+    "timestamp": "2020-04-08 18:44:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a broken arm if there's stretchers in the parkign lot everywhere.  We need a new hospital...stat!.",
+    "retweets": 0,
+    "account": "FrankFish89",
+    "timestamp": "2020-04-08 19:45:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a new hospital.",
+    "retweets": 0,
+    "account": "ChristianCleverL",
+    "timestamp": "2020-04-09 02:56:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a cracked rib if there's stretchers in the parkign lot everywhere.  We need some help at the hospital.",
+    "retweets": 0,
+    "account": "EricFastH",
+    "timestamp": "2020-04-09 04:53:00.0"
+  }],
+  "color": "#9e6712",
+  "rowIds": [3958, 3968, 3973, 4005, 4066, 4497, 4614],
+  "columnId": 3,
+  "lemma": "if there stretcher in the parkign lot everywhere",
+  "episode": "if there's stretchers in the parkign lot everywhere",
+  "type": "ADD",
+  "significance": 17,
+  "startSentence": 3958,
+  "id": 40,
+  "endSentence": 4614,
+  "endTimestamp": "2020-04-09 04:53:00.0",
+  "startTimestamp": "2020-04-08 17:57:00.0"
+}, {
+  "utterances": [{
+    "location": "Palace Hills",
+    "text": "Can't treat a busted arm if there's dangling wires everywhere.  We need a new hospital.",
+    "retweets": 0,
+    "account": "AlinaDog1974",
+    "timestamp": "2020-04-09 14:51:00.0"
+  }],
+  "color": "#0df129",
+  "rowIds": [4209, 4497, 4907, 5068, 5100, 5212, 5250, 5337],
+  "columnId": 4,
+  "lemma": "can't treat a bust arm if there",
+  "episode": "Can't treat a busted arm if there's",
+  "type": "ADD",
+  "significance": 17,
+  "startSentence": 4209,
+  "id": 41,
+  "endSentence": 5337,
+  "endTimestamp": "2020-04-09 16:56:00.0",
+  "startTimestamp": "2020-04-08 22:08:00.0"
+}, {
+  "utterances": [{
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's rubble everywhere.  We need a new hospital.",
+    "retweets": 0,
+    "account": "FamousWBanana40",
+    "timestamp": "2020-04-08 18:41:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a busted leg if there's rubble everywhere.  We need a hospital doctor!. #GreatCantWonder",
+    "retweets": 0,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-08 20:36:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a busted arm if there's rubble everywhere.  We need a new hospital...stat!.",
+    "retweets": 1,
+    "account": "LazyBreadMyrna",
+    "timestamp": "2020-04-08 22:09:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a cracked rib if there's rubble everywhere.  We need some help at the hospital.",
+    "retweets": 0,
+    "account": "J1960Barnes",
+    "timestamp": "2020-04-09 11:13:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a busted arm if there's rubble everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "TallABowl1971",
+    "timestamp": "2020-04-09 12:30:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a busted arm if there's rubble everywhere.  We need a new hospital...stat!.",
+    "retweets": 1,
+    "account": "JuliusOctopus56",
+    "timestamp": "2020-04-09 13:01:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a busted leg if there's rubble everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "BusyElizabethBowl",
+    "timestamp": "2020-04-09 13:16:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a skraped up head if there's rubble everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "WileyLightJason",
+    "timestamp": "2020-04-09 14:12:00.0"
+  }],
+  "color": "#828211",
+  "rowIds": [4002, 4117, 4210, 4994, 5071, 5102, 5117, 5173],
+  "columnId": 5,
+  "lemma": "if there rubble everywhere",
+  "episode": "if there's rubble everywhere",
+  "type": "ADD",
+  "significance": 15,
+  "startSentence": 4002,
+  "id": 42,
+  "endSentence": 5173,
+  "endTimestamp": "2020-04-09 14:12:00.0",
+  "startTimestamp": "2020-04-08 18:41:00.0"
+}, {
+  "utterances": [{
+    "location": "Terrapin Springs",
+    "text": "Can't treat a busted arm if there's dangling wires everywhere.  We need a hospital doctor!. #HateCantCan",
+    "retweets": 0,
+    "account": "TallWallaceBread1967",
+    "timestamp": "2020-04-08 14:13:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's piles of brick everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "BLazyJuarez",
+    "timestamp": "2020-04-08 14:55:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "FleetVBowl",
+    "timestamp": "2020-04-08 17:57:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "CuriousDavidHouse",
+    "timestamp": "2020-04-08 18:07:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "SmithBear68",
+    "timestamp": "2020-04-08 18:12:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a contusions if there's stretchers in the parkign lot everywhere.  We need a hospital doctor!.",
+    "retweets": 3,
+    "account": "FleetVBowl",
+    "timestamp": "2020-04-08 18:44:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a busted leg if there's rubble everywhere.  We need a hospital doctor!. #GreatCantWonder",
+    "retweets": 0,
+    "account": "AttentativeLashellBanana",
+    "timestamp": "2020-04-08 20:36:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "WatchesCarlisleOctopus",
+    "timestamp": "2020-04-09 05:40:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "ObnoxiousDCandy51",
+    "timestamp": "2020-04-09 05:57:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "RunsSharon_CrossOctopus",
+    "timestamp": "2020-04-09 06:09:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "CandidPlateDakins",
+    "timestamp": "2020-04-09 06:15:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "Betty41Perez",
+    "timestamp": "2020-04-09 06:16:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "WatchesNorvellDog",
+    "timestamp": "2020-04-09 06:19:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "FleetSBread",
+    "timestamp": "2020-04-09 06:21:00.0"
+  }, {
+    "location": "Broadview",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "FamousBroadwayLight",
+    "timestamp": "2020-04-09 06:22:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "Dylan_JoyWhale6",
+    "timestamp": "2020-04-09 06:24:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "FleetHenryLight",
+    "timestamp": "2020-04-09 06:30:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "CeravoloWhale1992",
+    "timestamp": "2020-04-09 06:35:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "Joseph2005Tant",
+    "timestamp": "2020-04-09 06:42:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "FuriousLCouch",
+    "timestamp": "2020-04-09 06:48:00.0"
+  }, {
+    "location": "Southton",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "FamousBananaLeo",
+    "timestamp": "2020-04-09 06:51:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "Sarah_BradleyWhale89",
+    "timestamp": "2020-04-09 06:56:00.0"
+  }, {
+    "location": "Old Town",
+    "text": "Can't treat a broken foot if there's stuff everywhere everywhere.  We need a hospital doctor!.",
+    "retweets": 15,
+    "account": "KelleeDarkPitts",
+    "timestamp": "2020-04-09 06:57:00.0"
+  }, {
+    "location": "Terrapin Springs",
+    "text": "Can't treat a busted arm if there's dangling wires everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "J98Craig",
+    "timestamp": "2020-04-09 09:57:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a busted arm if there's rubble everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "TallABowl1971",
+    "timestamp": "2020-04-09 12:30:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a busted leg if there's rubble everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "BusyElizabethBowl",
+    "timestamp": "2020-04-09 13:16:00.0"
+  }, {
+    "location": "Palace Hills",
+    "text": "Can't treat a skraped up head if there's rubble everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "WileyLightJason",
+    "timestamp": "2020-04-09 14:12:00.0"
+  }, {
+    "location": "Downtown",
+    "text": "Can't treat a busted leg if there's piles of brick everywhere.  We need a hospital doctor!.",
+    "retweets": 0,
+    "account": "CandidSimmonsBowl1962",
+    "timestamp": "2020-04-09 21:16:00.0"
+  }],
+  "color": "#eaa48e",
+  "rowIds": [3734, 3776, 3958, 3968, 3973, 4005, 4117, 4661, 4678, 4690, 4696, 4697, 4700, 4702, 4703, 4705, 4711, 4716, 4723, 4729, 4732, 4737, 4738, 4918, 5071, 5117, 5173, 5597],
+  "columnId": 13,
+  "lemma": "we need a hospital doctor",
+  "episode": "We need a hospital doctor",
+  "type": "ADD",
+  "significance": 12,
+  "startSentence": 3734,
+  "id": 43,
+  "endSentence": 5597,
+  "endTimestamp": "2020-04-09 21:16:00.0",
+  "startTimestamp": "2020-04-08 14:13:00.0"
+}]

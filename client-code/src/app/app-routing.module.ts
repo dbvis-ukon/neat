@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AuthGuard } from '@app/core';
 import { DemoVisComponent } from './shared/demo-vis/demo-vis.component';
+import { EpisodeAppComponent } from './dashboard/episodes/episode-app/episode-app.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'demovis',
     component: DemoVisComponent
+  },
+  {
+    path: 'episodes',
+    component: EpisodeAppComponent
   }
 ];
 

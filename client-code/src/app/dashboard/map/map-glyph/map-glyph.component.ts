@@ -6,7 +6,6 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import {MapData} from '../map-data';
 import {ResizedEvent} from 'angular-resize-event';
 import * as d3 from 'd3';
 import mapData from '@assets/map-data.json';

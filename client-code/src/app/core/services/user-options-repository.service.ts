@@ -6,6 +6,7 @@ import * as uuid from 'uuid/v4';
 import { SessionStorageService } from 'angular-web-storage';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import {debounceTime} from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -36,6 +37,7 @@ export class UserOptionsRepositoryService {
   }
 
   public setOptions(options: UserOptions) {
+    console.log('setting options');
     if (isNullOrUndefined(options.id)) {
       options.id = uuid();
     }

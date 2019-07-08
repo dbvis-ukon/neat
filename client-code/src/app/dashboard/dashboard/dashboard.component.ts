@@ -1,23 +1,21 @@
-import {Component, OnDestroy, OnInit, Input} from '@angular/core';
-import {Episode} from '../episode-vis/episode';
-import {TimelineOptions} from '../timeline/timeline-options';
-import {MapData} from '../map/map-data';
-import {MatSliderChange} from '@angular/material';
-import {ActivatedRoute, ParamMap, Router} from '@angular/router';
-import {GroupRepositoryService} from '@app/core';
-import {switchMap, map, tap} from 'rxjs/operators';
-import {Group, GroupSettings, UserOptions, Mc1Item} from '@shared';
-import {Observable} from 'rxjs';
-import {UserOptionsRepositoryService} from '@app/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Episode } from '../episodes/episode';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
+import { GroupRepositoryService } from '../../core/services/group-repository.service';
+import { switchMap } from 'rxjs/operators';
+import { Group, UserOptions, GroupSettings, Mc1Item } from '@shared';
+import { Observable } from 'rxjs';
+import { UserOptionsRepositoryService } from '@app/core';
 import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository.service';
 import { MapOptions } from '../map/map-options';
-import {NeighborhoodSelection} from '@shared/neighborhood-selection';
+import { NeighborhoodSelection } from '@shared/neighborhood-selection';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { HttpClient } from '@angular/common/http';
 import * as d3 from 'd3';
-import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
 import { StreamGraphItem } from '../timeline/stream-graph-item';
 import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
+import { TimelineOptions } from '../timeline/timeline-options';
+import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
 
 interface TimelineItem {
   type: 'streamgraph' | 'episodes';
@@ -63,7 +61,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   brushExternal: [Date, Date];
 
-  mapData: MapData[];
+
   mapOptions: MapOptions = {
     visibleLayers: [1]
   };
@@ -143,28 +141,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.userOptionsRepository.deleteUser(this.userOptions.id);
     this.groupRepository.stopListenForUpdates();
-  }
-
-  /**
-   * on every slider change this function is triggered
-   * @param change the change event
-   */
-  sliderChanged(change: MatSliderChange) {
-    this.mapData = this.generateRandomMapData(change.value);
-  }
-
-  private generateRandomMapData(n: number): MapData[] {
-    const arr: MapData[] = [];
-
-    for (let i = 0; i < n; i++) {
-      arr.push({
-        x: Math.random(),
-        y: Math.random(),
-        r: Math.random()
-      });
-    }
-
-    return arr;
   }
 
   timelineBrushed(brush: [Date, Date]) {

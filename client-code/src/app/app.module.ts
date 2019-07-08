@@ -1,18 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {
-  MatSliderModule,
   MatButtonModule,
   MatInputModule,
   MatListModule,
-  MatToolbarModule,
   MatCardModule,
-  MatIconModule,
-  MatDialogModule
 } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
-import { ColorPickerModule } from 'ngx-color-picker';
-import { AngularWebStorageModule } from 'angular-web-storage';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +21,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { EpisodesModule } from './dashboard/episodes/episodes.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   entryComponents: [
@@ -41,6 +37,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
     BrowserModule,
     OverlayModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
@@ -52,6 +49,8 @@ import { OverlayModule } from '@angular/cdk/overlay';
     MatListModule,
     MatCardModule,
     DashboardModule,
+    EpisodesModule,
+    DragDropModule
   ],
   providers: [
     {

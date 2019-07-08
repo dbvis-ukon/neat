@@ -21,12 +21,10 @@ build:shared:
 build:client:
   image: node:12
   stage: build
-  before_script:
-    - npm install -g @angular/cli
   script:
     - cd ./client-code
     - npm ci
-    - ng build --prod
+    - npm run-script build:prod
   dependencies:
     - build:shared
   artifacts:

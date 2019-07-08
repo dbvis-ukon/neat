@@ -1,0 +1,7 @@
+<div style="background-color: white">
+    <div style="font-size: 10px" *ngFor="let utterance of utterances">
+        <h5>{{utterance.timestamp}} {{utterance.location}}</h5>
+        <p>{{utterance.account}}: {{utterance.text}}</p>
+    </div>
+</div>
+

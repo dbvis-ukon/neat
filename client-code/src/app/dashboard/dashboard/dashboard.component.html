@@ -1,7 +1,7 @@
 <mat-sidenav-container class="example-container">
   
 
-  <mat-sidenav-content>
+  <mat-sidenav-content id="sidenav-content">
 
     <dbvis-header [group]="currentGroup" [sidenav]="sidenav" (view)="dashboardLayout = $event"></dbvis-header>
 
@@ -16,7 +16,7 @@
 
         <div class="episodes">
           <h1>EPISODE COMPONENT</h1>
-          <dbvis-episode-vis [data]="episodeData"></dbvis-episode-vis>
+          <dbvis-episode-app></dbvis-episode-app>
         </div>
 
       </div>

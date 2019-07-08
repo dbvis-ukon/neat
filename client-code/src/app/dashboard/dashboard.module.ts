@@ -11,33 +11,32 @@ import {
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { EpisodeVisComponent } from './episode-vis/episode-vis.component';
 
 import { SharedModule } from '@app/shared/shared.module';
+import { EpisodesModule } from './episodes/episodes.module';
 import { MapModule } from '@app/dashboard/map/map.module';
 import { TimelineModule } from './timeline/timeline.module';
 
 @NgModule({
+  declarations: [
+    DashboardComponent,
+  ],
   imports: [
     CommonModule,
     SharedModule.forRoot(),
-    MatButtonModule,
-    MatIconModule,
-    MatListModule,
     MatSidenavModule,
-    MatSliderModule,
-    MatToolbarModule,
-    MatListModule,
-    MatIconModule,
     MatButtonModule,
+    EpisodesModule,
     MapModule,
     DragDropModule,
-    TimelineModule
+    TimelineModule,
+    MatIconModule,
+    MatListModule,
+    MatSliderModule,
+    MatToolbarModule
   ],
-  declarations: [
-    DashboardComponent,
-    EpisodeVisComponent,
-  ],
-  exports: [DashboardComponent]
+  exports: [
+    DashboardComponent
+  ]
 })
 export class DashboardModule {}
