@@ -3,6 +3,7 @@ import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { StreamgraphTooltipComponent } from '../streamgraph-tooltip/streamgraph-tooltip.component';
 import { ScaleTime } from 'd3';
+import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
 
 
 export class StreamGraph {
@@ -13,7 +14,10 @@ export class StreamGraph {
 
     private chartHeight: number;
 
-    constructor(chartRoot: d3.Selection<SVGGElement, null, undefined, null>, private tooltipservice: TooltipService) {
+    constructor(
+        chartRoot: d3.Selection<SVGGElement, null, undefined, null>,
+        private tooltipservice: TooltipService,
+        private streamGraphRepository: StreamGraphRepositoryService) {
         this.chart = chartRoot;
     }
 
@@ -31,16 +35,7 @@ export class StreamGraph {
 
         const m = mydata.length; // samples per layer
 
-        const uniqEs6 = (arrArg) => {
-            return arrArg.filter((elem, pos, arr) => {
-              return arr.indexOf(elem) === pos;
-            });
-          };
-
-        const allKeys = uniqEs6(mydata.flatMap(item => {
-
-            return item.data.map(d => d.name);
-        }));
+        const allKeys = this.streamGraphRepository.getAllKeys(mydata);
 
         console.log('allkeys', allKeys);
 

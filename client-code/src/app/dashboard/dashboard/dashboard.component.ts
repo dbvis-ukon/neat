@@ -17,6 +17,7 @@ import { HttpClient } from '@angular/common/http';
 import * as d3 from 'd3';
 import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
 import { StreamGraphItem } from '../timeline/stream-graph-item';
+import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
 
 interface TimelineItem {
   title: string;
@@ -83,7 +84,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     private groupRepository: GroupRepositoryService,
     private userOptionsRepository: UserOptionsRepositoryService,
     private mc1DataRepository: Mc1DataRepositoryService,
-    private http: HttpClient
+    private http: HttpClient,
+    private streamGraphRepository: StreamGraphRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -118,15 +120,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
     });
     // throw new Error('Method not implemented.');
 
-    this.http.get<StreamGraphItem[]>('/assets/TRIALJSONMC3.json')
-    .pipe(
-      tap(data => {
-        data.forEach(item => item.timestamp = new Date(item.timestamp));
-      })
-    )
-    .subscribe(data => {
-      this.streamGraphData = data;
-    });
+    this.streamGraphRepository.getData('/assets/TRIALJSONMC3.json')
+      .subscribe(data => {
+        this.streamGraphData = data;
+      });
   }
 
   ngOnDestroy(): void {

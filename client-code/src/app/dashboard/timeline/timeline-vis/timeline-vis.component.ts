@@ -7,9 +7,9 @@ import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from '../timeline-other-brushes';
 import { StreamGraph } from './stream-graph';
-import { HttpClient } from '@angular/common/http';
 import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
+import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -63,7 +63,9 @@ export class TimelineVisComponent implements OnInit {
   private _streamGraphData: StreamGraphItem[];
   private _streamGraphColors: string[];
 
-  constructor(private http: HttpClient, private tooltipService: TooltipService) { }
+  constructor(
+    private tooltipService: TooltipService,
+    private streamGraphRepository: StreamGraphRepositoryService) { }
 
   @Input()
   set streamGraphData(streamGraphData: StreamGraphItem[]) {
@@ -172,7 +174,7 @@ export class TimelineVisComponent implements OnInit {
       .append('g')
       .attr('class', 'stream-graph');
 
-    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService);
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository);
 
     this.otherBrushesSelection = this.svgSelection
       .append('g');
