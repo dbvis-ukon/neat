@@ -15,6 +15,7 @@ import { MapOptions } from '../map/map-options';
 import {NeighborhoodSelection} from '@shared/neighborhood-selection';
 import { HttpClient } from '@angular/common/http';
 import { StreamGraphItem } from '../timeline-vis/stream-graph-item';
+import * as d3 from 'd3';
 
 @Component({
   selector: 'dbvis-dashboard',
@@ -51,7 +52,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   streamGraphData: StreamGraphItem[];
 
-  streamGraphColors: string[] = ['#fcfbfd', '#efedf5', '#dadaeb', '#bcbddc', '#9e9ac8', '#807dba', '#6a51a3', '#54278f', '#3f007d'];
+  // streamGraphColors: string[] = ['#fcfbfd', '#efedf5', '#dadaeb', '#bcbddc', '#9e9ac8', '#807dba', '#6a51a3', '#54278f', '#3f007d'];
+  streamGraphColors: string[] = d3.schemeCategory10 as string[];
 
   constructor(
     private route: ActivatedRoute,

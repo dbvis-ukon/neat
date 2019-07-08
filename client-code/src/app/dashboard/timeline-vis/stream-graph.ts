@@ -94,7 +94,7 @@ export class StreamGraph {
 
         const color = d3.scaleOrdinal<string, string>()
             .domain(allKeys)
-            .range(d3.schemeCategory10);
+            .range(colors);
 
         // const color = d3.scaleLinear<string>()
         //     .domain([0, 1])
