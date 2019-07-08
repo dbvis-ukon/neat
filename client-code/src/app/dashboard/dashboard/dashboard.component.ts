@@ -20,8 +20,11 @@ import { StreamGraphItem } from '../timeline/stream-graph-item';
 import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
 
 interface TimelineItem {
+  type: 'streamgraph' | 'episodes';
   title: string;
-  data: any; // FIXME
+  dataUrl: string;
+  colors: string[];
+  data?: StreamGraphItem[]; // FIXME
 }
 
 @Component({
@@ -35,12 +38,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   timelineData: TimelineItem[] = [
     {
+      type: 'streamgraph',
       title: 'Uncertainties',
-      data: null
+      dataUrl: '/assets/TRIALJSONMC3.json',
+      colors: d3.schemeCategory10 as string[]
     },
     {
+      type: 'streamgraph',
       title: 'Tweets',
-      data: null
+      dataUrl: '/assets/TRIALJSONMC3.json',
+      colors: d3.schemeCategory10 as string[]
     }
   ];
 
@@ -124,6 +131,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
       .subscribe(data => {
         this.streamGraphData = data;
       });
+
+
+    this.timelineData.forEach(tl => {
+      if (tl.type === 'streamgraph') {
+        this.streamGraphRepository.getData(tl.dataUrl).subscribe(data => tl.data = data);
+      }
+    });
   }
 
   ngOnDestroy(): void {
