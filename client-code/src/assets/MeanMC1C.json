@@ -2,2854 +2,2854 @@
    "timestamp": "2020-04-06 00:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.32
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5.9375
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 4.92
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.36
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.454545454545
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.12
       }
    ]
 }, {
    "timestamp": "2020-04-06 00:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 4.26829268293
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 4.76470588235
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 4.73170731707
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 4.9756097561
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 6.48780487805
       }
    ]
 }, {
    "timestamp": "2020-04-06 01:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 5.60784313725
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 5.19230769231
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 5.62745098039
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 5.33333333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.428571428571
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 5.92156862745
       }
    ]
 }, {
    "timestamp": "2020-04-06 01:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 5.95
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.52631578947
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 4.775
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.375
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.8
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.475
       }
    ]
 }, {
    "timestamp": "2020-04-06 02:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 5.40476190476
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.8
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 6.21428571429
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 6.19047619048
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 6.35714285714
       }
    ]
 }, {
    "timestamp": "2020-04-06 02:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 6.48979591837
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 4.92
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 5.30612244898
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 5.38775510204
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.48979591837
       }
    ]
 }, {
    "timestamp": "2020-04-06 03:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.3488372093
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.36842105263
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 5.55813953488
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 5.25581395349
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 5.3488372093
       }
    ]
 }, {
    "timestamp": "2020-04-06 03:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.433331136061
+         "value": 6.10810810811
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.433331136061
+         "value": 3.51351351351
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.433331136061
+         "value": 4.59459459459
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 1
       },
       {
          "name": "M1Water",
-         "value": 0.433331136061
+         "value": 5.40540540541
       }
    ]
 }, {
    "timestamp": "2020-04-06 04:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.58
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 6
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.76
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 6.28
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.2
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.56
       }
    ]
 }, {
    "timestamp": "2020-04-06 04:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.407651540582
+         "value": 5.44827586207
       },
       {
          "name": "M1Medical",
-         "value": 0.282121313376
+         "value": 5.77777777778
       },
       {
          "name": "M1Power",
-         "value": 0.407651540582
+         "value": 5.58620689655
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.407651540582
+         "value": 5.93103448276
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.407651540582
+         "value": 6.55172413793
       }
    ]
 }, {
    "timestamp": "2020-04-06 05:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 5.72727272727
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 4.17647058824
       },
       {
          "name": "M1Power",
-         "value": 0.451542248
+         "value": 5.90909090909
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.451542248
+         "value": 4.75
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.714285714286
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 5.90909090909
       }
    ]
 }, {
    "timestamp": "2020-04-06 05:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 6.21276595745
       },
       {
          "name": "M1Medical",
-         "value": 0.400099746044
+         "value": 6.07407407407
       },
       {
          "name": "M1Power",
-         "value": 0.460673288527
+         "value": 5.8125
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.460673288527
+         "value": 5.85416666667
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 4.97872340426
       }
    ]
 }, {
    "timestamp": "2020-04-06 06:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.469065680294
+         "value": 6.21153846154
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 5.57692307692
       },
       {
          "name": "M1Power",
-         "value": 0.469065680294
+         "value": 5.65384615385
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.469065680294
+         "value": 4.90384615385
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.469065680294
+         "value": 5.28846153846
       }
    ]
 }, {
    "timestamp": "2020-04-06 06:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 5.04444444444
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 4.3
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 5.82222222222
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 6
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.2
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 4.71111111111
       }
    ]
 }, {
    "timestamp": "2020-04-06 07:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.495599126341
+         "value": 5.34328358209
       },
       {
          "name": "M1Medical",
-         "value": 0.407651540582
+         "value": 5.65517241379
       },
       {
          "name": "M1Power",
-         "value": 0.497148422588
+         "value": 5.44117647059
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.497148422588
+         "value": 5.91176470588
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.495599126341
+         "value": 5.38805970149
       }
    ]
 }, {
    "timestamp": "2020-04-06 07:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 5.7358490566
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 4.95
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 5.32075471698
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.45283018868
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.01886792453
       }
    ]
 }, {
    "timestamp": "2020-04-06 08:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 4.77551020408
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 7
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 5.24489795918
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 6.18367346939
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.75510204082
       }
    ]
 }, {
    "timestamp": "2020-04-06 08:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.469065680294
+         "value": 4.42307692308
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.63157894737
       },
       {
          "name": "M1Power",
-         "value": 0.469065680294
+         "value": 4.88461538462
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.469065680294
+         "value": 5.96153846154
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.33752143173
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.469065680294
+         "value": 4.44230769231
       }
    ]
 }, {
    "timestamp": "2020-04-06 09:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 4.74509803922
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.5
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 6.01960784314
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 5.21568627451
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 1
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 5.21568627451
       }
    ]
 }, {
    "timestamp": "2020-04-06 09:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.16326530612
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.65
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.72
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.42
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.48979591837
       }
    ]
 }, {
    "timestamp": "2020-04-06 10:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 4.93333333333
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.42857142857
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 4.93333333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 4.91111111111
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.103802848548
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 4.91111111111
       }
    ]
 }, {
    "timestamp": "2020-04-06 10:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.46511627907
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 4.21052631579
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 4.95348837209
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 5.41860465116
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 5.55813953488
       }
    ]
 }, {
    "timestamp": "2020-04-06 11:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.469065680294
+         "value": 5.88461538462
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.19047619048
       },
       {
          "name": "M1Power",
-         "value": 0.469065680294
+         "value": 4.96153846154
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.469065680294
+         "value": 5.26923076923
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.555555555556
       },
       {
          "name": "M1Water",
-         "value": 0.469065680294
+         "value": 5.13461538462
       }
    ]
 }, {
    "timestamp": "2020-04-06 11:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.16326530612
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5.5625
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 6.0612244898
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 5.79591836735
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.28571428571
       }
    ]
 }, {
    "timestamp": "2020-04-06 12:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 5.11320754717
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 6.14285714286
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 4.88679245283
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.50943396226
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.30188679245
       }
    ]
 }, {
    "timestamp": "2020-04-06 12:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 5.21951219512
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.42105263158
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 6.24390243902
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 5.19512195122
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 5.58536585366
       }
    ]
 }, {
    "timestamp": "2020-04-06 13:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.24489795918
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 5.875
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.12
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.7
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.24489795918
       }
    ]
 }, {
    "timestamp": "2020-04-06 13:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.469065680294
+         "value": 5.40384615385
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5.5
       },
       {
          "name": "M1Power",
-         "value": 0.469065680294
+         "value": 5.13461538462
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.469065680294
+         "value": 5.86538461538
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.469065680294
+         "value": 4.53846153846
       }
    ]
 }, {
    "timestamp": "2020-04-06 14:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.474942708206
+         "value": 5.56363636364
       },
       {
          "name": "M1Medical",
-         "value": 0.407651540582
+         "value": 4.93103448276
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 4.94642857143
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 5.125
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.330106942548
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.474942708206
+         "value": 5.81818181818
       }
    ]
 }, {
    "timestamp": "2020-04-06 14:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.607002616179
+         "value": 2.9641025641
       },
       {
          "name": "M1Medical",
-         "value": 0.530970448661
+         "value": 1.95744680851
       },
       {
          "name": "M1Power",
-         "value": 0.607002616179
+         "value": 1.87692307692
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.607002616179
+         "value": 2.18974358974
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.586409407343
+         "value": 0.55625
       },
       {
          "name": "M1Water",
-         "value": 0.607002616179
+         "value": 1.86153846154
       }
    ]
 }, {
    "timestamp": "2020-04-06 15:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.594542679896
+         "value": 3.12716763006
       },
       {
          "name": "M1Medical",
-         "value": 0.514133357956
+         "value": 1.7625
       },
       {
          "name": "M1Power",
-         "value": 0.594542679896
+         "value": 2.01156069364
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.594542679896
+         "value": 2.38150289017
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.572502024423
+         "value": 0.528571428571
       },
       {
          "name": "M1Water",
-         "value": 0.594542679896
+         "value": 2.31791907514
       }
    ]
 }, {
    "timestamp": "2020-04-06 15:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.571003046785
+         "value": 3.20289855072
       },
       {
          "name": "M1Medical",
-         "value": 0.485783879702
+         "value": 2.40983606557
       },
       {
          "name": "M1Power",
-         "value": 0.571003046785
+         "value": 2.18115942029
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.571003046785
+         "value": 2.73188405797
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.538464562827
+         "value": 0.50495049505
       },
       {
          "name": "M1Water",
-         "value": 0.571003046785
+         "value": 2.55072463768
       }
    ]
 }, {
    "timestamp": "2020-04-06 16:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.749222486021
+         "value": 2.51174934726
       },
       {
          "name": "M1Medical",
-         "value": 0.671055099438
+         "value": 1.19390581717
       },
       {
          "name": "M1Power",
-         "value": 0.749222486021
+         "value": 1.02088772846
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.749222486021
+         "value": 1.59268929504
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.736392791554
+         "value": 0.290989660266
       },
       {
          "name": "M1Water",
-         "value": 0.749222486021
+         "value": 1.13707571802
       }
    ]
 }, {
    "timestamp": "2020-04-06 16:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.718702788856
+         "value": 2.39579684764
       },
       {
          "name": "M1Medical",
-         "value": 0.636931474589
+         "value": 1.47692307692
       },
       {
          "name": "M1Power",
-         "value": 0.718884580184
+         "value": 0.926573426573
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.718884580184
+         "value": 1.52097902098
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.708782027309
+         "value": 0.308285163776
       },
       {
          "name": "M1Water",
-         "value": 0.718702788856
+         "value": 1.14010507881
       }
    ]
 }, {
    "timestamp": "2020-04-06 17:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.6872823636
+         "value": 2.65402843602
       },
       {
          "name": "M1Medical",
-         "value": 0.609637342028
+         "value": 1.63
       },
       {
          "name": "M1Power",
-         "value": 0.6872823636
+         "value": 1.35781990521
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.6872823636
+         "value": 1.74407582938
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.668430732066
+         "value": 0.346590909091
       },
       {
          "name": "M1Water",
-         "value": 0.6872823636
+         "value": 1.57819905213
       }
    ]
 }, {
    "timestamp": "2020-04-06 17:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.648287347694
+         "value": 2.68965517241
       },
       {
          "name": "M1Medical",
-         "value": 0.557303821709
+         "value": 2.01652892562
       },
       {
          "name": "M1Power",
-         "value": 0.648287347694
+         "value": 1.47931034483
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.648287347694
+         "value": 2.19310344828
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.625079610969
+         "value": 0.245689655172
       },
       {
          "name": "M1Water",
-         "value": 0.648287347694
+         "value": 1.6724137931
       }
    ]
 }, {
    "timestamp": "2020-04-06 18:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.603750048906
+         "value": 2.65079365079
       },
       {
          "name": "M1Medical",
-         "value": 0.512819397848
+         "value": 1.91139240506
       },
       {
          "name": "M1Power",
-         "value": 0.603750048906
+         "value": 1.55555555556
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.603750048906
+         "value": 2.25925925926
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.578290418848
+         "value": 0.297297297297
       },
       {
          "name": "M1Water",
-         "value": 0.603750048906
+         "value": 1.67724867725
       }
    ]
 }, {
    "timestamp": "2020-04-06 18:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.576873298607
+         "value": 3.08219178082
       },
       {
          "name": "M1Medical",
-         "value": 0.47106188892
+         "value": 2.69811320755
       },
       {
          "name": "M1Power",
-         "value": 0.576873298607
+         "value": 1.98630136986
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.576873298607
+         "value": 2.65753424658
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.540509988789
+         "value": 0.271844660194
       },
       {
          "name": "M1Water",
-         "value": 0.576873298607
+         "value": 2.21917808219
       }
    ]
 }, {
    "timestamp": "2020-04-06 19:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.559856465109
+         "value": 3.62096774194
       },
       {
          "name": "M1Medical",
-         "value": 0.469065680294
+         "value": 3.03846153846
       },
       {
          "name": "M1Power",
-         "value": 0.559856465109
+         "value": 2.37903225806
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.559856465109
+         "value": 3.12096774194
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.5087746762
+         "value": 0.315789473684
       },
       {
          "name": "M1Water",
-         "value": 0.559856465109
+         "value": 2.60483870968
       }
    ]
 }, {
    "timestamp": "2020-04-06 19:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.520464683535
+         "value": 3.48235294118
       },
       {
          "name": "M1Medical",
-         "value": 0.424428902971
+         "value": 3.35294117647
       },
       {
          "name": "M1Power",
-         "value": 0.520464683535
+         "value": 3.36470588235
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.520464683535
+         "value": 4.01176470588
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.456208133617
+         "value": 0.391304347826
       },
       {
          "name": "M1Water",
-         "value": 0.520464683535
+         "value": 3.35294117647
       }
    ]
 }, {
    "timestamp": "2020-04-06 20:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.501662222012
+         "value": 3.52112676056
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 3.16666666667
       },
       {
          "name": "M1Power",
-         "value": 0.501662222012
+         "value": 3.12676056338
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.501662222012
+         "value": 3.42253521127
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.441529883865
+         "value": 0.375
       },
       {
          "name": "M1Water",
-         "value": 0.501662222012
+         "value": 3.05633802817
       }
    ]
 }, {
    "timestamp": "2020-04-06 20:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.489159805236
+         "value": 4.96825396825
       },
       {
          "name": "M1Medical",
-         "value": 0.411230949152
+         "value": 3.7
       },
       {
          "name": "M1Power",
-         "value": 0.489159805236
+         "value": 4.31746031746
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.489159805236
+         "value": 3.88888888889
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.362802174501
+         "value": 0.263157894737
       },
       {
          "name": "M1Water",
-         "value": 0.489159805236
+         "value": 4.63492063492
       }
    ]
 }, {
    "timestamp": "2020-04-06 21:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.492429389008
+         "value": 4.89230769231
       },
       {
          "name": "M1Medical",
-         "value": 0.407651540582
+         "value": 4.75862068966
       },
       {
          "name": "M1Power",
-         "value": 0.492429389008
+         "value": 4.52307692308
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.492429389008
+         "value": 5.01538461538
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.344441621633
+         "value": 0.375
       },
       {
          "name": "M1Water",
-         "value": 0.492429389008
+         "value": 4.53846153846
       }
    ]
 }, {
    "timestamp": "2020-04-06 21:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.484053832226
+         "value": 5.06666666667
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 5.5
       },
       {
          "name": "M1Power",
-         "value": 0.484053832226
+         "value": 4.85
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.484053832226
+         "value": 4.33333333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.373455624747
+         "value": 0.47619047619
       },
       {
          "name": "M1Water",
-         "value": 0.484053832226
+         "value": 4.5
       }
    ]
 }, {
    "timestamp": "2020-04-06 22:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.495599126341
+         "value": 5.50746268657
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.44
       },
       {
          "name": "M1Power",
-         "value": 0.495599126341
+         "value": 4.32835820896
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.495599126341
+         "value": 5.31343283582
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.357035349582
+         "value": 0.388888888889
       },
       {
          "name": "M1Water",
-         "value": 0.495599126341
+         "value": 4.23880597015
       }
    ]
 }, {
    "timestamp": "2020-04-06 22:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.476830032725
+         "value": 5.85714285714
       },
       {
          "name": "M1Medical",
-         "value": 0.403944295991
+         "value": 5.71428571429
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 5.48214285714
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 5.03571428571
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.322122108044
+         "value": 0.384615384615
       },
       {
          "name": "M1Water",
-         "value": 0.476830032725
+         "value": 5.44642857143
       }
    ]
 }, {
    "timestamp": "2020-04-06 23:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 5.3829787234
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 5.875
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 4.57446808511
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 5.72340425532
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.322122108044
+         "value": 0.538461538462
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.17021276596
       }
    ]
 }, {
    "timestamp": "2020-04-06 23:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.4693877551
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 6.22727272727
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 4.63265306122
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 5.18367346939
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.24489795918
       }
    ]
 }, {
    "timestamp": "2020-04-07 00:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.484053832226
+         "value": 5.83333333333
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 4.95652173913
       },
       {
          "name": "M1Power",
-         "value": 0.484053832226
+         "value": 5.98333333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.484053832226
+         "value": 4.58333333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.344441621633
+         "value": 0.375
       },
       {
          "name": "M1Water",
-         "value": 0.484053832226
+         "value": 5.26666666667
       }
    ]
 }, {
    "timestamp": "2020-04-07 00:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.476830032725
+         "value": 5.41071428571
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 5.16666666667
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 5.73214285714
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 5.23214285714
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.322122108044
+         "value": 0.538461538462
       },
       {
          "name": "M1Water",
-         "value": 0.476830032725
+         "value": 5.41071428571
       }
    ]
 }, {
    "timestamp": "2020-04-07 01:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 4.91489361702
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 6
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 5.6170212766
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 5.93617021277
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.285714285714
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.93617021277
       }
    ]
 }, {
    "timestamp": "2020-04-07 01:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.430447723602
+         "value": 5.13888888889
       },
       {
          "name": "M1Medical",
-         "value": 0.313471870665
+         "value": 5.91666666667
       },
       {
          "name": "M1Power",
-         "value": 0.430447723602
+         "value": 5.19444444444
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.430447723602
+         "value": 5.58333333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.714285714286
       },
       {
          "name": "M1Water",
-         "value": 0.430447723602
+         "value": 5.58333333333
       }
    ]
 }, {
    "timestamp": "2020-04-07 02:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.456208133617
+         "value": 5.52173913043
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5.4375
       },
       {
          "name": "M1Power",
-         "value": 0.456208133617
+         "value": 6.02173913043
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.456208133617
+         "value": 5.63043478261
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.155704272823
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.456208133617
+         "value": 5.71739130435
       }
    ]
 }, {
    "timestamp": "2020-04-07 02:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 5.44680851064
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.7619047619
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 5.42553191489
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 5.6170212766
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.59574468085
       }
    ]
 }, {
    "timestamp": "2020-04-07 03:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 4.77358490566
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5.5625
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 6.05660377358
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 6.2641509434
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.3
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.03773584906
       }
    ]
 }, {
    "timestamp": "2020-04-07 03:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 6.40740740741
       },
       {
          "name": "M1Medical",
-         "value": 0.400099746044
+         "value": 5.44444444444
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.53703703704
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 5.07407407407
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 5.61111111111
       }
    ]
 }, {
    "timestamp": "2020-04-07 04:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 6.5
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.21052631579
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 5.80952380952
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 5.59523809524
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 4.95238095238
       }
    ]
 }, {
    "timestamp": "2020-04-07 04:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 6.12765957447
       },
       {
          "name": "M1Medical",
-         "value": 0.407651540582
+         "value": 4.37931034483
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 5.08510638298
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 5.14893617021
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.14893617021
       }
    ]
 }, {
    "timestamp": "2020-04-07 05:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.436136618454
+         "value": 5.55263157895
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.42105263158
       },
       {
          "name": "M1Power",
-         "value": 0.436136618454
+         "value": 5.47368421053
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.436136618454
+         "value": 5.18421052632
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.436136618454
+         "value": 5.60526315789
       }
    ]
 }, {
    "timestamp": "2020-04-07 05:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.474942708206
+         "value": 5.74545454545
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 6.15384615385
       },
       {
          "name": "M1Power",
-         "value": 0.474942708206
+         "value": 5
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.474942708206
+         "value": 5.4
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.474942708206
+         "value": 5.92727272727
       }
    ]
 }, {
    "timestamp": "2020-04-07 06:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.92307692308
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 4.78947368421
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 4.12820512821
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.64102564103
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.103802848548
+         "value": 1
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 4.64102564103
       }
    ]
 }, {
    "timestamp": "2020-04-07 06:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.56
       },
       {
          "name": "M1Medical",
-         "value": 0.330106942548
+         "value": 4.28571428571
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.4
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 4.54
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 4.18
       }
    ]
 }, {
    "timestamp": "2020-04-07 07:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.433331136061
+         "value": 5.32432432432
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 6.27777777778
       },
       {
          "name": "M1Power",
-         "value": 0.433331136061
+         "value": 5.59459459459
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.433331136061
+         "value": 6.16216216216
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.433331136061
+         "value": 5.32432432432
       }
    ]
 }, {
    "timestamp": "2020-04-07 07:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.436136618454
+         "value": 5
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 5.08333333333
       },
       {
          "name": "M1Power",
-         "value": 0.436136618454
+         "value": 5.86842105263
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.436136618454
+         "value": 4.86842105263
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 1
       },
       {
          "name": "M1Water",
-         "value": 0.436136618454
+         "value": 4.89473684211
       }
    ]
 }, {
    "timestamp": "2020-04-07 08:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 4.7619047619
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.57894736842
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 4.42857142857
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 5.09523809524
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.428571428571
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 5.83333333333
       }
    ]
 }, {
    "timestamp": "2020-04-07 08:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.480504757626
+         "value": 5.44827586207
       },
       {
          "name": "M1Medical",
-         "value": 0.414691044104
+         "value": 5.64516129032
       },
       {
          "name": "M1Power",
-         "value": 0.480504757626
+         "value": 5.34482758621
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.480504757626
+         "value": 5.3275862069
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.727272727273
       },
       {
          "name": "M1Water",
-         "value": 0.480504757626
+         "value": 5.87931034483
       }
    ]
 }, {
    "timestamp": "2020-04-07 09:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.456208133617
+         "value": 6.30434782609
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 4.81818181818
       },
       {
          "name": "M1Power",
-         "value": 0.456208133617
+         "value": 5.4347826087
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.456208133617
+         "value": 6.28260869565
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.625
       },
       {
          "name": "M1Water",
-         "value": 0.456208133617
+         "value": 6.02173913043
       }
    ]
 }, {
    "timestamp": "2020-04-07 09:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 4.77358490566
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.24
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 5.30188679245
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.77358490566
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 6.66037735849
       }
    ]
 }, {
    "timestamp": "2020-04-07 10:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.10204081633
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 6.3
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 5.59183673469
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 5.32653061224
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 6.10204081633
       }
    ]
 }, {
    "timestamp": "2020-04-07 10:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 5.075
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 4.88235294118
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 5.53658536585
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 4.85365853659
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 4.6
       }
    ]
 }, {
    "timestamp": "2020-04-07 11:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 5.24528301887
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.21739130435
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 4.8679245283
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.98113207547
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.555555555556
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.41509433962
       }
    ]
 }, {
    "timestamp": "2020-04-07 11:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.4693877551
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 4.26086956522
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 6
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 6.26530612245
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.330106942548
+         "value": 0.357142857143
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.18367346939
       }
    ]
 }, {
    "timestamp": "2020-04-07 12:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.22
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.92
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.36
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.24
       }
    ]
 }, {
    "timestamp": "2020-04-07 12:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 4.61538461538
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.35294117647
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 5.66666666667
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 4.66666666667
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.428571428571
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 5.61538461538
       }
    ]
 }, {
    "timestamp": "2020-04-07 13:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.11627906977
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 3.77272727273
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 5.3488372093
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 4.93023255814
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.444444444444
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 4.86046511628
       }
    ]
 }, {
    "timestamp": "2020-04-07 13:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 5.33333333333
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 5.75
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.38888888889
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 6.53703703704
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.7
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 5.46296296296
       }
    ]
 }, {
    "timestamp": "2020-04-07 14:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 5.79245283019
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 5.11538461538
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 5.69811320755
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.16981132075
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.56603773585
       }
    ]
 }, {
    "timestamp": "2020-04-07 14:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.430447723602
+         "value": 5.83333333333
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 5.46153846154
       },
       {
          "name": "M1Power",
-         "value": 0.430447723602
+         "value": 5.75
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.430447723602
+         "value": 4.75
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.8
       },
       {
          "name": "M1Water",
-         "value": 0.430447723602
+         "value": 4.66666666667
       }
    ]
 }, {
    "timestamp": "2020-04-07 15:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.456208133617
+         "value": 5
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.456208133617
+         "value": 5.52173913043
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.456208133617
+         "value": 5.21739130435
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.456208133617
+         "value": 5.67391304348
       }
    ]
 }, {
    "timestamp": "2020-04-07 15:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 5.15909090909
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.63157894737
       },
       {
          "name": "M1Power",
-         "value": 0.451542248
+         "value": 5.13636363636
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.451542248
+         "value": 5.11363636364
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 6.40909090909
       }
    ]
 }, {
    "timestamp": "2020-04-07 16:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.12820512821
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 6.5
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 5.87179487179
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.20512820513
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 5.30769230769
       }
    ]
 }, {
    "timestamp": "2020-04-07 16:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 5.86274509804
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.31578947368
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 6.29411764706
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 5.82352941176
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 6.19607843137
       }
    ]
 }, {
    "timestamp": "2020-04-07 17:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 5.75925925926
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.47826086957
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.68518518519
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 5.72222222222
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 4.98148148148
       }
    ]
 }, {
    "timestamp": "2020-04-07 17:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.424428902971
+         "value": 6
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.4
       },
       {
          "name": "M1Power",
-         "value": 0.424428902971
+         "value": 4.38235294118
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.424428902971
+         "value": 4.61764705882
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.424428902971
+         "value": 5.38235294118
       }
    ]
 }, {
    "timestamp": "2020-04-07 18:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 5.325
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 6.23076923077
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 4.875
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.6
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.636363636364
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.35
       }
    ]
 }, {
    "timestamp": "2020-04-07 18:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 6.03703703704
       },
       {
          "name": "M1Medical",
-         "value": 0.400099746044
+         "value": 5.77777777778
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.85185185185
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 5.51851851852
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 5.38888888889
       }
    ]
 }, {
    "timestamp": "2020-04-07 19:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 5.58490566038
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 6.18181818182
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 6.07547169811
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 4.67924528302
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.428571428571
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5
       }
    ]
 }, {
    "timestamp": "2020-04-07 19:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.480504757626
+         "value": 5.53448275862
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.05263157895
       },
       {
          "name": "M1Power",
-         "value": 0.480504757626
+         "value": 4.89655172414
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.480504757626
+         "value": 4.81034482759
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.480504757626
+         "value": 5.13793103448
       }
    ]
 }, {
    "timestamp": "2020-04-07 20:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.456208133617
+         "value": 5.15217391304
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.17391304348
       },
       {
          "name": "M1Power",
-         "value": 0.456208133617
+         "value": 6.13043478261
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.456208133617
+         "value": 5.04347826087
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.456208133617
+         "value": 5.08695652174
       }
    ]
 }, {
    "timestamp": "2020-04-07 20:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 4.79245283019
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 4.26923076923
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 5.01886792453
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.37735849057
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.285714285714
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.30188679245
       }
    ]
 }, {
    "timestamp": "2020-04-07 21:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 5
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 5.22222222222
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 5.41463414634
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 5.73170731707
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 6
       }
    ]
 }, {
    "timestamp": "2020-04-07 21:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 5.40909090909
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 4.84210526316
       },
       {
          "name": "M1Power",
-         "value": 0.451542248
+         "value": 5.36363636364
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.451542248
+         "value": 6
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 5.52272727273
       }
    ]
 }, {
    "timestamp": "2020-04-07 22:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 5.52380952381
       },
       {
          "name": "M1Medical",
-         "value": 0.330106942548
+         "value": 6.28571428571
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 5.85714285714
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 5.90476190476
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 5.5
       }
    ]
 }, {
    "timestamp": "2020-04-07 22:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 4.42
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 4.38888888889
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.62
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 4.78
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.454545454545
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.1
       }
    ]
 }, {
    "timestamp": "2020-04-07 23:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 5.06666666667
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.72
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 5.84444444444
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 5.91111111111
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.857142857143
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 4.68888888889
       }
    ]
 }, {
    "timestamp": "2020-04-07 23:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 5.27659574468
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.47826086957
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 6
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 5.53191489362
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.23404255319
       }
    ]
 }, {
    "timestamp": "2020-04-08 00:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 5.65853658537
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 6.23529411765
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 4.68292682927
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 5.65853658537
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.272727272727
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 4.70731707317
       }
    ]
 }, {
    "timestamp": "2020-04-08 00:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 4.75555555556
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.52631578947
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 4.84444444444
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 5.57777777778
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 4.28888888889
       }
    ]
 }, {
    "timestamp": "2020-04-08 01:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.476830032725
+         "value": 5.41071428571
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 6.6
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 5.16071428571
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 6.41071428571
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.476830032725
+         "value": 5.21428571429
       }
    ]
 }, {
    "timestamp": "2020-04-08 01:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.0612244898
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.17647058824
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 6
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 5.0612244898
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.330106942548
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 6.57142857143
       }
    ]
 }, {
    "timestamp": "2020-04-08 02:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.46153846154
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 4.86666666667
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 5.61538461538
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.02564102564
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.285714285714
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 5.20512820513
       }
    ]
 }, {
    "timestamp": "2020-04-08 02:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.28
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 6.26086956522
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.2
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 4.26
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.48
       }
    ]
 }, {
    "timestamp": "2020-04-08 03:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.76
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 6
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.44
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.54
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.363636363636
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.78
       }
    ]
 }, {
    "timestamp": "2020-04-08 03:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.456208133617
+         "value": 4.63043478261
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.35
       },
       {
          "name": "M1Power",
-         "value": 0.456208133617
+         "value": 5.89130434783
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.456208133617
+         "value": 5.65217391304
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.714285714286
       },
       {
          "name": "M1Water",
-         "value": 0.456208133617
+         "value": 5.95652173913
       }
    ]
 }, {
    "timestamp": "2020-04-08 04:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.489159805236
+         "value": 5.46031746032
       },
       {
          "name": "M1Medical",
-         "value": 0.430447723602
+         "value": 5.69444444444
       },
       {
          "name": "M1Power",
-         "value": 0.489159805236
+         "value": 4.39682539683
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.489159805236
+         "value": 5.73015873016
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.3
       },
       {
          "name": "M1Water",
-         "value": 0.489159805236
+         "value": 4.50793650794
       }
    ]
 }, {
    "timestamp": "2020-04-08 04:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.424428902971
+         "value": 5.08823529412
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 5.76923076923
       },
       {
          "name": "M1Power",
-         "value": 0.424428902971
+         "value": 6.20588235294
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.424428902971
+         "value": 5.85294117647
       },
       {
          "name": "M1Shakeintensity",
@@ -2857,3652 +2857,3652 @@
       },
       {
          "name": "M1Water",
-         "value": 0.424428902971
+         "value": 5.70588235294
       }
    ]
 }, {
    "timestamp": "2020-04-08 05:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.35897435897
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 7.15789473684
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 6.02564102564
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.64102564103
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.428571428571
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 4.35897435897
       }
    ]
 }, {
    "timestamp": "2020-04-08 05:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 5.03921568627
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.47619047619
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 5.05882352941
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 5.6862745098
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.222222222222
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 5.60784313725
       }
    ]
 }, {
    "timestamp": "2020-04-08 06:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 5.8
       },
       {
          "name": "M1Medical",
-         "value": 0.330106942548
+         "value": 5.5
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 5.35555555556
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 5.77777777778
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 5.35555555556
       }
    ]
 }, {
    "timestamp": "2020-04-08 06:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.474942708206
+         "value": 6.09090909091
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 7.04545454545
       },
       {
          "name": "M1Power",
-         "value": 0.474942708206
+         "value": 6.10909090909
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.474942708206
+         "value": 5.78181818182
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.727272727273
       },
       {
          "name": "M1Water",
-         "value": 0.474942708206
+         "value": 5.38181818182
       }
    ]
 }, {
    "timestamp": "2020-04-08 07:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.64
       },
       {
          "name": "M1Medical",
-         "value": 0.400099746044
+         "value": 5.51851851852
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.4
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.58
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.58
       }
    ]
 }, {
    "timestamp": "2020-04-08 07:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 4.7619047619
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.88235294118
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 5.7380952381
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 6.21428571429
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 4.90476190476
       }
    ]
 }, {
    "timestamp": "2020-04-08 08:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.456208133617
+         "value": 4.84782608696
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 4.42857142857
       },
       {
          "name": "M1Power",
-         "value": 0.456208133617
+         "value": 4.45652173913
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.456208133617
+         "value": 5.65217391304
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.714285714286
       },
       {
          "name": "M1Water",
-         "value": 0.456208133617
+         "value": 5.36956521739
       }
    ]
 }, {
    "timestamp": "2020-04-08 08:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.982802299174
+         "value": 4.54975911906
       },
       {
          "name": "M1Medical",
-         "value": 0.922344151841
+         "value": 5.74075899458
       },
       {
          "name": "M1Power",
-         "value": 0.983002153444
+         "value": 6.77455694464
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.983002153444
+         "value": 5.50309108394
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.977931534086
+         "value": 3.87521638777
       },
       {
          "name": "M1Water",
-         "value": 0.982802299174
+         "value": 5.21018582244
       }
    ]
 }, {
    "timestamp": "2020-04-08 09:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.999563215703
+         "value": 4.27570859686
       },
       {
          "name": "M1Medical",
-         "value": 0.916151028791
+         "value": 5.4404917604
       },
       {
          "name": "M1Power",
-         "value": 1
+         "value": 6.41684161418
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 1
+         "value": 5.43876836949
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.995572451773
+         "value": 3.46579844206
       },
       {
          "name": "M1Water",
-         "value": 0.999563215703
+         "value": 5.03138908409
       }
    ]
 }, {
    "timestamp": "2020-04-08 09:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.944780553675
+         "value": 3.96922771491
       },
       {
          "name": "M1Medical",
-         "value": 0.792322975554
+         "value": 4.11293103448
       },
       {
          "name": "M1Power",
-         "value": 0.945253507248
+         "value": 5.74802371542
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.945253507248
+         "value": 5.30632411067
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.939387259584
+         "value": 2.79401923881
       },
       {
          "name": "M1Water",
-         "value": 0.944780553675
+         "value": 4.70260075442
       }
    ]
 }, {
    "timestamp": "2020-04-08 10:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.934906663315
+         "value": 4.08144104803
       },
       {
          "name": "M1Medical",
-         "value": 0.767342556037
+         "value": 4.06359649123
       },
       {
          "name": "M1Power",
-         "value": 0.935336442555
+         "value": 5.90302239617
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.935336442555
+         "value": 5.5214176995
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.931097592423
+         "value": 2.61834654587
       },
       {
          "name": "M1Water",
-         "value": 0.934906663315
+         "value": 4.97576419214
       }
    ]
 }, {
    "timestamp": "2020-04-08 10:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.924721516739
+         "value": 4.09176300578
       },
       {
          "name": "M1Medical",
-         "value": 0.757432005365
+         "value": 3.81061519903
       },
       {
          "name": "M1Power",
-         "value": 0.925095896255
+         "value": 5.91792656587
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.925095896255
+         "value": 5.58435325174
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.922011039478
+         "value": 2.20346106304
       },
       {
          "name": "M1Water",
-         "value": 0.924721516739
+         "value": 5.01396917148
       }
    ]
 }, {
    "timestamp": "2020-04-08 11:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.897195656352
+         "value": 4.06875981162
       },
       {
          "name": "M1Medical",
-         "value": 0.738969052418
+         "value": 3.80403458213
       },
       {
          "name": "M1Power",
-         "value": 0.89758607655
+         "value": 5.85392555521
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.89758607655
+         "value": 5.58773850485
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.894253276729
+         "value": 2.14954780362
       },
       {
          "name": "M1Water",
-         "value": 0.897163054955
+         "value": 5.01224874372
       }
    ]
 }, {
    "timestamp": "2020-04-08 11:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.886456135938
+         "value": 4.31580779944
       },
       {
          "name": "M1Medical",
-         "value": 0.785572951111
+         "value": 3.91720331187
       },
       {
          "name": "M1Power",
-         "value": 0.88685301905
+         "value": 6.60561914672
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.88685301905
+         "value": 5.48525841138
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.883671774048
+         "value": 2.27861230329
       },
       {
          "name": "M1Water",
-         "value": 0.886456135938
+         "value": 5.26009749304
       }
    ]
 }, {
    "timestamp": "2020-04-08 12:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.837077508137
+         "value": 4.62016806723
       },
       {
          "name": "M1Medical",
-         "value": 0.676659849932
+         "value": 4.14960629921
       },
       {
          "name": "M1Power",
-         "value": 0.837251869061
+         "value": 6.57494407159
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.837251869061
+         "value": 6.06040268456
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.833707757675
+         "value": 2.25868055556
       },
       {
          "name": "M1Water",
-         "value": 0.837077508137
+         "value": 5.62072829132
       }
    ]
 }, {
    "timestamp": "2020-04-08 12:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.753733478719
+         "value": 3.19125
       },
       {
          "name": "M1Medical",
-         "value": 0.60538907152
+         "value": 3.30729166667
       },
       {
          "name": "M1Power",
-         "value": 0.754122253837
+         "value": 5.15940224159
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.754122253837
+         "value": 4.39476961395
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.74633506873
+         "value": 2.65771812081
       },
       {
          "name": "M1Water",
-         "value": 0.753733478719
+         "value": 3.57875
       }
    ]
 }, {
    "timestamp": "2020-04-08 13:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.720148282325
+         "value": 3.16234887737
       },
       {
          "name": "M1Medical",
-         "value": 0.578290418848
+         "value": 3.21621621622
       },
       {
          "name": "M1Power",
-         "value": 0.720506532285
+         "value": 5.14802065404
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.720506532285
+         "value": 4.29776247849
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.709976320254
+         "value": 2.67428571429
       },
       {
          "name": "M1Water",
-         "value": 0.720148282325
+         "value": 3.56476683938
       }
    ]
 }, {
    "timestamp": "2020-04-08 13:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.683776024995
+         "value": 3.27941176471
       },
       {
          "name": "M1Medical",
-         "value": 0.521685893518
+         "value": 3.33720930233
       },
       {
          "name": "M1Power",
-         "value": 0.683776024995
+         "value": 5.25245098039
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.683776024995
+         "value": 4.31617647059
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.676386684541
+         "value": 2.66578947368
       },
       {
          "name": "M1Water",
-         "value": 0.683776024995
+         "value": 3.54166666667
       }
    ]
 }, {
    "timestamp": "2020-04-08 14:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.644266316239
+         "value": 3.43369175627
       },
       {
          "name": "M1Medical",
-         "value": 0.500179324176
+         "value": 4
       },
       {
          "name": "M1Power",
-         "value": 0.644266316239
+         "value": 5.20788530466
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.644266316239
+         "value": 4.35483870968
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.629898322713
+         "value": 2.74074074074
       },
       {
          "name": "M1Water",
-         "value": 0.644266316239
+         "value": 3.85663082437
       }
    ]
 }, {
    "timestamp": "2020-04-08 14:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.626416144745
+         "value": 3.3914893617
       },
       {
          "name": "M1Medical",
-         "value": 0.484053832226
+         "value": 4
       },
       {
          "name": "M1Power",
-         "value": 0.626416144745
+         "value": 5.17021276596
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.626416144745
+         "value": 4.53191489362
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.604299270327
+         "value": 2.74736842105
       },
       {
          "name": "M1Water",
-         "value": 0.626416144745
+         "value": 3.66808510638
       }
    ]
 }, {
    "timestamp": "2020-04-08 15:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.59982191442
+         "value": 3.24175824176
       },
       {
          "name": "M1Medical",
-         "value": 0.444124955079
+         "value": 3.29268292683
       },
       {
          "name": "M1Power",
-         "value": 0.600392259742
+         "value": 5.31693989071
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.600392259742
+         "value": 4.50273224044
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.578991789446
+         "value": 2.93959731544
       },
       {
          "name": "M1Water",
-         "value": 0.59982191442
+         "value": 3.59340659341
       }
    ]
 }, {
    "timestamp": "2020-04-08 15:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.564780818038
+         "value": 3.52307692308
       },
       {
          "name": "M1Medical",
-         "value": 0.433331136061
+         "value": 4.62162162162
       },
       {
          "name": "M1Power",
-         "value": 0.565579301488
+         "value": 5.04580152672
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.565579301488
+         "value": 4.43511450382
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.516712410211
+         "value": 3.5243902439
       },
       {
          "name": "M1Water",
-         "value": 0.564780818038
+         "value": 4.1
       }
    ]
 }, {
    "timestamp": "2020-04-08 16:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.554686819969
+         "value": 3.82203389831
       },
       {
          "name": "M1Medical",
-         "value": 0.438868272364
+         "value": 4.15384615385
       },
       {
          "name": "M1Power",
-         "value": 0.555566505126
+         "value": 5.16806722689
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.555566505126
+         "value": 4.56302521008
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.522892903385
+         "value": 2.71264367816
       },
       {
          "name": "M1Water",
-         "value": 0.554686819969
+         "value": 4.4406779661
       }
    ]
 }, {
    "timestamp": "2020-04-08 16:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.533167395848
+         "value": 3.84375
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 4.45454545455
       },
       {
          "name": "M1Power",
-         "value": 0.53424867552
+         "value": 5.49484536082
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.53424867552
+         "value": 4.58762886598
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.494026355908
+         "value": 2.63636363636
       },
       {
          "name": "M1Water",
-         "value": 0.533167395848
+         "value": 4.38541666667
       }
    ]
 }, {
    "timestamp": "2020-04-08 17:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.517978298608
+         "value": 3.80722891566
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 4.46153846154
       },
       {
          "name": "M1Power",
-         "value": 0.517978298608
+         "value": 5.19277108434
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.517978298608
+         "value": 4.75903614458
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.456208133617
+         "value": 2.86956521739
       },
       {
          "name": "M1Water",
-         "value": 0.517978298608
+         "value": 4.31325301205
       }
    ]
 }, {
    "timestamp": "2020-04-08 17:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 4.41509433962
       },
       {
          "name": "M1Medical",
-         "value": 0.30403524807
+         "value": 4.09090909091
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.44444444444
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 5.27777777778
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.424428902971
+         "value": 3.47058823529
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 4.41509433962
       }
    ]
 }, {
    "timestamp": "2020-04-08 18:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.480504757626
+         "value": 5.22413793103
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 5.61111111111
       },
       {
          "name": "M1Power",
-         "value": 0.480504757626
+         "value": 5.62068965517
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.480504757626
+         "value": 5.55172413793
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.387630096161
+         "value": 2.75
       },
       {
          "name": "M1Water",
-         "value": 0.480504757626
+         "value": 5.01724137931
       }
    ]
 }, {
    "timestamp": "2020-04-08 18:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 4.20454545455
       },
       {
          "name": "M1Medical",
-         "value": 0.330106942548
+         "value": 6.64285714286
       },
       {
          "name": "M1Power",
-         "value": 0.451542248
+         "value": 6.11363636364
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.451542248
+         "value": 4.88636363636
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.383116928833
+         "value": 2.39130434783
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 3.81818181818
       }
    ]
 }, {
    "timestamp": "2020-04-08 19:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.58974358974
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 4.53333333333
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 5.79487179487
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.4358974359
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.344441621633
+         "value": 2.125
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 5.07692307692
       }
    ]
 }, {
    "timestamp": "2020-04-08 19:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 5.17073170732
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 3.29411764706
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 5.65853658537
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 5.46341463415
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.9
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 5.12195121951
       }
    ]
 }, {
    "timestamp": "2020-04-08 20:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.433331136061
+         "value": 4.56756756757
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 5.13333333333
       },
       {
          "name": "M1Power",
-         "value": 0.433331136061
+         "value": 5.78378378378
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.433331136061
+         "value": 4.75675675676
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 2.58333333333
       },
       {
          "name": "M1Water",
-         "value": 0.433331136061
+         "value": 5.21621621622
       }
    ]
 }, {
    "timestamp": "2020-04-08 20:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 6.025
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 5.86666666667
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 6.375
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.775
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.875
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.375
       }
    ]
 }, {
    "timestamp": "2020-04-08 21:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.436136618454
+         "value": 4.71052631579
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.47058823529
       },
       {
          "name": "M1Power",
-         "value": 0.436136618454
+         "value": 6.02631578947
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.436136618454
+         "value": 5.73684210526
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 1.11111111111
       },
       {
          "name": "M1Water",
-         "value": 0.436136618454
+         "value": 5.63157894737
       }
    ]
 }, {
    "timestamp": "2020-04-08 21:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.396107328792
+         "value": 5.57692307692
       },
       {
          "name": "M1Medical",
-         "value": 0.282121313376
+         "value": 5.44444444444
       },
       {
          "name": "M1Power",
-         "value": 0.396107328792
+         "value": 6.30769230769
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.396107328792
+         "value": 5.19230769231
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 1.625
       },
       {
          "name": "M1Water",
-         "value": 0.396107328792
+         "value": 5.69230769231
       }
    ]
 }, {
    "timestamp": "2020-04-08 22:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 5.775
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 4.9
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 4.9
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.4
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.888888888889
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.575
       }
    ]
 }, {
    "timestamp": "2020-04-08 22:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.411230949152
+         "value": 5.93333333333
       },
       {
          "name": "M1Medical",
-         "value": 0.30403524807
+         "value": 6.81818181818
       },
       {
          "name": "M1Power",
-         "value": 0.411230949152
+         "value": 5.1
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.411230949152
+         "value": 5.63333333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.411230949152
+         "value": 5.1
       }
    ]
 }, {
    "timestamp": "2020-04-08 23:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.418039523089
+         "value": 5.03125
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 6.15384615385
       },
       {
          "name": "M1Power",
-         "value": 0.418039523089
+         "value": 5.90625
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.418039523089
+         "value": 6.5
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 1.75
       },
       {
          "name": "M1Water",
-         "value": 0.418039523089
+         "value": 4.71875
       }
    ]
 }, {
    "timestamp": "2020-04-08 23:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.844863570619
+         "value": 7.47817047817
       },
       {
          "name": "M1Medical",
-         "value": 0.844159636257
+         "value": 6.59236002093
       },
       {
          "name": "M1Power",
-         "value": 0.844863570619
+         "value": 8.44386694387
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.844863570619
+         "value": 8.45166320166
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.840847379297
+         "value": 1.75958941113
       },
       {
          "name": "M1Water",
-         "value": 0.844863570619
+         "value": 8.45738045738
       }
    ]
 }, {
    "timestamp": "2020-04-09 00:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.424428902971
+         "value": 5.26470588235
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 6.92307692308
       },
       {
          "name": "M1Power",
-         "value": 0.424428902971
+         "value": 5.85294117647
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.424428902971
+         "value": 6.94117647059
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 1.33333333333
       },
       {
          "name": "M1Water",
-         "value": 0.424428902971
+         "value": 6.02941176471
       }
    ]
 }, {
    "timestamp": "2020-04-09 00:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 5.525
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 4.95454545455
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.25
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.025
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.325
       }
    ]
 }, {
    "timestamp": "2020-04-09 01:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.933721244019
+         "value": 5.80874558304
       },
       {
          "name": "M1Medical",
-         "value": 0.933146475949
+         "value": 7.79169442594
       },
       {
          "name": "M1Power",
-         "value": 0.933721244019
+         "value": 8.64090106007
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.933721244019
+         "value": 6.78091872792
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.931637011962
+         "value": 4.2154123479
       },
       {
          "name": "M1Water",
-         "value": 0.933721244019
+         "value": 6.79019434629
       }
    ]
 }, {
    "timestamp": "2020-04-09 01:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.433331136061
+         "value": 5.35135135135
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.82608695652
       },
       {
          "name": "M1Power",
-         "value": 0.433331136061
+         "value": 4.91891891892
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.433331136061
+         "value": 5.18918918919
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.433331136061
+         "value": 6.02702702703
       }
    ]
 }, {
    "timestamp": "2020-04-09 02:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.1
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.44
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.72
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.22
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 6
       }
    ]
 }, {
    "timestamp": "2020-04-09 02:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.427481927929
+         "value": 5.45714285714
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 7.10526315789
       },
       {
          "name": "M1Power",
-         "value": 0.427481927929
+         "value": 5.14285714286
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.427481927929
+         "value": 5.82857142857
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.427481927929
+         "value": 5.94285714286
       }
    ]
 }, {
    "timestamp": "2020-04-09 03:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.424428902971
+         "value": 5.14705882353
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 4.55555555556
       },
       {
          "name": "M1Power",
-         "value": 0.424428902971
+         "value": 5.29411764706
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.424428902971
+         "value": 4.73529411765
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.714285714286
       },
       {
          "name": "M1Water",
-         "value": 0.424428902971
+         "value": 5.26470588235
       }
    ]
 }, {
    "timestamp": "2020-04-09 03:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 4.62222222222
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.10526315789
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 6.22222222222
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 5.68888888889
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 5.08888888889
       }
    ]
 }, {
    "timestamp": "2020-04-09 04:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 6.625
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.21739130435
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.2
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 4.75
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.05
       }
    ]
 }, {
    "timestamp": "2020-04-09 04:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.812295082053
+         "value": 6.87553342817
       },
       {
          "name": "M1Medical",
-         "value": 0.446656731872
+         "value": 5.42857142857
       },
       {
          "name": "M1Power",
-         "value": 0.812295082053
+         "value": 8.7759601707
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.812295082053
+         "value": 5.99359886202
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.808381789438
+         "value": 1.84268833087
       },
       {
          "name": "M1Water",
-         "value": 0.812295082053
+         "value": 5.94452347084
       }
    ]
 }, {
    "timestamp": "2020-04-09 05:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 4.85365853659
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 6.81818181818
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 5.51219512195
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 5.53658536585
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.2
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 4.85365853659
       }
    ]
 }, {
    "timestamp": "2020-04-09 05:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 6.31481481481
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 6.90909090909
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.46296296296
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 5.24074074074
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.625
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 5.11111111111
       }
    ]
 }, {
    "timestamp": "2020-04-09 06:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 5.68085106383
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.04
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 5.44680851064
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 5.02127659574
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.75
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.55319148936
       }
    ]
 }, {
    "timestamp": "2020-04-09 06:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 4.875
       },
       {
          "name": "M1Medical",
-         "value": 0.330106942548
+         "value": 5.57142857143
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.125
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.85
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 4.925
       }
    ]
 }, {
    "timestamp": "2020-04-09 07:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 4.48780487805
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 4.84210526316
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 4.85365853659
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 6.17073170732
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.103802848548
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 5.92682926829
       }
    ]
 }, {
    "timestamp": "2020-04-09 07:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.436136618454
+         "value": 4.71052631579
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 5.61538461538
       },
       {
          "name": "M1Power",
-         "value": 0.436136618454
+         "value": 5.21052631579
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.436136618454
+         "value": 5.73684210526
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.436136618454
+         "value": 5.71052631579
       }
    ]
 }, {
    "timestamp": "2020-04-09 08:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.25641025641
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.63157894737
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 5.58974358974
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.48717948718
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 5.35897435897
       }
    ]
 }, {
    "timestamp": "2020-04-09 08:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.418039523089
+         "value": 5.59375
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.14285714286
       },
       {
          "name": "M1Power",
-         "value": 0.418039523089
+         "value": 5.5
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.418039523089
+         "value": 5.8125
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.555555555556
       },
       {
          "name": "M1Water",
-         "value": 0.418039523089
+         "value": 5.875
       }
    ]
 }, {
    "timestamp": "2020-04-09 09:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.884522318704
+         "value": 6.4618659099
       },
       {
          "name": "M1Medical",
-         "value": 0.505987897023
+         "value": 5.05405405405
       },
       {
          "name": "M1Power",
-         "value": 0.884522318704
+         "value": 8.39411138702
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.884522318704
+         "value": 8.41681447322
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.880005984961
+         "value": 1.94553538348
       },
       {
          "name": "M1Water",
-         "value": 0.884522318704
+         "value": 8.38240510819
       }
    ]
 }, {
    "timestamp": "2020-04-09 09:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 4.6
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 5.91111111111
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 5.2
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.636363636364
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 5.28888888889
       }
    ]
 }, {
    "timestamp": "2020-04-09 10:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.460673288527
+         "value": 5.52083333333
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 6.5
       },
       {
          "name": "M1Power",
-         "value": 0.460673288527
+         "value": 5.125
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.460673288527
+         "value": 6.20833333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.444444444444
       },
       {
          "name": "M1Water",
-         "value": 0.460673288527
+         "value": 5.27083333333
       }
    ]
 }, {
    "timestamp": "2020-04-09 10:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.460673288527
+         "value": 5.14583333333
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 4.28571428571
       },
       {
          "name": "M1Power",
-         "value": 0.460673288527
+         "value": 5.89583333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.460673288527
+         "value": 4.95833333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.460673288527
+         "value": 5.89583333333
       }
    ]
 }, {
    "timestamp": "2020-04-09 11:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 4.90196078431
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 6.08
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 5.37254901961
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 5.09803921569
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.2
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 6.07843137255
       }
    ]
 }, {
    "timestamp": "2020-04-09 11:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.476830032725
+         "value": 5.10714285714
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 5.15384615385
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 5.875
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 6.14285714286
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.476830032725
+         "value": 6.26785714286
       }
    ]
 }, {
    "timestamp": "2020-04-09 12:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.14
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.6
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.48
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 4.82
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.33752143173
+         "value": 0.466666666667
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.36
       }
    ]
 }, {
    "timestamp": "2020-04-09 12:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.46511627907
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 5.83333333333
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 5.46511627907
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 5.27906976744
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.8
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 5.88372093023
       }
    ]
 }, {
    "timestamp": "2020-04-09 13:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 4.925
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.9
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.55
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 4.95
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 4.975
       }
    ]
 }, {
    "timestamp": "2020-04-09 13:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 5.77777777778
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.14285714286
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 4.73333333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 5.51111111111
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 5.93333333333
       }
    ]
 }, {
    "timestamp": "2020-04-09 14:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.476830032725
+         "value": 4.91071428571
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.21739130435
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 5.98214285714
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 5.96428571429
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.636363636364
       },
       {
          "name": "M1Water",
-         "value": 0.476830032725
+         "value": 5.42857142857
       }
    ]
 }, {
    "timestamp": "2020-04-09 14:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 5.36585365854
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 4.56097560976
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 5.92682926829
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.2
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 4.87804878049
       }
    ]
 }, {
    "timestamp": "2020-04-09 15:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.889273356243
+         "value": 3.89495086411
       },
       {
          "name": "M1Medical",
-         "value": 0.780180656444
+         "value": 3.45058139535
       },
       {
          "name": "M1Power",
-         "value": 0.889308531726
+         "value": 4.10298102981
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.889308531726
+         "value": 4.70155826558
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.882514248287
+         "value": 2.37576853526
       },
       {
          "name": "M1Water",
-         "value": 0.889273356243
+         "value": 5.31548627584
       }
    ]
 }, {
    "timestamp": "2020-04-09 15:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.872922606493
+         "value": 3.83617612059
       },
       {
          "name": "M1Medical",
-         "value": 0.752558339736
+         "value": 2.93552465234
       },
       {
          "name": "M1Power",
-         "value": 0.873004940701
+         "value": 3.72453428458
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.873004940701
+         "value": 4.44470868014
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.860327660982
+         "value": 2.1670398567
       },
       {
          "name": "M1Water",
-         "value": 0.872922606493
+         "value": 5.17334391115
       }
    ]
 }, {
    "timestamp": "2020-04-09 16:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.873004940701
+         "value": 4.45144669045
       },
       {
          "name": "M1Medical",
-         "value": 0.800992546404
+         "value": 4.01744647105
       },
       {
          "name": "M1Power",
-         "value": 0.873169413458
+         "value": 3.6228729719
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.873169413458
+         "value": 4.92797783934
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.861161237286
+         "value": 1.83962683252
       },
       {
          "name": "M1Water",
-         "value": 0.873004940701
+         "value": 6.22829964328
       }
    ]
 }, {
    "timestamp": "2020-04-09 16:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.859721443173
+         "value": 4.87432432432
       },
       {
          "name": "M1Medical",
-         "value": 0.773316877322
+         "value": 4.13871635611
       },
       {
          "name": "M1Power",
-         "value": 0.8598149382
+         "value": 4.49369936994
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.8598149382
+         "value": 5.75517551755
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.847422127166
+         "value": 1.60496957404
       },
       {
          "name": "M1Water",
-         "value": 0.859721443173
+         "value": 6.6481981982
       }
    ]
 }, {
    "timestamp": "2020-04-09 17:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.838291928542
+         "value": 5.14728682171
       },
       {
          "name": "M1Medical",
-         "value": 0.736085455046
+         "value": 4.06962962963
       },
       {
          "name": "M1Power",
-         "value": 0.838578994117
+         "value": 5.1325234677
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.838578994117
+         "value": 6.30259525124
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.82655683083
+         "value": 1.57718536888
       },
       {
          "name": "M1Water",
-         "value": 0.838291928542
+         "value": 6.98062015504
       }
    ]
 }, {
    "timestamp": "2020-04-09 17:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.754766994017
+         "value": 4.32425742574
       },
       {
          "name": "M1Medical",
-         "value": 0.691623182906
+         "value": 4.01363636364
       },
       {
          "name": "M1Power",
-         "value": 0.754895462889
+         "value": 3.49814585909
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.754895462889
+         "value": 4.72064276885
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.735622737358
+         "value": 1.92113095238
       },
       {
          "name": "M1Water",
-         "value": 0.754766994017
+         "value": 6.06064356436
       }
    ]
 }, {
    "timestamp": "2020-04-09 18:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.721396784938
+         "value": 4.29010238908
       },
       {
          "name": "M1Medical",
-         "value": 0.650416709488
+         "value": 4.11148648649
       },
       {
          "name": "M1Power",
-         "value": 0.721750759103
+         "value": 3.65136054422
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.721750759103
+         "value": 4.81632653061
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.696242534884
+         "value": 2.02826086957
       },
       {
          "name": "M1Water",
-         "value": 0.721396784938
+         "value": 5.95051194539
       }
    ]
 }, {
    "timestamp": "2020-04-09 18:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.680673344355
+         "value": 4.39141414141
       },
       {
          "name": "M1Medical",
-         "value": 0.618125939669
+         "value": 4.1198156682
       },
       {
          "name": "M1Power",
-         "value": 0.680673344355
+         "value": 3.75757575758
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.680673344355
+         "value": 4.81565656566
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.651465231035
+         "value": 1.92642140468
       },
       {
          "name": "M1Water",
-         "value": 0.680673344355
+         "value": 6
       }
    ]
 }, {
    "timestamp": "2020-04-09 19:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.649357488578
+         "value": 4.44709897611
       },
       {
          "name": "M1Medical",
-         "value": 0.587058175146
+         "value": 4.30434782609
       },
       {
          "name": "M1Power",
-         "value": 0.649357488578
+         "value": 3.92150170648
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.649357488578
+         "value": 4.70648464164
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.608591462863
+         "value": 2.18181818182
       },
       {
          "name": "M1Water",
-         "value": 0.649357488578
+         "value": 6.18088737201
       }
    ]
 }, {
    "timestamp": "2020-04-09 19:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.623725643707
+         "value": 4.34497816594
       },
       {
          "name": "M1Medical",
-         "value": 0.563976144793
+         "value": 4.13953488372
       },
       {
          "name": "M1Power",
-         "value": 0.623725643707
+         "value": 3.92576419214
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.623725643707
+         "value": 4.79475982533
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.57968845286
+         "value": 2.12
       },
       {
          "name": "M1Water",
-         "value": 0.623725643707
+         "value": 6.13100436681
       }
    ]
 }, {
    "timestamp": "2020-04-09 20:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.578290418848
+         "value": 4.45945945946
       },
       {
          "name": "M1Medical",
-         "value": 0.522892903385
+         "value": 4.36781609195
       },
       {
          "name": "M1Power",
-         "value": 0.578290418848
+         "value": 4.0472972973
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.578290418848
+         "value": 5.00675675676
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.520464683535
+         "value": 2.03529411765
       },
       {
          "name": "M1Water",
-         "value": 0.578290418848
+         "value": 6.33783783784
       }
    ]
 }, {
    "timestamp": "2020-04-09 20:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.549246158796
+         "value": 4.58035714286
       },
       {
          "name": "M1Medical",
-         "value": 0.47868365502
+         "value": 4.52631578947
       },
       {
          "name": "M1Power",
-         "value": 0.549246158796
+         "value": 4.58035714286
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.549246158796
+         "value": 5.30357142857
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.484053832226
+         "value": 2.4
       },
       {
          "name": "M1Water",
-         "value": 0.549246158796
+         "value": 6.00892857143
       }
    ]
 }, {
    "timestamp": "2020-04-09 21:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.532074734284
+         "value": 4.65263157895
       },
       {
          "name": "M1Medical",
-         "value": 0.47106188892
+         "value": 4.50943396226
       },
       {
          "name": "M1Power",
-         "value": 0.532074734284
+         "value": 4.68421052632
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.532074734284
+         "value": 5.06315789474
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.451542248
+         "value": 1.65909090909
       },
       {
          "name": "M1Water",
-         "value": 0.532074734284
+         "value": 6.04210526316
       }
    ]
 }, {
    "timestamp": "2020-04-09 21:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.520464683535
+         "value": 4.6
       },
       {
          "name": "M1Medical",
-         "value": 0.444124955079
+         "value": 4.26829268293
       },
       {
          "name": "M1Power",
-         "value": 0.520464683535
+         "value": 4.78823529412
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.520464683535
+         "value": 4.78823529412
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.444124955079
+         "value": 1.9756097561
       },
       {
          "name": "M1Water",
-         "value": 0.520464683535
+         "value": 5.30588235294
       }
    ]
 }, {
    "timestamp": "2020-04-09 22:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.487485565744
+         "value": 4.45161290323
       },
       {
          "name": "M1Medical",
-         "value": 0.414691044104
+         "value": 5.45161290323
       },
       {
          "name": "M1Power",
-         "value": 0.487485565744
+         "value": 4.58064516129
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.487485565744
+         "value": 5.32258064516
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.400099746044
+         "value": 1.77777777778
       },
       {
          "name": "M1Water",
-         "value": 0.487485565744
+         "value": 6.04838709677
       }
    ]
 }, {
    "timestamp": "2020-04-09 22:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 5.02
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 4.83333333333
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 4.78
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.32
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.33752143173
+         "value": 2.26666666667
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 6.52
       }
    ]
 }, {
    "timestamp": "2020-04-09 23:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.474942708206
+         "value": 4.78181818182
       },
       {
          "name": "M1Medical",
-         "value": 0.387630096161
+         "value": 4.91666666667
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 4.25
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 5.33928571429
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.373455624747
+         "value": 1.7619047619
       },
       {
          "name": "M1Water",
-         "value": 0.474942708206
+         "value": 5.14545454545
       }
    ]
 }, {
    "timestamp": "2020-04-09 23:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 5.27777777778
       },
       {
          "name": "M1Medical",
-         "value": 0.421283362106
+         "value": 4.54545454545
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 4.75925925926
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 4.90740740741
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.322122108044
+         "value": 2.15384615385
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 5.12962962963
       }
    ]
 }, {
    "timestamp": "2020-04-10 00:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 4.78431372549
       },
       {
          "name": "M1Medical",
-         "value": 0.403944295991
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 4.49019607843
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 5.39215686275
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.33752143173
+         "value": 1.93333333333
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 5.64705882353
       }
    ]
 }, {
    "timestamp": "2020-04-10 00:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 5.57142857143
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 3.5
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 4.78571428571
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 5.40476190476
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 4.7380952381
       }
    ]
 }, {
    "timestamp": "2020-04-10 01:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.430447723602
+         "value": 4.44444444444
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 6.26666666667
       },
       {
          "name": "M1Power",
-         "value": 0.430447723602
+         "value": 5.27777777778
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.430447723602
+         "value": 4.69444444444
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 1.8
       },
       {
          "name": "M1Water",
-         "value": 0.430447723602
+         "value": 4.33333333333
       }
    ]
 }, {
    "timestamp": "2020-04-10 01:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.424428902971
+         "value": 5.32352941176
       },
       {
          "name": "M1Medical",
-         "value": 0.322122108044
+         "value": 4.92307692308
       },
       {
          "name": "M1Power",
-         "value": 0.424428902971
+         "value": 4.44117647059
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.424428902971
+         "value": 5.76470588235
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.8
       },
       {
          "name": "M1Water",
-         "value": 0.424428902971
+         "value": 5.97058823529
       }
    ]
 }, {
    "timestamp": "2020-04-10 02:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.424428902971
+         "value": 6.02941176471
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 5.73333333333
       },
       {
          "name": "M1Power",
-         "value": 0.424428902971
+         "value": 4.91176470588
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.424428902971
+         "value": 5.73529411765
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.545454545455
       },
       {
          "name": "M1Water",
-         "value": 0.424428902971
+         "value": 5.11764705882
       }
    ]
 }, {
    "timestamp": "2020-04-10 02:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.797133572105
+         "value": 6.90452674897
       },
       {
          "name": "M1Medical",
-         "value": 0.433331136061
+         "value": 5.08108108108
       },
       {
          "name": "M1Power",
-         "value": 0.797133572105
+         "value": 8.61399176955
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.797133572105
+         "value": 9.37860082305
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.790516877934
+         "value": 0.961403508772
       },
       {
          "name": "M1Water",
-         "value": 0.797133572105
+         "value": 8.70534979424
       }
    ]
 }, {
    "timestamp": "2020-04-10 03:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.458464717281
+         "value": 5.70212765957
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.94117647059
       },
       {
          "name": "M1Power",
-         "value": 0.458464717281
+         "value": 5.65957446809
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.458464717281
+         "value": 6.04255319149
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.330106942548
+         "value": 0.857142857143
       },
       {
          "name": "M1Water",
-         "value": 0.458464717281
+         "value": 5.91489361702
       }
    ]
 }, {
    "timestamp": "2020-04-10 03:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.476830032725
+         "value": 5.92857142857
       },
       {
          "name": "M1Medical",
-         "value": 0.411230949152
+         "value": 4.63333333333
       },
       {
          "name": "M1Power",
-         "value": 0.476830032725
+         "value": 5.375
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.476830032725
+         "value": 5.32142857143
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.142857142857
       },
       {
          "name": "M1Water",
-         "value": 0.476830032725
+         "value": 5.25
       }
    ]
 }, {
    "timestamp": "2020-04-10 04:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.436136618454
+         "value": 5.84210526316
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 5.53333333333
       },
       {
          "name": "M1Power",
-         "value": 0.436136618454
+         "value": 5.60526315789
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.436136618454
+         "value": 4.94736842105
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.190305222339
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.436136618454
+         "value": 4.86842105263
       }
    ]
 }, {
    "timestamp": "2020-04-10 04:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.427481927929
+         "value": 5.4
       },
       {
          "name": "M1Medical",
-         "value": 0.282121313376
+         "value": 5
       },
       {
          "name": "M1Power",
-         "value": 0.427481927929
+         "value": 5.54285714286
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.427481927929
+         "value": 5.77142857143
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.142857142857
       },
       {
          "name": "M1Water",
-         "value": 0.427481927929
+         "value": 6
       }
    ]
 }, {
    "timestamp": "2020-04-10 05:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.421283362106
+         "value": 4.36363636364
       },
       {
          "name": "M1Medical",
-         "value": 0.293654963215
+         "value": 4.9
       },
       {
          "name": "M1Power",
-         "value": 0.421283362106
+         "value": 5.42424242424
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.421283362106
+         "value": 4.57575757576
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.421283362106
+         "value": 5.51515151515
       }
    ]
 }, {
    "timestamp": "2020-04-10 05:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.76744186047
       },
       {
          "name": "M1Medical",
-         "value": 0.313471870665
+         "value": 6
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 5.58139534884
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 5.32558139535
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.909090909091
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 5.11627906977
       }
    ]
 }, {
    "timestamp": "2020-04-10 06:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.06976744186
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 4.78947368421
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 5.20930232558
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 4.6976744186
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 5.51162790698
       }
    ]
 }, {
    "timestamp": "2020-04-10 06:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 6.375
       },
       {
          "name": "M1Medical",
-         "value": 0.383116928833
+         "value": 5.08695652174
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.7
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 5.075
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.8
       }
    ]
 }, {
    "timestamp": "2020-04-10 07:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.469065680294
+         "value": 6.05769230769
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.78947368421
       },
       {
          "name": "M1Power",
-         "value": 0.469065680294
+         "value": 4.96153846154
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.469065680294
+         "value": 6.11538461538
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.469065680294
+         "value": 5.11538461538
       }
    ]
 }, {
    "timestamp": "2020-04-10 07:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.414691044104
+         "value": 5.41935483871
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.58823529412
       },
       {
          "name": "M1Power",
-         "value": 0.414691044104
+         "value": 5.1935483871
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.414691044104
+         "value": 5.70967741935
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 1
       },
       {
          "name": "M1Water",
-         "value": 0.414691044104
+         "value": 4.58064516129
       }
    ]
 }, {
    "timestamp": "2020-04-10 08:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.497148422588
+         "value": 5.86764705882
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.04761904762
       },
       {
          "name": "M1Power",
-         "value": 0.497148422588
+         "value": 6.23529411765
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.497148422588
+         "value": 4.89705882353
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.497148422588
+         "value": 5.5
       }
    ]
 }, {
    "timestamp": "2020-04-10 08:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.453901403649
+         "value": 6.02222222222
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.25
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 5.68888888889
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 6.42222222222
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.625
       },
       {
          "name": "M1Water",
-         "value": 0.453901403649
+         "value": 5.62222222222
       }
    ]
 }, {
    "timestamp": "2020-04-10 09:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.414691044104
+         "value": 5.09677419355
       },
       {
          "name": "M1Medical",
-         "value": 0.293654963215
+         "value": 6.6
       },
       {
          "name": "M1Power",
-         "value": 0.414691044104
+         "value": 6.45161290323
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.414691044104
+         "value": 5.61290322581
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.414691044104
+         "value": 5
       }
    ]
 }, {
    "timestamp": "2020-04-10 09:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 5.21428571429
       },
       {
          "name": "M1Medical",
-         "value": 0.33752143173
+         "value": 7.13333333333
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 5.57142857143
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 4.88095238095
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 5.11904761905
       }
    ]
 }, {
    "timestamp": "2020-04-10 10:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.438868272364
+         "value": 5.89743589744
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.52941176471
       },
       {
          "name": "M1Power",
-         "value": 0.438868272364
+         "value": 5.05128205128
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.438868272364
+         "value": 5.30769230769
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.428571428571
       },
       {
          "name": "M1Water",
-         "value": 0.438868272364
+         "value": 6.23076923077
       }
    ]
 }, {
    "timestamp": "2020-04-10 10:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.427481927929
+         "value": 6.08571428571
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 5.76470588235
       },
       {
          "name": "M1Power",
-         "value": 0.427481927929
+         "value": 5.22857142857
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.427481927929
+         "value": 4.88571428571
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.427481927929
+         "value": 6.4
       }
    ]
 }, {
    "timestamp": "2020-04-10 11:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.433331136061
+         "value": 5.51351351351
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 4.23529411765
       },
       {
          "name": "M1Power",
-         "value": 0.433331136061
+         "value": 5.37837837838
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.433331136061
+         "value": 5.2972972973
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.285714285714
       },
       {
          "name": "M1Water",
-         "value": 0.433331136061
+         "value": 5.59459459459
       }
    ]
 }, {
    "timestamp": "2020-04-10 11:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.3023255814
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 6.21052631579
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 6.11627906977
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 4.6976744186
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.444444444444
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 4.93023255814
       }
    ]
 }, {
    "timestamp": "2020-04-10 12:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.919359614374
+         "value": 6.91580015217
       },
       {
          "name": "M1Medical",
-         "value": 0.918672788087
+         "value": 6.92494255808
       },
       {
          "name": "M1Power",
-         "value": 0.919359614374
+         "value": 9.62186152676
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.919359614374
+         "value": 9.60740552879
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.916449313042
+         "value": 4.97756911841
       },
       {
          "name": "M1Water",
-         "value": 0.919359614374
+         "value": 9.60385493279
       }
    ]
 }, {
    "timestamp": "2020-04-10 12:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.460673288527
+         "value": 6.41666666667
       },
       {
          "name": "M1Medical",
-         "value": 0.362802174501
+         "value": 5.47368421053
       },
       {
          "name": "M1Power",
-         "value": 0.460673288527
+         "value": 6.02083333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.460673288527
+         "value": 6.14583333333
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.460673288527
+         "value": 5.5625
       }
    ]
 }, {
    "timestamp": "2020-04-10 13:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 6
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 4.90476190476
       },
       {
          "name": "M1Power",
-         "value": 0.451542248
+         "value": 5.47727272727
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.451542248
+         "value": 5.77272727273
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.625
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 5.25
       }
    ]
 }, {
    "timestamp": "2020-04-10 13:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 5.54545454545
       },
       {
          "name": "M1Medical",
-         "value": 0.357035349582
+         "value": 5.94444444444
       },
       {
          "name": "M1Power",
-         "value": 0.451542248
+         "value": 5.04545454545
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.451542248
+         "value": 5.34090909091
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.555555555556
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 5.61363636364
       }
    ]
 }, {
    "timestamp": "2020-04-10 14:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.47106188892
+         "value": 5.47169811321
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 4.72727272727
       },
       {
          "name": "M1Power",
-         "value": 0.47106188892
+         "value": 5.58490566038
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.47106188892
+         "value": 5.47169811321
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.142857142857
       },
       {
          "name": "M1Water",
-         "value": 0.47106188892
+         "value": 5.37735849057
       }
    ]
 }, {
    "timestamp": "2020-04-10 14:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 5.925
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 5.8125
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.05
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 4.525
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.4
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 6.175
       }
    ]
 }, {
    "timestamp": "2020-04-10 15:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.487485565744
+         "value": 5.33870967742
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.08
       },
       {
          "name": "M1Power",
-         "value": 0.487485565744
+         "value": 5.53225806452
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.487485565744
+         "value": 5.14516129032
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.487485565744
+         "value": 6.20967741935
       }
    ]
 }, {
    "timestamp": "2020-04-10 15:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.467030330323
+         "value": 4.94117647059
       },
       {
          "name": "M1Medical",
-         "value": 0.391955214851
+         "value": 5.6
       },
       {
          "name": "M1Power",
-         "value": 0.467030330323
+         "value": 5.45098039216
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.467030330323
+         "value": 6.35294117647
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.293654963215
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.467030330323
+         "value": 4.96078431373
       }
    ]
 }, {
    "timestamp": "2020-04-10 16:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.441529883865
+         "value": 4.85
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 5.35
       },
       {
          "name": "M1Power",
-         "value": 0.441529883865
+         "value": 5.225
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.441529883865
+         "value": 4.95
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.216255934476
+         "value": 0.6
       },
       {
          "name": "M1Water",
-         "value": 0.441529883865
+         "value": 5.625
       }
    ]
 }, {
    "timestamp": "2020-04-10 16:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.436136618454
+         "value": 5.31578947368
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 5.09523809524
       },
       {
          "name": "M1Power",
-         "value": 0.436136618454
+         "value": 6.23684210526
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.436136618454
+         "value": 5.94736842105
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.444444444444
       },
       {
          "name": "M1Water",
-         "value": 0.436136618454
+         "value": 4.97368421053
       }
    ]
 }, {
    "timestamp": "2020-04-10 17:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.480504757626
+         "value": 4.60344827586
       },
       {
          "name": "M1Medical",
-         "value": 0.418039523089
+         "value": 5.09375
       },
       {
          "name": "M1Power",
-         "value": 0.480504757626
+         "value": 5.36206896552
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.480504757626
+         "value": 5.74137931034
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.155704272823
+         "value": 0.333333333333
       },
       {
          "name": "M1Water",
-         "value": 0.480504757626
+         "value": 4.29310344828
       }
    ]
 }, {
    "timestamp": "2020-04-10 17:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 5.5
       },
       {
          "name": "M1Medical",
-         "value": 0.344441621633
+         "value": 7.25
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 5.69047619048
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 5.09523809524
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.103802848548
+         "value": 0.5
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 5.16666666667
       }
    ]
 }, {
    "timestamp": "2020-04-10 18:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.480504757626
+         "value": 5.63793103448
       },
       {
          "name": "M1Medical",
-         "value": 0.411230949152
+         "value": 5.26666666667
       },
       {
          "name": "M1Power",
-         "value": 0.480504757626
+         "value": 5.60344827586
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.480504757626
+         "value": 5.27586206897
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.30403524807
+         "value": 0.727272727273
       },
       {
          "name": "M1Water",
-         "value": 0.480504757626
+         "value": 5.13793103448
       }
    ]
 }, {
    "timestamp": "2020-04-10 18:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.449128228266
+         "value": 5.20930232558
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 3.88235294118
       },
       {
          "name": "M1Power",
-         "value": 0.449128228266
+         "value": 5.76744186047
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.449128228266
+         "value": 5.88372093023
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.449128228266
+         "value": 5.58139534884
       }
    ]
 }, {
    "timestamp": "2020-04-10 19:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.515430893563
+         "value": 5.53086419753
       },
       {
          "name": "M1Medical",
-         "value": 0.407651540582
+         "value": 5.13793103448
       },
       {
          "name": "M1Power",
-         "value": 0.515430893563
+         "value": 5.18518518519
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.515430893563
+         "value": 4.92592592593
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.313471870665
+         "value": 0.416666666667
       },
       {
          "name": "M1Water",
-         "value": 0.515430893563
+         "value": 5.45679012346
       }
    ]
 }, {
    "timestamp": "2020-04-10 19:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.482294461912
+         "value": 6.25423728814
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 6.38095238095
       },
       {
          "name": "M1Power",
-         "value": 0.484053832226
+         "value": 4.88333333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.484053832226
+         "value": 4.81666666667
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.357035349582
+         "value": 0.444444444444
       },
       {
          "name": "M1Water",
-         "value": 0.482294461912
+         "value": 5.79661016949
       }
    ]
 }, {
    "timestamp": "2020-04-10 20:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.462835847871
+         "value": 5.75510204082
       },
       {
          "name": "M1Medical",
-         "value": 0.396107328792
+         "value": 4.34615384615
       },
       {
          "name": "M1Power",
-         "value": 0.462835847871
+         "value": 5.10204081633
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.462835847871
+         "value": 5.14285714286
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.444444444444
       },
       {
          "name": "M1Water",
-         "value": 0.462835847871
+         "value": 5.30612244898
       }
    ]
 }, {
    "timestamp": "2020-04-10 20:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.451542248
+         "value": 6.11363636364
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 4
       },
       {
          "name": "M1Power",
-         "value": 0.453901403649
+         "value": 5.06666666667
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.453901403649
+         "value": 4.95555555556
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.282121313376
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.451542248
+         "value": 5
       }
    ]
 }, {
    "timestamp": "2020-04-10 21:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.464954273352
+         "value": 6.06
       },
       {
          "name": "M1Medical",
-         "value": 0.350929299667
+         "value": 6.94117647059
       },
       {
          "name": "M1Power",
-         "value": 0.464954273352
+         "value": 5.3
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.464954273352
+         "value": 5.32
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.714285714286
       },
       {
          "name": "M1Water",
-         "value": 0.464954273352
+         "value": 5.4
       }
    ]
 }, {
    "timestamp": "2020-04-10 21:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.446656731872
+         "value": 5.71428571429
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 5.90909090909
       },
       {
          "name": "M1Power",
-         "value": 0.446656731872
+         "value": 5.14285714286
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.446656731872
+         "value": 5.35714285714
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.25
       },
       {
          "name": "M1Water",
-         "value": 0.446656731872
+         "value": 4.97619047619
       }
    ]
 }, {
    "timestamp": "2020-04-10 22:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.473020433233
+         "value": 4.68518518519
       },
       {
          "name": "M1Medical",
-         "value": 0.373455624747
+         "value": 3.80952380952
       },
       {
          "name": "M1Power",
-         "value": 0.473020433233
+         "value": 5.09259259259
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.473020433233
+         "value": 5.74074074074
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.344441621633
+         "value": 0.5625
       },
       {
          "name": "M1Water",
-         "value": 0.473020433233
+         "value": 5.59259259259
       }
    ]
 }, {
    "timestamp": "2020-04-10 22:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.430447723602
+         "value": 5.38888888889
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 6.18181818182
       },
       {
          "name": "M1Power",
-         "value": 0.430447723602
+         "value": 5.38888888889
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.430447723602
+         "value": 5.75
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.237016504186
+         "value": 0.666666666667
       },
       {
          "name": "M1Water",
-         "value": 0.430447723602
+         "value": 5.80555555556
       }
    ]
 }, {
    "timestamp": "2020-04-10 23:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.469065680294
+         "value": 5.55769230769
       },
       {
          "name": "M1Medical",
-         "value": 0.378398617535
+         "value": 4.81818181818
       },
       {
          "name": "M1Power",
-         "value": 0.469065680294
+         "value": 4.94230769231
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.469065680294
+         "value": 5.69230769231
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.269145957308
+         "value": 0.625
       },
       {
          "name": "M1Water",
-         "value": 0.469065680294
+         "value": 4.5
       }
    ]
 }, {
    "timestamp": "2020-04-10 23:30:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.444124955079
+         "value": 5.17073170732
       },
       {
          "name": "M1Medical",
-         "value": 0.36826548232
+         "value": 4.85
       },
       {
          "name": "M1Power",
-         "value": 0.444124955079
+         "value": 5.07317073171
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.444124955079
+         "value": 4.39024390244
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.254316978944
+         "value": 0.571428571429
       },
       {
          "name": "M1Water",
-         "value": 0.444124955079
+         "value": 5.70731707317
       }
    ]
 }, {
    "timestamp": "2020-04-11 00:00:00",
    "data": [{
          "name": "M1Buildings",
-         "value": 0.237016504186
+         "value": 5
       },
       {
          "name": "M1Medical",
-         "value": 0
+         "value": 10
       },
       {
          "name": "M1Power",
-         "value": 0.237016504186
+         "value": 4.83333333333
       },
       {
          "name": "M1RoadsAndBridges",
-         "value": 0.237016504186
+         "value": 5.66666666667
       },
       {
          "name": "M1Shakeintensity",
-         "value": 0.103802848548
+         "value": 0
       },
       {
          "name": "M1Water",
-         "value": 0.237016504186
+         "value": 5.5
       }
    ]
 }]
