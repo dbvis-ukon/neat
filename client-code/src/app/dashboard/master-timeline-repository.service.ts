@@ -143,6 +143,12 @@ export class MasterTimelineRepositoryService {
       dataUrl: '/assets/STDMC3C.json',
       colors: d3.schemeCategory10 as string[]
     },
+    {
+      type: 'streamgraph',
+      title: 'MC3 Category Entropy',
+      dataUrl: '/assets/EntropyMC3C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
 
     {
       type: 'streamgraph',
@@ -154,6 +160,12 @@ export class MasterTimelineRepositoryService {
       type: 'streamgraph',
       title: 'MC3 Location StdDev',
       dataUrl: '/assets/STDMC3L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC3 Location Entropy',
+      dataUrl: '/assets/EntropyMC3L.json',
       colors: d3.schemeCategory10 as string[]
     },
   ];
