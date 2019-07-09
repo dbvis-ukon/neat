@@ -233,6 +233,7 @@ export class TimelineVisComponent implements OnInit {
       .call(this.axisBottom);
 
     this.updateOwnBrush();
+    this.updateStreamGraph();
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
