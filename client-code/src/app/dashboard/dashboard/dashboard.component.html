@@ -83,6 +83,7 @@
 
         <dbvis-episode-vis
           *ngIf="timelineItem.type === 'episodes'" 
+          class="episode"
           [episode]="timelineItem.episodeCategory.episodes" 
           [showText]="timelineItem.episodeOptions.showText" 
           [showHorizontally]="timelineItem.episodeOptions.rotate">

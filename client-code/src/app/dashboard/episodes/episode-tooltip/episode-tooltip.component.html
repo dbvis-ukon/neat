@@ -1,7 +1,14 @@
-<div style="background-color: white">
-    <div style="font-size: 10px" *ngFor="let utterance of utterances">
+<div class="episode-tooltip">
+
+    <mat-list>
+        <mat-list-item class="list-item" *ngFor="let utterance of utterances">
+            <h4 mat-line>{{utterance.account}} @{{utterance.timestamp}} in {{utterance.location}}</h4>
+            <p mat-line> {{utterance.text}} </p>
+        </mat-list-item>
+    </mat-list>
+    <!-- <div style="font-size: 10px" *ngFor="let utterance of utterances">
         <h5>{{utterance.timestamp}} {{utterance.location}}</h5>
         <p>{{utterance.account}}: {{utterance.text}}</p>
-    </div>
+    </div> -->
 </div>
 

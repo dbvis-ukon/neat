@@ -172,7 +172,8 @@ export class MasterTimelineRepositoryService {
 
   private readonly defaultItems: string[] = [
     'MC1 Category Volume',
-    'MC2 Category Volume'
+    'MC2 Category Volume',
+    'Dead People'
   ];
 
   constructor(

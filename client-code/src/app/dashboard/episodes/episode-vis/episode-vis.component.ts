@@ -21,7 +21,7 @@ import {
   EpisodeCalculatorService
 } from '../episode-calculator.service';
 import {
-  Selection
+  Selection, ScaleTime, ScaleLinear
 } from 'd3';
 import {
   Utterance
@@ -30,6 +30,7 @@ import { Observable } from 'rxjs';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
 import { UserOptionsRepositoryService } from '@app/core';
+import { ResizedEvent } from 'angular-resize-event';
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -52,12 +53,17 @@ export class EpisodeVisComponent implements OnInit {
 
     episodeObservable.subscribe(episodes => {
       this._myEpisodes = episodes.filter(e => e.significance > 40);
-      this._myEpisodes.forEach((episode) => {
-      this.maxColumns = Math.max(episode.columnId, this.maxColumns);
-    });
       this.myEpisodes = this._myEpisodes;
-      this.svgWidth = this.maxColumns * this.barWidth * 0.1 + 100;
+
+      this.myEpisodes.forEach(d =>{
+        d.startTimestamp = new Date(d.startTimestamp);
+        d.endTimestamp = new Date(d.endTimestamp);
+        this.maxRow = Math.max(this.maxRow, d.rowIds[d.rowIds.length - 1]);
+    });
+
       this.createOrUpdateVis();
+      this.svgWidth = 100;//this.maxColumns * this.barWidth;
+      this.translateG(this.svgWidth);
     });
   }
 
@@ -66,15 +72,15 @@ export class EpisodeVisComponent implements OnInit {
     this._showText = showText;
 
     if (showText) {
-      this.svgWidth = this.maxColumns * this.barWidth * 0.1 + 300;
-      this.paddingForLabels = 3500;
-      this.translateG(0);
+      this.svgWidth = this.maxColumns * this.barWidth + 400;
+      this.paddingForLabels = 100;
+      this.translateG(this.svgWidth);
       this.expandVis();
     } else {
       if (this.svg !== undefined) {
-        this.svgWidth = this.maxColumns * this.barWidth * 0.1 + 0;
+        this.svgWidth = this.maxColumns * this.barWidth;
         this.paddingForLabels = 0;
-        this.translateG(80);
+        this.translateG(this.svgWidth);
         this.compactVis();
         this.svgSelection.selectAll('.episodeToLabelLine').remove();
         this.svgSelection.selectAll('.episodeLabel').remove();
@@ -95,21 +101,17 @@ export class EpisodeVisComponent implements OnInit {
       return;
     }
 
-    if (showHorizontally) {
-      this.svgSelection
-      .attr('transform', 'rotate(90)');
-      const temporalHeight = this.svgWidth;
-      this.svgWidth = this.svgHeight;
-      this.svgHeight = temporalHeight;
-      this.paddingForLabels = 3500;
-      this.translateG(0);
-    } else {
-
-    }
+    this.translateG(this.svgWidth);
   }
 
   get showHorizontally(): boolean {
     return this._showHorizontally;
+  }
+
+  onResized(event: ResizedEvent) {
+    this.svgHeight = event.newWidth - 30;
+    this.svgWidth = 100;//this.maxColumns * this.barWidth;
+    this.translateG(0);
   }
 
   @ViewChild('svg') svgRef: ElementRef<SVGElement>;
@@ -125,16 +127,16 @@ export class EpisodeVisComponent implements OnInit {
 
   private numberOfSentences = 0;
   private svgWidth = 100; //// ToDo take the info about maxColumn
-  private svgHeight = 2000;
+  private svgHeight = 0; // ToDo get width of parent container
   private oneTextElementHeight = 3; // ToDo change of the height of one sentence
-  private paddingHeight = 50;
   private paddingForLabels = 0;
-  private barWidth = 50;
-  private fontSize = 100;
-  private heightScale = 0;
-  private timestamps: string[] = [];
-  private lastBarY = 0;
+  private barWidth = 3;
+  private fontSize = 10;
   private maxColumns = 0;
+  private maxRow = 0;
+  private myScale: ScaleTime<number, number> = d3.scaleTime().domain([ new Date('2020-04-06 00:00:00'), new Date('2020-04-10 12:00:00')]);
+  private episodeColumnScale: ScaleLinear<number, number> = d3.scaleLinear();
+  private defaultHeight = 2000;
 
 
   // All episodes as originally received
@@ -159,12 +161,12 @@ export class EpisodeVisComponent implements OnInit {
 
     this.createFirst();
 
-    this.userOptionsService.userOptions$.subscribe(options => {
-      // TODO filter stuff
-      // console.log(options);
-      const [minBrush, maxBrush] = options.timelineBrush;
-      this.createOrUpdateVis();
-    });
+    // this.userOptionsService.userOptions$.subscribe(options => {
+    //   // TODO filter stuff
+    //   // console.log(options);
+    //   const [minBrush, maxBrush] = options.timelineBrush;
+    //   this.createOrUpdateVis();
+    // });
   }
 
   // private applyTimelineBrush(brush?: [Date, Date]): Episode[] {
@@ -182,24 +184,27 @@ export class EpisodeVisComponent implements OnInit {
 
     /*first sort episodes according to their occurrence in text*/
     this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
+    this.episodeColumnScale.domain([0, this.maxColumns]);
     this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
 
     this.createEpisodeBars(this.myEpisodes, this.numberOfSentences);
-    this.updateLayout(this.numberOfSentences);
 
     /* create small lines on top of the episode bars to show where exactly they occur in text */
     const lineData = this.getLineData(this.myEpisodes);
-    this.createEpisodeLines(lineData);
-    this.updateEpisodeLines(lineData);
+    //this.createEpisodeLines(lineData);
+    //this.updateEpisodeLines(lineData);
+    // if(this._showHorizontally){
+    //   this.svgSelection.select('#gContainerForEpisodeBars')
+    //   .attr('transform', 'rotate(90)');
+    // }
   }
 
   private expandVis() {
 
     /* create labels */
-    this.updateLayout(this.numberOfSentences);
     this.update();
-    const lineData = this.getLineData(this.myEpisodes);
-    this.updateEpisodeLines(lineData);
+    //const lineData = this.getLineData(this.myEpisodes);
+    //this.updateEpisodeLines(lineData);
 
     const labels = this.getLabelData(this.myEpisodes);
     this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
@@ -212,9 +217,7 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private compactVis() {
-
     /* create labels */
-    this.updateLayout(this.numberOfSentences);
     this.update();
   }
 
@@ -276,6 +279,7 @@ export class EpisodeVisComponent implements OnInit {
       /* create a position object for this episode*/
       episode.columnId = leftmostNotOccupied;
       episode.rowIds = globalUtteranceIndexesForWords;
+      this.maxColumns = Math.max(this.maxColumns, leftmostNotOccupied);
 
     });
   }
@@ -283,14 +287,39 @@ export class EpisodeVisComponent implements OnInit {
   private initializeEpisodeBars() {
     this.svgSelection
       .append('g')
-      .attr('id', 'gContainerForEpisodeBars')
-      .attr('transform', 'translate(80, 0)scale(0.1, 0.1)');
+      .attr('id', 'gContainerForEpisodeBars');
   }
 
   private translateG(x: number) {
-    this.svgSelection
+    if (this._showHorizontally) {
+      this.myScale
+      .range([0, this.svgHeight]);
+
+      this.episodeColumnScale.range([0, this.svgWidth]);
+
+      this.svgSelection
+        .attr('height', this.svgWidth)
+        .attr('width', this.svgHeight)
+        .select('#gContainerForEpisodeBars')
+        .attr('transform', `rotate(-90 50 50)`);
+
+        this.update();
+    } else {
+      this.svgHeight = this.defaultHeight;
+      this.myScale
+      .range([0, this.svgHeight]);
+
+      this.episodeColumnScale.range([0, this.svgWidth]);
+      
+      this.svgSelection
+      .attr('height', this.svgHeight)
+      .attr('width', this.svgWidth)
       .select('#gContainerForEpisodeBars')
-      .attr('transform', 'translate(' + x + ', 0)scale(0.1, 0.1)');
+      .attr('transform', `rotate(0)translate(${2*x/3}, 0)`);
+
+      //this.update();
+      // .attr('transform', 'translate(' + (x / 0.1) + ', 0)');
+    }
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
@@ -326,21 +355,9 @@ export class EpisodeVisComponent implements OnInit {
     // console.log(this._utterance);
   }
 
-  private updateLayout(numberOfTextElements: number): void {
-    // this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
-    this.heightScale = window.innerHeight / this.svgHeight;
-    this.svgSelection
-      .attr('height', this.svgHeight)
-      .attr('width', this.svgWidth);
-  }
-
   private createFirst(): void {
     this.createSVG();
     this.initializeEpisodeBars();
-
-    /* create text bars */
-    // this.initializeUtterances();
-    /* create episode bars */
   }
 
   private createSVG(): void {
@@ -385,20 +402,14 @@ export class EpisodeVisComponent implements OnInit {
   private update(): void {
 
     this.svgSelection.selectAll<SVGRectElement, Episode>('.episodeBar')
-      .attr('x', (d) => this.paddingForLabels + this.svgWidth / 3 - (this.barWidth * d.columnId))
-      .attr('y', (d) => {
-        if (this.lastBarY < d.rowIds[d.rowIds.length - 1] * 0.1) {
-          this.lastBarY = d.rowIds[d.rowIds.length - 1] * 0.1;
-        }
-        return this.paddingHeight + this.oneTextElementHeight * d.rowIds[0];
-      })
-      .attr('height', (d) => this.oneTextElementHeight * (d.rowIds[d.rowIds.length - 1] - d.rowIds[0]))
-      .attr('width', this.barWidth)
+      .attr('x', (d) => d.columnId * this.barWidth)//this.episodeColumnScale(d.columnId))// 
+      .attr('y', (d) => this.myScale(d.startTimestamp))
+      .attr('height', (d) => this.myScale(d.endTimestamp) - this.myScale(d.startTimestamp))
+      .attr('width', (d) => this.barWidth)//this.episodeColumnScale(1) - this.episodeColumnScale(0))//
       .style('fill', (d) => d.color);
 
 
     // bars.exit().remove();
-    console.log('updated');
   }
 
   private createEpisodeLines(lines: Line[]): void {
@@ -448,8 +459,8 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeLabel')
       .data<Episode>(episodes)
-      .attr('x', () => 0)
-      .attr('y', (d, i) => this.paddingHeight + this.sortedLabels[i])
+      .attr('x', () => -200)
+      .attr('y', (d, i) => this.sortedLabels[i])
       .style('font-size', this.fontSize);
   }
 
@@ -466,12 +477,12 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeToLabelLine')
       .data<Episode>(episodes)
-      .attr('x1', this.fontSize * 4)
-      .attr('y1', (d, i) => this.paddingHeight + this.sortedLabels[i])
-      .attr('x2', (d) => this.paddingForLabels + this.svgWidth / 3 - (this.barWidth * d.columnId))
-      .attr('y2', (d) => this.paddingHeight + this.oneTextElementHeight * d.rowIds[0] + 2)
+      .attr('x1', this.fontSize * 4 - 200)
+      .attr('y1', (d, i) => this.sortedLabels[i])
+      .attr('x2', (d) => (this.barWidth * d.columnId))
+      .attr('y2', (d) => this.myScale(d.startTimestamp) + 2)
       .style('stroke', 'black')
-      .style('stroke-width', 2);
+      .style('stroke-width', 0.2);
   }
 
   private setColumnPartOccupied(episodeLayout, leftmostNotOccupied, firstRowPosition, lastRowPosition): void {
@@ -494,7 +505,7 @@ export class EpisodeVisComponent implements OnInit {
   private getLabelData(episodes: Episode[]): any[] {
     const labels = [];
     episodes.forEach((episode) => {
-      labels.push(this.paddingHeight + episode.rowIds[0] * this.oneTextElementHeight);
+      labels.push(this.myScale(episode.startTimestamp))//episode.rowIds[0] * this.oneTextElementHeight);
     });
     return labels;
   }
@@ -549,8 +560,8 @@ export class EpisodeVisComponent implements OnInit {
         linesData.push({
           x1: that.paddingForLabels + (that.svgWidth / 3) - (that.barWidth * episode.columnId),
           x2: that.paddingForLabels + (that.svgWidth / 3) - (that.barWidth * episode.columnId - that.barWidth),
-          y1: that.paddingHeight + row * that.oneTextElementHeight,
-          y2: that.paddingHeight + row * that.oneTextElementHeight
+          y1: row * that.oneTextElementHeight,
+          y2: row * that.oneTextElementHeight
         });
       });
     });
