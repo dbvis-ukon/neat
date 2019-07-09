@@ -233,6 +233,7 @@ export class TimelineVisComponent implements OnInit {
       .call(this.axisBottom);
 
     this.updateOwnBrush();
+    this.updateStreamGraph();
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
@@ -305,7 +306,7 @@ export class TimelineVisComponent implements OnInit {
 
   private updateStreamGraph() {
     if (this.streamGraph && this._streamGraphData && this._streamGraphColors) {
-      this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height, this.timeScale);
+      this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height - 20, this.timeScale);
     }
   }
 }

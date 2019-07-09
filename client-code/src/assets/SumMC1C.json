@@ -1,0 +1,6508 @@
+[{
+   "timestamp": "2020-04-06 00:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 266
+      },
+      {
+         "name": "M1Medical",
+         "value": 95
+      },
+      {
+         "name": "M1Power",
+         "value": 246
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 268
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 256
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 00:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 175
+      },
+      {
+         "name": "M1Medical",
+         "value": 81
+      },
+      {
+         "name": "M1Power",
+         "value": 194
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 204
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 266
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 01:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 286
+      },
+      {
+         "name": "M1Medical",
+         "value": 135
+      },
+      {
+         "name": "M1Power",
+         "value": 287
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 272
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 302
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 01:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 238
+      },
+      {
+         "name": "M1Medical",
+         "value": 105
+      },
+      {
+         "name": "M1Power",
+         "value": 191
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 215
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 219
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 02:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 227
+      },
+      {
+         "name": "M1Medical",
+         "value": 116
+      },
+      {
+         "name": "M1Power",
+         "value": 261
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 267
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 02:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 318
+      },
+      {
+         "name": "M1Medical",
+         "value": 123
+      },
+      {
+         "name": "M1Power",
+         "value": 260
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 264
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 269
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 03:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 230
+      },
+      {
+         "name": "M1Medical",
+         "value": 121
+      },
+      {
+         "name": "M1Power",
+         "value": 239
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 226
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 230
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 03:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 226
+      },
+      {
+         "name": "M1Medical",
+         "value": 90
+      },
+      {
+         "name": "M1Power",
+         "value": 130
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 170
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 200
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 04:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 279
+      },
+      {
+         "name": "M1Medical",
+         "value": 126
+      },
+      {
+         "name": "M1Power",
+         "value": 288
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 314
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 278
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 04:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 158
+      },
+      {
+         "name": "M1Medical",
+         "value": 52
+      },
+      {
+         "name": "M1Power",
+         "value": 162
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 172
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 190
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 05:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 252
+      },
+      {
+         "name": "M1Medical",
+         "value": 71
+      },
+      {
+         "name": "M1Power",
+         "value": 260
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 209
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 260
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 05:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 292
+      },
+      {
+         "name": "M1Medical",
+         "value": 164
+      },
+      {
+         "name": "M1Power",
+         "value": 279
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 281
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 234
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 06:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 323
+      },
+      {
+         "name": "M1Medical",
+         "value": 145
+      },
+      {
+         "name": "M1Power",
+         "value": 294
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 255
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 275
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 06:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 227
+      },
+      {
+         "name": "M1Medical",
+         "value": 86
+      },
+      {
+         "name": "M1Power",
+         "value": 262
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 270
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 212
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 07:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 358
+      },
+      {
+         "name": "M1Medical",
+         "value": 164
+      },
+      {
+         "name": "M1Power",
+         "value": 370
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 402
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 361
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 07:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 304
+      },
+      {
+         "name": "M1Medical",
+         "value": 99
+      },
+      {
+         "name": "M1Power",
+         "value": 282
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 289
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 266
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 08:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 234
+      },
+      {
+         "name": "M1Medical",
+         "value": 175
+      },
+      {
+         "name": "M1Power",
+         "value": 257
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 303
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 282
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 08:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 230
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 254
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 310
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 231
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 09:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 242
+      },
+      {
+         "name": "M1Medical",
+         "value": 110
+      },
+      {
+         "name": "M1Power",
+         "value": 307
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 266
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 266
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 09:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 253
+      },
+      {
+         "name": "M1Medical",
+         "value": 113
+      },
+      {
+         "name": "M1Power",
+         "value": 286
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 271
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 269
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 10:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 222
+      },
+      {
+         "name": "M1Medical",
+         "value": 114
+      },
+      {
+         "name": "M1Power",
+         "value": 222
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 221
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 221
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 10:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 235
+      },
+      {
+         "name": "M1Medical",
+         "value": 80
+      },
+      {
+         "name": "M1Power",
+         "value": 213
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 233
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 0
+      },
+      {
+         "name": "M1Water",
+         "value": 239
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 11:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 306
+      },
+      {
+         "name": "M1Medical",
+         "value": 109
+      },
+      {
+         "name": "M1Power",
+         "value": 258
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 274
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 267
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 11:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 253
+      },
+      {
+         "name": "M1Medical",
+         "value": 89
+      },
+      {
+         "name": "M1Power",
+         "value": 297
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 284
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 259
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 12:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 271
+      },
+      {
+         "name": "M1Medical",
+         "value": 129
+      },
+      {
+         "name": "M1Power",
+         "value": 259
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 292
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 281
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 12:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 214
+      },
+      {
+         "name": "M1Medical",
+         "value": 103
+      },
+      {
+         "name": "M1Power",
+         "value": 256
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 213
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 229
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 13:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 257
+      },
+      {
+         "name": "M1Medical",
+         "value": 141
+      },
+      {
+         "name": "M1Power",
+         "value": 256
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 285
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 257
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 13:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 281
+      },
+      {
+         "name": "M1Medical",
+         "value": 88
+      },
+      {
+         "name": "M1Power",
+         "value": 267
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 305
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 236
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 14:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 306
+      },
+      {
+         "name": "M1Medical",
+         "value": 143
+      },
+      {
+         "name": "M1Power",
+         "value": 277
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 287
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 320
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 14:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 578
+      },
+      {
+         "name": "M1Medical",
+         "value": 184
+      },
+      {
+         "name": "M1Power",
+         "value": 366
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 427
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 89
+      },
+      {
+         "name": "M1Water",
+         "value": 363
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 15:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 541
+      },
+      {
+         "name": "M1Medical",
+         "value": 141
+      },
+      {
+         "name": "M1Power",
+         "value": 348
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 412
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 74
+      },
+      {
+         "name": "M1Water",
+         "value": 401
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 15:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 442
+      },
+      {
+         "name": "M1Medical",
+         "value": 147
+      },
+      {
+         "name": "M1Power",
+         "value": 301
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 377
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 51
+      },
+      {
+         "name": "M1Water",
+         "value": 352
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 16:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1924
+      },
+      {
+         "name": "M1Medical",
+         "value": 431
+      },
+      {
+         "name": "M1Power",
+         "value": 782
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1220
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 197
+      },
+      {
+         "name": "M1Water",
+         "value": 871
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 16:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1368
+      },
+      {
+         "name": "M1Medical",
+         "value": 384
+      },
+      {
+         "name": "M1Power",
+         "value": 530
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 870
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 160
+      },
+      {
+         "name": "M1Water",
+         "value": 651
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 17:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1120
+      },
+      {
+         "name": "M1Medical",
+         "value": 326
+      },
+      {
+         "name": "M1Power",
+         "value": 573
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 736
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 122
+      },
+      {
+         "name": "M1Water",
+         "value": 666
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 17:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 780
+      },
+      {
+         "name": "M1Medical",
+         "value": 244
+      },
+      {
+         "name": "M1Power",
+         "value": 429
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 636
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 57
+      },
+      {
+         "name": "M1Water",
+         "value": 485
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 18:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 501
+      },
+      {
+         "name": "M1Medical",
+         "value": 151
+      },
+      {
+         "name": "M1Power",
+         "value": 294
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 427
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 44
+      },
+      {
+         "name": "M1Water",
+         "value": 317
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 18:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 450
+      },
+      {
+         "name": "M1Medical",
+         "value": 143
+      },
+      {
+         "name": "M1Power",
+         "value": 290
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 388
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 28
+      },
+      {
+         "name": "M1Water",
+         "value": 324
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 19:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 449
+      },
+      {
+         "name": "M1Medical",
+         "value": 158
+      },
+      {
+         "name": "M1Power",
+         "value": 295
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 387
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 24
+      },
+      {
+         "name": "M1Water",
+         "value": 323
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 19:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 296
+      },
+      {
+         "name": "M1Medical",
+         "value": 114
+      },
+      {
+         "name": "M1Power",
+         "value": 286
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 341
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 18
+      },
+      {
+         "name": "M1Water",
+         "value": 285
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 20:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 250
+      },
+      {
+         "name": "M1Medical",
+         "value": 76
+      },
+      {
+         "name": "M1Power",
+         "value": 222
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 243
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 15
+      },
+      {
+         "name": "M1Water",
+         "value": 217
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 20:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 313
+      },
+      {
+         "name": "M1Medical",
+         "value": 111
+      },
+      {
+         "name": "M1Power",
+         "value": 272
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 245
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 292
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 21:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 318
+      },
+      {
+         "name": "M1Medical",
+         "value": 138
+      },
+      {
+         "name": "M1Power",
+         "value": 294
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 326
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 295
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 21:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 304
+      },
+      {
+         "name": "M1Medical",
+         "value": 143
+      },
+      {
+         "name": "M1Power",
+         "value": 291
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 10
+      },
+      {
+         "name": "M1Water",
+         "value": 270
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 22:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 369
+      },
+      {
+         "name": "M1Medical",
+         "value": 136
+      },
+      {
+         "name": "M1Power",
+         "value": 290
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 356
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 284
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 22:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 328
+      },
+      {
+         "name": "M1Medical",
+         "value": 160
+      },
+      {
+         "name": "M1Power",
+         "value": 307
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 282
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 305
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 23:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 253
+      },
+      {
+         "name": "M1Medical",
+         "value": 141
+      },
+      {
+         "name": "M1Power",
+         "value": 215
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 269
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 243
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 23:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 268
+      },
+      {
+         "name": "M1Medical",
+         "value": 137
+      },
+      {
+         "name": "M1Power",
+         "value": 227
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 254
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 257
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 00:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 350
+      },
+      {
+         "name": "M1Medical",
+         "value": 114
+      },
+      {
+         "name": "M1Power",
+         "value": 359
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 275
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 316
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 00:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 303
+      },
+      {
+         "name": "M1Medical",
+         "value": 124
+      },
+      {
+         "name": "M1Power",
+         "value": 321
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 293
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 303
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 01:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 231
+      },
+      {
+         "name": "M1Medical",
+         "value": 138
+      },
+      {
+         "name": "M1Power",
+         "value": 264
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 279
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 279
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 01:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 185
+      },
+      {
+         "name": "M1Medical",
+         "value": 71
+      },
+      {
+         "name": "M1Power",
+         "value": 187
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 201
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 201
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 02:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 254
+      },
+      {
+         "name": "M1Medical",
+         "value": 87
+      },
+      {
+         "name": "M1Power",
+         "value": 277
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 259
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 263
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 02:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 256
+      },
+      {
+         "name": "M1Medical",
+         "value": 121
+      },
+      {
+         "name": "M1Power",
+         "value": 255
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 264
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 263
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 03:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 253
+      },
+      {
+         "name": "M1Medical",
+         "value": 89
+      },
+      {
+         "name": "M1Power",
+         "value": 321
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 332
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 267
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 03:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 346
+      },
+      {
+         "name": "M1Medical",
+         "value": 147
+      },
+      {
+         "name": "M1Power",
+         "value": 299
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 274
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 303
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 04:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 273
+      },
+      {
+         "name": "M1Medical",
+         "value": 118
+      },
+      {
+         "name": "M1Power",
+         "value": 244
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 235
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 208
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 04:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 288
+      },
+      {
+         "name": "M1Medical",
+         "value": 127
+      },
+      {
+         "name": "M1Power",
+         "value": 239
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 242
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 242
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 05:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 211
+      },
+      {
+         "name": "M1Medical",
+         "value": 103
+      },
+      {
+         "name": "M1Power",
+         "value": 208
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 197
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 213
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 05:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 316
+      },
+      {
+         "name": "M1Medical",
+         "value": 160
+      },
+      {
+         "name": "M1Power",
+         "value": 275
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 297
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 326
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 06:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 231
+      },
+      {
+         "name": "M1Medical",
+         "value": 91
+      },
+      {
+         "name": "M1Power",
+         "value": 161
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 220
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 181
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 06:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 278
+      },
+      {
+         "name": "M1Medical",
+         "value": 60
+      },
+      {
+         "name": "M1Power",
+         "value": 270
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 227
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 209
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 07:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 197
+      },
+      {
+         "name": "M1Medical",
+         "value": 113
+      },
+      {
+         "name": "M1Power",
+         "value": 207
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 228
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 197
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 07:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 190
+      },
+      {
+         "name": "M1Medical",
+         "value": 122
+      },
+      {
+         "name": "M1Power",
+         "value": 223
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 185
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 186
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 08:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 200
+      },
+      {
+         "name": "M1Medical",
+         "value": 106
+      },
+      {
+         "name": "M1Power",
+         "value": 186
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 214
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 245
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 08:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 316
+      },
+      {
+         "name": "M1Medical",
+         "value": 175
+      },
+      {
+         "name": "M1Power",
+         "value": 310
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 309
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 341
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 09:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 290
+      },
+      {
+         "name": "M1Medical",
+         "value": 106
+      },
+      {
+         "name": "M1Power",
+         "value": 250
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 289
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 277
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 09:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 253
+      },
+      {
+         "name": "M1Medical",
+         "value": 131
+      },
+      {
+         "name": "M1Power",
+         "value": 281
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 306
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 353
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 10:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 250
+      },
+      {
+         "name": "M1Medical",
+         "value": 126
+      },
+      {
+         "name": "M1Power",
+         "value": 274
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 261
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 299
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 10:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 203
+      },
+      {
+         "name": "M1Medical",
+         "value": 83
+      },
+      {
+         "name": "M1Power",
+         "value": 227
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 199
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 184
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 11:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 278
+      },
+      {
+         "name": "M1Medical",
+         "value": 120
+      },
+      {
+         "name": "M1Power",
+         "value": 258
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 317
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 287
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 11:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 268
+      },
+      {
+         "name": "M1Medical",
+         "value": 98
+      },
+      {
+         "name": "M1Power",
+         "value": 294
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 307
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 254
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 12:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 261
+      },
+      {
+         "name": "M1Medical",
+         "value": 110
+      },
+      {
+         "name": "M1Power",
+         "value": 296
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 268
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 262
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 12:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 180
+      },
+      {
+         "name": "M1Medical",
+         "value": 91
+      },
+      {
+         "name": "M1Power",
+         "value": 221
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 182
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 219
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 13:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 220
+      },
+      {
+         "name": "M1Medical",
+         "value": 83
+      },
+      {
+         "name": "M1Power",
+         "value": 230
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 212
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 209
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 13:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 288
+      },
+      {
+         "name": "M1Medical",
+         "value": 138
+      },
+      {
+         "name": "M1Power",
+         "value": 291
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 353
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 295
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 14:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 307
+      },
+      {
+         "name": "M1Medical",
+         "value": 133
+      },
+      {
+         "name": "M1Power",
+         "value": 302
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 274
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 295
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 14:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 210
+      },
+      {
+         "name": "M1Medical",
+         "value": 71
+      },
+      {
+         "name": "M1Power",
+         "value": 207
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 171
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 168
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 15:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 230
+      },
+      {
+         "name": "M1Medical",
+         "value": 80
+      },
+      {
+         "name": "M1Power",
+         "value": 254
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 240
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 261
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 15:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 227
+      },
+      {
+         "name": "M1Medical",
+         "value": 126
+      },
+      {
+         "name": "M1Power",
+         "value": 226
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 225
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 282
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 16:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 200
+      },
+      {
+         "name": "M1Medical",
+         "value": 130
+      },
+      {
+         "name": "M1Power",
+         "value": 229
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 203
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 207
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 16:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 299
+      },
+      {
+         "name": "M1Medical",
+         "value": 120
+      },
+      {
+         "name": "M1Power",
+         "value": 321
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 297
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 316
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 17:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 311
+      },
+      {
+         "name": "M1Medical",
+         "value": 126
+      },
+      {
+         "name": "M1Power",
+         "value": 307
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 309
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 269
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 17:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 204
+      },
+      {
+         "name": "M1Medical",
+         "value": 108
+      },
+      {
+         "name": "M1Power",
+         "value": 149
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 157
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 183
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 18:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 213
+      },
+      {
+         "name": "M1Medical",
+         "value": 81
+      },
+      {
+         "name": "M1Power",
+         "value": 195
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 224
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 214
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 18:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 326
+      },
+      {
+         "name": "M1Medical",
+         "value": 156
+      },
+      {
+         "name": "M1Power",
+         "value": 316
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 298
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 291
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 19:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 296
+      },
+      {
+         "name": "M1Medical",
+         "value": 136
+      },
+      {
+         "name": "M1Power",
+         "value": 322
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 248
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 265
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 19:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 321
+      },
+      {
+         "name": "M1Medical",
+         "value": 115
+      },
+      {
+         "name": "M1Power",
+         "value": 284
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 279
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 9
+      },
+      {
+         "name": "M1Water",
+         "value": 298
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 20:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 237
+      },
+      {
+         "name": "M1Medical",
+         "value": 119
+      },
+      {
+         "name": "M1Power",
+         "value": 282
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 232
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 234
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 20:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 254
+      },
+      {
+         "name": "M1Medical",
+         "value": 111
+      },
+      {
+         "name": "M1Power",
+         "value": 266
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 285
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 281
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 21:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 205
+      },
+      {
+         "name": "M1Medical",
+         "value": 94
+      },
+      {
+         "name": "M1Power",
+         "value": 222
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 235
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 246
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 21:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 238
+      },
+      {
+         "name": "M1Medical",
+         "value": 92
+      },
+      {
+         "name": "M1Power",
+         "value": 236
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 264
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 243
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 22:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 232
+      },
+      {
+         "name": "M1Medical",
+         "value": 88
+      },
+      {
+         "name": "M1Power",
+         "value": 246
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 248
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 231
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 22:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 221
+      },
+      {
+         "name": "M1Medical",
+         "value": 79
+      },
+      {
+         "name": "M1Power",
+         "value": 281
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 239
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 255
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 23:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 228
+      },
+      {
+         "name": "M1Medical",
+         "value": 143
+      },
+      {
+         "name": "M1Power",
+         "value": 263
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 266
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 211
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 23:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 248
+      },
+      {
+         "name": "M1Medical",
+         "value": 126
+      },
+      {
+         "name": "M1Power",
+         "value": 282
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 246
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 00:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 232
+      },
+      {
+         "name": "M1Medical",
+         "value": 106
+      },
+      {
+         "name": "M1Power",
+         "value": 192
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 232
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 193
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 00:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 214
+      },
+      {
+         "name": "M1Medical",
+         "value": 124
+      },
+      {
+         "name": "M1Power",
+         "value": 218
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 251
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 193
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 01:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 303
+      },
+      {
+         "name": "M1Medical",
+         "value": 99
+      },
+      {
+         "name": "M1Power",
+         "value": 289
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 359
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 292
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 01:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 248
+      },
+      {
+         "name": "M1Medical",
+         "value": 88
+      },
+      {
+         "name": "M1Power",
+         "value": 294
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 248
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 322
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 02:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 213
+      },
+      {
+         "name": "M1Medical",
+         "value": 73
+      },
+      {
+         "name": "M1Power",
+         "value": 219
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 196
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 203
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 02:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 264
+      },
+      {
+         "name": "M1Medical",
+         "value": 144
+      },
+      {
+         "name": "M1Power",
+         "value": 260
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 213
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 274
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 03:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 288
+      },
+      {
+         "name": "M1Medical",
+         "value": 108
+      },
+      {
+         "name": "M1Power",
+         "value": 272
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 277
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 289
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 03:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 213
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 271
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 274
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 04:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 344
+      },
+      {
+         "name": "M1Medical",
+         "value": 205
+      },
+      {
+         "name": "M1Power",
+         "value": 277
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 361
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 284
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 04:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 173
+      },
+      {
+         "name": "M1Medical",
+         "value": 75
+      },
+      {
+         "name": "M1Power",
+         "value": 211
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 199
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 0
+      },
+      {
+         "name": "M1Water",
+         "value": 194
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 05:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 209
+      },
+      {
+         "name": "M1Medical",
+         "value": 136
+      },
+      {
+         "name": "M1Power",
+         "value": 235
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 220
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 170
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 05:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 257
+      },
+      {
+         "name": "M1Medical",
+         "value": 115
+      },
+      {
+         "name": "M1Power",
+         "value": 258
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 290
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 286
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 06:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 261
+      },
+      {
+         "name": "M1Medical",
+         "value": 77
+      },
+      {
+         "name": "M1Power",
+         "value": 241
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 241
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 06:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 335
+      },
+      {
+         "name": "M1Medical",
+         "value": 155
+      },
+      {
+         "name": "M1Power",
+         "value": 336
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 318
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 296
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 07:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 282
+      },
+      {
+         "name": "M1Medical",
+         "value": 149
+      },
+      {
+         "name": "M1Power",
+         "value": 270
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 279
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 279
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 07:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 200
+      },
+      {
+         "name": "M1Medical",
+         "value": 100
+      },
+      {
+         "name": "M1Power",
+         "value": 241
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 261
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 206
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 08:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 223
+      },
+      {
+         "name": "M1Medical",
+         "value": 93
+      },
+      {
+         "name": "M1Power",
+         "value": 205
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 247
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 08:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 33054
+      },
+      {
+         "name": "M1Medical",
+         "value": 23296
+      },
+      {
+         "name": "M1Power",
+         "value": 49312
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 40057
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 26863
+      },
+      {
+         "name": "M1Water",
+         "value": 37852
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 09:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 36506
+      },
+      {
+         "name": "M1Medical",
+         "value": 20799
+      },
+      {
+         "name": "M1Power",
+         "value": 55018
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 46632
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 28475
+      },
+      {
+         "name": "M1Water",
+         "value": 42958
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 09:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 19993
+      },
+      {
+         "name": "M1Medical",
+         "value": 4771
+      },
+      {
+         "name": "M1Power",
+         "value": 29085
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 26850
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 13361
+      },
+      {
+         "name": "M1Water",
+         "value": 23687
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 10:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 18693
+      },
+      {
+         "name": "M1Medical",
+         "value": 3706
+      },
+      {
+         "name": "M1Power",
+         "value": 27148
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 25393
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 11560
+      },
+      {
+         "name": "M1Water",
+         "value": 22789
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 10:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 16989
+      },
+      {
+         "name": "M1Medical",
+         "value": 3159
+      },
+      {
+         "name": "M1Power",
+         "value": 24660
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 23270
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8913
+      },
+      {
+         "name": "M1Water",
+         "value": 20818
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 11:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 12959
+      },
+      {
+         "name": "M1Medical",
+         "value": 2640
+      },
+      {
+         "name": "M1Power",
+         "value": 18715
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 17864
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6655
+      },
+      {
+         "name": "M1Water",
+         "value": 15959
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 11:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 12395
+      },
+      {
+         "name": "M1Medical",
+         "value": 4258
+      },
+      {
+         "name": "M1Power",
+         "value": 19044
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 15814
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6371
+      },
+      {
+         "name": "M1Water",
+         "value": 15107
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 12:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 8247
+      },
+      {
+         "name": "M1Medical",
+         "value": 1581
+      },
+      {
+         "name": "M1Power",
+         "value": 11756
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 10836
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3903
+      },
+      {
+         "name": "M1Water",
+         "value": 10033
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 12:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 2553
+      },
+      {
+         "name": "M1Medical",
+         "value": 635
+      },
+      {
+         "name": "M1Power",
+         "value": 4143
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 3529
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1980
+      },
+      {
+         "name": "M1Water",
+         "value": 2863
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 13:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1831
+      },
+      {
+         "name": "M1Medical",
+         "value": 476
+      },
+      {
+         "name": "M1Power",
+         "value": 2991
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 2497
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1404
+      },
+      {
+         "name": "M1Water",
+         "value": 2064
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 13:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1338
+      },
+      {
+         "name": "M1Medical",
+         "value": 287
+      },
+      {
+         "name": "M1Power",
+         "value": 2143
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1761
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1013
+      },
+      {
+         "name": "M1Water",
+         "value": 1445
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 14:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 958
+      },
+      {
+         "name": "M1Medical",
+         "value": 280
+      },
+      {
+         "name": "M1Power",
+         "value": 1453
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1215
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 666
+      },
+      {
+         "name": "M1Water",
+         "value": 1076
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 14:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 797
+      },
+      {
+         "name": "M1Medical",
+         "value": 240
+      },
+      {
+         "name": "M1Power",
+         "value": 1215
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1065
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 522
+      },
+      {
+         "name": "M1Water",
+         "value": 862
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 15:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 590
+      },
+      {
+         "name": "M1Medical",
+         "value": 135
+      },
+      {
+         "name": "M1Power",
+         "value": 973
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 824
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 438
+      },
+      {
+         "name": "M1Water",
+         "value": 654
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 15:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 458
+      },
+      {
+         "name": "M1Medical",
+         "value": 171
+      },
+      {
+         "name": "M1Power",
+         "value": 661
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 581
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 289
+      },
+      {
+         "name": "M1Water",
+         "value": 533
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 16:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 451
+      },
+      {
+         "name": "M1Medical",
+         "value": 162
+      },
+      {
+         "name": "M1Power",
+         "value": 615
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 543
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 236
+      },
+      {
+         "name": "M1Water",
+         "value": 524
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 16:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 369
+      },
+      {
+         "name": "M1Medical",
+         "value": 98
+      },
+      {
+         "name": "M1Power",
+         "value": 533
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 445
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 174
+      },
+      {
+         "name": "M1Water",
+         "value": 421
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 17:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 316
+      },
+      {
+         "name": "M1Medical",
+         "value": 116
+      },
+      {
+         "name": "M1Power",
+         "value": 431
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 395
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 132
+      },
+      {
+         "name": "M1Water",
+         "value": 358
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 17:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 234
+      },
+      {
+         "name": "M1Medical",
+         "value": 45
+      },
+      {
+         "name": "M1Power",
+         "value": 294
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 285
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 118
+      },
+      {
+         "name": "M1Water",
+         "value": 234
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 18:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 303
+      },
+      {
+         "name": "M1Medical",
+         "value": 101
+      },
+      {
+         "name": "M1Power",
+         "value": 326
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 322
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 66
+      },
+      {
+         "name": "M1Water",
+         "value": 291
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 18:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 185
+      },
+      {
+         "name": "M1Medical",
+         "value": 93
+      },
+      {
+         "name": "M1Power",
+         "value": 269
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 215
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 55
+      },
+      {
+         "name": "M1Water",
+         "value": 168
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 19:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 218
+      },
+      {
+         "name": "M1Medical",
+         "value": 68
+      },
+      {
+         "name": "M1Power",
+         "value": 226
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 212
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 34
+      },
+      {
+         "name": "M1Water",
+         "value": 198
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 19:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 212
+      },
+      {
+         "name": "M1Medical",
+         "value": 56
+      },
+      {
+         "name": "M1Power",
+         "value": 232
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 224
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 9
+      },
+      {
+         "name": "M1Water",
+         "value": 210
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 20:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 169
+      },
+      {
+         "name": "M1Medical",
+         "value": 77
+      },
+      {
+         "name": "M1Power",
+         "value": 214
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 176
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 31
+      },
+      {
+         "name": "M1Water",
+         "value": 193
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 20:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 241
+      },
+      {
+         "name": "M1Medical",
+         "value": 88
+      },
+      {
+         "name": "M1Power",
+         "value": 255
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 231
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 215
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 21:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 179
+      },
+      {
+         "name": "M1Medical",
+         "value": 93
+      },
+      {
+         "name": "M1Power",
+         "value": 229
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 218
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 10
+      },
+      {
+         "name": "M1Water",
+         "value": 214
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 21:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 145
+      },
+      {
+         "name": "M1Medical",
+         "value": 49
+      },
+      {
+         "name": "M1Power",
+         "value": 164
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 135
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 13
+      },
+      {
+         "name": "M1Water",
+         "value": 148
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 22:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 231
+      },
+      {
+         "name": "M1Medical",
+         "value": 98
+      },
+      {
+         "name": "M1Power",
+         "value": 196
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 216
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 223
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 22:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 178
+      },
+      {
+         "name": "M1Medical",
+         "value": 75
+      },
+      {
+         "name": "M1Power",
+         "value": 153
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 169
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 153
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 23:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 161
+      },
+      {
+         "name": "M1Medical",
+         "value": 80
+      },
+      {
+         "name": "M1Power",
+         "value": 189
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 208
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 151
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 23:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 14388
+      },
+      {
+         "name": "M1Medical",
+         "value": 12598
+      },
+      {
+         "name": "M1Power",
+         "value": 16246
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 16261
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3257
+      },
+      {
+         "name": "M1Water",
+         "value": 16272
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 00:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 179
+      },
+      {
+         "name": "M1Medical",
+         "value": 90
+      },
+      {
+         "name": "M1Power",
+         "value": 199
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 236
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 205
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 00:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 221
+      },
+      {
+         "name": "M1Medical",
+         "value": 109
+      },
+      {
+         "name": "M1Power",
+         "value": 210
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 201
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 213
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 01:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 26302
+      },
+      {
+         "name": "M1Medical",
+         "value": 35086
+      },
+      {
+         "name": "M1Power",
+         "value": 39126
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 30704
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 18708
+      },
+      {
+         "name": "M1Water",
+         "value": 30746
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 01:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 198
+      },
+      {
+         "name": "M1Medical",
+         "value": 134
+      },
+      {
+         "name": "M1Power",
+         "value": 182
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 192
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 223
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 02:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 255
+      },
+      {
+         "name": "M1Medical",
+         "value": 136
+      },
+      {
+         "name": "M1Power",
+         "value": 286
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 261
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 300
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 02:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 191
+      },
+      {
+         "name": "M1Medical",
+         "value": 135
+      },
+      {
+         "name": "M1Power",
+         "value": 180
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 204
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 208
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 03:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 175
+      },
+      {
+         "name": "M1Medical",
+         "value": 82
+      },
+      {
+         "name": "M1Power",
+         "value": 180
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 161
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 179
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 03:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 208
+      },
+      {
+         "name": "M1Medical",
+         "value": 97
+      },
+      {
+         "name": "M1Power",
+         "value": 280
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 256
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 229
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 04:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 265
+      },
+      {
+         "name": "M1Medical",
+         "value": 120
+      },
+      {
+         "name": "M1Power",
+         "value": 208
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 190
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 202
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 04:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 9667
+      },
+      {
+         "name": "M1Medical",
+         "value": 228
+      },
+      {
+         "name": "M1Power",
+         "value": 12339
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 8427
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2495
+      },
+      {
+         "name": "M1Water",
+         "value": 8358
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 05:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 199
+      },
+      {
+         "name": "M1Medical",
+         "value": 150
+      },
+      {
+         "name": "M1Power",
+         "value": 226
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 227
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 199
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 05:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 341
+      },
+      {
+         "name": "M1Medical",
+         "value": 152
+      },
+      {
+         "name": "M1Power",
+         "value": 295
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 283
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 276
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 06:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 267
+      },
+      {
+         "name": "M1Medical",
+         "value": 126
+      },
+      {
+         "name": "M1Power",
+         "value": 256
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 236
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 261
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 06:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 195
+      },
+      {
+         "name": "M1Medical",
+         "value": 78
+      },
+      {
+         "name": "M1Power",
+         "value": 205
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 234
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 197
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 07:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 184
+      },
+      {
+         "name": "M1Medical",
+         "value": 92
+      },
+      {
+         "name": "M1Power",
+         "value": 199
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 253
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 243
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 07:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 179
+      },
+      {
+         "name": "M1Medical",
+         "value": 73
+      },
+      {
+         "name": "M1Power",
+         "value": 198
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 218
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 217
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 08:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 205
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 218
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 214
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 209
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 08:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 179
+      },
+      {
+         "name": "M1Medical",
+         "value": 108
+      },
+      {
+         "name": "M1Power",
+         "value": 176
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 186
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 188
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 09:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 18216
+      },
+      {
+         "name": "M1Medical",
+         "value": 374
+      },
+      {
+         "name": "M1Power",
+         "value": 23663
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 23727
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5251
+      },
+      {
+         "name": "M1Water",
+         "value": 23630
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 09:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 207
+      },
+      {
+         "name": "M1Medical",
+         "value": 105
+      },
+      {
+         "name": "M1Power",
+         "value": 266
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 234
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 238
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 10:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 265
+      },
+      {
+         "name": "M1Medical",
+         "value": 117
+      },
+      {
+         "name": "M1Power",
+         "value": 246
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 298
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 253
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 10:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 247
+      },
+      {
+         "name": "M1Medical",
+         "value": 90
+      },
+      {
+         "name": "M1Power",
+         "value": 283
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 238
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 283
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 11:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 250
+      },
+      {
+         "name": "M1Medical",
+         "value": 152
+      },
+      {
+         "name": "M1Power",
+         "value": 274
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 260
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 310
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 11:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 286
+      },
+      {
+         "name": "M1Medical",
+         "value": 134
+      },
+      {
+         "name": "M1Power",
+         "value": 329
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 344
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 351
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 12:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 257
+      },
+      {
+         "name": "M1Medical",
+         "value": 112
+      },
+      {
+         "name": "M1Power",
+         "value": 274
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 241
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 268
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 12:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 235
+      },
+      {
+         "name": "M1Medical",
+         "value": 105
+      },
+      {
+         "name": "M1Power",
+         "value": 235
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 227
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 253
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 13:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 197
+      },
+      {
+         "name": "M1Medical",
+         "value": 118
+      },
+      {
+         "name": "M1Power",
+         "value": 222
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 198
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 199
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 13:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 260
+      },
+      {
+         "name": "M1Medical",
+         "value": 108
+      },
+      {
+         "name": "M1Power",
+         "value": 213
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 248
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 267
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 14:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 275
+      },
+      {
+         "name": "M1Medical",
+         "value": 120
+      },
+      {
+         "name": "M1Power",
+         "value": 335
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 334
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 304
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 14:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 220
+      },
+      {
+         "name": "M1Medical",
+         "value": 100
+      },
+      {
+         "name": "M1Power",
+         "value": 187
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 243
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 200
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 15:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 11494
+      },
+      {
+         "name": "M1Medical",
+         "value": 3561
+      },
+      {
+         "name": "M1Power",
+         "value": 12112
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 13879
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6569
+      },
+      {
+         "name": "M1Water",
+         "value": 15686
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 15:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 9671
+      },
+      {
+         "name": "M1Medical",
+         "value": 2322
+      },
+      {
+         "name": "M1Power",
+         "value": 9397
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 11214
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4839
+      },
+      {
+         "name": "M1Water",
+         "value": 13042
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 16:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 11231
+      },
+      {
+         "name": "M1Medical",
+         "value": 5066
+      },
+      {
+         "name": "M1Power",
+         "value": 9155
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 12453
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4141
+      },
+      {
+         "name": "M1Water",
+         "value": 15714
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 16:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 10821
+      },
+      {
+         "name": "M1Medical",
+         "value": 3998
+      },
+      {
+         "name": "M1Power",
+         "value": 9985
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 12788
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3165
+      },
+      {
+         "name": "M1Water",
+         "value": 14759
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 17:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 9296
+      },
+      {
+         "name": "M1Medical",
+         "value": 2747
+      },
+      {
+         "name": "M1Power",
+         "value": 9295
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 11414
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2544
+      },
+      {
+         "name": "M1Water",
+         "value": 12607
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 17:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 3494
+      },
+      {
+         "name": "M1Medical",
+         "value": 1766
+      },
+      {
+         "name": "M1Power",
+         "value": 2830
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 3819
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1291
+      },
+      {
+         "name": "M1Water",
+         "value": 4897
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 18:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 2514
+      },
+      {
+         "name": "M1Medical",
+         "value": 1217
+      },
+      {
+         "name": "M1Power",
+         "value": 2147
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 2832
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 933
+      },
+      {
+         "name": "M1Water",
+         "value": 3487
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 18:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1739
+      },
+      {
+         "name": "M1Medical",
+         "value": 894
+      },
+      {
+         "name": "M1Power",
+         "value": 1488
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1907
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 576
+      },
+      {
+         "name": "M1Water",
+         "value": 2376
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 19:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 1303
+      },
+      {
+         "name": "M1Medical",
+         "value": 693
+      },
+      {
+         "name": "M1Power",
+         "value": 1149
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1379
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 432
+      },
+      {
+         "name": "M1Water",
+         "value": 1811
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 19:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 995
+      },
+      {
+         "name": "M1Medical",
+         "value": 534
+      },
+      {
+         "name": "M1Power",
+         "value": 899
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 1098
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 318
+      },
+      {
+         "name": "M1Water",
+         "value": 1404
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 20:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 660
+      },
+      {
+         "name": "M1Medical",
+         "value": 380
+      },
+      {
+         "name": "M1Power",
+         "value": 599
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 741
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 173
+      },
+      {
+         "name": "M1Water",
+         "value": 938
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 20:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 513
+      },
+      {
+         "name": "M1Medical",
+         "value": 258
+      },
+      {
+         "name": "M1Power",
+         "value": 513
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 594
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 144
+      },
+      {
+         "name": "M1Water",
+         "value": 673
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 21:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 442
+      },
+      {
+         "name": "M1Medical",
+         "value": 239
+      },
+      {
+         "name": "M1Power",
+         "value": 445
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 481
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 73
+      },
+      {
+         "name": "M1Water",
+         "value": 574
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 21:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 391
+      },
+      {
+         "name": "M1Medical",
+         "value": 175
+      },
+      {
+         "name": "M1Power",
+         "value": 407
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 407
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 81
+      },
+      {
+         "name": "M1Water",
+         "value": 451
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 22:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 276
+      },
+      {
+         "name": "M1Medical",
+         "value": 169
+      },
+      {
+         "name": "M1Power",
+         "value": 284
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 330
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 48
+      },
+      {
+         "name": "M1Water",
+         "value": 375
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 22:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 251
+      },
+      {
+         "name": "M1Medical",
+         "value": 116
+      },
+      {
+         "name": "M1Power",
+         "value": 239
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 266
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 34
+      },
+      {
+         "name": "M1Water",
+         "value": 326
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 23:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 263
+      },
+      {
+         "name": "M1Medical",
+         "value": 118
+      },
+      {
+         "name": "M1Power",
+         "value": 238
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 299
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 37
+      },
+      {
+         "name": "M1Water",
+         "value": 283
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 23:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 285
+      },
+      {
+         "name": "M1Medical",
+         "value": 150
+      },
+      {
+         "name": "M1Power",
+         "value": 257
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 265
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 28
+      },
+      {
+         "name": "M1Water",
+         "value": 277
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 00:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 244
+      },
+      {
+         "name": "M1Medical",
+         "value": 140
+      },
+      {
+         "name": "M1Power",
+         "value": 229
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 275
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 29
+      },
+      {
+         "name": "M1Water",
+         "value": 288
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 00:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 234
+      },
+      {
+         "name": "M1Medical",
+         "value": 70
+      },
+      {
+         "name": "M1Power",
+         "value": 201
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 227
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 199
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 01:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 160
+      },
+      {
+         "name": "M1Medical",
+         "value": 94
+      },
+      {
+         "name": "M1Power",
+         "value": 190
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 169
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 9
+      },
+      {
+         "name": "M1Water",
+         "value": 156
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 01:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 181
+      },
+      {
+         "name": "M1Medical",
+         "value": 64
+      },
+      {
+         "name": "M1Power",
+         "value": 151
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 196
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 203
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 02:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 205
+      },
+      {
+         "name": "M1Medical",
+         "value": 86
+      },
+      {
+         "name": "M1Power",
+         "value": 167
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 195
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 174
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 02:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 8389
+      },
+      {
+         "name": "M1Medical",
+         "value": 188
+      },
+      {
+         "name": "M1Power",
+         "value": 10466
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 11395
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1096
+      },
+      {
+         "name": "M1Water",
+         "value": 10577
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 03:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 268
+      },
+      {
+         "name": "M1Medical",
+         "value": 101
+      },
+      {
+         "name": "M1Power",
+         "value": 266
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 284
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 12
+      },
+      {
+         "name": "M1Water",
+         "value": 278
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 03:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 332
+      },
+      {
+         "name": "M1Medical",
+         "value": 139
+      },
+      {
+         "name": "M1Power",
+         "value": 301
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 298
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 294
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 04:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 222
+      },
+      {
+         "name": "M1Medical",
+         "value": 83
+      },
+      {
+         "name": "M1Power",
+         "value": 213
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 188
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 185
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 04:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 189
+      },
+      {
+         "name": "M1Medical",
+         "value": 45
+      },
+      {
+         "name": "M1Power",
+         "value": 194
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 202
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 210
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 05:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 144
+      },
+      {
+         "name": "M1Medical",
+         "value": 49
+      },
+      {
+         "name": "M1Power",
+         "value": 179
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 151
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 182
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 05:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 248
+      },
+      {
+         "name": "M1Medical",
+         "value": 72
+      },
+      {
+         "name": "M1Power",
+         "value": 240
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 229
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 10
+      },
+      {
+         "name": "M1Water",
+         "value": 220
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 06:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 218
+      },
+      {
+         "name": "M1Medical",
+         "value": 91
+      },
+      {
+         "name": "M1Power",
+         "value": 224
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 202
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 237
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 06:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 255
+      },
+      {
+         "name": "M1Medical",
+         "value": 117
+      },
+      {
+         "name": "M1Power",
+         "value": 228
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 203
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 232
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 07:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 315
+      },
+      {
+         "name": "M1Medical",
+         "value": 110
+      },
+      {
+         "name": "M1Power",
+         "value": 258
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 318
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 266
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 07:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 168
+      },
+      {
+         "name": "M1Medical",
+         "value": 95
+      },
+      {
+         "name": "M1Power",
+         "value": 161
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 177
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 7
+      },
+      {
+         "name": "M1Water",
+         "value": 142
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 08:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 399
+      },
+      {
+         "name": "M1Medical",
+         "value": 106
+      },
+      {
+         "name": "M1Power",
+         "value": 424
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 333
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 374
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 08:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 271
+      },
+      {
+         "name": "M1Medical",
+         "value": 105
+      },
+      {
+         "name": "M1Power",
+         "value": 256
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 289
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 253
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 09:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 158
+      },
+      {
+         "name": "M1Medical",
+         "value": 66
+      },
+      {
+         "name": "M1Power",
+         "value": 200
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 174
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 155
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 09:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 219
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 234
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 205
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 215
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 10:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 230
+      },
+      {
+         "name": "M1Medical",
+         "value": 94
+      },
+      {
+         "name": "M1Power",
+         "value": 197
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 207
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 243
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 10:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 213
+      },
+      {
+         "name": "M1Medical",
+         "value": 98
+      },
+      {
+         "name": "M1Power",
+         "value": 183
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 171
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 224
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 11:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 204
+      },
+      {
+         "name": "M1Medical",
+         "value": 72
+      },
+      {
+         "name": "M1Power",
+         "value": 199
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 196
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 207
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 11:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 228
+      },
+      {
+         "name": "M1Medical",
+         "value": 118
+      },
+      {
+         "name": "M1Power",
+         "value": 263
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 202
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 212
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 12:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 27269
+      },
+      {
+         "name": "M1Medical",
+         "value": 27125
+      },
+      {
+         "name": "M1Power",
+         "value": 37939
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 37882
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 19084
+      },
+      {
+         "name": "M1Water",
+         "value": 37868
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 12:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 308
+      },
+      {
+         "name": "M1Medical",
+         "value": 104
+      },
+      {
+         "name": "M1Power",
+         "value": 289
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 295
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 267
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 13:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 264
+      },
+      {
+         "name": "M1Medical",
+         "value": 103
+      },
+      {
+         "name": "M1Power",
+         "value": 241
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 254
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 231
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 13:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 244
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 222
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 235
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 247
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 14:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 290
+      },
+      {
+         "name": "M1Medical",
+         "value": 104
+      },
+      {
+         "name": "M1Power",
+         "value": 296
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 290
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 285
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 14:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 237
+      },
+      {
+         "name": "M1Medical",
+         "value": 93
+      },
+      {
+         "name": "M1Power",
+         "value": 202
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 181
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 247
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 15:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 331
+      },
+      {
+         "name": "M1Medical",
+         "value": 127
+      },
+      {
+         "name": "M1Power",
+         "value": 343
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 319
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 385
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 15:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 252
+      },
+      {
+         "name": "M1Medical",
+         "value": 140
+      },
+      {
+         "name": "M1Power",
+         "value": 278
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 324
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 253
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 16:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 194
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 209
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 198
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 3
+      },
+      {
+         "name": "M1Water",
+         "value": 225
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 16:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 202
+      },
+      {
+         "name": "M1Medical",
+         "value": 107
+      },
+      {
+         "name": "M1Power",
+         "value": 237
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 226
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 189
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 17:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 267
+      },
+      {
+         "name": "M1Medical",
+         "value": 163
+      },
+      {
+         "name": "M1Power",
+         "value": 311
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 333
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 249
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 17:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 231
+      },
+      {
+         "name": "M1Medical",
+         "value": 116
+      },
+      {
+         "name": "M1Power",
+         "value": 239
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 214
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 1
+      },
+      {
+         "name": "M1Water",
+         "value": 217
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 18:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 327
+      },
+      {
+         "name": "M1Medical",
+         "value": 158
+      },
+      {
+         "name": "M1Power",
+         "value": 325
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 306
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 298
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 18:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 224
+      },
+      {
+         "name": "M1Medical",
+         "value": 66
+      },
+      {
+         "name": "M1Power",
+         "value": 248
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 253
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 240
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 19:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 448
+      },
+      {
+         "name": "M1Medical",
+         "value": 149
+      },
+      {
+         "name": "M1Power",
+         "value": 420
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 399
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 442
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 19:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 369
+      },
+      {
+         "name": "M1Medical",
+         "value": 134
+      },
+      {
+         "name": "M1Power",
+         "value": 293
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 289
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 8
+      },
+      {
+         "name": "M1Water",
+         "value": 342
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 20:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 282
+      },
+      {
+         "name": "M1Medical",
+         "value": 113
+      },
+      {
+         "name": "M1Power",
+         "value": 250
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 252
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 260
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 20:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 269
+      },
+      {
+         "name": "M1Medical",
+         "value": 88
+      },
+      {
+         "name": "M1Power",
+         "value": 228
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 223
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 6
+      },
+      {
+         "name": "M1Water",
+         "value": 220
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 21:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 303
+      },
+      {
+         "name": "M1Medical",
+         "value": 118
+      },
+      {
+         "name": "M1Power",
+         "value": 265
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 266
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 270
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 21:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 240
+      },
+      {
+         "name": "M1Medical",
+         "value": 130
+      },
+      {
+         "name": "M1Power",
+         "value": 216
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 225
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 2
+      },
+      {
+         "name": "M1Water",
+         "value": 209
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 22:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 253
+      },
+      {
+         "name": "M1Medical",
+         "value": 80
+      },
+      {
+         "name": "M1Power",
+         "value": 275
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 310
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 9
+      },
+      {
+         "name": "M1Water",
+         "value": 302
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 22:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 194
+      },
+      {
+         "name": "M1Medical",
+         "value": 136
+      },
+      {
+         "name": "M1Power",
+         "value": 194
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 207
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 209
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 23:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 289
+      },
+      {
+         "name": "M1Medical",
+         "value": 106
+      },
+      {
+         "name": "M1Power",
+         "value": 257
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 296
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 5
+      },
+      {
+         "name": "M1Water",
+         "value": 234
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 23:30:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 212
+      },
+      {
+         "name": "M1Medical",
+         "value": 97
+      },
+      {
+         "name": "M1Power",
+         "value": 208
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 180
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 4
+      },
+      {
+         "name": "M1Water",
+         "value": 234
+      }
+   ]
+}, {
+   "timestamp": "2020-04-11 00:00:00",
+   "data": [{
+         "name": "M1Buildings",
+         "value": 30
+      },
+      {
+         "name": "M1Medical",
+         "value": 10
+      },
+      {
+         "name": "M1Power",
+         "value": 29
+      },
+      {
+         "name": "M1RoadsAndBridges",
+         "value": 34
+      },
+      {
+         "name": "M1Shakeintensity",
+         "value": 0
+      },
+      {
+         "name": "M1Water",
+         "value": 33
+      }
+   ]
+}]
