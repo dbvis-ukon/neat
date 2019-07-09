@@ -7,7 +7,11 @@ import {
   MatSidenavModule,
   MatSliderModule,
   MatToolbarModule,
-  MatDialogModule
+  MatDialogModule,
+  MatMenuModule,
+  MatTooltipModule,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -17,6 +21,7 @@ import { SharedModule } from '@app/shared/shared.module';
 import { EpisodesModule } from './episodes/episodes.module';
 import { MapModule } from '@app/dashboard/map/map.module';
 import { TimelineModule } from './timeline/timeline.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,7 @@ import { TimelineModule } from './timeline/timeline.module';
   imports: [
     CommonModule,
     SharedModule.forRoot(),
+    FormsModule,
     MatSidenavModule,
     MatButtonModule,
     EpisodesModule,
@@ -35,7 +41,11 @@ import { TimelineModule } from './timeline/timeline.module';
     MatListModule,
     MatSliderModule,
     MatToolbarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule,
+    MatTooltipModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     DashboardComponent
