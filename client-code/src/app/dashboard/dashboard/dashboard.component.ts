@@ -20,6 +20,8 @@ import { MatDialog } from '@angular/material';
 import { FilterDialogComponent } from '../timeline/filter-dialog/filter-dialog.component';
 import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
+import { EpisodeCategory } from '../episodes/EpisodeCategory';
+import { EpisodeRepositoryService } from '../episodes/episode-repository.service';
 
 interface TimelineItem {
   type: 'streamgraph' | 'episodes';
@@ -32,6 +34,13 @@ interface TimelineItem {
   selection?: SelectableFilterItem[];
 
   filteredData?: StreamGraphItem[];
+
+  episodeCategory?: EpisodeCategory;
+
+  episodeOptions?: {
+    showText: boolean;
+    rotate: boolean;
+  };
 }
 
 @Component({
@@ -104,7 +113,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     private mc1DataRepository: Mc1DataRepositoryService,
     private http: HttpClient,
     private streamGraphRepository: StreamGraphRepositoryService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private episodeRepository: EpisodeRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -153,6 +163,20 @@ export class DashboardComponent implements OnInit, OnDestroy {
         });
         tl.timelineOptions = {... this.timelineOptions, brushOn: false};
       }
+    });
+
+    this.episodeRepository.subscribeAllEpisodes().subscribe(episodeCategories => {
+      episodeCategories.forEach(ec => {
+        this.timelineData.push({
+          type: 'episodes',
+          episodeCategory: ec,
+          title: ec.crisislexCategory.name,
+          episodeOptions: {
+            showText: false,
+            rotate: true
+          }
+        } as TimelineItem);
+      });
     });
   }
 
