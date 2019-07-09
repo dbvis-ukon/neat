@@ -22,9 +22,9 @@ export class TimelineVisComponent implements OnInit {
   @Output()
   public brushed: EventEmitter<[Date, Date]> = new EventEmitter();
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg') svgRef: ElementRef<SVGSVGElement>;
 
-  private svg: SVGElement;
+  private svg: SVGSVGElement;
 
   private width: number;
   private height: number;
@@ -35,7 +35,7 @@ export class TimelineVisComponent implements OnInit {
 
   private _brushExternal: [Date, Date];
 
-  private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
+  private svgSelection: d3.Selection<SVGSVGElement, null, undefined, null>;
 
   private streamGraphSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
@@ -190,7 +190,7 @@ export class TimelineVisComponent implements OnInit {
       .attr('fill', 'none')
       .attr('pointer-events', 'all')
       .on('mousemove', () => {
-        const mouseX = d3.mouse(this.svg)[0];
+        const mouseX = d3.mouse(this.svgSelection.node())[0];
         const t = this.timeScale.invert(mouseX);
         this.hoverLineChange.emit(t);
       });

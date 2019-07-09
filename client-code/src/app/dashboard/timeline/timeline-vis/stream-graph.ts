@@ -19,7 +19,8 @@ export class StreamGraph {
         chartRoot: d3.Selection<SVGGElement, null, undefined, null>,
         private tooltipservice: TooltipService,
         private streamGraphRepository: StreamGraphRepositoryService,
-        private hoverLineChange: EventEmitter<Date>) {
+        private hoverLineChange: EventEmitter<Date>
+    ) {
         this.chart = chartRoot;
     }
 
