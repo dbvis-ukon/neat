@@ -55,8 +55,17 @@ export class EpisodeVisComponent implements OnInit {
       this.myEpisodes = this._myEpisodes;
       this.createOrUpdateVis();
       this.svgWidth = this.maxColumns * this.barWidth * 0.1;
-      this.updateLayout(this.svgWidth);
+      this.updateLayout();
       this.translateG(this.svgWidth);
+
+      if(this._showHorizontally){
+        let temporalHeight = 0;
+        temporalHeight = this.svgWidth;
+        this.svgWidth = this.svgHeight;
+        this.svgHeight = temporalHeight;
+        this.updateLayout();
+        this.translateG(this.svgWidth);
+      }
     });
   }
 
@@ -94,21 +103,35 @@ export class EpisodeVisComponent implements OnInit {
       return;
     }
 
-    if (showHorizontally) {
-      this.svgSelection
-      .attr('transform', 'rotate(90)');
-      const temporalHeight = this.svgWidth;
-      this.svgWidth = this.svgHeight;
-      this.svgHeight = temporalHeight;
-    } else {
-      if(this.svgSelection !== undefined){
-       this.svgSelection
-      .attr('transform', 'rotate(0)');
-       let temporalHeight = this.svgWidth;
-       this.svgWidth = this.svgHeight;
-       this.svgHeight = temporalHeight;
-      }
-    }
+    console.log(showHorizontally);
+
+    let temporalHeight = 0;
+        temporalHeight = this.svgWidth;
+        this.svgWidth = this.svgHeight;
+        this.svgHeight = temporalHeight;
+        this.updateLayout();
+
+        if(!showHorizontally){
+          this.translateG(this.svgWidth);
+        }
+
+    // if (showHorizontally) {
+    //   // this.svgSelection.select('#gContainerForEpisodeBars')
+    //   // .attr('transform', 'rotate(90)');
+    //   let temporalHeight = 0;
+    //     temporalHeight = this.svgWidth;
+    //     this.svgWidth = this.svgHeight;
+    //     this.svgHeight = temporalHeight;
+    //     this.updateLayout();
+    // } else {
+    //   if(this.svgSelection !== undefined){
+    //     let temporalHeight = 0;
+    //     temporalHeight = this.svgWidth;
+    //     this.svgWidth = this.svgHeight;
+    //     this.svgHeight = temporalHeight;
+    //     this.updateLayout();
+    //   }
+    // }
   }
 
   get showHorizontally(): boolean {
@@ -128,9 +151,9 @@ export class EpisodeVisComponent implements OnInit {
 
   private numberOfSentences = 0;
   private svgWidth = 100; //// ToDo take the info about maxColumn
-  private svgHeight = 2000;
+  private svgHeight = 1629;
   private oneTextElementHeight = 3; // ToDo change of the height of one sentence
-  private paddingHeight = 50;
+  private paddingHeight = 0;//50;
   private paddingForLabels = 0;
   private barWidth = 50;
   private fontSize = 100;
@@ -188,23 +211,23 @@ export class EpisodeVisComponent implements OnInit {
     this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
 
     this.createEpisodeBars(this.myEpisodes, this.numberOfSentences);
-    this.updateLayout(this.numberOfSentences);
+    this.updateLayout();
 
     /* create small lines on top of the episode bars to show where exactly they occur in text */
     const lineData = this.getLineData(this.myEpisodes);
     this.createEpisodeLines(lineData);
     this.updateEpisodeLines(lineData);
     console.log(this._showHorizontally);
-    if(this._showHorizontally){
-      this.svgSelection
-      .attr('transform', 'rotate(90)');
-    }
+    // if(this._showHorizontally){
+    //   this.svgSelection.select('#gContainerForEpisodeBars')
+    //   .attr('transform', 'rotate(90)');
+    // }
   }
 
   private expandVis() {
 
     /* create labels */
-    this.updateLayout(this.numberOfSentences);
+    this.updateLayout();
     this.update();
     const lineData = this.getLineData(this.myEpisodes);
     this.updateEpisodeLines(lineData);
@@ -222,7 +245,7 @@ export class EpisodeVisComponent implements OnInit {
   private compactVis() {
 
     /* create labels */
-    this.updateLayout(this.numberOfSentences);
+    this.updateLayout();
     this.update();
   }
 
@@ -293,14 +316,19 @@ export class EpisodeVisComponent implements OnInit {
   private initializeEpisodeBars() {
     this.svgSelection
       .append('g')
-      .attr('id', 'gContainerForEpisodeBars')
-      .attr('transform', 'scale(0.1, 0.1)translate(' + (this.svgWidth / 0.1) + ', 0)');//translate(80, 0)
+      .attr('id', 'gContainerForEpisodeBars');
   }
 
   private translateG(x: number) {
+    if(this._showHorizontally){
     this.svgSelection
       .select('#gContainerForEpisodeBars')
+      .attr('transform', 'scale(0.1, 0.1)rotate(-90)');
+    }else{
+      this.svgSelection
+      .select('#gContainerForEpisodeBars')
       .attr('transform', 'scale(0.1, 0.1)translate(' + (x / 0.1) + ', 0)');
+    }
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
@@ -336,7 +364,7 @@ export class EpisodeVisComponent implements OnInit {
     // console.log(this._utterance);
   }
 
-  private updateLayout(numberOfTextElements: number): void {
+  private updateLayout(): void {
     // this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
     this.heightScale = window.innerHeight / this.svgHeight;
     this.svgSelection
