@@ -48,7 +48,8 @@ export class TimelineVisComponent implements OnInit {
   private axisSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
   private hoverLineGroupSelection: d3.Selection<SVGGElement, null, undefined, null>;
-  private hoverLineSelection: d3.Selection<SVGGElement, null, undefined, null>;
+  private hoverLineSelection: d3.Selection<SVGLineElement, null, undefined, null>;
+  private hoverTextSelection: d3.Selection<SVGTextElement, null, undefined, null>;
 
   private brush: d3.BrushBehavior<{}> = d3.brushX()
   .extent([[0, 0], [10, 10]])
@@ -78,7 +79,7 @@ export class TimelineVisComponent implements OnInit {
   @Input()
   set hoverLine(cur: Date) {
     this._hoverLine = cur;
-    this.updateHoverLine();
+    this.updateHoverLine(true);
   }
 
   get hoverLine(): Date {
@@ -193,6 +194,8 @@ export class TimelineVisComponent implements OnInit {
         const mouseX = d3.mouse(this.svgSelection.node())[0];
         const t = this.timeScale.invert(mouseX);
         this.hoverLineChange.emit(t);
+
+        this.updateHoverLine(true);
       });
 
     this.hoverLineSelection = this.hoverLineGroupSelection.append('line')
@@ -202,6 +205,10 @@ export class TimelineVisComponent implements OnInit {
       .attr('x2', 100)
       .attr('stroke-width', '2px')
       .attr('stroke', 'black');
+
+    this.hoverTextSelection = this.hoverLineGroupSelection.append('text')
+      .attr('y', 12)
+      .style('font-size', '10px');
 
     // add bottom axis
     this.axisSelection = this.svgSelection
@@ -265,12 +272,19 @@ export class TimelineVisComponent implements OnInit {
     this.updateStreamGraph();
   }
 
-  private updateHoverLine(): void {
+  private updateHoverLine(showText = true): void {
     const x = this.timeScale(this._hoverLine);
 
     this.hoverLineSelection
       .attr('x1', x)
       .attr('x2', x);
+
+    const txt = showText ? this._hoverLine.toISOString() : '';
+    const txtX = x < this.width / 2 ? x + 2 : x - 122;
+
+    this.hoverTextSelection
+      .attr('x', txtX)
+      .text(txt);
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
