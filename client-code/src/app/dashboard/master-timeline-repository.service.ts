@@ -206,7 +206,7 @@ export class MasterTimelineRepositoryService {
   public getByTitle(title: string): MasterTimelineItem {
     if (title === 'separator') {
       return {
-        title: '',
+        title: 'Separator',
         type: 'separator'
       } as MasterTimelineItem;
     }
