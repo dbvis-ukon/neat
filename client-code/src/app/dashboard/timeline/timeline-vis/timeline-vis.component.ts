@@ -3,6 +3,11 @@ import { ResizedEvent } from 'angular-resize-event';
 import { TimelineOptions } from '../timeline-options';
 import * as d3 from 'd3';
 import { ScaleTime } from 'd3';
+import Annotation, {
+  annotation,
+  annotationCallout,
+  annotationCustomType, annotationLabel,
+} from 'd3-svg-annotation';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from '../timeline-other-brushes';
@@ -10,6 +15,14 @@ import { StreamGraph } from './stream-graph';
 import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
+import {
+  AnnotationData,
+  AnnotationPositionInfo
+} from '@app/dashboard/timeline/AnnotationData';
+import {MatDialog} from '@angular/material';
+import {
+  TimelineAnnotationModalComponent,
+} from '@app/dashboard/timeline/timeline-annotation-modal/timeline-annotation-modal.component';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -24,7 +37,7 @@ export class TimelineVisComponent implements OnInit {
 
   @ViewChild('svg') svgRef: ElementRef;
 
-  private svg: SVGElement;
+  private svg: SVGSVGElement;
 
   private width: number;
   private height: number;
@@ -65,12 +78,18 @@ export class TimelineVisComponent implements OnInit {
 
   private _hoverLine: Date;
 
+  private annotationContainer: d3.Selection<SVGGElement, Annotation<AnnotationPositionInfo>, any, any>;
+  private _annotations: AnnotationData[] = [];
+  @Output()
+  private annotationsChange: EventEmitter<AnnotationData[]> = new EventEmitter();
+
   @Output()
   hoverLineChange: EventEmitter<Date> = new EventEmitter();
 
   constructor(
     private tooltipService: TooltipService,
-    private streamGraphRepository: StreamGraphRepositoryService) { }
+    private streamGraphRepository: StreamGraphRepositoryService,
+    public dialog: MatDialog) { }
 
   @Input()
   set hoverLine(cur: Date) {
@@ -147,6 +166,20 @@ export class TimelineVisComponent implements OnInit {
     return this._brushExternal;
   }
 
+
+  @Input()
+  set annotations(annotations: AnnotationData[]) {
+    if (annotations !== undefined) {
+      this._annotations = annotations;
+      console.log('new annotations', this._annotations);
+      this.updateAnnotations();
+    }
+  }
+
+  get annotations(): AnnotationData[] {
+    return this._annotations;
+  }
+
   ngOnInit() {
     this.svg = this.svgRef.nativeElement;
 
@@ -178,9 +211,45 @@ export class TimelineVisComponent implements OnInit {
     this.updateRender();
   }
 
+  private handleDialog(data: AnnotationData, edit?: boolean): void {
+    const dialogRef = this.dialog.open<TimelineAnnotationModalComponent, any, AnnotationData>(TimelineAnnotationModalComponent, {
+      width: '500px',
+      data
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (edit === true) {
+        const oldIdx = this._annotations.indexOf(data);
+        if (result === undefined) {
+          this._annotations.splice(oldIdx, 1);
+        } else {
+          this._annotations.splice(oldIdx, 1, result);
+        }
+      } else {
+        if (result === undefined) {
+          return;
+        }
+        this._annotations.push(result);
+      }
+      this.emitAnnotationChange();
+    });
+  }
+
+  private emitAnnotationChange() {
+    this.annotationsChange.emit([...this._annotations]);
+  }
+
   private initVis(): void {
     this.svgSelection = d3.select(this.svg);
     this.svgSelection.attr('class', 'timeline-viz');
+
+    this.svgSelection
+      .on('dblclick', () => {
+        const [x, y] = d3.mouse(this.svg);
+        const date = this.timeScale.invert(x);
+        const data = new AnnotationData(null, null, date, y);
+        this.handleDialog(data);
+      });
 
     // add bottom axis
     this.axisSelection = this.svgSelection
@@ -204,6 +273,10 @@ export class TimelineVisComponent implements OnInit {
         .append('g')
         .attr('class', 'brush');
     }
+
+    this.annotationContainer = this.svgSelection
+      .append<SVGGElement>('g')
+      .attr('class', 'annotationContainer');
   }
 
   private updateRanges(): void {
@@ -308,5 +381,43 @@ export class TimelineVisComponent implements OnInit {
     if (this.streamGraph && this._streamGraphData && this._streamGraphColors) {
       this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height, this.timeScale);
     }
+  }
+
+  private updateAnnotations() {
+    const type = new annotationCustomType(
+      annotationCallout,
+      {
+        className: 'custom',
+        connector: {
+          end: 'dot'
+        },
+        note: {
+          lineType: 'horizontal',
+          orientation: 'leftRight',
+          align: 'top'
+        }
+      }
+    );
+
+    const drawAnnotations = annotation<AnnotationPositionInfo>()
+      .editMode(true)
+      .notePadding(5)
+      .type(type)
+      .accessors({
+        x: d => {
+          return this.timeScale(d.date);
+        },
+        y: d => d.y
+      })
+      .accessorsInverse({
+        date: d => this.timeScale.invert(d.x),
+        y: d => d.y
+      })
+      .on('noteclick', annot => this.handleDialog(annot, true))
+      .on('dragend', () => this.emitAnnotationChange())
+      .annotations(this._annotations);
+
+    this.annotationContainer
+      .call(drawAnnotations as any);
   }
 }

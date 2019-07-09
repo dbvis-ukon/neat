@@ -1,0 +1,18 @@
+<h1 mat-dialog-title *ngIf="data.note.title && data.note.label2">Edit Annotation</h1>
+<h1 mat-dialog-title *ngIf="!data.note.title || !data.note.label2">Add Annotation</h1>
+<div mat-dialog-content>
+  <p>Title</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.note.title">
+    <mat-error *ngIf="hasError('title', 'required')">Title is required</mat-error>
+  </mat-form-field>
+  <p>Annotation Note</p>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="data.note.label2"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Save</button>
+</div>
+

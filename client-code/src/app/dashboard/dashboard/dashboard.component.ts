@@ -22,6 +22,7 @@ import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 import { EpisodeCategory } from '../episodes/EpisodeCategory';
 import { EpisodeRepositoryService } from '../episodes/episode-repository.service';
+import {AnnotationData} from '@app/dashboard/timeline/AnnotationData';
 
 interface TimelineItem {
   type: 'streamgraph' | 'episodes';
@@ -41,6 +42,8 @@ interface TimelineItem {
     showText: boolean;
     rotate: boolean;
   };
+
+  annotations?: AnnotationData[];
 }
 
 @Component({

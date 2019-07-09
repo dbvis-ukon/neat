@@ -55,7 +55,8 @@
           [brushExternal]="brushExternal" 
           [streamGraphData]="timelineItem.filteredData" 
           [streamGraphColors]="timelineItem.colors" 
-          [(hoverLine)]="globalHoverLine">
+          [(hoverLine)]="globalHoverLine"
+          [(annotations)]="timelineItem.annotations">
         </dbvis-timeline-vis>
 
         <dbvis-episode-vis
