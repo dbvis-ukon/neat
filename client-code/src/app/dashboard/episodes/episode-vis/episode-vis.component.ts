@@ -39,60 +39,9 @@ import { UserOptionsRepositoryService } from '@app/core';
 })
 export class EpisodeVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
-
-  /**
-   * the svg element
-   */
-  private svg: SVGElement;
-
-  private svgSelection: Selection<SVGElement, undefined, null, undefined>;
-
-  private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
-
-  private numberOfSentences = 0;
-  private svgWidth = 100;//// ToDo take the info about maxColumn
-  private svgHeight = 2000;
-  private oneTextElementHeight = 3; // ToDo change of the height of one sentence
-  private paddingHeight = 50;
-  private paddingForLabels = 0;
-  private barWidth = 50;
-  private fontSize = 100;
-  private heightScale = 0;
-  private timestamps: string[] = [];
-  private lastBarY = 0;
-  private maxColumns = 0;
-
-
-  // All episodes as originally received
-  private _myEpisodes: Episode[] = [];
-  // all episodes in the current timeline brush
-  private myEpisodes: Episode[] = [];
-
-  private sortedLabels = [];
-
   constructor(private episodeCalculator: EpisodeCalculatorService,
-    private tooltipService: TooltipService,
-    private userOptionsService: UserOptionsRepositoryService) {
-  }
-
-  ngOnInit() {
-    console.log('initialize');
-
-    this.svg = this.svgRef.nativeElement;
-    this.svgSelection = d3.select(this.svg);
-
-    this.chartSelection = this.svgSelection
-      .append('g');
-
-    this.createFirst();
-
-    this.userOptionsService.userOptions$.subscribe(options => {
-      // TODO filter stuff
-      // console.log(options);
-      const [minBrush, maxBrush] = options.timelineBrush;
-      this.createOrUpdateVis();
-    });
+              private tooltipService: TooltipService,
+              private userOptionsService: UserOptionsRepositoryService) {
   }
 
   @Input()
@@ -111,8 +60,6 @@ export class EpisodeVisComponent implements OnInit {
       this.createOrUpdateVis();
     });
   }
-
-  private _showText: boolean;
 
   @Input()
   set showText(showText: boolean) {
@@ -140,27 +87,84 @@ export class EpisodeVisComponent implements OnInit {
     return this._showText;
   }
 
-  private _showHorizontally: boolean;
-
   @Input()
   set showHorizontally(showHorizontally: boolean) {
     this._showHorizontally = showHorizontally;
 
+    if (!this.svgSelection) {
+      return;
+    }
+
     if (showHorizontally) {
       this.svgSelection
       .attr('transform', 'rotate(90)');
-      let temporalHeight = this.svgWidth;
+      const temporalHeight = this.svgWidth;
       this.svgWidth = this.svgHeight;
       this.svgHeight = temporalHeight;
       this.paddingForLabels = 3500;
       this.translateG(0);
     } else {
-     
+
     }
   }
 
   get showHorizontally(): boolean {
     return this._showHorizontally;
+  }
+
+  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+
+  /**
+   * the svg element
+   */
+  private svg: SVGElement;
+
+  private svgSelection: Selection<SVGElement, undefined, null, undefined>;
+
+  private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
+
+  private numberOfSentences = 0;
+  private svgWidth = 100; //// ToDo take the info about maxColumn
+  private svgHeight = 2000;
+  private oneTextElementHeight = 3; // ToDo change of the height of one sentence
+  private paddingHeight = 50;
+  private paddingForLabels = 0;
+  private barWidth = 50;
+  private fontSize = 100;
+  private heightScale = 0;
+  private timestamps: string[] = [];
+  private lastBarY = 0;
+  private maxColumns = 0;
+
+
+  // All episodes as originally received
+  private _myEpisodes: Episode[] = [];
+  // all episodes in the current timeline brush
+  private myEpisodes: Episode[] = [];
+
+  private sortedLabels = [];
+
+  private _showText: boolean;
+
+  private _showHorizontally: boolean;
+
+  ngOnInit() {
+    console.log('initialize');
+
+    this.svg = this.svgRef.nativeElement;
+    this.svgSelection = d3.select(this.svg);
+
+    this.chartSelection = this.svgSelection
+      .append('g');
+
+    this.createFirst();
+
+    this.userOptionsService.userOptions$.subscribe(options => {
+      // TODO filter stuff
+      // console.log(options);
+      const [minBrush, maxBrush] = options.timelineBrush;
+      this.createOrUpdateVis();
+    });
   }
 
   // private applyTimelineBrush(brush?: [Date, Date]): Episode[] {
@@ -172,6 +176,10 @@ export class EpisodeVisComponent implements OnInit {
   // }
 
   private createOrUpdateVis() {
+    if (!this.svgSelection) {
+      return;
+    }
+
     /*first sort episodes according to their occurrence in text*/
     this.reorderEpisodeBarsHorizontally(this.myEpisodes, 100000); // this.numberOfSentences); //sort horizontally
     this.myEpisodes = this.sortEpisodes(this.myEpisodes); // sort vertically (to determine the correct order of labels)
@@ -192,7 +200,7 @@ export class EpisodeVisComponent implements OnInit {
     this.update();
     const lineData = this.getLineData(this.myEpisodes);
     this.updateEpisodeLines(lineData);
-   
+
     const labels = this.getLabelData(this.myEpisodes);
     this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
     this.createLabels(this.myEpisodes);
@@ -224,8 +232,8 @@ export class EpisodeVisComponent implements OnInit {
 
     episodes.forEach((episode) => {
       let globalUtteranceIndexesForWords: number[] = []; // episode.rowIndexesForSentences;
-      //globalUtteranceIndexesForWords.push(episode.startSentence);
-      //globalUtteranceIndexesForWords.push(episode.endSentence);
+      // globalUtteranceIndexesForWords.push(episode.startSentence);
+      // globalUtteranceIndexesForWords.push(episode.endSentence);
       globalUtteranceIndexesForWords = episode.rowIds;
       const firstRowPosition = globalUtteranceIndexesForWords[0];
       const lastRowPosition = globalUtteranceIndexesForWords[globalUtteranceIndexesForWords.length - 1];
@@ -252,7 +260,7 @@ export class EpisodeVisComponent implements OnInit {
             }
             m++;
           }
-          /**if it contains a -1, take the position of the -1*/
+          /* if it contains a -1, take the position of the -1*/
           if (emptySpot) {
             leftmostNotOccupied = Math.max(leftmostNotOccupied, m);
           } else {
@@ -262,10 +270,10 @@ export class EpisodeVisComponent implements OnInit {
         }
       }
 
-      /**mark the part of the column assigned to this episode as occupied (in the episodeLayout)*/
+      /* mark the part of the column assigned to this episode as occupied (in the episodeLayout)*/
       this.setColumnPartOccupied(layoutPositions, leftmostNotOccupied, firstRowPosition, lastRowPosition);
 
-      /**create a position object for this episode*/
+      /* create a position object for this episode*/
       episode.columnId = leftmostNotOccupied;
       episode.rowIds = globalUtteranceIndexesForWords;
 
@@ -286,6 +294,9 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private createEpisodeBars(episodes: Episode[], numberOfSentences: number): void {
+    if (!this.svgSelection) {
+      return;
+    }
     // add episodes
     // attributes for episode: id, columnId, rowIds, color
     this.svgSelection.select('#gContainerForEpisodeBars')
@@ -316,7 +327,7 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private updateLayout(numberOfTextElements: number): void {
-    //this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
+    // this.svgHeight = (numberOfTextElements * this.oneTextElementHeight) + this.paddingHeight;
     this.heightScale = window.innerHeight / this.svgHeight;
     this.svgSelection
       .attr('height', this.svgHeight)
@@ -384,7 +395,7 @@ export class EpisodeVisComponent implements OnInit {
       .attr('height', (d) => this.oneTextElementHeight * (d.rowIds[d.rowIds.length - 1] - d.rowIds[0]))
       .attr('width', this.barWidth)
       .style('fill', (d) => d.color);
-    ;
+
 
     // bars.exit().remove();
     console.log('updated');
@@ -399,7 +410,7 @@ export class EpisodeVisComponent implements OnInit {
       .enter()
       .append('line')
       .attr('class', 'episodeLine');
-  };
+  }
 
   private updateEpisodeLines(lines: Line[]): void {
     this.svgSelection.select('#gContainerForEpisodeBars')
@@ -411,7 +422,7 @@ export class EpisodeVisComponent implements OnInit {
       .attr('y2', (d) => d.y2)
       .style('stroke', 'black')
       .style('stroke-width', 1);
-  };
+  }
 
   private createLabels(episodes: Episode[]): void {
     this.svgSelection.selectAll('.episodeLabel').remove();
@@ -481,10 +492,9 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private getLabelData(episodes: Episode[]): any[] {
-    const that = this;
     const labels = [];
-    episodes.forEach(function (episode) {
-      labels.push(that.paddingHeight + episode.rowIds[0] * that.oneTextElementHeight);
+    episodes.forEach((episode) => {
+      labels.push(this.paddingHeight + episode.rowIds[0] * this.oneTextElementHeight);
     });
     return labels;
   }
