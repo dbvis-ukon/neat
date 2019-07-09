@@ -40,11 +40,34 @@
 
       <div class="draggable-box timeline row" *ngFor="let timelineItem of timelineData" cdkDrag>
         <mat-icon class="icon draw" aria-hidden="false" aria-label="drag me" cdkDragHandle>drag_indicator</mat-icon>
-        <h5 class="title">{{ timelineItem.title }}</h5>
         
-        <button mat-icon-button aria-label="settings" class="icon filter" (click)="openFilterDialog(timelineItem)" matTooltip="Filter Settings">
-            <mat-icon>settings</mat-icon>
-        </button> 
+        <div class="title">
+            <h5 *ngIf="!timelineItem.titleEditMode" (click)="timelineItem.titleEditMode = !timelineItem.titleEditMode">{{ timelineItem.title }}</h5>
+
+            <mat-form-field class="form" *ngIf="timelineItem.titleEditMode">
+                <input matInput placeholder="Title" 
+                  [(ngModel)]="timelineItem.title" 
+                  (keydown.enter)="timelineItem.titleEditMode = false" 
+                  (keydown.escape)="timelineItem.titleEditMode = false" 
+                  (blur)="timelineItem.titleEditMode = false"
+                >
+            </mat-form-field>
+        </div>
+        
+        
+        <div class="icons">
+          <button mat-icon-button aria-label="settings" class="icon filter" (click)="timelineItem.titleEditMode = !timelineItem.titleEditMode" matTooltip="Edit Title" >
+              <mat-icon>edit</mat-icon>
+          </button>
+
+          <button *ngIf="timelineItem.type === 'streamgraph'" mat-icon-button aria-label="settings" class="icon filter" (click)="openFilterDialog(timelineItem)" matTooltip="Filter Settings">
+              <mat-icon>settings</mat-icon>
+          </button> 
+
+          <button mat-icon-button aria-label="delete" class="icon filter" (click)="removeMasterTimeline(timelineItem)" matTooltip="Remove">
+              <mat-icon>delete</mat-icon>
+          </button>
+        </div>
 
         <dbvis-timeline-vis 
           *ngIf="timelineItem.type === 'streamgraph'" 
@@ -60,10 +83,27 @@
 
         <dbvis-episode-vis
           *ngIf="timelineItem.type === 'episodes'" 
+          class="episode"
           [episode]="timelineItem.episodeCategory.episodes" 
           [showText]="timelineItem.episodeOptions.showText" 
           [showHorizontally]="timelineItem.episodeOptions.rotate">
         </dbvis-episode-vis>
+
+        <div *ngIf="timelineItem.type === 'separator'" class="separator">
+          <hr>
+        </div>
+      </div>
+
+      <div class="timeline row button-row">
+        <div>
+          <button mat-fab color="primary" [matMenuTriggerFor]="menu">
+            <mat-icon>add</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="addMasterTimeline('separator')">-Separator-</button>
+            <button mat-menu-item *ngFor="let title of timelineDataTitles" (click)="addMasterTimeline(title)">{{ title }}</button>
+          </mat-menu>
+        </div>
       </div>
     </div>
   </mat-sidenav-content>

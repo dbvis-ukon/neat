@@ -10,7 +10,6 @@ import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository
 import { MapOptions } from '../map/map-options';
 import { NeighborhoodSelection } from '@shared/neighborhood-selection';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { HttpClient } from '@angular/common/http';
 import * as d3 from 'd3';
 import { StreamGraphItem } from '../timeline/stream-graph-item';
 import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
@@ -20,28 +19,9 @@ import { MatDialog } from '@angular/material';
 import { FilterDialogComponent } from '../timeline/filter-dialog/filter-dialog.component';
 import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
-import { EpisodeCategory } from '../episodes/EpisodeCategory';
-import { EpisodeRepositoryService } from '../episodes/episode-repository.service';
+import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
+import { MasterTimelineItem } from '../master-timeline-item';
 
-interface TimelineItem {
-  type: 'streamgraph' | 'episodes';
-  title: string;
-  dataUrl: string;
-  colors: string[];
-  data?: StreamGraphItem[]; // FIXME
-  timelineOptions?: TimelineOptions;
-
-  selection?: SelectableFilterItem[];
-
-  filteredData?: StreamGraphItem[];
-
-  episodeCategory?: EpisodeCategory;
-
-  episodeOptions?: {
-    showText: boolean;
-    rotate: boolean;
-  };
-}
 
 @Component({
   selector: 'dbvis-dashboard',
@@ -54,109 +34,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   dashboardLayout: 'default' | 'timelines' = 'timelines';
 
-  timelineData: TimelineItem[] = [
-    {
-      type: 'streamgraph',
-      title: 'MC1 Category Volume',
-      dataUrl: '/assets/VolumeMC1C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC1 Category StdDev',
-      dataUrl: '/assets/STDMC1C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC1 Category Entropy',
-      dataUrl: '/assets/EntropyMC1C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
+  timelineData: MasterTimelineItem[] = [];
 
-    {
-      type: 'streamgraph',
-      title: 'MC1 Location Volume',
-      dataUrl: '/assets/VolumeMC1L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC1 Location StdDev',
-      dataUrl: '/assets/STDMC1L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC1 Location Entropy',
-      dataUrl: '/assets/EntropyMC1L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-
-    {
-      type: 'streamgraph',
-      title: 'MC2 Category Volume',
-      dataUrl: '/assets/VolumeMC2C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC2 Category StdDev',
-      dataUrl: '/assets/STDMC2C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC2 Category Entropy',
-      dataUrl: '/assets/EntropyMC2C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-
-    {
-      type: 'streamgraph',
-      title: 'MC2 Location Volume',
-      dataUrl: '/assets/VolumeMC2L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC2 Location StdDev',
-      dataUrl: '/assets/STDMC2L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC2 Location Entropy',
-      dataUrl: '/assets/EntropyMC2L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-
-    {
-      type: 'streamgraph',
-      title: 'MC3 Category Volume',
-      dataUrl: '/assets/VolumeMC3C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC3 Category StdDev',
-      dataUrl: '/assets/STDMC3C.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-
-    {
-      type: 'streamgraph',
-      title: 'MC3 Location Volume',
-      dataUrl: '/assets/VolumeMC3L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-    {
-      type: 'streamgraph',
-      title: 'MC3 Location StdDev',
-      dataUrl: '/assets/STDMC3L.json',
-      colors: d3.schemeCategory10 as string[]
-    },
-  ];
+  timelineDataTitles: string[] = [];
 
   episodeData: Episode;
 
@@ -196,14 +76,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private groupRepository: GroupRepositoryService,
     private userOptionsRepository: UserOptionsRepositoryService,
     private mc1DataRepository: Mc1DataRepositoryService,
-    private http: HttpClient,
     private streamGraphRepository: StreamGraphRepositoryService,
     public dialog: MatDialog,
-    private episodeRepository: EpisodeRepositoryService
+    private masterTimelineRepository: MasterTimelineRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -244,29 +122,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       });
 
 
-    this.timelineData.forEach(tl => {
-      if (tl.type === 'streamgraph') {
-        this.streamGraphRepository.getData(tl.dataUrl).subscribe(data => {
-          tl.data = data;
-          tl.filteredData = data;
-        });
-        tl.timelineOptions = {... this.timelineOptions, brushOn: false};
-      }
-    });
-
-    this.episodeRepository.subscribeAllEpisodes().subscribe(episodeCategories => {
-      episodeCategories.forEach(ec => {
-        this.timelineData.push({
-          type: 'episodes',
-          episodeCategory: ec,
-          title: ec.crisislexCategory.name,
-          episodeOptions: {
-            showText: false,
-            rotate: true
-          }
-        } as TimelineItem);
-      });
-    });
+    this.timelineData = this.masterTimelineRepository.getDefaults();
+    this.timelineDataTitles = this.masterTimelineRepository.getAllTitles();
   }
 
   ngOnDestroy(): void {
@@ -307,11 +164,11 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.userOptionsRepository.setOptions(this.userOptions);
   }
 
-  drop(event: CdkDragDrop<TimelineItem[]>) {
+  drop(event: CdkDragDrop<MasterTimelineItem[]>) {
     moveItemInArray(this.timelineData, event.previousIndex, event.currentIndex);
   }
 
-  openFilterDialog(timelineItem: TimelineItem): void {
+  openFilterDialog(timelineItem: MasterTimelineItem): void {
     const allKeys = this.streamGraphRepository.getAllKeys(timelineItem.data);
     const selection: SelectableFilterItem[] = timelineItem.selection
       || allKeys.map(s => ({name: s, selected: true} as SelectableFilterItem));
@@ -332,6 +189,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
           .map(d => d.name)
         );
     });
+  }
+
+  addMasterTimeline(title: string) {
+    this.timelineData.push(this.masterTimelineRepository.getByTitle(title));
+  }
+
+  removeMasterTimeline(tl: MasterTimelineItem) {
+    const idx = this.timelineData.indexOf(tl);
+    if (idx > -1) {
+      this.timelineData.splice(idx, 1);
+    }
   }
 
 }
