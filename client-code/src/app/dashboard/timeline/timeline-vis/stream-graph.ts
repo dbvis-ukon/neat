@@ -4,6 +4,7 @@ import { TooltipService } from '@app/core/services/tooltip.service';
 import { StreamgraphTooltipComponent } from '../streamgraph-tooltip/streamgraph-tooltip.component';
 import { ScaleTime } from 'd3';
 import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
+import {EventEmitter} from '@angular/core';
 
 
 export class StreamGraph {
@@ -17,7 +18,8 @@ export class StreamGraph {
     constructor(
         chartRoot: d3.Selection<SVGGElement, null, undefined, null>,
         private tooltipservice: TooltipService,
-        private streamGraphRepository: StreamGraphRepositoryService) {
+        private streamGraphRepository: StreamGraphRepositoryService,
+        private hoverLineChange: EventEmitter<Date>) {
         this.chart = chartRoot;
     }
 
@@ -128,7 +130,13 @@ export class StreamGraph {
                 d3.select(n[i])
                     .style('stroke', 'none')
                     .style('stroke-width', 1);
-              });
+              })
+          .on('mousemove', () => {
+            const mouse = d3.mouse(this.chart.node());
+            const x = timeScale.invert(mouse[0]);
+            this.hoverLineChange.emit(x);
+            console.log(mouse);
+          });
 
         sel.exit().remove();
     }

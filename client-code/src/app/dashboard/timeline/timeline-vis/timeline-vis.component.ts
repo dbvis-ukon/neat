@@ -214,7 +214,7 @@ export class TimelineVisComponent implements OnInit {
       .append('g')
       .attr('class', 'stream-graph');
 
-    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository);
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository, this.hoverLineChange);
 
     if (this._options.brushOn) {
       this.otherBrushesSelection = this.svgSelection
