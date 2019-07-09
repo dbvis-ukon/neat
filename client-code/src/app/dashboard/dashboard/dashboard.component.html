@@ -46,8 +46,24 @@
             <mat-icon>settings</mat-icon>
         </button> 
 
-        <dbvis-timeline-vis *ngIf="timelineItem.type === 'streamgraph'" class="timeline" [options]="timelineItem.timelineOptions" [otherBrushes]="timelineOtherBrushes"
-            (brushed)="timelineBrushed($event)" [brushExternal]="brushExternal" [streamGraphData]="timelineItem.filteredData" [streamGraphColors]="timelineItem.colors" [(hoverLine)]="globalHoverLine"></dbvis-timeline-vis>
+        <dbvis-timeline-vis 
+          *ngIf="timelineItem.type === 'streamgraph'" 
+          class="timeline" 
+          [options]="timelineItem.timelineOptions" 
+          [otherBrushes]="timelineOtherBrushes"
+          (brushed)="timelineBrushed($event)" 
+          [brushExternal]="brushExternal" 
+          [streamGraphData]="timelineItem.filteredData" 
+          [streamGraphColors]="timelineItem.colors" 
+          [(hoverLine)]="globalHoverLine">
+        </dbvis-timeline-vis>
+
+        <dbvis-episode-vis
+          *ngIf="timelineItem.type === 'episodes'" 
+          [episode]="timelineItem.episodeCategory.episodes" 
+          [showText]="timelineItem.episodeOptions.showText" 
+          [showHorizontally]="timelineItem.episodeOptions.rotate">
+        </dbvis-episode-vis>
       </div>
     </div>
   </mat-sidenav-content>

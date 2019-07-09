@@ -3,10 +3,9 @@ import {Observable, from, of, range, merge} from 'rxjs';
 import { Episode } from './episode';
 import { Utterance } from './utterance';
 import { HttpClient } from '@angular/common/http';
-import {EpisodeCategory} from "@app/dashboard/episodes/EpisodeCategory";
-import {CrisisLexCategory} from "@app/dashboard/episodes/CrisisLexCategory";
-import {CrisislexCategoriesService} from "@app/dashboard/episodes/CrisislexCategoryService";
-import {concatMap, map, toArray} from "rxjs/operators";
+import {EpisodeCategory} from '@app/dashboard/episodes/EpisodeCategory';
+import {CrisislexCategoriesService} from '@app/dashboard/episodes/CrisislexCategoryService';
+import {concatMap, map, toArray} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
