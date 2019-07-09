@@ -1,0 +1,8417 @@
+[{
+   "timestamp": "2020-04-06 00:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.7935943333
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5621028594
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6942554719
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.566297733
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3906578435
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2051695625
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.06391088571
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 00:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5997154146
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0366966757528
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.352705186195
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3980065962
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.21921766
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.449150578
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 01:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5822377669
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.157655782838
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5309290098
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4184986393
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1706396032
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.47888553415
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 01:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6484097587
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.166261395581
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.893740205514
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.385358713817
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2308119925
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.449150578
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 02:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5951264966
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.647046401971
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5495292537
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3779260585
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.57487006552
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5319551652
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 02:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6476052535
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0343312770403
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5698496493
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.366329708998
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2522432971
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3726812506
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 03:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.612832886
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6850613095
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.36402148633
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.371171558
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2500793797
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5760791743
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 03:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.555480319
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6941414468
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.532246186
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4035538195
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2228922048
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3604861286
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 04:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5943637201
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6931158057
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5622149838
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3549237045
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2647775209
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3131405611
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 04:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5928399104
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6988271697
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.977098708959
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3170157653
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.58595782405
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.1337150414
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 05:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6120564885
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6889102983
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.945264274462
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.357059142696
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2213157462
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -5.47981192143
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 05:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5829913464
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.157200797902
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.96675527534
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3459126546
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1923357111
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -5.69492139834
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 06:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5358718484
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0535276865729
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6132009561
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3185048105
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.233997554
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.1434237792
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 06:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3620364011
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.260880921504
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5404516317
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3367652533
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1324464674
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.0865368313
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 07:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3632459567
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.155840941803
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5031494459
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3106591384
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.663662327367
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.4977290741
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 07:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3079214657
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.5596663624
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.4868951198
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3743179815
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.666645385566
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.4926270332
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 08:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3211781437
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.00258798465206
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.873226665799
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3562492322
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.646523139117
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.7527031034
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 08:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3428798745
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.207592355795
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5103446458
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3180791427
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.614838448051
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.746124156
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 09:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3405109069
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.142320358724
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.852870384549
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3718449587
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.00017714205
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.7012449836
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 09:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3536102305
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8494995518
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5370024375
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3529387017
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.622736904223
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.7659922866
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 10:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3171248667
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.549094873626
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.4761207736
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4037856229
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -26.9894417153
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.5502344507
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 10:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.293144272
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.14817027236
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5225399189
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3146803078
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.0924222936
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.6582937312
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 11:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3194390128
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.548296523508
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.837682141772
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.357797905
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.05207557938
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.6463533263
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 11:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3548096309
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8329888082
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.86364110023
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3296362536
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.867557655656
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.6643178276
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 12:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.2948382306
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.139516244192
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.146043446723
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3591272505
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.494003216436
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.6287058604
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 12:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3027815345
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8418046548
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.4766193403
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.312523537574
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.10356584074
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8424180459
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 13:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2625863396
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8453793971
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.4932130584
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3781519961
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.23039897269
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8352238013
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 13:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2903273688
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.133077158301
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.338869658941
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4286666152
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.23039897269
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.6949949836
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 14:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3130879524
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0232225670527
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5317191073
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4063390133
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.59448893398
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.5943186123
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 14:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3056337897
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.232243160405
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.866222746157
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3693780366
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3530110693
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.5720336251
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 15:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2858367636
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.306448051077
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.529259619404
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3860921467
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.27946541692
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.605650148
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 15:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3264137576
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8817101989
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.860037956472
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4215617896
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.24364069129
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.7012449836
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 16:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3084942034
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8255494631
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.548496049085
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4305697917
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.911567891803
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.6764759947
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 16:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.449789829
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7278837783
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5922696306
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3435088073
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.19727822286
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.1337150414
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 17:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5680266084
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.291898390814
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.261956925834
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.230398179998
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2166012274
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.5334430137
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 17:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5702570925
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7029596441
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.909541284038
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.348102996
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.24151019785
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7042516148
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 18:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5837454942
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.490834782485
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5725905034
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3172283504
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.24151019785
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.8513008702
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 18:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6159445181
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7028446223
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.553022003
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3081277585
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.963758473815
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5319551652
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 19:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5867677858
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7103486981
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.210472945052
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3234130576
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2802517171
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5912306895
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 19:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5540145804
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.410360732821
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.915226193737
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3146803078
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2680733216
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7568939966
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 20:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5989491311
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.402091410581
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.0578127397091
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3151045309
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.21370148103
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.91579569214
+      },
+      {
+         "name": "M2 Warning",
+         "value": -8.55063411811
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 20:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5997154146
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7016951308
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5836296661
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3102367965
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.6188803865
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.6873024623
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 21:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -3.72601787018
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.402512576672
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.224253222476
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.311533299669
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2780264033
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.6706357956
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 21:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5792291149
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.632714581351
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5852961017
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.00391594598379
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1847137231
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.51492449519
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 22:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5867677858
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.701465391
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5836296661
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3328704091
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2228922048
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.6706357956
+      },
+      {
+         "name": "M2 Warning",
+         "value": -8.55063411811
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 22:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6324413564
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.6981400812
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5864086035
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.319119470256
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2436155814
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.654242353
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 23:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6324413564
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.144261192206
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5660250305
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3108703762
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.24845096234
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.9125423668
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-06 23:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.612832886
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0570892712162
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5772672657
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3187177123
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2056863584
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.8316930271
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 00:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6081835171
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.143684756867
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5388582174
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3435088073
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.59128123283
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5912306895
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 00:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6380013386
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0530690498629
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.60009046044
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2968151837
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.05757518932
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7042516148
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 01:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5845002112
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.139524584465
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6126294458
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2978572847
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.57487006552
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.08057755237
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 01:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5837454942
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0617036878894
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6174977258
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3079170991
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1831962722
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7568939966
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 02:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5792291149
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7052628639
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.423182269792
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2698920615
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.6365946605
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.0719631696
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 02:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6050959039
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.147023465928
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.41288616861
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.245926768129
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.58968123252
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5912306895
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 03:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6020177946
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7041105909
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.655676319983
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2829548047
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1877555505
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.42715114264
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 03:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5951264966
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0612412868644
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6109168723
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2949421343
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2041367713
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.4759974249
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 04:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6004822858
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7116242085
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6094919647
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2887238533
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.59341855659
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.2246860435
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 04:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6292780482
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.492331961157
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.440874146434
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.235671341322
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1513607069
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3604861286
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 05:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6081835171
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.410360732821
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6284662293
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.315319191232
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.52569242422
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3484379359
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 05:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5913184191
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.414889831256
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.937739155389
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3026649862
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.795139118049
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.08828661625
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 06:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.676155315
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7097694581
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6235443897
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2856291531
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.23250589994
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3131405611
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 06:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6556795803
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7442922078
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6244111912
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.0595101480402
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2937086061
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3247684681
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 07:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6043254878
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7346285678
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6627131183
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.0743538528223
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.70178497928
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.4624839113
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 07:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.4122328103
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7643933871
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.00699980783
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2745668668
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.6976207854
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.489696055
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 08:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3067769735
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.123467161034
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.643021648551
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2815177278
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3687071351
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.4624839113
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 08:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3357897416
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.122115145098
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6203725301
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2715156032
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.75692911563
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.0719631696
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 09:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2959691325
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.0714866156886
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.984636068841
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.272531657
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4154154991
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.9777803152
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 09:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2719322017
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7879078669
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.439704384648
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2545984745
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.471131085
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.6381133207
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 10:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3269971881
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7673333046
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.03537050474
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.545533291347
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3596216701
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -7.06420258587
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 10:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.3148160634
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7692980624
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6398498899
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2594028076
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4021157468
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7568939966
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 11:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.2863969876
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7705279993
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.644192094909
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2811075135
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.74068383543
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.6873024623
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 11:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3440664661
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.455995576626
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.00402847897
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.0941386707722
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4295409341
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.9338189626
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 12:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5301350097
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7558676671
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6564256725
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2316974638
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.27780887324
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.0475729257
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 12:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.4135046705
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.430624268496
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6380901006
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2817228981
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2565852306
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.0969631696
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 13:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2719322017
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.189166595931
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.381515440628
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2707035029
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.969474408056
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8942812825
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 13:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2724846879
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.893887752
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.0964889463155
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.264289157318
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.38670051714
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -4.6871376664
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 14:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.2937086061
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.238570989474
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.351098975178
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.680462133146
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3067769735
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.7794604527
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 14:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.3422871063
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.8725370787
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5600443141
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.352647954298
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.34218188909
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8280809442
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 15:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2741439803
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0413736325522
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.5557170592
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.338718379
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.30464861615
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8496644227
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 15:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.2598540975
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.38421610368
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.033013475108
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.216556391762
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3090672693
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8424180459
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 16:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6316495907
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.294396723985
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.344168386369
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.425358021273
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.29113870093
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8139464921
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 16:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.789964042
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.714994737
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6189340948
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.1840557979
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.54895516679
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.3484379359
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 17:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.652442022
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7130175324
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6366259715
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2532015475
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2051695625
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7935943333
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 17:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6245517695
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.407121676259
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.636608567296
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.0541696814276
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1852200522
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.5745480308
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 18:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5409187227
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.49095002969
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6357485219
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2813125996
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2255251709
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -7.40968328376
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 18:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5598904692
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.052152407004
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.674209207178
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.106919025576
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2937086061
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.3232610131
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 19:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5124166164
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7058394987
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6633139896
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2514083611
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2171239666
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.2920110131
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 19:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.555480319
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7056088049
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6383831838
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2737522858
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1882634225
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.2322962181
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 20:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5628414119
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.404699250346
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6564256725
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2624172793
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1741396067
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.388852411
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 20:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5547471811
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7029596441
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6904250011
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2802875893
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.46226361755
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.5745480308
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 21:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6316495907
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.142992595567
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.657158240812
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2590015637
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2286939087
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.2920110131
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 21:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.6308584515
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7097694581
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.180208148716
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2798778792
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2082743515
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.2322962181
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 22:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5882823638
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.142530888397
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.443217783054
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.426362239069
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.26956706855
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.4960864923
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 22:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5739856574
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.41407540422
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.658816231
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2454541905
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.59181513566
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -7.18338544026
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 23:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.558418257
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.416404100618
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6134868337
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.246551247747
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1816811204
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.4960864923
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-07 23:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6066385188
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7069937667
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6451479155
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2602057786
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.25113336732
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.0969631696
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 00:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5928399104
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.276509911764
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.663107983145
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.113927717731
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2886410278
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.0237634019
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 00:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5576829629
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.422601501176
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.01117455667
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2616125312
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1852200522
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5319551652
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 01:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5294202134
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0734507408467
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.023199352
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2642303338
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1636761333
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.9125423668
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 01:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5732388314
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.412332433759
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6609126678
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2630212656
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.55305668488
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -31.000507588
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.2671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 02:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5920788754
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7103486981
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6630135089
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.422742325626
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1826909665
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -7.18338544026
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 02:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5958898554
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7162761911
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.03506441353
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.423749172264
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1494042378
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.57154170746
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 03:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.5814847548
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7162761911
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.04243658632
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.470923094865
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2457655419
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.955558093
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 03:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6356147028
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7170925176
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.6790647316
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -0.227421402476
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2345294689
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.5035849439
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 04:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.5345480308
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5754809848
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7129013479
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.04986351193
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2192833776
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2533270144
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7935943333
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 04:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8857982663
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5643201551
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.13336821702
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.7920698536
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.0506623537267
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.0975125405
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.7935943333
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 05:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8885760441
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6043254878
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7204815591
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.7721030314
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.00844863665578
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.0512772502
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.07638185435
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 05:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8885760441
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6004822858
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.268432134298
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8293304309
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2530021457
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.1049630987
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -6.11252993097
+      },
+      {
+         "name": "M2 Warning",
+         "value": -7.8707271945
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 06:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8885760441
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.553282516
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7187271727
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8606843502
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.2381592055
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.16768729816
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -5.48907118069
+      },
+      {
+         "name": "M2 Warning",
+         "value": -8.55063411811
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 06:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8885760441
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5814847548
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.277908105989
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.7982416543
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.403417070082
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.52269766287
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -30.0865368313
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 07:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8885760441
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.4915608039
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.7229428824
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8802783225
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3573551823
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.09986470311
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -4.23431927368
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 07:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8885760441
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6811325129
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.387348585823
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8201479543
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.604916451647
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.465683971338
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.3956991073
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 08:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -28.8857982663
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.8423070988
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.525807411623
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.7489193471
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": 0.433363667926
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.37439987773
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -4.35828037874
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 08:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -29.8717240414
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1314557744
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9563631978
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.46555309414
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3531590631
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3908550714
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8000090406
+      },
+      {
+         "name": "M2 Warning",
+         "value": -7.6207271945
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 09:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.2353243413
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.73626109427
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.146942315111
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.21921766
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3913444995
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.42558907871
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8569636928
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 09:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.6596929583
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.01561027561
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9985910213
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1801682609
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3883723894
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.17113160141
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.8352238013
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 10:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -4.39123789161
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.405289608943
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.24047844291
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3806406852
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.4436599151
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -29.7012449836
+      },
+      {
+         "name": "M2 Warning",
+         "value": -7.96730078478
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 10:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.71328918509
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.0024633929
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2150346475
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3957043044
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3440664661
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.4320496649
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.9005062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 11:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -4.75030188371
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.156238222145
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2334659219
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3655774508
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.69643419378
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.71480019702
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.9005062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 11:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -28.2833259264
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.0343147255
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.39443734661
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3931778906
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2631336849
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0369168227
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 12:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -28.304815621
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.006662466
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.59448893398
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4466527115
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.34749163592
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9893991985
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 12:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.2637764353
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.0179469678
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.211908831
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.457601726
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.994985799962
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.6269121167
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 13:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -28.1578948519
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.381010150067
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.84368560216
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4173229984
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.07674044727
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.09997407022
+      },
+      {
+         "name": "M2 Warning",
+         "value": -30.3850269296
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 13:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.12080340859
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.73717005531
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.05749811
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3555862487
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.22747618042
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.23329982384
+      },
+      {
+         "name": "M2 Warning",
+         "value": -2.15893507004
+      },
+      {
+         "name": "M2 Danger",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 14:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.612832886
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.526001509907
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.9999064402
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3745431053
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.28025486215
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.6953706085
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.1804390517
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 14:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.68997793554
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.754673135607
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0280713055
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4072691378
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.00724022185
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.6939514566
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.2418786414
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 15:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.68154876727
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.410391059544
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0324087662
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4248710942
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.76198122599
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.69227991431
+      },
+      {
+         "name": "M2 Warning",
+         "value": -2.1934212039
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 15:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.4215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5717468506
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.0547758897623
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.817284833257
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4028587314
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.5385468659
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.6819644596
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.3287098927
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 16:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.7527665514
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.7411076538
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9765734665
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.28358462673
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4112318469
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.451110397
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.2129672581
+      },
+      {
+         "name": "M2 Warning",
+         "value": -2.12196232426
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 16:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4498279063
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.453175088932
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0224605874
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3380669131
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.774221750581
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.66147794523
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.6764759947
+      },
+      {
+         "name": "M2 Danger",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 17:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -28.4938313265
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9858412326
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0942702959
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3725188132
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.20391767509
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.6366437919
+      },
+      {
+         "name": "M2 Warning",
+         "value": -30.6873024623
+      },
+      {
+         "name": "M2 Danger",
+         "value": -1.24528342467
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 17:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4938313265
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.331186947657
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.32496137192
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.338718379
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.0624665033
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9517246675
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -29.4576235326
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 18:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4008242391
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0173905644676
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.06581693013
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3249116663
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.650875817015
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9848602041
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -29.428565855
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 18:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.87745702942
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.0199980887
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0468573536
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3426361117
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.55924067766
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.32926812521
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -29.3865036564
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 19:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.70124991478
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.356017712198
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0561618069
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3635712085
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2686236794
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9517246675
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Danger",
+         "value": -1.38516271996
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 19:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.9792639777
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.64131385672
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1271757318
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3918025322
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.70956479088
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9428750587
+      },
+      {
+         "name": "M2 Warning",
+         "value": -6.6396297947
+      },
+      {
+         "name": "M2 Danger",
+         "value": -1.02880912011
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 20:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.0671728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.97676261045
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.29337621652
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.02162934711
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.371171558
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3945945584
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9370185308
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -0.944843892517
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 20:30:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -3.91997445038
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9834020211
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1205074528
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3772485517
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3797197881
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9341030789
+      },
+      {
+         "name": "M2 Warning",
+         "value": -31.2322962181
+      },
+      {
+         "name": "M2 Danger",
+         "value": -29.5887006347
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 21:00:00",
+   "data": [{
+         "name": "M2 Almost Nothing",
+         "value": -27.7927495589
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.677474941755
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.03412050136
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3817739582
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3846535014
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -4.01938500273
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.333038897
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 21:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -35.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.8172213666
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.0745266193853
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.12146155044
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3801877353
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.21140965919
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.4945823623
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.2905697337
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 22:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.7384621498
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.524210303838
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.069154821
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3617912547
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.27134292767
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.8611394981
+      },
+      {
+         "name": "M2 Warning",
+         "value": -31.4960864923
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 22:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.7055444981
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.135900104937
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.82921705972
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3863199371
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3852719305
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9054067249
+      },
+      {
+         "name": "M2 Warning",
+         "value": -8.55063411811
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 23:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6662746259
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.276706615081
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1257430668
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3865477795
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4103280479
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9910046118
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.9005062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-08 23:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.4215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6613706523
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.342912375105
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.34366768039
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3810938403
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.18212407817
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.61691455042
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.5215379546
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 00:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6468013949
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9837065974
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.53321880179
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3743179815
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4046354331
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.8638495252
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 00:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.1703724534
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.673675975
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9837065974
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1533210114
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4033220698
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3165471659
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.9370185308
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.6326490657
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 01:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6229812942
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.347934543746
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.27561086107
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4017013239
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3674909599
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.52668951515
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 01:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6198477234
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9922726153
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1641719191
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.3950146492
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.16146093099
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.7880953459
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 02:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9697772153
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6020177946
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.0013776165
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.946349556648
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4168531288
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2875183783
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.59428276506
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 02:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9109536859
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.63096156191
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.912076101291
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.05069411949
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4112318469
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.837476390856
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.15941662041
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      },
+      {
+         "name": "M2 Too High - Error",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 03:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.0475729257
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.26073095542
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.320068481706
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1219326312
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4649682417
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2414702333
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.09495816113
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 03:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.000507588
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5351529412
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.0214205641
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0956585423
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4289043143
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3399195409
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.7176779477
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 04:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.7527665514
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.5279921518
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.708350073243
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0682533109
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.423215073
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3334374913
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.43913366987
+      },
+      {
+         "name": "M2 Warning",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 04:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.4215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -2.75350870827
+      },
+      {
+         "name": "M2 Low",
+         "value": 0.0416823236562
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0058148768
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4177930889
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.00632255837
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.6629322613
+      },
+      {
+         "name": "M2 Warning",
+         "value": -7.6207271945
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 05:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.4960864923
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -2.72754187077
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.953699095
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.9815611272
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4203825442
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2329345722
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.7200253655
+      },
+      {
+         "name": "M2 Warning",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 05:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.2037247895
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -2.94238247425
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.985383427
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.762129894356
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4225061882
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2087927548
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.41546393684
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.3306288637
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 06:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.4233351696
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.4530945246
+      },
+      {
+         "name": "M2 Low",
+         "value": -25.9786929132
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.9865311104
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4255816579
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.00838494627
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.95410078738
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.0671728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 06:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.4590494553
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -2.87593172597
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.169872659941
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0062382468
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4351044057
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2886410278
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.4145819763
+      },
+      {
+         "name": "M2 Warning",
+         "value": -31.6162146975
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 07:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.105141885
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.28366280848
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.1764547232
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.82301178933
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4351044057
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.993844629975
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -3.26181469613
+      },
+      {
+         "name": "M2 Warning",
+         "value": -30.7750758148
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 07:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.2246860435
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.08528914236
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.94163225787
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2234182437
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.4942276432
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.376035412
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.530094831
+      },
+      {
+         "name": "M2 Warning",
+         "value": -6.05870182307
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 08:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.1731286909
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.25204312826
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.2682711515
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.260399949
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5262014896
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.548173016
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.25450865614
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 08:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0957960906
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6120564885
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.290963282964
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.1745473945
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5508711755
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5322824693
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0818272768
+      },
+      {
+         "name": "M2 Warning",
+         "value": -7.25406052783
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 09:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.3131405611
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.6911618483
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.3024554744
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.28223243577
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5764403638
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.71593965616
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.92145500562
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 09:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0592626013
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.7081042263
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.479597341032
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2824819939
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5822430879
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7589254959
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0585133404
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.2472955303
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 10:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.1532277008
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.2036755601
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.11252825391
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.58968169401
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.579752082
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7279495701
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.37804408621
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.7576490657
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 10:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.203743061
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.7402250413
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.787463410452
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.6794706929
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6582180554
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.68894518861
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.70929580945
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.6326490657
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 11:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -29.9899712545
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.24815211843
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.917071019404
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.6753281851
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.697863436
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.697059085
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.58942880269
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.8505062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 11:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0592626013
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.18138642212
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.12926997945
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.84872615871
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6618124879
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.53132666488
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.2534059739
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 12:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0592626013
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.8067947326
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.584491964856
+      },
+      {
+         "name": "M2 Normal",
+         "value": -2.05230473646
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6723706552
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.732316389
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.22847682196
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.2671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 12:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0153962007
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.9636994628
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.621970496316
+      },
+      {
+         "name": "M2 Normal",
+         "value": -2.76770358256
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6540408153
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.5179933438
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.1741004708
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.9005062086
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 13:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0327125425
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.4019172358
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4863914049
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.7279495701
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6932079342
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.84580335445
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.14255480128
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.9005062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 13:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.1240996568
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.50856756509
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.712635427426
+      },
+      {
+         "name": "M2 Normal",
+         "value": -2.40226959727
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7253012971
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.6500207134
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5905585407
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.5171728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 14:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -29.9899712545
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.9058365163
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.495751453
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.6182846126
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7157546853
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7262081679
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5928399104
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.2671728752
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 14:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0240168904
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.0392935318
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.370554878903
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.6221969805
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7186091115
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.34070839638
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.48284155236
+      },
+      {
+         "name": "M2 Warning",
+         "value": -6.70639445817
+      },
+      {
+         "name": "M2 Danger",
+         "value": -34.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 15:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.5912306895
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.36152034873
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7568076377
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.3674909599
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8957037599
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.05824702863
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -0.986820896296
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.2379260722
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 15:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.7214929941
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.10484679524
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7512136778
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.3729754342
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8866453852
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7184091687
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -0.808890321423
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.1916751119
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 16:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.4624839113
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.7037079945
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.908950188997
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.3142396945
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.845785819
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7098143592
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.3668834265
+      },
+      {
+         "name": "M2 Warning",
+         "value": -2.8520822506
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 16:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.8513008702
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.7830765174
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7195624004
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2653260672
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8240225629
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.68977782808
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -0.503851231052
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.2106870685
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 17:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.6326490657
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.9787533196
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6726739613
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2631336849
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7700946625
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.00276923095
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9100097092
+      },
+      {
+         "name": "M2 Warning",
+         "value": -2.54782261281
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 17:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -29.1583387297
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.944835854311
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2020743834
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7721030314
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5702570925
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.87501908201
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.2699929051
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 18:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -34.3505062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -29.2261612457
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.37128625975
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1440436013
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7449984142
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.55880072192
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.11751258368
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.1804390517
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 18:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -33.5171728752
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -29.1879157134
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7091258732
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.196424651
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7148050176
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5387526569
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9142003907
+      },
+      {
+         "name": "M2 Warning",
+         "value": -28.5070390618
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 19:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.9005062086
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6607149664
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.521556004973
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1984754079
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7828829908
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.6548692075
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8590562574
+      },
+      {
+         "name": "M2 Warning",
+         "value": -28.50135723
+      },
+      {
+         "name": "M2 Danger",
+         "value": -29.2989205008
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 19:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.098943882
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6475134599
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.5919897537
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1552851661
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7554885939
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.95710998418
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9100097092
+      },
+      {
+         "name": "M2 Warning",
+         "value": -1.93090726184
+      },
+      {
+         "name": "M2 Danger",
+         "value": 1.11025374867
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 20:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.23630061728
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6063642965
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.08610617401
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.720516599
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.94032210503
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.6638196329
+      },
+      {
+         "name": "M2 Warning",
+         "value": -28.9054067249
+      },
+      {
+         "name": "M2 Danger",
+         "value": 1.98946123766
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 20:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.1703724534
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.94384082526
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.551946011
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.864652125708
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6606129076
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.651391116035
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.3073744491
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.4003287369
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.4936269203
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 21:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9109536859
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4552236014
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.57159374595
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.873908213652
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6401434894
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2892028255
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0843132939
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.2458468954
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.52542319078
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 21:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.7527665514
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.59346133241
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.5235847146
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8515735001
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6702500849
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.649222924119
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0309996464
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.17360040423
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.3470391198
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 22:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9697772153
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4552236014
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.55138842197
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.780552554869
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6304999314
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.30976226352
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0645960834
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.4774752604
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.3476347124
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 22:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.6596929583
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.5051415286
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.5113767708
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.828266601
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6351639829
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.21267508166
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0309996464
+      },
+      {
+         "name": "M2 Warning",
+         "value": -2.57862439183
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.32981080038
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 23:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.0322772153
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.5362501769
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4998263344
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8577598371
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6094919647
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.815326576042
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.72989619766
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.23796562571
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.362640996
+      }
+   ]
+}, {
+   "timestamp": "2020-04-09 23:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9697772153
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.365585702
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4828724872
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.59280308491
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6313727857
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.72043774574
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.44913181095
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5665391196
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.3393285243
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 00:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3555190776
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.28953029553
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.49529196173
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.28005935873
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6439681483
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.37873478899
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.071944554
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.4825003861
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.32628656776
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 00:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.7051475038
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1552192654
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.615790006958
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.26454013378
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6457383214
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3240834333
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.90234614651
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5720336251
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.34436286119
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 01:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3555190776
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.2017074647
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.408140417823
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.9109858145
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6531479581
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3596216701
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.73112319153
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5720336251
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.3387378569
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 01:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.388852411
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.76890705411
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.50577219409
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.05988450224
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6436734239
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.78568508964
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9939369256
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.6582937312
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.67755638021
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 02:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.6596929583
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.62356890475
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.300474554713
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.81840110867
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6507708956
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.7222614544
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0633765712
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5943186123
+      },
+      {
+         "name": "M2 Danger",
+         "value": 1.77756865872
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 02:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.2617079828
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.2059150438
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.464582454953
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.25725203103
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6531479581
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4077939953
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.39165879046
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5665391196
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.3194390128
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 03:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.7051475038
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.51606537375
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4806168471
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.62234109698
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.651661632
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3970953411
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0019278348
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.577558487
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.59977567307
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 03:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.5345480308
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.2200695594
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.457112549
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.494947082908
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6392629493
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.843565327091
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0573012192
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5720336251
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.376035412
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 04:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.0969631696
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1552192654
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4382189266
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.9075269333
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.651661632
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3858907424
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -28.0321802839
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5502344507
+      },
+      {
+         "name": "M2 Danger",
+         "value": 1.76454687107
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 04:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3555190776
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.56837320842
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4615237802
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.885518836
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6475116335
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.77024573556
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -2.36238269828
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5395105131
+      },
+      {
+         "name": "M2 Danger",
+         "value": 1.76335462059
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 05:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.9338189626
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1809310974
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.949872619316
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.9025517987
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6552325329
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4058976611
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9996381947
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5289003588
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.31385301541
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 05:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.2322962181
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.21397179065
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4721411639
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8972214987
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6573214624
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3996023934
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.81886360649
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.17880873757
+      },
+      {
+         "name": "M2 Danger",
+         "value": -27.3205980973
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 06:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.1489199847
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.98299063636
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4796159713
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.866190972
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6395563765
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4537567762
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.6186060381
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5665391196
+      },
+      {
+         "name": "M2 Danger",
+         "value": 2.0155421522
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 06:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3232610131
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.39902609139
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.870886571141
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.23982404704
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6818161855
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4670947527
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8229547789
+      },
+      {
+         "name": "M2 Warning",
+         "value": -28.1552192654
+      },
+      {
+         "name": "M2 Danger",
+         "value": -0.86455771808
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 07:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.46494933471
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.5750637116
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8976012936
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.658816231
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.11019696773
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.7670482837
+      },
+      {
+         "name": "M2 Warning",
+         "value": -27.9648032155
+      },
+      {
+         "name": "M2 Danger",
+         "value": -30.7935943333
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 07:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.1703724534
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.5799059078
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.2954813665
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.7063661564
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7482647897
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5265661267
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -0.870543122896
+      },
+      {
+         "name": "M2 Warning",
+         "value": 0.728346532906
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 08:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.2472955303
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6366437919
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.329853364308
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0472984652
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8152382479
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5807323094
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.4670947527
+      },
+      {
+         "name": "M2 Warning",
+         "value": -1.68106941545
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 08:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6453300538
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.14047959099
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0914995715
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8501234365
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7029913054
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5829913464
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.6287058604
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 09:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.0322772153
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6785925301
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6558289248
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1831962722
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.883269538
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.06593937378
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.593601525
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5289003588
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 09:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.1703724534
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6718509343
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6666252509
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.55614390106
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8862697278
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.59120918204
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5540145804
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.6287058604
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 10:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.0322772153
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.90435639367
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6997317224
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.18866184941
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8555720514
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.8511393439
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.61981361498
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5999683298
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 10:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9109536859
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.45590972898
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.18289196221
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2234182437
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8475908736
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.54048283607
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.6269121167
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.19991765178
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 11:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.8553981304
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6366437919
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.04089622866
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.91307759412
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8945669655
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.13704883825
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5867677858
+      },
+      {
+         "name": "M2 Warning",
+         "value": -29.5448581066
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 11:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -32.098943882
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.47636497883
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6870341224
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.1948893386
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8680332717
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.56117322766
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5547471811
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.36165212234
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 12:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.4590494553
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6651544835
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.37401601575
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.32546237393
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8300402801
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7598247765
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.78496306169
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.25472575098
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 12:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.8553981304
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.58799585486
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.18504514666
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.5251926741
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8802783225
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.6886450686
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.4564101774
+      },
+      {
+         "name": "M2 Warning",
+         "value": -3.24910777345
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 13:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.489696055
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.15177221467
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7924117339
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2495391311
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.9206570697
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.06593937378
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.47676455887
+      },
+      {
+         "name": "M2 Warning",
+         "value": -5.74240673024
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 13:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.2353243413
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4059612354
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.806183685
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.57015554668
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.9347500802
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.7428752193
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.4984645246
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.6326490657
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 14:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.2790467168
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.350855488
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.8107007183
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.57539527561
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.9367232457
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -2.15003001173
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.09708632482
+      },
+      {
+         "name": "M2 Warning",
+         "value": -6.98620338497
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 14:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.1240996568
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.382211185
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.8212031778
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2056863584
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.9300303075
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.800215762
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.4524327112
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.7576490657
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 15:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.0957960906
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.51144820349
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.16147291096
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2103495792
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.9410779636
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.789964042
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.451110397
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.0322772153
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 15:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.388852411
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.6301782547
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.558692295227
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.2031050457
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8911643158
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.6508271651
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.4557461667
+      },
+      {
+         "name": "M2 Warning",
+         "value": -31.9697772153
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 16:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.5745480308
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.75647840577
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.85775052882
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.81212668442
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.8555720514
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5807323094
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.3896116768
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.2472955303
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 16:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.6596929583
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.4196325156
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7883168639
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.084606162
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7587894716
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.95097264262
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.7158229606
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.5215379546
+      },
+      {
+         "name": "M2 Danger",
+         "value": -35.3505062086
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 17:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3555190776
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.52377229995
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7704291107
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0868986893
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7545004515
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.5920788754
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9725637858
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.098943882
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 17:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.6596929583
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -5.33925222973
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7768049711
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0878171739
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7224277319
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.6066385188
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9770255886
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.5215379546
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 18:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.7051475038
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.5576827786
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.787157815927
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.43633023599
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.753842232
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -1.52573986109
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.9581988994
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.4215379546
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 18:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3555190776
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.74492871406
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.82856891845
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0942702959
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7211532375
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.463074647
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8020910554
+      },
+      {
+         "name": "M2 Warning",
+         "value": -33.2671728752
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 19:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.3555190776
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.541825167
+      },
+      {
+         "name": "M2 Low",
+         "value": -1.84597550111
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0754882508
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6812040967
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.504718888
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.789964042
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.6326490657
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 19:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.9109536859
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -4.46494000345
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7741154419
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.084606162
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.7189267735
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -0.986166014962
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.5416417885
+      },
+      {
+         "name": "M2 Warning",
+         "value": -31.7051475038
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 20:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.5745480308
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.4444611685
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.7842386934
+      },
+      {
+         "name": "M2 Normal",
+         "value": -27.0194524202
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6769299336
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4956973143
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.6564906103
+      },
+      {
+         "name": "M2 Warning",
+         "value": -30.8316930271
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 20:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.7042516148
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1905730438
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.6126294458
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.8866453852
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6012673012
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.4115974863
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8771018584
+      },
+      {
+         "name": "M2 Warning",
+         "value": -31.8027665514
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 21:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -31.1226041953
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1133557353
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.774228729601
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.7627649613
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5761648817
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3416946892
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.72971516372
+      },
+      {
+         "name": "M2 Warning",
+         "value": -6.33760959268
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 21:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.9125423668
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1044271058
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.578199866317
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.772773385
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5641181926
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3044919112
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.7227344347
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.3306288637
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 22:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.7568939966
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.1947339368
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.5298765166
+      },
+      {
+         "name": "M2 Normal",
+         "value": -1.08655907275
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5712191373
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.2511607531
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8143669405
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.4215379546
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 22:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.5319551652
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -3.93495227079
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.5034055278
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.635527722206
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5665705099
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3578144408
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8181746554
+      },
+      {
+         "name": "M2 Warning",
+         "value": -32.5215379546
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 23:00:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.5176694509
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -27.9068781829
+      },
+      {
+         "name": "M2 Low",
+         "value": -0.720348827162
+      },
+      {
+         "name": "M2 Normal",
+         "value": -0.357337738879
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.6149174491
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3090672693
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -1.83666630199
+      }
+   ]
+}, {
+   "timestamp": "2020-04-10 23:30:00",
+   "data": [{
+         "name": "M2 Too Low Error",
+         "value": -30.5035849439
+      },
+      {
+         "name": "M2 Almost Nothing",
+         "value": -28.0524673735
+      },
+      {
+         "name": "M2 Low",
+         "value": -26.4659545567
+      },
+      {
+         "name": "M2 Normal",
+         "value": -26.7320385698
+      },
+      {
+         "name": "M2 Slightly Elevated",
+         "value": -26.5839072126
+      },
+      {
+         "name": "M2 Higher Than Ususal",
+         "value": -27.3584164877
+      },
+      {
+         "name": "M2 Almost Warning",
+         "value": -27.8442630895
+      }
+   ]
+}]

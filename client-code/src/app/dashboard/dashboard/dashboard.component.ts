@@ -57,16 +57,105 @@ export class DashboardComponent implements OnInit, OnDestroy {
   timelineData: TimelineItem[] = [
     {
       type: 'streamgraph',
-      title: 'Tweet Category Volume',
-      dataUrl: '/assets/TRIALJSONM3C.json',
+      title: 'MC1 Category Volume',
+      dataUrl: '/assets/VolumeMC1C.json',
       colors: d3.schemeCategory10 as string[]
     },
     {
       type: 'streamgraph',
-      title: 'Tweet Location Volume',
-      dataUrl: '/assets/TRIALJSONM3L.json',
+      title: 'MC1 Category StdDev',
+      dataUrl: '/assets/STDMC1C.json',
       colors: d3.schemeCategory10 as string[]
-    }
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Category Entropy',
+      dataUrl: '/assets/EntropyMC1C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+
+    {
+      type: 'streamgraph',
+      title: 'MC1 Location Volume',
+      dataUrl: '/assets/VolumeMC1L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Location StdDev',
+      dataUrl: '/assets/STDMC1L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Location Entropy',
+      dataUrl: '/assets/EntropyMC1L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+
+    {
+      type: 'streamgraph',
+      title: 'MC2 Category Volume',
+      dataUrl: '/assets/VolumeMC2C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC2 Category StdDev',
+      dataUrl: '/assets/STDMC2C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC2 Category Entropy',
+      dataUrl: '/assets/EntropyMC2C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+
+    {
+      type: 'streamgraph',
+      title: 'MC2 Location Volume',
+      dataUrl: '/assets/VolumeMC2L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC2 Location StdDev',
+      dataUrl: '/assets/STDMC2L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC2 Location Entropy',
+      dataUrl: '/assets/EntropyMC2L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+
+    {
+      type: 'streamgraph',
+      title: 'MC3 Category Volume',
+      dataUrl: '/assets/VolumeMC3C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC3 Category StdDev',
+      dataUrl: '/assets/STDMC3C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+
+    {
+      type: 'streamgraph',
+      title: 'MC3 Location Volume',
+      dataUrl: '/assets/VolumeMC3L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC3 Location StdDev',
+      dataUrl: '/assets/STDMC3L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
   ];
 
   episodeData: Episode;
