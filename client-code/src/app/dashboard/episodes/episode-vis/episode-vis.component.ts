@@ -86,8 +86,6 @@ export class EpisodeVisComponent implements OnInit {
     return this._showText;
   }
 
-  private _showHorizontally: boolean = true;
-
   @Input()
   set showHorizontally(showHorizontally: boolean) {
     this._showHorizontally = showHorizontally;
@@ -103,14 +101,13 @@ export class EpisodeVisComponent implements OnInit {
       this.svgWidth = this.svgHeight;
       this.svgHeight = temporalHeight;
     } else {
-      if(this.svgSelection!==undefined){
+      if(this.svgSelection !== undefined){
        this.svgSelection
       .attr('transform', 'rotate(0)');
        let temporalHeight = this.svgWidth;
        this.svgWidth = this.svgHeight;
        this.svgHeight = temporalHeight;
       }
-    
     }
   }
 
