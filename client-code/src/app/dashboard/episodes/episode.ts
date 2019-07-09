@@ -12,4 +12,6 @@ export interface Episode {
     lemma: string;
     significance: number;
     utterances: Utterance[];
+    startTimestamp: Date;
+    endTimestamp: Date;
 }

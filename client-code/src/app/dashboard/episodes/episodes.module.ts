@@ -10,6 +10,7 @@ import {
 } from '@angular/material';
 import {EpisodeTimelineComponent} from './episode-timeline/episode-timeline.component';
 import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-timeline-tooltip/episode-timeline-tooltip.component';
+import { SharedModule } from '@app/shared/shared.module';
 
 @NgModule({
   entryComponents: [
@@ -22,7 +23,8 @@ import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-t
     CommonModule,
     DragDropModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule.forRoot()
   ],
   exports: [
     EpisodeAppComponent,
