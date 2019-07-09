@@ -73,6 +73,24 @@ export class DashboardComponent implements OnInit, OnDestroy {
       dataUrl: '/assets/EntropyMC1C.json',
       colors: d3.schemeCategory10 as string[]
     },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Category Mean',
+      dataUrl: '/assets/MeanMC1C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Category Sum',
+      dataUrl: '/assets/SumMC1C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Category Median',
+      dataUrl: '/assets/MedianMC1C.json',
+      colors: d3.schemeCategory10 as string[]
+    },
 
     {
       type: 'streamgraph',
@@ -90,6 +108,24 @@ export class DashboardComponent implements OnInit, OnDestroy {
       type: 'streamgraph',
       title: 'MC1 Location Entropy',
       dataUrl: '/assets/EntropyMC1L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Location Mean',
+      dataUrl: '/assets/MeanMC1L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Location Sum',
+      dataUrl: '/assets/SumMC1L.json',
+      colors: d3.schemeCategory10 as string[]
+    },
+    {
+      type: 'streamgraph',
+      title: 'MC1 Location Median',
+      dataUrl: '/assets/MedianMC1L.json',
       colors: d3.schemeCategory10 as string[]
     },
 
