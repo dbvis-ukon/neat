@@ -1,21 +1,15 @@
 import * as uuid from 'uuid/v4';
+import { AnnotationNote, IAnnotationData, AnnotationPositionInfo } from '@shared/annotation-data';
 
-export interface AnnotationNote {
-  title: string;
-  label2: string;
-}
-export interface AnnotationPositionInfo {
-  date: Date;
-  y: number;
-}
-
-export class AnnotationData {
+export class AnnotationData implements IAnnotationData {
   private readonly _uuid: string = uuid();
   private _note: AnnotationNote;
   private _data: AnnotationPositionInfo;
   private _dx;
   private _dy;
   private _color = '#ff336f';
+
+  public masterTimelineOriginalTitle?: string;
 
 
   constructor(color: string, date?: Date, y?: number, title?: string, label?: string) {

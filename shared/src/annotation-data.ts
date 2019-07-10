@@ -20,4 +20,7 @@ export interface IAnnotationData {
      * annotation id
      */
     uuid: string;
+
+
+    masterTimelineOriginalTitle?: string;
 }

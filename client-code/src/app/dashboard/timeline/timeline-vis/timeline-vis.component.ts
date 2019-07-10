@@ -15,10 +15,8 @@ import { StreamGraph } from './stream-graph';
 import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
-import {
-  AnnotationData,
-  AnnotationPositionInfo
-} from '@app/dashboard/timeline/AnnotationData';
+import { AnnotationPositionInfo } from '@shared/annotation-data';
+import { AnnotationData } from '../AnnotationData';
 import {MatDialog} from '@angular/material';
 import {
   TimelineAnnotationModalComponent,

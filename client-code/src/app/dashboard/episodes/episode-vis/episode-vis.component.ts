@@ -34,10 +34,8 @@ import {
   annotationCallout,
   annotationCustomType
 } from 'd3-svg-annotation';
-import {
-  AnnotationData,
-  AnnotationPositionInfo
-} from '@app/dashboard/timeline/AnnotationData';
+import { AnnotationPositionInfo } from '@shared/annotation-data';
+import { AnnotationData } from '@app/dashboard/timeline/AnnotationData';
 import {TimelineAnnotationModalComponent} from '@app/shared/timeline-annotation-modal/timeline-annotation-modal.component';
 import {MatDialog} from '@angular/material';
 
