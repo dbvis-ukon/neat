@@ -5,7 +5,7 @@ import {
   ElementRef,
   Input,
   ViewEncapsulation,
-  SimpleChanges
+  SimpleChanges, Output, EventEmitter
 } from '@angular/core';
 import {
   isNullOrUndefined
@@ -45,6 +45,21 @@ export class EpisodeVisComponent implements OnInit {
               private userOptionsService: UserOptionsRepositoryService) {
   }
 
+
+  private _hoverLine: Date = new Date();
+  @Output()
+  hoverLineChange: EventEmitter<Date> = new EventEmitter();
+
+  @Input()
+  get hoverLine(): Date {
+    return this._hoverLine;
+  }
+
+  set hoverLine(value: Date) {
+    this._hoverLine = value;
+    this.updateHoverLine(true);
+  }
+
   @Input()
   set episode(episodeObservable: Observable<Episode[]>) {
     if (isNullOrUndefined(episodeObservable)) {
@@ -55,14 +70,14 @@ export class EpisodeVisComponent implements OnInit {
       this._myEpisodes = episodes.filter(e => e.significance > 40);
       this.myEpisodes = this._myEpisodes;
 
-      this.myEpisodes.forEach(d =>{
+      this.myEpisodes.forEach(d => {
         d.startTimestamp = new Date(d.startTimestamp);
         d.endTimestamp = new Date(d.endTimestamp);
         this.maxRow = Math.max(this.maxRow, d.rowIds[d.rowIds.length - 1]);
     });
 
       this.createOrUpdateVis();
-      this.svgWidth = 100;//this.maxColumns * this.barWidth;
+      this.svgWidth = 100; // this.maxColumns * this.barWidth;
       this.translateG(this.svgWidth);
     });
   }
@@ -114,16 +129,20 @@ export class EpisodeVisComponent implements OnInit {
     this.translateG(0);
   }
 
-  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+  @ViewChild('svg') svgRef: ElementRef<SVGSVGElement>;
 
   /**
    * the svg element
    */
-  private svg: SVGElement;
+  private svg: SVGSVGElement;
 
-  private svgSelection: Selection<SVGElement, undefined, null, undefined>;
+  private svgSelection: Selection<SVGSVGElement, undefined, null, undefined>;
 
   private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
+
+  private hoverLineGroupSelection: d3.Selection<SVGGElement, null, undefined, null>;
+  private hoverLineSelection: d3.Selection<SVGLineElement, null, undefined, null>;
+  private hoverTextSelection: d3.Selection<SVGTextElement, null, undefined, null>;
 
   private numberOfSentences = 0;
   private svgWidth = 100; //// ToDo take the info about maxColumn
@@ -156,10 +175,41 @@ export class EpisodeVisComponent implements OnInit {
     this.svg = this.svgRef.nativeElement;
     this.svgSelection = d3.select(this.svg);
 
+    this.hoverLineGroupSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'hoverLineGroup');
+    this.hoverLineGroupSelection.append('rect')
+      .attr('width', this.svgWidth)
+      .attr('height', this.svgHeight)
+      .attr('fill', 'none')
+      .attr('pointer-events', 'all')
+      .on('mousemove', () => {
+        const mouseX = d3.mouse(this.svgSelection.node())[0];
+        const t = this.myScale.invert(mouseX);
+        this.hoverLineChange.emit(t);
+
+        this.updateHoverLine(true);
+      });
+
+
     this.chartSelection = this.svgSelection
       .append('g');
 
     this.createFirst();
+
+    this.hoverLineSelection = this.svgSelection.append('line')
+      .attr('y1', 0)
+      .attr('y2', this.svgHeight)
+      .attr('x1', 100)
+      .attr('x2', 100)
+      .attr('stroke-width', '2px')
+      .attr('pointer-events', 'none')
+      .attr('stroke', 'black');
+
+    this.hoverTextSelection = this.svgSelection.append('text')
+      .attr('y', 12)
+      .attr('pointer-events', 'none')
+      .style('font-size', '10px');
 
     // this.userOptionsService.userOptions$.subscribe(options => {
     //   // TODO filter stuff
@@ -191,8 +241,8 @@ export class EpisodeVisComponent implements OnInit {
 
     /* create small lines on top of the episode bars to show where exactly they occur in text */
     const lineData = this.getLineData(this.myEpisodes);
-    //this.createEpisodeLines(lineData);
-    //this.updateEpisodeLines(lineData);
+    // this.createEpisodeLines(lineData);
+    // this.updateEpisodeLines(lineData);
     // if(this._showHorizontally){
     //   this.svgSelection.select('#gContainerForEpisodeBars')
     //   .attr('transform', 'rotate(90)');
@@ -203,8 +253,8 @@ export class EpisodeVisComponent implements OnInit {
 
     /* create labels */
     this.update();
-    //const lineData = this.getLineData(this.myEpisodes);
-    //this.updateEpisodeLines(lineData);
+    // const lineData = this.getLineData(this.myEpisodes);
+    // this.updateEpisodeLines(lineData);
 
     const labels = this.getLabelData(this.myEpisodes);
     this.sortedLabels = this.unOverlapEpisodeLabelNodes(labels, this.fontSize);
@@ -303,21 +353,38 @@ export class EpisodeVisComponent implements OnInit {
         .select('#gContainerForEpisodeBars')
         .attr('transform', `rotate(-90 50 50)`);
 
-        this.update();
+      // update hoverline rect width / height
+      this.hoverLineGroupSelection.select('rect')
+        .attr('width', this.svgHeight)
+        .attr('height', this.svgWidth);
+      this.hoverLineSelection
+        .attr('y1', 0)
+        .attr('y2', this.svgWidth);
+
+      this.update();
     } else {
       this.svgHeight = this.defaultHeight;
       this.myScale
       .range([0, this.svgHeight]);
 
       this.episodeColumnScale.range([0, this.svgWidth]);
-      
+
       this.svgSelection
       .attr('height', this.svgHeight)
       .attr('width', this.svgWidth)
       .select('#gContainerForEpisodeBars')
-      .attr('transform', `rotate(0)translate(${2*x/3}, 0)`);
+      .attr('transform', `rotate(0)translate(${2 * x / 3}, 0)`);
 
-      //this.update();
+      // update hoverline rect width / height
+      this.hoverLineGroupSelection.select('rect')
+        .attr('width', this.svgWidth)
+        .attr('height', this.svgHeight);
+      this.hoverLineSelection
+        .attr('y1', 0)
+        .attr('y2', this.svgHeight);
+
+
+      // this.update();
       // .attr('transform', 'translate(' + (x / 0.1) + ', 0)');
     }
   }
@@ -349,6 +416,11 @@ export class EpisodeVisComponent implements OnInit {
       .on('mouseleave', (d) => {
         this.tooltipService.close();
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', false);
+      })
+      .on('mousemove', () => {
+        const mouse = d3.mouse(this.svgSelection.node());
+        const x = this.myScale.invert(mouse[0]);
+        this.hoverLineChange.emit(x);
       });
 
     this.update();
@@ -402,10 +474,10 @@ export class EpisodeVisComponent implements OnInit {
   private update(): void {
 
     this.svgSelection.selectAll<SVGRectElement, Episode>('.episodeBar')
-      .attr('x', (d) => d.columnId * this.barWidth)//this.episodeColumnScale(d.columnId))// 
+      .attr('x', (d) => d.columnId * this.barWidth)// this.episodeColumnScale(d.columnId))//
       .attr('y', (d) => this.myScale(d.startTimestamp))
       .attr('height', (d) => this.myScale(d.endTimestamp) - this.myScale(d.startTimestamp))
-      .attr('width', (d) => this.barWidth)//this.episodeColumnScale(1) - this.episodeColumnScale(0))//
+      .attr('width', (d) => this.barWidth)// this.episodeColumnScale(1) - this.episodeColumnScale(0))//
       .style('fill', (d) => d.color);
 
 
@@ -505,7 +577,7 @@ export class EpisodeVisComponent implements OnInit {
   private getLabelData(episodes: Episode[]): any[] {
     const labels = [];
     episodes.forEach((episode) => {
-      labels.push(this.myScale(episode.startTimestamp))//episode.rowIds[0] * this.oneTextElementHeight);
+      labels.push(this.myScale(episode.startTimestamp)); // episode.rowIds[0] * this.oneTextElementHeight);
     });
     return labels;
   }
@@ -580,5 +652,28 @@ export class EpisodeVisComponent implements OnInit {
       return 1;
     }
     return 0;
+  }
+
+  private updateHoverLine(showText = true): void {
+    if (this._hoverLine === undefined) {
+      return;
+    }
+
+    const x = this.myScale(this._hoverLine);
+
+    if (!this.hoverLineSelection) {
+      return;
+    }
+
+    this.hoverLineSelection
+      .attr('x1', x)
+      .attr('x2', x);
+
+    const txt = showText ? this._hoverLine.toISOString() : '';
+    const txtX = x < (this._showHorizontally ? this.svgHeight : this.svgWidth) / 2 ? x + 2 : x - 122;
+
+    this.hoverTextSelection
+      .attr('x', txtX)
+      .text(txt);
   }
 }
