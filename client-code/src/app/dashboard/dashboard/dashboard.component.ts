@@ -193,7 +193,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   annotationsChanged(annotations: AnnotationData[], timelineItem: MasterTimelineItem) {
-    this.allAnnotations = annotations;
+    const tmpAllAnnotations = this.allAnnotations.filter(a => a.masterTimelineOriginalTitle !== timelineItem.originalTitle);
+    this.allAnnotations = [...tmpAllAnnotations, ...annotations];
   }
 
 }

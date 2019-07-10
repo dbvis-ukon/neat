@@ -11,6 +11,10 @@ export class AnnotationData implements IAnnotationData {
 
   public masterTimelineOriginalTitle?: string;
 
+  public userId?: string;
+
+  public userName?: string;
+
 
   constructor(color: string, date?: Date, y?: number, title?: string, label?: string) {
     this.color = color;

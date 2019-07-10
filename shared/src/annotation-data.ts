@@ -23,4 +23,8 @@ export interface IAnnotationData {
 
 
     masterTimelineOriginalTitle?: string;
+
+    userId?: string;
+
+    userName?: string;
 }
