@@ -4,11 +4,16 @@ import { MasterTimelineItem } from './master-timeline-item';
 import { StreamGraphRepositoryService } from './timeline/stream-graph-repository.service';
 import { TimelineOptions } from './timeline/timeline-options';
 import { EpisodeRepositoryService } from './episodes/episode-repository.service';
+import { ScaleOrdinal } from 'd3';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MasterTimelineRepositoryService {
+
+  private static readonly locationColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
+    .domain(['Loc1', 'Loc2'])
+    .range(['red', 'green']);
 
   private readonly defaultTimelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
@@ -60,7 +65,8 @@ export class MasterTimelineRepositoryService {
       type: 'streamgraph',
       title: 'MC1 Location Volume',
       dataUrl: '/assets/VolumeMC1L.json',
-      colors: d3.schemeCategory10 as string[]
+      colors: d3.schemeCategory10 as string[],
+      colorScale: MasterTimelineRepositoryService.locationColorScale
     },
     {
       type: 'streamgraph',
