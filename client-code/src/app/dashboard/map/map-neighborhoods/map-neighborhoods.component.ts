@@ -16,6 +16,7 @@ import {PixelPos} from '@shared/pixel-pos';
 import {NeighborhoodSelection} from '@shared/neighborhood-selection';
 import {MapTooltipComponent} from '@app/dashboard/map/map-tooltip/map-tooltip.component';
 import {TooltipService} from '@app/core/services/tooltip.service';
+import { Mc2RadiationItem } from '../mc2-radiation-item';
 
 interface SVGRenderGroups {
   layers?: d3.Selection<SVGElement, {}, HTMLElement, any>;
@@ -31,7 +32,8 @@ interface SVGRenderGroups {
 })
 export class MapNeighborhoodsComponent implements OnInit {
   private static readonly INITIAL_WIDTH = 300.0;
-  private static readonly INITIAL_HEIGHT = MapNeighborhoodsComponent.INITIAL_WIDTH / (mapData.svg.viewBox.width / mapData.svg.viewBox.height);
+  private static readonly INITIAL_HEIGHT = MapNeighborhoodsComponent.INITIAL_WIDTH
+    / (mapData.svg.viewBox.width / mapData.svg.viewBox.height);
 
   @Output()
   public selected: EventEmitter<NeighborhoodSelection> = new EventEmitter();
@@ -43,6 +45,7 @@ export class MapNeighborhoodsComponent implements OnInit {
   private geoElementSelection: d3.Selection<SVGPathElement, any, SVGGElement, any>;
 
   private _options: MapOptions;
+  private _radiationData: Mc2RadiationItem[];
   private neighborhoodSelection: NeighborhoodSelection = {};
 
   constructor(private mapProjectionService: MapProjectionService, private tooltipService: TooltipService) {
@@ -72,6 +75,17 @@ export class MapNeighborhoodsComponent implements OnInit {
     this.svg.attr('height', event.newHeight);
 
     this.draw();
+  }
+
+  @Input()
+  set radiationData(radiationData: Mc2RadiationItem[]) {
+    this._radiationData = radiationData;
+    console.log('radiation data', radiationData);
+    this.draw();
+  }
+
+  get radiationData(): Mc2RadiationItem[] {
+    return this._radiationData;
   }
 
   @Input()

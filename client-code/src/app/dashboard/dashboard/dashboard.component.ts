@@ -21,6 +21,8 @@ import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
 import { MasterTimelineItem } from '../master-timeline-item';
+import { Mc2RadiationItem } from '../map/mc2-radiation-item';
+import { Mc2DataRepositoryService } from '@app/core/services/mc2-data-repository.service';
 
 
 @Component({
@@ -63,6 +65,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
    */
   brushedMc1Data: Mc1Item[];
 
+  filteredRadiationData: Mc2RadiationItem[] = [];
+
   constructor(
     private route: ActivatedRoute,
     private groupRepository: GroupRepositoryService,
@@ -70,7 +74,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     private mc1DataRepository: Mc1DataRepositoryService,
     private streamGraphRepository: StreamGraphRepositoryService,
     public dialog: MatDialog,
-    private masterTimelineRepository: MasterTimelineRepositoryService
+    private masterTimelineRepository: MasterTimelineRepositoryService,
+    private mc2DataRepository: Mc2DataRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -104,6 +109,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
         this.masterTimelineItem.timelineOptions = {...this.masterTimelineItem.timelineOptions};
       }
+    });
+
+    this.mc2DataRepository.getData().subscribe(data => {
+      this.filteredRadiationData = data;
     });
     // throw new Error('Method not implemented.');
 

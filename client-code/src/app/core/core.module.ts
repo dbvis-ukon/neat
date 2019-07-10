@@ -1,12 +1,14 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { UserOptionsRepositoryService, GroupRepositoryService } from '.';
 import { TooltipService } from './services/tooltip.service';
+import { Mc2DataRepositoryService } from './services/mc2-data-repository.service';
 
 @NgModule({
   providers: [
     UserOptionsRepositoryService,
     GroupRepositoryService,
-    TooltipService
+    TooltipService,
+    Mc2DataRepositoryService
   ]
 })
 export class CoreModule {
