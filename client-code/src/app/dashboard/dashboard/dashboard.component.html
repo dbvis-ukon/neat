@@ -90,7 +90,9 @@
           [episode]="timelineItem.episodeCategory.episodes" 
           [showText]="timelineItem.episodeOptions.showText"
           [(annotations)]="timelineItem.annotations"
-          [showHorizontally]="timelineItem.episodeOptions.rotate">
+          [showHorizontally]="timelineItem.episodeOptions.rotate"
+          [(hoverLine)]="globalHoverLine"
+        >
         </dbvis-episode-vis>
 
         <div *ngIf="timelineItem.type === 'separator'" class="separator">

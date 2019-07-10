@@ -49,7 +49,7 @@ export class TimelineVisComponent implements OnInit {
 
   private _brushExternal: [Date, Date];
 
-  private svgSelection: d3.Selection<SVGElement, null, undefined, null>;
+  private svgSelection: d3.Selection<SVGSVGElement, null, undefined, null>;
 
   private streamGraphSelection: d3.Selection<SVGGElement, null, undefined, null>;
 
@@ -60,6 +60,10 @@ export class TimelineVisComponent implements OnInit {
   private axisBottom: d3.Axis<Date> = d3.axisBottom<Date>(this.timeScale);
 
   private axisSelection: d3.Selection<SVGGElement, null, undefined, null>;
+
+  private hoverLineGroupSelection: d3.Selection<SVGGElement, null, undefined, null>;
+  private hoverLineSelection: d3.Selection<SVGLineElement, null, undefined, null>;
+  private hoverTextSelection: d3.Selection<SVGTextElement, null, undefined, null>;
 
   private brush: d3.BrushBehavior<{}> = d3.brushX()
   .extent([[0, 0], [10, 10]])
@@ -77,7 +81,7 @@ export class TimelineVisComponent implements OnInit {
   private _streamGraphData: StreamGraphItem[];
   private _streamGraphColorScale: ScaleOrdinal<string, string>;
 
-  private _hoverLine: Date;
+  private _hoverLine: Date = new Date();
 
   private annotationContainer: d3.Selection<SVGGElement, Annotation<AnnotationPositionInfo>, any, any>;
   private _annotations: AnnotationData[] = [];
@@ -96,11 +100,7 @@ export class TimelineVisComponent implements OnInit {
   @Input()
   set hoverLine(cur: Date) {
     this._hoverLine = cur;
-
-    // TODO: @FABIAN draw line / update line
-
-    // TODO: @FABIAN capture mouse shizzle and:
-    // this.hoverLineChange.emit(date);
+    this.updateHoverLine(true);
   }
 
   get hoverLine(): Date {
@@ -263,11 +263,27 @@ export class TimelineVisComponent implements OnInit {
       .attr('transform', `translate(0,0)`)
       .call(this.axisBottom);
 
+    this.hoverLineGroupSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'hoverLineGroup');
+    this.hoverLineGroupSelection.append('rect')
+      .attr('width', this.width)
+      .attr('height', this.height)
+      .attr('fill', 'none')
+      .attr('pointer-events', 'all')
+      .on('mousemove', () => {
+        const mouseX = d3.mouse(this.svgSelection.node())[0];
+        const t = this.timeScale.invert(mouseX);
+        this.hoverLineChange.emit(t);
+
+        this.updateHoverLine(true);
+      });
+
     this.streamGraphSelection = this.svgSelection
       .append('g')
       .attr('class', 'stream-graph');
 
-    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository);
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository, this.hoverLineChange);
 
     if (this._options.brushOn) {
       this.otherBrushesSelection = this.svgSelection
@@ -282,6 +298,20 @@ export class TimelineVisComponent implements OnInit {
     this.annotationContainer = this.svgSelection
       .append<SVGGElement>('g')
       .attr('class', 'annotationContainer');
+
+    this.hoverLineSelection = this.svgSelection.append('line')
+      .attr('y1', 0)
+      .attr('y2', this.height)
+      .attr('x1', 100)
+      .attr('x2', 100)
+      .attr('stroke-width', '2px')
+      .attr('pointer-events', 'none')
+      .attr('stroke', 'black');
+
+    this.hoverTextSelection = this.svgSelection.append('text')
+      .attr('y', 12)
+      .attr('pointer-events', 'none')
+      .style('font-size', '10px');
   }
 
   private updateRanges(): void {
@@ -306,12 +336,39 @@ export class TimelineVisComponent implements OnInit {
       .attr('width', this.width)
       .attr('height', this.height);
 
+    // update hoverline rect width / height
+    this.hoverLineGroupSelection.select('rect')
+      .attr('width', this.width)
+      .attr('height', this.height);
+    this.hoverLineSelection
+      .attr('y1', 0)
+      .attr('y2', this.height);
+
     this.axisSelection
       .attr('transform', `translate(0,  ${this.height - 20})`)
       .call(this.axisBottom);
 
     this.updateOwnBrush();
     this.updateStreamGraph();
+  }
+
+  private updateHoverLine(showText = true): void {
+    const x = this.timeScale(this._hoverLine);
+
+    if (!this.hoverLineGroupSelection) {
+      return;
+    }
+
+    this.hoverLineSelection
+      .attr('x1', x)
+      .attr('x2', x);
+
+    const txt = showText ? this._hoverLine.toISOString() : '';
+    const txtX = x < this.width / 2 ? x + 2 : x - 122;
+
+    this.hoverTextSelection
+      .attr('x', txtX)
+      .text(txt);
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
