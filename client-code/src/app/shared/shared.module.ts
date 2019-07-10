@@ -17,16 +17,22 @@ import { ColorPickerModule } from 'ngx-color-picker';
 import { ResizedDirective } from './resized.directive';
 import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.component';
 import { DemoVisComponent } from './demo-vis/demo-vis.component';
+import { TimelineAnnotationModalComponent } from './timeline-annotation-modal/timeline-annotation-modal.component';
 
 @NgModule({
-  entryComponents: [UserOptionsDialogComponent, ExampleTooltipComponent],
+  entryComponents: [
+    UserOptionsDialogComponent,
+    ExampleTooltipComponent,
+    TimelineAnnotationModalComponent
+  ],
   declarations: [
     UserOptionsDialogComponent,
     UserOptionsComponent,
     HeaderComponent,
     ResizedDirective,
     ExampleTooltipComponent,
-    DemoVisComponent
+    DemoVisComponent,
+    TimelineAnnotationModalComponent
   ],
   imports: [
     CommonModule,

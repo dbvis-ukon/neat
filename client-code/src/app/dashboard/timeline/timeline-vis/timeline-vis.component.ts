@@ -22,7 +22,7 @@ import {
 import {MatDialog} from '@angular/material';
 import {
   TimelineAnnotationModalComponent,
-} from '@app/dashboard/timeline/timeline-annotation-modal/timeline-annotation-modal.component';
+} from '@app/shared/timeline-annotation-modal/timeline-annotation-modal.component';
 import {UserOptionsRepositoryService} from '@app/core';
 
 @Component({

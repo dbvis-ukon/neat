@@ -5,7 +5,7 @@ import {
   ElementRef,
   Input,
   ViewEncapsulation,
-  SimpleChanges
+  SimpleChanges, EventEmitter, Output
 } from '@angular/core';
 import {
   isNullOrUndefined
@@ -31,6 +31,17 @@ import { TooltipService } from '@app/core/services/tooltip.service';
 import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
 import { UserOptionsRepositoryService } from '@app/core';
 import { ResizedEvent } from 'angular-resize-event';
+import {
+  annotation,
+  annotationCallout,
+  annotationCustomType
+} from "d3-svg-annotation";
+import {
+  AnnotationData,
+  AnnotationPositionInfo
+} from "@app/dashboard/timeline/AnnotationData";
+import {TimelineAnnotationModalComponent} from "@app/shared/timeline-annotation-modal/timeline-annotation-modal.component";
+import {MatDialog} from "@angular/material";
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -42,8 +53,13 @@ export class EpisodeVisComponent implements OnInit {
 
   constructor(private episodeCalculator: EpisodeCalculatorService,
               private tooltipService: TooltipService,
-              private userOptionsService: UserOptionsRepositoryService) {
+              private userOptionsService: UserOptionsRepositoryService,
+              private dialog: MatDialog) {
   }
+
+  private _annotations: AnnotationData[] = [];
+  @Output()
+  private annotationsChange: EventEmitter<AnnotationData[]> = new EventEmitter();
 
   @Input()
   set episode(episodeObservable: Observable<Episode[]>) {
@@ -114,16 +130,30 @@ export class EpisodeVisComponent implements OnInit {
     this.translateG(0);
   }
 
-  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+  @Input()
+  get annotations(): AnnotationData[] {
+    return this._annotations;
+  }
+
+  set annotations(annotations: AnnotationData[]) {
+    if (annotations !== undefined) {
+      this._annotations = annotations;
+      this.updateAnnotations();
+    }
+  }
+
+  @ViewChild('svg') svgRef: ElementRef<SVGSVGElement>;
 
   /**
    * the svg element
    */
-  private svg: SVGElement;
+  private svg: SVGSVGElement;
 
   private svgSelection: Selection<SVGElement, undefined, null, undefined>;
 
   private chartSelection: Selection<SVGGElement, undefined, null, undefined>;
+
+  private annotationContainer: Selection<SVGGElement, AnnotationData, null, undefined>;
 
   private numberOfSentences = 0;
   private svgWidth = 100; //// ToDo take the info about maxColumn
@@ -158,6 +188,19 @@ export class EpisodeVisComponent implements OnInit {
 
     this.chartSelection = this.svgSelection
       .append('g');
+
+    this.annotationContainer = this.svgSelection
+      .append<SVGGElement>('g')
+      .attr('class', 'annotationContainer');
+
+    this.svgSelection
+      .on('dblclick', () => {
+        const [x, y] = d3.mouse(this.svg);
+        const date = this.myScale.invert(x);
+        const color = this.userOptionsService.getOptions().color;
+        const data = new AnnotationData( color, date, y);
+        this.handleDialog(data);
+      });
 
     this.createFirst();
 
@@ -402,10 +445,10 @@ export class EpisodeVisComponent implements OnInit {
   private update(): void {
 
     this.svgSelection.selectAll<SVGRectElement, Episode>('.episodeBar')
-      .attr('x', (d) => d.columnId * this.barWidth)//this.episodeColumnScale(d.columnId))// 
+      .attr('x', (d) => d.columnId * this.barWidth)//this.episodeColumnScale(d.columnId))//
       .attr('y', (d) => this.myScale(d.startTimestamp))
       .attr('height', (d) => this.myScale(d.endTimestamp) - this.myScale(d.startTimestamp))
-      .attr('width', (d) => this.barWidth)//this.episodeColumnScale(1) - this.episodeColumnScale(0))//
+      .attr('width', (d) => this.barWidth)// this.episodeColumnScale(1) - this.episodeColumnScale(0))//
       .style('fill', (d) => d.color);
 
 
@@ -505,7 +548,7 @@ export class EpisodeVisComponent implements OnInit {
   private getLabelData(episodes: Episode[]): any[] {
     const labels = [];
     episodes.forEach((episode) => {
-      labels.push(this.myScale(episode.startTimestamp))//episode.rowIds[0] * this.oneTextElementHeight);
+      labels.push(this.myScale(episode.startTimestamp))// episode.rowIds[0] * this.oneTextElementHeight);
     });
     return labels;
   }
@@ -580,5 +623,77 @@ export class EpisodeVisComponent implements OnInit {
       return 1;
     }
     return 0;
+  }
+
+  private handleDialog(data: AnnotationData, edit?: boolean): void {
+    const dialogRef = this.dialog.open<TimelineAnnotationModalComponent, any, AnnotationData>(TimelineAnnotationModalComponent, {
+      width: '500px',
+      data
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      if (edit === true) {
+        const oldIdx = this._annotations.indexOf(data);
+        if (result === undefined) {
+          this._annotations.splice(oldIdx, 1);
+        } else {
+          this._annotations.splice(oldIdx, 1, result);
+        }
+      } else {
+        if (result === undefined) {
+          return;
+        }
+        this._annotations.push(result);
+      }
+      this.emitAnnotationChange();
+    });
+  }
+
+  private emitAnnotationChange() {
+    this.annotationsChange.emit([...this._annotations]);
+  }
+
+
+  private updateAnnotations() {
+    const type = new annotationCustomType(
+      annotationCallout,
+      {
+        className: 'custom',
+        connector: {
+          end: 'dot'
+        },
+        note: {
+          lineType: 'horizontal',
+          orientation: 'leftRight',
+          align: 'top'
+        }
+      }
+    );
+
+    const drawAnnotations = annotation<AnnotationPositionInfo>()
+      .editMode(true)
+      .notePadding(5)
+      .type(type)
+      .accessors({
+        x: d => {
+          return this.myScale(d.date);
+        },
+        y: d => d.y
+      })
+      .accessorsInverse({
+        date: d => this.myScale.invert(d.x),
+        y: d => d.y
+      })
+      .on('noteclick', annot => this.handleDialog(annot, true))
+      .on('dragend', (annot) => {
+        const oldIdx = this._annotations.findIndex(a => a.uuid === annot.uuid);
+        this._annotations.splice(oldIdx, 1, annot);
+        this.emitAnnotationChange();
+      })
+      .annotations(this._annotations);
+
+    this.annotationContainer
+      .call(drawAnnotations as any);
   }
 }

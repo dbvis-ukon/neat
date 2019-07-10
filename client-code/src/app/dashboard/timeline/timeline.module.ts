@@ -12,19 +12,16 @@ import {
   MatFormFieldModule, MatInputModule
 } from '@angular/material';
 import { FormsModule } from '@angular/forms';
-import {TimelineAnnotationModalComponent} from '@app/dashboard/timeline/timeline-annotation-modal/timeline-annotation-modal.component';
 
 @NgModule({
   entryComponents: [
     StreamgraphTooltipComponent,
     FilterDialogComponent,
-    TimelineAnnotationModalComponent
   ],
   declarations: [
     TimelineVisComponent,
     StreamgraphTooltipComponent,
     FilterDialogComponent,
-    TimelineAnnotationModalComponent
   ],
   imports: [
     CommonModule,
