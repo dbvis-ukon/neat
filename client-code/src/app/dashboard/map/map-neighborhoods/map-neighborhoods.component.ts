@@ -16,12 +16,21 @@ import {PixelPos} from '@shared/pixel-pos';
 import {NeighborhoodSelection} from '@shared/neighborhood-selection';
 import {MapTooltipComponent} from '@app/dashboard/map/map-tooltip/map-tooltip.component';
 import {TooltipService} from '@app/core/services/tooltip.service';
-import { Mc2RadiationItem } from '../mc2-radiation-item';
+import {Mc2RadiationItem} from '../mc2-radiation-item';
 
 interface SVGRenderGroups {
   layers?: d3.Selection<SVGElement, {}, HTMLElement, any>;
-  mc1glyph?: d3.Selection<SVGGElement, undefined, SVGElement, undefined>;
+  radiation?: d3.Selection<SVGElement, {}, HTMLElement, any>;
   eventCatchers?: d3.Selection<SVGElement, {}, HTMLElement, any>;
+}
+
+interface AggregatedStaticRadiationItem {
+  sensorId: string;
+  latitude: number;
+  longitude: number;
+  meanValue: number;
+  summedValue: number;
+  valueCount: number;
 }
 
 @Component({
@@ -45,7 +54,8 @@ export class MapNeighborhoodsComponent implements OnInit {
   private geoElementSelection: d3.Selection<SVGPathElement, any, SVGGElement, any>;
 
   private _options: MapOptions;
-  private _radiationData: Mc2RadiationItem[];
+  private aggregatedStaticRadiationData: AggregatedStaticRadiationItem[];
+  private mobileRadiationData: Mc2RadiationItem[];
   private neighborhoodSelection: NeighborhoodSelection = {};
 
   constructor(private mapProjectionService: MapProjectionService, private tooltipService: TooltipService) {
@@ -65,6 +75,7 @@ export class MapNeighborhoodsComponent implements OnInit {
     this.svg.selectAll('*').remove();
 
     this.svgRenderGroups.layers = this.svg.append('g').attr('id', 'layers');
+    this.svgRenderGroups.radiation = this.svg.append('g').attr('id', 'radiation');
     this.svgRenderGroups.eventCatchers = this.svg.append('g').attr('id', 'event-catchers');
 
     this.draw();
@@ -79,13 +90,43 @@ export class MapNeighborhoodsComponent implements OnInit {
 
   @Input()
   set radiationData(radiationData: Mc2RadiationItem[]) {
-    this._radiationData = radiationData;
-    console.log('radiation data', radiationData);
-    this.draw();
-  }
 
-  get radiationData(): Mc2RadiationItem[] {
-    return this._radiationData;
+    this.mobileRadiationData = radiationData.filter(d => d.type === 'mobile');
+    const staticRadiationData = radiationData.filter(d => d.type === 'static');
+
+    const groupedStaticRadiationData = d3.nest()
+      .key((d: Mc2RadiationItem) => d.sensorId)
+      .entries(staticRadiationData);
+
+    const aggregatedPerGroup = groupedStaticRadiationData.map(g => {
+      const items = g.values;
+
+      const valueSum = items.reduce((sum, curr) => {
+        return sum + curr.value;
+      }, 0);
+
+      return {
+        sum: valueSum,
+        mean: valueSum / items.length,
+        count: items.length
+      };
+    });
+
+    this.aggregatedStaticRadiationData = groupedStaticRadiationData.map((g, idx) => {
+      const firstItem: Mc2RadiationItem = g.values[0];
+      const aggregation = aggregatedPerGroup[idx];
+
+      return {
+        sensorId: firstItem.sensorId,
+        latitude: firstItem.latitude,
+        longitude: firstItem.longitude,
+        meanValue: aggregation.mean,
+        summedValue: aggregation.sum,
+        valueCount: aggregation.count,
+      };
+    });
+
+    this.drawRadiationData();
   }
 
   @Input()
@@ -100,7 +141,61 @@ export class MapNeighborhoodsComponent implements OnInit {
 
   private draw(): void {
     this.drawLayers();
+    this.drawRadiationData();
     this.drawEventCatchers();
+  }
+
+  drawRadiationData() {
+
+    const radiationGroup = this.svgRenderGroups.radiation;
+    if (!radiationGroup) {
+      return;
+    }
+
+    radiationGroup.selectAll('*').remove();
+
+    const mobileRadiationGroup = radiationGroup.append('g')
+      .attr('class', 'mobile-radiation');
+
+    const staticRadiationGroup = radiationGroup.append('g')
+      .attr('class', 'static-radiation');
+
+    /* If overplotting is solved, change this to opacity scale! */
+    const radiationColor = (t) => d3.interpolateReds(d3.scaleLinear()
+      .domain([0, 72.3147833333])
+      .range([0, 1])(t));
+
+    mobileRadiationGroup.selectAll('circle.radiation-glyph')
+      .data(this.mobileRadiationData)
+      .enter()
+      .append('circle')
+      .attr('class', 'radiation-glyph')
+      .attr('r', 5)
+      .each((d, i, n) => {
+        const pixPos = this.mapProjectionService.geoToPixels(d);
+        const node = d3.select(n[i]);
+        node.attr('cx', pixPos.x);
+        node.attr('cy', pixPos.y);
+      })
+      .style('fill', d => radiationColor(d.value));
+
+    staticRadiationGroup.selectAll('circle.radiation-glyph')
+      .data(this.aggregatedStaticRadiationData)
+      .enter()
+      .append('circle')
+      .attr('class', 'radiation-glyph')
+      .attr('r', 50)
+      .each((d, i, n) => {
+        const pixPos = this.mapProjectionService.geoToPixels(d);
+        const node = d3.select(n[i]);
+        node.attr('cx', pixPos.x);
+        node.attr('cy', pixPos.y);
+      })
+      .style('fill', d => radiationColor(d.meanValue))
+      .style('stroke', d3.interpolateReds(1))
+      .style('stroke-width', '20px');
+
+
   }
 
   drawLayers() {
