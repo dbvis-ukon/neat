@@ -6,23 +6,32 @@ import { EpisodeTooltipComponent } from './episode-tooltip/episode-tooltip.compo
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import {
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatListModule
 } from '@angular/material';
 import {EpisodeTimelineComponent} from './episode-timeline/episode-timeline.component';
 import {EpisodeTimelineTooltipComponent} from '@app/dashboard/episodes/episode-timeline-tooltip/episode-timeline-tooltip.component';
+import { SharedModule } from '@app/shared/shared.module';
 
 @NgModule({
   entryComponents: [
     EpisodeTooltipComponent,
     EpisodeTimelineTooltipComponent
   ],
-  declarations: [EpisodeVisComponent, EpisodeAppComponent, EpisodeTooltipComponent,
-    EpisodeTimelineComponent, EpisodeTimelineTooltipComponent],
+  declarations: [
+    EpisodeVisComponent,
+    EpisodeAppComponent,
+    EpisodeTooltipComponent,
+    EpisodeTimelineComponent,
+    EpisodeTimelineTooltipComponent
+  ],
   imports: [
     CommonModule,
     DragDropModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule.forRoot(),
+    MatListModule
   ],
   exports: [
     EpisodeAppComponent,
