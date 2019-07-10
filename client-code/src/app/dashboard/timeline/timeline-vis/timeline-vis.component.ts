@@ -2,12 +2,12 @@ import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, Input, Out
 import { ResizedEvent } from 'angular-resize-event';
 import { TimelineOptions } from '../timeline-options';
 import * as d3 from 'd3';
-import { ScaleTime } from 'd3';
 import Annotation, {
   annotation,
   annotationCallout,
   annotationCustomType, annotationLabel,
 } from 'd3-svg-annotation';
+import { ScaleTime, ScaleOrdinal } from 'd3';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { TimelineOtherBrushes } from '../timeline-other-brushes';
@@ -23,7 +23,7 @@ import {MatDialog} from '@angular/material';
 import {
   TimelineAnnotationModalComponent,
 } from '@app/dashboard/timeline/timeline-annotation-modal/timeline-annotation-modal.component';
-import {UserOptionsRepositoryService} from "@app/core";
+import {UserOptionsRepositoryService} from '@app/core';
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -75,7 +75,7 @@ export class TimelineVisComponent implements OnInit {
   private brushDebouncer: Subject<[Date, Date]> = new Subject();
 
   private _streamGraphData: StreamGraphItem[];
-  private _streamGraphColors: string[];
+  private _streamGraphColorScale: ScaleOrdinal<string, string>;
 
   private _hoverLine: Date;
 
@@ -120,15 +120,18 @@ export class TimelineVisComponent implements OnInit {
   }
 
   @Input()
-  set streamGraphColors(streamGraphColors: string[]) {
-    this._streamGraphColors = streamGraphColors;
+  set streamGraphColorScale(streamGraphColorScale: ScaleOrdinal<string, string>) {
+    if (!streamGraphColorScale) {
+      streamGraphColorScale = d3.scaleOrdinal();
+    }
+    this._streamGraphColorScale = streamGraphColorScale;
 
 
     this.updateStreamGraph();
   }
 
-  get streamGraphColors(): string[] {
-    return this._streamGraphColors;
+  get streamGraphColorScale(): ScaleOrdinal<string, string> {
+    return this._streamGraphColorScale;
   }
 
   @Input()
@@ -380,8 +383,8 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateStreamGraph() {
-    if (this.streamGraph && this._streamGraphData && this._streamGraphColors) {
-      this.streamGraph.render(this._streamGraphData, this._streamGraphColors, this.width, this.height - 20, this.timeScale);
+    if (this.streamGraph && this._streamGraphData && this._streamGraphColorScale) {
+      this.streamGraph.render(this._streamGraphData, this._streamGraphColorScale, this.width, this.height - 20, this.timeScale);
     }
   }
 

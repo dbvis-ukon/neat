@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 import { StreamGraphItem } from '../stream-graph-item';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { StreamgraphTooltipComponent } from '../streamgraph-tooltip/streamgraph-tooltip.component';
-import { ScaleTime } from 'd3';
+import { ScaleTime, ScaleOrdinal } from 'd3';
 import { StreamGraphRepositoryService } from '../stream-graph-repository.service';
 
 
@@ -23,7 +23,7 @@ export class StreamGraph {
 
     public render(
         mydata: StreamGraphItem[],
-        colors: string[],
+        colors: ScaleOrdinal<string, string>,
         chartWidth: number,
         chartHeight: number,
         timeScale: ScaleTime<number, number>): void {
@@ -87,10 +87,6 @@ export class StreamGraph {
             ])
             .range([chartHeight, 0]);
 
-        const color = d3.scaleOrdinal<string, string>()
-            .domain(allKeys)
-            .range(colors);
-
         // const color = d3.scaleLinear<string>()
         //     .domain([0, 1])
         //     .range(colors);
@@ -109,7 +105,13 @@ export class StreamGraph {
             .merge(sel)
             .attr('d', area)
             .attr('name', d => d.key)
-            .style('fill', d =>  color(d.key))
+            .style('fill', d => {
+                const c = colors(d.key);
+                if (!c) {
+                    return 'black';
+                }
+                return c;
+            })
             .on('mouseenter', (d, i, n) => {
                 const mouseEvent: MouseEvent = d3.event;
 

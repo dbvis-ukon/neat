@@ -6,6 +6,7 @@ import { SelectableFilterItem } from './timeline/filter-dialog/selectable-filter
 
 import { EpisodeCategory } from './episodes/EpisodeCategory';
 import {AnnotationData} from '@app/dashboard/timeline/AnnotationData';
+import { ScaleOrdinal } from 'd3-scale';
 
 export interface MasterTimelineItem {
   type: 'streamgraph' | 'episodes' | 'separator';
@@ -14,7 +15,13 @@ export interface MasterTimelineItem {
   titleEditMode?: boolean;
 
   dataUrl?: string;
+
+  /**
+   * @deprecated this property is not used anymore
+   */
   colors?: string[];
+
+  colorScale?: ScaleOrdinal<string, string>;
   data?: StreamGraphItem[];
   timelineOptions?: TimelineOptions;
 

@@ -39,13 +39,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   episodeData: Episode;
 
-  timelineOptions: TimelineOptions = {
-    begin: new Date('2020-04-06 00:00:00'),
-    end: new Date('2020-04-10 11:30:00'),
-    userColor: 'black',
-    brushOn: true,
-    height: 100
-  };
+  masterTimelineItem: MasterTimelineItem;
 
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
 
@@ -67,11 +61,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
    * This variable contains the brushed mc1 data.
    */
   brushedMc1Data: Mc1Item[];
-
-  streamGraphData: StreamGraphItem[];
-
-  // streamGraphColors: string[] = ['#fcfbfd', '#efedf5', '#dadaeb', '#bcbddc', '#9e9ac8', '#807dba', '#6a51a3', '#54278f', '#3f007d'];
-  streamGraphColors: string[] = d3.schemeCategory10 as string[];
 
   constructor(
     private route: ActivatedRoute,
@@ -109,20 +98,19 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.userOptionsRepository.userOptions$.subscribe(opts => {
       this.userOptions = opts;
 
-      this.timelineOptions.userColor = this.userOptions.color;
+      if (this.masterTimelineItem) {
+        this.masterTimelineItem.timelineOptions.userColor = this.userOptions.color;
 
-      this.timelineOptions = {...this.timelineOptions};
+        this.masterTimelineItem.timelineOptions = {...this.masterTimelineItem.timelineOptions};
+      }
     });
     // throw new Error('Method not implemented.');
-
-    this.streamGraphRepository.getData('/assets/TRIALJSONM3C.json')
-      .subscribe(data => {
-        this.streamGraphData = data;
-      });
 
 
     this.timelineData = this.masterTimelineRepository.getDefaults();
     this.timelineDataTitles = this.masterTimelineRepository.getAllTitles();
+
+    this.masterTimelineItem = this.timelineData[0];
   }
 
   ngOnDestroy(): void {
