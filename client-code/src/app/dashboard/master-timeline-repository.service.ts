@@ -4,11 +4,17 @@ import { MasterTimelineItem } from './master-timeline-item';
 import { StreamGraphRepositoryService } from './timeline/stream-graph-repository.service';
 import { TimelineOptions } from './timeline/timeline-options';
 import { EpisodeRepositoryService } from './episodes/episode-repository.service';
+import { ScaleOrdinal } from 'd3';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MasterTimelineRepositoryService {
+
+  private static readonly colormap1: string[] = [];
+  private static readonly coloScale1: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
+    .domain([])
+    .range([]);
 
   private readonly defaultTimelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
