@@ -10,7 +10,13 @@ import { ScaleOrdinal } from 'd3-scale';
 
 export interface MasterTimelineItem {
   type: 'streamgraph' | 'episodes' | 'separator';
-  title: string;
+
+  readonly originalTitle: string;
+
+  /**
+   * this title will be edited
+   */
+  title?: string;
 
   titleEditMode?: boolean;
 

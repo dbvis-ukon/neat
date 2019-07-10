@@ -193,12 +193,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   annotationsChanged(annotations: AnnotationData[], timelineItem: MasterTimelineItem) {
-    console.log('annotations changed', annotations, timelineItem);
-
-    const tmpMap: Map<string, AnnotationData> = new Map();
-    annotations.forEach(a => tmpMap.set(a.uuid, a));
-
-    // for(let i = 0; i < this.allAnnotations)
+    this.allAnnotations = annotations;
   }
 
 }
