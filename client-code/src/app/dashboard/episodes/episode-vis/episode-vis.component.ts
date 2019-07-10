@@ -40,7 +40,7 @@ import {
   AnnotationData,
   AnnotationPositionInfo
 } from "@app/dashboard/timeline/AnnotationData";
-import {TimelineAnnotationModalComponent} from "@app/dashboard/timeline/timeline-annotation-modal/timeline-annotation-modal.component";
+import {TimelineAnnotationModalComponent} from "@app/shared/timeline-annotation-modal/timeline-annotation-modal.component";
 import {MatDialog} from "@angular/material";
 
 @Component({
@@ -445,10 +445,10 @@ export class EpisodeVisComponent implements OnInit {
   private update(): void {
 
     this.svgSelection.selectAll<SVGRectElement, Episode>('.episodeBar')
-      .attr('x', (d) => d.columnId * this.barWidth)//this.episodeColumnScale(d.columnId))// 
+      .attr('x', (d) => d.columnId * this.barWidth)//this.episodeColumnScale(d.columnId))//
       .attr('y', (d) => this.myScale(d.startTimestamp))
       .attr('height', (d) => this.myScale(d.endTimestamp) - this.myScale(d.startTimestamp))
-      .attr('width', (d) => this.barWidth)//this.episodeColumnScale(1) - this.episodeColumnScale(0))//
+      .attr('width', (d) => this.barWidth)// this.episodeColumnScale(1) - this.episodeColumnScale(0))//
       .style('fill', (d) => d.color);
 
 
@@ -548,7 +548,7 @@ export class EpisodeVisComponent implements OnInit {
   private getLabelData(episodes: Episode[]): any[] {
     const labels = [];
     episodes.forEach((episode) => {
-      labels.push(this.myScale(episode.startTimestamp))//episode.rowIds[0] * this.oneTextElementHeight);
+      labels.push(this.myScale(episode.startTimestamp))// episode.rowIds[0] * this.oneTextElementHeight);
     });
     return labels;
   }
