@@ -22,11 +22,6 @@ export interface MasterTimelineItem {
 
   dataUrl?: string;
 
-  /**
-   * @deprecated this property is not used anymore
-   */
-  colors?: string[];
-
   colorScale?: ScaleOrdinal<string, string>;
   data?: StreamGraphItem[];
   timelineOptions?: TimelineOptions;
