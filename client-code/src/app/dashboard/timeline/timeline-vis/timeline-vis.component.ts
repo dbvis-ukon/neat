@@ -67,7 +67,7 @@ export class TimelineVisComponent implements OnInit {
   private _streamGraphData: StreamGraphItem[];
   private _streamGraphColors: string[];
 
-  private _hoverLine: Date;
+  private _hoverLine: Date = new Date();
 
   @Output()
   hoverLineChange: EventEmitter<Date> = new EventEmitter();
@@ -182,6 +182,29 @@ export class TimelineVisComponent implements OnInit {
     this.svgSelection = d3.select(this.svg);
     this.svgSelection.attr('class', 'timeline-viz');
 
+    // add bottom axis
+    this.axisSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'axis')
+      .attr('transform', `translate(0,0)`)
+      .call(this.axisBottom);
+
+    this.streamGraphSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'stream-graph');
+
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository, this.hoverLineChange);
+
+    if (this._options.brushOn) {
+      this.otherBrushesSelection = this.svgSelection
+        .append('g');
+
+    // add brush
+      this.brushSelection = this.svgSelection
+        .append('g')
+        .attr('class', 'brush');
+    }
+
     this.hoverLineGroupSelection = this.svgSelection
       .append('g')
       .attr('class', 'hoverLineGroup');
@@ -210,28 +233,6 @@ export class TimelineVisComponent implements OnInit {
       .attr('y', 12)
       .style('font-size', '10px');
 
-    // add bottom axis
-    this.axisSelection = this.svgSelection
-      .append('g')
-      .attr('class', 'axis')
-      .attr('transform', `translate(0,0)`)
-      .call(this.axisBottom);
-
-    this.streamGraphSelection = this.svgSelection
-      .append('g')
-      .attr('class', 'stream-graph');
-
-    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository, this.hoverLineChange);
-
-    if (this._options.brushOn) {
-      this.otherBrushesSelection = this.svgSelection
-        .append('g');
-
-    // add brush
-      this.brushSelection = this.svgSelection
-        .append('g')
-        .attr('class', 'brush');
-    }
   }
 
   private updateRanges(): void {
