@@ -22,7 +22,6 @@ import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filte
 import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
 import { MasterTimelineItem } from '../master-timeline-item';
 
-
 @Component({
   selector: 'dbvis-dashboard',
   templateUrl: './dashboard.component.html',
