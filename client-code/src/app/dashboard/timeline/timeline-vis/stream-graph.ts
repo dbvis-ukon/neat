@@ -136,7 +136,6 @@ export class StreamGraph {
             const mouse = d3.mouse(this.chart.node());
             const x = timeScale.invert(mouse[0]);
             this.hoverLineChange.emit(x);
-            console.log(mouse);
           });
 
         sel.exit().remove();

@@ -189,22 +189,6 @@ export class TimelineVisComponent implements OnInit {
       .attr('transform', `translate(0,0)`)
       .call(this.axisBottom);
 
-    this.streamGraphSelection = this.svgSelection
-      .append('g')
-      .attr('class', 'stream-graph');
-
-    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository, this.hoverLineChange);
-
-    if (this._options.brushOn) {
-      this.otherBrushesSelection = this.svgSelection
-        .append('g');
-
-    // add brush
-      this.brushSelection = this.svgSelection
-        .append('g')
-        .attr('class', 'brush');
-    }
-
     this.hoverLineGroupSelection = this.svgSelection
       .append('g')
       .attr('class', 'hoverLineGroup');
@@ -221,18 +205,35 @@ export class TimelineVisComponent implements OnInit {
         this.updateHoverLine(true);
       });
 
-    this.hoverLineSelection = this.hoverLineGroupSelection.append('line')
+    this.streamGraphSelection = this.svgSelection
+      .append('g')
+      .attr('class', 'stream-graph');
+
+    this.streamGraph = new StreamGraph(this.streamGraphSelection, this.tooltipService, this.streamGraphRepository, this.hoverLineChange);
+
+    if (this._options.brushOn) {
+      this.otherBrushesSelection = this.svgSelection
+        .append('g');
+
+    // add brush
+      this.brushSelection = this.svgSelection
+        .append('g')
+        .attr('class', 'brush');
+    }
+
+    this.hoverLineSelection = this.svgSelection.append('line')
       .attr('y1', 0)
       .attr('y2', this.height)
       .attr('x1', 100)
       .attr('x2', 100)
       .attr('stroke-width', '2px')
+      .attr('pointer-events', 'none')
       .attr('stroke', 'black');
 
-    this.hoverTextSelection = this.hoverLineGroupSelection.append('text')
+    this.hoverTextSelection = this.svgSelection.append('text')
       .attr('y', 12)
+      .attr('pointer-events', 'none')
       .style('font-size', '10px');
-
   }
 
   private updateRanges(): void {
@@ -275,6 +276,10 @@ export class TimelineVisComponent implements OnInit {
 
   private updateHoverLine(showText = true): void {
     const x = this.timeScale(this._hoverLine);
+
+    if (!this.hoverLineGroupSelection) {
+      return;
+    }
 
     this.hoverLineSelection
       .attr('x1', x)

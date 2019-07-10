@@ -175,17 +175,6 @@ export class EpisodeVisComponent implements OnInit {
     this.svg = this.svgRef.nativeElement;
     this.svgSelection = d3.select(this.svg);
 
-    this.chartSelection = this.svgSelection
-      .append('g');
-
-    this.createFirst();
-
-    // this.userOptionsService.userOptions$.subscribe(options => {
-    //   // TODO filter stuff
-    //   // console.log(options);
-    //   const [minBrush, maxBrush] = options.timelineBrush;
-    //   this.createOrUpdateVis();
-    // });
     this.hoverLineGroupSelection = this.svgSelection
       .append('g')
       .attr('class', 'hoverLineGroup');
@@ -202,18 +191,32 @@ export class EpisodeVisComponent implements OnInit {
         this.updateHoverLine(true);
       });
 
-    this.hoverLineSelection = this.hoverLineGroupSelection.append('line')
+
+    this.chartSelection = this.svgSelection
+      .append('g');
+
+    this.createFirst();
+
+    this.hoverLineSelection = this.svgSelection.append('line')
       .attr('y1', 0)
       .attr('y2', this.svgHeight)
       .attr('x1', 100)
       .attr('x2', 100)
       .attr('stroke-width', '2px')
+      .attr('pointer-events', 'none')
       .attr('stroke', 'black');
 
-    this.hoverTextSelection = this.hoverLineGroupSelection.append('text')
+    this.hoverTextSelection = this.svgSelection.append('text')
       .attr('y', 12)
+      .attr('pointer-events', 'none')
       .style('font-size', '10px');
 
+    // this.userOptionsService.userOptions$.subscribe(options => {
+    //   // TODO filter stuff
+    //   // console.log(options);
+    //   const [minBrush, maxBrush] = options.timelineBrush;
+    //   this.createOrUpdateVis();
+    // });
   }
 
   // private applyTimelineBrush(brush?: [Date, Date]): Episode[] {
@@ -413,6 +416,11 @@ export class EpisodeVisComponent implements OnInit {
       .on('mouseleave', (d) => {
         this.tooltipService.close();
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', false);
+      })
+      .on('mousemove', () => {
+        const mouse = d3.mouse(this.svgSelection.node());
+        const x = this.myScale.invert(mouse[0]);
+        this.hoverLineChange.emit(x);
       });
 
     this.update();
@@ -647,7 +655,15 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   private updateHoverLine(showText = true): void {
+    if (this._hoverLine === undefined) {
+      return;
+    }
+
     const x = this.myScale(this._hoverLine);
+
+    if (!this.hoverLineSelection) {
+      return;
+    }
 
     this.hoverLineSelection
       .attr('x1', x)
