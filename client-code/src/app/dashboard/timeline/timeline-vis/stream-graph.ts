@@ -37,7 +37,7 @@ export class StreamGraph {
 
         const allKeys = this.streamGraphRepository.getAllKeys(mydata);
 
-        // console.log('allkeys', allKeys);
+        console.log('allkeys', allKeys);
 
         const stack = d3.stack()
             .keys(allKeys)
