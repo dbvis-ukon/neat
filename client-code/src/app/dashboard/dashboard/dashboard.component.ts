@@ -21,6 +21,7 @@ import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
 import { MasterTimelineItem } from '../master-timeline-item';
+import { AnnotationData } from '../timeline/AnnotationData';
 
 @Component({
   selector: 'dbvis-dashboard',
@@ -31,7 +32,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   globalHoverLine: Date;
 
-  dashboardLayout: 'default' | 'timelines' = 'timelines';
+  dashboardLayout: 'default' | 'timelines' | 'annotations' = 'timelines';
 
   timelineData: MasterTimelineItem[] = [];
 
@@ -61,6 +62,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
    * This variable contains the brushed mc1 data.
    */
   brushedMc1Data: Mc1Item[];
+
+  allAnnotations: AnnotationData[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -187,6 +190,15 @@ export class DashboardComponent implements OnInit, OnDestroy {
     if (idx > -1) {
       this.timelineData.splice(idx, 1);
     }
+  }
+
+  annotationsChanged(annotations: AnnotationData[], timelineItem: MasterTimelineItem) {
+    console.log('annotations changed', annotations, timelineItem);
+
+    const tmpMap: Map<string, AnnotationData> = new Map();
+    annotations.forEach(a => tmpMap.set(a.uuid, a));
+
+    // for(let i = 0; i < this.allAnnotations)
   }
 
 }

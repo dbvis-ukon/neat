@@ -80,6 +80,7 @@
           [streamGraphColorScale]="timelineItem.colorScale" 
           [(hoverLine)]="globalHoverLine"
           [(annotations)]="timelineItem.annotations"
+          (annotationsChange)="annotationsChanged($event, timelineItem)"
         >
         </dbvis-timeline-vis>
 
@@ -108,6 +109,14 @@
           </mat-menu>
         </div>
       </div>
+    </div>
+
+    <div class="root" *ngIf="dashboardLayout === 'annotations'">
+      <mat-list>
+        <mat-list-item *ngFor="let an of allAnnotations">
+          <h4 mat-list-row>{{ an.note.title }}</h4>
+        </mat-list-item>
+      </mat-list>
     </div>
   </mat-sidenav-content>
 

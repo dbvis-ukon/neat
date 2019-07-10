@@ -17,6 +17,10 @@
     <mat-icon>timeline</mat-icon>
   </button> 
 
+  <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="emitView('annotations')" matTooltip="Annotation View">
+    <mat-icon>label</mat-icon>
+  </button> 
+
   <span class="example-spacer"></span>
 
   <button *ngIf="group" mat-icon-button aria-label="settings" class="exit-icon" (click)="openDialog()" matTooltip="Change User Settings">
