@@ -35,7 +35,7 @@ export class TimelineVisComponent implements OnInit {
   @Output()
   public brushed: EventEmitter<[Date, Date]> = new EventEmitter();
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg') svgRef: ElementRef<SVGSVGElement>;
 
   private svg: SVGSVGElement;
 
