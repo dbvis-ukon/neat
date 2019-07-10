@@ -1,3 +1,5 @@
+import * as uuid from 'uuid/v4';
+
 export interface AnnotationNote {
   title: string;
   label2: string;
@@ -6,7 +8,9 @@ export interface AnnotationPositionInfo {
   date: Date;
   y: number;
 }
+
 export class AnnotationData {
+  private readonly _uuid: string = uuid();
   private _note: AnnotationNote;
   private _data: AnnotationPositionInfo;
   private _dx;
@@ -14,7 +18,8 @@ export class AnnotationData {
   private _color = '#ff336f';
 
 
-  constructor(title?: string, label?: string, date?: Date, y?: number) {
+  constructor(color: string, date?: Date, y?: number, title?: string, label?: string) {
+    this.color = color;
     this._note = {
       title, label2: label
     };
@@ -64,5 +69,9 @@ export class AnnotationData {
 
   set color(value: string) {
     this._color = value;
+  }
+
+  get uuid(): string {
+    return this._uuid;
   }
 }

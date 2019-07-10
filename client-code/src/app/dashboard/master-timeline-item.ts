@@ -5,6 +5,7 @@ import { TimelineOptions } from './timeline/timeline-options';
 import { SelectableFilterItem } from './timeline/filter-dialog/selectable-filter-item';
 
 import { EpisodeCategory } from './episodes/EpisodeCategory';
+import {AnnotationData} from '@app/dashboard/timeline/AnnotationData';
 
 export interface MasterTimelineItem {
   type: 'streamgraph' | 'episodes' | 'separator';
@@ -27,4 +28,6 @@ export interface MasterTimelineItem {
     showText: boolean;
     rotate: boolean;
   };
+
+  annotations?: AnnotationData[];
 }

@@ -23,6 +23,7 @@ import {MatDialog} from '@angular/material';
 import {
   TimelineAnnotationModalComponent,
 } from '@app/dashboard/timeline/timeline-annotation-modal/timeline-annotation-modal.component';
+import {UserOptionsRepositoryService} from "@app/core";
 
 @Component({
   selector: 'dbvis-timeline-vis',
@@ -89,7 +90,8 @@ export class TimelineVisComponent implements OnInit {
   constructor(
     private tooltipService: TooltipService,
     private streamGraphRepository: StreamGraphRepositoryService,
-    public dialog: MatDialog) { }
+    public dialog: MatDialog,
+    private userOptionsRepositoryService: UserOptionsRepositoryService) { }
 
   @Input()
   set hoverLine(cur: Date) {
@@ -171,7 +173,6 @@ export class TimelineVisComponent implements OnInit {
   set annotations(annotations: AnnotationData[]) {
     if (annotations !== undefined) {
       this._annotations = annotations;
-      console.log('new annotations', this._annotations);
       this.updateAnnotations();
     }
   }
@@ -247,7 +248,8 @@ export class TimelineVisComponent implements OnInit {
       .on('dblclick', () => {
         const [x, y] = d3.mouse(this.svg);
         const date = this.timeScale.invert(x);
-        const data = new AnnotationData(null, null, date, y);
+        const color = this.userOptionsRepositoryService.getOptions().color;
+        const data = new AnnotationData( color, date, y);
         this.handleDialog(data);
       });
 
@@ -414,7 +416,11 @@ export class TimelineVisComponent implements OnInit {
         y: d => d.y
       })
       .on('noteclick', annot => this.handleDialog(annot, true))
-      .on('dragend', () => this.emitAnnotationChange())
+      .on('dragend', (annot) => {
+        const oldIdx = this._annotations.findIndex(a => a.uuid === annot.uuid);
+        this._annotations.splice(oldIdx, 1, annot);
+        this.emitAnnotationChange();
+      })
       .annotations(this._annotations);
 
     this.annotationContainer

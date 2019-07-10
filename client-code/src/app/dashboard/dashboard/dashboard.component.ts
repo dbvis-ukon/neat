@@ -21,31 +21,6 @@ import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
 import { MasterTimelineItem } from '../master-timeline-item';
-import { EpisodeCategory } from '../episodes/EpisodeCategory';
-import { EpisodeRepositoryService } from '../episodes/episode-repository.service';
-import {AnnotationData} from '@app/dashboard/timeline/AnnotationData';
-
-interface TimelineItem {
-  type: 'streamgraph' | 'episodes';
-  title: string;
-  dataUrl: string;
-  colors: string[];
-  data?: StreamGraphItem[]; // FIXME
-  timelineOptions?: TimelineOptions;
-
-  selection?: SelectableFilterItem[];
-
-  filteredData?: StreamGraphItem[];
-
-  episodeCategory?: EpisodeCategory;
-
-  episodeOptions?: {
-    showText: boolean;
-    rotate: boolean;
-  };
-
-  annotations?: AnnotationData[];
-}
 
 @Component({
   selector: 'dbvis-dashboard',
