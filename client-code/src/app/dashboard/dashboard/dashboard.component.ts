@@ -111,7 +111,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         console.log('group', groupSettings.users);
 
         // collect all annotations from each user
-        const tmpAllAnnotations = [];
+        const tmpAllAnnotations: AnnotationData[] = [];
         groupSettings.users.forEach(u => (u.annotations || []).forEach(a => {
           // @sperrle see here
           const aClass = new AnnotationData(a.color, new Date(a.data.date), a.data.y, a.note.title, a.note.label2);
@@ -130,6 +130,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
             myMap.get(a.masterTimelineOriginalTitle).annotations.push(aClass);
           }
         }));
+
+        tmpAllAnnotations
+          .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 
         this.allAnnotations = tmpAllAnnotations;
         console.log('all annotations', this.allAnnotations);
