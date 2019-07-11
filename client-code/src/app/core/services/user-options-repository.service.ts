@@ -37,7 +37,6 @@ export class UserOptionsRepositoryService {
   }
 
   public setOptions(options: UserOptions) {
-    console.log('setting options');
     if (isNullOrUndefined(options.id)) {
       options.id = uuid();
     }
@@ -57,6 +56,17 @@ export class UserOptionsRepositoryService {
     }
 
     this.oldStr = newStr;
+  }
+
+  public leaveGroup() {
+    const oldOpts = this.getOptions();
+    const opts = {
+      id: oldOpts.id,
+      name: oldOpts.name,
+      color: oldOpts.color
+    } as UserOptions;
+    this.userOptionsSubject.next(opts);
+    this.sessionStorage.set(UserOptionsRepositoryService.SESSION_STORAGE_KEY, JSON.stringify(opts));
   }
 
   public deleteUser(userId: string) {

@@ -74,6 +74,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   streamGraphTitles: string[] = [];
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private groupRepository: GroupRepositoryService,
     private userOptionsRepository: UserOptionsRepositoryService,
@@ -102,6 +103,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
       this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
         this.groupSettings = groupSettings;
+
+        if (groupSettings.users.filter(u => u.id === opts.id).length === 0) {
+          // I got kicked lol
+          this.userOptionsRepository.leaveGroup();
+          this.router.navigate(['/groups', {kicked: true}]);
+        }
+
         this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
 
         const myMap: Map<string, MasterTimelineItem> = new Map();
