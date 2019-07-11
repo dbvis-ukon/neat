@@ -16,7 +16,7 @@ export class MasterTimelineRepositoryService {
     .range(['red', 'green']);
 
     private static readonly damagesColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
-    .domain(['M1Water', 'M1Shakeintensity', 'M1RoadsAndBridges', 'M1Power', 'M1Medical', 'M1Buildings'])
+    .domain(['Rumble Sewer and Water', 'Rumble Shake Intensity', 'Rumble Roads and Bridges', 'Rumble Power', 'Rumble Medical', 'Rumble Buildings'])
     .range(['#80b1d3', '#fb8072', '#fdb462', '#ffffb3', '#8dd3c7', '#bebada']);
 
     private static readonly locationm1ColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
@@ -24,7 +24,7 @@ export class MasterTimelineRepositoryService {
     .range(['#63A0EA', '#74AFF1', '#69A5EC', '#5897E5', '#4688DE', '#86BEF8', '#2F74D4', '#97CDFF', '#91C8FD', '#4083DC', '#5D9CE8', '#8CC3FB', '#7AB4F4', '#3579D7', '#4C8DE0', '#6FAAEF', '#80B9F6', '#3B7ED9']);
 
     private static readonly radiationColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
-    .domain(['M2 Too Low Error', 'M2 Almost Nothing', 'M2 Low', 'M2 Normal', 'M2 Slightly Elevated', 'M2 Higher Than Ususal', 'M2 Almost Warning', 'M2 Warning', 'M2 Danger', 'M2 Too High - Error'])
+    .domain(['Radiation Too Low Error', 'Radiation Almost Nothing', 'Radiation Low', 'Radiation Normal', 'Radiation Slightly Elevated', 'Radiation Higher Than Ususal', 'Radiation Almost Warning', 'Radiation Warning', 'Radiation Danger', 'Radiation Too High - Error'])
     .range(['#808080', '#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026', '#808080']);
 
     private static readonly crisisColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
