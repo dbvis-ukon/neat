@@ -6,7 +6,7 @@ import * as uuid from 'uuid/v4';
 import { SessionStorageService } from 'angular-web-storage';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import {debounceTime} from "rxjs/operators";
+import {debounceTime} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -61,5 +61,12 @@ export class UserOptionsRepositoryService {
 
   public deleteUser(userId: string) {
     return this.http.delete<void>(environment.apiUrl + '/user/' + userId).subscribe();
+  }
+
+  public sayHello(userId: string, groupId: string) {
+    this.http.get<void>(environment.apiUrl + '/user/hello/' + userId, {headers: new HttpHeaders({
+      'group-id':  groupId,
+      'user-id': userId
+    })}).subscribe();
   }
 }

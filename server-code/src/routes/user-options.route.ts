@@ -26,8 +26,19 @@ async function broadcastToUsers(conn, groupId) {
     stompServer.send('/group/' + groupId, {}, JSON.stringify(groupSettings));
 }
 
+userOptionsRouter.get('/hello/:userId', verifyGroupId, wrapAsync(async (req: any, res, next) => {
+    // expects a user options body:
+    const userid = req.params.userId;
 
-/* create a new group */
+    const userOptions: any = await RethinkDbService.db().table('user_options').get(userid).run(req._rdb);
+
+    await broadcastToUsers(req._rdb, userOptions.groupId);
+
+    res.send();
+}));
+
+
+/* send useroptions */
 userOptionsRouter.post('/', verifyGroupId, wrapAsync(async (req: any, res, next) => {
     // expects a user options body:
     const userOptions: UserOptions = req.body as UserOptions;
@@ -51,5 +62,7 @@ userOptionsRouter.delete('/:userId', wrapAsync(async (req: any, res) => {
 
     res.send();
 }));
+
+
 
 export default userOptionsRouter;

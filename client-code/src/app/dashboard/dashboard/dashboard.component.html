@@ -134,12 +134,17 @@
     </div>
 
     <div class="root" *ngIf="dashboardLayout === 'annotations'">
-      <mat-list>
+      <mat-list style="width:100%">
         <mat-list-item *ngFor="let an of allAnnotations">
           <h4 mat-line><i>{{ an.data.date | date :'yyyy-MM-dd hh:mm:ss'}}</i>&nbsp;
             <span [ngStyle]="{'color': an.color}">{{ an.userName }}</span>: <b>{{ an.note.title }}</b></h4>
           <p mat-line>{{ an.note.label2 }}</p>
           <p mat-line>Found in chart: {{ an.masterTimelineOriginalTitle }}</p>
+
+          <span class="example-spacer"></span>
+          <button mat-icon-button aria-label="delete" class="icon filter" (click)="removeAnnotation(an)" matTooltip="Remove" [disabled]="userOptions.id !== an.userId">
+              <mat-icon>delete</mat-icon>
+          </button>
         </mat-list-item>
       </mat-list>
     </div>

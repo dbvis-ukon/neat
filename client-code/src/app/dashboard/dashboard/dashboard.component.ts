@@ -96,6 +96,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
       const opts = this.userOptionsRepository.getOptions();
 
+      if (opts) {
+        this.userOptionsRepository.sayHello(opts.id, this.currentGroup.groupId);
+      }
+
       this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
         this.groupSettings = groupSettings;
         this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
@@ -120,22 +124,30 @@ export class DashboardComponent implements OnInit, OnDestroy {
           aClass.userId = a.userId;
           aClass.userName = a.userName;
 
-          console.log(aClass);
+          if (tmpAllAnnotations.filter(a1 => {
+            return a1.userName === aClass.userName
+            && a1.data.date.getTime() === aClass.data.date.getTime()
+            && a1.note.title === aClass.note.title;
+          }).length === 0) {
+            tmpAllAnnotations.push(aClass);
 
-          tmpAllAnnotations.push(aClass);
+            // inject into own masterTimelineItems
+            if (myMap.has(a.masterTimelineOriginalTitle)) {
 
-          // inject into own masterTimelineItems
-          if (myMap.has(a.masterTimelineOriginalTitle)) {
-
-            myMap.get(a.masterTimelineOriginalTitle).annotations.push(aClass);
+              myMap.get(a.masterTimelineOriginalTitle).annotations.push(aClass);
+            }
           }
         }));
 
         tmpAllAnnotations
           .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 
-        this.allAnnotations = tmpAllAnnotations;
-        console.log('all annotations', this.allAnnotations);
+        const uniqueAnnotations = this.getUniqueAnnotations(tmpAllAnnotations);
+
+        console.log('fetch unique size', uniqueAnnotations.length);
+
+        this.allAnnotations = uniqueAnnotations;
+        // console.log('all annotations', this.allAnnotations);
       });
 
       if (opts.groupId !== group.groupId) {
@@ -290,8 +302,35 @@ export class DashboardComponent implements OnInit, OnDestroy {
     const tmpAllAnnotations = this.allAnnotations.filter(a => a.masterTimelineOriginalTitle !== timelineItem.originalTitle);
     const allAnnotations = [...tmpAllAnnotations, ...annotations];
 
-    this.userOptions.annotations = allAnnotations;
+    const uniqueAnnotations = this.getUniqueAnnotations(allAnnotations);
+
+    console.log('add unique size', uniqueAnnotations.length);
+
+    this.userOptions.annotations = uniqueAnnotations;
     this.userOptionsRepository.setOptions(this.userOptions);
+  }
+
+  removeAnnotation(annoation: AnnotationData) {
+    this.allAnnotations.splice(this.allAnnotations.indexOf(annoation), 1);
+
+    const uniqueAnnotations = this.getUniqueAnnotations(this.allAnnotations);
+
+    console.log('remove unique size', uniqueAnnotations.length);
+    this.userOptions.annotations = uniqueAnnotations;
+    this.userOptionsRepository.setOptions(this.userOptions);
+  }
+
+  getUniqueAnnotations(annoatations: AnnotationData[]): AnnotationData[] {
+    const myMap: Set<string> = new Set();
+    const tmpAnnotation: AnnotationData[] = [];
+    annoatations.forEach(a => {
+      const keyStr = a.userName + ':' + a.note.title + ':' + a.data.date.getTime();
+      if (!myMap.has(keyStr)) {
+        tmpAnnotation.push(a);
+      }
+      myMap.add(keyStr);
+    });
+    return tmpAnnotation;
   }
 
 }
