@@ -360,7 +360,7 @@ export class TimelineVisComponent implements OnInit {
   private updateHoverLine(showText = true): void {
     const x = this.timeScale(this._hoverLine);
 
-    if (!this.hoverLineGroupSelection) {
+    if (!this.hoverLineGroupSelection || !this.hoverTextSelection) {
       return;
     }
 
@@ -372,6 +372,10 @@ export class TimelineVisComponent implements OnInit {
 
     const txt = showText && this._hoverLine ? timeFormat(this._hoverLine) : '';
     const txtX = x < this.width / 2 ? x + 2 : x - 95;
+
+    if (isNaN(txtX)) {
+      return;
+    }
 
     this.hoverTextSelection
       .attr('x', txtX)
