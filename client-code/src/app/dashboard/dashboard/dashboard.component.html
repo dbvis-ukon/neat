@@ -8,15 +8,15 @@
 
     <div class="root" *ngIf="dashboardLayout === 'default'">
       <div class="panel left">
-        <div class="map">
-          <h1>MAP COMPONENT</h1>
-          <dbvis-map-neighborhood-vis [options]="mapOptions" (selected)="mapNeighborhoodChanged($event)"></dbvis-map-neighborhood-vis>
+
+        <div class="story">
+          <h1>RUMBLE MAP</h1>
+          <dbvis-map-glyph-vis [mc1Data]="brushedMc1Data" [options]="mapOptions"></dbvis-map-glyph-vis>
         </div>
 
-
-        <div class="episodes">
-          <h1>EPISODE COMPONENT</h1>
-          <dbvis-episode-app></dbvis-episode-app>
+        <div class="map">
+          <h1>RADIATION MAP</h1>
+          <dbvis-map-neighborhood-vis [options]="mapOptions" (selected)="mapNeighborhoodChanged($event)"></dbvis-map-neighborhood-vis>
         </div>
 
       </div>
@@ -27,10 +27,11 @@
             (brushed)="timelineBrushed($event)" [streamGraphData]="masterTimelineItem.data" [streamGraphColorScale]="masterTimelineItem.colorScale"></dbvis-timeline-vis>
         </div>
 
-        <div class="story">
-          <h1>STORY / STH ELSE</h1>
-          <dbvis-map-glyph-vis [mc1Data]="brushedMc1Data" [options]="mapOptions"></dbvis-map-glyph-vis>
+        <div class="episodes">
+          <h1>Y*INT EPISODES</h1>
+          <dbvis-episode-app></dbvis-episode-app>
         </div>
+        
       </div>
     </div>
 
