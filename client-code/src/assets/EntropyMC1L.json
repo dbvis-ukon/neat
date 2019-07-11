@@ -1,6 +1,6 @@
 [{
-   "timestamp": "2020-04-06 00:00:00",
-   "data": [{
+   "timestamp": "2020-04-06 00:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.0852463420643
       },
@@ -56,10 +56,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 00:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 00:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -111,10 +110,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 01:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 01:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -166,10 +164,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 01:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 01:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -221,10 +218,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 02:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 02:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -284,10 +280,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 02:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 02:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.332823171382
       },
@@ -347,10 +342,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 03:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 03:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -406,10 +400,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 03:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 03:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -465,10 +458,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 04:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 04:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -528,10 +520,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 04:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 04:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -575,10 +566,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 05:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 05:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -642,10 +632,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 05:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 05:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -701,10 +690,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 06:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 06:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -760,10 +748,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 06:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 06:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -831,10 +818,9 @@
          "name": "Weston",
          "value": 0.309673895331
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 07:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 07:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.349512107638
       },
@@ -910,10 +896,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 07:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 07:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.275258384111
       },
@@ -969,10 +954,9 @@
          "name": "Weston",
          "value": 0.335380561644
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 08:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 08:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -1032,10 +1016,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 08:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 08:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.327508217261
       },
@@ -1091,10 +1074,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 09:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 09:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -1158,10 +1140,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 09:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 09:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.321901926297
       },
@@ -1221,10 +1202,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 10:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 10:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -1284,10 +1264,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 10:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 10:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -1339,10 +1318,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 11:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 11:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -1406,10 +1384,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 11:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 11:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -1473,10 +1450,9 @@
          "name": "Weston",
          "value": 0.330200207011
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 12:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 12:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -1536,10 +1512,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 12:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 12:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -1591,10 +1566,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 13:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 13:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -1658,10 +1632,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 13:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 13:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -1709,10 +1682,9 @@
          "name": "Weston",
          "value": 0.318979194569
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 14:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 14:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -1780,10 +1752,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 14:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 14:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.485959172405
       },
@@ -1855,10 +1826,9 @@
          "name": "Weston",
          "value": 0.381385236641
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 15:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 15:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.449431627058
       },
@@ -1930,10 +1900,9 @@
          "name": "Weston",
          "value": 0.381385236641
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 15:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 15:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.382983605554
       },
@@ -2005,10 +1974,9 @@
          "name": "Weston",
          "value": 0.369437462367
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 16:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 16:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.625351730658
       },
@@ -2080,10 +2048,9 @@
          "name": "Weston",
          "value": 0.519296676811
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 16:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 16:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.57597347512
       },
@@ -2159,10 +2126,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 17:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 17:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.535512887744
       },
@@ -2234,10 +2200,9 @@
          "name": "Weston",
          "value": 0.4703350755
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 17:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 17:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.481214190865
       },
@@ -2309,10 +2274,9 @@
          "name": "Weston",
          "value": 0.450256591659
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 18:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 18:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.4542844774
       },
@@ -2384,10 +2348,9 @@
          "name": "Weston",
          "value": 0.404372428543
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 18:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 18:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.426294094366
       },
@@ -2455,10 +2418,9 @@
          "name": "Weston",
          "value": 0.396345241328
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 19:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 19:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.365750834847
       },
@@ -2530,10 +2492,9 @@
          "name": "Weston",
          "value": 0.351688609988
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 19:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 19:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.34501505423
       },
@@ -2601,10 +2562,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 20:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 20:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.330200207011
       },
@@ -2672,10 +2632,9 @@
          "name": "Weston",
          "value": 0.318979194569
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 20:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 20:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -2735,10 +2694,9 @@
          "name": "Weston",
          "value": 0.337875576533
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 21:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 21:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -2794,10 +2752,9 @@
          "name": "Weston",
          "value": 0.327508217261
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 21:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 21:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.340311186307
       },
@@ -2857,10 +2814,9 @@
          "name": "Weston",
          "value": 0.324743471032
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 22:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 22:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -2920,10 +2876,9 @@
          "name": "Weston",
          "value": 0.306374036929
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 22:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 22:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -2991,10 +2946,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 23:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 23:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.36385647169
       },
@@ -3050,10 +3004,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-06 23:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-06 23:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -3113,10 +3066,9 @@
          "name": "Weston",
          "value": 0.270608583635
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 00:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 00:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.357953346269
       },
@@ -3184,10 +3136,9 @@
          "name": "Weston",
          "value": 0.302964183246
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 00:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 00:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -3255,10 +3206,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 01:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 01:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -3322,10 +3272,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 01:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 01:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -3389,10 +3338,9 @@
          "name": "Weston",
          "value": 0.270608583635
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 02:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 02:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -3452,10 +3400,9 @@
          "name": "Weston",
          "value": 0.321901926297
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 02:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 02:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -3523,10 +3470,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 03:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 03:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -3598,10 +3544,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 03:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 03:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.367610755037
       },
@@ -3669,10 +3614,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 04:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 04:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -3732,10 +3676,9 @@
          "name": "Weston",
          "value": 0.223018113403
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 04:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 04:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.335380561644
       },
@@ -3803,10 +3746,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 05:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 05:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -3862,10 +3804,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 05:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 05:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -3937,10 +3878,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 06:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 06:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -3992,10 +3932,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 06:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 06:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -4063,10 +4002,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 07:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 07:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -4118,10 +4056,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 07:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 07:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -4185,10 +4122,9 @@
          "name": "West Parton",
          "value": 0.175729245141
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 08:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 08:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -4244,10 +4180,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 08:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 08:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.327508217261
       },
@@ -4311,10 +4246,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 09:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 09:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -4366,10 +4300,9 @@
          "name": "Weston",
          "value": 0.309673895331
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 09:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 09:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -4441,10 +4374,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 10:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 10:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.270608583635
       },
@@ -4508,10 +4440,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 10:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 10:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.321901926297
       },
@@ -4571,10 +4502,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 11:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 11:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -4638,10 +4568,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 11:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 11:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -4697,10 +4626,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 12:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 12:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -4760,10 +4688,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 12:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 12:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -4827,10 +4754,9 @@
          "name": "Weston",
          "value": 0.0852463420643
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 13:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 13:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -4882,10 +4808,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 13:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 13:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -4953,10 +4878,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 14:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 14:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -5020,10 +4944,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 14:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 14:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -5071,10 +4994,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 15:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 15:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -5142,10 +5064,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 15:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 15:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -5201,10 +5122,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 16:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 16:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.340311186307
       },
@@ -5264,10 +5184,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 16:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 16:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.324743471032
       },
@@ -5323,10 +5242,9 @@
          "name": "Weston",
          "value": 0.295783333742
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 17:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 17:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.131279366779
       },
@@ -5390,10 +5308,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 17:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 17:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -5445,10 +5362,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 18:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 18:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.270608583635
       },
@@ -5504,10 +5420,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 18:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 18:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.321901926297
       },
@@ -5567,10 +5482,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 19:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 19:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.335380561644
       },
@@ -5626,10 +5540,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 19:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 19:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -5689,10 +5602,9 @@
          "name": "Weston",
          "value": 0.337875576533
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 20:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 20:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.131279366779
       },
@@ -5752,10 +5664,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 20:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 20:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.340311186307
       },
@@ -5827,10 +5738,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 21:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 21:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -5898,10 +5808,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 21:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 21:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.321901926297
       },
@@ -5961,10 +5870,9 @@
          "name": "Weston",
          "value": 0.275258384111
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 22:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 22:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -6016,10 +5924,9 @@
          "name": "Weston",
          "value": 0.324743471032
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 22:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 22:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -6087,10 +5994,9 @@
          "name": "Weston",
          "value": 0.318979194569
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 23:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 23:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.335380561644
       },
@@ -6146,10 +6052,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-07 23:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-07 23:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -6213,10 +6118,9 @@
          "name": "Weston",
          "value": 0.335380561644
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 00:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 00:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -6272,10 +6176,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 00:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 00:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -6331,10 +6234,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 01:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 01:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -6394,10 +6296,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 01:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 01:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.197324985131
       },
@@ -6465,10 +6366,9 @@
          "name": "Weston",
          "value": 0.249555514595
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 02:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 02:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -6528,10 +6428,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 02:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 02:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -6595,10 +6494,9 @@
          "name": "Weston",
          "value": 0.0852463420643
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 03:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 03:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -6662,10 +6560,9 @@
          "name": "Weston",
          "value": 0.327508217261
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 03:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 03:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -6729,10 +6626,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 04:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 04:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.379761496792
       },
@@ -6796,10 +6692,9 @@
          "name": "Weston",
          "value": 0.295783333742
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 04:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 04:30:00","data": [
+      {
          "name": "Chapparal",
          "value": 0.162942293831
       },
@@ -6863,10 +6758,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 05:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 05:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -6922,10 +6816,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 05:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 05:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -6993,10 +6886,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 06:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 06:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -7064,10 +6956,9 @@
          "name": "Weston",
          "value": 0.291994607428
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 06:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 06:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -7131,10 +7022,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 07:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 07:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.347288290019
       },
@@ -7190,10 +7080,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 07:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 07:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -7261,10 +7150,9 @@
          "name": "West Parton",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 08:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 08:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -7328,10 +7216,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 08:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 08:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.793260623694
       },
@@ -7407,10 +7294,9 @@
          "name": "Wilson Forest",
          "value": 0.337875576533
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 09:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 09:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.79961175765
       },
@@ -7482,10 +7368,9 @@
          "name": "Wilson Forest",
          "value": 0.439888738175
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 09:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 09:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.772387444841
       },
@@ -7549,10 +7434,9 @@
          "name": "Wilson Forest",
          "value": 0.396345241328
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 10:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 10:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.75376846476
       },
@@ -7616,10 +7500,9 @@
          "name": "Wilson Forest",
          "value": 0.369437462367
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 10:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 10:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.752577731278
       },
@@ -7683,10 +7566,9 @@
          "name": "Wilson Forest",
          "value": 0.34501505423
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 11:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 11:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.727606100172
       },
@@ -7750,10 +7632,9 @@
          "name": "Wilson Forest",
          "value": 0.332823171382
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 11:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 11:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.694574798921
       },
@@ -7821,10 +7702,9 @@
          "name": "Wilson Forest",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 12:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 12:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.622645737966
       },
@@ -7892,10 +7772,9 @@
          "name": "Wilson Forest",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 12:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 12:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.396345241328
       },
@@ -7955,10 +7834,9 @@
          "name": "Wilson Forest",
          "value": 0.175729245141
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 13:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 13:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.318979194569
       },
@@ -8018,10 +7896,9 @@
          "name": "Wilson Forest",
          "value": 0.148328635192
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 13:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 13:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.349512107638
       },
@@ -8077,10 +7954,9 @@
          "name": "Weston",
          "value": 0.4703350755
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 14:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 14:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.357953346269
       },
@@ -8136,10 +8012,9 @@
          "name": "Weston",
          "value": 0.434282135178
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 14:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 14:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.291994607428
       },
@@ -8195,10 +8070,9 @@
          "name": "Weston",
          "value": 0.447761466818
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 15:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 15:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.255238604066
       },
@@ -8258,10 +8132,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 15:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 15:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.265737364088
       },
@@ -8321,10 +8194,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 16:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 16:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.110820244684
       },
@@ -8384,10 +8256,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 16:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 16:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.243538125743
       },
@@ -8443,10 +8314,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 17:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 17:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.21514922029
       },
@@ -8502,10 +8372,9 @@
          "name": "Weston",
          "value": 0.309673895331
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 17:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 17:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.0852463420643
       },
@@ -8565,10 +8434,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 18:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 18:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.162942293831
       },
@@ -8620,10 +8488,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 18:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 18:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.175729245141
       },
@@ -8675,10 +8542,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 19:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 19:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.0852463420643
       },
@@ -8726,10 +8592,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 19:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 19:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.0852463420643
       },
@@ -8781,10 +8646,9 @@
          "name": "Weston",
          "value": 0.327508217261
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 20:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 20:00:00","data": [
+      {
          "name": "Downtown",
          "value": 0.187095424083
       },
@@ -8828,10 +8692,9 @@
          "name": "Weston",
          "value": 0.270608583635
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 20:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 20:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.0852463420643
       },
@@ -8879,10 +8742,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 21:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 21:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.110820244684
       },
@@ -8918,10 +8780,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 21:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 21:30:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.110820244684
       },
@@ -8961,10 +8822,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 22:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 22:00:00","data": [
+      {
          "name": "Downtown",
          "value": 0.342690153992
       },
@@ -9008,10 +8868,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 22:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 22:30:00","data": [
+      {
          "name": "Downtown",
          "value": 0.237144650088
       },
@@ -9055,10 +8914,9 @@
          "name": "Weston",
          "value": 0.291994607428
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 23:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 23:00:00","data": [
+      {
          "name": "Downtown",
          "value": 0.306374036929
       },
@@ -9110,10 +8968,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-08 23:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-08 23:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.911607112463
       },
@@ -9157,10 +9014,9 @@
          "name": "Weston",
          "value": 0.270608583635
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 00:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 00:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -9208,10 +9064,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 00:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 00:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -9263,10 +9118,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 01:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 01:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -9330,10 +9184,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 01:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 01:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -9389,10 +9242,9 @@
          "name": "Weston",
          "value": 0.0852463420643
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 02:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 02:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.309673895331
       },
@@ -9444,10 +9296,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 02:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 02:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -9503,10 +9354,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 03:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 03:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.131279366779
       },
@@ -9554,10 +9404,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 03:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 03:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -9609,10 +9458,9 @@
          "name": "Weston",
          "value": 0.321901926297
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 04:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 04:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.347288290019
       },
@@ -9660,10 +9508,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 04:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 04:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -9711,10 +9558,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 05:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 05:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -9778,10 +9624,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 05:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 05:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.327508217261
       },
@@ -9837,10 +9682,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 06:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 06:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -9900,10 +9744,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 06:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 06:30:00","data": [
+      {
          "name": "Chapparal",
          "value": 0.0852463420643
       },
@@ -9963,10 +9806,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 07:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 07:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -10022,10 +9864,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 07:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 07:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -10081,10 +9922,9 @@
          "name": "Weston",
          "value": 0.302964183246
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 08:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 08:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.206624586083
       },
@@ -10140,10 +9980,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 08:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 08:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.270608583635
       },
@@ -10199,10 +10038,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 09:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 09:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -10246,10 +10084,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 09:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 09:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -10313,10 +10150,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 10:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 10:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -10380,10 +10216,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 10:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 10:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.197324985131
       },
@@ -10447,10 +10282,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 11:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 11:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -10506,10 +10340,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 11:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 11:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.309673895331
       },
@@ -10573,10 +10406,9 @@
          "name": "Weston",
          "value": 0.302964183246
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 12:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 12:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -10640,10 +10472,9 @@
          "name": "Weston",
          "value": 0.327508217261
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 12:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 12:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.347288290019
       },
@@ -10707,10 +10538,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 13:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 13:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -10770,10 +10600,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 13:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 13:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.243538125743
       },
@@ -10833,10 +10662,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 14:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 14:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -10896,10 +10724,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 14:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 14:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.197324985131
       },
@@ -10955,10 +10782,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 15:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 15:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.591759577662
       },
@@ -11034,10 +10860,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 15:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 15:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.605792004509
       },
@@ -11109,10 +10934,9 @@
          "name": "Wilson Forest",
          "value": 0.131279366779
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 16:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 16:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.812558285319
       },
@@ -11184,10 +11008,9 @@
          "name": "Wilson Forest",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 16:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 16:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.782799936048
       },
@@ -11259,10 +11082,9 @@
          "name": "Wilson Forest",
          "value": 0.131279366779
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 17:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 17:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.74457312384
       },
@@ -11334,10 +11156,9 @@
          "name": "Wilson Forest",
          "value": 0.230324942723
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 17:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 17:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.694499359681
       },
@@ -11405,10 +11226,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 18:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 18:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.651864666259
       },
@@ -11476,10 +11296,9 @@
          "name": "Wilson Forest",
          "value": 0.131279366779
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 18:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 18:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.616686608984
       },
@@ -11543,10 +11362,9 @@
          "name": "Weston",
          "value": 0.451886826467
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 19:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 19:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.561814593404
       },
@@ -11610,10 +11428,9 @@
          "name": "Weston",
          "value": 0.411815299782
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 19:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 19:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.542081409733
       },
@@ -11677,10 +11494,9 @@
          "name": "Weston",
          "value": 0.315970500143
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 20:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 20:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.497975627418
       },
@@ -11740,10 +11556,9 @@
          "name": "Weston",
          "value": 0.351688609988
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 20:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 20:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.455852249234
       },
@@ -11807,10 +11622,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 21:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 21:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.451074956542
       },
@@ -11870,10 +11684,9 @@
          "name": "Weston",
          "value": 0.291994607428
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 21:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 21:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.404372428543
       },
@@ -11933,10 +11746,9 @@
          "name": "Weston",
          "value": 0.347288290019
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 22:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 22:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -11996,10 +11808,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 22:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 22:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.330200207011
       },
@@ -12059,10 +11870,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 23:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 23:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -12118,10 +11928,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-09 23:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-09 23:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.3712321222
       },
@@ -12173,10 +11982,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 00:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 00:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.327508217261
       },
@@ -12228,10 +12036,9 @@
          "name": "Weston",
          "value": 0.270608583635
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 00:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 00:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.295783333742
       },
@@ -12283,10 +12090,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 01:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 01:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -12334,10 +12140,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 01:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 01:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.324743471032
       },
@@ -12393,10 +12198,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 02:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 02:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.270608583635
       },
@@ -12436,10 +12240,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 02:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 02:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.197324985131
       },
@@ -12487,10 +12290,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 03:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 03:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.295783333742
       },
@@ -12538,10 +12340,9 @@
          "name": "Weston",
          "value": 0.306374036929
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 03:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 03:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -12601,10 +12402,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 04:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 04:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -12664,10 +12464,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 04:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 04:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -12727,10 +12526,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 05:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 05:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -12778,10 +12576,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 05:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 05:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -12837,10 +12634,9 @@
          "name": "Weston",
          "value": 0.299436748402
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 06:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 06:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -12892,10 +12688,9 @@
          "name": "Weston",
          "value": 0.330200207011
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 06:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 06:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.330200207011
       },
@@ -12943,10 +12738,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 07:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 07:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.330200207011
       },
@@ -13006,10 +12800,9 @@
          "name": "Weston",
          "value": 0.21514922029
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 07:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 07:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -13049,10 +12842,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 08:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 08:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -13116,10 +12908,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 08:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 08:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.321901926297
       },
@@ -13175,10 +12966,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 09:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 09:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.237144650088
       },
@@ -13230,10 +13020,9 @@
          "name": "Weston",
          "value": 0.175729245141
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 09:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 09:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -13281,10 +13070,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 10:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 10:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.283968336452
       },
@@ -13316,10 +13104,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 10:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 10:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.110820244684
       },
@@ -13371,10 +13158,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 11:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 11:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -13426,10 +13212,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 11:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 11:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.302964183246
       },
@@ -13477,10 +13262,9 @@
          "name": "Weston",
          "value": 0.243538125743
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 12:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 12:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -13540,10 +13324,9 @@
          "name": "Weston",
          "value": 0.321901926297
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 12:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 12:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.270608583635
       },
@@ -13599,10 +13382,9 @@
          "name": "Weston",
          "value": 0.35590743406
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 13:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 13:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.295783333742
       },
@@ -13642,10 +13424,9 @@
          "name": "Weston",
          "value": 0.283968336452
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 13:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 13:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.291994607428
       },
@@ -13693,10 +13474,9 @@
          "name": "Weston",
          "value": 0.288060160871
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 14:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 14:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -13748,10 +13528,9 @@
          "name": "Weston",
          "value": 0.312870633159
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 14:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 14:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -13807,10 +13586,9 @@
          "name": "Weston",
          "value": 0.237144650088
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 15:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 15:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.230324942723
       },
@@ -13874,10 +13652,9 @@
          "name": "Weston",
          "value": 0.279706019349
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 15:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 15:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -13929,10 +13706,9 @@
          "name": "Weston",
          "value": 0.35381976854
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 16:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 16:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.306374036929
       },
@@ -13984,10 +13760,9 @@
          "name": "Weston",
          "value": 0.270608583635
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 16:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 16:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.197324985131
       },
@@ -14043,10 +13818,9 @@
          "name": "Weston",
          "value": 0.187095424083
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 17:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 17:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.404372428543
       },
@@ -14102,10 +13876,9 @@
          "name": "Weston",
          "value": 0.0852463420643
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 17:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 17:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -14161,10 +13934,9 @@
          "name": "Weston",
          "value": 0.327508217261
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 18:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 18:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.321901926297
       },
@@ -14220,10 +13992,9 @@
          "name": "Weston",
          "value": 0.260622583564
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 18:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 18:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.327508217261
       },
@@ -14279,10 +14050,9 @@
          "name": "Weston",
          "value": 0.0852463420643
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 19:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 19:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -14342,10 +14112,9 @@
          "name": "Weston",
          "value": 0.302964183246
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 19:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 19:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.265737364088
       },
@@ -14409,10 +14178,9 @@
          "name": "Wilson Forest",
          "value": 0.0511478052386
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 20:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 20:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.309673895331
       },
@@ -14460,10 +14228,9 @@
          "name": "Weston",
          "value": 0.249555514595
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 20:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 20:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.318979194569
       },
@@ -14519,10 +14286,9 @@
          "name": "Wilson Forest",
          "value": 0
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 21:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 21:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.187095424083
       },
@@ -14578,10 +14344,9 @@
          "name": "Weston",
          "value": 0.318979194569
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 21:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 21:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -14641,10 +14406,9 @@
          "name": "Weston",
          "value": 0.206624586083
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 22:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 22:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.351688609988
       },
@@ -14692,10 +14456,9 @@
          "name": "Weston",
          "value": 0.337875576533
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 22:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 22:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.260622583564
       },
@@ -14751,10 +14514,9 @@
          "name": "Weston",
          "value": 0.162942293831
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 23:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 23:00:00","data": [
+      {
          "name": "Broadview",
          "value": 0.324743471032
       },
@@ -14818,10 +14580,9 @@
          "name": "Weston",
          "value": 0.302964183246
       }
-   ]
-}, {
-   "timestamp": "2020-04-10 23:30:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-10 23:30:00","data": [
+      {
          "name": "Broadview",
          "value": 0.288060160871
       },
@@ -14877,10 +14638,9 @@
          "name": "Weston",
          "value": 0.265737364088
       }
-   ]
-}, {
-   "timestamp": "2020-04-11 00:00:00",
-   "data": [{
+   ]},{
+   "timestamp": "2020-04-11 00:00:00","data": [
+      {
          "name": "Cheddarford",
          "value": 0.0852463420643
       },
