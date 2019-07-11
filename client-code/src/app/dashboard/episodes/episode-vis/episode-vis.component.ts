@@ -82,6 +82,7 @@ export class EpisodeVisComponent implements OnInit {
       this.createOrUpdateVis();
       this.svgWidth = 100; // this.maxColumns * this.barWidth;
       this.translateG(this.svgWidth);
+      this.updateAnnotations();
     });
   }
 
@@ -105,6 +106,8 @@ export class EpisodeVisComponent implements OnInit {
         this.svgSelection.selectAll('.episodeLine').remove();
       }
     }
+
+    this.updateAnnotations();
   }
 
   get showText(): boolean {
@@ -120,6 +123,8 @@ export class EpisodeVisComponent implements OnInit {
     }
 
     this.translateG(this.svgWidth);
+
+    this.updateAnnotations();
   }
 
   get showHorizontally(): boolean {
@@ -194,6 +199,7 @@ export class EpisodeVisComponent implements OnInit {
     this.svgHeight = event.newWidth - 30;
     this.svgWidth = 100; // this.maxColumns * this.barWidth;
     this.translateG(0);
+    this.updateAnnotations();
   }
 
   ngOnInit() {

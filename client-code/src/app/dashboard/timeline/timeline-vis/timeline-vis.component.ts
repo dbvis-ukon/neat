@@ -141,6 +141,7 @@ export class TimelineVisComponent implements OnInit {
     this.updateRender();
     this.updateStreamGraph();
     this.updateOwnBrush();
+    this.updateAnnotations();
   }
 
   get options(): TimelineOptions {
@@ -225,6 +226,8 @@ export class TimelineVisComponent implements OnInit {
     this.updateOwnBrush();
 
     this.drawOtherBrushes();
+
+    this.updateAnnotations();
   }
 
   private handleDialog(data: AnnotationData, edit?: boolean): void {
@@ -434,8 +437,6 @@ export class TimelineVisComponent implements OnInit {
       return;
     }
 
-    // console.log('draw other brushes', this._otherBrushes);
-
     const rects = this.otherBrushesSelection
       .selectAll<SVGRectElement, TimelineOtherBrushes>('rect')
       .data(this._otherBrushes, d => d.name);
@@ -456,7 +457,6 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateStreamGraph() {
-    // console.log('try updating stream graph', this.streamGraph, this._streamGraphData, this._streamGraphColorScale);
     if (this.streamGraph && this._streamGraphData && this._streamGraphColorScale) {
       this.streamGraph.render(this._streamGraphData, this._streamGraphColorScale, this.width, this.height - 20, this.timeScale);
     }
