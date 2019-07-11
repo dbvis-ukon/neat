@@ -5,7 +5,7 @@ import * as d3 from 'd3';
 import Annotation, {
   annotation,
   annotationCallout,
-  annotationCustomType, annotationLabel,
+  annotationCustomType,
 } from 'd3-svg-annotation';
 import { ScaleTime, ScaleOrdinal } from 'd3';
 import { Subject } from 'rxjs';
@@ -361,7 +361,7 @@ export class TimelineVisComponent implements OnInit {
       .attr('x1', x)
       .attr('x2', x);
 
-    const txt = showText ? this._hoverLine.toISOString() : '';
+    const txt = showText && this._hoverLine ? this._hoverLine.toISOString() : '';
     const txtX = x < this.width / 2 ? x + 2 : x - 122;
 
     this.hoverTextSelection
