@@ -125,6 +125,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
         // collect all annotations from each user
         const tmpAllAnnotations: AnnotationData[] = [];
         groupSettings.users.forEach(u => (u.annotations || []).forEach(a => {
+          if (u.id !== a.userId) {
+            return;
+          }
           // @sperrle see here
           const aClass = new AnnotationData(a.color, new Date(a.data.date), a.data.y, a.note.title, a.note.label2);
           aClass.masterTimelineOriginalTitle = a.masterTimelineOriginalTitle;
