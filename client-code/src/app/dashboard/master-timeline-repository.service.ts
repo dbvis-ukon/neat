@@ -247,6 +247,12 @@ export class MasterTimelineRepositoryService {
       .map(i => i.title);
   }
 
+  public getStreamGraphTitles(): string[] {
+    return this.allMasterTimelineData
+      .filter(i => i.type === 'streamgraph')
+      .map(i => i.title);
+  }
+
   private async init(item: MasterTimelineItem): Promise<MasterTimelineItem> {
     if (item.type === 'streamgraph' && !item.data) {
       item.data = await this.streamGraphRepository.getData(item.dataUrl).toPromise();

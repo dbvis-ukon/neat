@@ -68,6 +68,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   allRadiationData: Mc2RadiationItem[] = [];
   filteredRadiationData: Mc2RadiationItem[] = [];
 
+  streamGraphTitles: string[] = [];
+
   constructor(
     private route: ActivatedRoute,
     private groupRepository: GroupRepositoryService,
@@ -127,6 +129,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
 
     this.updateRadiationMapData();
+
+    this.streamGraphTitles = this.masterTimelineRepository.getStreamGraphTitles();
   }
 
   updateRadiationMapData() {
@@ -138,6 +142,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   setSingleTimelineItem(originalTitle: string) {
+    this.masterTimelineItem = null;
     this.masterTimelineRepository.getByTitle(originalTitle).then(tlOrig => {
       // shallow copy
       const tl = {... tlOrig};
@@ -147,6 +152,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
       this.masterTimelineItem = tl;
     });
+    console.log('set timeline', originalTitle);
   }
 
   ngOnDestroy(): void {
