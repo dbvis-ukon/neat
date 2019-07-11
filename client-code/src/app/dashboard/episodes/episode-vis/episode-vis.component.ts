@@ -444,14 +444,14 @@ export class EpisodeVisComponent implements OnInit {
       .attr('id', (d) => d.id)
       .style('fill', (d) => 'rgb(' + d.color + ')')
       .on('mouseenter', (d) => {
-        const mouseEvent: MouseEvent = d3.event;
+        const mouseEvent: MouseEvent = {...d3.event, clientX: d3.event.clientX + 5, clientY: d3.event.clientY + 5};
 
         const episodeTooltipComponentInstance = this.tooltipService.openAtMousePosition(EpisodeTooltipComponent, mouseEvent);
 
         episodeTooltipComponentInstance.utterances = d.utterances;
         episodeTooltipComponentInstance.episode = d.episode;
 
-        this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', true);
+        // this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', true);
 
       })
       .on('mouseleave', (d) => {
