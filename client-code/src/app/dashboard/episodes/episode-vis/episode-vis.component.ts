@@ -89,7 +89,7 @@ export class EpisodeVisComponent implements OnInit {
       this.expandVis();
     } else {
       if (this.svg !== undefined) {
-        this.svgWidth = this.maxColumns * this.barWidth;
+        this.svgWidth = 100;
         this.paddingForLabels = 0;
         this.translateG(this.svgWidth);
         this.compactVis();
@@ -152,6 +152,7 @@ export class EpisodeVisComponent implements OnInit {
   private myScale: ScaleTime<number, number> = d3.scaleTime().domain([ new Date('2020-04-06 00:00:00'), new Date('2020-04-11 00:00:00')]);
   private episodeColumnScale: ScaleLinear<number, number> = d3.scaleLinear();
   private defaultHeight = 2000;
+  private paddingFromBarsToLabels = 250;
 
 
   // All episodes as originally received
@@ -405,6 +406,7 @@ export class EpisodeVisComponent implements OnInit {
         const episodeTooltipComponentInstance = this.tooltipService.openAtMousePosition(EpisodeTooltipComponent, mouseEvent);
 
         episodeTooltipComponentInstance.utterances = d.utterances;
+        episodeTooltipComponentInstance.episode = d.episode;
 
         this.svgSelection.select('#gContainerForEpisodeBars').select('#label' + d.id).classed('bold', true);
 
@@ -527,7 +529,7 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeLabel')
       .data<Episode>(episodes)
-      .attr('x', () => -200)
+      .attr('x', () => -this.paddingFromBarsToLabels)
       .attr('y', (d, i) => this.sortedLabels[i])
       .style('font-size', this.fontSize);
   }
@@ -545,7 +547,7 @@ export class EpisodeVisComponent implements OnInit {
     this.svgSelection.select('#gContainerForEpisodeBars')
       .selectAll('.episodeToLabelLine')
       .data<Episode>(episodes)
-      .attr('x1', this.fontSize * 4 - 200)
+      .attr('x1', this.fontSize * 4 - this.paddingFromBarsToLabels)
       .attr('y1', (d, i) => this.sortedLabels[i])
       .attr('x2', (d) => (this.barWidth * d.columnId))
       .attr('y2', (d) => this.myScale(d.startTimestamp) + 2)
