@@ -40,9 +40,8 @@ interface AggregatedStaticRadiationItem {
   encapsulation: ViewEncapsulation.None
 })
 export class MapNeighborhoodsComponent implements OnInit {
-  private static readonly INITIAL_WIDTH = 300.0;
-  private static readonly INITIAL_HEIGHT = MapNeighborhoodsComponent.INITIAL_WIDTH
-    / (mapData.svg.viewBox.width / mapData.svg.viewBox.height);
+  private static readonly INITIAL_WIDTH = 500.0;
+  private static readonly INITIAL_HEIGHT = MapNeighborhoodsComponent.INITIAL_WIDTH / (mapData.svg.viewBox.width / mapData.svg.viewBox.height);
 
   @Output()
   public selected: EventEmitter<NeighborhoodSelection> = new EventEmitter();
