@@ -110,7 +110,6 @@ export class MapGlyph {
     private glyphSVGGroup: d3.Selection<SVGGElement, undefined, SVGElement, undefined>,
     private mapProjectionService: MapProjectionService
   ) {
-    console.log('root', this.glyphSVGGroup);
   }
 
   public render(data?: Mc1Item[], timelineBrush?: [Date, Date]) {
@@ -190,7 +189,7 @@ export class MapGlyph {
       .each((d, i, n) => this.init_glyph(d, i, n))
       .merge(glyphs)
       .attr('transform', d => {
-        const pos = this.mapProjectionService.geoToPixels(mapData.glyphLocations.filter(g => g.key == d.key)[0] as GeoPos);
+        const pos = this.mapProjectionService.geoToPixels(mapData.glyphLocations.filter(g => g.key === d.key)[0] as GeoPos);
         return `translate(${pos.x}, ${pos.y})`;
       })
       .each((d, i, n) => this.update_glyph(d, i, n));
@@ -216,7 +215,7 @@ export class MapGlyph {
           .attr(
             'transform',
             d => {
-              const pos = this.mapProjectionService.geoToPixels(mapData.glyphLocations.filter(g => g.key == d.key)[0] as GeoPos);
+              const pos = this.mapProjectionService.geoToPixels(mapData.glyphLocations.filter(g => g.key === d.key)[0] as GeoPos);
               return `translate(${pos.x}, ${pos.y}) scale(4) translate(${-0.5 * GLYPH_WIDTH})`;
             })
           .raise();
@@ -226,7 +225,7 @@ export class MapGlyph {
           .attr(
           'transform',
           d => {
-              const pos = this.mapProjectionService.geoToPixels(mapData.glyphLocations.filter(g => g.key == d.key)[0] as GeoPos);
+              const pos = this.mapProjectionService.geoToPixels(mapData.glyphLocations.filter(g => g.key === d.key)[0] as GeoPos);
               return `translate(${pos.x}, ${pos.y})`;
         });
       });
@@ -482,7 +481,7 @@ export class MapGlyph {
       .merge(paths)
       .attr('d', band => this.horizon_path(band)(data.values))
       .style('fill', band =>
-        cHorizon(band - mapData.glyphLocations.filter(g => g.key == data.key)[0].expectedBand)
+        cHorizon(band - mapData.glyphLocations.filter(g => g.key === data.key)[0].expectedBand)
       );
 
     timeline.select('g.axis.bottom')

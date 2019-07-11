@@ -28,14 +28,13 @@ export class EpisodeAppComponent implements OnInit {
     this.episodeRepositoryService.subscribeAllEpisodes()
       .subscribe(all => {
         this.allEpisodes = all;
-        console.log(this.allEpisodes);
       });
 
     this.timelineData = this.timelineDataService.subscribeOverallTimelineData();
   }
 
   drop(event: CdkDragDrop<Episode[]>) {
-    if (event.previousContainer === event.container) { moveItemInArray(this.allEpisodes, event.previousIndex, event.currentIndex); } 
+    if (event.previousContainer === event.container) { moveItemInArray(this.allEpisodes, event.previousIndex, event.currentIndex); }
   }
 
   show(event: any, index: number) {

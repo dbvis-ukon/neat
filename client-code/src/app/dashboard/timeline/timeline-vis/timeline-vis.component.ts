@@ -162,8 +162,6 @@ export class TimelineVisComponent implements OnInit {
   set brushExternal(brushExternal: [Date, Date]) {
     this._brushExternal = brushExternal;
 
-    console.log('set external brush', brushExternal);
-
     if (brushExternal && brushExternal[0] && brushExternal[1]) {
       this.updateOwnBrush(brushExternal);
     }
@@ -209,7 +207,6 @@ export class TimelineVisComponent implements OnInit {
 
     this.updateStreamGraph();
 
-    console.log('init', this._brushExternal);
     this.updateOwnBrush(this._brushExternal);
 
     this.updateAnnotations();
@@ -390,7 +387,6 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
-    console.log('try update brush', this._options.userColor);
     if (!this.brush || !this.brushSelection) {
       return;
     }
@@ -403,8 +399,6 @@ export class TimelineVisComponent implements OnInit {
     } else {
       brushRange = this.timeScale.range();
     }
-
-    console.log('update brush', this._options.userColor);
 
     this.brushSelection
       .call(this.brush)

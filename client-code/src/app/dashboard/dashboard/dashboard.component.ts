@@ -195,9 +195,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.updateRadiationMapData();
 
     this.streamGraphTitles = this.masterTimelineRepository.getStreamGraphTitles();
-    if (this.dashboardLayout === 'default') {
-      this.timelineBrushed(this.brushExternal);
-    }
   }
 
   updateRadiationMapData() {
@@ -345,6 +342,14 @@ export class DashboardComponent implements OnInit, OnDestroy {
       myMap.add(keyStr);
     });
     return tmpAnnotation;
+  }
+
+  changeLayout(layout: 'default' | 'timelines' | 'annotations') {
+    this.dashboardLayout = layout;
+
+    if (this.dashboardLayout === 'default') {
+      this.timelineBrushed(this.brushExternal);
+    }
   }
 
 }
