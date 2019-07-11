@@ -140,6 +140,7 @@ export class TimelineVisComponent implements OnInit {
 
     this.updateRender();
     this.updateStreamGraph();
+    this.updateOwnBrush();
   }
 
   get options(): TimelineOptions {
@@ -160,6 +161,8 @@ export class TimelineVisComponent implements OnInit {
   @Input()
   set brushExternal(brushExternal: [Date, Date]) {
     this._brushExternal = brushExternal;
+
+    console.log('set external brush', brushExternal);
 
     if (brushExternal && brushExternal[0] && brushExternal[1]) {
       this.updateOwnBrush(brushExternal);
@@ -206,6 +209,7 @@ export class TimelineVisComponent implements OnInit {
 
     this.updateStreamGraph();
 
+    console.log('init', this._brushExternal);
     this.updateOwnBrush(this._brushExternal);
 
     this.updateAnnotations();
@@ -218,6 +222,12 @@ export class TimelineVisComponent implements OnInit {
     this.updateRanges();
 
     this.updateRender();
+
+    this.updateStreamGraph();
+
+    this.updateOwnBrush();
+
+    this.drawOtherBrushes();
   }
 
   private handleDialog(data: AnnotationData, edit?: boolean): void {
@@ -352,9 +362,6 @@ export class TimelineVisComponent implements OnInit {
     this.axisSelection
       .attr('transform', `translate(0,  ${this.height - 20})`)
       .call(this.axisBottom);
-
-    this.updateOwnBrush();
-    this.updateStreamGraph();
   }
 
   private updateHoverLine(showText = true): void {
@@ -383,9 +390,11 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateOwnBrush(externalBrush?: [Date, Date]) {
+    console.log('try update brush', this._options.userColor);
     if (!this.brush || !this.brushSelection) {
       return;
     }
+    externalBrush = externalBrush || this._brushExternal;
     let brushRange = null;
     if (externalBrush) {
       brushRange = [this.timeScale(externalBrush[0]), this.timeScale(externalBrush[1])];
@@ -394,6 +403,8 @@ export class TimelineVisComponent implements OnInit {
     } else {
       brushRange = this.timeScale.range();
     }
+
+    console.log('update brush', this._options.userColor);
 
     this.brushSelection
       .call(this.brush)

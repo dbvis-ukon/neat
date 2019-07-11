@@ -171,9 +171,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.userOptions = opts;
 
       if (this.masterTimelineItem) {
-        this.masterTimelineItem.timelineOptions.userColor = this.userOptions.color;
-
-        this.masterTimelineItem.timelineOptions = {...this.masterTimelineItem.timelineOptions};
+        this.masterTimelineItem.timelineOptions = {
+          ...this.masterTimelineItem.timelineOptions,
+          userColor: this.userOptions.color
+        };
       }
     });
 
@@ -194,6 +195,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.updateRadiationMapData();
 
     this.streamGraphTitles = this.masterTimelineRepository.getStreamGraphTitles();
+    if (this.dashboardLayout === 'default') {
+      this.timelineBrushed(this.brushExternal);
+    }
   }
 
   updateRadiationMapData() {
@@ -211,11 +215,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
       const tl = {... tlOrig};
 
       // turn on the brush for this one
-      tl.timelineOptions = { ... tl.timelineOptions, brushOn: true};
+      tl.timelineOptions = { ... tl.timelineOptions, brushOn: true, userColor: this.userOptions.color};
 
       this.masterTimelineItem = tl;
     });
-    console.log('set timeline', originalTitle);
   }
 
   ngOnDestroy(): void {
