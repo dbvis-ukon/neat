@@ -16,15 +16,33 @@
 
         <div class="map">
           <h1>RADIATION MAP</h1>
-          <dbvis-map-neighborhood-vis [options]="mapOptions" (selected)="mapNeighborhoodChanged($event)"></dbvis-map-neighborhood-vis>
+          <dbvis-map-neighborhood-vis [options]="mapOptions" (selected)="mapNeighborhoodChanged($event)" [radiationData]="filteredRadiationData"></dbvis-map-neighborhood-vis>
         </div>
 
       </div>
       <div class="panel right">
+        <div class="timelineselection" *ngIf="masterTimelineItem">
+          <mat-form-field>
+            <mat-label>Timeline View</mat-label>
+            <mat-select [value]="masterTimelineItem.title" (selectionChange)="setSingleTimelineItem($event.value)">
+              <mat-option *ngFor="let title of streamGraphTitles" [value]="title">
+                {{ title }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
         <div class="timeline">
           <!-- <h1>TIMELINE</h1> -->
-          <dbvis-timeline-vis [options]="masterTimelineItem.timelineOptions" [otherBrushes]="timelineOtherBrushes"
-            (brushed)="timelineBrushed($event)" [streamGraphData]="masterTimelineItem.data" [streamGraphColorScale]="masterTimelineItem.colorScale"></dbvis-timeline-vis>
+          <dbvis-timeline-vis 
+            *ngIf="masterTimelineItem"
+            [options]="masterTimelineItem.timelineOptions" 
+            [otherBrushes]="timelineOtherBrushes"
+            (brushed)="timelineBrushed($event)" 
+            [streamGraphData]="masterTimelineItem.data" 
+            [streamGraphColorScale]="masterTimelineItem.colorScale" 
+            [brushExternal]="brushExternal"
+          ></dbvis-timeline-vis>
         </div>
 
         <div class="episodes">

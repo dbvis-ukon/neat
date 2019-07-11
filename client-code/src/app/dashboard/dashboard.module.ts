@@ -11,7 +11,8 @@ import {
   MatMenuModule,
   MatTooltipModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatSelectModule
 } from '@angular/material';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -45,7 +46,8 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatTooltipModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   exports: [
     DashboardComponent
