@@ -1,4 +1,5 @@
 import { NeighborhoodSelection } from "./neighborhood-selection";
+import { IAnnotationData } from "./annotation-data";
 
 export interface UserOptions {
 
@@ -16,4 +17,6 @@ export interface UserOptions {
      * The selection from the map. Shows what districts are selected.
      */
     neighborhoodSelection?: NeighborhoodSelection;
+
+    annotations?: IAnnotationData[];
 }

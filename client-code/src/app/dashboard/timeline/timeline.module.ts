@@ -4,18 +4,24 @@ import { StreamgraphTooltipComponent } from './streamgraph-tooltip/streamgraph-t
 import { TimelineVisComponent } from './timeline-vis/timeline-vis.component';
 import { SharedModule } from '@app/shared/shared.module';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
-import { MatButtonModule, MatDialogModule, MatListModule, MatCheckboxModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatListModule,
+  MatCheckboxModule,
+  MatFormFieldModule, MatInputModule
+} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   entryComponents: [
     StreamgraphTooltipComponent,
-    FilterDialogComponent
+    FilterDialogComponent,
   ],
   declarations: [
     TimelineVisComponent,
     StreamgraphTooltipComponent,
-    FilterDialogComponent
+    FilterDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +30,9 @@ import { FormsModule } from '@angular/forms';
     MatDialogModule,
     MatButtonModule,
     MatListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     TimelineVisComponent,

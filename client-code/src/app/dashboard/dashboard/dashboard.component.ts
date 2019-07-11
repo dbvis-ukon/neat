@@ -21,6 +21,7 @@ import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
 import { MasterTimelineItem } from '../master-timeline-item';
+import { AnnotationData } from '../timeline/AnnotationData';
 import { Mc2RadiationItem } from '../map/mc2-radiation-item';
 import { Mc2DataRepositoryService } from '@app/core/services/mc2-data-repository.service';
 
@@ -34,7 +35,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   globalHoverLine: Date;
 
-  dashboardLayout: 'default' | 'timelines' = 'timelines';
+  dashboardLayout: 'default' | 'timelines' | 'annotations' = 'timelines';
 
   timelineData: MasterTimelineItem[] = [];
 
@@ -64,6 +65,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
    * This variable contains the brushed mc1 data.
    */
   brushedMc1Data: Mc1Item[];
+
+  allAnnotations: AnnotationData[] = [];
 
   allRadiationData: Mc2RadiationItem[] = [];
   filteredRadiationData: Mc2RadiationItem[] = [];
@@ -96,6 +99,43 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
         this.groupSettings = groupSettings;
         this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
+
+        const myMap: Map<string, MasterTimelineItem> = new Map();
+
+        this.timelineData.forEach(t => {
+          myMap.set(t.originalTitle, t);
+          // remove annotations
+          t.annotations = [];
+        });
+
+        console.log('group', groupSettings.users);
+
+        // collect all annotations from each user
+        const tmpAllAnnotations: AnnotationData[] = [];
+        groupSettings.users.forEach(u => (u.annotations || []).forEach(a => {
+          // @sperrle see here
+          const aClass = new AnnotationData(a.color, new Date(a.data.date), a.data.y, a.note.title, a.note.label2);
+          aClass.masterTimelineOriginalTitle = a.masterTimelineOriginalTitle;
+          // aClass.uuid = a.uuid; // FIXME
+          aClass.userId = a.userId;
+          aClass.userName = a.userName;
+
+          console.log(aClass);
+
+          tmpAllAnnotations.push(aClass);
+
+          // inject into own masterTimelineItems
+          if (myMap.has(a.masterTimelineOriginalTitle)) {
+
+            myMap.get(a.masterTimelineOriginalTitle).annotations.push(aClass);
+          }
+        }));
+
+        tmpAllAnnotations
+          .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+
+        this.allAnnotations = tmpAllAnnotations;
+        console.log('all annotations', this.allAnnotations);
       });
 
       if (opts.groupId !== group.groupId) {
@@ -236,6 +276,22 @@ export class DashboardComponent implements OnInit, OnDestroy {
     if (idx > -1) {
       this.timelineData.splice(idx, 1);
     }
+  }
+
+  annotationsChanged(annotations: AnnotationData[], timelineItem: MasterTimelineItem) {
+    annotations
+      .forEach(a => {
+        a.masterTimelineOriginalTitle = timelineItem.originalTitle;
+        a.userId = this.userOptions.id;
+        a.userName = this.userOptions.name;
+        a.color = this.userOptions.color;
+      });
+
+    const tmpAllAnnotations = this.allAnnotations.filter(a => a.masterTimelineOriginalTitle !== timelineItem.originalTitle);
+    const allAnnotations = [...tmpAllAnnotations, ...annotations];
+
+    this.userOptions.annotations = allAnnotations;
+    this.userOptionsRepository.setOptions(this.userOptions);
   }
 
 }

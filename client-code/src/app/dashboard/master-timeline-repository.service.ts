@@ -46,150 +46,150 @@ export class MasterTimelineRepositoryService {
   private readonly allMasterTimelineData: MasterTimelineItem[] = [
     {
       type: 'streamgraph',
-      title: 'Rumble Damages Volume',
+      originalTitle: 'Rumble Damages Volume',
       dataUrl: '/assets/VolumeMC1C.json',
       colorScale: MasterTimelineRepositoryService.damagesColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Damages StdDev',
+      originalTitle: 'Rumble Damages StdDev',
       dataUrl: '/assets/STDMC1C.json',
       colorScale: MasterTimelineRepositoryService.damagesColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Damages Entropy',
+      originalTitle: 'Rumble Damages Entropy',
       dataUrl: '/assets/EntropyMC1C.json',
       colorScale: MasterTimelineRepositoryService.damagesColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Damages Mean',
+      originalTitle: 'Rumble Damages Mean',
       dataUrl: '/assets/MeanMC1C.json',
       colorScale: MasterTimelineRepositoryService.damagesColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Damages Sum',
+      originalTitle: 'Rumble Damages Sum',
       dataUrl: '/assets/SumMC1C.json',
       colorScale: MasterTimelineRepositoryService.damagesColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Damages Median',
+      originalTitle: 'Rumble Damages Median',
       dataUrl: '/assets/MedianMC1C.json',
       colorScale: MasterTimelineRepositoryService.damagesColorScale
     },
 
     {
       type: 'streamgraph',
-      title: 'Rumble Location Volume',
+      originalTitle: 'Rumble Location Volume',
       dataUrl: '/assets/VolumeMC1L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Location StdDev',
+      originalTitle: 'Rumble Location StdDev',
       dataUrl: '/assets/STDMC1L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Location Entropy',
+      originalTitle: 'Rumble Location Entropy',
       dataUrl: '/assets/EntropyMC1L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Location Mean',
+      originalTitle: 'Rumble Location Mean',
       dataUrl: '/assets/MeanMC1L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Location Sum',
+      originalTitle: 'Rumble Location Sum',
       dataUrl: '/assets/SumMC1L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Rumble Location Median',
+      originalTitle: 'Rumble Location Median',
       dataUrl: '/assets/MedianMC1L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
 
     {
       type: 'streamgraph',
-      title: 'Radiation Category Volume',
+      originalTitle: 'Radiation Category Volume',
       dataUrl: '/assets/VolumeMC2C.json',
       colorScale: MasterTimelineRepositoryService.radiationColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Radiation Category StdDev',
+      originalTitle: 'Radiation Category StdDev',
       dataUrl: '/assets/STDMC2C.json',
       colorScale: MasterTimelineRepositoryService.radiationColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Radiation Category Entropy',
+      originalTitle: 'Radiation Category Entropy',
       dataUrl: '/assets/EntropyMC2C.json',
       colorScale: MasterTimelineRepositoryService.radiationColorScale
     },
 
     {
       type: 'streamgraph',
-      title: 'Radiation Location Volume',
+      originalTitle: 'Radiation Location Volume',
       dataUrl: '/assets/VolumeMC2L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Radiation Location StdDev',
+      originalTitle: 'Radiation Location StdDev',
       dataUrl: '/assets/STDMC2L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Radiation Location Entropy',
+      originalTitle: 'Radiation Location Entropy',
       dataUrl: '/assets/EntropyMC2L.json',
       colorScale: MasterTimelineRepositoryService.locationm1ColorScale
     },
 
     {
       type: 'streamgraph',
-      title: 'Y*INT Category Volume',
+      originalTitle: 'Y*INT Category Volume',
       dataUrl: '/assets/VolumeMC3C.json',
       colorScale: MasterTimelineRepositoryService.crisisColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Y*INT Category StdDev',
+      originalTitle: 'Y*INT Category StdDev',
       dataUrl: '/assets/STDMC3C.json',
       colorScale: MasterTimelineRepositoryService.crisisColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Y*INT Category Entropy',
+      originalTitle: 'Y*INT Category Entropy',
       dataUrl: '/assets/EntropyMC3C.json',
       colorScale: MasterTimelineRepositoryService.crisisColorScale
     },
 
     {
       type: 'streamgraph',
-      title: 'Y*INT Location Volume',
+      originalTitle: 'Y*INT Location Volume',
       dataUrl: '/assets/VolumeMC3L.json',
       colorScale: MasterTimelineRepositoryService.locationm3ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Y*INT Location StdDev',
+      originalTitle: 'Y*INT Location StdDev',
       dataUrl: '/assets/STDMC3L.json',
       colorScale: MasterTimelineRepositoryService.locationm3ColorScale
     },
     {
       type: 'streamgraph',
-      title: 'Y*INT Location Entropy',
+      originalTitle: 'Y*INT Location Entropy',
       dataUrl: '/assets/EntropyMC3L.json',
       colorScale: MasterTimelineRepositoryService.locationm3ColorScale
     },
@@ -209,6 +209,7 @@ export class MasterTimelineRepositoryService {
     this.episodeRepository.subscribeAllEpisodes().subscribe(episodeCategories => {
       episodeCategories.forEach(ec => {
         this.allMasterTimelineData.push({
+          originalTitle: ec.crisislexCategory.name,
           type: 'episodes',
           episodeCategory: ec,
           title: ec.crisislexCategory.name,
@@ -224,39 +225,41 @@ export class MasterTimelineRepositoryService {
 
   public async getDefaults(): Promise<MasterTimelineItem[]> {
     return Promise.all(this.allMasterTimelineData
-      .filter(i => this.defaultItems.includes(i.title))
-      .sort((a, b) => this.defaultItems.indexOf(a.title) - this.defaultItems.indexOf(b.title))
+      .filter(i => this.defaultItems.includes(i.originalTitle))
+      .sort((a, b) => this.defaultItems.indexOf(a.originalTitle) - this.defaultItems.indexOf(b.originalTitle))
       .map(async i => await this.init(i)));
   }
 
   public async getByTitle(title: string): Promise<MasterTimelineItem> {
     if (title === 'separator') {
       return {
+        originalTitle: 'Separator',
         title: 'Separator',
         type: 'separator'
       } as MasterTimelineItem;
     }
 
     return this.allMasterTimelineData
-      .filter(i => i.title === title)
+      .filter(i => i.originalTitle === title)
       .map(async i => await this.init(i))[0];
   }
 
   public getAllTitles(): string[] {
     return this.allMasterTimelineData
-      .map(i => i.title);
+      .map(i => i.originalTitle);
   }
 
   public getStreamGraphTitles(): string[] {
     return this.allMasterTimelineData
       .filter(i => i.type === 'streamgraph')
-      .map(i => i.title);
+      .map(i => i.originalTitle);
   }
 
   private async init(item: MasterTimelineItem): Promise<MasterTimelineItem> {
     if (item.type === 'streamgraph' && !item.data) {
       item.data = await this.streamGraphRepository.getData(item.dataUrl).toPromise();
       item.filteredData = item.data;
+      item.title = item.originalTitle;
       item.timelineOptions = {... this.defaultTimelineOptions, brushOn: false};
     }
     return item;
