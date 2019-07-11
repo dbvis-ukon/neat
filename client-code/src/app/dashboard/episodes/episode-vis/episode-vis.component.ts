@@ -739,7 +739,7 @@ export class EpisodeVisComponent implements OnInit {
       }
     );
 
-    const drawAnnotations = annotation<AnnotationPositionInfo>()
+    const drawAnnotations = (annotation<AnnotationPositionInfo>() as any)
       .editMode(true)
       .notePadding(5)
       .type(type)
@@ -754,11 +754,11 @@ export class EpisodeVisComponent implements OnInit {
         y: d => d.y
       })
       .on('noteclick', annot => this.handleDialog(annot, true))
-      .on('dragend', (annot) => {
-        const oldIdx = this._annotations.findIndex(a => a.uuid === annot.uuid);
-        this._annotations.splice(oldIdx, 1, annot);
-        this.emitAnnotationChange();
-      })
+      // .on('dragend', (annot) => {
+      //   const oldIdx = this._annotations.findIndex(a => a.uuid === annot.uuid);
+      //   this._annotations.splice(oldIdx, 1, annot);
+      //   this.emitAnnotationChange();
+      // })
       .annotations(this._annotations);
 
     this.annotationContainer
