@@ -38,6 +38,7 @@ import { AnnotationPositionInfo } from '@shared/annotation-data';
 import { AnnotationData } from '@app/dashboard/timeline/AnnotationData';
 import {TimelineAnnotationModalComponent} from '@app/shared/timeline-annotation-modal/timeline-annotation-modal.component';
 import {MatDialog} from '@angular/material';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'dbvis-episode-vis',
@@ -195,11 +196,24 @@ export class EpisodeVisComponent implements OnInit {
 
   private _showHorizontally: boolean;
 
+  private _brush: [Date, Date];
+
   onResized(event: ResizedEvent) {
     this.svgHeight = event.newWidth - 30;
     this.svgWidth = 100; // this.maxColumns * this.barWidth;
     this.translateG(0);
     this.updateAnnotations();
+  }
+
+  @Input()
+  set brush(brush: [Date, Date]) {
+    this._brush = brush;
+
+    this.update();
+  }
+
+  get brush(): [Date, Date] {
+    return this._brush;
   }
 
   ngOnInit() {
@@ -518,13 +532,27 @@ export class EpisodeVisComponent implements OnInit {
 
 
   private update(): void {
+    if (!this.svgSelection) {
+      return;
+    }
 
     this.svgSelection.selectAll<SVGRectElement, Episode>('.episodeBar')
       .attr('x', (d) => d.columnId * this.barWidth)// this.episodeColumnScale(d.columnId))
       .attr('y', (d) => this.myScale(d.startTimestamp))
       .attr('height', (d) => this.myScale(d.endTimestamp) - this.myScale(d.startTimestamp))
-      .attr('width', (d) => this.barWidth)// this.episodeColumnScale(1) - this.episodeColumnScale(0))//
-      .style('fill', (d) => d.color);
+      .attr('width', () => this.barWidth)// this.episodeColumnScale(1) - this.episodeColumnScale(0))//
+      .style('fill', (d) => {
+        if (!this._brush) {
+          return d.color;
+        }
+
+        if (d.endTimestamp.getTime() < this._brush[0].getTime()
+        || d.startTimestamp.getTime() > this._brush[1].getTime()) {
+          return 'grey';
+        }
+
+        return d.color;
+      });
 
 
     // bars.exit().remove();

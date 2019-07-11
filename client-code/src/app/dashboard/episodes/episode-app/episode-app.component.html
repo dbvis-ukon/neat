@@ -6,7 +6,12 @@
       <h5 (click)="episodeCategory.visible = !episodeCategory.visible;">{{episodeCategory.crisislexCategory.name}}</h5>
     </div>
     <div>
-      <dbvis-episode-vis [episode]="episodeCategory.episodes" [showText]="episodeCategory.visible" [showHorizontally]="episodeCategory.horizontal">
+      <dbvis-episode-vis 
+        [episode]="episodeCategory.episodes" 
+        [showText]="episodeCategory.visible" 
+        [showHorizontally]="episodeCategory.horizontal"
+        [brush]="brush"
+      >
       </dbvis-episode-vis>
     </div>
     <!-- <dbvis-episode-timeline [timelineData]="timelineData"></dbvis-episode-timeline> -->

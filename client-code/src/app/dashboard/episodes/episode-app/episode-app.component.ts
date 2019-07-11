@@ -16,6 +16,9 @@ import {EpisodeCategory} from '@app/dashboard/episodes/EpisodeCategory';
 })
 export class EpisodeAppComponent implements OnInit {
 
+  @Input()
+  brush: [Date, Date];
+
   allEpisodes: EpisodeCategory[];
   expandedCategories: EpisodeCategory[] = [];
 
