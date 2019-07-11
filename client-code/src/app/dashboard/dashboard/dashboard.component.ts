@@ -120,7 +120,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.timelineData = this.masterTimelineRepository.getDefaults();
     this.timelineDataTitles = this.masterTimelineRepository.getAllTitles();
 
-    this.masterTimelineItem = this.timelineData[0];
+    this.prepareSingleTimelineItem('Rumble Damages Volume');
+  }
+
+  prepareSingleTimelineItem(originalTitle: string) {
+    // shallow copy
+    const tl = {... this.masterTimelineRepository.getByTitle(originalTitle)};
+
+    // turn on the brush for this one
+    tl.timelineOptions = { ... tl.timelineOptions, brushOn: true};
+
+    this.masterTimelineItem = tl;
   }
 
   ngOnDestroy(): void {
