@@ -7,7 +7,7 @@ export class MyStompServer {
     public static init(server: any) {
         MyStompServer.instance = new StompServer({
             server: server,
-            debug: console.log,
+            // debug: console.log,
             path: '/ws',
             // protocol: 'sockjs',
             heartbeat: [2000,2000]
