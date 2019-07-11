@@ -21,6 +21,8 @@ import { FilterDialogData } from '../timeline/filter-dialog/filter-dialog-data';
 import { SelectableFilterItem } from '../timeline/filter-dialog/selectable-filter-item';
 import { MasterTimelineRepositoryService } from '../master-timeline-repository.service';
 import { MasterTimelineItem } from '../master-timeline-item';
+import { Mc2RadiationItem } from '../map/mc2-radiation-item';
+import { Mc2DataRepositoryService } from '@app/core/services/mc2-data-repository.service';
 
 
 @Component({
@@ -44,7 +46,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
 
-  brushExternal: [Date, Date];
+  brushExternal: [Date, Date] = [new Date('2020-04-08 07:24:00'), new Date('2020-04-08 14:45:00')];
 
 
   mapOptions: MapOptions = {
@@ -63,6 +65,11 @@ export class DashboardComponent implements OnInit, OnDestroy {
    */
   brushedMc1Data: Mc1Item[];
 
+  allRadiationData: Mc2RadiationItem[] = [];
+  filteredRadiationData: Mc2RadiationItem[] = [];
+
+  streamGraphTitles: string[] = [];
+
   constructor(
     private route: ActivatedRoute,
     private groupRepository: GroupRepositoryService,
@@ -70,7 +77,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     private mc1DataRepository: Mc1DataRepositoryService,
     private streamGraphRepository: StreamGraphRepositoryService,
     public dialog: MatDialog,
-    private masterTimelineRepository: MasterTimelineRepositoryService
+    private masterTimelineRepository: MasterTimelineRepositoryService,
+    private mc2DataRepository: Mc2DataRepositoryService
   ) {}
 
   ngOnInit(): void {
@@ -105,13 +113,46 @@ export class DashboardComponent implements OnInit, OnDestroy {
         this.masterTimelineItem.timelineOptions = {...this.masterTimelineItem.timelineOptions};
       }
     });
+
+    this.mc2DataRepository.getData().subscribe(data => {
+      this.allRadiationData = data;
+    });
     // throw new Error('Method not implemented.');
 
 
-    this.timelineData = this.masterTimelineRepository.getDefaults();
+    this.masterTimelineRepository.getDefaults().then(data => {
+      this.timelineData = data;
+    });
     this.timelineDataTitles = this.masterTimelineRepository.getAllTitles();
 
-    this.masterTimelineItem = this.timelineData[0];
+    this.setSingleTimelineItem('Rumble Damages Volume');
+
+
+    this.updateRadiationMapData();
+
+    this.streamGraphTitles = this.masterTimelineRepository.getStreamGraphTitles();
+  }
+
+  updateRadiationMapData() {
+    this.filteredRadiationData = [ ... this.allRadiationData
+      .filter(
+        i => i.timestamp.getTime() >= this.brushExternal[0].getTime() &&
+        i.timestamp.getTime() <= this.brushExternal[1].getTime())
+    ];
+  }
+
+  setSingleTimelineItem(originalTitle: string) {
+    this.masterTimelineItem = null;
+    this.masterTimelineRepository.getByTitle(originalTitle).then(tlOrig => {
+      // shallow copy
+      const tl = {... tlOrig};
+
+      // turn on the brush for this one
+      tl.timelineOptions = { ... tl.timelineOptions, brushOn: true};
+
+      this.masterTimelineItem = tl;
+    });
+    console.log('set timeline', originalTitle);
   }
 
   ngOnDestroy(): void {
@@ -129,6 +170,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       .subscribe(data => this.brushedMc1Data = data);
 
     this.mapOptions.timelineBrush = brush;
+
+    this.updateRadiationMapData();
   }
 
 
@@ -180,7 +223,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   addMasterTimeline(title: string) {
-    this.timelineData.push(this.masterTimelineRepository.getByTitle(title));
+    this.masterTimelineRepository
+      .getByTitle(title)
+      .then(item => {
+        this.timelineData.push(item);
+        console.log('added new item', item);
+      });
   }
 
   removeMasterTimeline(tl: MasterTimelineItem) {

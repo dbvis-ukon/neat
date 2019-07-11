@@ -120,6 +120,7 @@ export class TimelineVisComponent implements OnInit {
     this.timeScale.domain([this._options.begin, this._options.end]);
 
     this.updateRender();
+    this.updateStreamGraph();
   }
 
   get options(): TimelineOptions {
@@ -170,6 +171,10 @@ export class TimelineVisComponent implements OnInit {
     // this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
     //   this.streamGraphData = data;
     // });
+
+    this.updateStreamGraph();
+
+    this.updateOwnBrush(this._brushExternal);
   }
 
   onResized(event: ResizedEvent) {
@@ -367,6 +372,7 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateStreamGraph() {
+    // console.log('try updating stream graph', this.streamGraph, this._streamGraphData, this._streamGraphColorScale);
     if (this.streamGraph && this._streamGraphData && this._streamGraphColorScale) {
       this.streamGraph.render(this._streamGraphData, this._streamGraphColorScale, this.width, this.height - 20, this.timeScale);
     }
