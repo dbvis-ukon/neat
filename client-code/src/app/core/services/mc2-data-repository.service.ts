@@ -12,7 +12,7 @@ export class Mc2DataRepositoryService {
   constructor(private http: HttpClient) { }
 
   public getData(): Observable<Mc2RadiationItem[]> {
-    return this.http.get<any[]>('/assets/MapMC2All.json')
+    return this.http.get<any[]>('/assets/MapMC2AllGrid.json')
       .pipe(
         map((itemArray: any[]) => itemArray.map(i => ({
             timestamp: new Date(i.timestamp),
