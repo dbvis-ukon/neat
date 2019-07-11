@@ -288,7 +288,9 @@ export class TimelineVisComponent implements OnInit {
       .attr('x1', x)
       .attr('x2', x);
 
-    const txt = showText ? this._hoverLine.toISOString() : '';
+    const timeFormat = d3.timeFormat('%Y-%m-%d %H:%M:%S');
+
+    const txt = showText && this._hoverLine ? timeFormat(this._hoverLine) : '';
     const txtX = x < this.width / 2 ? x + 2 : x - 122;
 
     this.hoverTextSelection

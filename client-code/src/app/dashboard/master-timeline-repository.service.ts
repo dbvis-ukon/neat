@@ -37,7 +37,7 @@ export class MasterTimelineRepositoryService {
 
   private readonly defaultTimelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
-    end: new Date('2020-04-10 12:00:00'),
+    end: new Date('2020-04-11 00:00:00'),
     userColor: 'black',
     brushOn: false,
     height: 100
