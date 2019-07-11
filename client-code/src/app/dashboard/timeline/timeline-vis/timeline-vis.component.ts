@@ -139,6 +139,7 @@ export class TimelineVisComponent implements OnInit {
     this.timeScale.domain([this._options.begin, this._options.end]);
 
     this.updateRender();
+    this.updateStreamGraph();
   }
 
   get options(): TimelineOptions {
@@ -202,6 +203,10 @@ export class TimelineVisComponent implements OnInit {
     // this.http.get<StreamGraphItem[]>('/assets/streamgraphdata.json').subscribe(data => {
     //   this.streamGraphData = data;
     // });
+
+    this.updateStreamGraph();
+
+    this.updateOwnBrush(this._brushExternal);
   }
 
   onResized(event: ResizedEvent) {
@@ -361,7 +366,9 @@ export class TimelineVisComponent implements OnInit {
       .attr('x1', x)
       .attr('x2', x);
 
-    const txt = showText && this._hoverLine ? this._hoverLine.toISOString() : '';
+    const timeFormat = d3.timeFormat('%Y-%m-%d %H:%M:%S');
+
+    const txt = showText && this._hoverLine ? timeFormat(this._hoverLine) : '';
     const txtX = x < this.width / 2 ? x + 2 : x - 122;
 
     this.hoverTextSelection
@@ -438,6 +445,7 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateStreamGraph() {
+    // console.log('try updating stream graph', this.streamGraph, this._streamGraphData, this._streamGraphColorScale);
     if (this.streamGraph && this._streamGraphData && this._streamGraphColorScale) {
       this.streamGraph.render(this._streamGraphData, this._streamGraphColorScale, this.width, this.height - 20, this.timeScale);
     }

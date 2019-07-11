@@ -22,6 +22,7 @@ export class EpisodeTooltipComponent implements OnInit {
 
   @Input()
   utterances: Utterance[];
+  episode: string;
 
   constructor() { }
 

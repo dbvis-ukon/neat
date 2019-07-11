@@ -37,7 +37,7 @@ export class MasterTimelineRepositoryService {
 
   private readonly defaultTimelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
-    end: new Date('2020-04-10 12:00:00'),
+    end: new Date('2020-04-11 00:00:00'),
     userColor: 'black',
     brushOn: false,
     height: 100
@@ -223,14 +223,14 @@ export class MasterTimelineRepositoryService {
 
   }
 
-  public getDefaults(): MasterTimelineItem[] {
-    return this.allMasterTimelineData
+  public async getDefaults(): Promise<MasterTimelineItem[]> {
+    return Promise.all(this.allMasterTimelineData
       .filter(i => this.defaultItems.includes(i.originalTitle))
       .sort((a, b) => this.defaultItems.indexOf(a.originalTitle) - this.defaultItems.indexOf(b.originalTitle))
-      .map(i => this.init(i));
+      .map(async i => await this.init(i)));
   }
 
-  public getByTitle(title: string): MasterTimelineItem {
+  public async getByTitle(title: string): Promise<MasterTimelineItem> {
     if (title === 'separator') {
       return {
         originalTitle: 'Separator',
@@ -241,7 +241,7 @@ export class MasterTimelineRepositoryService {
 
     return this.allMasterTimelineData
       .filter(i => i.originalTitle === title)
-      .map(i => this.init(i))[0];
+      .map(async i => await this.init(i))[0];
   }
 
   public getAllTitles(): string[] {
@@ -249,13 +249,16 @@ export class MasterTimelineRepositoryService {
       .map(i => i.originalTitle);
   }
 
-  private init(item: MasterTimelineItem): MasterTimelineItem {
+  public getStreamGraphTitles(): string[] {
+    return this.allMasterTimelineData
+      .filter(i => i.type === 'streamgraph')
+      .map(i => i.originalTitle);
+  }
+
+  private async init(item: MasterTimelineItem): Promise<MasterTimelineItem> {
     if (item.type === 'streamgraph' && !item.data) {
-      this.streamGraphRepository.getData(item.dataUrl).subscribe(data => {
-        item.title = item.originalTitle;
-        item.data = data;
-        item.filteredData = data;
-      });
+      item.data = await this.streamGraphRepository.getData(item.dataUrl).toPromise();
+      item.filteredData = item.data;
       item.timelineOptions = {... this.defaultTimelineOptions, brushOn: false};
     }
     return item;
