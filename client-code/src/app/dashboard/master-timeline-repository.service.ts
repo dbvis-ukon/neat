@@ -19,11 +19,11 @@ export class MasterTimelineRepositoryService {
     .domain(['M1Water', 'M1Shakeintensity', 'M1RoadsAndBridges', 'M1Power', 'M1Medical', 'M1Buildings'])
     .range(['#80b1d3', '#fb8072', '#fdb462', '#ffffb3', '#8dd3c7', '#bebada']);
 
-    private static readonly locationm1ColorScale: ScaleOrdinal<string,string> = d3.scaleOrdinal<string>()
-    .domain(['Palace Hills', 'Northwest', 'Old Town', 'Safe Town', 'Southwest', 'Downtown', 'Wilson Forest', 'Scenic Vista','Broadview', 'Chapparal', 'Terrapin Springs', 'Pepper Mill', 'Cheddarford', 'Weston', 'Southton', 'Oak Willow', 'East Parton', 'West Parton'])
+    private static readonly locationm1ColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
+    .domain(['Palace Hills', 'Northwest', 'Old Town', 'Safe Town', 'Southwest', 'Downtown', 'Wilson Forest', 'Scenic Vista', 'Broadview', 'Chapparal', 'Terrapin Springs', 'Pepper Mill', 'Cheddarford', 'Weston', 'Southton', 'Oak Willow', 'East Parton', 'West Parton'])
     .range(['#63A0EA', '#74AFF1', '#69A5EC', '#5897E5', '#4688DE', '#86BEF8', '#2F74D4', '#97CDFF', '#91C8FD', '#4083DC', '#5D9CE8', '#8CC3FB', '#7AB4F4', '#3579D7', '#4C8DE0', '#6FAAEF', '#80B9F6', '#3B7ED9']);
 
-    private static readonly radiationColorScale: ScaleOrdinal<string,string> = d3.scaleOrdinal<string>()
+    private static readonly radiationColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
     .domain(['M2 Too Low Error', 'M2 Almost Nothing', 'M2 Low', 'M2 Normal', 'M2 Slightly Elevated', 'M2 Higher Than Ususal', 'M2 Almost Warning', 'M2 Warning', 'M2 Danger', 'M2 Too High - Error'])
     .range(['#808080', '#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026', '#808080']);
 
@@ -31,9 +31,9 @@ export class MasterTimelineRepositoryService {
     .domain(['Dead', 'Injured', 'Missing', 'Water', 'Food', 'Shelter', 'Supplies', 'Services', 'Logistics', 'Money', 'Animal', 'Safety', 'Health', 'Children', 'Personal', 'Displaced', 'Caution', 'Infrastructure', 'Telecommunications', 'Agencies', 'Weather'])
     .range(['#b10026', '#fc4e2a', '#fd8d3c', '#6e016b', '#88419d', '#8c6bb1', '#8c96c6', '#9ebcda', '#bfd3e6', '#e0ecf4', '#f7fcfd', '#ce1256', '#e7298', '#df65b0', '#c994c7', '#d4b9da', '#1d91c0', '#41b6c4', '#7fcdbb', '#c7e9b4', '#edf8b1']);
 
-    private static readonly locationm3ColorScale: ScaleOrdinal<string,string> = d3.scaleOrdinal<string>()
-    .domain(['Palace Hills', 'Northwest', 'Old Town', 'Safe Town', 'Southwest', 'Downtown', 'Wilson Forest', 'Scenic Vista','Broadview', 'Chapparal', 'Terrapin Springs', 'Pepper Mill', 'Cheddarford', 'Weston', 'Southton', 'Oak Willow', 'East Parton', 'West Parton','<name with-held due to contract>', 'UNKNOWN'])
-    .range(['#63A0EA', '#74AFF1', '#69A5EC', '#5897E5', '#4688DE', '#86BEF8', '#2F74D4', '#97CDFF', '#91C8FD', '#4083DC', '#5D9CE8', '#8CC3FB', '#7AB4F4', '#3579D7', '#4C8DE0', '#6FAAEF', '#80B9F6', '#3B7ED9','#ff6666','#808080']);
+    private static readonly locationm3ColorScale: ScaleOrdinal<string, string> = d3.scaleOrdinal<string>()
+    .domain(['Palace Hills', 'Northwest', 'Old Town', 'Safe Town', 'Southwest', 'Downtown', 'Wilson Forest', 'Scenic Vista', 'Broadview', 'Chapparal', 'Terrapin Springs', 'Pepper Mill', 'Cheddarford', 'Weston', 'Southton', 'Oak Willow', 'East Parton', 'West Parton', '<name with-held due to contract>', 'UNKNOWN'])
+    .range(['#63A0EA', '#74AFF1', '#69A5EC', '#5897E5', '#4688DE', '#86BEF8', '#2F74D4', '#97CDFF', '#91C8FD', '#4083DC', '#5D9CE8', '#8CC3FB', '#7AB4F4', '#3579D7', '#4C8DE0', '#6FAAEF', '#80B9F6', '#3B7ED9', '#ff6666', '#808080']);
 
   private readonly defaultTimelineOptions: TimelineOptions = {
     begin: new Date('2020-04-06 00:00:00'),
@@ -222,14 +222,14 @@ export class MasterTimelineRepositoryService {
 
   }
 
-  public getDefaults(): MasterTimelineItem[] {
-    return this.allMasterTimelineData
+  public async getDefaults(): Promise<MasterTimelineItem[]> {
+    return Promise.all(this.allMasterTimelineData
       .filter(i => this.defaultItems.includes(i.title))
       .sort((a, b) => this.defaultItems.indexOf(a.title) - this.defaultItems.indexOf(b.title))
-      .map(i => this.init(i));
+      .map(async i => await this.init(i)));
   }
 
-  public getByTitle(title: string): MasterTimelineItem {
+  public async getByTitle(title: string): Promise<MasterTimelineItem> {
     if (title === 'separator') {
       return {
         title: 'Separator',
@@ -239,7 +239,7 @@ export class MasterTimelineRepositoryService {
 
     return this.allMasterTimelineData
       .filter(i => i.title === title)
-      .map(i => this.init(i))[0];
+      .map(async i => await this.init(i))[0];
   }
 
   public getAllTitles(): string[] {
@@ -247,12 +247,10 @@ export class MasterTimelineRepositoryService {
       .map(i => i.title);
   }
 
-  private init(item: MasterTimelineItem): MasterTimelineItem {
+  private async init(item: MasterTimelineItem): Promise<MasterTimelineItem> {
     if (item.type === 'streamgraph' && !item.data) {
-      this.streamGraphRepository.getData(item.dataUrl).subscribe(data => {
-        item.data = data;
-        item.filteredData = data;
-      });
+      item.data = await this.streamGraphRepository.getData(item.dataUrl).toPromise();
+      item.filteredData = item.data;
       item.timelineOptions = {... this.defaultTimelineOptions, brushOn: false};
     }
     return item;

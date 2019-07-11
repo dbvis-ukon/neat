@@ -46,7 +46,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   timelineOtherBrushes: TimelineOtherBrushes[] = [];
 
-  brushExternal: [Date, Date];
+  brushExternal: [Date, Date] = [new Date('2020-04-08 07:24:00'), new Date('2020-04-08 14:45:00')];
 
 
   mapOptions: MapOptions = {
@@ -65,6 +65,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
    */
   brushedMc1Data: Mc1Item[];
 
+  allRadiationData: Mc2RadiationItem[] = [];
   filteredRadiationData: Mc2RadiationItem[] = [];
 
   constructor(
@@ -112,25 +113,40 @@ export class DashboardComponent implements OnInit, OnDestroy {
     });
 
     this.mc2DataRepository.getData().subscribe(data => {
-      this.filteredRadiationData = data;
+      this.allRadiationData = data;
     });
     // throw new Error('Method not implemented.');
 
 
-    this.timelineData = this.masterTimelineRepository.getDefaults();
+    this.masterTimelineRepository.getDefaults().then(data => {
+      this.timelineData = data;
+    });
     this.timelineDataTitles = this.masterTimelineRepository.getAllTitles();
 
-    this.prepareSingleTimelineItem('Rumble Damages Volume');
+    this.setSingleTimelineItem('Rumble Damages Volume');
+
+
+    this.updateRadiationMapData();
   }
 
-  prepareSingleTimelineItem(originalTitle: string) {
-    // shallow copy
-    const tl = {... this.masterTimelineRepository.getByTitle(originalTitle)};
+  updateRadiationMapData() {
+    this.filteredRadiationData = [ ... this.allRadiationData
+      .filter(
+        i => i.timestamp.getTime() >= this.brushExternal[0].getTime() &&
+        i.timestamp.getTime() <= this.brushExternal[1].getTime())
+    ];
+  }
 
-    // turn on the brush for this one
-    tl.timelineOptions = { ... tl.timelineOptions, brushOn: true};
+  setSingleTimelineItem(originalTitle: string) {
+    this.masterTimelineRepository.getByTitle(originalTitle).then(tlOrig => {
+      // shallow copy
+      const tl = {... tlOrig};
 
-    this.masterTimelineItem = tl;
+      // turn on the brush for this one
+      tl.timelineOptions = { ... tl.timelineOptions, brushOn: true};
+
+      this.masterTimelineItem = tl;
+    });
   }
 
   ngOnDestroy(): void {
@@ -148,6 +164,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       .subscribe(data => this.brushedMc1Data = data);
 
     this.mapOptions.timelineBrush = brush;
+
+    this.updateRadiationMapData();
   }
 
 
@@ -199,7 +217,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   addMasterTimeline(title: string) {
-    this.timelineData.push(this.masterTimelineRepository.getByTitle(title));
+    this.masterTimelineRepository
+      .getByTitle(title)
+      .then(item => {
+        this.timelineData.push(item);
+        console.log('added new item', item);
+      });
   }
 
   removeMasterTimeline(tl: MasterTimelineItem) {

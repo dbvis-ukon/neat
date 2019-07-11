@@ -23,8 +23,14 @@
       <div class="panel right">
         <div class="timeline">
           <!-- <h1>TIMELINE</h1> -->
-          <dbvis-timeline-vis [options]="masterTimelineItem.timelineOptions" [otherBrushes]="timelineOtherBrushes"
-            (brushed)="timelineBrushed($event)" [streamGraphData]="masterTimelineItem.data" [streamGraphColorScale]="masterTimelineItem.colorScale"></dbvis-timeline-vis>
+          <dbvis-timeline-vis 
+            [options]="masterTimelineItem.timelineOptions" 
+            [otherBrushes]="timelineOtherBrushes"
+            (brushed)="timelineBrushed($event)" 
+            [streamGraphData]="masterTimelineItem.data" 
+            [streamGraphColorScale]="masterTimelineItem.colorScale" 
+            [brushExternal]="brushExternal"
+          ></dbvis-timeline-vis>
         </div>
 
         <div class="story">
