@@ -259,6 +259,7 @@ export class MasterTimelineRepositoryService {
     if (item.type === 'streamgraph' && !item.data) {
       item.data = await this.streamGraphRepository.getData(item.dataUrl).toPromise();
       item.filteredData = item.data;
+      item.title = item.originalTitle;
       item.timelineOptions = {... this.defaultTimelineOptions, brushOn: false};
     }
     return item;
