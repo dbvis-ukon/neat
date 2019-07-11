@@ -369,7 +369,7 @@ export class TimelineVisComponent implements OnInit {
     const timeFormat = d3.timeFormat('%Y-%m-%d %H:%M:%S');
 
     const txt = showText && this._hoverLine ? timeFormat(this._hoverLine) : '';
-    const txtX = x < this.width / 2 ? x + 2 : x - 122;
+    const txtX = x < this.width / 2 ? x + 2 : x - 95;
 
     this.hoverTextSelection
       .attr('x', txtX)
