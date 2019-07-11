@@ -90,6 +90,28 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.groupRepository.listenForUpdates(group.groupId).subscribe((groupSettings) => {
         this.groupSettings = groupSettings;
         this.otherUserOptionsUpdated(groupSettings.users.filter(u => u.id !== opts.id));
+
+        const myMap: Map<string, MasterTimelineItem> = new Map();
+
+        this.timelineData.forEach(t => {
+          myMap.set(t.originalTitle, t);
+          // remove annotations
+          t.annotations = [];
+        });
+
+        // collect all annotations from each user
+        const tmpAllAnnotations = [];
+        groupSettings.users.forEach(u => (u.annotations || []).forEach(a => {
+          tmpAllAnnotations.push(a);
+          
+          // inject into own masterTimelineItems
+          if (myMap.has(a.masterTimelineOriginalTitle)) {
+            myMap.get(a.masterTimelineOriginalTitle).annotations.push(a as AnnotationData);
+          }
+        }));
+
+        this.allAnnotations = tmpAllAnnotations;
+        console.log('all annotations', this.allAnnotations);
       });
 
       if (opts.groupId !== group.groupId) {
@@ -193,8 +215,19 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   annotationsChanged(annotations: AnnotationData[], timelineItem: MasterTimelineItem) {
+    annotations
+      .forEach(a => {
+        a.masterTimelineOriginalTitle = timelineItem.originalTitle;
+        a.userId = this.userOptions.id;
+        a.userName = this.userOptions.name;
+        a.color = this.userOptions.color;
+      });
+
     const tmpAllAnnotations = this.allAnnotations.filter(a => a.masterTimelineOriginalTitle !== timelineItem.originalTitle);
-    this.allAnnotations = [...tmpAllAnnotations, ...annotations];
+    const allAnnotations = [...tmpAllAnnotations, ...annotations];
+
+    this.userOptions.annotations = allAnnotations;
+    this.userOptionsRepository.setOptions(this.userOptions);
   }
 
 }
