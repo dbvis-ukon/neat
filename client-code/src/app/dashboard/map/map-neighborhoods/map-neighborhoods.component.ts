@@ -43,6 +43,8 @@ export class MapNeighborhoodsComponent implements OnInit {
   private static readonly INITIAL_WIDTH = 500.0;
   private static readonly INITIAL_HEIGHT = MapNeighborhoodsComponent.INITIAL_WIDTH / (mapData.svg.viewBox.width / mapData.svg.viewBox.height);
 
+  loading = true;
+
   @Output()
   public selected: EventEmitter<NeighborhoodSelection> = new EventEmitter();
 
@@ -89,43 +91,46 @@ export class MapNeighborhoodsComponent implements OnInit {
 
   @Input()
   set radiationData(radiationData: Mc2RadiationItem[]) {
+    this.loading = true;
 
-    this.mobileRadiationData = radiationData.filter(d => d.type === 'mobile');
-    const staticRadiationData = radiationData.filter(d => d.type === 'static');
+    setTimeout(() => {
+      this.mobileRadiationData = radiationData.filter(d => d.type === 'mobile');
+      const staticRadiationData = radiationData.filter(d => d.type === 'static');
 
-    const groupedStaticRadiationData = d3.nest()
-      .key((d: Mc2RadiationItem) => d.sensorId)
-      .entries(staticRadiationData);
+      const groupedStaticRadiationData = d3.nest()
+        .key((d: Mc2RadiationItem) => d.sensorId)
+        .entries(staticRadiationData);
 
-    const aggregatedPerGroup = groupedStaticRadiationData.map(g => {
-      const items = g.values;
+      const aggregatedPerGroup = groupedStaticRadiationData.map(g => {
+        const items = g.values;
 
-      const valueSum = items.reduce((sum, curr) => {
-        return sum + curr.value;
-      }, 0);
+        const valueSum = items.reduce((sum, curr) => {
+          return sum + curr.value;
+        }, 0);
 
-      return {
-        sum: valueSum,
-        mean: valueSum / items.length,
-        count: items.length
-      };
+        return {
+          sum: valueSum,
+          mean: valueSum / items.length,
+          count: items.length
+        };
+      });
+
+      this.aggregatedStaticRadiationData = groupedStaticRadiationData.map((g, idx) => {
+        const firstItem: Mc2RadiationItem = g.values[0];
+        const aggregation = aggregatedPerGroup[idx];
+
+        return {
+          sensorId: firstItem.sensorId,
+          latitude: firstItem.latitude,
+          longitude: firstItem.longitude,
+          meanValue: aggregation.mean,
+          summedValue: aggregation.sum,
+          valueCount: aggregation.count,
+        };
+      });
+
+      this.drawRadiationData();
     });
-
-    this.aggregatedStaticRadiationData = groupedStaticRadiationData.map((g, idx) => {
-      const firstItem: Mc2RadiationItem = g.values[0];
-      const aggregation = aggregatedPerGroup[idx];
-
-      return {
-        sensorId: firstItem.sensorId,
-        latitude: firstItem.latitude,
-        longitude: firstItem.longitude,
-        meanValue: aggregation.mean,
-        summedValue: aggregation.sum,
-        valueCount: aggregation.count,
-      };
-    });
-
-    this.drawRadiationData();
   }
 
   @Input()
@@ -139,15 +144,17 @@ export class MapNeighborhoodsComponent implements OnInit {
   }
 
   private draw(): void {
+    this.loading = true;
     this.drawLayers();
     this.drawRadiationData();
     this.drawEventCatchers();
+    this.loading = false;
   }
 
   drawRadiationData() {
 
     const radiationGroup = this.svgRenderGroups.radiation;
-    if (!radiationGroup) {
+    if (!radiationGroup || !this.mobileRadiationData) {
       return;
     }
 
@@ -194,7 +201,7 @@ export class MapNeighborhoodsComponent implements OnInit {
       .style('stroke', d3.interpolateReds(1))
       .style('stroke-width', '20px');
 
-
+    this.loading = false;
   }
 
   drawLayers() {

@@ -4,6 +4,7 @@ import {MapNeighborhoodsComponent} from '@app/dashboard/map/map-neighborhoods/ma
 import {MapProjectionService} from './map-projection.service';
 import {MapTooltipComponent} from './map-tooltip/map-tooltip.component';
 import {MapGlyphComponent} from '@app/dashboard/map/map-glyph/map-glyph.component';
+import { MatProgressBarModule } from '@angular/material';
 
 @NgModule({
 
@@ -19,7 +20,8 @@ import {MapGlyphComponent} from '@app/dashboard/map/map-glyph/map-glyph.componen
     MapProjectionService
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatProgressBarModule
   ],
   exports: [
     MapNeighborhoodsComponent,

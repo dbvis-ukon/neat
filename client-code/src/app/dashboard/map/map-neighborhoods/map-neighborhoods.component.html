@@ -1,3 +1,4 @@
 <div (resized)="onResized($event)">
+  <mat-progress-bar *ngIf="loading" style="width: 100%" mode="indeterminate"></mat-progress-bar>
   <svg class="map" #svg></svg>
 </div>

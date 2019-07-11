@@ -229,12 +229,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.userOptionsRepository.setOptions(this.userOptions);
 
     // update mc1 data
-    this.mc1DataRepository.getBrushFilteredMc1Data(brush)
-      .subscribe(data => this.brushedMc1Data = data);
+    setTimeout(() => {
+      this.mc1DataRepository.getBrushFilteredMc1Data(brush)
+        .subscribe(data => this.brushedMc1Data = data);
+    });
+
 
     this.mapOptions.timelineBrush = brush;
 
-    this.updateRadiationMapData();
+    setTimeout(() => {
+      this.updateRadiationMapData();
+    });
   }
 
 

@@ -30,6 +30,8 @@ export class MapGlyphComponent implements OnInit {
   private static readonly INITIAL_WIDTH = 500.0;
   private static readonly INITIAL_HEIGHT = MapGlyphComponent.INITIAL_WIDTH / (mapData.svg.viewBox.width / mapData.svg.viewBox.height);
 
+  loading = true;
+
   @ViewChild('svg') svgRef: ElementRef;
 
   private svg: d3.Selection<SVGElement, null, undefined, null>;
@@ -62,20 +64,29 @@ export class MapGlyphComponent implements OnInit {
       this.mapProjectionService
     );
 
-    this.draw();
+    this.loading = true;
+    setTimeout(() => {
+      this.draw();
+    });
   }
 
   onResized(event: ResizedEvent) {
     this.svg.attr('width', event.newWidth);
     this.svg.attr('height', event.newHeight);
 
-    this.draw();
+    this.loading = true;
+    setTimeout(() => {
+      this.draw();
+    });
   }
 
   @Input()
   set options(options: MapOptions) {
     this._options = options;
-    this.draw();
+    this.loading = true;
+    setTimeout(() => {
+      this.draw();
+    });
   }
 
   get options(): MapOptions {
@@ -85,7 +96,10 @@ export class MapGlyphComponent implements OnInit {
   @Input()
   set mc1Data(mc1data: Mc1Item[]) {
     this._mc1Data = mc1data;
-    this.draw();
+    this.loading = true;
+    setTimeout(() => {
+      this.draw();
+    });
   }
 
   get mc1Data(): Mc1Item[] {
@@ -97,6 +111,7 @@ export class MapGlyphComponent implements OnInit {
     if (this.mc1glyph) {
       this.mc1glyph.render(this._mc1Data, this._options.timelineBrush);
     }
+    this.loading = false;
   }
 
   drawBaseLayer() {
