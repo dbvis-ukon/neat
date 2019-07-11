@@ -207,6 +207,8 @@ export class TimelineVisComponent implements OnInit {
     this.updateStreamGraph();
 
     this.updateOwnBrush(this._brushExternal);
+
+    this.updateAnnotations();
   }
 
   onResized(event: ResizedEvent) {
@@ -460,6 +462,9 @@ export class TimelineVisComponent implements OnInit {
   }
 
   private updateAnnotations() {
+    if (!this.annotationContainer) {
+      return;
+    }
     const type = new annotationCustomType(
       annotationCallout,
       {

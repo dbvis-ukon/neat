@@ -197,8 +197,6 @@ export class EpisodeVisComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('initialize');
-
     this.svg = this.svgRef.nativeElement;
     this.svgSelection = d3.select(this.svg);
 
@@ -257,6 +255,7 @@ export class EpisodeVisComponent implements OnInit {
     //   const [minBrush, maxBrush] = options.timelineBrush;
     //   this.createOrUpdateVis();
     // });
+    this.updateAnnotations();
   }
 
   // private applyTimelineBrush(brush?: [Date, Date]): Episode[] {
@@ -726,6 +725,10 @@ export class EpisodeVisComponent implements OnInit {
 
 
   private updateAnnotations() {
+    if (!this.annotationContainer) {
+      return;
+    }
+
     const type = new annotationCustomType(
       annotationCallout,
       {
