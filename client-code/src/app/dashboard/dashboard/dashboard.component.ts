@@ -99,14 +99,27 @@ export class DashboardComponent implements OnInit, OnDestroy {
           t.annotations = [];
         });
 
+        console.log('group', groupSettings.users);
+
         // collect all annotations from each user
         const tmpAllAnnotations = [];
         groupSettings.users.forEach(u => (u.annotations || []).forEach(a => {
-          tmpAllAnnotations.push(a);
+          
+
+          // @sperrle see here
+          const aClass = new AnnotationData(a.color, a.data.date, a.data.y, a.note.title, a.note.label2);
+          aClass.masterTimelineOriginalTitle = a.masterTimelineOriginalTitle;
+          // aClass.uuid = a.uuid; // FIXME
+          aClass.userId = a.userId;
+          aClass.userName = a.userName;
+
+
+          tmpAllAnnotations.push(aClass);
           
           // inject into own masterTimelineItems
           if (myMap.has(a.masterTimelineOriginalTitle)) {
-            myMap.get(a.masterTimelineOriginalTitle).annotations.push(a as AnnotationData);
+
+            myMap.get(a.masterTimelineOriginalTitle).annotations.push(aClass);
           }
         }));
 
