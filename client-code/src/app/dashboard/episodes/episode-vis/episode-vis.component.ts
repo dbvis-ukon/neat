@@ -5,7 +5,8 @@ import {
   ElementRef,
   Input,
   ViewEncapsulation,
-  SimpleChanges, Output, EventEmitter
+  Output,
+  EventEmitter
 } from '@angular/core';
 import {
   isNullOrUndefined
@@ -23,9 +24,6 @@ import {
 import {
   Selection, ScaleTime, ScaleLinear
 } from 'd3';
-import {
-  Utterance
-} from '../utterance';
 import { Observable } from 'rxjs';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
@@ -40,9 +38,7 @@ import { ResizedEvent } from 'angular-resize-event';
 })
 export class EpisodeVisComponent implements OnInit {
 
-  constructor(private episodeCalculator: EpisodeCalculatorService,
-              private tooltipService: TooltipService,
-              private userOptionsService: UserOptionsRepositoryService) {
+  constructor(private tooltipService: TooltipService) {
   }
 
 
@@ -153,7 +149,7 @@ export class EpisodeVisComponent implements OnInit {
   private fontSize = 10;
   private maxColumns = 0;
   private maxRow = 0;
-  private myScale: ScaleTime<number, number> = d3.scaleTime().domain([ new Date('2020-04-06 00:00:00'), new Date('2020-04-10 12:00:00')]);
+  private myScale: ScaleTime<number, number> = d3.scaleTime().domain([ new Date('2020-04-06 00:00:00'), new Date('2020-04-11 00:00:00')]);
   private episodeColumnScale: ScaleLinear<number, number> = d3.scaleLinear();
   private defaultHeight = 2000;
 
@@ -669,7 +665,9 @@ export class EpisodeVisComponent implements OnInit {
       .attr('x1', x)
       .attr('x2', x);
 
-    const txt = showText ? this._hoverLine.toISOString() : '';
+    const timeFormat = d3.timeFormat('%Y-%m-%d %H:%M:%S');
+
+    const txt = showText && this._hoverLine ? timeFormat(this._hoverLine) : '';
     const txtX = x < (this._showHorizontally ? this.svgHeight : this.svgWidth) / 2 ? x + 2 : x - 122;
 
     this.hoverTextSelection
