@@ -29,18 +29,16 @@ export class StreamGraph {
         colors: ScaleOrdinal<string, string>,
         chartWidth: number,
         chartHeight: number,
-        timeScale: ScaleTime<number, number>): void {
+        timeScale: ScaleTime<number, number>
+    ): void {
+        if (isNaN(chartHeight)) {
+            return;
+        }
         this.chartWidth = chartWidth;
         this.chartHeight = chartHeight;
 
-        // const actualExt = d3.extent(mydata, d => d.timestamp);
-        // console.log('extents', actualExt, timeScale.domain());
-
-        // const m = mydata.length; // samples per layer
-
         const allKeys = this.streamGraphRepository.getAllKeys(mydata);
 
-        // console.log('allkeys', allKeys);
 
         const stack = d3.stack()
             .keys(allKeys)
@@ -59,29 +57,8 @@ export class StreamGraph {
             } as { [key: string]: number; };
         });
 
-        // console.log('transformed data', transformedData);
-        // console.log('stacked', stack(transformedData));
 
         const layers0 = stack(transformedData);
-
-        // let stack = d3.stack().keys(d3.range(n).map((d) => 'layer' + d)).offset(d3.stackOffsetWiggle);
-
-        // Create empty data structures
-        // const matrix0 = d3.range(m).map((d) => ({ x: d }));
-        // let matrix1 = d3.range(m).map((d) => { return { x: d }; });
-
-
-
-
-        // d3.range(n).map((d) => { this.bumpLayer(m, matrix0, d); });
-        // d3.range(n).map((d) => { this.bumpLayer(m, matrix1, d); });
-
-        // console.log(matrix0);
-
-        // let layers0 = stack(matrix0);
-        // let layers1 = stack(matrix1);
-
-        // console.log('layers0', layers0);
 
         const y = d3.scaleLinear()
             .domain([
@@ -90,12 +67,8 @@ export class StreamGraph {
             ])
             .range([chartHeight, 0]);
 
-        // const color = d3.scaleLinear<string>()
-        //     .domain([0, 1])
-        //     .range(colors);
-
         const area: any = d3.area()
-            .x((d: any, i) => timeScale(d.data.timestamp))
+            .x((d: any) => timeScale(d.data.timestamp))
             .y0((d) => y(d[0]))
             .y1((d) => y(d[1]));
 
@@ -127,18 +100,18 @@ export class StreamGraph {
                 d3.select(n[i])
                     .style('stroke', 'black')
                     .style('stroke-width', 1);
-              })
-              .on('mouseleave', (d, i, n) => {
+            })
+            .on('mouseleave', (d, i, n) => {
                 this.tooltipservice.close();
                 d3.select(n[i])
                     .style('stroke', 'none')
                     .style('stroke-width', 1);
-              })
-          .on('mousemove', () => {
-            const mouse = d3.mouse(this.chart.node());
-            const x = timeScale.invert(mouse[0]);
-            this.hoverLineChange.emit(x);
-          });
+            })
+            .on('mousemove', () => {
+                const mouse = d3.mouse(this.chart.node());
+                const x = timeScale.invert(mouse[0]);
+                this.hoverLineChange.emit(x);
+            });
 
         sel.exit().remove();
     }
