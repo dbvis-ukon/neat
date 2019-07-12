@@ -49,18 +49,18 @@ build:server:
   tags:
     - docker
 
-test:build:docker:
-  stage: test-build-docker
-  image: docker:latest
-  services:
-    - docker:dind
-  script:
-    - docker build -f ./deployment/Dockerfile -t 127.0.0.1:5000/vast-challenge-gc19:latest .
-    - docker image ls
-  except:
-    - master
-  tags:
-    - docker-build
+#test:build:docker:
+# stage: test-build-docker
+# image: docker:latest
+# services:
+ #   - docker:dind
+  #script:
+#    - docker build -f ./deployment/Dockerfile -t 127.0.0.1:5000/vast-challenge-gc19:latest .
+#    - docker image ls
+#  except:
+#    - master
+#  tags:
+#    - docker-build
 
 deploy:swarm:
   stage: ship
