@@ -120,7 +120,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
           t.annotations = [];
         });
 
-        console.log('group', groupSettings.users);
+        // console.log('group', groupSettings.users);
 
         // collect all annotations from each user
         const tmpAllAnnotations: AnnotationData[] = [];
@@ -155,7 +155,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
         const uniqueAnnotations = this.getUniqueAnnotations(tmpAllAnnotations);
 
-        console.log('fetch unique size', uniqueAnnotations.length);
+        // console.log('fetch unique size', uniqueAnnotations.length);
 
         this.allAnnotations = uniqueAnnotations;
         // console.log('all annotations', this.allAnnotations);
@@ -295,7 +295,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
       .getByTitle(title)
       .then(item => {
         this.timelineData.push(item);
-        console.log('added new item', item);
       });
   }
 
@@ -320,7 +319,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
     const uniqueAnnotations = this.getUniqueAnnotations(allAnnotations);
 
-    console.log('add unique size', uniqueAnnotations.length);
+    // console.log('add unique size', uniqueAnnotations.length);
 
     this.userOptions.annotations = uniqueAnnotations;
     this.userOptionsRepository.setOptions(this.userOptions);
@@ -331,7 +330,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
     const uniqueAnnotations = this.getUniqueAnnotations(this.allAnnotations);
 
-    console.log('remove unique size', uniqueAnnotations.length);
+    // console.log('remove unique size', uniqueAnnotations.length);
     this.userOptions.annotations = uniqueAnnotations;
     this.userOptionsRepository.setOptions(this.userOptions);
   }

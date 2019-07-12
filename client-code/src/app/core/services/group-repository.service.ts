@@ -21,7 +21,7 @@ export class GroupRepositoryService {
   }
 
   public get(id: string): Observable<Group> {
-    console.log('get group by id ' + id);
+    // console.log('get group by id ' + id);
     return this.http.get<Group>(environment.apiUrl + '/group/' + id);
   }
 
