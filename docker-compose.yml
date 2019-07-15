@@ -36,23 +36,3 @@ services:
     image: rethinkdb:2.3
     ports:
       - 8080:8080 #admin interface
-
-  postgresdb:
-    image: kartoza/postgis:latest
-    ports:
-      - 5432:5432
-    volumes:
-      # will put the initscripts into the docker container and execute it automatically
-      - ./postgresdb/initscripts/:/docker-entrypoint-initdb.d/
-      # makes the postgres db persistent
-      - postgres-data:/var/lib/postgresql
-    environment:
-      - POSTGRES_USER=vastchallenge
-      - POSTGRES_PASS=vastchallenge
-      - POSTGRES_DBNAME=vastchallenge
-      # - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology # You can pass as many extensions as you need.
-      # - ALLOW_IP_RANGE=all
-      # - IP_LIST=*
-
-volumes:
-  postgres-data:
