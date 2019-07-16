@@ -6,6 +6,8 @@ import {
   MatListModule,
   MatCardModule,
   MatSnackBarModule,
+  MatTooltipModule,
+  MatIconModule,
 } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -52,7 +54,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     DashboardModule,
     EpisodesModule,
     DragDropModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   providers: [
     {

@@ -6,7 +6,7 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import {ResizedEvent} from 'angular-resize-event';
+import {ResizedEvent} from '@app/shared/resized-event';
 import * as d3 from 'd3';
 import mapData from '@assets/map-data.json';
 import {MapOptions} from '../map-options';
@@ -32,7 +32,7 @@ export class MapGlyphComponent implements OnInit {
 
   loading = true;
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg', { static: true }) svgRef: ElementRef;
 
   private svg: d3.Selection<SVGElement, null, undefined, null>;
   private svgRenderGroups: SVGRenderGroups = {};

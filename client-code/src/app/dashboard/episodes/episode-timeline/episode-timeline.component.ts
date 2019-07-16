@@ -27,7 +27,7 @@ import {UserOptionsRepositoryService} from "@app/core";
 })
 export class EpisodeTimelineComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+  @ViewChild('svg', { static: true }) svgRef: ElementRef<SVGElement>;
 
   private _data: Timelinedata[] = [];
   private data: Timelinedata[] = [];
