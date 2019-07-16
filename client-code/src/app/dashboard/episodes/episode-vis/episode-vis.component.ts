@@ -28,7 +28,7 @@ import { Observable } from 'rxjs';
 import { TooltipService } from '@app/core/services/tooltip.service';
 import { EpisodeTooltipComponent } from '../episode-tooltip/episode-tooltip.component';
 import { UserOptionsRepositoryService } from '@app/core';
-import { ResizedEvent } from 'angular-resize-event';
+import { ResizedEvent } from '@app/shared/resized-event';
 import {
   annotation,
   annotationCallout,
@@ -153,7 +153,7 @@ export class EpisodeVisComponent implements OnInit {
   @Output()
   hoverLineChange: EventEmitter<Date> = new EventEmitter();
 
-  @ViewChild('svg') svgRef: ElementRef<SVGSVGElement>;
+  @ViewChild('svg', { static: true }) svgRef: ElementRef<SVGSVGElement>;
 
   /**
    * the svg element

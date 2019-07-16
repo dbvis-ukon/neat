@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <button *ngIf="group" mat-icon-button aria-label="back to groups" class="exit-icon" [routerLink]="['/groups']" matTooltip="Leave Group">
+  <button *ngIf="group" mat-icon-button aria-label="back to groups" class="exit-icon" [routerLink]="['/groups', {kicked: false}]" matTooltip="Leave Group">
       <mat-icon>arrow_back</mat-icon>
   </button>
   

@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     setTimeout(() => {
       this.activatedRoute.paramMap.subscribe(d => {
-        if (d.has('kicked')) {
+        if (d.has('kicked') && d.get('kicked') === 'true') {
           this._snackBar.open('You have been kicked from the group :(', 'OK', {
             duration: 10000
           });
@@ -46,6 +46,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
   createGroup() {
     this.groupRepository.create(this.groupName).subscribe(() => {
       this.groupName = '';
+      this.updateGroups();
+    });
+  }
+
+  deleteGroup(groupId: string) {
+    this.groupRepository.delete(groupId).subscribe(() => {
       this.updateGroups();
     });
   }

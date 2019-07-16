@@ -3,7 +3,18 @@
 <h1>Available groups</h1>
 
 <mat-list role="list" *ngIf="groups">
-  <mat-list-item role="listitem" *ngFor="let group of groups">Name: {{ group.name }} Created: {{ group.created }} <button mat-raised-button [routerLink]="['/dashboard', group.groupId]">Join Group</button></mat-list-item>
+  <mat-list-item role="listitem" *ngFor="let group of groups">
+    <h4 mat-line style="font-weight: bold;">{{ group.name }}</h4>
+    <p mat-line>Created: {{ group.created | date: 'yyyy-MM-dd HH:mm:ss' }}</p>
+    <p mat-line>Number of people in group: {{ group.size }}</p>
+    <span class="example-spacer"></span>
+    <button mat-icon-button aria-label="settings" (click)="deleteGroup(group.groupId)" matTooltip="Delete this group" [disabled]="group.size > 0">
+      <mat-icon>delete</mat-icon>
+    </button> 
+    <button mat-icon-button aria-label="settings" [routerLink]="['/dashboard', group.groupId]" matTooltip="Join this group">
+      <mat-icon>send</mat-icon>
+    </button> 
+  </mat-list-item>
 </mat-list>
 
 <mat-form-field>

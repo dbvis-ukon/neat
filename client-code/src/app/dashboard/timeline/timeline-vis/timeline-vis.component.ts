@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
-import { ResizedEvent } from 'angular-resize-event';
+import { ResizedEvent } from '@app/shared/resized-event';
 import { TimelineOptions } from '../timeline-options';
 import * as d3 from 'd3';
 import Annotation, {
@@ -34,7 +34,7 @@ export class TimelineVisComponent implements OnInit {
   @Output()
   public brushed: EventEmitter<[Date, Date]> = new EventEmitter();
 
-  @ViewChild('svg') svgRef: ElementRef<SVGSVGElement>;
+  @ViewChild('svg', { static: true }) svgRef: ElementRef<SVGSVGElement>;
 
   private svg: SVGSVGElement;
 

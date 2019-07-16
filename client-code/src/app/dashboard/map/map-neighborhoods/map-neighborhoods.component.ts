@@ -6,7 +6,7 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import {ResizedEvent} from 'angular-resize-event';
+import {ResizedEvent} from '@app/shared/resized-event';
 import * as d3 from 'd3';
 import mapData from '@assets/map-data.json';
 import neighborhoodData from '@assets/neighborhood-data.json';
@@ -48,7 +48,7 @@ export class MapNeighborhoodsComponent implements OnInit {
   @Output()
   public selected: EventEmitter<NeighborhoodSelection> = new EventEmitter();
 
-  @ViewChild('svg') svgRef: ElementRef;
+  @ViewChild('svg', { static: true }) svgRef: ElementRef;
 
   private svg: d3.Selection<SVGElement, null, undefined, null>;
   private svgRenderGroups: SVGRenderGroups = {};

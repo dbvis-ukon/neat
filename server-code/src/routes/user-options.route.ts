@@ -31,8 +31,9 @@ userOptionsRouter.get('/hello/:userId', verifyGroupId, wrapAsync(async (req: any
     const userid = req.params.userId;
 
     const userOptions: any = await RethinkDbService.db().table('user_options').get(userid).run(req._rdb);
-
-    await broadcastToUsers(req._rdb, userOptions.groupId);
+    if(userOptions) { // if the group is empty do not broadcast anything
+        await broadcastToUsers(req._rdb, userOptions.groupId);
+    }
 
     res.send();
 }));
@@ -56,10 +57,11 @@ userOptionsRouter.post('/', verifyGroupId, wrapAsync(async (req: any, res, next)
 
 userOptionsRouter.delete('/:userId', wrapAsync(async (req: any, res) => {
     const result: any = await RethinkDbService.db().table('user_options').get(req.params.userId).delete({returnChanges: true}).run(req._rdb);
-    const groupId = result.changes[0].old_val.groupId;
-
-    await broadcastToUsers(req._rdb, groupId);
-
+    if(result && result.changes && result.changes[0]) {
+        const groupId = result.changes[0].old_val.groupId;
+        await broadcastToUsers(req._rdb, groupId);
+    }
+    
     res.send();
 }));
 

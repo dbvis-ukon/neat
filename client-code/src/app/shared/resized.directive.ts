@@ -7,10 +7,23 @@ import {
   Input,
   HostListener
 } from '@angular/core';
-import { ResizedEvent } from 'angular-resize-event';
+import { ResizedEvent } from '@app/shared/resized-event';
 import { ResizeSensor } from 'css-element-queries';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+
+class MyResizedEvent implements ResizedEvent {
+
+  constructor(
+    public element: ElementRef,
+    public newWidth: number,
+    public newHeight: number,
+    public oldWidth: number,
+    public oldHeight: number
+  ) {
+
+  }
+}
 
 @Directive({
   selector: '[dbvisResized]'
@@ -46,7 +59,7 @@ export class ResizedDirective implements OnInit {
           return;
         }
 
-        const event = new ResizedEvent(
+        const event = new MyResizedEvent(
           this.element,
           newWidth,
           newHeight,

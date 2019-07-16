@@ -48,4 +48,8 @@ export class GroupRepositoryService {
       this.subscription.unsubscribe();
     }
   }
+
+  public delete(groupId: string): Observable<void> {
+    return this.http.delete<void>(environment.apiUrl + '/group/' + groupId);
+  }
 }

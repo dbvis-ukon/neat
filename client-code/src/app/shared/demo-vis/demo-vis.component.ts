@@ -10,7 +10,7 @@ import { ExampleTooltipComponent } from '../example-tooltip/example-tooltip.comp
 })
 export class DemoVisComponent implements OnInit {
 
-  @ViewChild('svg') svgRef: ElementRef<SVGElement>;
+  @ViewChild('svg', { static: true }) svgRef: ElementRef<SVGElement>;
 
   constructor(private tooltipService: TooltipService) { }
 
