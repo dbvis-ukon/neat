@@ -1,6 +1,7 @@
 # VAST Challenge 2019 Grand Challenge Prototype N.E.A.T.
 
 Welcome to the mirror-code repository of our prototype N.E.A.T. (Novel Emergency Analysis Tool).
+[Watch our video that introduces and explains N.E.A.T.](https://www.youtube.com/watch?v=gA6sIeu_VpU&feature=youtu.be)
 
 ## Live-Demo
 
@@ -43,7 +44,7 @@ Many thanks to all contributors of this prototype!
 
 - [Juri Buchmüller](http://vis.uni.kn/en/members/buchmueller/)
 - [Wolfgang Jentner](http://vis.uni.kn/en/members/jentner/)
-- [Hanna Schaefer](http://vis.uni.kn/en/members/schaefer/)
+- [Hanna Schäfer](http://vis.uni.kn/en/members/schaefer/)
 - [Udo Schlegel](http://vis.uni.kn/en/members/schlegel/)
 - [Rita Sevastjanova](http://vis.uni.kn/en/members/sevastjanova/)
 - [Fabian Sperrle](http://vis.uni.kn/en/members/sperrle/)
