@@ -231,7 +231,7 @@ export class MasterTimelineRepositoryService {
   }
 
   public async getByTitle(title: string): Promise<MasterTimelineItem> {
-    if (title === 'separator') {
+    if (title.toLowerCase() === 'separator') {
       return {
         originalTitle: 'Separator',
         title: 'Separator',

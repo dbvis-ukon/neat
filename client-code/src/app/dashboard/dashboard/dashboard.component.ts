@@ -10,10 +10,7 @@ import { Mc1DataRepositoryService } from '@app/core/services/mc1-data-repository
 import { MapOptions } from '../map/map-options';
 import { NeighborhoodSelection } from '@shared/neighborhood-selection';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import * as d3 from 'd3';
-import { StreamGraphItem } from '../timeline/stream-graph-item';
 import { StreamGraphRepositoryService } from '../timeline/stream-graph-repository.service';
-import { TimelineOptions } from '../timeline/timeline-options';
 import { TimelineOtherBrushes } from '../timeline/timeline-other-brushes';
 import { MatDialog } from '@angular/material';
 import { FilterDialogComponent } from '../timeline/filter-dialog/filter-dialog.component';
@@ -24,6 +21,7 @@ import { MasterTimelineItem } from '../master-timeline-item';
 import { AnnotationData } from '../timeline/AnnotationData';
 import { Mc2RadiationItem } from '../map/mc2-radiation-item';
 import { Mc2DataRepositoryService } from '@app/core/services/mc2-data-repository.service';
+import { LocalStorageService } from 'angular-web-storage';
 
 
 @Component({
@@ -32,12 +30,13 @@ import { Mc2DataRepositoryService } from '@app/core/services/mc2-data-repository
   styleUrls: ['./dashboard.component.less']
 })
 export class DashboardComponent implements OnInit, OnDestroy {
+  private static readonly TIMELINE_DATA_KEY: string = 'vcgc19.timelineData';
 
   globalHoverLine: Date;
 
   dashboardLayout: 'default' | 'timelines' | 'annotations' = 'timelines';
 
-  timelineData: MasterTimelineItem[] = [];
+  timelineData: MasterTimelineItem[];
 
   timelineDataTitles: string[] = [];
 
@@ -73,6 +72,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   streamGraphTitles: string[] = [];
 
+
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -82,7 +83,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     private streamGraphRepository: StreamGraphRepositoryService,
     public dialog: MatDialog,
     private masterTimelineRepository: MasterTimelineRepositoryService,
-    private mc2DataRepository: Mc2DataRepositoryService
+    private mc2DataRepository: Mc2DataRepositoryService,
+    private localStorage: LocalStorageService
   ) {}
 
   ngOnInit(): void {
@@ -183,10 +185,21 @@ export class DashboardComponent implements OnInit, OnDestroy {
     });
     // throw new Error('Method not implemented.');
 
+    this.timelineData = [];
+    if (this.localStorage.get(DashboardComponent.TIMELINE_DATA_KEY)) {
+      Promise.all<MasterTimelineItem>(
+        this.localStorage
+          .get(DashboardComponent.TIMELINE_DATA_KEY)
+          .map(origTitle => this.masterTimelineRepository.getByTitle(origTitle))
+      ).then((t: MasterTimelineItem[]) => {
+        this.timelineData = t;
+      });
+    } else {
+      this.masterTimelineRepository.getDefaults().then(data => {
+        this.timelineData = data;
+      });
+    }
 
-    this.masterTimelineRepository.getDefaults().then(data => {
-      this.timelineData = data;
-    });
     this.timelineDataTitles = this.masterTimelineRepository.getAllTitles();
 
     this.setSingleTimelineItem('Rumble Damages Volume');
@@ -265,6 +278,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   drop(event: CdkDragDrop<MasterTimelineItem[]>) {
     moveItemInArray(this.timelineData, event.previousIndex, event.currentIndex);
+    this.saveTimelineData();
   }
 
   openFilterDialog(timelineItem: MasterTimelineItem): void {
@@ -295,6 +309,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       .getByTitle(title)
       .then(item => {
         this.timelineData.push(item);
+        this.saveTimelineData();
       });
   }
 
@@ -302,7 +317,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
     const idx = this.timelineData.indexOf(tl);
     if (idx > -1) {
       this.timelineData.splice(idx, 1);
+      this.saveTimelineData();
     }
+  }
+
+  saveTimelineData() {
+    this.localStorage.set(DashboardComponent.TIMELINE_DATA_KEY, this.timelineData.map(t => t.originalTitle || t));
   }
 
   annotationsChanged(annotations: AnnotationData[], timelineItem: MasterTimelineItem) {

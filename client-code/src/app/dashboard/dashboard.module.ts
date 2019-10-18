@@ -23,6 +23,7 @@ import { EpisodesModule } from './episodes/episodes.module';
 import { MapModule } from '@app/dashboard/map/map.module';
 import { TimelineModule } from './timeline/timeline.module';
 import { FormsModule } from '@angular/forms';
+import { AngularWebStorageModule } from 'angular-web-storage';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     SharedModule.forRoot(),
     FormsModule,
+    AngularWebStorageModule,
     MatSidenavModule,
     MatButtonModule,
     EpisodesModule,
