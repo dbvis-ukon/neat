@@ -1,0 +1,24 @@
+
+app:
+  port: 3000
+  regcred: regcred-vcgc19
+
+  auth:
+    enable: true
+    secret: vcgc19-basic-auth
+
+  requests:
+    cpu: 250m
+    memory: 500Mi
+
+  limits:
+    cpu: 500m
+    memory: 1Gi
+
+  extraEnv: |
+    - name: DB_HOST
+      value: {{ .Release.Name }}-rethinkdb.jentner.svc.cluster.local
+    - name: DB_NAME
+      value: test
+
+
